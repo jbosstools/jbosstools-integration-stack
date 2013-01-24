@@ -32,7 +32,7 @@
 
     <!-- BPMN2 - Feature -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201211251037"/>
+      <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201111091619"/>
       <repository location="http://download.eclipse.org/modeling/mdt/bpmn2/updates/milestones/S20111111/"/>
     </location>
 
