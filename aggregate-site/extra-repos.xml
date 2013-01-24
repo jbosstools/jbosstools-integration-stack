@@ -1,0 +1,11 @@
+<associateSites>
+      <!-- TODO: The features within these repositories need to be mirrored on jboss.org -->
+      <!-- The repositories listed here match those in the target platform file. -->
+      <associateSite url="http://download.eclipse.org/graphiti/updates/0.9.1"/>
+      <associateSite url="http://download.eclipse.org/modeling/emf/compare/updates/releases/1.2"/>
+      <associateSite url="http://download.eclipse.org/modeling/mdt/bpmn2/updates/milestones/S20111111/"/>
+      <associateSite url="http://download.eclipse.org/bpmn2-modeler/site/0.1.0"/>
+      <associateSite url="http://download.eclipse.org/bpel/site/"/>
+      <associateSite url="http://download.eclipse.org/modeling/mdt/ocl/updates/"/>
+      <associateSite url="http://download.eclipse.org/modeling/emf/updates/releases/"/>
+</associateSites>
