@@ -28,7 +28,7 @@
     <child location="http://download.jboss.org/drools/release/5.4.0.Final/org.drools.updatesite/"/>
 
     <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/modeshape/3.0.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/modeshape/3.0.0.Final/"/>
 
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.x/"/>
@@ -37,7 +37,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/0.7.0.Final/"/>
 
     <!-- TEIID -->        
-    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/teiddesigner/8.0.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/teiiddesigner/8.0.0.Final/"/>
 
     <!-- FUSE -->
 
