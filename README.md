@@ -1,12 +1,12 @@
-# The JBoss Integration Tools Project
+# The JBoss Tools Integration Stack Project
 
 ## Summary
 
 This maven/ tycho project specifies the process for building the JBoss Developer Studio Integration Platform
-(a.k.a JBoss Integration Tools, JBoss Integration Stack).  The JBoss Integration Tools are comprised of
+(JBoss Tools Integration Stack).  The JBoss Tools Integration Stack is comprised of
 layered JBoss Developer Studio (JBDS) features/plugins.  The project provides the ability to 
 build both an equinox/p2 update site and a fully resolved aggregate site assembly.  The established Integration 
-Tools capture is consistent with its JBoss target dependencies but independently releasable. 
+Stack capture is consistent with its JBoss target dependencies but independently releasable. 
 
 ## Components
 
@@ -21,9 +21,9 @@ Tools capture is consistent with its JBoss target dependencies but independently
 * [Switchyard Lightweight Service Delivery Framework](http://www.jboss.org/switchyard.html)
 * [Teiid Designer](http://www.jboss.org/teiiddesigner)
 
-## Building the JBoss Integration Tools Project
+## Building the JBoss Tools Integration Stack Project
 
-To build the _JBoss Integration Tools_ project requires specific versions of Java and Maven. 
+To build the _JBoss Tools Integration Stack_ project requires specific versions of Java and Maven. 
 The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
 document will guide you through that setup.
 
@@ -49,5 +49,5 @@ If you just want to check if things compile/ build you can run:
 
 ## Contribute fixes and features
 
-The _JBoss Integration Tools_ project is open source, and we welcome anyone that wants to participate and contribute.
+The _JBoss Tools Integration Stack_ project is open source, and we welcome anyone that wants to participate and contribute.
 

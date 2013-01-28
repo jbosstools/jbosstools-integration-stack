@@ -3,14 +3,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.jboss.tools.target-platforms.integration-stack</groupId>
-  <artifactId>aggregate</artifactId>
+  <groupId>org.jboss.tools.integration-stack</groupId>
+  <artifactId>target-platform</artifactId>
   <version>4.0.0-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
     JBoss tools core component target dependencies merged with the integration stack component target dependencies
-    forming an 'aggregate.target' combined target.
+    forming an 'aggregate-full.target' combined target.
   </description>
 
   <packaging>pom</packaging>
@@ -90,9 +90,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<executions>
+
+	  <!-- Merge the unified JBoss core target dependencies and the JBoss integration stack base target dependencies. -->
 	  <execution>
 
-	    <!-- Merge the unified JBoss core target dependencies and the JBoss integration stack tooling target dependencies. -->
+	    <id>merge-base</id>
 	    <phase>generate-resources</phase>
 	    <goals>
 	      <goal>merge-targets</goal>
@@ -109,10 +111,32 @@
 	      </sourceTargetArtifacts>
 
 	      <sourceTargetFiles>
-		<item>integration-tools.target</item>
+		<item>base.target</item>
 	      </sourceTargetFiles>
 
-	      <outputFile>${project.build.directory}/aggregate.target</outputFile>
+	      <outputFile>${project.build.directory}/aggregate-base.target</outputFile>
+
+	    </configuration>
+	  </execution>
+
+	  <!-- Merge the aggregate base (unified JBoss core + IS base) target dependencies and the JBoss integration stack 
+	       community target dependencies. -->
+	  <execution>
+
+	    <id>merge-community</id>
+	    <phase>generate-resources</phase>
+	    <goals>
+	      <goal>merge-targets</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <sourceTargetFiles>
+		<item>${project.build.directory}/aggregate-base.target</item>
+		<item>community.target</item>
+	      </sourceTargetFiles>
+
+	      <outputFile>${project.build.directory}/aggregate-full.target</outputFile>
 
 	    </configuration>
 	  </execution>
@@ -136,7 +160,8 @@
 	    <configuration>
 
 	      <targetFiles>
-		<param>${project.build.directory}/aggregate.target</param>
+		<param>${project.build.directory}/aggregate-base.target</param>
+		<param>${project.build.directory}/aggregate-full.target</param>
 	      </targetFiles>
 	      <failOnError>true</failOnError>
 
@@ -145,7 +170,7 @@
 	</executions>
       </plugin>
 
-      <!-- Use codehaus to package the aggegated target dependencies. -->
+      <!-- Use codehaus to package the aggegated target dependencies (base and community). -->
       <plugin>
 	<groupId>org.codehaus.mojo</groupId>
 	<artifactId>build-helper-maven-plugin</artifactId>
@@ -153,7 +178,7 @@
 
 	<executions>
 	  <execution>
-	    <id>attach-artifacts</id>
+	    <id>attach-artifacts-base</id>
 	    <phase>package</phase>
 	    <goals>
 	      <goal>attach-artifact</goal>
@@ -162,14 +187,38 @@
 	    <configuration>
 
 	      <tasks>
-		<echo>Packaging the aggregated target dependencies.</echo>
+		<echo>Packaging the aggregated base target dependencies.</echo>
 	      </tasks>
 
 	      <artifacts>
 		<artifact>
-		  <file>${project.build.directory}/aggregate.target</file>
+		  <file>${project.build.directory}/aggregate-base.target</file>
 		  <type>target</type>
 		  <classifier>base</classifier>
+		</artifact>
+	      </artifacts>
+
+	    </configuration>
+	  </execution>
+
+	  <execution>
+	    <id>attach-artifacts-full</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>attach-artifact</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <tasks>
+		<echo>Packaging the aggregated full target dependencies (base + community).</echo>
+	      </tasks>
+
+	      <artifacts>
+		<artifact>
+		  <file>${project.build.directory}/aggregate-full.target</file>
+		  <type>target</type>
+		  <classifier>full</classifier>
 		</artifact>
 	      </artifacts>
 

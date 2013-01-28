@@ -6,10 +6,10 @@
   <artifactId>integration-stack-master</artifactId>
   <version>4.0.0-SNAPSHOT</version>
 
-  <name>JBoss Integration Tools Master</name>
+  <name>JBoss Tools Integration Stack Master</name>
   <packaging>eclipse-update-site</packaging>
   <description>
-    Aggregated JBoss Integration Tools Eclipse update site.
+    Aggregated JBoss Tools Integration Stack Eclipse update site.
 
     This Maven project will create an update site for the layered release of the JBoss Developer Studio tools integration stack.
   </description>
@@ -24,9 +24,9 @@
 
   <repositories>
 
-    <!-- Specify the equinox/p2 Integration Tools composite repo. -->
+    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
-      <id>jboss-integration-tools-site</id>
+      <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
       <layout>p2</layout>
       <snapshots>
@@ -71,14 +71,15 @@
             </environment>
           </environments>
 
-          <!-- Pick up the merged target dependencies of the JBoss core unified target and the JBoss Integration tools. -->
+          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
+	       JBoss Tools Integration Stack (with community). -->
           <target>
             <artifact>
-              <groupId>org.jboss.tools.target-platforms.integration-stack</groupId>
-              <artifactId>aggregate</artifactId>
+              <groupId>org.jboss.tools.integration-stack</groupId>
+              <artifactId>target-platform</artifactId>
               <version>4.0.0-SNAPSHOT</version>
               <type>target</type>
-              <classifier>base</classifier>
+              <classifier>full</classifier>
             </artifact>
           </target>
         </configuration>

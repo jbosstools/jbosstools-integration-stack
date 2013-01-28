@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<!-- 
+   Community target dependencies for the JBDS Integration Stack Platform Tooling (JBoss Tools Integration Stack).
+   JBoss Tools core as a dependency + third-party dependencies.
+-->
+<target name="integration-stack-community-target" sequenceNumber="7">
+  <locations>
+
+    <!-- JBoss Tools Core Community Dependencies -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.jboss.tools.birt.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.gwt.feature.feature.group" version="0.0.0"/>
+
+      <repository location="http://download.jboss.org/jbosstools/updates/stable/juno/"/>
+
+    </location>
+
+  </locations>
+</target>
