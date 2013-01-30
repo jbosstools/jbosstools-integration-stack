@@ -8,9 +8,9 @@ SOA and Data Services Tooling for Eclipse - includes support for BPEL, Drools, G
   </description>
 </category-def>
 
-<category-def name="BusinessRules" label="* Business Rules Tooling">
+<category-def name="BusinessLogic" label="* Business Process and Rules Tooling">
   <description>
-Business Rules Tooling for Eclipse - includes support for Drools, jBPM 5, and Runtime Detection
+Business Processes and Rules Tooling for Eclipse - includes support for jBPM and Drools
   </description>
 </category-def>
 
@@ -77,19 +77,19 @@ Tools related to data services such as persistence and transformation.
 </feature>
 
 <feature url="features/org.jbpm.eclipse.feature_0.0.0.jar" id="org.jbpm.eclipse.feature" version="0.0.0">
-  <category name="BusinessRules" />
+  <category name="BusinessLogic" />
   <category name="SOATools" />
 </feature>
 
 <feature url="features/org.jbpm.eclipse.task.feature_0.0.0.jar" id="org.jbpm.eclipse.task.feature" version="0.0.0">
-  <category name="BusinessRules" />
+  <category name="BusinessLogic" />
   <category name="SOATools" />
 </feature>
 
 <!-- drools -->
 <feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
   <category name="SOADataServices" />
-  <category name="BusinessRules" />
+  <category name="BusinessLogic" />
   <category name="SOATools" />
   <category name="GeneralTools" />
 </feature>
@@ -113,7 +113,7 @@ Tools related to data services such as persistence and transformation.
 
 <!-- runtime-soa -->
 <feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
-  <category name="BusinessRules" />
+  <category name="BusinessLogic" />
   <category name="SOADataServices" />
 </feature>
 
@@ -122,7 +122,7 @@ Tools related to data services such as persistence and transformation.
 </feature>
 
 <feature url="features/org.jboss.tools.runtime.jbpm.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.jbpm.detector.feature" version="0.0.0">
-  <category name="BusinessRules" />
+  <category name="BusinessLogic" />
   <category name="SOADataServices" />
 </feature>
 
@@ -137,10 +137,6 @@ Tools related to data services such as persistence and transformation.
 
 <feature url="features/org.teiid.designer.runtime.feature_0.0.0.jar" id="org.teiid.designer.runtime.feature" version="0.0.0">
   <category name="DataTools" />
-</feature>
-
-<!-- teiid needs uml2 -->
-<feature url="features/org.eclipse.uml2_0.0.0.jar" id="org.eclipse.uml2" version="0.0.0">
 </feature>
 
 </site>
