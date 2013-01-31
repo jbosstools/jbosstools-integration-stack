@@ -1,6 +1,0 @@
-<associateSites>
-      <!-- The repositories listed here match those in the target platform file. -->
-      <associateSite url="http://download.jboss.org/jbosstools/updates/requirements/juno/201209280900-R/"/>
-      <associateSite url="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201211132058/"/>
-      <associateSite url="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.2.v20121121-1634-CI/"/>
-</associateSites>
