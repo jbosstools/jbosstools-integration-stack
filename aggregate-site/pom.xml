@@ -53,6 +53,12 @@
       <id>tycho-snapshots</id>
       <url>https://oss.sonatype.org/content/groups/public/</url>
     </pluginRepository>
+
+    <pluginRepository>
+      <id>jboss-snapshots-repository</id>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+    </pluginRepository>
+
   </pluginRepositories>
 
   <build>
