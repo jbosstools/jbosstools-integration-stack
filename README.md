@@ -38,7 +38,7 @@ First build the target platform:
 
 Second build the aggregate:
 
-      $ cd .../jbosstools-integration-stack/site
+      $ cd .../jbosstools-integration-stack/aggregate-site
       $ mvn clean install
 
 Then look for the integration-stack-master*.zip file in your repository.

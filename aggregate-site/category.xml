@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site associateSitesURL="extra-repos.xml">
-<description>JBoss Integration Tools Eclipse Updates</description>
+<site>
+<description>JBoss Tools Integration Stack Eclipse Updates</description>
 
 <category-def name="SOADataServices" label="* SOA and Data Services Tooling">
   <description>
