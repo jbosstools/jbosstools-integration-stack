@@ -38,10 +38,10 @@ First build the target platform:
 
 Second build the aggregate:
 
-      $ cd .../jbosstools-integration-stack/aggregate-site
+      $ cd .../jbosstools-integration-stack/site
       $ mvn clean install
 
-Then look for the site_assembly.zip file in your repository.
+Then look for the integration-stack-master*.zip file in your repository.
 
 If you just want to check if things compile/ build you can run:
 
