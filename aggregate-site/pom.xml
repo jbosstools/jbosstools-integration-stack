@@ -61,6 +61,88 @@
 
   </pluginRepositories>
 
+  <profiles>
+
+    <profile>
+      <id>integration</id>
+
+      <!-- integration site description activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>integration</value>
+	</property>
+      </activation>
+
+      <properties>
+	<update.site.description>Integration Build</update.site.description>
+      </properties>
+
+    </profile>
+
+    <profile>
+      <id>development</id>
+
+      <!-- development site description activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>development</value>
+	</property>
+      </activation>
+
+      <properties>
+	<update.site.description>Development Milestone</update.site.description>
+      </properties>
+
+    </profile>
+
+    <profile>
+      <id>stable</id>
+
+      <!-- stable site description activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>stable</value>
+	</property>
+      </activation>
+
+      <properties>
+	<update.site.description>Stable Release</update.site.description>
+      </properties>
+
+    </profile>
+
+    <profile>
+      <id>hudson</id>
+
+      <!-- Production build activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_NUMBER</name>
+	</property>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+            <version>${tycho-version}</version>
+            <configuration>
+              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
+              <archiveSite>true</archiveSite>
+	      <update.site.description>Production Release</update.site.description>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+
+  </profiles>
+
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -146,122 +228,5 @@
     </plugins>
 
   </build>
-
-  <profiles>
-
-    <profile>
-      <id>integration</id>
-
-      <!-- integration build activation criteria. -->
-      <activation>
-	<property>
-	  <name>BUILD_TYPE</name>
-	    <value>integration</value>
-	</property>
-      </activation>
-
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.eclipse.tycho</groupId>
-            <artifactId>tycho-packaging-plugin</artifactId>
-            <version>${tycho-version}</version>
-
-            <configuration>
-              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
-              <archiveSite>true</archiveSite>
-	      <update.site.description>Integration Build</update.site.description>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-
-    </profile>
-
-    <profile>
-      <id>development</id>
-
-      <!-- development build activation criteria. -->
-      <activation>
-	<property>
-	  <name>BUILD_TYPE</name>
-	    <value>development</value>
-	</property>
-      </activation>
-
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.eclipse.tycho</groupId>
-            <artifactId>tycho-packaging-plugin</artifactId>
-            <version>${tycho-version}</version>
-
-            <configuration>
-              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
-              <archiveSite>true</archiveSite>
-	      <update.site.description>Development Milestone</update.site.description>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-
-    </profile>
-
-    <profile>
-      <id>stable</id>
-
-      <!-- stable build activation criteria. -->
-      <activation>
-	<property>
-	  <name>BUILD_TYPE</name>
-	    <value>stable</value>
-	</property>
-      </activation>
-
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.eclipse.tycho</groupId>
-            <artifactId>tycho-packaging-plugin</artifactId>
-            <version>${tycho-version}</version>
-
-            <configuration>
-              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
-              <archiveSite>true</archiveSite>
-	      <update.site.description>Stable Release</update.site.description>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-
-    </profile>
-
-    <profile>
-      <id>hudson</id>
-
-      <!-- Production build activation criteria. -->
-      <activation>
-	<property>
-	  <name>BUILD_NUMBER</name>
-	</property>
-      </activation>
-
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.eclipse.tycho</groupId>
-            <artifactId>tycho-packaging-plugin</artifactId>
-            <version>${tycho-version}</version>
-            <configuration>
-              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
-              <archiveSite>true</archiveSite>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-
-    </profile>
-
-  </profiles>
 
 </project>
