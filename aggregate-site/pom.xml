@@ -16,15 +16,15 @@
 
   <properties>
     <tycho-version>0.16.0</tycho-version>
+
     <!-- Specify a build alias and a relative composite site that's modifiable by a hudson production build. -->
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
     <COMPOSITE_SITE>file://${basedir}/../releases/</COMPOSITE_SITE>
+
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
-    <!-- <update.site.description>Nightly Build</update.site.description> -->
-    <update.site.description>Integration Build</update.site.description>
-    <!-- <update.site.description>Development Milestone</update.site.description> -->
-    <!-- <update.site.description>Stable Release</update.site.description> -->
+    <update.site.description>-</update.site.description>
     <update.site.version>4.0.0.${BUILD_ALIAS}</update.site.version>
+
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.2 (Juno) or &lt;a href="https://devstudio.jboss.com/download/6.x.html"&gt;JBoss Developer Studio 6&lt;/a&gt;</target.eclipse.version>
     <siteTemplateFolder>siteTemplateFolder</siteTemplateFolder>
@@ -103,40 +103,46 @@
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-packaging-plugin</artifactId>
         <version>${tycho-version}</version>
+
         <configuration>
           <format>'v'yyyyMMdd-HHmm'-LOCAL'</format>
           <archiveSite>true</archiveSite>
         </configuration>
       </plugin>
-			<plugin>
-				<groupId>org.jboss.tools.tycho-plugins</groupId>
-				<artifactId>repository-utils</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-				<executions>
-					<execution>
-						<id>generate-facade</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-repository-facade</goal>
-						</goals>
-						<configuration>
-							<associateSites>
-							      <!-- The repositories listed here match those in the target platform file. -->
-							      <associateSite>http://download.jboss.org/jbosstools/updates/requirements/juno/201209280900-R/</associateSite>
-							      <associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201211132058/</associateSite>
-							      <associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.2.v20121121-1634-CI/</associateSite>
-							</associateSites>
-							<siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
-							<symbols>
-								<update.site.name>${update.site.name}</update.site.name>
-								<update.site.description>${update.site.description}</update.site.description>
-								<update.site.version>${update.site.version}</update.site.version>
-								<target.eclipse.version>${target.eclipse.version}</target.eclipse.version>
-							</symbols>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+
+      <plugin>
+	<groupId>org.jboss.tools.tycho-plugins</groupId>
+	<artifactId>repository-utils</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<executions>
+	  <execution>
+	    <id>generate-facade</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>generate-repository-facade</goal>
+	    </goals>
+
+	    <configuration>
+	      <associateSites>
+		<!-- The repositories listed here match those in the target platform file. -->
+		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/juno/201209280900-R/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201211132058/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.2.v20121121-1634-CI/</associateSite>
+	      </associateSites>
+
+	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
+
+	      <symbols>
+		<update.site.name>${update.site.name}</update.site.name>
+		<update.site.description>${update.site.description}</update.site.description>
+		<update.site.version>${update.site.version}</update.site.version>
+		<target.eclipse.version>${target.eclipse.version}</target.eclipse.version>
+	      </symbols>
+	    </configuration>
+	  </execution>
+	</executions>
+      </plugin>
     </plugins>
 
   </build>
@@ -144,13 +150,100 @@
   <profiles>
 
     <profile>
+      <id>integration</id>
+
+      <!-- integration build activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>integration</value>
+	</property>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+            <version>${tycho-version}</version>
+
+            <configuration>
+              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
+              <archiveSite>true</archiveSite>
+	      <update.site.description>Integration Build</update.site.description>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+
+    <profile>
+      <id>development</id>
+
+      <!-- development build activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>development</value>
+	</property>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+            <version>${tycho-version}</version>
+
+            <configuration>
+              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
+              <archiveSite>true</archiveSite>
+	      <update.site.description>Development Milestone</update.site.description>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+
+    <profile>
+      <id>stable</id>
+
+      <!-- stable build activation criteria. -->
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>stable</value>
+	</property>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+            <version>${tycho-version}</version>
+
+            <configuration>
+              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
+              <archiveSite>true</archiveSite>
+	      <update.site.description>Stable Release</update.site.description>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+
+    <profile>
       <id>hudson</id>
 
       <!-- Production build activation criteria. -->
       <activation>
-          <property>
-            <name>BUILD_NUMBER</name>
-          </property>
+	<property>
+	  <name>BUILD_NUMBER</name>
+	</property>
       </activation>
 
       <build>
