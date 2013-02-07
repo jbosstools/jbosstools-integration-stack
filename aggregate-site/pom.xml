@@ -19,7 +19,7 @@
 
     <!-- Specify a build alias and a relative composite site that's modifiable by a hudson production build. -->
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
-    <COMPOSITE_SITE>file://${basedir}/../releases/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
