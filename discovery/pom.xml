@@ -5,29 +5,29 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.jboss.tools.integration-stack</groupId>
-  <artifactId>org.jboss.tools.integration-stack.discovery-site</artifactId>
+  <artifactId>org.jboss.tools.integration-stack.discovery</artifactId>
   <version>4.0.0-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    JBoss Tools Central Discovery Integration Stack Eclipse update site.
-
-    This Maven project will create a JBoss central discovery update site for the layered JBoss tools integration stack.
+    JBoss Tools Central Integration Stack discovery generation.
+    This Maven project will create JBoss central discovery update infrastructure for the layered JBoss tools integration stack.
   </description>
 
   <properties>
     <tycho-version>0.16.0</tycho-version>
-
-    <!-- Specify a build alias and a relative composite site that's modifiable by a hudson production build. -->
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
+    <BUILD_TYPE>integration</BUILD_TYPE>
+    <VERSION>4.0.0</VERSION>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <modules>
     <module>plugins</module>
     <module>features</module>
+    <module>generation</module>
   </modules>
 
   <repositories>

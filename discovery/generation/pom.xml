@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
-	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -9,13 +10,17 @@
     <version>4.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.jboss.tools.soa-tooling</groupId>
-  <artifactId>org.jboss.tools.soa-tooling.features</artifactId>
+  <groupId>org.jboss.tools.integration-stack</groupId>
+  <artifactId>org.jboss.tools.integration-stack.discovery.generation</artifactId>
   <version>4.0.0-SNAPSHOT</version>
+
+  <name>JBoss Tools Integration Stack Discovery Directory</name>
+
   <packaging>pom</packaging>
+
   <modules>
-    <module>org.jboss.tools.central.discovery.soa-tooling.feature</module>
+    <module>org.jboss.tools.central.discovery.soa-tooling</module>
+<!--    <module>com.jboss.jbds.central.discovery.soa-tooling</module> -->
   </modules>
 
 </project>
-	
