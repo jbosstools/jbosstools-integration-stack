@@ -76,6 +76,7 @@ $java.home = ${java.home}
     <basename property="central.discovery.jar" file="${central.discovery.path}" />
 
     <if><not><equals arg1="${central.discovery.jar}" arg2="" trim="true" /></not><then>
+	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_ID}" regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
 	<mkdir dir="${project.build.directory}/plugins"/>
 	<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" 
 		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}.${BUILD_ALIAS}-${BUILD_TS}-B${BUILD_NUMBER}"/>
