@@ -2,11 +2,11 @@
 
 ## Summary
 
-This maven/ tycho project specifies the process for building the JBoss Developer Studio Integration Platform
-(JBoss Tools Integration Stack).  The JBoss Tools Integration Stack is comprised of
-layered JBoss Developer Studio (JBDS) features/plugins.  The project provides the ability to 
-build both an equinox/p2 update site and a fully resolved aggregate site assembly.  The established Integration 
-Stack capture is consistent with its JBoss target dependencies but independently releasable. 
+This maven/ tycho project specifies the process for building the JBoss Tools Integration Stack project.  The JBoss Tools 
+Integration Stack is comprised of layered JBoss Developer Studio (JBDS) features/plugins.  The project provides the ability to 
+build a fully resolved equinox/p2 update repository.  The established Integration Stack capture is consistent with its JBoss 
+core and target third-party dependencies but is independently releasable.  The project also provides the ability to build the
+JBoss Central Discovery infrastructure.
 
 ## Components
 
@@ -14,6 +14,7 @@ Stack capture is consistent with its JBoss target dependencies but independently
 * [Eclipse BPMN2 Modeler](http://eclipse.org/projects/project.php?id=soa.bpmn2-modeler)
 * [Drools Business Logic integration Platform/ jBPM 5](http://www.jboss.org/drools/)
 * [ESB - Enterprise Service Bus](http://www.jboss.org/jbossesb/)
+* [Fuse IDE](http://fusesource.com/products/fuse-ide/)
 * [jBPM 3 Legacy Flow Editor](http://www.jboss.org/jbpm/)
 * [Modeshape Distributed, Hierarchical, Transactional, and Consistent Data Support](http://www.jboss.org/modeshape)
 * [SOA Runtime Detection](https://github.com/jbosstools/jbosstools-runtime-soa)
@@ -42,6 +43,12 @@ Second build the aggregate:
       $ mvn clean install
 
 Then look for the integration-stack-master*.zip file in your repository.
+
+You may also build the JBoss Central Discovery plugin and associated mylyn directory XML:
+
+      $ cd .../jbosstools-integration-stack/discovery
+      $ # example
+      $ mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334
 
 If you just want to check if things compile/ build you can run:
 

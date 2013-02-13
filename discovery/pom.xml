@@ -13,7 +13,8 @@
   <packaging>pom</packaging>
   <description>
     JBoss Tools Central Integration Stack discovery generation.
-    This Maven project will create JBoss central discovery update infrastructure for the layered JBoss tools integration stack.
+    This Maven project will create the JBoss central discovery update plugin and mylyn directory XML for the 
+    JBoss tools integration stack.
   </description>
 
   <properties>
@@ -26,7 +27,6 @@
 
   <modules>
     <module>plugins</module>
-    <module>features</module>
     <module>generation</module>
   </modules>
 
