@@ -54,9 +54,6 @@ Tools related to data services such as persistence and transformation.
   <category name="SOATools" />
 </feature>
 
-<!-- esb requires zest -->
-<feature url="features/org.eclipse.zest_0.0.0.jar" id="org.eclipse.zest" version="0.0.0"/>
-
 <!-- bpel -->
 <feature url="features/org.jboss.tools.bpel.feature_0.0.0.jar" id="org.jboss.tools.bpel.feature" version="0.0.0">
   <category name="SOATools" />
