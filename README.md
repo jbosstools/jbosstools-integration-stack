@@ -54,6 +54,73 @@ If you just want to check if things compile/ build you can run:
 
       $ mvn clean verify -DskipTest=true
 
+## Target Platform Definition Resolution within Maven/Tycho
+
+The JBoss Tools Integration Stack Target Platform project creates two target files:
+
+* An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies.
+
+e.g. target-platform-4.0.0-20130128.182300-1-base.target
+
+* An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies.
+
+e.g. target-platform-4.0.0-20130128.182300-1-full.target
+
+Here's an example of how to reference the derived aggregate base target file:
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+
+        <configuration>
+          <environments>
+            <environment>
+	      <os>macosx</os>
+	      <ws>cocoa</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>macosx</os>
+	      <ws>cocoa</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	    <environment>
+	      <os>win32</os>
+	      <ws>win32</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>win32</os>
+	      <ws>win32</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	    <environment>
+	      <os>linux</os>
+	      <ws>gtk</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>linux</os>
+	      <ws>gtk</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	  </environments>
+
+          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
+	       JBoss Tools Integration Stack (with community). -->
+          <target>
+            <artifact>
+              <groupId>org.jboss.tools.integration-stack</groupId>
+              <artifactId>target-platform</artifactId>
+              <version>4.0.0-SNAPSHOT</version>
+              <type>target</type>
+              <classifier>base</classifier>
+            </artifact>
+          </target>
+        </configuration>
+      </plugin>
+
 ## Contribute fixes and features
 
 The _JBoss Tools Integration Stack_ project is open source, and we welcome anyone that wants to participate and contribute.
