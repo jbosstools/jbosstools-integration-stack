@@ -60,13 +60,13 @@ The JBoss Tools Integration Stack Target Platform project creates two target fil
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies.
 
-aggregate-base.target
+e.g. target-platform-4.0.0-20130128.182300-1-base.target
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies.
 
-aggregate-full.target
+e.g. target-platform-4.0.0-20130128.182300-1-full.target
 
-Here's an example of how to reference the derived aggregate-full.target file:
+Here's an example of how to reference the derived aggregate base target file:
 
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
@@ -76,11 +76,36 @@ Here's an example of how to reference the derived aggregate-full.target file:
         <configuration>
           <environments>
             <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
-              <arch>x86</arch>
-            </environment>
-          </environments>
+	      <os>macosx</os>
+	      <ws>cocoa</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>macosx</os>
+	      <ws>cocoa</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	    <environment>
+	      <os>win32</os>
+	      <ws>win32</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>win32</os>
+	      <ws>win32</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	    <environment>
+	      <os>linux</os>
+	      <ws>gtk</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>linux</os>
+	      <ws>gtk</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	  </environments>
 
           <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
 	       JBoss Tools Integration Stack (with community). -->
@@ -90,7 +115,7 @@ Here's an example of how to reference the derived aggregate-full.target file:
               <artifactId>target-platform</artifactId>
               <version>4.0.0-SNAPSHOT</version>
               <type>target</type>
-              <classifier>full</classifier>
+              <classifier>base</classifier>
             </artifact>
           </target>
         </configuration>
