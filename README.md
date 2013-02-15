@@ -54,17 +54,17 @@ If you just want to check if things compile/ build you can run:
 
       $ mvn clean verify -DskipTest=true
 
-## Target Platform Definition resolution within Maven/Tycho
+## Target Platform Definition Resolution within Maven/Tycho
 
 The JBoss Tools Integration Stack Target Platform project creates two target files:
 
-    * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies.
+* An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies.
 
-      aggregate-base.target
+aggregate-base.target
 
-    * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies.
+* An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies.
 
-      aggregate-full.target
+aggregate-full.target
 
 Here's an example of how to reference the derived aggregate-full.target file:
 
