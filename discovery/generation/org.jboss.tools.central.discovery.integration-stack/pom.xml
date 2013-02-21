@@ -42,7 +42,7 @@
 		  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
 		  <property name="BUILD_TS" value="${BUILD_TS}" />
 		  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
-		  <property name="central.discovery.jar.id" value="org.jboss.tools.central.discovery.soa-tooling-${VERSION}-SNAPSHOT.jar" />
+		  <property name="central.discovery.jar.id" value="org.jboss.tools.central.discovery.integration-stack-${VERSION}-SNAPSHOT.jar" />
 		  <property name="output.url" value="http://download.jboss.org/jbosstools/discovery/${BUILD_TYPE}/integration-stack/${VERSION}/" />
 		</ant>
 	      </target>

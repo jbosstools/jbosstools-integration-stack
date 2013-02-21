@@ -10,7 +10,7 @@
     <property name="p2.timestamp" value="1353351761000"/>
   </properties>
 
-  <children size="9">
+  <children size="10">
 
     <!-- BPEL -->
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--bpel/all/repo/"/>
@@ -40,6 +40,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/teiiddesigner/8.0.0.Final/"/>
 
     <!-- FUSE -->
+    <child location="http://repo.fusesource.com/beta/3.0.x/7.2.11"/>
 
   </children>
 

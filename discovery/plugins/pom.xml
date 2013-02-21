@@ -9,14 +9,14 @@
     <version>4.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.jboss.tools.soa-tooling</groupId>
-  <artifactId>org.jboss.tools.soa-tooling.plugins</artifactId>
+  <groupId>org.jboss.tools.integration-stack</groupId>
+  <artifactId>org.jboss.tools.integration-stack.plugins</artifactId>
   <version>4.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>org.jboss.tools.central.discovery.soa-tooling</module>
-<!-- <module>com.jboss.jbds.central.discovery.soa-tooling</module> -->
+    <module>org.jboss.tools.central.discovery.integration-stack</module>
+<!-- <module>com.jboss.jbds.central.discovery.integration-stack</module> -->
   </modules>
 
 </project>

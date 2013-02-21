@@ -19,8 +19,8 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>org.jboss.tools.central.discovery.soa-tooling</module>
-<!--    <module>com.jboss.jbds.central.discovery.soa-tooling</module> -->
+    <module>org.jboss.tools.central.discovery.integration-stack</module>
+<!--    <module>com.jboss.jbds.central.discovery.integration-stack</module> -->
   </modules>
 
 </project>

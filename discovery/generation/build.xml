@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-   Create a mylyn-style directory XML file which identifies the Integration Stack central disovery plugin.
+   Create a mylyn-style directory XML file which identifies the Integration Stack central discovery plugin.
+   This build infrastructure is for testing purposes only.
 -->
 <project default="basic.build" name="discovery directory.xml builder">
   <!--
@@ -63,28 +64,33 @@ $java.home = ${java.home}
   <target name="generate.directory.xml">
     <echo level="debug">project.build.directory = ${project.build.directory}</echo>
 
-    <!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->
-    <path id="central.discovery.jar.id">
-      <fileset dir="${project.build.directory}/../../../plugins/org.jboss.tools.central.discovery.soa-tooling/target/">
+    <!-- get file name matching the integration stack discovery jar (i.e) org.jboss.tools.central.discovery.integration-stack_4.0.0.integration-v20130212-1334-B99.jar -->
+    <path id="central.discovery.is.jar.id">
+      <fileset dir="${project.build.directory}/../../../plugins/org.jboss.tools.central.discovery.integration-stack/target/">
 	<include name="*.central.discovery*.jar" />
 	<exclude name="*-sources.jar" />
       </fileset>
     </path>
 
-    <property name="central.discovery.path" refid="central.discovery.jar.id" />
-    <echo level="debug">central.discovery.path = ${central.discovery.path}</echo>
-    <basename property="central.discovery.jar" file="${central.discovery.path}" />
+    <property name="central.discovery.is.path" refid="central.discovery.is.jar.id" />
+    <echo level="debug">central.discovery.is.path = ${central.discovery.is.path}</echo>
+    <basename property="central.discovery.is.jar" file="${central.discovery.is.path}" />
 
-    <if><not><equals arg1="${central.discovery.jar}" arg2="" trim="true" /></not><then>
+    <if><not><equals arg1="${central.discovery.is.jar}" arg2="" trim="true" /></not><then>
 	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_ID}" regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
 	<mkdir dir="${project.build.directory}/plugins"/>
-	<propertyregex override="true" property="central.discovery.jar.renamed" defaultvalue="${central.discovery.jar}" input="${central.discovery.jar}" 
+
+	<!-- Rename and copy the integration stack disovery jar. -->
+	<propertyregex override="true" property="central.discovery.is.jar.renamed" defaultvalue="${central.discovery.is.jar}" input="${central.discovery.is.jar}" 
 		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}.${BUILD_ALIAS}-${BUILD_TS}-B${BUILD_NUMBER}"/>
-	<copy file="${central.discovery.path}" tofile="${project.build.directory}/plugins/${central.discovery.jar.renamed}"/>
-	<echo level="verbose">Generate ${project.build.directory}/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/plugins/${central.discovery.jar.renamed}</echo>
+	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.jar.renamed}"/>
+	<echo level="verbose">Generate ${project.build.directory}/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
+
+	<!-- Create the directory XML file. -->
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
 &lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
-&lt;entry url="${output.url}/${central.discovery.jar.renamed}" permitCategories="true"/>
+&lt;entry url="http://download.jboss.org/jbosstools/updates/JBossTools-4.0.0.Final.core/plugins/org.jboss.tools.central.discovery_1.1.1.Final-v20121221-1745-B97.jar" permitCategories="true"/>
+&lt;entry url="${output.url}/${central.discovery.is.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
         </echo>
     </then></if>
