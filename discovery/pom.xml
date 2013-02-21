@@ -30,23 +30,12 @@
     <module>generation</module>
   </modules>
 
+<!--
   <repositories>
 
     <repository>
-      <id>jbosstools-target-site</id>
-      <url>http://download.jboss.org/jbosstools/updates/juno/SR1a/REPO/</url>
-      <layout>p2</layout>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-
-    <repository>
-      <id>jbosstools-stable-juno</id>
-      <url>http://download.jboss.org/jbosstools/updates/stable/juno/</url>
+      <id>jbosstools-integration-stack-target-site</id>
+      <url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/integration-stack/target-platform/${version}/</url>
       <layout>p2</layout>
       <snapshots>
         <enabled>true</enabled>
@@ -57,7 +46,7 @@
     </repository>
 
   </repositories>
-
+-->
   <pluginRepositories>
 
     <!-- Needed by tycho-eclipse plugin support. -->
@@ -124,6 +113,19 @@
               <arch>x86</arch>
             </environment>
           </environments>
+
+	  <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
+               JBoss Tools Integration Stack. -->
+	  <target>
+            <artifact>
+              <groupId>org.jboss.tools.integration-stack</groupId>
+              <artifactId>target-platform</artifactId>
+              <version>4.0.0-SNAPSHOT</version>
+              <type>target</type>
+              <classifier>base</classifier>
+            </artifact>
+	  </target>
+
         </configuration>
 
       </plugin>
