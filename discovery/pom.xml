@@ -30,23 +30,6 @@
     <module>generation</module>
   </modules>
 
-<!--
-  <repositories>
-
-    <repository>
-      <id>jbosstools-integration-stack-target-site</id>
-      <url>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/integration-stack/target-platform/${version}/</url>
-      <layout>p2</layout>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-
-  </repositories>
--->
   <pluginRepositories>
 
     <!-- Needed by tycho-eclipse plugin support. -->
