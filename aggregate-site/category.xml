@@ -16,7 +16,7 @@ Business Processes and Rules Tooling for Eclipse - includes support for jBPM and
 
 <category-def name="SOATools" label="JBoss SOA Development">
   <description>
-Tools to help create SOA applications. Use these if you work with jBPM, Drools, JBoss ESB or JBoss WebServices.
+Tools to help create SOA applications. Use these if you work with jBPM, Drools, JBoss ESB and JBoss WebServices.
   </description>
 </category-def>
 
@@ -29,6 +29,12 @@ Tools for general application development.
 <category-def name="DataTools" label="JBoss Data Services">
   <description>
 Tools related to data services such as persistence and transformation.
+  </description>
+</category-def>
+
+<category-def name="IntegrationTools" label="JBoss Integration Application Tooling">
+  <description>
+Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel. Use these if you work with the Fuse IDE in association with jBPM, Drools and Guvnor.
   </description>
 </category-def>
 
@@ -63,6 +69,7 @@ Tools related to data services such as persistence and transformation.
 <feature url="features/org.jboss.tools.jbpm.convert.feature_0.0.0.jar" id="org.jboss.tools.jbpm.convert.feature" version="0.0.0">
   <category name="SOADataServices" />
   <category name="SOATools" />
+  <category name="IntegrationTools" />
 </feature>
 
 <feature url="features/org.jboss.tools.jbpm.common.feature_0.0.0.jar" id="org.jboss.tools.jbpm.common.feature" version="0.0.0">
@@ -89,12 +96,14 @@ Tools related to data services such as persistence and transformation.
   <category name="BusinessLogic" />
   <category name="SOATools" />
   <category name="GeneralTools" />
+  <category name="IntegrationTools" />
 </feature>
 
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="SOADataServices" />
   <category name="SOATools" />
+  <category name="IntegrationTools" />
 </feature>
 
 <!-- modeshape -->
@@ -106,6 +115,11 @@ Tools related to data services such as persistence and transformation.
 <feature url="features/org.jboss.tools.modeshape.jcr.feature_0.0.0.jar" id="org.jboss.tools.modeshape.jcr.feature" version="0.0.0">
   <category name="SOADataServices" />
   <category name="DataTools" />
+</feature>
+
+<!-- fuse ide -->
+<feature url="features/org.fusesource.ide.feature_7.2.11.jar" id="org.fusesource.ide.feature" version="0.0.0">
+  <category name="IntegrationTools" />
 </feature>
 
 <!-- runtime-soa -->

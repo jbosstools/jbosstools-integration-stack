@@ -65,7 +65,7 @@ $java.home = ${java.home}
 
     <!-- get filename matching org.jboss.tools.central.discovery_1.2.0.Alpha1-v20111013-0511-B1234.jar, then generate replacement directory.xml file -->
     <path id="central.discovery.jar.id">
-      <fileset dir="${project.build.directory}/../../../plugins/org.jboss.tools.central.discovery.soa-tooling/target/">
+      <fileset dir="${project.build.directory}/../../../plugins/org.jboss.tools.central.discovery.integration-stack/target/">
 	<include name="*.central.discovery*.jar" />
 	<exclude name="*-sources.jar" />
       </fileset>
