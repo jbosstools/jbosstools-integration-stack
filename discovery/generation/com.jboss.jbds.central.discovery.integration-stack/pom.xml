@@ -5,8 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>integration-stack.discovery</groupId>
-  <artifactId>org.jboss.tools.central.discovery.integration-stack.generation</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <artifactId>com.jboss.jbds.central.discovery.integration-stack.generation</artifactId>
+  <version>6.0.0-SNAPSHOT</version>
  
   <parent>
     <groupId>integration-stack.discovery</groupId>
@@ -14,14 +14,14 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBoss Tools Integration Stack Discovery Directory - Community</name>
+  <name>JBoss Developer Studio Integration Stack Discovery Directory - Production</name>
 
   <packaging>pom</packaging>
 
   <build>
     <plugins>
 
-      <!-- Enforce a community build form. -->
+      <!-- Enforce a production build form. -->
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
 	<artifactId>maven-enforcer-plugin</artifactId>
@@ -37,8 +37,8 @@
 	      <rules>
 		<requireProperty>
 		  <property>BUILD_FORM</property>
-		  <message>The BUILD_FORM property should be set to community.</message>
-		  <regex>community</regex>
+		  <message>The BUILD_FORM property should be set to production.</message>
+		  <regex>production</regex>
 		</requireProperty>
 	      </rules>
 	      <fail>true</fail>
@@ -71,8 +71,8 @@
 		  <property name="BUILD_TS" value="${BUILD_TS}" />
 		  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
 		  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
-		  <property name="central.discovery.is.jar.id" value="org.jboss.tools.central.discovery.integration-stack-${VERSION}-SNAPSHOT.jar" />
-		  <property name="output.url" value="http://download.jboss.org/jbosstools/discovery/${BUILD_TYPE}/integration-stack/${VERSION}/" />
+		  <property name="central.discovery.is.jar.id" value="com.jboss.jbds.central.discovery.integration-stack-${VERSION}-SNAPSHOT.jar" />
+		  <property name="output.url" value="https://devstudio.jboss.com/updates/${BUILD_TYPE}/central/integration-stack/${VERSION}/" />
 		</ant>
 	      </target>
 	    </configuration>

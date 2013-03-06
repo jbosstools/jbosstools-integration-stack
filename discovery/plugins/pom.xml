@@ -3,20 +3,56 @@
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>integration-stack.discovery</groupId>
+  <artifactId>integration-stack.discovery.plugins</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
   <parent>
-    <groupId>org.jboss.tools.integration-stack</groupId>
-    <artifactId>org.jboss.tools.integration-stack.discovery</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <groupId>integration-stack.discovery</groupId>
+    <artifactId>integration-stack.discovery.common</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.jboss.tools.integration-stack</groupId>
-  <artifactId>org.jboss.tools.integration-stack.plugins</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <name>JBoss Tools/ JBDS Integration Stack Discovery Plugins</name>
+
   <packaging>pom</packaging>
 
-  <modules>
-    <module>org.jboss.tools.central.discovery.integration-stack</module>
-<!-- <module>com.jboss.jbds.central.discovery.integration-stack</module> -->
-  </modules>
+  <profiles>
+
+    <!-- community build profile -->
+    <profile>
+      <id>community</id>
+
+      <activation>
+	<activeByDefault>true</activeByDefault>
+	<property>
+	  <name>BUILD_FORM</name>
+	    <value>community</value>
+	</property>
+      </activation>
+
+      <modules>
+	<module>org.jboss.tools.central.discovery.integration-stack</module>
+      </modules>
+
+    </profile>
+
+    <!-- production build profile -->
+    <profile>
+      <id>production</id>
+
+      <activation>
+	<property>
+	  <name>BUILD_FORM</name>
+	    <value>production</value>
+	</property>
+      </activation>
+ 
+      <modules>
+	<module>com.jboss.jbds.central.discovery.integration-stack</module> 
+      </modules>
+
+    </profile>
+  </profiles>
 
 </project>

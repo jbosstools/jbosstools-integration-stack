@@ -8,7 +8,7 @@
      To test output, run maven in this folder:
 
      $ mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_TS=v20130212-1234 \
-         -DBUILD_NUMBER=23 -DBUILD_ALIAS=integration -DTARGET_PLATFORM=juno
+         -DBUILD_NUMBER=23 -DBUILD_ALIAS=integration -DTARGET_PLATFORM=juno -DBUILD_FORM=production
     -->
 
   <condition property="output.dir" value="${WORKSPACE}/results" else="${basedir}">
@@ -63,11 +63,19 @@ $java.home = ${java.home}
     <echo level="debug">project.build.directory = ${project.build.directory}</echo>
 
     <!-- Extract the file name matching the integration stack discovery jar (i.e) org.jboss.tools.central.discovery.integration-stack_4.0.0.integration-v20130212-1334-B99.jar -->
+    <if><equals arg1="${BUILD_FORM}" arg2="community" trim="true" /><then>
+	<property name="discovery_jar_target_dir" value="${project.build.directory}/../../../plugins/org.jboss.tools.central.discovery.integration-stack/target/" />
+    </then></if>
+
+    <if><equals arg1="${BUILD_FORM}" arg2="production" trim="true" /><then>
+	<property name="discovery_jar_target_dir" value="${project.build.directory}/../../../plugins/com.jboss.jbds.central.discovery.integration-stack/target/" />
+    </then></if>
+
     <path id="central.discovery.is.jar.id">
-      <fileset dir="${project.build.directory}/../../../plugins/org.jboss.tools.central.discovery.integration-stack/target/">
-	<include name="*.central.discovery*.jar" />
-	<exclude name="*-sources.jar" />
-      </fileset>
+	  <fileset dir="${discovery_jar_target_dir}">
+	    <include name="*.central.discovery*.jar" />
+	    <exclude name="*-sources.jar" />
+	  </fileset>
     </path>
 
     <property name="central.discovery.is.path" refid="central.discovery.is.jar.id" />

@@ -4,26 +4,51 @@
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.jboss.tools.integration-stack</groupId>
-  <artifactId>org.jboss.tools.integration-stack.discovery</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <groupId>integration-stack.discovery</groupId>
+  <artifactId>integration-stack.discovery.common</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
 
-  <name>JBoss Tools Integration Stack Discovery</name>
+  <name>JBoss Tools/ JBDS Integration Stack Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    JBoss Tools Central Integration Stack discovery generation.
-    This Maven project will create the JBoss central discovery update plugin and mylyn directory XML for the 
-    JBoss tools integration stack.
+    JBoss Tools/ JBDS Central Integration Stack discovery generation.
+
+    This Maven/Tycho project will create the JBT/JBDS central discovery update plugin and mylyn directory XML for the 
+    community or production JBoss tools integration stack components.
+
+    i.e.
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=juno -DBUILD_FORM=production
   </description>
 
   <properties>
     <tycho-version>0.16.0</tycho-version>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
+    <BUILD_FORM>community</BUILD_FORM>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <VERSION>4.0.0</VERSION>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <profiles>
+
+    <!-- community build profile -->
+    <profile>
+      <id>community</id>
+      <properties>
+	<BUILD_FORM>community</BUILD_FORM>
+      </properties>
+    </profile>
+
+    <!-- production build profile -->
+    <profile>
+      <id>production</id>
+      <properties>
+	<BUILD_FORM>production</BUILD_FORM>
+      </properties>
+    </profile>
+
+  </profiles>
 
   <modules>
     <module>plugins</module>
