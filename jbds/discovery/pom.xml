@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>integration-stack.discovery</groupId>
+  <artifactId>integration-stack.discovery.common</artifactId>
+  <version>6.0.0-SNAPSHOT</version>
+
+  <parent>
+    <groupId>integration-stack.jbds</groupId>
+    <artifactId>integration-stack.jbds.common</artifactId>
+    <version>6.0.0-SNAPSHOT</version>
+  </parent>
+
+  <name>JBDS Integration Stack Discovery</name>
+
+  <packaging>pom</packaging>
+  <description>
+    JBDS Central Integration Stack discovery generation.
+
+    This Maven/Tycho project will create the JBDS central discovery update plugin and mylyn directory XML for the 
+    production JBoss tools integration stack components.
+
+    i.e.
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=juno
+  </description>
+
+  <modules>
+    <module>plugins</module>
+    <module>generation</module>
+  </modules>
+
+  <pluginRepositories>
+
+    <!-- Needed by tycho-eclipse plugin support. -->
+    <pluginRepository>
+      <id>tycho-snapshots</id>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>jboss-snapshots-repository</id>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Repository Group</name>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+
+  </pluginRepositories>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+
+	<configuration>
+          <environments>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86</arch>
+            </environment>
+          </environments>
+
+	  <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
+               JBoss Tools Integration Stack. -->
+	  <target>
+            <artifact>
+              <groupId>org.jboss.tools.integration-stack</groupId>
+              <artifactId>target-platform</artifactId>
+              <version>4.0.0-SNAPSHOT</version>
+              <type>target</type>
+              <classifier>base</classifier>
+            </artifact>
+	  </target>
+
+        </configuration>
+
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-packaging-plugin</artifactId>
+        <version>${tycho-version}</version>
+
+        <configuration>
+          <format>'v'yyyyMMdd-HHmm'-LOCAL'</format>
+          <archiveSite>true</archiveSite>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+  <distributionManagement>
+
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <layout>default</layout>
+    </repository>
+
+    <snapshotRepository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshot Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+
+  </distributionManagement>
+
+</project>
