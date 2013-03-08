@@ -2,23 +2,147 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>integration-stack.jbds</groupId>
-  <artifactId>integration-stack-jbds-aggregate</artifactId>
-  <version>6.0.0-SNAPSHOT</version>
+  <artifactId>site</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
 
   <parent>
-    <groupId>integration-stack.jbds</groupId>
-    <artifactId>integration-stack-jbds-master</artifactId>
-    <version>6.0.0-SNAPSHOT</version>
+    <groupId>org.jboss.tools.integration-stack</groupId>
+    <artifactId>parent</artifactId>
+    <version>4.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBoss Developer Studio Integration Stack - JBDSIS</name>
+  <name>JBoss Tools Integration Stack Master</name>
   <packaging>eclipse-repository</packaging>
-  <description>
-    Aggregated JBDS Integration Stack Eclipse update site.
 
-    This Maven project will create the physical aggregate and index facade for the layered release of the JBoss Developer Studio integration stack.
+  <description>
+    Aggregated JBoss Tools Integration Stack Eclipse update site.
+
+    This Maven project will create an update site for the layered release of the JBoss Tools integration stack.
   </description>
+
+  <properties>
+    <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
+
+    <update.site.name>JBoss Tools Integration Stack</update.site.name>
+    <update.site.description>-</update.site.description>
+    <update.site.version>4.0.0.${BUILD_ALIAS}</update.site.version>
+
+    <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
+    <target.eclipse.version>4.2 (Juno) or &lt;a href="https://devstudio.jboss.com/download/6.x.html"&gt;JBoss Developer Studio 6&lt;/a&gt;</target.eclipse.version>
+    <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
+  </properties>
+
+  <repositories>
+
+    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
+    <repository>
+      <id>integration-stack-site</id>
+      <url>${COMPOSITE_SITE}</url>
+      <layout>p2</layout>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+
+    <!-- Needed by tycho-eclipse plugin support. -->
+    <pluginRepository>
+      <id>tycho-snapshots</id>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>jboss-snapshots-repository</id>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+    </pluginRepository>
+
+  </pluginRepositories>
+
+  <profiles>
+
+    <!-- integration build type profile -->
+    <profile>
+      <id>integration</id>
+
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>integration</value>
+	</property>
+      </activation>
+
+      <properties>
+	<update.site.description>Integration Build</update.site.description>
+      </properties>
+
+    </profile>
+
+    <!-- development build type profile -->
+    <profile>
+      <id>development</id>
+
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>development</value>
+	</property>
+      </activation>
+
+      <properties>
+	<update.site.description>Development Milestone</update.site.description>
+      </properties>
+
+    </profile>
+
+    <!-- stable build type profile -->
+    <profile>
+      <id>stable</id>
+
+      <activation>
+	<property>
+	  <name>BUILD_TYPE</name>
+	    <value>stable</value>
+	</property>
+      </activation>
+
+      <properties>
+	<update.site.description>Stable Release</update.site.description>
+      </properties>
+
+    </profile>
+
+    <!-- Hudson production build activation criteria. -->
+    <profile>
+      <id>hudson</id>
+
+      <activation>
+	<property>
+	  <name>BUILD_NUMBER</name>
+	</property>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+            <version>${tycho-version}</version>
+            <configuration>
+              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
+              <archiveSite>true</archiveSite>
+	      <update.site.description>Production Release</update.site.description>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+
+    </profile>
+  </profiles>
 
   <build>
     <sourceDirectory>src</sourceDirectory>

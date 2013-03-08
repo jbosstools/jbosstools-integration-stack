@@ -63,7 +63,7 @@ $java.home = ${java.home}
     <echo level="debug">project.build.directory = ${project.build.directory}</echo>
 
     <!-- Extract the file name matching the integration stack discovery jar (i.e) org.jboss.tools.central.discovery.integration-stack_4.0.0.integration-v20130212-1334-B99.jar -->
-    <property name="discovery_jar_target_dir" value="${project.build.directory}/../../plugins/target/" />
+    <property name="discovery_jar_target_dir" value="${project.build.directory}/../../plugin/target/" />
 
     <path id="central.discovery.is.jar.id">
 	  <fileset dir="${discovery_jar_target_dir}">

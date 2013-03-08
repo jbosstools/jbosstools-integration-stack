@@ -4,13 +4,12 @@
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>integration-stack.discovery</groupId>
-  <artifactId>integration-stack.discovery.common</artifactId>
+  <artifactId>discovery</artifactId>
   <version>6.0.0-SNAPSHOT</version>
 
   <parent>
-    <groupId>integration-stack.jbds</groupId>
-    <artifactId>integration-stack.jbds.common</artifactId>
+    <groupId>com.jboss.jbds.integration-stack</groupId>
+    <artifactId>parent</artifactId>
     <version>6.0.0-SNAPSHOT</version>
   </parent>
 
@@ -28,7 +27,7 @@
   </description>
 
   <modules>
-    <module>plugins</module>
+    <module>plugin</module>
     <module>generation</module>
   </modules>
 

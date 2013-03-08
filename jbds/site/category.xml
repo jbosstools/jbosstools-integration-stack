@@ -2,31 +2,31 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse Updates</description>
 
-<category-def name="BusinessLogic" label="Red Hat JBoss Business Process and Rules Development">
+<category-def name="BusinessLogic" label="Business Process and Rules Development">
   <description>
-Tools related to business processes and rules development - includes support for the BPEL Editor, jBPM, Modeshape, Drools and Guvnor
+Tools related to business processes and rules development - includes support for BPEL Editor, jBPM, Modeshape, Drools and Guvnor
   </description>
 </category-def>
 
-<category-def name="DataServices" label="Red Hat JBoss Data Services Development">
+<category-def name="DataServices" label="Data Services Development">
   <description>
 Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer.
   </description>
 </category-def>
 
-<category-def name="FuseDev" label="Red Hat JBoss Fuse Development">
+<category-def name="FuseDev" label="Fuse Development">
   <description>
 Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM 5, Drools and Guvnor.
   </description>
 </category-def>
 
-<category-def name="SOADev" label="Red Hat JBoss SOA Development">
+<category-def name="SOADev" label="SOA Development">
   <description>
 Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM 5, Modeshape, Savara and Switchyard.
   </description>
 </category-def>
 
-<category-def name="SOADev5" label="Red Hat JBoss SOA 5.x Development">
+<category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
 SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools, ESB, jBPM 3, and Modeshape.
   </description>

@@ -17,9 +17,9 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss Business Process and Rules Development"
+       name="Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL Editor, jBPM, Drools and Guvnor"
-       id="org.jboss.tools.bpr">
+       id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
@@ -45,9 +45,9 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss Data Services Development"
+       name="Data Services Development"
        description="Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
-       id="org.jboss.tools.ds">
+       id="jboss.integration-stack.bundle.ds">
       <iu id="org.jboss.tools.modeshape.rest.feature"/>
       <iu id="org.jboss.tools.modeshape.jcr.feature"/>
       <iu id="org.teiid.datatools.connectivity.feature"/>
@@ -68,9 +68,9 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss Fuse Development"
+       name="Fuse Development"
        description="Tools related to integrating software components with the Fuse IDE that work with Apache ServiceMix, ActiveMQ and Camel - support for jBPM 5, Drools and Guvnor."
-       id="org.jboss.tools.fuse">
+       id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
@@ -93,9 +93,9 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss SOA Development"
+       name="SOA Development"
        description="Tools related to the development of Service Oriented Architecture applications - includes support for ESB, Savara and Switchyard."
-       id="org.jboss.tools.soa">
+       id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.esb.feature"/>
       <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
       <iu id="org.savara.tools.feature"/>

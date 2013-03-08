@@ -3,17 +3,16 @@
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>integration-stack.discovery</groupId>
-  <artifactId>org.jboss.tools.central.discovery.integration-stack</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <artifactId>com.jboss.jbds.central.discovery.integration-stack</artifactId>
+  <version>6.0.0-SNAPSHOT</version>
 
   <parent>
-    <groupId>integration-stack.discovery</groupId>
-    <artifactId>integration-stack.discovery.common</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <groupId>com.jboss.jbds.integration-stack</groupId>
+    <artifactId>discovery</artifactId>
+    <version>6.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBoss Tools Integration Stack Discovery Plugins</name>
+  <name>JBDS Integration Stack Discovery Plugins</name>
 
   <packaging>eclipse-plugin</packaging>
 
