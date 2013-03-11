@@ -37,9 +37,9 @@ First build the target platform:
       $ cd .../jbosstools-integration-stack/target-platform
       $ mvn clean install
 
-Second build either the community (jbt) or production (jbds) aggregate and Mylyn discovery:
+Second build either the community (jbosstools) or production (devstudio) aggregate and Mylyn discovery:
 
-      $ cd .../jbosstools-integration-stack/jbt
+      $ cd .../jbosstools-integration-stack/jbosstools
       $ mvn clean install
 
 Then look for the integration-stack-*.zip file in your repository.  You can use that zip file directly as your install 

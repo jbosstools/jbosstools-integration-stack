@@ -14,7 +14,7 @@
 
   <name>JBoss Tools Integration Stack Discovery Plugins</name>
 
-  <packaging>eclipse-plugin</packaging>
+  <packaging>eclipse-plugin</packaging> 
 
   <build>
     <resources>

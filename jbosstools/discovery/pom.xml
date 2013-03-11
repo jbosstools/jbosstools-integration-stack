@@ -16,6 +16,7 @@
   <name>JBoss Tools Integration Stack Discovery</name>
 
   <packaging>pom</packaging>
+
   <description>
     JBoss Tools Central Integration Stack discovery generation.
 
@@ -27,7 +28,7 @@
   </description>
 
   <modules>
-    <module>plugin</module>
+    <module>org.jboss.tools.central.discovery.integration-stack</module>
     <module>generation</module>
   </modules>
 

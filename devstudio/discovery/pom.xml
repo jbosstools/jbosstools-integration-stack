@@ -27,7 +27,7 @@
   </description>
 
   <modules>
-    <module>plugin</module>
+    <module>com.jboss.jbds.central.discovery.integration-stack</module>
     <module>generation</module>
   </modules>
 

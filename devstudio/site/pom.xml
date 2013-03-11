@@ -3,21 +3,21 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>site</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>6.0.0-SNAPSHOT</version>
 
   <parent>
-    <groupId>org.jboss.tools.integration-stack</groupId>
+    <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>6.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBoss Tools Integration Stack Master</name>
+  <name>JBDS Integration Stack Aggregate</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Tools Integration Stack Eclipse update site.
+    Aggregated JBoss Tools Developer Studio Integration Stack Eclipse update site.
 
-    This Maven project will create an update site for the layered release of the JBoss Tools integration stack.
+    This Maven project will create an update site for the layered release of the JBoss Developer Studio tools integration stack.
   </description>
 
   <properties>

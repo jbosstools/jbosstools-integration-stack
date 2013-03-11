@@ -34,7 +34,6 @@ Tools related to the development of Service Oriented Architecture applications -
 <!-- drools -->
 <feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
 </feature>
 
 <!-- esb -->
@@ -50,13 +49,11 @@ Tools related to the development of Service Oriented Architecture applications -
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
 </feature>
 
 <!-- jbpm -->
 <feature url="features/org.jboss.tools.jbpm.convert.feature_0.0.0.jar" id="org.jboss.tools.jbpm.convert.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
 </feature>
 
 <feature url="features/org.jboss.tools.jbpm.common.feature_0.0.0.jar" id="org.jboss.tools.jbpm.common.feature" version="0.0.0">
