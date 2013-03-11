@@ -2,11 +2,11 @@
 
 ## Summary
 
-This maven/ tycho project specifies the process for building the JBoss Tools Integration Stack project.  The JBoss Tools 
+This Maven/ Tycho project specifies the process for building the JBoss Tools Integration Stack project.  The JBoss Tools 
 Integration Stack is comprised of layered JBoss Developer Studio (JBDS) features/plugins.  The project provides the ability to 
-build a fully resolved equinox/p2 update repository.  The established Integration Stack capture is consistent with its JBoss 
-core and target third-party dependencies but is independently releasable.  The project also provides the ability to build the
-JBoss Central Discovery infrastructure.
+build a fully resolved Equinox/p2 update repository as well as the ability to build the Mylyn JBoss Central Discovery update mechanism.  
+The established Integration Stack capture is consistent with its JBoss core and target third-party dependencies but is independently 
+releasable.
 
 ## Components
 
@@ -24,7 +24,7 @@ JBoss Central Discovery infrastructure.
 
 ## Building the JBoss Tools Integration Stack Project
 
-To build the _JBoss Tools Integration Stack_ project requires specific versions of Java and Maven. 
+To build the _JBoss Tools Integration Stack_ project requires specific versions of Java, Maven and Tycho. 
 The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
 document will guide you through that setup.
 
@@ -37,18 +37,13 @@ First build the target platform:
       $ cd .../jbosstools-integration-stack/target-platform
       $ mvn clean install
 
-Second build the aggregate:
+Second build either the community (jbosstools) or production (devstudio) aggregate and Mylyn discovery:
 
-      $ cd .../jbosstools-integration-stack/aggregate-site
+      $ cd .../jbosstools-integration-stack/jbosstools
       $ mvn clean install
 
-Then look for the integration-stack-master*.zip file in your repository.
-
-You may also build the JBoss Central Discovery plugin and associated mylyn directory XML:
-
-      $ cd .../jbosstools-integration-stack/discovery
-      $ # example
-      $ mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334
+Then look for the integration-stack-*.zip file in your repository.  You can use that zip file directly as your install 
+site in the Eclipse/JBDS software install dialog (Help->Install New Software...).
 
 If you just want to check if things compile/ build you can run:
 
@@ -124,6 +119,28 @@ Here's an example of how to reference the derived aggregate base target file:
            </target>
         </configuration>
       </plugin>
+
+Don't forget to identify the repository where the target file can be found:
+
+  <distributionManagement>
+
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <layout>default</layout>
+    </repository>
+
+    <snapshotRepository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshot Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+
+  </distributionManagement>
 
 ## Contribute fixes and features
 

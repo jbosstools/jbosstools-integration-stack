@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+
+    <connectorCategory
+       description="JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
+       id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       name="JBoss Tools Integration Stack"
+       relevance="90">
+    </connectorCategory>
+      
+    <!-- JBoss Busines Process and Rules Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="Business Process and Rules Development"
+       description="Tools related to business processes and rules development - includes support for BPEL Editor, jBPM, Drools and Guvnor"
+       id="jboss.integration-stack.bundle.bpr">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.guvnor.tools.feature"/>
+      <iu id="org.jboss.tools.jbpm.convert.feature"/>
+      <iu id="org.jboss.tools.jbpm.common.feature"/>
+      <iu id="org.jboss.tools.jbpm3.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.jbpm.eclipse.task.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Data Services Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="Data Services Development"
+       description="Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
+       id="jboss.integration-stack.bundle.ds">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Fuse Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="Fuse Development"
+       description="Tools related to integrating software components with the Fuse IDE that work with Apache ServiceMix, ActiveMQ and Camel."
+       id="jboss.integration-stack.bundle.fuse">
+      <iu id="org.fusesource.ide.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://fusesource.com/products/fuse-ide/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss SOA Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="SOA Development"
+       description="Tools related to the development of Service Oriented Architecture applications - includes support for ESB, Savara and Switchyard."
+       id="jboss.integration-stack.bundle.soa">
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <iu id="org.savara.tools.feature"/>
+      <iu id="org.switchyard.tools.feature"/>
+      <iu id="org.switchyard.tools.editor.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor>
+
+  </extension>
+</plugin>

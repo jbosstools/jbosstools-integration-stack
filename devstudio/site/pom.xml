@@ -2,23 +2,25 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.jboss.tools.integration-stack</groupId>
-  <artifactId>integration-stack-master</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <artifactId>site</artifactId>
+  <version>6.0.0-SNAPSHOT</version>
 
-  <name>JBoss Tools Integration Stack Master</name>
+  <parent>
+    <groupId>com.jboss.jbds.integration-stack</groupId>
+    <artifactId>parent</artifactId>
+    <version>6.0.0-SNAPSHOT</version>
+  </parent>
+
+  <name>JBDS Integration Stack Aggregate</name>
   <packaging>eclipse-repository</packaging>
+
   <description>
-    Aggregated JBoss Tools Integration Stack Eclipse update site.
+    Aggregated JBoss Tools Developer Studio Integration Stack Eclipse update site.
 
     This Maven project will create an update site for the layered release of the JBoss Developer Studio tools integration stack.
   </description>
 
   <properties>
-    <tycho-version>0.16.0</tycho-version>
-
-    <!-- Specify a build alias and a relative composite site that's modifiable by a hudson production build. -->
-    <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
     <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
@@ -27,7 +29,7 @@
 
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.2 (Juno) or &lt;a href="https://devstudio.jboss.com/download/6.x.html"&gt;JBoss Developer Studio 6&lt;/a&gt;</target.eclipse.version>
-    <siteTemplateFolder>siteTemplateFolder</siteTemplateFolder>
+    <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
   </properties>
 
   <repositories>
@@ -63,10 +65,10 @@
 
   <profiles>
 
+    <!-- integration build type profile -->
     <profile>
       <id>integration</id>
 
-      <!-- integration site description activation criteria. -->
       <activation>
 	<property>
 	  <name>BUILD_TYPE</name>
@@ -80,10 +82,10 @@
 
     </profile>
 
+    <!-- development build type profile -->
     <profile>
       <id>development</id>
 
-      <!-- development site description activation criteria. -->
       <activation>
 	<property>
 	  <name>BUILD_TYPE</name>
@@ -97,10 +99,10 @@
 
     </profile>
 
+    <!-- stable build type profile -->
     <profile>
       <id>stable</id>
 
-      <!-- stable site description activation criteria. -->
       <activation>
 	<property>
 	  <name>BUILD_TYPE</name>
@@ -114,10 +116,10 @@
 
     </profile>
 
+    <!-- Hudson production build activation criteria. -->
     <profile>
       <id>hudson</id>
 
-      <!-- Production build activation criteria. -->
       <activation>
 	<property>
 	  <name>BUILD_NUMBER</name>
@@ -140,12 +142,12 @@
       </build>
 
     </profile>
-
   </profiles>
 
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
+
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-maven-plugin</artifactId>
