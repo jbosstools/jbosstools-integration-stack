@@ -14,11 +14,13 @@ Tools related to data services such as persistence and transformation - includes
   </description>
 </category-def>
 
+<!--
 <category-def name="FuseDev" label="Fuse Development">
   <description>
 Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM 5, Drools and Guvnor.
   </description>
 </category-def>
+-->
 
 <category-def name="SOADev" label="SOA Development">
   <description>
@@ -42,7 +44,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 <!-- drools -->
 <feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
+<!--  <category name="FuseDev" /> -->
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
@@ -52,15 +54,16 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
   <category name="SOADev5" />
 </feature>
 
-<!-- fuse ide -->
+<!-- fuse ide
 <feature url="features/org.fusesource.ide.feature_7.2.11.jar" id="org.fusesource.ide.feature" version="0.0.0">
   <category name="FuseDev" />
 </feature>
+-->
 
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
+<!--  <category name="FuseDev" /> -->
   <category name="SOADev" />
 </feature>
 
@@ -79,13 +82,13 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 
 <feature url="features/org.jbpm.eclipse.feature_0.0.0.jar" id="org.jbpm.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
+<!--  <category name="FuseDev" /> -->
   <category name="SOADev" />
 </feature>
 
 <feature url="features/org.jbpm.eclipse.task.feature_0.0.0.jar" id="org.jbpm.eclipse.task.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
+<!--  <category name="FuseDev" /> -->
   <category name="SOADev" />
 </feature>
 
@@ -103,10 +106,10 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
   <category name="SOADev" />
 </feature>
 
-<!-- runtime-soa -->
+<!-- runtime detectors -->
 <feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
+<!--  <category name="FuseDev" /> -->
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
@@ -117,7 +120,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 
 <feature url="features/org.jboss.tools.runtime.jbpm.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.jbpm.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="FuseDev" />
+<!--  <category name="FuseDev" /> -->
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
