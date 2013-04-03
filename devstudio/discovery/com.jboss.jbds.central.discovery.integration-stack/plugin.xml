@@ -119,7 +119,8 @@
       <iu id="org.jbpm.eclipse.task.feature"/>
       <iu id="org.savara.tools.feature"/>
       <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.editor.feature"/>
+      <iu id="org.switchyard.tools.bpel.feature"/>
+      <iu id="org.switchyard.tools.bpmn2.feature"/>
       <iu id="org.jboss.tools.modeshape.rest.feature"/>
       <iu id="org.jboss.tools.modeshape.jcr.feature"/>
       <icon

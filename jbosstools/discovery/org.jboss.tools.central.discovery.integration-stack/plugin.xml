@@ -94,7 +94,8 @@
       <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
       <iu id="org.savara.tools.feature"/>
       <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.editor.feature"/>
+      <iu id="org.switchyard.tools.bpel.feature"/>
+      <iu id="org.switchyard.tools.bpmn2.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>

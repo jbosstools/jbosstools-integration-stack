@@ -48,8 +48,9 @@
 
     <!-- BPMN2 - Modeler -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.1.0.201211132058"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201211132058/"/>
+      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.2.4.201304092217"/>
+      <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="0.2.4.201304092217"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201304092217/"/>
     </location>
 
     <!-- BPEL -->
