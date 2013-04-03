@@ -14,11 +14,13 @@ Tools related to data services such as persistence and transformation - includes
   </description>
 </category-def>
 
+<!--
 <category-def name="FuseDev" label="Fuse Development">
   <description>
 Tools related to integrating software components with the Fuse IDE that work with Apache ServiceMix, ActiveMQ and Camel - support for jBPM 5, Drools and Guvnor.
   </description>
 </category-def>
+-->
 
 <category-def name="SOADev" label="SOA Development">
   <description>
@@ -41,10 +43,11 @@ Tools related to the development of Service Oriented Architecture applications -
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide -->
+<!-- fuse ide 
 <feature url="features/org.fusesource.ide.feature_7.2.11.jar" id="org.fusesource.ide.feature" version="0.0.0">
   <category name="FuseDev" />
 </feature>
+-->
 
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
@@ -81,7 +84,7 @@ Tools related to the development of Service Oriented Architecture applications -
   <category name="DataServices" />
 </feature>
 
-<!-- runtime-soa -->
+<!-- runtime detectors -->
 <feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
 </feature>
