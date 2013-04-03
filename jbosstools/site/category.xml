@@ -106,8 +106,10 @@ Tools related to the development of Service Oriented Architecture applications -
 <feature url="features/org.switchyard.tools.feature_0.0.0.jar" id="org.switchyard.tools.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
-<feature url="features/org.switchyard.tools.editor.feature_0.0.0.jar" id="org.switchyard.tools.editor.feature" version="0.0.0">
+<feature url="features/org.switchyard.tools.bpel.feature_0.0.0.jar" id="org.switchyard.tools.bpel.feature" version="0.0.0">
+  <category name="SOADev" />
+</feature>
+<feature url="features/org.switchyard.tools.bpmn2.feature_0.0.0.jar" id="org.switchyard.tools.bpmn2.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
 
