@@ -16,7 +16,7 @@
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--bpel/all/repo/"/>
 	
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbosstools/builds/staging/drools-eclipse_6.0.0_master/all/repo/"/>
+    <child location="http://download.jboss.org/drools/release/6.0.0.201304021236/org.drools.updatesite/"/>
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--esb/all/repo/"/>
