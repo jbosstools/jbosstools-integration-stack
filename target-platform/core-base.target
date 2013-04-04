@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<!-- 
+   JBoss Tools core as a dependency.
+-->
+<target name="integration-stack-base-target" sequenceNumber="7">
+  <locations>
+
+    <!-- JBoss Tools Core Base Dependencies -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.cdi.deltaspike.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.cdi.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.cdi.seam.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.central.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.central.themes.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.core.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.ui.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.common.verification.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.forge.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.jmx.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.jsf.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.jst.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.cdi.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.gwt.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.hibernate.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.jaxrs.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.jdt.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.jpa.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.jsf.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.portlet.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.profiles.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.project.examples.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.seam.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.maven.sourcelookup.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.openshift.egit.integration.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.openshift.express.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.portlet.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.richfaces.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.runtime.seam.detector.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.seam.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.struts.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.usage.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.vpe.browsersim.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.vpe.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.ws.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.ws.jaxrs.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.xulrunner.feature.feature.group" version="0.0.0"/>
+      <unit id="org.hibernate.eclipse.feature.feature.group" version="0.0.0"/>
+      <unit id="org.mozilla.xulrunner.feature.feature.group" version="0.0.0"/>
+
+      <repository location="http://download.jboss.org/jbosstools/updates/stable/juno/"/>
+
+    </location>
+
+  </locations>
+</target>

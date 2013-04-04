@@ -9,16 +9,18 @@
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
-    JBoss tools core component target dependencies merged with the integration stack component target dependencies
-    forming an 'aggregate-full.target' combined target.
+    JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies +
+    JBoss Tools unified core target dependencies forming an 'aggregate-base.target' combined target.
+
+    Then add any leftover community dependencies to the aggregate forming an aggregate-full.target.
   </description>
 
   <packaging>pom</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.16.0</tychoVersion>
-    <tychoExtrasVersion>0.16.0</tychoExtrasVersion>
+    <tychoVersion>0.17.0</tychoVersion>
+    <tychoExtrasVersion>0.17.0</tychoExtrasVersion>
     <JBossToolsCoreVersion>4.2.1.a-SNAPSHOT</JBossToolsCoreVersion>
   </properties>
 
@@ -75,6 +77,7 @@
   </reporting>
 
   <build>
+
     <plugins>
 
       <plugin>
@@ -91,7 +94,13 @@
 
 	<executions>
 
-	  <!-- Merge the unified JBoss core target dependencies and the JBoss integration stack base target dependencies. -->
+	  <!-- Merge:
+
+	       1. the integration-stack spcific target dependencies
+	       2. the JBoss Tools core target dependencies
+	       3. the JBoss Tools unified core target dependencies
+
+	       to generate an aggregate-base target dependencies target file. -->
 	  <execution>
 
 	    <id>merge-base</id>
@@ -111,7 +120,8 @@
 	      </sourceTargetArtifacts>
 
 	      <sourceTargetFiles>
-		<item>base.target</item>
+		<item>${basedir}/integration-stack-base.target</item>
+		<item>${basedir}/core-base.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-base.target</outputFile>
@@ -119,7 +129,7 @@
 	    </configuration>
 	  </execution>
 
-	  <!-- Merge the aggregate base (unified JBoss core + IS base) target dependencies and the JBoss integration stack 
+	  <!-- Merge the aggregate base target dependencies and the JBoss integration stack 
 	       community target dependencies. -->
 	  <execution>
 
@@ -133,13 +143,26 @@
 
 	      <sourceTargetFiles>
 		<item>${project.build.directory}/aggregate-base.target</item>
-		<item>community.target</item>
+		<item>${basedir}/community.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-full.target</outputFile>
 
 	    </configuration>
 	  </execution>
+
+	  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
+	       build as an extra repo. -->
+	  <execution>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>mirror-target-to-repo</goal>
+	    </goals>
+	    <configuration>
+	      <sourceTargetFile>integration-stack-base.target</sourceTargetFile>
+	    </configuration>
+	  </execution>
+
 	</executions>
       </plugin>
 
@@ -170,7 +193,7 @@
 	</executions>
       </plugin>
 
-      <!-- Use codehaus to package the aggegated target dependencies (base and community). -->
+      <!-- Use the codehaus mojo to package the aggegated target dependencies (base and community). -->
       <plugin>
 	<groupId>org.codehaus.mojo</groupId>
 	<artifactId>build-helper-maven-plugin</artifactId>
@@ -224,6 +247,24 @@
 
 	    </configuration>
 	  </execution>
+
+	  <execution>
+	    <id>attach-artifacts-target-platform-base</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>attach-artifact</goal>
+	    </goals>
+	    <configuration>
+	      <artifacts>
+		<artifact>
+		  <file>integration-stack-base.target</file>
+		  <type>target</type>
+		  <classifier>integration-stack-base</classifier>
+		</artifact>
+	      </artifacts>
+	    </configuration>
+	  </execution>
+
 	</executions>
       </plugin>
 
