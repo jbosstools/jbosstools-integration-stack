@@ -234,11 +234,9 @@
 
 	    <configuration>
 	      <associateSites>
-		<!-- The repositories listed here match those in the target platform file. -->
-		<associateSite>http://download.jboss.org/jbosstools/updates/stable/juno/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/juno/201209280900-R/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201211132058/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.2.v20121121-1634-CI/</associateSite>
+		<associateSite>https://devstudio.jboss.com/updates/6.0.0/6.0.0.Alpha1.jbtis-target-platform/</associateSite>
+		<associateSite>https://devstudio.jboss.com/updates/6.0/</associateSite>
+		<associateSite>https://devstudio.jboss.com/updates/6.0/extras/</associateSite>
 	      </associateSites>
 
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
