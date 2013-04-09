@@ -37,7 +37,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/0.7.0.Final/"/>
 
     <!-- TEIID -->        
-    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/teiiddesigner/8.0.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/teiiddesigner/8.1.0.Alpha2/"/>
 
   </children>
 
