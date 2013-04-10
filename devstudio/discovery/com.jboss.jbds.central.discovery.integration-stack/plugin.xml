@@ -172,7 +172,7 @@
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
        name="BPEL Editor Examples"
-       description="Examples related to the BPEL editor"
+       description="Examples related to the BPEL editor."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="com.jboss.jbds.bpel.feature"/>
       <iu id="org.jboss.tools.bpel.feature"/>
