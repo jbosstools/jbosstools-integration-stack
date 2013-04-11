@@ -8,11 +8,16 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
+      <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
+      <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
+      <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
     </connectorCategory>
       
     <!-- JBoss Busines Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -41,6 +46,7 @@
     <!-- JBoss Data Services Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -61,9 +67,10 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- JBoss Fuse Development -->
+    <!-- JBoss Fuse Development - ->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -79,10 +86,11 @@
 	 url="http://fusesource.com/products/fuse-ide/">
       </overview>
     </connectorDescriptor>
-
+    -->
     <!-- JBoss SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -101,6 +109,231 @@
       </icon>
       <overview
 	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBT single component sites -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss BPEL Editor"
+       description="BPEL Editor, examples and cheatsheets"
+       id="com.jboss.jbds.bpel.feature">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <icon
+	 image32="images/jbds_bpel_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss Savara Editor"
+       description="JBoss Savara Editor"
+       id="org.savara.tools.feature">
+      <iu id="org.savara.tools.feature"/>
+      <icon
+	 image32="images/jbds_savara_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss Drools"
+       description="JBoss Drools Core, Task Management, Runtime Detection"
+       id="org.drools.eclipse.feature">
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <icon
+	 image32="images/jbds_drools_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss Guvnor"
+       description="JBoss Guvnor synch"
+       id="org.guvnor.tools.feature">
+      <iu id="org.guvnor.tools.feature"/>
+      <icon
+	 image32="images/jbds_guvnor_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss jBPM 6 Tools"
+       description="JBoss Tools for jBPM 6, Runtime Detection"
+       id="org.jboss.jbpm.eclipse.feature">
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.jbpm.eclipse.task.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <icon
+	 image32="images/jbds_jbpm_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss jBPM 3 Tools"
+       description="JBoss Tools for jBPM 3, BPMN Converter, Runtime Detection"
+       id="org.jboss.tools.jbpm.common.feature">
+      <iu id="org.jboss.tools.jbpm.common.feature"/>
+      <iu id="org.jboss.tools.jbpm.convert.feature"/>
+      <iu id="org.jboss.tools.jbpm3.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.gd.jpdl.feature"/> 
+      <icon
+	 image32="images/jbds_jbpm_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss ESB Tools"
+       description="JBoss ESB Tools, Runtime Detection"
+       id="org.jboss.tools.esb.feature">
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <icon
+	 image32="images/jbds_esb_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss SwitchYard Tools"
+       description="JBoss SwitchYard Tools"
+       id="org.switchyard.tools.feature">
+      <iu id="org.switchyard.tools.feature"/>
+      <iu id="org.switchyard.tools.bpel.feature"/>
+      <iu id="org.switchyard.tools.bpmn2.feature"/>
+      <icon
+	 image32="images/jbds_switchyard_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss ModeShape Tooling"
+       description="Resource (un)publishing to ModeShape repositories"
+       id="org.jboss.tools.modeshape.rest.feature">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <icon
+	 image32="images/jbds_modeshape_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss Teiid Designer"
+       description="Create metadata models + VDBs"
+       id="org.teiid.designer.feature">
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <icon
+	 image32="images/jbds_tdesigner_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.r"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="%jboss.is.update.url"
+       name="JBoss Runtime Detection for Drools, ESB, jBPM"
+       description="Runtime Detection for Drools, ESB, jBPM"
+       id="org.jboss.tools.runtime.drools.detector.feature">
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.jboss.com/">
       </overview>
     </connectorDescriptor>
 
