@@ -28,7 +28,7 @@
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_trunk.component--jbpm/all/repo/"/>
 
     <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/modeshape/3.1.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/modeshape/3.2.0.Alpha1/"/>
 
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.1.1.Final/"/>
