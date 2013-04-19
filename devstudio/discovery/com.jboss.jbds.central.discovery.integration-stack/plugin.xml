@@ -139,7 +139,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss SOA 5.x Development"
+       name="SOA 5.x Development"
        description="SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools, ESB, jBPM 3 and Modeshape."
        id="com.jboss.jbds.soatooling.bundle.soap">
 
@@ -164,7 +164,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- BPEL Examples (Product only, not in community) -->
+    <!-- BPEL Examples (Product only, not in community) - remove for now pending JBTIS-62
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples"
@@ -186,6 +186,6 @@
         url="http://devstudio.jboss.com/">
       </overview>
     </connectorDescriptor>
-
+    -->
   </extension>
 </plugin>
