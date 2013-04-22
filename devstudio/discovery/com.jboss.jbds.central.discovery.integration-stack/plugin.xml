@@ -80,7 +80,7 @@
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
        name="Fuse Development"
-       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM 5, Drools and Guvnor."
+       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.feature"/>
       <iu id="org.drools.eclipse.feature"/>
@@ -107,7 +107,7 @@
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
        name="SOA Development"
-       description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM 5, Modeshape, Savara and Switchyard."
+       description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape, Savara and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
@@ -139,7 +139,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss SOA 5.x Development"
+       name="SOA 5.x Development"
        description="SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools, ESB, jBPM 3 and Modeshape."
        id="com.jboss.jbds.soatooling.bundle.soap">
 
@@ -164,7 +164,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- BPEL Examples (Product only, not in community) -->
+    <!-- BPEL Examples (Product only, not in community) - remove for now pending JBTIS-62
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples"
@@ -186,6 +186,6 @@
         url="http://devstudio.jboss.com/">
       </overview>
     </connectorDescriptor>
-
+    -->
   </extension>
 </plugin>
