@@ -25,7 +25,8 @@
   <mkdir dir="${tmpdir}" />
 
   <property name="project.build.directory" value="${output.dir}/target"/>
-  <property name="JBOSSTOOLS_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/updates/stable/${TARGET_PLATFORM}/jbosstools-directory.xml"/>
+  <property name="JBOSSTOOLS_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/updates/development/kepler/jbosstools-directory.xml"/>
+  <!-- <property name="JBOSSTOOLS_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/updates/stable/${TARGET_PLATFORM}/jbosstools-directory.xml"/> -->
 
   <target name="init">
     <echo level="verbose">

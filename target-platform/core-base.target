@@ -32,11 +32,8 @@
       <unit id="org.jboss.tools.maven.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.gwt.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.hibernate.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.maven.jaxrs.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.jbosspackaging.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.jdt.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.maven.jpa.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.maven.jsf.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.portlet.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.profiles.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.maven.project.examples.feature.feature.group" version="0.0.0"/>
@@ -50,7 +47,6 @@
       <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.runtime.seam.detector.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.seam.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.struts.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.usage.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.vpe.browsersim.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.vpe.feature.feature.group" version="0.0.0"/>
@@ -60,8 +56,16 @@
       <unit id="org.hibernate.eclipse.feature.feature.group" version="0.0.0"/>
       <unit id="org.mozilla.xulrunner.feature.feature.group" version="0.0.0"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/stable/juno/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/development/kepler/"/>
+    </location>
 
+    <!-- Eclipse m2e wtp -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="0.18.0.20130315-1346"/>
+      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="0.18.0.e43-20130315-1348"/>
+      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="0.18.0.20130315-1346"/>
+
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20130321-1800_1.4_0.18/"/>
     </location>
 
   </locations>

@@ -33,12 +33,12 @@
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.1.1.Final/"/>
 
-    <!-- SWITCHYARD -->
+    <!-- SWITCHYARD 
     <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/0.8.0.Final/"/>
-
-    <!-- TEIID -->        
+    -->
+    <!-- TEIID 
     <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/teiiddesigner/8.1.0.Alpha2/"/>
-
+   -->
   </children>
 
 </repository>
