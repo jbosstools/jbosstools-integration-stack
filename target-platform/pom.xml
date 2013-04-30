@@ -21,10 +21,28 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.17.0</tychoVersion>
     <tychoExtrasVersion>0.17.0</tychoExtrasVersion>
-    <JBossToolsCoreVersion>4.2.1.a-SNAPSHOT</JBossToolsCoreVersion>
+    <JBossToolsCoreVersion>4.22.2.Final-SNAPSHOT</JBossToolsCoreVersion>
   </properties>
 
   <repositories>
+
+    <repository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshots Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+      <snapshots>
+	<enabled>true</enabled>
+      </snapshots>
+    </repository>
+
+    <repository>
+      <id>jboss-releases</id>
+      <name>JBoss Releases Maven Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <releases>
+	<enabled>true</enabled>
+      </releases>
+    </repository>
 
     <repository>
       <id>jboss-public-repository-group</id>
@@ -113,8 +131,8 @@
 
 	      <sourceTargetArtifacts>
 		<item>
-		  <groupId>org.jboss.tools.target-platforms.jbosstools</groupId>
-		  <artifactId>unified</artifactId>
+		  <groupId>org.jboss.tools.targetplatforms</groupId>
+		  <artifactId>jbosstools-unified</artifactId>
 		  <version>${JBossToolsCoreVersion}</version>
 		</item>
 	      </sourceTargetArtifacts>
