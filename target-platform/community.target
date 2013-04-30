@@ -15,8 +15,7 @@
       <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.gwt.feature.feature.group" version="0.0.0"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/stable/juno/"/>
-
+      <repository location="http://download.jboss.org/jbosstools/updates/development/kepler/"/>
     </location>
 
   </locations>

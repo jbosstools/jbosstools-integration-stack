@@ -102,7 +102,7 @@ Tools related to the development of Service Oriented Architecture applications -
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard -->
+<!-- switchyard 
 <feature url="features/org.switchyard.tools.feature_0.0.0.jar" id="org.switchyard.tools.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
@@ -112,8 +112,8 @@ Tools related to the development of Service Oriented Architecture applications -
 <feature url="features/org.switchyard.tools.bpmn2.feature_0.0.0.jar" id="org.switchyard.tools.bpmn2.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
-<!-- teiid -->
+-->
+<!-- teiid 
 <feature url="features/org.teiid.datatools.connectivity.feature_0.0.0.jar" id="org.teiid.datatools.connectivity.feature" version="0.0.0">
   <category name="DataServices" />
 </feature>
@@ -125,5 +125,5 @@ Tools related to the development of Service Oriented Architecture applications -
 <feature url="features/org.teiid.designer.runtime.feature_0.0.0.jar" id="org.teiid.designer.runtime.feature" version="0.0.0">
   <category name="DataServices" />
 </feature>
-
+-->
 </site>
