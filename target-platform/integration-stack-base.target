@@ -7,20 +7,13 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
-    <!-- Eclipse Graphiti Juno -->
-     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.9.1.v20120919-0732"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.9.1.v20120919-0732"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/juno/201209280900-R/"/>
-    </location>
-
-    <!-- Eclipse Graphiti Kepler 
+    <!-- Eclipse Graphiti -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.0.v20130319-1346"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.0.v20130319-1346"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
     </location>
-    -->
+
     <!-- Eclipse EMF -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201303191750"/>
@@ -64,13 +57,13 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201304262142/"/>
     </location>
 
-    <!-- BPMN2 - Modeler -->
+    <!-- BPMN2 - Modeler # waiting for JBTIS-66
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.2.5.201304262142"/>
       <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="0.2.5.201304262142"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201304262142/"/>
     </location>
-
+    -->
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.2.v20121121-1634-CI"/>
