@@ -59,14 +59,5 @@
       <repository location="http://download.jboss.org/jbosstools/updates/development/kepler/"/>
     </location>
 
-    <!-- Eclipse m2e wtp -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="0.18.0.20130315-1346"/>
-      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="0.18.0.e43-20130315-1348"/>
-      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="0.18.0.20130315-1346"/>
-
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse/20130321-1800_1.4_0.18/"/>
-    </location>
-
   </locations>
 </target>

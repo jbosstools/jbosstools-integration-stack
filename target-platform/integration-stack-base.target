@@ -11,50 +11,50 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.0.v20130319-1346"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.0.v20130319-1346"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse EMF -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201303191750"/>
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.1.0.201303191750"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse EMF/OCL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201303111638"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Google Guava : Eclipse EMF -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="com.google.guava" version="11.0.2.v201303041551"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse Zest : ESB -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.zest.feature.group" version="1.5.0.201212170307"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse OCL/ALL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.ocl.all.feature.group" version="4.1.0.v20130318-1436"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- javax.ws.rs : Fuse -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="javax.ws.rs" version="1.1.1.v20101004-1200"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130322-0900-M/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- BPMN2 - Feature -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201304230617"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201304262142/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201305101845/"/>
     </location>
 
     <!-- BPMN2 - Modeler # waiting for JBTIS-66
@@ -66,10 +66,10 @@
     -->
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.2.v20121121-1634-CI"/>
-      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.2.v20121121-1634-CI"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.2.v20121121-1634-CI"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.2.v20121121-1634-CI/"/>
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130509-1351-CI/"/>
     </location>
 
     <!-- JBoss Tools Core Tests -->
