@@ -9,21 +9,21 @@
 
     <!-- Eclipse Graphiti -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.0.v20130319-1346"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.0.v20130319-1346"/>
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.0.v20130508-0709"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.0.v20130508-0709"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse EMF -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201303191750"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.1.0.201303191750"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201305060839"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.1.0.201305060839"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse EMF/OCL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201303111638"/>
+      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201305071338"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
@@ -35,13 +35,13 @@
 
     <!-- Eclipse Zest : ESB -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.zest.feature.group" version="1.5.0.201212170307"/>
+      <unit id="org.eclipse.zest.feature.group" version="1.5.0.201305060205"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse OCL/ALL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.ocl.all.feature.group" version="4.1.0.v20130318-1436"/>
+      <unit id="org.eclipse.ocl.all.feature.group" version="4.1.0.v20130506-1149"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
