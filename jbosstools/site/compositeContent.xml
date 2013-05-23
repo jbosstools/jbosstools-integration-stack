@@ -13,7 +13,7 @@
   <children size="9">
 
     <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--bpel/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130509-1351-CI/"/>
 	
     <!-- DROOLS/JBPM -->
     <child location="http://download.jboss.org/drools/release/6.0.0.201304021236/org.drools.updatesite/"/>
