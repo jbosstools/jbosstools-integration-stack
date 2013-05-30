@@ -234,7 +234,7 @@
 
 	    <configuration>
 	      <associateSites>
-		<associateSite>https://devstudio.jboss.com/updates/6.0.0/6.0.0.Alpha1.jbtis-target-platform/</associateSite>
+		<associateSite>https://devstudio.jboss.com/updates/6.0/jbtis-target-platform/</associateSite>
 		<associateSite>https://devstudio.jboss.com/updates/6.0/</associateSite>
 		<associateSite>https://devstudio.jboss.com/updates/6.0/extras/</associateSite>
 	      </associateSites>
