@@ -169,18 +169,6 @@
 	    </configuration>
 	  </execution>
 
-	  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
-	       build as an extra repo. -->
-	  <execution>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>mirror-target-to-repo</goal>
-	    </goals>
-	    <configuration>
-	      <sourceTargetFile>integration-stack-base.target</sourceTargetFile>
-	    </configuration>
-	  </execution>
-
 	</executions>
       </plugin>
 
@@ -288,6 +276,39 @@
 
     </plugins>
   </build>
+
+  <!-- Mirror the full aggregate base target dependencies. -->
+  <profiles>
+    <profile>
+      <id>aggregate-tp2repo</id>
+      <activation>
+	<activeByDefault>false</activeByDefault>
+      </activation>
+
+      <build>
+	<plugins>
+	  <plugin>
+	    <groupId>org.jboss.tools.tycho-plugins</groupId>
+	    <artifactId>target-platform-utils</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+
+	    <executions>
+	      <execution>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>${project.build.directory}/aggregate-base.target</sourceTargetFile>
+		</configuration>
+	      </execution>
+	    </executions>
+
+	  </plugin>
+	</plugins>
+      </build>
+    </profile>
+  </profiles>
 
   <!-- Allow the aggregate target dependencies package to be deployed/released into the nexus. -->
   <distributionManagement>
