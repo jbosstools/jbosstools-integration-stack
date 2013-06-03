@@ -22,7 +22,7 @@
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--esb/all/repo/"/>
 
     <!-- FUSE -->
-    <!-- <child location="http://repo.fusesource.com/beta/3.0.x/7.2.11"/> -->
+    <!--<child location="http://repo.fusesource.com/beta/updatesite/7.2.115/"/> -->
 
     <!-- JBPM -->
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_trunk.component--jbpm/all/repo/"/>
@@ -34,10 +34,10 @@
     <child location="http://download.jboss.org/savara/releases/updates/2.1.1.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/0.8.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/integration/juno/soa-tooling/switchyard/1.0.0/"/>
 
     <!-- TEIID -->        
-    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/teiiddesigner/8.1.0.Alpha2/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/release/juno/soa-tooling/teiiddesigner/8.1.0.Final/"/>
 
   </children>
 

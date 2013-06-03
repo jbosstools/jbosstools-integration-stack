@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>site</artifactId>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>4.0.1-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.0.0-SNAPSHOT</version>
+    <version>4.0.1-SNAPSHOT</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Aggregate</name>
@@ -25,7 +25,7 @@
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
-    <update.site.version>4.0.0.${BUILD_ALIAS}</update.site.version>
+    <update.site.version>4.0.1.${BUILD_ALIAS}</update.site.version>
 
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.2 (Juno) or &lt;a href="https://devstudio.jboss.com/download/6.x.html"&gt;JBoss Developer Studio 6&lt;/a&gt;</target.eclipse.version>
@@ -200,7 +200,7 @@
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>
               <artifactId>target-platform</artifactId>
-              <version>4.0.0-SNAPSHOT</version>
+              <version>4.0.1-SNAPSHOT</version>
               <type>target</type>
               <classifier>base</classifier>
             </artifact>
@@ -236,9 +236,10 @@
 	      <associateSites>
 		<!-- The repositories listed here match those in the target platform file. -->
 		<associateSite>http://download.jboss.org/jbosstools/updates/stable/juno/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/juno/201209280900-R/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201304092217/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/juno/201302132140-R/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6-201305221626_S20130423_juno/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.2.v20121121-1634-CI/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/</associateSite>
 	      </associateSites>
 
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
