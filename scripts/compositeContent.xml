@@ -1,0 +1,10 @@
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name="JBoss Tools Integration Stack Target Platform Site" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository" version="1.0.0">
+  <properties size="2">
+    <property name="p2.compressed" value="true"/>
+    <property name="p2.timestamp" value="13698077140000"/>
+  </properties>
+  <children size="1">
+    <child location="REPO/"/>
+</children>
+</repository>
