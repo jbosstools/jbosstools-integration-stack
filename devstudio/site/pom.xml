@@ -234,7 +234,8 @@
 
 	    <configuration>
 	      <associateSites>
-		<associateSite>https://devstudio.jboss.com/updates/6.0/jbtis-target-platform/</associateSite>
+		<!-- Generated mirror of the integration-stack-base.target. -->
+		<associateSite>https://devstudio.jboss.com/updates/6.0.0/6.0.0.GA.jbds-is-target-platform/</associateSite>
 		<associateSite>https://devstudio.jboss.com/updates/6.0/</associateSite>
 		<associateSite>https://devstudio.jboss.com/updates/6.0/extras/</associateSite>
 	      </associateSites>

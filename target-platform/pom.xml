@@ -299,7 +299,7 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <sourceTargetFile>${project.build.directory}/aggregate-base.target</sourceTargetFile>
+		  <sourceTargetFile>integration-stack-base.target</sourceTargetFile>
 		</configuration>
 	      </execution>
 	    </executions>
