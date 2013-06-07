@@ -165,8 +165,8 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${project.build.directory}/aggregate-base.target</item>
 		<item>${basedir}/community.target</item>
+		<item>${project.build.directory}/aggregate-base.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-full.target</outputFile>
