@@ -22,7 +22,7 @@
 
   <properties>
     <!-- Community site from which the production devstudio build will draw. -->
-    <JBTIS_SITE>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0/</JBTIS_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0/</COMPOSITE_SITE>
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
@@ -38,7 +38,7 @@
     <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
-      <url>${JBTIS_SITE}</url>
+      <url>${COMPOSITE_SITE}</url>
       <layout>p2</layout>
       <snapshots>
         <enabled>true</enabled>
@@ -235,7 +235,7 @@
 
 	    <configuration>
 	      <associateSites>
-		<associateSite>https://devstudio.jboss.com/updates/7.0/jbtis-target-platform/</associateSite>
+		<associateSite>https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.jbds-is-target-platform/</associateSite>
 		<associateSite>https://devstudio.jboss.com/updates/7.0/</associateSite>
 		<associateSite>https://devstudio.jboss.com/updates/7.0/extras/</associateSite>
 	      </associateSites>
