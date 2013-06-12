@@ -34,10 +34,11 @@
     <child location="http://download.jboss.org/savara/releases/updates/2.1.1.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/0.8.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/integration/juno/soa-tooling/switchyard/1.0.0/"/>
 
-    <!-- TEIID -->
+    <!-- TEIID 
     <child location="http://download.jboss.org/jbosstools/updates/release/juno/soa-tooling/teiiddesigner/8.1.0.Final/"/>
+    waiting for JBTIS-93 - pleacu -->
 
   </children>
 

@@ -18,11 +18,15 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201305060839"/>
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.1.0.201305060839"/>
+      <!-- the rcp feature is not in the kepler mirror -->
+      <unit  id="org.eclipse.emf.compare.rcp" version="2.1.0.201305060839"/>
+      <unit  id="org.eclipse.emf.compare.rcp.ui" version="3.0.0.201305060839"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse EMF/OCL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.7.0.201305071340"/>
       <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201305071338"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
@@ -54,16 +58,16 @@
     <!-- BPMN2 - Feature -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201304230617"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201305101845/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201305221604_S20130423_kepler/"/>
     </location>
 
-    <!-- BPMN2 - Modeler # waiting for JBTIS-66
+    <!-- BPMN2 - Modeler -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.2.5.201304262142"/>
-      <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="0.2.5.201304262142"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/201304262142/"/>
+      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.2.6.201305221604"/>
+      <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="0.2.6.201305221604"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201305221604_S20130423_kepler/"/>
     </location>
-    -->
+
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>

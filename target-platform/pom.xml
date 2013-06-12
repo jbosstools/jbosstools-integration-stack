@@ -21,7 +21,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.17.0</tychoVersion>
     <tychoExtrasVersion>0.17.0</tychoExtrasVersion>
-    <JBossToolsCoreVersion>4.30.5.Alpha5-SNAPSHOT</JBossToolsCoreVersion>
+    <JBossToolsCoreVersion>4.30.5.Alpha5</JBossToolsCoreVersion>
   </properties>
 
   <repositories>
@@ -165,24 +165,12 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${project.build.directory}/aggregate-base.target</item>
 		<item>${basedir}/community.target</item>
+		<item>${project.build.directory}/aggregate-base.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-full.target</outputFile>
 
-	    </configuration>
-	  </execution>
-
-	  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
-	       build as an extra repo.  -->
-	  <execution>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>mirror-target-to-repo</goal>
-	    </goals>
-	    <configuration>
-	      <sourceTargetFile>integration-stack-base.target</sourceTargetFile>
 	    </configuration>
 	  </execution>
 
@@ -293,6 +281,40 @@
 
     </plugins>
   </build>
+
+  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
+       build as an extra repo.  -->
+  <profiles>
+    <profile>
+      <id>isbtp2repo</id>
+      <activation>
+	<activeByDefault>false</activeByDefault>
+      </activation>
+
+      <build>
+	<plugins>
+	  <plugin>
+	    <groupId>org.jboss.tools.tycho-plugins</groupId>
+	    <artifactId>target-platform-utils</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+
+	    <executions>
+	      <execution>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>integration-stack-base.target</sourceTargetFile>
+		</configuration>
+	      </execution>
+	    </executions>
+
+	  </plugin>
+	</plugins>
+      </build>
+    </profile>
+  </profiles>
 
   <!-- Allow the aggregate target dependencies package to be deployed/released into the nexus. -->
   <distributionManagement>
