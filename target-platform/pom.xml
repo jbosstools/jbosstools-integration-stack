@@ -286,7 +286,7 @@
        build as an extra repo.  -->
   <profiles>
     <profile>
-      <id>isbtp2repo</id>
+      <id>aggregate-tp2repo</id>
       <activation>
 	<activeByDefault>false</activeByDefault>
       </activation>
