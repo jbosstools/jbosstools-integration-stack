@@ -22,7 +22,7 @@
 
   <properties>
     <!-- Community site from which the production devstudio build will draw. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.0/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
