@@ -236,7 +236,7 @@
 		<!-- The repositories listed here match those in the target platform file. -->
 		<associateSite>http://download.jboss.org/jbosstools/updates/development/kepler/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201305221604_S20130423_kepler/</associateSite>
+		<associateSite>http://download.eclipse.org/bpmn2-modeler/updates/kepler/0.2.6/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130509-1351-CI/</associateSite>
 		<!--<associateSite>http://download.jboss.org/jbosstools/updates/integration/kepler/core/locus/0.0.1.v20130507-2028-B7/</associateSite> -->
 	      </associateSites>
