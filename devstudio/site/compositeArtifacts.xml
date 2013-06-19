@@ -25,7 +25,7 @@
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_trunk.component--jbpm/all/repo/"/>
 
     <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/modeshape/3.3.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/soa-tooling/modeshape/3.3.0.Final/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/soa-tooling/teiiddesigner/8.2.0-Alpha1/"/>
