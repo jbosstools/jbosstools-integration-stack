@@ -55,7 +55,7 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.2.6.201306181822"/>
       <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="0.2.6.201306181822"/>
-      <repository location="http://download.eclipse.org/bpmn2-modeler/updates/kepler/0.2.6/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201306181822_S20130618_kepler/"/>
     </location>
 
     <!-- BPEL -->
