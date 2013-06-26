@@ -17,6 +17,13 @@
 
   <packaging>pom</packaging>
 
+  <!-- JBoss parent POM required for nexus deployment. -->
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>6</version>
+  </parent>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.17.0</tychoVersion>
