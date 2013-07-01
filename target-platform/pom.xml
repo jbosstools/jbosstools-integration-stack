@@ -17,6 +17,13 @@
 
   <packaging>pom</packaging>
 
+  <!-- JBoss parent POM required for nexus deployment. -->
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>10</version>
+  </parent>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.17.0</tychoVersion>
@@ -315,25 +322,5 @@
       </build>
     </profile>
   </profiles>
-
-  <!-- Allow the aggregate target dependencies package to be deployed/released into the nexus. -->
-  <distributionManagement>
-
-    <repository>
-      <id>jboss-staging-repository</id>
-      <name>JBoss Staging Service</name>
-      <uniqueVersion>false</uniqueVersion>
-      <url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
-    </repository>
-
-    <snapshotRepository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshot Repository</name>
-      <uniqueVersion>false</uniqueVersion>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-      <layout>default</layout>
-    </snapshotRepository>
-
-  </distributionManagement>
 
 </project>
