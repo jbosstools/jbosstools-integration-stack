@@ -103,7 +103,20 @@ $java.home = ${java.home}
 	<get usetimestamp="true" dest="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" src="${JBOSSTOOLS_DIRECTORY_XML}" />
 
 	<xmlproperty file="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" keepRoot="false" semanticAttributes="true"/>
-	<echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
+  <echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
+  <!-- if entry.url is an absolute path with http and download.jboss.org/jbosstools/, we're fine; if not, need to convert relative path to absolute -->
+  <if>
+    <not>
+      <and>
+        <contains string="${entry.url}" substring="http"/>
+        <contains string="${entry.url}" substring="download.jboss.org/jbosstools/"/>
+      </and>
+    </not>
+    <then>
+      <propertyregex override="true" property="entry.url" defaultvalue="${entry.url}" input="${JBOSSTOOLS_DIRECTORY_XML}" regexp="/.+-directory.xml" replace="/${entry.url}"/>
+      <echo level="verbose">Revised core JBoss tools discovery jar: ${entry.url}</echo>
+    </then>
+  </if>
 
 	<!-- Create the Integration Stack directory XML file. -->
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
