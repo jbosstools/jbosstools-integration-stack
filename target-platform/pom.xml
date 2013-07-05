@@ -28,7 +28,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.17.0</tychoVersion>
     <tychoExtrasVersion>0.17.0</tychoExtrasVersion>
-    <JBossToolsCoreVersion>4.30.5.Alpha5</JBossToolsCoreVersion>
+    <JBossToolsCoreVersion>4.30.5.CR1</JBossToolsCoreVersion>
   </properties>
 
   <repositories>

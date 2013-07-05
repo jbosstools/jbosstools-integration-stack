@@ -9,7 +9,7 @@
   <locations>
 
     <!-- JBoss Tools Core Community Dependencies -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.jboss.tools.birt.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.community.central.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="0.0.0"/>
