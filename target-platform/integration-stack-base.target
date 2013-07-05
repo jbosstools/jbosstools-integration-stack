@@ -8,14 +8,14 @@
   <locations>
 
     <!-- Eclipse Graphiti -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.0.v20130508-0709"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.0.v20130508-0709"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse EMF -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.compare.feature.group" version="2.1.0.201305060839"/>
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.1.0.201305060839"/>
       <!-- the rcp feature is not in the kepler mirror -->
@@ -25,51 +25,51 @@
     </location>
 
     <!-- Eclipse EMF/OCL -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.7.0.201305071340"/>
       <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201305071338"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Google Guava : Eclipse EMF -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="com.google.guava" version="11.0.2.v201303041551"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse Zest : ESB -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.zest.feature.group" version="1.5.0.201305060205"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- Eclipse OCL/ALL -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.ocl.all.feature.group" version="4.1.0.v20130506-1149"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- javax.ws.rs : Fuse -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="javax.ws.rs" version="1.1.1.v20101004-1200"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
     <!-- BPMN2 - Feature -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201304230617"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201305221604_S20130423_kepler/"/>
     </location>
 
     <!-- BPMN2 - Modeler -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="0.2.6.201306192132"/>
       <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="0.2.6.201306192132"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201306192132_S20130619_kepler/"/>
     </location>
 
     <!-- BPEL -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>
       <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>
       <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.3.v20130509-1351-CI"/>
@@ -77,7 +77,7 @@
     </location>
 
     <!-- JBoss Tools Core Tests -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Required by BPEL -->
       <unit id="org.jboss.tools.tests" version="0.0.0"/>

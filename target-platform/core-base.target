@@ -8,7 +8,7 @@
   <locations>
 
     <!-- JBoss Tools Core Base Dependencies -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="0.0.0"/>
@@ -25,6 +25,7 @@
       <unit id="org.jboss.tools.common.ui.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.common.verification.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.forge.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.foundation.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.jmx.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.jsf.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.jst.feature.feature.group" version="0.0.0"/>
@@ -47,6 +48,7 @@
       <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.runtime.seam.detector.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.seam.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.usage.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.vpe.browsersim.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.vpe.feature.feature.group" version="0.0.0"/>
