@@ -28,6 +28,10 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.7.0.201305071340"/>
       <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201305071338"/>
+
+       <!-- dependent features --> 
+       <unit id="org.eclipse.emf.query.feature.group" version="1.7.0.201305071338"/>
+       <unit id="org.eclipse.uml2.feature.group" version="4.1.0.v20130506-1015"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/20130510-0900-M7/"/>
     </location>
 
