@@ -1,6 +1,6 @@
 <?compositeArtifactRepository version='1.0.0'?>
 <repository 
-   name="JBoss Integration Tools - Composite Update Site" 
+   name="JBoss Tools Integration Stack - Composite Update Site" 
    type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" 
    version="1.0.0">
 
@@ -22,7 +22,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/esb/1.5.0/"/>
 
     <!-- FUSE -->
-    <!--<child location="http://repo.fusesource.com/beta/updatesite/7.2.115/"/> -->
+    <child location="http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo/"/>
 
     <!-- JBPM -->
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_trunk.component--jbpm/all/repo/"/>
@@ -37,7 +37,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/switchyard/1.0.0.Alpha1/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/soa-tooling/teiiddesigner/8.2.0-Alpha1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/soa-tooling/teiiddesigner/8.2.0-Alpha2/"/>
 
   </children>
 

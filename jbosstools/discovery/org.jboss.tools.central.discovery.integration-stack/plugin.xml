@@ -67,7 +67,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- JBoss Fuse Development - ->
+    <!-- JBoss Fuse Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
@@ -78,7 +78,8 @@
        name="Fuse Development"
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.fuse">
-      <iu id="org.fusesource.ide.feature"/>
+      <iu id="org.fusesource.ide.camel.editor.feature"/>
+      <iu id="org.fusesource.ide.server.extensions.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.guvnor.tools.feature"/>
@@ -92,7 +93,7 @@
 	 url="http://fusesource.com/products/fuse-ide/">
       </overview>
     </connectorDescriptor>
-    -->
+
     <!-- JBoss SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
