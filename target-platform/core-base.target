@@ -26,6 +26,7 @@
       <unit id="org.jboss.tools.common.verification.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.forge.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.foundation.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.foundation.security.linux.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.jmx.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.jsf.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.jst.feature.feature.group" version="0.0.0"/>
@@ -58,7 +59,7 @@
       <unit id="org.hibernate.eclipse.feature.feature.group" version="0.0.0"/>
       <unit id="org.mozilla.xulrunner.feature.feature.group" version="0.0.0"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/development/kepler/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/stable/kepler/"/>
     </location>
 
   </locations>
