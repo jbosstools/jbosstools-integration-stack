@@ -14,7 +14,7 @@
       <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
     </connectorCategory>
       
-    <!-- JBoss Busines Process and Rules Development -->
+    <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
@@ -26,7 +26,6 @@
        description="Tools related to business processes and rules development - includes support for BPEL editor, jBPM, Modeshape, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
@@ -106,7 +105,6 @@
        description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape, Savara and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
