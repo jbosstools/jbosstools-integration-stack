@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="remove.references">
+<!-- this script is used to remove the <references> node from a content.xml file (within a content.jar file) -->
+<!-- run: ant -f /path/to/folder/with/remove.references.xml -DworkDir=/path/to/folder/with/content.jar -->
+<!-- eg., to work in current dir: 
+	wget https://raw.github.com/jbosstools/jbosstools-download.jboss.org/master/jbosstools/updates/requirements/remove.references.xml;  ant -f remove.references.xml -DworkDir=`pwd` 
+-->
+	<target name="remove.references">
+		<antcall target="unpack.content.jar"/>
+
+		<echo file="remove-references.xsl">&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+	&lt;xsl:template match="/">&lt;xsl:apply-templates select="*"/>&lt;/xsl:template>
+	&lt;xsl:template match="*">&lt;xsl:copy>&lt;xsl:for-each select="@*">&lt;xsl:copy />&lt;/xsl:for-each>&lt;xsl:apply-templates />&lt;/xsl:copy>&lt;/xsl:template>
+	&lt;xsl:template match="references" />
+&lt;/xsl:stylesheet></echo>
+
+		<move file="${workDir}/content.xml" tofile="${workDir}/content.old.xml" overwrite="true" />
+		<xslt style="remove-references.xsl" in="${workDir}/content.old.xml" out="${workDir}/content.xml" />
+
+		<delete file="remove-references.xsl" quiet="true"/>
+
+		<antcall target="pack.content.jar"/>
+	</target>
+
+	<target name="unpack.content.jar">
+		<unzip src="${workDir}/content.jar" dest="${workDir}" />
+		<delete file="${workDir}/content.jar" />
+	</target>
+
+	<target name="pack.content.jar">
+		<zip destfile="${workDir}/content.jar" basedir="${workDir}" includes="content.xml" />
+		<delete file="${workDir}/content.xml" />
+		<delete file="${workDir}/content.old.xml" />
+	</target>
+</project>
