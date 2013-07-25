@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>site</artifactId>
-  <version>7.0.0-SNAPSHOT</version>
+  <version>7.0.1-SNAPSHOT</version>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.0.1-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate</name>
@@ -26,7 +26,7 @@
 
     <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
-    <update.site.version>7.0.0.${BUILD_ALIAS}</update.site.version>
+    <update.site.version>7.0.1.${BUILD_ALIAS}</update.site.version>
 
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.3 (Kepler) or &lt;a href="https://devstudio.jboss.com/earlyaccess/7.0/"&gt;JBoss Developer Studio 7&lt;/a&gt;</target.eclipse.version>

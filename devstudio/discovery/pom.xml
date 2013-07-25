@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>discovery</artifactId>
-  <version>7.0.0-SNAPSHOT</version>
+  <version>7.0.1-SNAPSHOT</version>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.0.1-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Discovery</name>
@@ -23,7 +23,7 @@
     production JBoss tools integration stack components.
 
     i.e.
-    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=7.0.0 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=kepler
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=7.0.1 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=kepler
   </description>
 
   <modules>
