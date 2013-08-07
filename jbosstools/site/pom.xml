@@ -3,12 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>site</artifactId>
-  <version>4.0.1-SNAPSHOT</version>
+  <version>4.0.2-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.0.1-SNAPSHOT</version>
+    <version>4.0.2-SNAPSHOT</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Aggregate</name>
@@ -25,7 +25,7 @@
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
-    <update.site.version>4.0.1.${BUILD_ALIAS}</update.site.version>
+    <update.site.version>4.0.2.${BUILD_ALIAS}</update.site.version>
 
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.2 (Juno) or &lt;a href="https://devstudio.jboss.com/download/6.x.html"&gt;JBoss Developer Studio 6&lt;/a&gt;</target.eclipse.version>
