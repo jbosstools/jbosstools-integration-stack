@@ -239,7 +239,6 @@
 		<associateSite>http://download.jboss.org/jbosstools/updates/integration/locus/1.1.0.CI/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201306192132_S20130619_kepler/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130509-1351-CI/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo/</associateSite>
 	      </associateSites>
 
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>

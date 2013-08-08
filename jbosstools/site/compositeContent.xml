@@ -19,11 +19,11 @@
     <child location="http://download.jboss.org/drools/release/6.0.0.201304021236/org.drools.updatesite/"/>
 
     <!-- ESB -->
-    <child location="http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/esb/1.5.0/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/esb/1.5.0.Final/"/>
 
-    <!-- FUSE -->
+    <!-- FUSE - ->
     <child location="http://download.jboss.org/jbosstools/updates/integration/kepler/soa-tooling/fuse-tooling/7.2.0/all/repo/"/>
-
+    -->
     <!-- JBPM -->
     <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_trunk.component--jbpm/all/repo/"/>
 
@@ -37,7 +37,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/1.0.0.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/soa-tooling/teiiddesigner/8.2.0-Alpha2/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/teiiddesigner/8.2.0-Alpha2/"/>
 
   </children>
 
