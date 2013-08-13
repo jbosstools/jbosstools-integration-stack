@@ -28,7 +28,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.17.0</tychoVersion>
     <tychoExtrasVersion>0.17.0</tychoExtrasVersion>
-    <JBossToolsCoreVersion>4.30.5.CR1</JBossToolsCoreVersion>
+    <JBossToolsCoreVersion>4.30.5.Final</JBossToolsCoreVersion>
   </properties>
 
   <repositories>
@@ -115,7 +115,7 @@
       <plugin>
 	<groupId>org.jboss.tools.tycho-plugins</groupId>
 	<artifactId>target-platform-utils</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.16.0.CR2</version>
 
 	<executions>
 
@@ -142,6 +142,7 @@
 		  <groupId>org.jboss.tools.targetplatforms</groupId>
 		  <artifactId>jbosstools-unified</artifactId>
 		  <version>${JBossToolsCoreVersion}</version>
+		  <classifier>jbosstools-unified</classifier>
 		</item>
 	      </sourceTargetArtifacts>
 
@@ -304,7 +305,7 @@
 	  <plugin>
 	    <groupId>org.jboss.tools.tycho-plugins</groupId>
 	    <artifactId>target-platform-utils</artifactId>
-	    <version>0.0.1-SNAPSHOT</version>
+	    <version>0.16.0.CR2</version>
 
 	    <executions>
 	      <execution>
