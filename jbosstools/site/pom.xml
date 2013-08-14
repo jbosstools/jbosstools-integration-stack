@@ -233,12 +233,10 @@
 
 	    <configuration>
 	      <associateSites>
-		<!-- The repositories listed here match those in the target platform file. -->
-		<associateSite>http://download.jboss.org/jbosstools/updates/development/kepler/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/kepler/201306260900-R/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.1.Final/REPO/</associateSite>
+		<associateSite>https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/targetplatforms/jbosstools-unified/4.30.5.Final/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/updates/integration/locus/1.1.0.CI/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.6.201306192132_S20130619_kepler/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130509-1351-CI/</associateSite>
 	      </associateSites>
 
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
