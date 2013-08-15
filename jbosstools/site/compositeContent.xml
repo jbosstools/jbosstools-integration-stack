@@ -1,31 +1,36 @@
-<?compositeArtifactRepository version='1.0.0'?>
+<?compositeMetadataRepository version='1.0.0'?>
 <repository 
-   name="JBoss Integration Tools - Composite Update Site" 
-   type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository" 
-   version="1.0.0">
+   name="JBoss Tools Integration Stack 4.0 - Composite Update Site" 
+   type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
 
   <properties size="3">
     <property name="p2.compressed" value="true"/>
     <property name="p2.atomic.composite.loading" value="false"/>
-    <property name="p2.timestamp" value="1353351761000"/>
+    <property name="p2.timestamp" value="1376596621000"/>
   </properties>
 
-  <children size="9">
+  <children size="8">
 
-    <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--bpel/all/repo/"/>
-	
+    <!-- BPEL: use nightly staging, development milestone, or stable release depending on best available -->
+    <!-- <child location="http://download.jboss.org/jbosstools/builds/staging/JBTIS-bpel-4.0.x/all/repo/"/> -->
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/bpel/1.2.1.Final/"/>
+    <!-- <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.1.Final/"/> -->
+
     <!-- DROOLS/JBPM -->
     <child location="http://download.jboss.org/drools/release/6.0.0.201304021236/org.drools.updatesite/"/>
 
-    <!-- ESB -->
-    <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_stable_branch.component--esb/all/repo/"/>
+    <!-- ESB: use nightly staging, development milestone, or stable release depending on best available -->
+    <!-- <child location="http://download.jboss.org/jbosstools/builds/staging/JBTIS-esb-4.0.x/all/repo/"/> -->
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/esb/1.5.200.Final/"/>
+    <!-- <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.200.Final/"/> -->
 
     <!-- FUSE -->
-    <!--<child location="http://repo.fusesource.com/beta/updatesite/7.2.115/"/> -->
+    <!-- <child location="http://repo.fusesource.com/beta/updatesite/7.2.115/"/> -->
 
-    <!-- JBPM -->
-    <child location="http://download.jboss.org/jbosstools/builds/staging/jbosstools-4.0_trunk.component--jbpm/all/repo/"/>
+    <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
+    <!-- <child location="http://download.jboss.org/jbosstools/builds/staging/JBTIS-jbpm-4.0.x/all/repo/"/> -->
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.100.Final/"/>
+    <!-- <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/jbpm/4.5.100.Final/"/> -->
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/modeshape/3.3.0.Final/"/>
