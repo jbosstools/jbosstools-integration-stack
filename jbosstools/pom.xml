@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.1.1-SNAPSHOT</version>
+  <version>4.1.2-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Aggregate/ Discovery</name>
 
@@ -22,7 +22,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>kepler</TARGET_PLATFORM>
-    <VERSION>4.1.1</VERSION>
+    <VERSION>4.1.2</VERSION>
+    <IS_TP_VERSION>4.1.2-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.16.0</tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
