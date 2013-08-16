@@ -34,7 +34,7 @@ Tools related to the development of Service Oriented Architecture applications -
 <!-- drools -->
 <feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <!-- <category name="FuseDev" /> -->
+  <category name="FuseDev" />
 </feature>
 
 <!-- esb -->
@@ -42,20 +42,20 @@ Tools related to the development of Service Oriented Architecture applications -
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide camel editor - ->
-<feature url="features/org.fusesource.ide.camel.editor.feature_7.2.0.v20130701-1930-H42-CI.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
+<!-- fuse ide camel editor -->
+<feature url="features/org.fusesource.ide.camel.editor.feature_7.2.0.v20130815-2032-H61-CI.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
   <category name="FuseDev" />
 </feature>
 
-<!- - fuse ide server extensions - ->
-<feature url="features/org.fusesource.ide.server.extensions.feature_7.2.0.v20130701-1930-H42-CI.jar" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
+<!-- fuse ide server extensions -->
+<feature url="features/org.fusesource.ide.server.extensions.feature_7.2.0.v20130815-2032-H61-CI" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
   <category name="FuseDev" />
 </feature>
--->
+
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <!-- <category name="FuseDev" /> -->
+  <category name="FuseDev" />
 </feature>
 
 <!-- jbpm -->
@@ -73,12 +73,12 @@ Tools related to the development of Service Oriented Architecture applications -
 
 <feature url="features/org.jbpm.eclipse.feature_0.0.0.jar" id="org.jbpm.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <!-- <category name="FuseDev" /> -->
+  <category name="FuseDev" />
 </feature>
 
 <feature url="features/org.jbpm.eclipse.task.feature_0.0.0.jar" id="org.jbpm.eclipse.task.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <!-- <category name="FuseDev" /> -->
+  <category name="FuseDev" />
 </feature>
 
 <!-- modeshape -->
@@ -93,7 +93,7 @@ Tools related to the development of Service Oriented Architecture applications -
 <!-- runtime detectors -->
 <feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <!-- <category name="FuseDev" /> -->
+  <category name="FuseDev" />
 </feature>
 
 <feature url="features/org.jboss.tools.runtime.esb.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.esb.detector.feature" version="0.0.0">
@@ -102,7 +102,7 @@ Tools related to the development of Service Oriented Architecture applications -
 
 <feature url="features/org.jboss.tools.runtime.jbpm.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.jbpm.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <!-- <category name="FuseDev" /> -->
+  <category name="FuseDev" />
 </feature>
 
 <!-- savara -->
