@@ -25,7 +25,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="Business Process and Rules Development"
+       name="JBoss Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL editor, jBPM, Modeshape, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
@@ -54,7 +54,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="Data Services Development"
+       name="JBoss Data Services Development"
        description="Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
        id="jboss.integration-stack.bundle.ds">
       <iu id="org.jboss.tools.modeshape.rest.feature"/>
@@ -79,7 +79,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="Fuse Development"
+       name="JBoss Fuse Development"
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.feature"/>
@@ -106,7 +106,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="SOA Development"
+       name="JBoss SOA Development"
        description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape, Savara and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
@@ -139,7 +139,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="SOA 5.x Development"
+       name="JBoss SOA 5.x Development"
        description="SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools, ESB, jBPM 3 and Modeshape."
        id="com.jboss.jbds.soatooling.bundle.soap">
 
