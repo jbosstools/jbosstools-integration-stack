@@ -4,7 +4,7 @@
 <!-- 
    JBoss Tools core as a dependency.
 -->
-<target name="integration-stack-base-target" sequenceNumber="7">
+<target name="integration-stack-core-base-target" sequenceNumber="7">
   <locations>
 
     <!-- JBoss Tools Core Base Dependencies -->
