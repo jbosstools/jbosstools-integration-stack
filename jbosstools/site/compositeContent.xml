@@ -33,13 +33,13 @@
     <!-- <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/jbpm/4.5.200.Final/"/> -->
 
     <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/soa-tooling/modeshape/3.3.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/modeshape/3.3.0.Final/"/>
 
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.2.1.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/soa-tooling/switchyard/1.0.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/juno/integration-stack/switchyard/1.0.0.Final/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/teiiddesigner/8.2.0-Alpha2/"/>
