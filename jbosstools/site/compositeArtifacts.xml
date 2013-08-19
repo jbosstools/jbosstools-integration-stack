@@ -42,7 +42,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/juno/integration-stack/switchyard/1.1.0.M1/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/teiiddesigner/8.2.0-Alpha2/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/release/kepler/soa-tooling/teiiddesigner/8.2.0.Final/"/>
 
   </children>
 
