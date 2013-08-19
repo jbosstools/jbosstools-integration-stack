@@ -2,27 +2,27 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse Updates</description>
 
-<category-def name="BusinessLogic" label="Business Process and Rules Development">
+<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
 Tools related to business processes and rules development - includes support for BPEL Editor, jBPM, Modeshape, Drools and Guvnor
   </description>
 </category-def>
 
-<category-def name="DataServices" label="Data Services Development">
+<category-def name="DataServices" label="JBoss Data Services Development">
   <description>
 Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer.
   </description>
 </category-def>
 
 <!--
-<category-def name="FuseDev" label="Fuse Development">
+<category-def name="FuseDev" label="JBoss Fuse Development">
   <description>
 Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM 5, Drools and Guvnor.
   </description>
 </category-def>
 -->
 
-<category-def name="SOADev" label="SOA Development">
+<category-def name="SOADev" label="JBoss SOA Development">
   <description>
 Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM 5, Modeshape, Savara and Switchyard.
   </description>
