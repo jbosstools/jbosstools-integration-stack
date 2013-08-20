@@ -6,7 +6,7 @@
   <properties size="3">
     <property name="p2.compressed" value="true"/>
     <property name="p2.atomic.composite.loading" value="false"/>
-    <property name="p2.timestamp" value="1376596621000"/>
+    <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
   <children size="8">
@@ -21,8 +21,7 @@
 
     <!-- ESB: use nightly staging, development milestone, or stable release depending on best available -->
     <!-- <child location="http://download.jboss.org/jbosstools/builds/staging/JBTIS-esb-4.1.x/all/repo/"/> -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/esb/1.5.300.Final/"/>
-    <!-- <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.300.Final/"/> -->
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.300.Final/"/>
 
     <!-- FUSE -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/fuse-tooling/7.2.0.Alpha1/all/repo/"/>
