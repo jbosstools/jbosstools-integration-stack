@@ -10,7 +10,7 @@
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
-      <!-- commented out until Fuse is ready for inclusion in JBDS-IS <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" /> -->
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
 
@@ -71,7 +71,6 @@
     </connectorDescriptor>
 
     <!-- JBoss Fuse Development -->
-    <!-- commented out until Fuse is ready for inclusion in JBDS-IS
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
@@ -96,7 +95,6 @@
         url="http://devstudio.jboss.com/">
       </overview>
     </connectorDescriptor>
-    -->
 
     <!-- JBoss SOA Development -->
     <connectorDescriptor
@@ -107,7 +105,7 @@
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
        name="JBoss SOA Development"
-       description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape, Savara and Switchyard."
+       description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
@@ -117,7 +115,6 @@
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
       <iu id="org.jbpm.eclipse.task.feature"/>
-      <iu id="org.savara.tools.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
