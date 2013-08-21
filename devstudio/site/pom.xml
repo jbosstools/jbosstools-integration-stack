@@ -234,14 +234,7 @@
 	    </goals>
 
 	    <configuration>
-	      <associateSites>
- 		<associateSite>https://devstudio.jboss.com/updates/7.0/7.0.0.GA.core/</associateSite>
- 		<associateSite>https://devstudio.jboss.com/updates/7.0/7.0.0.GA.target-platform/</associateSite>
- 		<associateSite>https://devstudio.jboss.com/updates/7.0.0/7.1.0.GA.jbds-is-target-platform/</associateSite>
-	      </associateSites>
-
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
-
 	      <symbols>
 		<update.site.name>${update.site.name}</update.site.name>
 		<update.site.description>${update.site.description}</update.site.description>
