@@ -8,9 +8,9 @@ Tools related to business processes and rules development - includes support for
   </description>
 </category-def>
 
-<category-def name="DataServices" label="JBoss Data Services Development">
+<category-def name="DataServices" label="JBoss Data Virtualization Development">
   <description>
-Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer.
+Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer.
   </description>
 </category-def>
 

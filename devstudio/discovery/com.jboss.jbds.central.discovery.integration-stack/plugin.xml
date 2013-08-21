@@ -46,7 +46,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- JBoss Data Services Development -->
+    <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
@@ -54,8 +54,8 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
-       name="JBoss Data Services Development"
-       description="Tools related to data services such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
+       name="JBoss Data Virtualization Development"
+       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
        id="jboss.integration-stack.bundle.ds">
       <iu id="org.jboss.tools.modeshape.rest.feature"/>
       <iu id="org.jboss.tools.modeshape.jcr.feature"/>
