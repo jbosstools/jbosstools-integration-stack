@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Tools Integration Stack Eclipse Updates</description>
+<description>JBoss Tools Integration Stack Update Site</description>
 
 <category-def name="BusinessLogic" label="Business Process and Rules Development">
   <description>
