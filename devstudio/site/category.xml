@@ -8,7 +8,7 @@ Tools related to business processes and rules development - includes support for
   </description>
 </category-def>
 
-<category-def name="DataServices" label="JBoss Data Virtualization Development">
+<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer.
   </description>
@@ -97,14 +97,14 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 <!-- modeshape -->
 <feature url="features/org.jboss.tools.modeshape.rest.feature_0.0.0.jar" id="org.jboss.tools.modeshape.rest.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="DataServices" />
+  <category name="DataVirtualization" />
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <feature url="features/org.jboss.tools.modeshape.jcr.feature_0.0.0.jar" id="org.jboss.tools.modeshape.jcr.feature" version="0.0.0">
   <category name="BusinessLogic" />
-  <category name="DataServices" />
+  <category name="DataVirtualization" />
   <category name="SOADev" />
 </feature>
 
@@ -140,15 +140,15 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 
 <!-- teiid -->
 <feature url="features/org.teiid.datatools.connectivity.feature_0.0.0.jar" id="org.teiid.datatools.connectivity.feature" version="0.0.0">
-  <category name="DataServices" />
+  <category name="DataVirtualization" />
 </feature>
 
 <feature url="features/org.teiid.designer.feature_0.0.0.jar" id="org.teiid.designer.feature" version="0.0.0">
-  <category name="DataServices" />
+  <category name="DataVirtualization" />
 </feature>
 
 <feature url="features/org.teiid.designer.runtime.feature_0.0.0.jar" id="org.teiid.designer.runtime.feature" version="0.0.0">
-  <category name="DataServices" />
+  <category name="DataVirtualization" />
 
 </feature>
 
