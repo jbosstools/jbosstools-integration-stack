@@ -130,6 +130,12 @@ $java.home = ${java.home}
 
 		<mkdir dir="${project.build.directory}/discovery-site/"/>
 
+    <!-- <for list="${compositeURLs}" param="cURL">
+      <sequential>
+        <echo>Add: @{cURL}</echo>
+      </sequential>
+    </for> -->
+
 		<antcall target="generate.composite.xml.file">
 			<param name="compositeName" value="${compositeName}"/>
 			<param name="compositeURLs" value="${compositeURLs}"/>
@@ -178,6 +184,7 @@ $java.home = ${java.home}
 		</for>
 		<echo file="${compositeFile}" append="true">  &lt;/children&gt;
 &lt;/repository&gt;</echo>
+    <echo level="verbose">Created: ${compositeFile}</echo>
 	</target>
 
   <target name="generate.directory.xml">
