@@ -19,10 +19,9 @@
       mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.2.Final -DVERSION=4.1.2 \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
       -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
-      -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/ \
-      -DUPSTREAM_TP_SITE= \
-      -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.2/ \
-      -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.2.Final/REPO/
+      -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/stable/kepler/,\
+http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.2/,\
+http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.2.Final/REPO/
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -37,13 +36,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- 
-      Must pass these in via commandline to define URLs to use in the generate discovery site's composite*.xml files; 
+      Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
       if all blank, no composite site will be generated 
     -->
-    <UPSTREAM_UPDATE_SITE><!-- JBT update site URL --></UPSTREAM_UPDATE_SITE>
-    <UPSTREAM_TP_SITE><!-- JBT target platform update site URL --></UPSTREAM_TP_SITE>
-    <UPDATE_SITE><!-- JBTIS update site URL --></UPDATE_SITE>
-    <TP_SITE><!-- JBTIS target platform update site URL --></TP_SITE>
+    <COMPOSITE_URLS><!-- JBT,JBT TP,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
   </properties>
 
   <modules>
