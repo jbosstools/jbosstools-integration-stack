@@ -232,7 +232,14 @@
 	    </goals>
 
 	    <configuration>
+
+	      <associateSites>
+		<associateSite>http://download.jboss.org/jbosstools/updates/stable/kepler/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/kepler/integration-stack/</associateSite>
+	      </associateSites>
+
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
+
 	      <symbols>
 		<update.site.name>${update.site.name}</update.site.name>
 		<update.site.description>${update.site.description}</update.site.description>
