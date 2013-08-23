@@ -19,7 +19,8 @@
       mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.2.Final -DVERSION=4.1.2 \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
       -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
-      -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/stable/kepler/,\
+      -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/kepler/jbosstools-directory.xml \
+      -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/kepler/,\
 http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.2/,\
 http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.2.Final/REPO/
   -->
@@ -34,6 +35,7 @@ http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.2.Final/REP
     <IS_TP_VERSION>4.1.2-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.16.0</tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/updates/stable/kepler/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
