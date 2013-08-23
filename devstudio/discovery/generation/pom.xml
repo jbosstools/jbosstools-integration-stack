@@ -41,8 +41,9 @@
 								  <property name="BUILD_FORM" value="production" />
 								  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
 								  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
-									<!-- pass in this value from Maven - see ../../pom.xml -->
-									<property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
+								  <!-- pass in this value from Maven - see ../../pom.xml -->
+								  <property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
+								  <property name="UPSTREAM_DIRECTORY_XML" value="${UPSTREAM_DIRECTORY_XML}"/>
 								</ant>
 				      </target>
 				    </configuration>
