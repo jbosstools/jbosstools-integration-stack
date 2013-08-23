@@ -41,11 +41,8 @@
 								  <property name="BUILD_FORM" value="production" />
 								  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
 								  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
-									<!-- pass in these values from Maven - see ../../pom.xml -->
-									<property name="UPSTREAM_UPDATE_SITE" value="${UPSTREAM_UPDATE_SITE}"/>
-									<property name="UPSTREAM_TP_SITE" value="${UPSTREAM_TP_SITE}"/>
-									<property name="UPDATE_SITE" value="${UPDATE_SITE}"/>
-									<property name="TP_SITE" value="${TP_SITE}"/>
+									<!-- pass in this value from Maven - see ../../pom.xml -->
+									<property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
 								</ant>
 				      </target>
 				    </configuration>
