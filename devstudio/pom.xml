@@ -19,10 +19,10 @@
       mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.2.Final -DVERSION=7.1.0 \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
       -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.2/ \
-      -DUPSTREAM_UPDATE_SITE=https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.core/ \
-      -DUPSTREAM_TP_SITE=https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.target-platform/ \
-      -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.1.0-updatesite/ \
-      -DTP_SITE=https://devstudio.jboss.com/updates/7.0.0/7.1.0.GA.jbds-is-target-platform/
+      -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.core/,\
+https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.target-platform/,\
+http://www.qa.jboss.com/binaries/RHDS/builds/staging/jbdsis-7.1.0-updatesite/,\
+https://devstudio.jboss.com/updates/7.0.0/7.1.0.GA.jbds-is-target-platform/
 
       If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
       -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site/target/repository/
@@ -40,13 +40,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- 
-      Must pass these in via commandline to define URLs to use in the generate discovery site's composite*.xml files; 
+      Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
       if all blank, no composite site will be generated 
     -->
-    <UPSTREAM_UPDATE_SITE><!-- JBDS update site URL --></UPSTREAM_UPDATE_SITE>
-    <UPSTREAM_TP_SITE><!-- JBDS target platform update site URL --></UPSTREAM_TP_SITE>
-    <UPDATE_SITE><!-- JBDSIS update site URL --></UPDATE_SITE>
-    <TP_SITE><!-- JBDSIS target platform update site URL --></TP_SITE>
+    <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
   </properties>
 
   <modules>

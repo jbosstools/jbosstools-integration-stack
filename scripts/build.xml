@@ -9,16 +9,13 @@
 
      $ mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_TS=v20130212-1234 \
          -DBUILD_NUMBER=23 -DBUILD_ALIAS=integration -DTARGET_PLATFORM=juno -DBUILD_FORM=production
-	 -DUPSTREAM_UPDATE_SITE=... -DUPSTREAM_TP_SITE=... -DUPDATE_SITE=... -DTP_SITE=...
+	       -DCOMPOSITE_URLS=http://1,http://2,http://3,http://4
     -->
-	<!-- pass in these values from Maven: should either be from:
-	 JBT  / JBT TP  / JBT-IS  / JBT-IS TP, or from
-	 JBDS / JBDS TP / JBDS-IS / JBDS-IS TP 
+	<!-- from Maven, pass in a comma-separated list of URLs to include in a composite site. Should be:
+	 JBT,JBT TP,JBT-IS,JBT-IS TP, or
+	 JBDS,JBDS TP,JBDS-IS,JBDS-IS TP 
 	-->
-	<property name="UPSTREAM_UPDATE_SITE" value=""/>
-	<property name="UPSTREAM_TP_SITE" value=""/>
-	<property name="UPDATE_SITE" value=""/>
-	<property name="TP_SITE" value=""/>
+	<property name="COMPOSITE_URLS" value=""/>
 
   <condition property="output.dir" value="${WORKSPACE}/results" else="${basedir}">
     <available file="${WORKSPACE}/results" />
@@ -70,57 +67,11 @@ $java.home = ${java.home}
   </target>
 
 	<target name="generate.composite.site">
-		<if>
-			<or>
-				<equals arg1="${UPSTREAM_UPDATE_SITE}" arg2="$${UPSTREAM_UPDATE_SITE}"/>
-				<equals arg1="${UPSTREAM_UPDATE_SITE}" arg2="NONE"/>
-			</or>
-			<then>
-				<var name="UPSTREAM_UPDATE_SITE" unset="true"/>
-				<var name="UPSTREAM_UPDATE_SITE" value=""/>
-				<echo>UPSTREAM_UPDATE_SITE is not set. To add this site to the composite, use -DUPSTREAM_UPDATE_SITE=http://upstream/update/site/to/use/</echo>
-			</then>
-		</if>
-		<if>
-			<or>
-				<equals arg1="${UPSTREAM_TP_SITE}" arg2="$${UPSTREAM_TP_SITE}"/>
-				<equals arg1="${UPSTREAM_TP_SITE}" arg2="NONE"/>
-			</or>
-			<then>
-				<var name="UPSTREAM_TP_SITE" unset="true"/>
-				<var name="UPSTREAM_TP_SITE" value=""/>
-				<echo>UPSTREAM_TP_SITE is not set. To add this site to the composite, use -DUPSTREAM_TP_SITE=http://upstream/target-platform/update/site/to/use/</echo>
-			</then>
-		</if>
-		<if>
-			<or>
-				<equals arg1="${UPDATE_SITE}" arg2="$${UPDATE_SITE}"/>
-				<equals arg1="${UPDATE_SITE}" arg2="NONE"/>
-			</or>
-			<then>
-				<var name="UPDATE_SITE" unset="true"/>
-				<var name="UPDATE_SITE" value=""/>
-				<echo>UPDATE_SITE is not set. To add this site to the composite, use -DUPDATE_SITE=http://update/update/site/to/use/</echo>
-			</then>
-		</if>
-		<if>
-			<or>
-				<equals arg1="${TP_SITE}" arg2="$${TP_SITE}"/>
-				<equals arg1="${TP_SITE}" arg2="NONE"/>
-			</or>
-			<then>
-				<var name="TP_SITE" unset="true"/>
-				<var name="TP_SITE" value=""/>
-				<echo>TP_SITE is not set. To add this site to the composite, use -DTP_SITE=http://target-platform/update/site/to/use/</echo>
-			</then>
-		</if>
-
 		<condition property="compositeName" 
 			value="JBoss Developer Studio Integration Stack Central - composite staging site" 
 			 else="JBoss Tools Integration Stack Central - composite staging site">
 			<equals arg1="${BUILD_FORM}" arg2="production"/>
 		</condition>
-		<property name="compositeURLs" value="${UPSTREAM_UPDATE_SITE},${UPSTREAM_TP_SITE},${UPDATE_SITE},${TP_SITE}"/>
 
 		<script language="javascript">
 		<![CDATA[
@@ -130,22 +81,23 @@ $java.home = ${java.home}
 
 		<mkdir dir="${project.build.directory}/discovery-site/"/>
 
-    <!-- <for list="${compositeURLs}" param="cURL">
+    <for list="${COMPOSITE_URLS}" param="cURL" delimiter=", 
+">
       <sequential>
         <echo>Add: @{cURL}</echo>
       </sequential>
-    </for> -->
+    </for>
 
 		<antcall target="generate.composite.xml.file">
 			<param name="compositeName" value="${compositeName}"/>
-			<param name="compositeURLs" value="${compositeURLs}"/>
+			<param name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
 			<param name="compositeType" value="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository"/>
 			<param name="compositeClass" value="compositeMetadataRepository"/>
 			<param name="compositeFile" value="${project.build.directory}/discovery-site/compositeContent.xml"/>
 		</antcall>
 		<antcall target="generate.composite.xml.file">
 			<param name="compositeName" value="${compositeName}"/>
-			<param name="compositeURLs" value="${compositeURLs}"/>
+			<param name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
 			<param name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
 			<param name="compositeClass" value="compositeArtifactRepository"/>
 			<param name="compositeFile" value="${project.build.directory}/discovery-site/compositeArtifacts.xml"/>
@@ -155,7 +107,7 @@ $java.home = ${java.home}
 	<target name="generate.composite.xml.file">
 		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
 		<property name="compositeName" value="JBoss Tools Integration Stack Central - composite staging site"/>
-		<property name="compositeURLs" value="http://1,http://2,http://3,http://4"/>
+		<property name="COMPOSITE_URLS" value="http://1,http://2,http://3,http://4"/>
 		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
 		<property name="compositeClass" value="compositeArtifactRepository"/>
 		<property name="compositeFile" value="${project.build.directory}/discovery-site/compositeArtifacts.xml"/>
@@ -169,14 +121,16 @@ $java.home = ${java.home}
   &lt;/properties&gt;
 </echo>
 		<var name="compositeURLCount" value="0"/>
-		<for list="${compositeURLs}" param="cURL">
+		<for list="${COMPOSITE_URLS}" param="cURL" delimiter=", 
+">
 		  <sequential>
 		    <math result="compositeURLCount" operand1="${compositeURLCount}" operation="+" operand2="1" datatype="int" />
 		  </sequential>
 		</for>
 		<echo file="${compositeFile}" append="true">  &lt;children size='${compositeURLCount}'&gt;
 </echo>
-		<for list="${compositeURLs}" param="cURL">
+		<for list="${COMPOSITE_URLS}" param="cURL" delimiter=", 
+">
 		  <sequential>
 		    <echo file="${compositeFile}" append="true">  	&lt;child location='@{cURL}'/&gt;
 </echo>
