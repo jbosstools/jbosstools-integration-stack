@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.1.0-SNAPSHOT</version>
+  <version>7.0.1.Final</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -16,6 +16,13 @@
   </description>
 
   <packaging>pom</packaging>
+
+  <!-- JBoss parent POM required for nexus deployment. -->
+  <parent>
+    <groupId>org.jboss</groupId>
+    <artifactId>jboss-parent</artifactId>
+    <version>10</version>
+  </parent>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

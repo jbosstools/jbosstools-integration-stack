@@ -11,7 +11,7 @@
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
       <!-- commented out until Fuse is ready for inclusion in JBDS-IS <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" /> -->
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
+      <!-- <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" />  -->
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
 
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
@@ -98,7 +98,7 @@
     </connectorDescriptor>
     -->
 
-    <!-- JBoss SOA Development -->
+    <!-- JBoss SOA Development
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
@@ -130,7 +130,7 @@
         url="http://devstudio.jboss.com/">
       </overview>
     </connectorDescriptor>
-
+    -->
     <!-- JBoss SOA Legacy Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"

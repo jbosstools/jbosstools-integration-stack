@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>7.0.1-SNAPSHOT</version>
+  <version>7.0.1.Beta1</version>
 
   <name>JBDS Integration Stack Aggregate/ Discovery</name>
 
@@ -21,8 +21,8 @@
     <BUILD_TS>v20130101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
-    <TARGET_PLATFORM>juno</TARGET_PLATFORM>
-    <VERSION>7.0.1</VERSION>
+    <TARGET_PLATFORM>kepler</TARGET_PLATFORM>
+    <VERSION>7.0.1.Beta1</VERSION>
     <tycho-version>0.16.0</tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
