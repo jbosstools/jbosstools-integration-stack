@@ -49,6 +49,20 @@ http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.2.Final/REP
     <module>discovery</module>
   </modules>
 
+  <repositories>
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <snapshots>
+	<enabled>false</enabled>
+      </snapshots>
+      <releases>
+	<enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
   <pluginRepositories>
 
     <!-- Needed by tycho-eclipse plugin support. -->
