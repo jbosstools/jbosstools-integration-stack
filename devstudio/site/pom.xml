@@ -47,6 +47,18 @@
         <enabled>true</enabled>
       </releases>
     </repository>
+
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <snapshots>
+	<enabled>false</enabled>
+      </snapshots>
+      <releases>
+	<enabled>true</enabled>
+      </releases>
+    </repository>
   </repositories>
 
   <pluginRepositories>
