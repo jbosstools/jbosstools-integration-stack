@@ -26,6 +26,7 @@
        description="Tools related to business processes and rules development - includes support for BPEL editor, jBPM, Modeshape, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
