@@ -27,13 +27,13 @@ cd ~/tru/jbosstools-integration-stack/jbosstools/discovery/generation/target/
 
 4. install Eclipse Kepler JEE bundle; launch at fresh workspace
 
-5. install JBoss Central into Eclipse from http://localhost:8081/
+5. install JBoss Central into Eclipse from http://localhost:8081/discovery-site/
 
 6. re-launch Eclipse with 
 
 {code}
 ./eclipse -vmargs \
 -Djboss.discovery.directory.url=http://localhost:8080/plugins/jbosstools-integration-stack-directory.xml \
--Djboss.discovery.site.url=http://localhost:8081/discovery-site
+-Djboss.discovery.site.url=http://localhost:8081/discovery-site/
 {code}
 
