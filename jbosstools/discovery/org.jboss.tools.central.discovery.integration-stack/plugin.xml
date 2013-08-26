@@ -21,7 +21,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL editor, jBPM, Modeshape, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
@@ -49,7 +49,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
        id="jboss.integration-stack.bundle.ds">
@@ -73,7 +73,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Fuse Development"
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.fuse">
@@ -100,7 +100,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss SOA Development"
        description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape, Savara and Switchyard."
        id="jboss.integration-stack.bundle.soa">
@@ -132,7 +132,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss BPEL Editor"
        description="BPEL Editor, examples and cheatsheets"
        id="com.jboss.jbds.bpel.feature">
@@ -151,7 +151,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Savara Editor"
        description="JBoss Savara Editor"
        id="org.savara.tools.feature">
@@ -170,7 +170,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Drools"
        description="JBoss Drools Core, Task Management, Runtime Detection"
        id="org.drools.eclipse.feature">
@@ -190,7 +190,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Guvnor"
        description="JBoss Guvnor synch"
        id="org.guvnor.tools.feature">
@@ -209,7 +209,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss jBPM Tools"
        description="JBoss Tools for jBPM, Runtime Detection"
        id="org.jboss.jbpm.eclipse.feature">
@@ -230,7 +230,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss ESB Tools"
        description="JBoss ESB Tools, Runtime Detection"
        id="org.jboss.tools.esb.feature">
@@ -250,7 +250,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss SwitchYard Tools"
        description="JBoss SwitchYard Tools"
        id="org.switchyard.tools.feature">
@@ -271,7 +271,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss ModeShape Tooling"
        description="Resource (un)publishing to ModeShape repositories"
        id="org.jboss.tools.modeshape.rest.feature">
@@ -291,7 +291,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Teiid Designer"
        description="Create metadata models + VDBs"
        id="org.teiid.designer.feature">
@@ -312,7 +312,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:http://download.jboss.org/jbosstools/updates/development/kepler/central/integration-stack/}"
        name="JBoss Runtime Detection for Drools, ESB, jBPM"
        description="Runtime Detection for Drools, ESB, jBPM"
        id="org.jboss.tools.runtime.drools.detector.feature">
