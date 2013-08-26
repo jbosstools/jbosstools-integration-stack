@@ -24,7 +24,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
        name="JBoss Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL editor, jBPM, Modeshape, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
@@ -53,7 +53,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer."
        id="jboss.integration-stack.bundle.ds">
@@ -77,7 +77,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
        name="JBoss Fuse Development"
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.fuse">
@@ -103,7 +103,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
        name="JBoss SOA Development"
        description="Tools related to the development of SOA applications - includes support for BPEL editor, Drools, Guvnor, jBPM, Modeshape and Switchyard."
        id="jboss.integration-stack.bundle.soa">
@@ -135,7 +135,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
        name="JBoss SOA 5.x Development"
        description="SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools, ESB, jBPM 3 and Modeshape."
        id="com.jboss.jbds.soatooling.bundle.soap">
@@ -168,7 +168,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
        name="BPEL Editor Examples"
        description="Examples related to the BPEL editor."
        id="jboss.integration-stack.bundle.bpr">
