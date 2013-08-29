@@ -9,6 +9,6 @@
     <property name="p2.timestamp" value="1374501649000" />
   </properties>
   <children size="1">
-    <child location="./${targetplatform.version}/" />
+    <child location="${targetplatform.version}" />
   </children>
 </repository>
