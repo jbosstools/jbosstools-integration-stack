@@ -5,7 +5,6 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>discovery</artifactId>
-  <version>7.1.0-SNAPSHOT</version>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
@@ -31,43 +30,9 @@
     <module>generation</module>
   </modules>
 
-  <pluginRepositories>
-
-    <!-- Needed by tycho-eclipse plugin support. -->
-    <pluginRepository>
-      <id>tycho-snapshots</id>
-      <url>https://oss.sonatype.org/content/groups/public/</url>
-    </pluginRepository>
-
-    <pluginRepository>
-      <id>jboss-snapshots-repository</id>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-    </pluginRepository>
-
-    <pluginRepository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Repository Group</name>
-      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-
-  </pluginRepositories>
-
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
-
-      <plugin>
-        <groupId>org.eclipse.tycho</groupId>
-        <artifactId>tycho-maven-plugin</artifactId>
-        <version>${tycho-version}</version>
-        <extensions>true</extensions>
-      </plugin>
 
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
@@ -126,7 +91,6 @@
       </plugin>
 
     </plugins>
-
   </build>
 
   <distributionManagement>
