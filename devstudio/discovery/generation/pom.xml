@@ -5,7 +5,6 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>generation</artifactId>
-  <version>7.1.0-SNAPSHOT</version>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
