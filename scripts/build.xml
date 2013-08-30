@@ -210,7 +210,7 @@ $java.home = ${java.home}
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
 &lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
 &lt;entry url="${entry.url}" permitCategories="true"/>
-&lt;entry url="${output.url}/${central.discovery.is.jar.renamed}" permitCategories="true"/>
+&lt;entry url="${central.discovery.is.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
         </echo>
     </then></if>
