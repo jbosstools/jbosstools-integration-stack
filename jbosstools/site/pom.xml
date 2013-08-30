@@ -235,7 +235,7 @@
 
 	      <associateSites>
 		<associateSite>http://download.jboss.org/jbosstools/updates/stable/kepler/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/updates/kepler/integration-stack/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/kepler/</associateSite>
 	      </associateSites>
 
 	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
