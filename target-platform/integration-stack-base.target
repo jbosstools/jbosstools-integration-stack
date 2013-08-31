@@ -11,16 +11,16 @@
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.servicemix.bundles.aopalliance" version="1.0.0.3"/>
 
-      <unit id="org.jboss.tools.locus.jcip.annotations" version="1.0.0.Final-v20130729-2113-B39"/>
-      <unit id="org.jboss.tools.locus.mockito" version="1.9.5.Final_patched_TEIIDDES-1681-v20130729-2113-B39"/>
-      <unit id="org.jboss.tools.locus.sf.saxon" version="9.2.1.5j-Final-v20130729-2113-B39"/>
+      <unit id="org.jboss.tools.locus.jcip.annotations" version="1.0.0.Final-v20130820-2112-B41"/>
+      <unit id="org.jboss.tools.locus.mockito" version="1.9.5.Final_patched_TEIIDDES-1681-v20130820-2112-B41"/>
+      <unit id="org.jboss.tools.locus.sf.saxon" version="9.2.1.5j-Final-v20130820-2112-B41"/>
 
       <unit id="org.springframework.aspects" version="3.1.4.RELEASE"/>
       <unit id="org.springframework.osgi.core" version="1.2.1"/>
       <unit id="org.springframework.osgi.extender" version="1.2.1"/>
       <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
       <unit id="org.springframework.osgi.io" version="1.2.1"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/integration/locus/1.1.0.CI"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/integration/locus/1.1.0.Alpha1-B41/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -96,7 +96,7 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Required by BPEL -->
-      <unit id="org.jboss.tools.tests" version="0.0.0"/>
+      <unit id="org.jboss.tools.tests" version="3.5.0.Final-v20130717-0450-B102"/>
       <repository location="http://download.jboss.org/jbosstools/updates/nightly/coretests/4.1.kepler/"/>
     </location>
 
