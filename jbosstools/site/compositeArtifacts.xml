@@ -9,12 +9,15 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="8">
+  <children size="10">
 
     <!-- BPEL: use nightly staging, development milestone, or stable release depending on best available -->
     <!-- <child location="http://download.jboss.org/jbosstools/builds/staging/JBTIS-bpel-4.1.x/all/repo/"/> -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/bpel/1.2.100.Final/"/>
     <!-- <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.100.Final/"/> -->
+
+    <!-- BPMN2 -->
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/0.2.7.201308301511_0.7.0.201308220617_kepler/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://download.jboss.org/jbpm/release/6.0.0.201308222359/org.drools.updatesite/"/>
