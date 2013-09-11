@@ -84,6 +84,7 @@
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.camel.editor.feature"/>
+      <iu id="org.fusesource.ide.runtimes.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
