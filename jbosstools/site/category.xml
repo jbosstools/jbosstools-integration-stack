@@ -64,12 +64,17 @@ Tools related to the development of Service Oriented Architecture applications -
 </feature>
 
 <!-- fuse ide camel editor -->
-<feature url="features/org.fusesource.ide.camel.editor.feature_7.2.0.v20130815-2032-H61-CI.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
+<feature url="features/org.fusesource.ide.camel.editor.feature_7.2.0.v20130910-1534-H85-CI.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
+  <category name="FuseDev" />
+</feature>
+
+<!-- fuse ide runtimes -->
+<feature url="features/org.fusesource.ide.runtimes.feature_7.2.0.v20130910-1534-H85-CI.jar" id="org.fusesource.ide.runtimes.feature" version="0.0.0">
   <category name="FuseDev" />
 </feature>
 
 <!-- fuse ide server extensions -->
-<feature url="features/org.fusesource.ide.server.extensions.feature_7.2.0.v20130815-2032-H61-CI" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
+<feature url="features/org.fusesource.ide.server.extensions.feature_7.2.0.v20130910-1534-H85-CI.jar" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
   <category name="FuseDev" />
 </feature>
 

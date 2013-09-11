@@ -32,7 +32,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>kepler</TARGET_PLATFORM>
     <VERSION>4.1.3</VERSION>
-    <IS_TP_VERSION>4.1.5-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.1.5.Alpha1-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.18.1</tycho-version>
     <jboss-tycho-version>0.16.0.CR2</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
