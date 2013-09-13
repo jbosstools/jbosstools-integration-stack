@@ -7,7 +7,7 @@
   <artifactId>target-platform</artifactId>
   <!-- Since this target platform contains pre-GA and pre-Final content, it should also be set to a quality version of Alpha or Beta, as appropriate -->
   <!-- TODO: release a .Final version just before JBDS IS goes GA -->
-  <version>4.1.5.Alpha2-SNAPSHOT</version>
+  <version>4.1.5.Alpha3-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
