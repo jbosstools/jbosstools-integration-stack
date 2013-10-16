@@ -164,7 +164,10 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 
 <feature url="features/org.teiid.designer.runtime.feature_0.0.0.jar" id="org.teiid.designer.runtime.feature" version="0.0.0">
   <category name="DataVirtualization" />
+</feature>
 
+<feature url="features/org.teiid.designer.teiid.client.feature_0.0.0.jar" id="org.teiid.designer.teiid.client.feature" version="0.0.0">
+  <category name="DataVirtualization" />
 </feature>
 
 </site>

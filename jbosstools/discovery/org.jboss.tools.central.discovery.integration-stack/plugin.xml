@@ -61,6 +61,7 @@
       <iu id="org.teiid.datatools.connectivity.feature"/>
       <iu id="org.teiid.designer.feature"/>
       <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>
@@ -302,6 +303,7 @@
       <iu id="org.teiid.datatools.connectivity.feature"/>
       <iu id="org.teiid.designer.feature"/>
       <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
       <icon
 	 image32="images/jbds_tdesigner_32.png">
       </icon>
