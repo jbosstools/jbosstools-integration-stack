@@ -155,4 +155,8 @@ Tools related to the development of Service Oriented Architecture applications -
   <category name="DataVirtualization" />
 </feature>
 
+<feature url="features/org.teiid.designer.teiid.client.feature_0.0.0.jar" id="org.teiid.designer.teiid.client.feature" version="0.0.0">
+  <category name="DataVirtualization" />
+</feature>
+
 </site>
