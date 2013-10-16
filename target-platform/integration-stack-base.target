@@ -91,14 +91,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/201306260900-R/"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.drools.eclipse.feature.feature.group" version="6.0.0.201304021236"/>
-      <unit id="org.guvnor.tools.feature.feature.group" version="6.0.0.201304021236"/>
-      <unit id="org.jbpm.eclipse.feature.feature.group" version="6.0.0.201304021236"/>
-      <unit id="org.jbpm.eclipse.task.feature.feature.group" version="6.0.0.201304021236"/>
-      <repository location="http://download.jboss.org/drools/release/6.0.0.201304021236/org.drools.updatesite/"/>
-    </location>
-
     <!-- Teiid -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.poi" version="3.9.0.v201303080712"/>

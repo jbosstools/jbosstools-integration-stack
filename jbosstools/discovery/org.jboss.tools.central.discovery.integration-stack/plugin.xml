@@ -35,7 +35,6 @@
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jbpm.eclipse.task.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <icon
@@ -88,7 +87,6 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jbpm.eclipse.task.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
@@ -120,7 +118,6 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jbpm.eclipse.task.feature"/>
       <iu id="org.savara.tools.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
@@ -222,7 +219,6 @@
        description="JBoss Tools for jBPM, Runtime Detection"
        id="org.jboss.jbpm.eclipse.feature">
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jbpm.eclipse.task.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <icon
 	 image32="images/jbds_jbpm_32.png">
