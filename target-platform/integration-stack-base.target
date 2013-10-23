@@ -39,6 +39,9 @@
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.7.0.201306111341"/>
       <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.7.0.201306111332"/>
       <unit id="org.eclipse.emf.query.feature.group" version="1.7.0.201306111332"/>
+      <unit id="org.eclipse.emf.transaction.feature.group" version="1.7.0.201306111400"/>
+      <unit id="org.eclipse.emf.workspace.feature.group" version="1.7.0.201306111400"/>
+
       <unit id="org.eclipse.uml2.feature.group" version="4.1.1.v20130902-0826"/>
 
       <!-- Google Guava : Eclipse EMF -->
