@@ -4,7 +4,7 @@
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
-Tools related to business processes and rules development - includes support for BPEL Editor, BPMN2 editor, jBPM, Drools and Guvnor
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor
   </description>
 </category-def>
 
@@ -16,13 +16,13 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration/ SOA applications - includes support for BPEL editor, Drools, Fuse, Guvnor, jBPM and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse, Guvnor, jBPM and Switchyard.
   </description>
 </category-def>
 
 <category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
-SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools, ESB and jBPM 3.
+SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
   </description>
 </category-def>
 
@@ -36,22 +36,27 @@ SOA Tools related to version 5.x of the integration stack - BPEL editor, Drools,
 <!-- bpmn2 -->
 <feature url="features/org.eclipse.bpmn2.feature_0.0.0.jar" id="org.eclipse.bpmn2.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.examples.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.examples.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.jboss.runtime.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.jboss.runtime.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.wsil.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.wsil.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- drools -->

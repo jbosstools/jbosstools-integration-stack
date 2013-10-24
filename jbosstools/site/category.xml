@@ -4,7 +4,7 @@
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
-Tools related to business processes and rules development - includes support for BPEL Editor, BPMN2 editor, jBPM, Drools and Guvnor
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor
   </description>
 </category-def>
 
@@ -16,39 +16,46 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration/ Service Oriented Architecture applications - includes support for ESB, Fuse, Savara and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Fuse, Guvnor, jBPM, Savara and Switchyard.
   </description>
 </category-def>
 
 <!-- bpel -->
 <feature url="features/org.jboss.tools.bpel.feature_0.0.0.jar" id="org.jboss.tools.bpel.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- bpmn2 -->
 <feature url="features/org.eclipse.bpmn2.feature_0.0.0.jar" id="org.eclipse.bpmn2.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.examples.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.examples.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.jboss.runtime.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.jboss.runtime.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.eclipse.bpmn2.modeler.wsil.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.wsil.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- drools -->
 <feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- esb -->
@@ -74,6 +81,7 @@ Tools related to the development of Integration/ Service Oriented Architecture a
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- jbpm -->
@@ -91,6 +99,7 @@ Tools related to the development of Integration/ Service Oriented Architecture a
 
 <feature url="features/org.jbpm.eclipse.feature_0.0.0.jar" id="org.jbpm.eclipse.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- modeshape -->
@@ -105,6 +114,7 @@ Tools related to the development of Integration/ Service Oriented Architecture a
 <!-- runtime detectors -->
 <feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <feature url="features/org.jboss.tools.runtime.esb.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.esb.detector.feature" version="0.0.0">
@@ -113,6 +123,7 @@ Tools related to the development of Integration/ Service Oriented Architecture a
 
 <feature url="features/org.jboss.tools.runtime.jbpm.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.jbpm.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- savara -->
