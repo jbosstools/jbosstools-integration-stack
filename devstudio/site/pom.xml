@@ -30,7 +30,7 @@
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.3 (Kepler) or &lt;a href="https://devstudio.jboss.com/earlyaccess/7.0/"&gt;JBoss Developer Studio 7&lt;/a&gt;</target.eclipse.version>
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.1.5.Beta1/REPO/</targetplatform.url>
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.1.5.Beta2/REPO/</targetplatform.url>
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
