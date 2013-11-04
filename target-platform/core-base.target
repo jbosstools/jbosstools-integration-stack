@@ -59,7 +59,8 @@
       <unit id="org.hibernate.eclipse.feature.feature.group" version="0.0.0"/>
       <unit id="org.mozilla.xulrunner.feature.feature.group" version="0.0.0"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/development/kepler/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.1.1.Beta1b.core/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/updates/development/kepler/"/> -->
     </location>
 
   </locations>
