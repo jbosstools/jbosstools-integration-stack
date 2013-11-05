@@ -73,9 +73,9 @@
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201308220617"/>
 
       <!-- BPMN2 - Modeler -->
-      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="1.0.0.201310151945"/>
-      <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="1.0.0.201310151945"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0M1.201310151945_0.7.0.201308220617_kepler/"/>
+      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="1.0.0.201311042148"/>
+      <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="1.0.0.201311042148"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.0.201311042148_0.7.0.201308220617_kepler/"/>
     </location>
 
     <!-- BPEL -->
