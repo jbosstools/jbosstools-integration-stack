@@ -8,15 +8,14 @@
      To test output, run maven in this folder:
 
      $ mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_TS=v20130212-1234 \
-         -DBUILD_NUMBER=23 -DBUILD_ALIAS=integration -DTARGET_PLATFORM=juno -DBUILD_FORM=production
-         -DUPSTREAM_DIRECTORY_XML=http://path/to/jbosstools-or-devstudio-directory.xml
-	       -DCOMPOSITE_URLS=http://1,http://2,http://3,http://4
-    -->
-	<!-- from Maven, pass in a comma-separated list of URLs to include in a composite site. Should be:
-	 JBT,JBT TP,JBT-IS,JBT-IS TP, or
-	 JBDS,JBDS TP,JBDS-IS,JBDS-IS TP 
-	-->
-	<property name="COMPOSITE_URLS" value=""/>
+         -DBUILD_NUMBER=23 -DTARGET_PLATFORM=juno -DBUILD_FORM=production -DUPSTREAM_DIRECTORY_XML=http://path/to/jbosstools-or-devstudio-directory.xml
+         -DCOMPOSITE_URLS=http://1,http://2,http://3,http://4
+
+     From Maven, pass in a comma-separated list of URLs to include in a composite site. Should be:
+	 JBT, JBT TP, JBT-IS, JBT-IS TP or
+	 JBDS, JBDS TP, JBDS-IS, JBDS-IS TP 
+   -->
+  <property name="COMPOSITE_URLS" value=""/>
 
   <condition property="output.dir" value="${WORKSPACE}/results" else="${basedir}">
     <available file="${WORKSPACE}/results" />
@@ -181,7 +180,7 @@ $java.home = ${java.home}
 
 	<!-- Rename and copy the integration stack discovery jar. -->
 	<propertyregex override="true" property="central.discovery.is.jar.renamed" defaultvalue="${central.discovery.is.jar}" input="${central.discovery.is.jar}" 
-		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}.${BUILD_ALIAS}-${BUILD_TS}-B${BUILD_NUMBER}"/>
+		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}-${BUILD_TS}-B${BUILD_NUMBER}"/>
 	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.jar.renamed}"/>
 	<echo level="verbose">Generate ${project.build.directory}/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
 
