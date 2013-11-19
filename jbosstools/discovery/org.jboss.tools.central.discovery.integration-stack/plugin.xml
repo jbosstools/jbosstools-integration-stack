@@ -27,10 +27,8 @@
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
-      <iu id="org.eclipse.bpmn2.modeler.examples.feature"/>
       <iu id="org.eclipse.bpmn2.modeler.feature"/>
       <iu id="org.eclipse.bpmn2.modeler.jboss.runtime.feature"/>
-      <iu id="org.eclipse.bpmn2.modeler.wsil.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
@@ -82,10 +80,8 @@
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
-      <iu id="org.eclipse.bpmn2.modeler.examples.feature"/>
       <iu id="org.eclipse.bpmn2.modeler.feature"/>
       <iu id="org.eclipse.bpmn2.modeler.jboss.runtime.feature"/>
-      <iu id="org.eclipse.bpmn2.modeler.wsil.feature"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
