@@ -20,7 +20,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.0.201311042148_0.7.0.201308220617_kepler/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/6.0.0.201308222359/org.drools.updatesite/"/>
+    <child location="http://downloads.jboss.org/jbpm/release/6.0.0.Final/updatesite/"/>
 
     <!-- ESB: use nightly staging, development milestone, or stable release depending on best available -->
     <!-- <child location="http://download.jboss.org/jbosstools/builds/staging/JBTIS-esb-4.1.x/all/repo/"/> -->
