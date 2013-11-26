@@ -25,7 +25,7 @@
 
     <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
-    <update.site.version>7.0.0.${BUILD_ALIAS}</update.site.version>
+    <update.site.version>${BUILD_ALIAS}</update.site.version>
 
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.3 (Kepler) or &lt;a href="https://devstudio.jboss.com/earlyaccess/7.0/"&gt;JBoss Developer Studio 7&lt;/a&gt;</target.eclipse.version>
