@@ -112,6 +112,7 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <unit id="org.jboss.tools.tests" version="3.5.0.CR1-v20131123-0650-B135"/>
       <unit id="org.jboss.tools.as.test.core" version="2.4.101.CR1-v20131123-0343-B153"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.5.2.CR1-v20131123-0650-B135"/>
       <unit id="org.jboss.tools.common.test" version="3.5.2.CR1-v20131123-0650-B135"/>
       <unit id="org.jboss.tools.jmx.core.test" version="1.4.1.CR1-v20131123-0343-B153"/>
       <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.1.1.CR1.coretests/"/>
