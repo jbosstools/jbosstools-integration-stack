@@ -1,7 +1,7 @@
 1. Build:
 
 cd ~/tru/jbosstools-integration-stack/jbosstools
-mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.5.CR3 -DVERSION=4.1.3.CR2 -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 -DCOMPOSITE_SITE=file://`pwd`/site/target/repository       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/kepler/jbosstools-directory.xml       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/kepler/,http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.CR2/,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.5.CR3/REPO/
+mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.5.Final -DVERSION=4.1.3.CR2 -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 -DCOMPOSITE_SITE=file://`pwd`/site/target/repository       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/kepler/jbosstools-directory.xml       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/kepler/,http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.3.CR2/,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.5.Final/REPO/
 
 2. Fix generated directory.xml to point to locally-built jar, eg., use this
 
