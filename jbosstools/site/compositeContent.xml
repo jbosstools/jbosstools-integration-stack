@@ -11,8 +11,8 @@
 
   <children size="10">
 
-    <!-- BPEL: use nightly staging, development milestone, or stable release depending on best available -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/bpel/1.2.100.Final/"/>
+    <!-- BPEL -->
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.101.Final/"/>
 
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.1.201312111931_0.7.0.201308220617_kepler/"/>
@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.302.Final/"/>
 
     <!-- FUSE -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/fuse-tooling/7.2.0.CR1/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/fuse-tooling/7.2.0.CR2/all/repo/"/>
 
     <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
