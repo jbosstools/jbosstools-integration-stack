@@ -4,12 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>com.jboss.jbds.central.discovery.integration-stack</artifactId>
-  <version>7.0.0-SNAPSHOT</version>
+  <version>7.0.1-SNAPSHOT</version>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>discovery</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>7.0.1-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Discovery Plugins</name>
@@ -17,6 +17,71 @@
   <packaging>eclipse-plugin</packaging>
 
   <build>
+    <plugins>
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-antrun-plugin</artifactId>
+	<version>1.7</version>
+
+	<executions>
+	  <execution>
+	    <id>generate-resources</id>
+	    <phase>generate-resources</phase>
+	    <configuration>
+	      <target>
+		<!-- ANT script to capture the Integration Stack central discovery URL and augment the plugin.properties. -->
+		<ant antfile="../../../scripts/build.xml" target="update.plugin.properties" dir=".">
+		  <property name="BUILD_FORM" value="production" />
+		  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
+		</ant>
+	      </target>
+	    </configuration>
+	    <goals>
+	      <goal>run</goal>
+	    </goals>
+	  </execution>
+	</executions>
+
+	<dependencies>
+	  <dependency>
+	    <groupId>commons-net</groupId>
+	    <artifactId>commons-net</artifactId>
+	    <version>1.4.1</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant</artifactId>
+	    <version>1.8.2</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-nodeps</artifactId>
+	    <version>1.8.1</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-trax</artifactId>
+	    <version>1.8.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-commons-net</artifactId>
+	    <version>1.8.2</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-apache-regexp</artifactId>
+	    <version>1.8.2</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>ant-contrib</groupId>
+	    <artifactId>ant-contrib</artifactId>
+	    <version>1.0b3</version>
+	  </dependency>
+	</dependencies>
+      </plugin>
+    </plugins>
+
     <resources>
       <resource>
 	<directory>.</directory>

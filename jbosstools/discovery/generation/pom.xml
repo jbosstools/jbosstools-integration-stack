@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>generation</artifactId>
-  <version>4.1.3-SNAPSHOT</version>
+  <version>4.1.4-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>discovery</artifactId>
-    <version>4.1.3-SNAPSHOT</version>
+    <version>4.1.4-SNAPSHOT</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Discovery Directory</name>
@@ -20,75 +20,78 @@
   <build>
     <plugins>
       <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.7</version>
-				<executions>
-				  <execution>
-				    <id>install</id>
-				    <phase>install</phase>
-				    <configuration>
-				    <quiet>true</quiet>
-				      <target>
-								<!-- ANT script to capture the Integration Stack central discovery jar and directory XML content. -->
-								<ant antfile="../../../scripts/build.xml" target="basic.build" dir=".">
-								  <property name="PREFIX" value="${PREFIX}" />
-								  <property name="VERSION" value="${VERSION}" />
-								  <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
-								  <property name="BUILD_ID" value="${BUILD_ID}" />
-								  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
-								  <property name="BUILD_TS" value="${BUILD_TS}" />
-								  <property name="BUILD_FORM" value="community" />
-								  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
-								  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
-								  <!-- pass in this value from Maven - see ../../pom.xml -->
-								  <property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
-								  <property name="UPSTREAM_DIRECTORY_XML" value="${UPSTREAM_DIRECTORY_XML}"/>
-								</ant>
-				      </target>
-				    </configuration>
-				    <goals>
-				      <goal>run</goal>
-				    </goals>
-				  </execution>
-				</executions>
-				<dependencies>
-				  <dependency>
-				    <groupId>commons-net</groupId>
-				    <artifactId>commons-net</artifactId>
-				    <version>1.4.1</version>
-				  </dependency>
-				  <dependency>
-				    <groupId>org.apache.ant</groupId>
-				    <artifactId>ant</artifactId>
-				    <version>1.8.2</version>
-				  </dependency>
-				  <dependency>
-				    <groupId>org.apache.ant</groupId>
-				    <artifactId>ant-nodeps</artifactId>
-				    <version>1.8.1</version>
-				  </dependency>
-				  <dependency>
-				    <groupId>org.apache.ant</groupId>
-				    <artifactId>ant-trax</artifactId>
-				    <version>1.8.0</version>
-				  </dependency>
-				  <dependency>
-				    <groupId>org.apache.ant</groupId>
-				    <artifactId>ant-commons-net</artifactId>
-				    <version>1.8.2</version>
-				  </dependency>
-				  <dependency>
-				    <groupId>org.apache.ant</groupId>
-				    <artifactId>ant-apache-regexp</artifactId>
-				    <version>1.8.2</version>
-				  </dependency>
-				  <dependency>
-				    <groupId>ant-contrib</groupId>
-				    <artifactId>ant-contrib</artifactId>
-				    <version>1.0b3</version>
-				  </dependency>
-				</dependencies>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-antrun-plugin</artifactId>
+	<version>1.7</version>
+
+	<executions>
+	  <execution>
+	    <id>install</id>
+	    <phase>install</phase>
+	    <configuration>
+	      <quiet>true</quiet>
+	      <target>
+		<!-- ANT script to capture the Integration Stack central discovery jar and directory XML content. -->
+		<ant antfile="../../../scripts/build.xml" target="basic.build" dir=".">
+		  <property name="PREFIX" value="${PREFIX}" />
+		  <property name="VERSION" value="${VERSION}" />
+		  <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
+		  <property name="BUILD_ID" value="${BUILD_ID}" />
+		  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
+		  <property name="BUILD_TS" value="${BUILD_TS}" />
+		  <property name="BUILD_FORM" value="community" />
+		  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
+		  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
+
+		  <!-- Pass in this value from Maven - see ../../pom.xml -->
+		  <property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
+		  <property name="UPSTREAM_DIRECTORY_XML" value="${UPSTREAM_DIRECTORY_XML}"/>
+		</ant>
+	      </target>
+	    </configuration>
+	    <goals>
+	      <goal>run</goal>
+	    </goals>
+	  </execution>
+	</executions>
+
+	<dependencies>
+	  <dependency>
+	    <groupId>commons-net</groupId>
+	    <artifactId>commons-net</artifactId>
+	    <version>1.4.1</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant</artifactId>
+	    <version>1.8.2</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-nodeps</artifactId>
+	    <version>1.8.1</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-trax</artifactId>
+	    <version>1.8.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-commons-net</artifactId>
+	    <version>1.8.2</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant-apache-regexp</artifactId>
+	    <version>1.8.2</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>ant-contrib</groupId>
+	    <artifactId>ant-contrib</artifactId>
+	    <version>1.0b3</version>
+	  </dependency>
+	</dependencies>
       </plugin>
     </plugins>
   </build>
