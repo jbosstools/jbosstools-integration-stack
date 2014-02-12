@@ -59,7 +59,7 @@
       <unit id="org.hibernate.eclipse.feature.feature.group" version="0.0.0"/>
       <unit id="org.mozilla.xulrunner.feature.feature.group" version="0.0.0"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.1.1.Final.core/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.2.0.Alpha2.core/"/>
     </location>
 
   </locations>
