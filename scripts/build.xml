@@ -6,10 +6,7 @@
 <project default="basic.build" name="discovery site builder">
   <!--
      To test output, run maven in this folder:
-
-     $ mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.0.0 -DBUILD_TYPE=integration -DBUILD_TS=v20130212-1234 \
-         -DBUILD_NUMBER=23 -DTARGET_PLATFORM=juno -DBUILD_FORM=production -DUPSTREAM_DIRECTORY_XML=http://path/to/jbosstools-or-devstudio-directory.xml
-         -DCOMPOSITE_URLS=http://1,http://2,http://3,http://4
+     $ mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/ -DTARGET_PLATFORM=kepler -DIS_TP_VERSION=4.1.5.Final -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/stable/kepler/jbosstools-directory.xml -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.5.Final/REPO/ -DBUILD_ALIAS=test-B01 -DBUILD_TYPE=stable -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final/ -DskipRevisionCheckWhenPublishing=true -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/ -DVERSION=4.1.3.Final -DBUILD_KIND=jbosstools clean install checkstyle:check -DBUILD_ID=beta -DBUILD_NUMBER=225 -DBUILD_ALIAS=2014-01-01_01-01-01-B001 -DBUILD_TYPE=stable -DTARGET_PLATFORM=kepler -DVERSION=4.1.3.Final -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/kepler/extras/,http://download.jboss.org/jbosstools/updates/stable/kepler/,,http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final/,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.5.Final/REPO/
 
      From Maven, pass in a comma-separated list of URLs to include in a composite site. Should be:
 	 JBT, JBT TP, JBT-IS, JBT-IS TP or
@@ -59,7 +56,36 @@ $java.home = ${java.home}
     </taskdef>
   </target>
 
-  <!-- Initialize, generate the *directory.xml, cleanup. -->
+  <!-- Append to the plugin.properties file a property name containing the appropriate discovery URL for the Integration Stack.
+       This will be used in the plugin.xml connectorDescriptor siteUrl field for each component. -->
+  <target name="update.plugin.properties" depends="init">
+
+    <if><equals arg1="${BUILD_FORM}" arg2="community" trim="true" /><then>
+	<property name="discovery.is.dir" value="org.jboss.tools.central.discovery.integration-stack" />
+	<property name="discovery.is.url" value="http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/kepler/central/integration-stack/" />
+    </then></if>
+
+    <if><equals arg1="${BUILD_FORM}" arg2="production" trim="true" /><then>
+	<property name="discovery.is.dir" value="com.jboss.jbds.central.discovery.integration-stack" />
+
+	<if><equals arg1="${BUILD_TYPE}" arg2="stable" trim="true" /><then>
+	    <property name="discovery.is.url" value="https://devstudio.jboss.com/updates/7.0/central/integration-stack/" /></then>
+	<else>
+	    <property name="discovery.is.url" value="https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/" /></else>
+	</if>
+    </then></if>
+
+    <property name="discovery.is.path" value="${basedir}/../${discovery.is.dir}/plugin.properties" />
+    <echo>discovery.is.path = ${discovery.is.path}</echo>
+    <echo>discovery.is.url = ${discovery.is.url}</echo>
+
+    <!-- Update the plugin.properties file. -->
+    <echo file="${discovery.is.path}" append="true">
+jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
+</echo>
+  </target>
+
+  <!-- Initialize, generate the composite site, *directory.xml, cleanup. -->
   <target name="basic.build" description="discovery plugin build extra processing steps" depends="init,generate.directory.xml,generate.composite.site,cleanup" />
 
   <target name="get.ant-contrib" unless="ant-contrib.jar.exists">
