@@ -15,7 +15,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.101.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.1.201312111931_0.7.0.201308220617_kepler/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.2.201402102317_0.7.0.201308220617_luna/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://downloads.jboss.org/jbpm/release/6.0.1.Final/updatesite/"/>
@@ -35,12 +35,12 @@
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
 
-    <!-- SWITCHYARD -->
+    <!-- SWITCHYARD
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/switchyard/1.1.4.Final/"/>
-
-    <!-- TEIID -->
+    -->
+    <!-- TEIID 
     <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.1.Final/"/>
-
+    -->
   </children>
 
 </repository>
