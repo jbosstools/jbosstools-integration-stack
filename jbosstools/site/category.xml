@@ -20,12 +20,12 @@ Tools related to the development of Integration and SOA applications - includes 
   </description>
 </category-def>
 
-<!-- bpel -->
+<!-- bpel
 <feature url="features/org.jboss.tools.bpel.feature_0.0.0.jar" id="org.jboss.tools.bpel.feature" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- bpmn2 -->
 <feature url="features/org.eclipse.bpmn2.feature_0.0.0.jar" id="org.eclipse.bpmn2.feature" version="0.0.0">
   <category name="BusinessLogic" />
@@ -48,37 +48,37 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- esb -->
+<!-- esb
 <feature url="features/org.jboss.tools.esb.feature_0.0.0.jar" id="org.jboss.tools.esb.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
-<!-- fuse ide camel editor -->
+-->
+<!-- fuse ide camel editor 
 <feature url="features/org.fusesource.ide.camel.editor.feature_0.0.0.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide runtimes -->
+<!- - fuse ide runtimes 
 <feature url="features/org.fusesource.ide.runtimes.feature_0.0.0.jar" id="org.fusesource.ide.runtimes.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide server extensions -->
+<!- - fuse ide server extensions 
 <feature url="features/org.fusesource.ide.server.extensions.feature_0.0.0.jar" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<!-- jbpm -->
+<!-- jbpm
 <feature url="features/org.jboss.tools.jbpm.convert.feature_0.0.0.jar" id="org.jboss.tools.jbpm.convert.feature" version="0.0.0">
   <category name="BusinessLogic" />
 </feature>
-
+-->
 <feature url="features/org.jboss.tools.jbpm.common.feature_0.0.0.jar" id="org.jboss.tools.jbpm.common.feature" version="0.0.0">
   <category name="BusinessLogic" />
 </feature>
@@ -101,7 +101,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="DataVirtualization" />
 </feature>
 
-<!-- runtime detectors -->
+<!-- runtime detectors 
 <feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />
@@ -115,13 +115,13 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- savara -->
 <feature url="features/org.savara.tools.feature_0.0.0.jar" id="org.savara.tools.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard -->
+<!-- switchyard 
 <feature url="features/org.switchyard.tools.feature_0.0.0.jar" id="org.switchyard.tools.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
@@ -131,8 +131,8 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature url="features/org.switchyard.tools.bpmn2.feature_0.0.0.jar" id="org.switchyard.tools.bpmn2.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
-<!-- teiid -->
+-->
+<!-- teiid
 <feature url="features/org.teiid.datatools.connectivity.feature_0.0.0.jar" id="org.teiid.datatools.connectivity.feature" version="0.0.0">
   <category name="DataVirtualization" />
 </feature>
@@ -148,5 +148,5 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature url="features/org.teiid.designer.teiid.client.feature_0.0.0.jar" id="org.teiid.designer.teiid.client.feature" version="0.0.0">
   <category name="DataVirtualization" />
 </feature>
-
+-->
 </site>

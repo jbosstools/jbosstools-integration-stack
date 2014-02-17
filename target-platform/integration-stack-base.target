@@ -36,10 +36,9 @@
       <!-- Eclipse EMF -->
       <unit id="org.eclipse.emf.compare.feature.group" version="2.2.0.201401281325"/>
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.2.0.201401281325"/>
-      <!--
-      <unit  id="org.eclipse.emf.compare.rcp" version="2.1.1.201309031318"/>
-      <unit  id="org.eclipse.emf.compare.rcp.ui" version="3.0.1.201309031318"/>
-      -->
+      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.0.201401281325"/>
+      <unit  id="org.eclipse.emf.compare.rcp.ui" version="3.1.0.201401281325"/>
+
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201401271716"/>
       <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.8.0.201401271756"/>
@@ -65,6 +64,10 @@
       <unit id="org.eclipse.core.net" version="1.2.200.v20131024-0900"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.0.v20131021-1936"/>
       <unit id="org.eclipse.equinox.security" version="1.2.0.v20130424-1801"/>      
+
+      <!-- Teiid -->
+      <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
+
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201401310900-M5/"/>
     </location>
 
@@ -86,7 +89,7 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130816-0854-CI/"/>
     </location>
 
-    <!-- FuseIDE -->
+    <!-- FuseIDE
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.springframework.aop" version="3.1.4.RELEASE"/>
       <unit id="org.springframework.beans" version="3.1.4.RELEASE"/>
@@ -96,10 +99,10 @@
       <unit id="org.springframework.transaction" version="3.1.4.RELEASE"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.2.0.201303060654-RELEASE-e4.3/"/>
     </location>
+    -->
 
     <!-- Teiid -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20130517111416/"/>

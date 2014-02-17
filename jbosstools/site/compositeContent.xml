@@ -35,12 +35,12 @@
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
 
-    <!-- SWITCHYARD
+    <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/switchyard/1.1.4.Final/"/>
-    -->
-    <!-- TEIID 
+
+    <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.1.Final/"/>
-    -->
+
   </children>
 
 </repository>
