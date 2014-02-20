@@ -61,7 +61,7 @@
       <unit id="org.jboss.tools.ws.jaxrs.feature.feature.group" version="0.0.0"/>
       <unit id="org.jboss.tools.wtp.runtimes.tomcat.feature.feature.group" version="0.0.0"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.2.0.Alpha2a.core/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.2.0.Alpha2.core/"/>
     </location>
 
   </locations>
