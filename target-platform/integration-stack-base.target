@@ -89,7 +89,7 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130816-0854-CI/"/>
     </location>
 
-    <!-- FuseIDE
+    <!-- FuseIDE -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.springframework.aop" version="3.1.4.RELEASE"/>
       <unit id="org.springframework.beans" version="3.1.4.RELEASE"/>
@@ -99,7 +99,6 @@
       <unit id="org.springframework.transaction" version="3.1.4.RELEASE"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.2.0.201303060654-RELEASE-e4.3/"/>
     </location>
-    -->
 
     <!-- Teiid -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -113,11 +112,11 @@
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.5.0.Alpha2-v20140207-0439-B431"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Alpha2-v20140207-0857-B442"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Alpha2-v20140207-0439-B431"/>
-      <unit id="org.jboss.tools.common.test" version="3.6.0.Alpha2-v20140207-0439-B431"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.5.0.Alpha2-v20140207-0857-B442"/>
+      <unit id="org.jboss.tools.tests" version="3.5.0.Alpha2-v20140207-1922-B4"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Alpha2-v20140212-1516-B15"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Alpha2-v20140207-1922-B4"/>
+      <unit id="org.jboss.tools.common.test" version="3.6.0.Alpha2-v20140207-1922-B4"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.5.0.Alpha2-v20140212-1516-B15"/>
       <repository location="http://download.jboss.org/jbosstools/updates/JBossTools-4.2.0.Alpha2.coretests/"/>
     </location>
 
