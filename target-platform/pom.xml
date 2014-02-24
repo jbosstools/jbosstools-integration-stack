@@ -29,7 +29,7 @@
     <tychoVersion>0.18.1</tychoVersion>
     <tychoExtrasVersion>0.18.1</tychoExtrasVersion>
     <jboss-tycho-version>0.16.0.CR2</jboss-tycho-version>
-    <JBTCoreUnifiedTPVersion>4.40.0.Alpha2</JBTCoreUnifiedTPVersion>
+    <JBTCoreTPVersion>4.40.0.Alpha2</JBTCoreTPVersion>
   </properties>
 
   <repositories>
@@ -141,9 +141,9 @@
 	      <sourceTargetArtifacts>
 		<item>
 		  <groupId>org.jboss.tools.targetplatforms</groupId>
-		  <artifactId>jbosstools-unified</artifactId>
-		  <version>${JBTCoreUnifiedTPVersion}</version>
-		  <classifier>jbosstools-unified</classifier>
+		  <artifactId>jbosstools-multiple</artifactId>
+		  <version>${JBTCoreTPVersion}</version>
+		  <classifier>jbosstools-multiple</classifier>
 		</item>
 	      </sourceTargetArtifacts>
 
