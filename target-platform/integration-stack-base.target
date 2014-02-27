@@ -28,7 +28,15 @@
       <repository location="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Alpha2/REPO/"/>
     </location>
 
+    <!-- TEMPORARY - use older version of graphiti -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.2.v20140217-1225"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.2.v20140217-1225"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/201402210900-SR2/"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+
       <!-- Eclipse Graphiti -->
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140129-0818"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140129-0818"/>
