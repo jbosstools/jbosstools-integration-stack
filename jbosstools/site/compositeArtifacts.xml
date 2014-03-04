@@ -30,7 +30,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
 
     <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/modeshape/3.6.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/modeshape/3.7.0.Alpha1/"/>
 
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
