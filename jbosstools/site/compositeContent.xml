@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.303.Final/"/>
 
     <!-- FUSE -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/fuse-tooling/7.2.0.CR2/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/fuse-tooling/7.2.0.CR3/all/repo/"/>
 
     <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
