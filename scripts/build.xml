@@ -6,7 +6,7 @@
 <project default="basic.build" name="discovery site builder">
   <!--
      To test output, run maven in this folder:
-     $ mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/ -DTARGET_PLATFORM=kepler -DIS_TP_VERSION=4.1.5.Final -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/stable/kepler/jbosstools-directory.xml -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.5.Final/REPO/ -DBUILD_ALIAS=test-B01 -DBUILD_TYPE=stable -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final/ -DskipRevisionCheckWhenPublishing=true -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/ -DVERSION=4.1.3.Final -DBUILD_KIND=jbosstools clean install checkstyle:check -DBUILD_ID=beta -DBUILD_NUMBER=225 -DBUILD_ALIAS=2014-01-01_01-01-01-B001 -DBUILD_TYPE=stable -DTARGET_PLATFORM=kepler -DVERSION=4.1.3.Final -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/kepler/extras/,http://download.jboss.org/jbosstools/updates/stable/kepler/,,http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.3.Final/,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.5.Final/REPO/
+     $ mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/ -DTARGET_PLATFORM=kepler -DIS_TP_VERSION=4.1.6.Final -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/stable/kepler/jbosstools-directory.xml -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.6.Final/REPO/ -DBUILD_ALIAS=test-B01 -DBUILD_TYPE=stable -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.4.Final/ -DskipRevisionCheckWhenPublishing=true -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/kepler/extras/ -DVERSION=4.1.4.Final -DBUILD_KIND=jbosstools clean install checkstyle:check -DBUILD_ID=beta -DBUILD_NUMBER=225 -DBUILD_ALIAS=2014-01-01_01-01-01-B001 -DBUILD_TYPE=stable -DTARGET_PLATFORM=kepler -DVERSION=4.1.4.Final -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/kepler/extras/,http://download.jboss.org/jbosstools/updates/stable/kepler/,,http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.4.Final/,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.1.6.Final/REPO/
 
      From Maven, pass in a comma-separated list of URLs to include in a composite site. Should be:
 	 JBT, JBT TP, JBT-IS, JBT-IS TP or
@@ -82,7 +82,7 @@ $java.home = ${java.home}
     <!-- Update the plugin.properties file. -->
     <echo file="${discovery.is.path}" append="true">
 jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
-</echo>
+    </echo>
   </target>
 
   <!-- Initialize, generate the composite site, *directory.xml, cleanup. -->
@@ -137,7 +137,8 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 	</target>
 
 	<target name="generate.composite.xml.file">
-		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
+		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or
+		     org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
 		<property name="compositeName" value="JBoss Tools Integration Stack Central - composite staging site"/>
 		<property name="COMPOSITE_URLS" value="http://1,http://2,http://3,http://4"/>
 		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
@@ -210,13 +211,16 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.jar.renamed}"/>
 	<echo level="verbose">Generate ${project.build.directory}/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
 
-	<!-- Extract the core central discovery jar from the stable JBoss tools directory XML file. -->
-	<property name="CORE_JBOSSTOOLS_TEMP_DIR" value="${tmpdir}/jbosstools-directory" />
-	<mkdir dir="${CORE_JBOSSTOOLS_TEMP_DIR}" />
-	<get usetimestamp="true" dest="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" src="${UPSTREAM_DIRECTORY_XML}" />
+	<!-- Extract just the core central discovery jar from the stable JBoss tools directory XML file if it's set. -->
+        <if><not><equals arg1="${UPSTREAM_DIRECTORY_XML}" arg2="" trim="true" /></not><then>
+	   <property name="CORE_JBOSSTOOLS_TEMP_DIR" value="${tmpdir}/jbosstools-directory" />
+	   <mkdir dir="${CORE_JBOSSTOOLS_TEMP_DIR}" />
+	   <get usetimestamp="true" dest="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" src="${UPSTREAM_DIRECTORY_XML}" />
+	   <xmlproperty file="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" keepRoot="false" semanticAttributes="true"/>
+	   <propertyregex override="true" property="entry.url" defaultvalue="${entry.url}" input="${entry.url}" regexp="\,.*" replace=""/>
+	   <echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
+        </then></if>
 
-	<xmlproperty file="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" keepRoot="false" semanticAttributes="true"/>
-  <echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
   <!-- if entry.url is an absolute path with http and download.jboss.org/jbosstools/, we're fine; if not, need to convert relative path to absolute -->
   <if>
     <not>
