@@ -82,7 +82,7 @@ $java.home = ${java.home}
     <!-- Update the plugin.properties file. -->
     <echo file="${discovery.is.path}" append="true">
 jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
-</echo>
+    </echo>
   </target>
 
   <!-- Initialize, generate the composite site, *directory.xml, cleanup. -->
@@ -137,7 +137,8 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 	</target>
 
 	<target name="generate.composite.xml.file">
-		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
+		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or
+		     org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
 		<property name="compositeName" value="JBoss Tools Integration Stack Central - composite staging site"/>
 		<property name="COMPOSITE_URLS" value="http://1,http://2,http://3,http://4"/>
 		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
@@ -210,13 +211,16 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.jar.renamed}"/>
 	<echo level="verbose">Generate ${project.build.directory}/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
 
-	<!-- Extract the core central discovery jar from the stable JBoss tools directory XML file. -->
-	<property name="CORE_JBOSSTOOLS_TEMP_DIR" value="${tmpdir}/jbosstools-directory" />
-	<mkdir dir="${CORE_JBOSSTOOLS_TEMP_DIR}" />
-	<get usetimestamp="true" dest="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" src="${UPSTREAM_DIRECTORY_XML}" />
+	<!-- Extract just the core central discovery jar from the stable JBoss tools directory XML file if it's set. -->
+        <if><not><equals arg1="${UPSTREAM_DIRECTORY_XML}" arg2="" trim="true" /></not><then>
+	   <property name="CORE_JBOSSTOOLS_TEMP_DIR" value="${tmpdir}/jbosstools-directory" />
+	   <mkdir dir="${CORE_JBOSSTOOLS_TEMP_DIR}" />
+	   <get usetimestamp="true" dest="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" src="${UPSTREAM_DIRECTORY_XML}" />
+	   <xmlproperty file="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" keepRoot="false" semanticAttributes="true"/>
+	   <propertyregex override="true" property="entry.url" defaultvalue="${entry.url}" input="${entry.url}" regexp="\,.*" replace=""/>
+	   <echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
+        </then></if>
 
-	<xmlproperty file="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" keepRoot="false" semanticAttributes="true"/>
-  <echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
   <!-- if entry.url is an absolute path with http and download.jboss.org/jbosstools/, we're fine; if not, need to convert relative path to absolute -->
   <if>
     <not>
