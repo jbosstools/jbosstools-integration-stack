@@ -36,7 +36,7 @@
     <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/juno/soa-tooling/switchyard/1.1.5.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/switchyard/1.1.5.Final/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.2.Final/"/>
