@@ -16,13 +16,13 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.8.Final -DVERSION=7.0.1.CR2 \
+      mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.8.Final -DVERSION=7.0.1.GA \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
-      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.1.4.CR2/ \
+      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.4.Final/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.jboss.com/updates/7.0-development/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.core/,\
 https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.target-platform/,\
-https://devstudio.jboss.com/updates/7.0.0/7.0.1.CR2.jbds-is-target-platform/,\
+https://devstudio.jboss.com/updates/7.0.0/7.0.1.GA.jbds-is-target-platform/,\
 http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
       If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
@@ -38,7 +38,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>juno</TARGET_PLATFORM>
-    <VERSION>7.0.1.CR2</VERSION>
+    <VERSION>7.0.1.GA</VERSION>
     <IS_TP_VERSION>4.1.8.Final</IS_TP_VERSION>
     <tycho-version>0.18.1</tycho-version>
     <jboss-tycho-version>0.16.0.CR2</jboss-tycho-version>
