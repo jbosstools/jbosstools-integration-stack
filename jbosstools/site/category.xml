@@ -53,21 +53,21 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide camel editor -->
+<!-- fuse ide camel editor
 <feature url="features/org.fusesource.ide.camel.editor.feature_0.0.0.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide runtimes -->
+<!- - fuse ide runtimes
 <feature url="features/org.fusesource.ide.runtimes.feature_0.0.0.jar" id="org.fusesource.ide.runtimes.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide server extensions -->
+<!- - fuse ide server extensions
 <feature url="features/org.fusesource.ide.server.extensions.feature_0.0.0.jar" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- guvnor -->
 <feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
   <category name="BusinessLogic" />
@@ -121,7 +121,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard -->
+<!-- switchyard 
 <feature url="features/org.switchyard.tools.feature_0.0.0.jar" id="org.switchyard.tools.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
@@ -131,7 +131,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature url="features/org.switchyard.tools.bpmn2.feature_0.0.0.jar" id="org.switchyard.tools.bpmn2.feature" version="0.0.0">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- teiid
 <feature url="features/org.teiid.datatools.connectivity.feature_0.0.0.jar" id="org.teiid.datatools.connectivity.feature" version="0.0.0">
   <category name="DataVirtualization" />
