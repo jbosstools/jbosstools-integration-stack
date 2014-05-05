@@ -25,7 +25,7 @@
 
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <repository location="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Alpha2/REPO/"/>
+      <repository location="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta2-SNAPSHOT/REPO/"/>
     </location>
 
     <!-- TEMPORARY - use older version of graphiti -->
@@ -38,30 +38,30 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Eclipse Graphiti -->
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140129-0818"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140129-0818"/>
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140312-0950"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140312-0950"/>
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="2.2.0.201401281325"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="2.2.0.201401281325"/>
-      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.0.201401281325"/>
-      <unit  id="org.eclipse.emf.compare.rcp.ui" version="3.1.0.201401281325"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.0.0.201403111515"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.0.201403111515"/>
+      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.0.201403111515"/>
+      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.0.0.201403111515"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
-      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201401271716"/>
-      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.8.0.201401271756"/>
-      <unit id="org.eclipse.emf.query.feature.group" version="1.8.0.201401271756"/>
-      <unit id="org.eclipse.emf.transaction.feature.group" version="1.8.0.201401271944"/>
-      <unit id="org.eclipse.emf.validation.feature.group" version="1.8.0.201401271716"/>
-      <unit id="org.eclipse.emf.workspace.feature.group" version="1.8.0.201401271944"/>
+      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201403111711"/>
+      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.8.0.201403111545"/>
+      <unit id="org.eclipse.emf.query.feature.group" version="1.8.0.201403111545"/>
+      <unit id="org.eclipse.emf.transaction.feature.group" version="1.8.0.201403111732"/>
+      <unit id="org.eclipse.emf.validation.feature.group" version="1.8.0.201403111711"/>
+      <unit id="org.eclipse.emf.workspace.feature.group" version="1.8.0.201403111732"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.0.0.v20140127-0906"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.0.0.v20140310-0733"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="12.0.0.v201212092141"/>
 
       <!-- Eclipse Zest : ESB -->
-      <unit id="org.eclipse.zest.feature.group" version="1.6.0.201401270305"/>
+      <unit id="org.eclipse.zest.feature.group" version="1.5.2.201403090306"/>
 
       <!-- Eclipse OCL/ALL -->
       <unit id="org.eclipse.ocl.all.feature.group" version="5.0.0.v20140122-1853"/>
@@ -69,14 +69,14 @@
       <unit id="javax.ws.rs" version="1.1.1.v20101004-1200"/>
       <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
 
-      <unit id="org.eclipse.core.net" version="1.2.200.v20131024-0900"/>
+      <unit id="org.eclipse.core.net" version="1.2.200.v20140124-2013"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.0.v20131021-1936"/>
       <unit id="org.eclipse.equinox.security" version="1.2.0.v20130424-1801"/>      
 
       <!-- Teiid -->
       <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201401310900-M5/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201403140900-M6/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -97,17 +97,17 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130816-0854-CI/"/>
     </location>
 
-    <!-- FuseIDE -->
+    <!-- FuseIDE 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.springframework.aop" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.beans" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.context" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.core" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.expression" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.transaction" version="3.1.4.RELEASE"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.2.0.201303060654-RELEASE-e4.3/"/>
+      <unit id="org.springframework.aop" version="4.0.2.20140223-RELEASE.jar"/>
+      <unit id="org.springframework.beans" version="4.0.2.20140223-RELEASE.jar"/>
+      <unit id="org.springframework.context" version="4.0.2.20140223-RELEASE.jar"/>
+      <unit id="org.springframework.core" version="4.0.2.20140223-RELEASE.jar"/>
+      <unit id="org.springframework.expression" version="4.0.2.20140223-RELEASE.jar"/>
+      <unit id="org.springframework.transaction" version="4.0.2.20140223-RELEASE.jar"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.5.0.201404011509-RELEASE/"/>
     </location>
-
+-->
     <!-- Teiid -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
