@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>discovery</artifactId>
-  <version>4.1.4-SNAPSHOT</version>
+  <version>4.1.5-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.1.4-SNAPSHOT</version>
+    <version>4.1.5-SNAPSHOT</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Discovery</name>
@@ -24,7 +24,7 @@
     community JBoss tools integration stack components.
 
     i.e.
-    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.1.4 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=kepler
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.1.5 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=kepler
   </description>
 
   <modules>
