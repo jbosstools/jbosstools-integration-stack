@@ -298,19 +298,6 @@
 
 			<build>
 				<plugins>
-
-					<!-- Using Tycho 0.20.0, get error:
-					Unable to satisfy dependency from org.springframework.osgi.io 1.2.1 to package org.springframework.util [2.5.6,4.0.0)
-					but this didn't help -->
-					<plugin>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>target-platform-configuration</artifactId>
-						<version>${tychoVersion}</version>
-						<configuration>
-							<pomDependencies>consider</pomDependencies>
-						</configuration>
-					</plugin>
-
 					<plugin>
 						<groupId>org.jboss.tools.tycho-plugins</groupId>
 						<artifactId>target-platform-utils</artifactId>
@@ -323,7 +310,8 @@
 									<goal>mirror-target-to-repo</goal>
 								</goals>
 								<configuration>
-									<sourceTargetFile>integration-stack-base.target</sourceTargetFile>
+									<!-- Using Tycho 0.20.0, must resolve the full target or build fails due to missing dependencies -->
+									<sourceTargetFile>${project.build.directory}/aggregate-full.target</sourceTargetFile>
 								</configuration>
 							</execution>
 						</executions>
@@ -397,16 +385,4 @@
 			</build>
 		</profile>
 	</profiles>
-
-	<!-- Using Tycho 0.20.0, get error:
-	Unable to satisfy dependency from org.springframework.osgi.io 1.2.1 to package org.springframework.util [2.5.6,4.0.0)
-	but this didn't help -->
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>2.5.6</version>
-		</dependency>
-	</dependencies>
-
 </project>
