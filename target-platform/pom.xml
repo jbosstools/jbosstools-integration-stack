@@ -26,10 +26,13 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.18.1</tychoVersion>
-    <tychoExtrasVersion>0.18.1</tychoExtrasVersion>
-    <jboss-tycho-version>0.16.0.CR2</jboss-tycho-version>
-    <JBTCoreTPVersion>4.40.0.Alpha2</JBTCoreTPVersion>
+    <tychoVersion>0.20.0</tychoVersion>
+    <!-- old version: <tychoVersion>0.18.1</tychoVersion> -->
+    <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+    <jboss-tycho-version>0.19.0-SNAPSHOT</jboss-tycho-version>
+    <!-- better version that still works: <jboss-tycho-version>0.16.0</jboss-tycho-version> -->
+    <!-- old version: <jboss-tycho-version>0.16.0.CR2</jboss-tycho-version> -->
+    <JBTCoreTPVersion>4.40.0.Beta1</JBTCoreTPVersion>
   </properties>
 
   <repositories>
@@ -315,7 +318,14 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <sourceTargetFile>integration-stack-base.target</sourceTargetFile>
+		  <!-- Using Tycho 0.20.0, must resolve aggregate-full.target, not integration-stack-base.target, or build fails due to missing deps; make sure you've run this to update to latest IU versions first (see README.update.txt)!
+
+for tf in *.target; do 
+  mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=${tf}
+  if [[ -f ${tf}_fixedVersion.target ]]; then rm -f ${tf} *_update_hints.txt; mv -f ${tf}{_fixedVersion.target,}; fi
+done
+		-->
+		  <sourceTargetFile>${project.build.directory}/aggregate-full.target</sourceTargetFile>
 		</configuration>
 	      </execution>
 	    </executions>
