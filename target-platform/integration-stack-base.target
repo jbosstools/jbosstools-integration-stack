@@ -24,11 +24,12 @@
     </location>
 
     <!-- TEMPORARY - use older version of graphiti -->
-    <!-- <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+    <!-- with Tycho 0.20, cannot include two incompatible versions of the same IU -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.2.v20140217-1225"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.2.v20140217-1225"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/kepler/201402210900-SR2/"/>
-    </location> -->
+    </location>
 
     <!-- transitive dependencies for org.springframework.* -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -82,8 +83,11 @@
       <unit id="org.junit" version="4.11.0.v201303080030"/>
 
       <!-- Eclipse Graphiti -->
+      <!-- with Tycho 0.20, cannot include two incompatible versions of the same IU -->
+      <!-- include 0.10 instead - see above
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140507-0848"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140507-0848"/>
+      -->
 
       <!-- Eclipse EMF -->
       <unit id="org.eclipse.emf.compare.feature.group" version="3.0.0.201405061412"/>
