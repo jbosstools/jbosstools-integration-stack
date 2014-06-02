@@ -23,12 +23,8 @@
       <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.2.0-SNAPSHOT/update.site-1.2.0-SNAPSHOT.zip-unzip/"/>
     </location>
 
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <repository location="http://download.jboss.org/jbosstools/targetplatforms/jbosstoolstarget/4.40.0.Beta2/REPO/"/>
-    </location>
-
     <!-- TEMPORARY - use older version of graphiti -->
+    <!-- with Tycho 0.20, cannot include two incompatible versions of the same IU -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.2.v20140217-1225"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.2.v20140217-1225"/>
@@ -48,72 +44,75 @@
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <!-- transitive dependencies -->
-      <unit id="com.ibm.icu" version="50.1.1.v201304230130"/>
+      <unit id="com.ibm.icu" version="52.1.0.v201404241930"/>
       <unit id="javax.xml" version="1.3.4.v201005080400"/>
-      <unit id="org.apache.ant" version="1.9.2.v201307241445"/>
+      <unit id="org.apache.ant" version="1.9.2.v201404171502"/>
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
       <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
 
-      <unit id="org.eclipse.core.commands" version="3.6.100.v20140219-1520"/>
-      <unit id="org.eclipse.core.filesystem" version="1.4.0.v20140205-1257"/>
-      <unit id="org.eclipse.core.resources" version="3.9.0.v20140228-1449"/>
-      <unit id="org.eclipse.core.runtime.feature.feature.group" version="1.1.0.v20140305-1523"/>
+      <unit id="org.eclipse.core.commands" version="3.6.100.v20140424-2344"/>
+      <unit id="org.eclipse.core.filesystem" version="1.4.100.v20140414-0946"/>
+      <unit id="org.eclipse.core.resources" version="3.9.0.v20140403-1323"/>
+      <unit id="org.eclipse.core.runtime" version="3.10.0.v20140318-2214"/>
       <unit id="org.eclipse.debug.core" version="3.9.0.v20140103-1148"/>
-      <unit id="org.eclipse.draw2d" version="3.9.0.201403090306"/>
-      <unit id="org.eclipse.emf.common.feature.group" version="2.10.0.v20140303-1023"/>
-      <unit id="org.eclipse.emf.common.ui" version="2.9.0.v20140310-0546"/>
-      <unit id="org.eclipse.emf.mapping.ecore2xml" version="2.7.0.v20140310-0546"/>
-      <unit id="org.eclipse.emf.ecore.feature.group" version="2.10.0.v20140303-1023"/>
-      <unit id="org.eclipse.emf.edit" version="2.10.0.v20140310-0546"/>
-      <unit id="org.eclipse.emf.edit.ui" version="2.10.0.v20140310-0546"/>
-      <unit id="org.eclipse.gef" version="3.9.0.201403090306"/>
+      <unit id="org.eclipse.draw2d" version="3.9.100.201405050205"/>
+      <unit id="org.eclipse.emf.common.feature.group" version="2.10.0.v20140428-0336"/>
+      <unit id="org.eclipse.emf.common.ui" version="2.9.0.v20140428-0403"/>
+      <unit id="org.eclipse.emf.mapping.ecore2xml" version="2.7.0.v20140428-0403"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.10.0.v20140428-0336"/>
+      <unit id="org.eclipse.emf.edit" version="2.10.0.v20140428-0403"/>
+      <unit id="org.eclipse.emf.edit.ui" version="2.10.0.v20140428-0403"/>
+      <unit id="org.eclipse.gef" version="3.9.100.201405050205"/>
       <unit id="org.eclipse.equinox.simpleconfigurator.manipulator" version="2.0.0.v20131217-1203"/>
-      <unit id="org.eclipse.jdt.launching" version="3.7.100.v20140117-0742"/>
-      <unit id="org.eclipse.jdt.junit.core" version="3.7.300.v20131209-1856"/>
-      <unit id="org.eclipse.jst.jee" version="1.0.700.v201401082200"/>
-      <unit id="org.eclipse.swt" version="3.103.0.v20140304-1521"/>
-      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.11.0.v20140304-2222"/>
-      <unit id="org.eclipse.ui" version="3.106.0.v20140303-1835"/>
+      <unit id="org.eclipse.jdt.launching" version="3.7.100.v20140428-1912"/>
+      <unit id="org.eclipse.jdt.junit.core" version="3.7.300.v20140409-1618"/>
+      <unit id="org.eclipse.jst.jee" version="1.0.700.v201404092030"/>
+      <unit id="org.eclipse.swt" version="3.103.0.v20140430-1139"/>
+      <unit id="org.eclipse.mylyn_feature.feature.group" version="3.12.0.v20140506-2337"/>
+      <unit id="org.eclipse.ui" version="3.106.0.v20140428-2006"/>
       <unit id="org.eclipse.ui.navigator" version="3.5.400.v20140210-1835"/>
-      <unit id="org.eclipse.ui.views" version="3.7.0.v20140210-1835"/>
+      <unit id="org.eclipse.ui.views" version="3.7.0.v20140408-0703"/>
       <unit id="org.eclipse.ui.views.properties.tabbed" version="3.6.0.v20140210-1835"/>
-      <unit id="org.eclipse.ui.workbench" version="3.106.0.v20140305-2111"/>
-      <unit id="org.eclipse.xsd" version="2.10.0.v20140310-0546"/>
+      <unit id="org.eclipse.ui.workbench" version="3.106.0.v20140430-1900"/>
+      <unit id="org.eclipse.xsd" version="2.10.0.v20140428-0403"/>
 
       <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
       <unit id="org.jsoup" version="1.7.2.v201304221138"/>
       <unit id="org.junit" version="4.11.0.v201303080030"/>
 
       <!-- Eclipse Graphiti -->
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140312-0950"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140312-0950"/>
+      <!-- with Tycho 0.20, cannot include two incompatible versions of the same IU -->
+      <!-- include 0.10 instead - see above
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140507-0848"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140507-0848"/>
+      -->
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.0.0.201403111515"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.0.201403111515"/>
-      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.0.201403111515"/>
-      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.0.0.201403111515"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.0.0.201405061412"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.0.201405061412"/>
+      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.0.201405061412"/>
+      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.0.0.201405061412"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
-      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201403111711"/>
-      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.8.0.201403111545"/>
-      <unit id="org.eclipse.emf.query.feature.group" version="1.8.0.201403111545"/>
-      <unit id="org.eclipse.emf.transaction.feature.group" version="1.8.0.201403111732"/>
-      <unit id="org.eclipse.emf.validation.feature.group" version="1.8.0.201403111711"/>
-      <unit id="org.eclipse.emf.workspace.feature.group" version="1.8.0.201403111732"/>
+      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201405051541"/>
+      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.8.0.201405051438"/>
+      <unit id="org.eclipse.emf.query.feature.group" version="1.8.0.201405051438"/>
+      <unit id="org.eclipse.emf.transaction.feature.group" version="1.8.0.201405051603"/>
+      <unit id="org.eclipse.emf.validation.feature.group" version="1.8.0.201405051541"/>
+      <unit id="org.eclipse.emf.workspace.feature.group" version="1.8.0.201405051603"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.0.0.v20140310-0733"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.0.0.v20140505-0725"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="12.0.0.v201212092141"/>
 
       <!-- Eclipse Zest : ESB -->
-      <unit id="org.eclipse.zest.feature.group" version="1.5.2.201403090306"/>
+      <unit id="org.eclipse.zest.feature.group" version="1.5.100.201405050205"/>
 
       <!-- Eclipse OCL/ALL -->
-      <unit id="org.eclipse.ocl.all.feature.group" version="5.0.0.v20140122-1853"/>
+      <unit id="org.eclipse.ocl.all.feature.group" version="5.0.0.v20140429-0922"/>
 
       <unit id="javax.ws.rs" version="1.1.1.v20101004-1200"/>
       <unit id="javax.xml.bind" version="2.2.0.v201105210648"/>
@@ -125,7 +124,7 @@
       <!-- Teiid -->
       <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201403140900-M6/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201405090900-M7/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -162,6 +161,7 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
+      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20130517111416/"/>
     </location>
 
@@ -170,12 +170,12 @@
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.5.0.Beta1-v20140402-0437-B20"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Beta1-v20140408-1231-B31"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Beta1-v20140402-0437-B20"/>
-      <unit id="org.jboss.tools.common.test" version="3.6.0.Beta1-v20140402-0437-B20"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.5.0.Beta1-v20140408-1231-B31"/>
-      <repository location="http://download.jboss.org/jbosstools/static/releases/JBossTools-4.2.0.Beta1.coretests/"/>
+      <unit id="org.jboss.tools.tests" version="3.5.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Beta2-v20140528-1139-B52"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.common.test" version="3.6.0.Beta2-v20140530-0516-B33"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.6.0.Beta2-v20140528-1139-B52"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2a-updatesite-coretests/"/>
     </location>
 
   </locations>

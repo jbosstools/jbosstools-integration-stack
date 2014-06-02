@@ -32,7 +32,7 @@
     <jboss-tycho-version>0.19.0-SNAPSHOT</jboss-tycho-version>
     <!-- better version that still works: <jboss-tycho-version>0.16.0</jboss-tycho-version> -->
     <!-- old version: <jboss-tycho-version>0.16.0.CR2</jboss-tycho-version> -->
-    <JBTCoreTPVersion>4.40.0.Beta1</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.40.0.Beta3</JBTCoreTPVersion>
   </properties>
 
   <repositories>
