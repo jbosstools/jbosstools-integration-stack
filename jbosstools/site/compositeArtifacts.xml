@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.2.201402102317_0.7.0.201308220617_kepler/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://downloads.jboss.org/jbpm/release/6.0.1.Final/updatesite/"/>
+    <child location="http://downloads.jboss.org/jbpm/release/6.0.3.201406040014/updatesite/"/>
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.303.Final/"/>
