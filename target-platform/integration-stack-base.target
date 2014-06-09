@@ -23,8 +23,6 @@
       <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.2.0-SNAPSHOT/update.site-1.2.0-SNAPSHOT.zip-unzip/"/>
     </location>
 
-    <!-- TEMPORARY - use older version of graphiti -->
-    <!-- with Tycho 0.20, cannot include two incompatible versions of the same IU -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.10.2.v20140217-1225"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.10.2.v20140217-1225"/>
@@ -82,13 +80,6 @@
       <unit id="org.jsoup" version="1.7.2.v201304221138"/>
       <unit id="org.junit" version="4.11.0.v201303080030"/>
 
-      <!-- Eclipse Graphiti -->
-      <!-- with Tycho 0.20, cannot include two incompatible versions of the same IU -->
-      <!-- include 0.10 instead - see above
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140507-0848"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140507-0848"/>
-      -->
-
       <!-- Eclipse EMF -->
       <unit id="org.eclipse.emf.compare.feature.group" version="3.0.0.201405061412"/>
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.0.201405061412"/>
@@ -145,18 +136,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.3.v20130816-0854-CI/"/>
     </location>
 
-    <!-- FuseIDE 
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.springframework.aop" version="4.0.2.20140223-RELEASE.jar"/>
-      <unit id="org.springframework.beans" version="4.0.2.20140223-RELEASE.jar"/>
-      <unit id="org.springframework.context" version="4.0.2.20140223-RELEASE.jar"/>
-      <unit id="org.springframework.core" version="4.0.2.20140223-RELEASE.jar"/>
-      <unit id="org.springframework.expression" version="4.0.2.20140223-RELEASE.jar"/>
-      <unit id="org.springframework.transaction" version="4.0.2.20140223-RELEASE.jar"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.5.0.201404011509-RELEASE/"/>
-    </location>
-    -->
-
     <!-- Teiid -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
@@ -170,12 +149,12 @@
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.5.0.Beta2-v20140530-0516-B33"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Beta2-v20140528-1139-B52"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Beta2-v20140530-0516-B33"/>
-      <unit id="org.jboss.tools.common.test" version="3.6.0.Beta2-v20140530-0516-B33"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.6.0.Beta2-v20140528-1139-B52"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2a-updatesite-coretests/"/>
+      <unit id="org.jboss.tools.tests" version="3.5.0.Beta2-v20140603-1400-B36"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Beta2-v20140603-0830-B55"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Beta2-v20140603-1400-B36"/>
+      <unit id="org.jboss.tools.common.test" version="3.6.0.Beta2-v20140603-1400-B36"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.6.0.Beta2-v20140603-0830-B55"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/staging/jbosstools-4.2.0.Beta2b-updatesite-coretests/"/>
     </location>
 
   </locations>
