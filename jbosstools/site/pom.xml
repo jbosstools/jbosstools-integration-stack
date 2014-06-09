@@ -193,15 +193,15 @@
 	    </environment>
 	  </environments>
 
-          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
-	       JBoss Tools Integration Stack (with community). -->
+          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the
+	       full JBoss Tools Integration Stack (with community). -->
           <target>
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base</classifier>
+              <classifier>full</classifier>
             </artifact>
           </target>
         </configuration>
