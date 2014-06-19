@@ -27,130 +27,130 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </category-def>
 
 <!-- bpel -->
-<feature url="features/org.jboss.tools.bpel.feature_0.0.0.jar" id="org.jboss.tools.bpel.feature" version="0.0.0">
+<feature id="org.jboss.tools.bpel.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <!-- bpmn2 -->
-<feature url="features/org.eclipse.bpmn2.feature_0.0.0.jar" id="org.eclipse.bpmn2.feature" version="0.0.0">
+<feature id="org.eclipse.bpmn2.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<feature url="features/org.eclipse.bpmn2.modeler.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.feature" version="0.0.0">
+<feature id="org.eclipse.bpmn2.modeler.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<feature url="features/org.eclipse.bpmn2.modeler.jboss.runtime.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.jboss.runtime.feature" version="0.0.0">
+<feature id="org.eclipse.bpmn2.modeler.jboss.runtime.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <!-- drools -->
-<feature url="features/org.drools.eclipse.feature_0.0.0.jar" id="org.drools.eclipse.feature" version="0.0.0">
+<feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <!-- esb -->
-<feature url="features/org.jboss.tools.esb.feature_0.0.0.jar" id="org.jboss.tools.esb.feature" version="0.0.0">
+<feature id="org.jboss.tools.esb.feature">
   <category name="SOADev5" />
 </feature>
 
 <!-- fuse ide camel editor -->
-<feature url="features/org.fusesource.ide.camel.editor.feature_0.0.0.jar" id="org.fusesource.ide.camel.editor.feature" version="0.0.0">
+<feature id="org.fusesource.ide.camel.editor.feature">
   <category name="SOADev" />
 </feature>
 
 <!-- fuse ide runtimes -->
-<feature url="features/org.fusesource.ide.runtimes.feature_0.0.0.jar" id="org.fusesource.ide.runtimes.feature" version="0.0.0">
+<feature id="org.fusesource.ide.runtimes.feature">
   <category name="SOADev" />
 </feature>
 
 <!-- fuse ide server extensions -->
-<feature url="features/org.fusesource.ide.server.extensions.feature_0.0.0.jar" id="org.fusesource.ide.server.extensions.feature" version="0.0.0">
+<feature id="org.fusesource.ide.server.extensions.feature">
   <category name="SOADev" />
 </feature>
 
 <!-- guvnor -->
-<feature url="features/org.guvnor.tools.feature_0.0.0.jar" id="org.guvnor.tools.feature" version="0.0.0">
+<feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <!-- jbpm -->
-<feature url="features/org.jboss.tools.jbpm.convert.feature_0.0.0.jar" id="org.jboss.tools.jbpm.convert.feature" version="0.0.0">
+<feature id="org.jboss.tools.jbpm.convert.feature">
   <category name="SOADev5" />
 </feature>
 
-<feature url="features/org.jboss.tools.jbpm.common.feature_0.0.0.jar" id="org.jboss.tools.jbpm.common.feature" version="0.0.0">
+<feature id="org.jboss.tools.jbpm.common.feature">
   <category name="SOADev5" />
 </feature>
 
-<feature url="features/org.jboss.tools.jbpm3.feature_0.0.0.jar" id="org.jboss.tools.jbpm3.feature" version="0.0.0">
+<feature id="org.jboss.tools.jbpm3.feature">
   <category name="SOADev5" />
 </feature>
 
-<feature url="features/org.jbpm.eclipse.feature_0.0.0.jar" id="org.jbpm.eclipse.feature" version="0.0.0">
+<feature id="org.jbpm.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <!-- modeshape -->
-<feature url="features/org.jboss.tools.modeshape.rest.feature_0.0.0.jar" id="org.jboss.tools.modeshape.rest.feature" version="0.0.0">
+<feature id="org.jboss.tools.modeshape.rest.feature">
   <category name="DataVirtualization" />
 </feature>
 
-<feature url="features/org.jboss.tools.modeshape.jcr.feature_0.0.0.jar" id="org.jboss.tools.modeshape.jcr.feature" version="0.0.0">
+<feature id="org.jboss.tools.modeshape.jcr.feature">
   <category name="DataVirtualization" />
 </feature>
 
 <!-- runtime detectors -->
-<feature url="features/org.jboss.tools.runtime.drools.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.drools.detector.feature" version="0.0.0">
+<feature id="org.jboss.tools.runtime.drools.detector.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
-<feature url="features/org.jboss.tools.runtime.esb.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.esb.detector.feature" version="0.0.0">
+<feature id="org.jboss.tools.runtime.esb.detector.feature">
   <category name="SOADev5" />
 </feature>
 
-<feature url="features/org.jboss.tools.runtime.jbpm.detector.feature_0.0.0.jar" id="org.jboss.tools.runtime.jbpm.detector.feature" version="0.0.0">
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <!-- switchyard -->
-<feature url="features/org.switchyard.tools.feature_0.0.0.jar" id="org.switchyard.tools.feature" version="0.0.0">
+<feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
-<feature url="features/org.switchyard.tools.bpel.feature_0.0.0.jar" id="org.switchyard.tools.bpel.feature" version="0.0.0">
+<feature id="org.switchyard.tools.bpel.feature">
   <category name="SOADev" />
 </feature>
-<feature url="features/org.switchyard.tools.bpmn2.feature_0.0.0.jar" id="org.switchyard.tools.bpmn2.feature" version="0.0.0">
+<feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
 
 <!-- teiid -->
-<feature url="features/org.teiid.datatools.connectivity.feature_0.0.0.jar" id="org.teiid.datatools.connectivity.feature" version="0.0.0">
+<feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>
 
-<feature url="features/org.teiid.designer.feature_0.0.0.jar" id="org.teiid.designer.feature" version="0.0.0">
+<feature id="org.teiid.designer.feature">
   <category name="DataVirtualization" />
 </feature>
 
-<feature url="features/org.teiid.designer.runtime.feature_0.0.0.jar" id="org.teiid.designer.runtime.feature" version="0.0.0">
+<feature id="org.teiid.designer.runtime.feature">
   <category name="DataVirtualization" />
 </feature>
 
-<feature url="features/org.teiid.designer.teiid.client.feature_0.0.0.jar" id="org.teiid.designer.teiid.client.feature" version="0.0.0">
+<feature id="org.teiid.designer.teiid.client.feature">
   <category name="DataVirtualization" />
 </feature>
 
