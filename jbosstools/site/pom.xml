@@ -3,7 +3,6 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>site</artifactId>
-  <version>4.2.0-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
@@ -27,7 +26,7 @@
     <update.site.description>-</update.site.description>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
 
-    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://devstudio.jboss.com/download/7.x.html"&gt;JBoss Developer Studio 7&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
   </properties>
 
