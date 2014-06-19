@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>7.0.1-SNAPSHOT</version>
+    <version>8.0.0-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate</name>
@@ -28,7 +28,7 @@
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
 
     <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
-    <target.eclipse.version>4.3 (Kepler) or &lt;a href="https://devstudio.jboss.com/earlyaccess/7.0/"&gt;JBoss Developer Studio 7&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
     <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.1.5.Final/REPO/</targetplatform.url>
     <!-- The version to use for the target platform, defaults to project version. -->
