@@ -14,7 +14,7 @@
       <unit id="org.jboss.tools.community.central.feature.feature.group" version="1.3.0.Beta2-v20140613-0044-B68"/>
       <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="1.6.0.Beta2-v20140613-0044-B68"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/development/luna/"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Beta2-updatesite-core/"/>
     </location>
 
   </locations>
