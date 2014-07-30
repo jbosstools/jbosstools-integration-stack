@@ -53,21 +53,21 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide camel editor
+<!-- fuse ide camel editor -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="SOADev" />
 </feature>
 
-<!- - fuse ide runtimes
+<!-- fuse ide runtimes -->
 <feature id="org.fusesource.ide.runtimes.feature">
   <category name="SOADev" />
 </feature>
 
-<!- - fuse ide server extensions
+<!-- fuse ide server extensions -->
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="SOADev" />
 </feature>
--->
+
 <!-- guvnor -->
 <feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
