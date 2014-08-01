@@ -82,7 +82,7 @@ $java.home = ${java.home}
     <!-- Update the plugin.properties file. -->
     <echo file="${discovery.is.path}" append="true">
 jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
-    </echo>
+</echo>
   </target>
 
   <!-- Initialize, generate the composite site, *directory.xml, cleanup. -->
@@ -241,7 +241,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 &lt;entry url="${entry.url}" permitCategories="true"/>
 &lt;entry url="${central.discovery.is.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
-        </echo>
+</echo>
     </then></if>
 
   </target>
