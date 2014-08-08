@@ -121,7 +121,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard 
+<!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
@@ -131,7 +131,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
--->
+
 <!-- teiid
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
