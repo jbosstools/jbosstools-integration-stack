@@ -20,17 +20,19 @@
   </description>
 
   <properties>
+
     <!-- Community site from which the production devstudio build will draw. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/aggregate/4.1.4.Beta1/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Alpha1/</COMPOSITE_SITE>
 
     <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
 
-    <!-- might want to link to https://devstudio.jboss.com/earlyaccess/6.0/ instead? -->
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
+
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.1.5.Final/REPO/</targetplatform.url>
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.0.Alpha6/REPO/</targetplatform.url>
+
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
@@ -54,7 +56,7 @@
 
   <profiles>
 
-    <!-- integration build type profile -->
+    <!-- integration build profile -->
     <profile>
       <id>integration</id>
 
@@ -71,7 +73,7 @@
 
     </profile>
 
-    <!-- development build type profile -->
+    <!-- development build profile -->
     <profile>
       <id>development</id>
 
@@ -88,7 +90,7 @@
 
     </profile>
 
-    <!-- stable build type profile -->
+    <!-- stable build profile -->
     <profile>
       <id>stable</id>
 
@@ -177,7 +179,7 @@
           </environments>
 
           <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
-            JBoss Tools Integration Stack. -->
+	       JBoss Tools Integration Stack. -->
           <target>
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>
@@ -215,13 +217,7 @@
             </goals>
 
             <configuration>
-              <associateSites>
-                <!-- going with composites on the devstudio side
-                <associateSite>https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.core</associateSite>
-                <associateSite>https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.target-platform/</associateSite>
-                <associateSite>https://devstudio.jboss.com/updates/7.0.0/7.0.0.Beta1.jbds-is-target-platform/</associateSite>
-                -->
-              </associateSites>
+
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 
               <symbols>
