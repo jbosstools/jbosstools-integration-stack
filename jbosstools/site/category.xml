@@ -10,7 +10,7 @@ Tools related to business processes and rules development - includes support for
 
 <category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
-Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Modeshape and Teiid Designer.
+Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor and Modeshape (Teiid Designer not available yet).
   </description>
 </category-def>
 
@@ -121,7 +121,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard 
+<!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
@@ -131,8 +131,8 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
--->
-<!-- teiid
+
+<!-- teiid 
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>

@@ -12,10 +12,10 @@
   <children size="10">
 
     <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.101.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v20140808-2040-CI/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.2.201402102317_0.7.0.201308220617_luna/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.0.201408072130_0.7.0.201308220617_luna/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://downloads.jboss.org/jbpm/release/6.0.1.Final/updatesite/"/>
@@ -35,12 +35,12 @@
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
 
-    <!-- SWITCHYARD
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/switchyard/1.1.5.Final/"/>
-    -->
-    <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.3.Final/"/>
+    <!-- SWITCHYARD -->
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/esb/1.5.401.Alpha1/"/>
 
+    <!-- TEIID 
+    <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.3.Final/"/>
+    -->
   </children>
 
 </repository>
