@@ -12,7 +12,7 @@
   <children size="10">
 
     <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v20140808-2040-CI/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.101.Final/"/>
 
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.0.201408072130_0.7.0.201308220617_luna/"/>
