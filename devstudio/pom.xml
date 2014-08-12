@@ -16,13 +16,13 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Alpha6 -DVERSION=8.0.0.Alpha4 \
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Alpha7 -DVERSION=8.0.0.Alpha1 \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
-      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.2.0.Alpha6/ \
+      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.2.0.Alpha7/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml \
-      -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta2-updatesite-core/,\
-https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta2-target-platform/,\
-https://devstudio.jboss.com/updates/8.0.0/8.0.0.Alpha4.jbds-is-target-platform/,\
+      -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-updatesite-core/,\
+https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-target-platform/,\
+https://devstudio.jboss.com/updates/8.0.0/8.0.0.Alpha1.jbds-is-target-platform/,\
 http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
       If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
@@ -39,7 +39,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.0.Alpha1</VERSION>
-    <IS_TP_VERSION>4.2.0.Alpha6-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.2.0.Alpha7-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.20.0</tycho-version>
     <jboss-tycho-version>0.21.0</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
