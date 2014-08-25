@@ -10,9 +10,9 @@
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
     JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies +
-    JBoss Tools unified core target dependencies forming an 'aggregate-base.target' combined target.
+    JBoss Tools target platform (jbosstools-multiple) dependencies forms an 'jbds-is.target' combined target.
 
-    Then add any leftover community dependencies to the aggregate forming an aggregate-full.target.
+    Then add any leftover community dependencies to the aggregate to form an jbt-is.target.
   </description>
 
   <packaging>pom</packaging>
@@ -26,10 +26,10 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.20.0</tychoVersion>
+    <tychoVersion>0.21.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.21.0</jboss-tycho-version>
-    <JBTCoreTPVersion>4.40.0.Beta4</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.40.0.CR1-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
   <repositories>
@@ -39,7 +39,7 @@
       <name>JBoss Snapshots Repository</name>
       <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
       <snapshots>
-	<enabled>true</enabled>
+        <enabled>true</enabled>
       </snapshots>
     </repository>
 
@@ -48,7 +48,7 @@
       <name>JBoss Releases Maven Repository</name>
       <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
       <releases>
-	<enabled>true</enabled>
+        <enabled>true</enabled>
       </releases>
     </repository>
 
@@ -103,295 +103,292 @@
   </reporting>
 
   <build>
-
     <plugins>
 
+      <!-- this execution just copies the jbds-is.target into the target/ folder for convenience -->
       <plugin>
-	<groupId>org.eclipse.tycho</groupId>
-	<artifactId>tycho-maven-plugin</artifactId>
-	<version>${tychoVersion}</version>
-	<extensions>true</extensions>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>${basedir}</directory>
+                  <includes>
+                    <include>jbds-is.target</include>
+                  </includes>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
       </plugin>
 
       <plugin>
-	<groupId>org.jboss.tools.tycho-plugins</groupId>
-	<artifactId>target-platform-utils</artifactId>
-	<version>${jboss-tycho-version}</version>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tychoVersion}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.jboss.tools.tycho-plugins</groupId>
+        <artifactId>target-platform-utils</artifactId>
+        <version>${jboss-tycho-version}</version>
 
-	<executions>
-
-	  <!-- Merge:
-
-	       1. the integration-stack specific target dependencies:   integration-stack-base.target
-	       2. the JBoss Tools core target dependencies:           + core-base.target
-	       3. the JBoss Tools unified core target dependencies:   + jbosstools-unified....target
-                                                                        _____________________________
-	       to generate an aggregate base target dependencies file:  aggregate-base.target
+        <executions>
+          <!-- Merge:
+               1. the integration-stack specific target dependencies:  jbds-is.target
+               2. the JBoss Tools core target dependencies:          + core-base.target
+               3. the JBoss Tools TP target dependencies (upstream): + jbosstools-multiple....target
+                                                                       _____________________________
+               to generate the FULL JBDS-IS target dependencies file:  jbds-is-full.target
             -->
-	  <execution>
+          <execution>
+            <id>merge-jbds-is-full</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>merge-targets</goal>
+            </goals>
+            <configuration>
+              <sourceTargetArtifacts>
+                <item>
+                  <groupId>org.jboss.tools.targetplatforms</groupId>
+                  <artifactId>jbosstools-multiple</artifactId>
+                  <version>${JBTCoreTPVersion}</version>
+                  <classifier>jbosstools-multiple</classifier>
+                </item>
+              </sourceTargetArtifacts>
+              <sourceTargetFiles>
+                <item>${basedir}/jbds-is.target</item>
+                <item>${basedir}/core-base.target</item>
+              </sourceTargetFiles>
+              <outputFile>${project.build.directory}/jbds-is-full.target</outputFile>
+            </configuration>
+          </execution>
 
-	    <id>merge-base</id>
-	    <phase>generate-resources</phase>
-	    <goals>
-	      <goal>merge-targets</goal>
-	    </goals>
+          <!-- Merge:
+               1. the integration-stack specific target dependencies: jbds-is.target
+               2. the community-specific target dependencies:       + community.target
+                                                                      _____________________
+               to generate the JBT-IS target dependencies file:       jbt-is.target
+            -->
+          <execution>
+            <id>merge-jbt-is</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>merge-targets</goal>
+            </goals>
+            <configuration>
+              <sourceTargetFiles>
+                <item>${basedir}/jbds-is.target</item>
+                <item>${basedir}/community.target</item>
+              </sourceTargetFiles>
+              <outputFile>${project.build.directory}/jbt-is.target</outputFile>
+            </configuration>
+          </execution>
 
-	    <configuration>
+          <!-- Merge:
+               1. the previously generated aggregate base target file: jbds-is-full.target
+               2. the community-specific target dependencies:        + community.target
+                                                                       _____________________
+               to generate the FULL JBT-IS target dependencies file:   jbt-is-full.target
+            -->
+          <execution>
+            <id>merge-jbt-is-full</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>merge-targets</goal>
+            </goals>
+            <configuration>
+              <sourceTargetFiles>
+                <item>${basedir}/community.target</item>
+                <item>${project.build.directory}/jbds-is-full.target</item>
+              </sourceTargetFiles>
+              <outputFile>${project.build.directory}/jbt-is-full.target</outputFile>
+            </configuration>
+          </execution>
 
-	      <sourceTargetArtifacts>
-		<item>
-		  <groupId>org.jboss.tools.targetplatforms</groupId>
-		  <artifactId>jbosstools-multiple</artifactId>
-		  <version>${JBTCoreTPVersion}</version>
-		  <classifier>jbosstools-multiple</classifier>
-		</item>
-	      </sourceTargetArtifacts>
-
-	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base.target</item>
-		<item>${basedir}/core-base.target</item>
-	      </sourceTargetFiles>
-
-	      <outputFile>${project.build.directory}/aggregate-base.target</outputFile>
-
-	    </configuration>
-	  </execution>
-
-	  <!-- Merge:
-	       1. the previously generated aggregate base target file:    aggregate-base.target
-	       2. the community-specific target dependencies:           + community.target
-                                                                          _____________________
-	       to generate the full community target dependencies file:   aggregate-full.target
-	    -->
-	  <execution>
-
-	    <id>merge-community</id>
-	    <phase>generate-resources</phase>
-	    <goals>
-	      <goal>merge-targets</goal>
-	    </goals>
-
-	    <configuration>
-
-	      <sourceTargetFiles>
-		<item>${basedir}/community.target</item>
-		<item>${project.build.directory}/aggregate-base.target</item>
-	      </sourceTargetFiles>
-
-	      <outputFile>${project.build.directory}/aggregate-full.target</outputFile>
-
-	    </configuration>
-	  </execution>
-
-	</executions>
+        </executions>
       </plugin>
 
       <plugin>
-	<groupId>org.eclipse.tycho.extras</groupId>
-	<artifactId>target-platform-validation-plugin</artifactId>
-	<version>${tychoExtrasVersion}</version>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>target-platform-validation-plugin</artifactId>
+        <version>${tychoExtrasVersion}</version>
 
-	<executions>
-	  <execution>
+        <executions>
+          <execution>
 
-	    <!--Validate the aggregated target dependencies. -->
-	    <phase>verify</phase>
-	    <goals>
-	      <goal>validate-target-platform</goal>
-	    </goals>
+            <!--Validate the aggregated target dependencies - use the FULL target platform files in order to ensure all dependencies are found. -->
+            <phase>verify</phase>
+            <goals>
+              <goal>validate-target-platform</goal>
+            </goals>
 
-	    <configuration>
+            <configuration>
 
-	      <targetFiles>
-		<param>${project.build.directory}/aggregate-base.target</param>
-		<param>${project.build.directory}/aggregate-full.target</param>
-	      </targetFiles>
-	      <failOnError>true</failOnError>
+              <targetFiles>
+                <param>${project.build.directory}/jbds-is-full.target</param>
+                <param>${project.build.directory}/jbt-is-full.target</param>
+              </targetFiles>
+              <failOnError>true</failOnError>
 
-	    </configuration>
-	  </execution>
-	</executions>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
 
-      <!-- Use the codehaus mojo to package the aggegated target dependencies (base and community). -->
+      <!-- Use the codehaus mojo to package the aggegated target dependencies (jbds-is (base) and jbt-is (community)). -->
       <plugin>
-	<groupId>org.codehaus.mojo</groupId>
-	<artifactId>build-helper-maven-plugin</artifactId>
-	<version>1.3</version>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.3</version>
 
-	<executions>
-	  <execution>
-	    <id>attach-artifacts-base</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>attach-artifact</goal>
-	    </goals>
+        <executions>
+          <execution>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
 
-	    <configuration>
+            <configuration>
+              <tasks>
+                <echo>Package the target files.</echo>
+              </tasks>
+              <artifacts>
+                <artifact>
+                  <file>${basedir}/jbds-is.target</file>
+                  <type>target</type>
+                  <classifier>jbds-is</classifier>
+                </artifact>
+                <artifact>
+                  <file>${project.build.directory}/jbds-is-full.target</file>
+                  <type>target</type>
+                  <classifier>jbds-is-full</classifier>
+                </artifact>
+                <artifact>
+                  <file>${project.build.directory}/jbt-is.target</file>
+                  <type>target</type>
+                  <classifier>jbt-is</classifier>
+                </artifact>
+                <artifact>
+                  <file>${project.build.directory}/jbt-is-full.target</file>
+                  <type>target</type>
+                  <classifier>jbt-is-full</classifier>
+                </artifact>
+              </artifacts>
+            </configuration>
+          </execution>
 
-	      <tasks>
-		<echo>Packaging the aggregated base target dependencies.</echo>
-	      </tasks>
-
-	      <artifacts>
-		<artifact>
-		  <file>${project.build.directory}/aggregate-base.target</file>
-		  <type>target</type>
-		  <classifier>base</classifier>
-		</artifact>
-	      </artifacts>
-
-	    </configuration>
-	  </execution>
-
-	  <execution>
-	    <id>attach-artifacts-full</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>attach-artifact</goal>
-	    </goals>
-
-	    <configuration>
-
-	      <tasks>
-		<echo>Packaging the aggregated full target dependencies (base + community).</echo>
-	      </tasks>
-
-	      <artifacts>
-		<artifact>
-		  <file>${project.build.directory}/aggregate-full.target</file>
-		  <type>target</type>
-		  <classifier>full</classifier>
-		</artifact>
-	      </artifacts>
-
-	    </configuration>
-	  </execution>
-
-	  <execution>
-	    <id>attach-artifacts-target-platform-base</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>attach-artifact</goal>
-	    </goals>
-	    <configuration>
-	      <artifacts>
-		<artifact>
-		  <file>integration-stack-base.target</file>
-		  <type>target</type>
-		  <classifier>integration-stack-base</classifier>
-		</artifact>
-	      </artifacts>
-	    </configuration>
-	  </execution>
-
-	</executions>
+        </executions>
       </plugin>
 
     </plugins>
   </build>
 
-  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
-       build as an extra repo.  -->
+  <!-- Mirror just the jbt-is target dependencies (superset of jbds-is dependencies).  This will be used by the production build as an extra repo.  -->
   <profiles>
     <profile>
       <id>isbtp2repo</id>
       <activation>
-	<activeByDefault>false</activeByDefault>
+        <activeByDefault>false</activeByDefault>
       </activation>
 
       <build>
-	<plugins>
+        <plugins>
 
-	  <plugin>
-	    <groupId>org.jboss.tools.tycho-plugins</groupId>
-	    <artifactId>target-platform-utils</artifactId>
-	    <version>${jboss-tycho-version}</version>
+          <plugin>
+            <groupId>org.jboss.tools.tycho-plugins</groupId>
+            <artifactId>target-platform-utils</artifactId>
+            <version>${jboss-tycho-version}</version>
 
-	    <executions>
-	      <execution>
-		<phase>package</phase>
-		<goals>
-		  <goal>mirror-target-to-repo</goal>
-		</goals>
-		<configuration>
-		  <!-- Using Tycho 0.21.0, must resolve aggregate-full.target, not integration-stack-base.target, or build fails due to missing deps; make sure you've run this to update to latest IU versions first (see README.update.txt)!
+            <executions>
+              <execution>
+                <phase>package</phase>
+                <goals>
+                  <goal>mirror-target-to-repo</goal>
+                </goals>
+                <configuration>
+                  <!-- Using Tycho 0.21.0, must resolve jbt-is.target, not jbds-is.target, or build fails due to missing deps; make sure you've run this to update to latest IU versions first (see README.update.txt)!
 
 for tf in *.target; do 
-  mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=${tf}
+  mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.21.0-SNAPSHOT:fix-versions -DtargetFile=${tf}
   if [[ -f ${tf}_fixedVersion.target ]]; then rm -f ${tf} *_update_hints.txt; mv -f ${tf}{_fixedVersion.target,}; fi
 done
-		-->
-		  <sourceTargetFile>${project.build.directory}/aggregate-full.target</sourceTargetFile>
-		</configuration>
-	      </execution>
-	    </executions>
-	  </plugin>
+                -->
+                  <sourceTargetFile>${project.build.directory}/jbt-is.target</sourceTargetFile>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
 
-	  <plugin>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-antrun-plugin</artifactId>
-	    <version>1.7</version>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.7</version>
 
-	    <executions>
-	      <execution>
-		<phase>package</phase>
+            <executions>
+              <execution>
+                <phase>package</phase>
 
-		<configuration>
-		  <quiet>true</quiet>
-		  <target>
-		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
-		    <ant antfile="../scripts/remove.references.xml" dir=".">
-		      <property name="workDir" value="./target/target-platform.target.repo" />
-		    </ant>
-		  </target>
-		</configuration>
-		<goals>
-		  <goal>run</goal>
-		</goals>
-	      </execution>
-	    </executions>
+                <configuration>
+                  <quiet>true</quiet>
+                  <target>
+                    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+                    <ant antfile="../scripts/remove.references.xml" dir=".">
+                      <property name="workDir" value="./target/target-platform.target.repo" />
+                    </ant>
+                  </target>
+                </configuration>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
 
-	    <dependencies>
-	      <dependency>
-		<groupId>commons-net</groupId>
-		<artifactId>commons-net</artifactId>
-		<version>1.4.1</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant</artifactId>
-		<version>1.8.2</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-nodeps</artifactId>
-		<version>1.8.1</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-trax</artifactId>
-		<version>1.8.0</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-commons-net</artifactId>
-		<version>1.8.2</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-apache-regexp</artifactId>
-		<version>1.8.2</version>
-	      </dependency>
-	      <dependency>
-		<groupId>ant-contrib</groupId>
-		<artifactId>ant-contrib</artifactId>
-		<version>1.0b3</version>
-	      </dependency>
-	    </dependencies>
+            <dependencies>
+              <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>1.4.1</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>1.8.2</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant-nodeps</artifactId>
+                <version>1.8.1</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant-trax</artifactId>
+                <version>1.8.0</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant-commons-net</artifactId>
+                <version>1.8.2</version>
+              </dependency>
+              <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant-apache-regexp</artifactId>
+                <version>1.8.2</version>
+              </dependency>
+            </dependencies>
 
-	  </plugin>
-	</plugins>
+          </plugin>
+        </plugins>
 
       </build>
     </profile>
