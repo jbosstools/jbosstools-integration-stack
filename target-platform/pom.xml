@@ -165,7 +165,7 @@
 	    -->
 	  <execution>
 
-	    <id>merge-community</id>
+	    <id>merge-community-full</id>
 	    <phase>generate-resources</phase>
 	    <goals>
 	      <goal>merge-targets</goal>
