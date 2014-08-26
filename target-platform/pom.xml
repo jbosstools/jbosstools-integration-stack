@@ -124,7 +124,7 @@
 
 	       1. the integration-stack specific target dependencies:   integration-stack-base.target
 	       2. the JBoss Tools core target dependencies:           + core-base.target
-	       3. the JBoss Tools unified core target dependencies:   + jbosstools-unified....target
+	       3. the JBoss Tools unified core target dependencies:   + jbosstools-unified.target
                                                                         _____________________________
 	       to generate an aggregate base target dependencies file:  aggregate-base.target
             -->
@@ -179,6 +179,32 @@
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-full.target</outputFile>
+
+	    </configuration>
+	  </execution>
+
+	  <!-- Merge:
+	       1. the integration-stack specific target dependencies:   integration-stack-base.target
+	       2. the community-specific target dependencies:           + community.target
+                                                                    _____________________
+	       to generate the full community target dependencies file:   integration-stack-community.target
+	    -->
+	  <execution>
+
+	    <id>merge-community</id>
+	    <phase>generate-resources</phase>
+	    <goals>
+	      <goal>merge-targets</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <sourceTargetFiles>
+		<item>${basedir}/integration-stack-base.target</item>
+		<item>${basedir}/community.target</item>
+	      </sourceTargetFiles>
+
+	      <outputFile>${project.build.directory}/integration-stack-community.target</outputFile>
 
 	    </configuration>
 	  </execution>
@@ -322,7 +348,7 @@ for tf in *.target; do
   if [[ -f ${tf}_fixedVersion.target ]]; then rm -f ${tf} *_update_hints.txt; mv -f ${tf}{_fixedVersion.target,}; fi
 done
 		-->
-		  <sourceTargetFile>${project.build.directory}/aggregate-full.target</sourceTargetFile>
+		  <sourceTargetFile>${project.build.directory}/integration-stack-community.target</sourceTargetFile>
 		</configuration>
 	      </execution>
 	    </executions>
