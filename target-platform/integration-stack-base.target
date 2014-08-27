@@ -123,9 +123,9 @@
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201308220617"/>
 
       <!-- BPMN2 - Modeler -->
-      <unit id="org.eclipse.bpmn2.modeler.feature.feature.group" version="1.0.2.201402102317"/>
-      <unit id="org.eclipse.bpmn2.modeler.jboss.runtime.feature.feature.group" version="1.0.2.201402102317"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.2.201402102317_0.7.0.201308220617_luna/"/>
+      <unit id="org.eclipse.bpmn2.modeler.feature.group" version="1.1.0.201408072130"/>
+      <unit id="org.eclipse.bpmn2.modeler.runtime.jboss.feature.group" version="1.1.0.201408072130"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.0.201408072130_0.7.0.201308220617_luna/"/>
     </location>
 
     <!-- BPEL -->
@@ -134,6 +134,12 @@
       <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.4.v20140808-2040-CI"/>
       <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.4.v20140808-2040-CI"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v20140808-2040-CI/"/>
+    </location>
+
+    <!-- Fuse Tooling -->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.gemini.management" version="2.0.0.RELEASE"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gemini/2.0.0.RELEASE/"/>
     </location>
 
     <!-- Teiid -->

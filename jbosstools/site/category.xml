@@ -32,12 +32,12 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<feature id="org.eclipse.bpmn2.modeler.feature">
+<feature id="org.eclipse.bpmn2.modeler">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<feature id="org.eclipse.bpmn2.modeler.jboss.runtime.feature">
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -121,7 +121,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard -->
+<!-- switchyard - temporary until rebuilt with new bpmn2 modeler
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
@@ -131,7 +131,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- teiid 
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
