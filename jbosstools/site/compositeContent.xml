@@ -21,7 +21,7 @@
     <child location="http://downloads.jboss.org/jbpm/release/6.0.3.Final/updatesite/"/>
 
     <!-- ESB -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/esb/1.5.401.Alpha1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/esb/1.5.510.Alpha1/"/>
 
     <!-- FUSE -->
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.Beta1/all/repo/"/>
