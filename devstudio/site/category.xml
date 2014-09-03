@@ -66,8 +66,18 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide runtimes -->
-<feature id="org.fusesource.ide.runtimes.feature">
+<!-- fuse ide core -->
+<feature id="org.fusesource.ide.core.feature">
+  <category name="SOADev" />
+</feature>
+
+<!-- fuse ide jmx -->
+<feature id="org.fusesource.ide.jmx.feature">
+  <category name="SOADev" />
+</feature>
+
+<!-- fuse ide sap -->
+<feature id="org.fusesource.ide.sap.feature">
   <category name="SOADev" />
 </feature>
 
@@ -130,9 +140,11 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
+
 <feature id="org.switchyard.tools.bpel.feature">
   <category name="SOADev" />
 </feature>
+
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
