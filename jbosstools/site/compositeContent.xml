@@ -35,9 +35,9 @@
     <!-- SAVARA -->
     <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
 
-    <!-- SWITCHYARD - temporary until rebuilt with new bpmn2 modeler
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/switchyard/2.0.0.Alpha2/"/>
-    -->
+    <!-- SWITCHYARD -->
+    <child location="http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/switchyard/2.0.0/"/>
+
     <!-- TEIID
     <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.3.Final/"/>
     -->

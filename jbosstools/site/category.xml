@@ -58,11 +58,11 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide runtimes -->
+<!-- fuse ide runtimes 
 <feature id="org.fusesource.ide.runtimes.feature">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- fuse ide server extensions -->
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="SOADev" />
@@ -121,17 +121,19 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- switchyard - temporary until rebuilt with new bpmn2 modeler
+<!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
+
 <feature id="org.switchyard.tools.bpel.feature">
   <category name="SOADev" />
 </feature>
+
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
--->
+
 <!-- teiid 
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
