@@ -58,11 +58,21 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide runtimes 
-<feature id="org.fusesource.ide.runtimes.feature">
+<!-- fuse ide core -->
+<feature id="org.fusesource.ide.core.feature">
   <category name="SOADev" />
 </feature>
--->
+
+<!-- fuse ide jmx -->
+<feature id="org.fusesource.ide.jmx.feature">
+  <category name="SOADev" />
+</feature>
+
+<!-- fuse ide sap -->
+<feature id="org.fusesource.ide.sap.feature">
+  <category name="SOADev" />
+</feature>
+
 <!-- fuse ide server extensions -->
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="SOADev" />
