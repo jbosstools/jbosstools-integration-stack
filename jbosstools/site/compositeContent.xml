@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.0.201408072130_0.7.0.201308220617_luna/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://downloads.jboss.org/jbpm/release/6.0.3.Final/updatesite/"/>
+    <child location="http://downloads.jboss.org/jbpm/release/6.1.0.Final/updatesite/"/>
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/esb/1.5.510.Alpha1/"/>
@@ -40,7 +40,10 @@
 
     <!-- TEIID
     <child location="http://download.jboss.org/jbosstools/updates/release/kepler/integration-stack/teiiddesigner/8.3.3.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/teiiddesigner/8.3.4.CR2/"/>
+    Needs to be rebuilt against luna JBTIS TP for bundle org.jboss.ide.eclipse.as.core
     -->
+
   </children>
 
 </repository>
