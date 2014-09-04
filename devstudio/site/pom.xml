@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>7.0.2-SNAPSHOT</version>
+    <version>7.0.3-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate</name>
@@ -21,7 +21,7 @@
 
   <properties>
     <!-- Community site from which the production devstudio build will draw. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.5.Final/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.6.CR1/</COMPOSITE_SITE>
 
     <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
