@@ -42,8 +42,18 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- drools -->
+<!-- drools/jBPM -->
 <feature id="org.drools.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.guvnor.tools.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jbpm.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -57,38 +67,28 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide camel editor -->
+<!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide core -->
 <feature id="org.fusesource.ide.core.feature">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide jmx -->
 <feature id="org.fusesource.ide.jmx.feature">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide sap -->
 <feature id="org.fusesource.ide.sap.feature">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse ide server extensions -->
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="SOADev" />
 </feature>
 
-<!-- guvnor -->
-<feature id="org.guvnor.tools.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<!-- jbpm -->
+<!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature">
   <category name="BusinessLogic" />
 </feature>
@@ -99,11 +99,6 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <feature id="org.jboss.tools.jbpm3.feature">
   <category name="BusinessLogic" />
-</feature>
-
-<feature id="org.jbpm.eclipse.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <!-- modeshape -->
@@ -148,7 +143,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- teiid 
+<!-- teiid
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>
