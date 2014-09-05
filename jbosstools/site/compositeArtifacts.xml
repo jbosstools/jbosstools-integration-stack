@@ -21,7 +21,7 @@
     <child location="http://downloads.jboss.org/jbpm/release/6.1.0.Final/updatesite/"/>
 
     <!-- ESB -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.303.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.310.Final/"/>
 
     <!-- FUSE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/fuse-tooling/7.2.1.Final/all/repo/"/>
