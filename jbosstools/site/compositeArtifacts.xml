@@ -23,8 +23,8 @@
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/esb/1.5.510.Alpha1/"/>
 
-    <!-- FUSE -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.Beta1/all/repo/"/>
+    <!-- FUSE temporary
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.Beta1/all/repo/"/> -->
 
     <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>

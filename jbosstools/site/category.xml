@@ -10,13 +10,13 @@ Tools related to business processes and rules development - includes support for
 
 <category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
-Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor and Modeshape (Teiid Designer not available yet).
+Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor and Modeshape (Teiid Designer not yet available).
   </description>
 </category-def>
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Fuse, Guvnor, jBPM, Savara and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Guvnor, jBPM, Savara and Switchyard (Fuse Tooling not yet available).
   </description>
 </category-def>
 
@@ -67,7 +67,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- fuse tooling -->
+<!-- fuse tooling temporary
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="SOADev" />
 </feature>
@@ -87,7 +87,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature">
   <category name="BusinessLogic" />
@@ -143,7 +143,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- teiid
+<!-- teiid 
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>
