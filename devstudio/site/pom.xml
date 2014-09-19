@@ -219,9 +219,7 @@
             <configuration>
 
 	      <associateSites>
-		<associateSite>https://devstudio.jboss.com/updates/8.0-development/</associateSite>
-		<associateSite>https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-updatesite-core/</associateSite>
-		<associateSite>https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-target-platform/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/development/luna/</associateSite>
 	      </associateSites>
 
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
