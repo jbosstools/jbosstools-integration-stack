@@ -17,7 +17,6 @@ releasable.
 * [Fuse IDE](http://fusesource.com/products/fuse-ide/)
 * [jBPM 3 Legacy Flow Editor](http://www.jboss.org/jbpm/)
 * [Modeshape Distributed, Hierarchical, Transactional, and Consistent Data Support](http://www.jboss.org/modeshape)
-* [Savara Testable Architecture Tool Support](http://www.jboss.org/savara)/ [Scribble Protocol Language](http://www.jboss.org/scribble)
 * [Switchyard Lightweight Service Delivery Framework](http://www.jboss.org/switchyard.html)
 * [Teiid Designer](http://www.jboss.org/teiiddesigner)
 
