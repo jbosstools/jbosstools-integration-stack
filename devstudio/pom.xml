@@ -16,7 +16,7 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Alpha8 -DVERSION=8.0.0.Alpha2 \
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Alpha8 -DVERSION=8.0.0.Beta1 \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
       -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.2.0.Alpha8/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml \
@@ -38,7 +38,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>8.0.0.Alpha2</VERSION>
+    <VERSION>8.0.0.Beta1</VERSION>
     <IS_TP_VERSION>4.2.0.Alpha8-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.0</jboss-tycho-version>
