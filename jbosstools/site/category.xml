@@ -16,7 +16,7 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Guvnor, jBPM, Savara and Switchyard (Fuse Tooling not yet available).
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Guvnor, jBPM and Switchyard (Fuse Tooling not yet available).
   </description>
 </category-def>
 
@@ -122,11 +122,6 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<!-- savara -->
-<feature id="org.savara.tools.feature">
   <category name="SOADev" />
 </feature>
 

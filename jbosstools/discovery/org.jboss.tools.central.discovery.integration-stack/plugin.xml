@@ -78,7 +78,7 @@
        provider="JBoss by Red Hat"
        siteUrl="%jboss.is.update.url"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM, Savara and Switchyard (Fuse Tooling not yet available)."
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM and Switchyard (Fuse Tooling not yet available)."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -93,7 +93,6 @@
       <iu id="org.fusesource.ide.camel.editor.feature"/>
       <iu id="org.fusesource.ide.runtimes.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/> -->
-      <iu id="org.savara.tools.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
@@ -141,25 +140,6 @@
       <iu id="org.jboss.tools.bpel.feature"/>
       <icon
 	 image32="images/jbds_bpel_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.jboss.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
-       name="JBoss Savara Editor"
-       description="JBoss Savara Editor"
-       id="org.savara.tools.feature">
-      <iu id="org.savara.tools.feature"/>
-      <icon
-	 image32="images/jbds_savara_32.png">
       </icon>
       <overview
 	 url="http://devstudio.jboss.com/">
