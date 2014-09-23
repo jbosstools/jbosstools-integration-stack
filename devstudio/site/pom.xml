@@ -31,7 +31,7 @@
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.0.Alpha8/REPO/</targetplatform.url>
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.0.Beta1/REPO/</targetplatform.url>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -217,10 +217,6 @@
             </goals>
 
             <configuration>
-
-	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/updates/development/luna/</associateSite>
-	      </associateSites>
 
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 

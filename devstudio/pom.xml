@@ -16,20 +16,8 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Alpha8 -DVERSION=8.0.0.Beta1 \
-      -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
-      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.2.0.Alpha8/ \
-      -DUPSTREAM_DIRECTORY_XML=https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml \
-      -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-updatesite-core/,\
-https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-target-platform/,\
-https://devstudio.jboss.com/updates/8.0.0/8.0.0.Alpha2.jbds-is-target-platform/,\
-http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
-      If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
-      -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site/target/repository/
-
-      If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///....
+mvn -DUPSTREAM_UPDATE_SITE=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-updatesite-core/ -DTARGET_PLATFORM=luna -DIS_TP_VERSION=4.2.0.Beta1-SNAPSHOT -Dtargetplatform.url=file:///home/pleacu/git-clone/jbosstools-integration-stack/target-platform/target/target-platform.target.repo/ -DUPSTREAM_DISCOVERY_XML=https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml -DTP_SITE=file:///home/pleacu/git-clone/jbosstools-integration-stack/target-platform/target/target-platform.target.repo/ -DBUILD_ALIAS=Beta1 -DBUILD_TYPE=development -DUPDATE_SITE=/home/pleacu/temp/repo/ -DskipRevisionCheckWhenPublishing=true -DUPSTREAM_EXTRAS_SITE=https://devstudio.jboss.com/updates/8.0-development/extras/ -DVERSION=8.0.0.Beta1 -DBUILD_KIND=devstudio -DCOMPOSITE_SITE=file:///home/pleacu/git-clone/jbosstools-integration-stack/jbosstools/site/target/repository/ -DUPSTREAM_TP_SITE=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-target-platform/ clean install checkstyle:check -DBUILD_NUMBER=56 -DBUILD_ALIAS=Beta1 -DBUILD_TYPE=development -DTARGET_PLATFORM=luna -DVERSION=8.0.0.Beta1 -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/8.0-development/extras/,https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-updatesite-core/,https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.Beta3-target-platform/,file:///home/pleacu/git-clone/jbosstools-integration-stack/target-platform/target/target-platform.target.repo/
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -39,7 +27,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.0.Beta1</VERSION>
-    <IS_TP_VERSION>4.2.0.Alpha8-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.2.0.Beta1-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.0</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
