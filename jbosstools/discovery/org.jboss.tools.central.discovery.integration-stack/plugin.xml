@@ -142,7 +142,7 @@
 	 image32="images/jbds_bpel_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -162,7 +162,7 @@
 	 image32="images/jbds_drools_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -181,7 +181,7 @@
 	 image32="images/jbds_guvnor_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -201,7 +201,7 @@
 	 image32="images/jbds_jbpm_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -221,7 +221,7 @@
 	 image32="images/jbds_esb_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -242,7 +242,7 @@
 	 image32="images/jbds_switchyard_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -262,7 +262,7 @@
 	 image32="images/jbds_modeshape_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -284,7 +284,7 @@
 	 image32="images/jbds_tdesigner_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -305,7 +305,7 @@
 	 image32="images/jbosstools_icon32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
