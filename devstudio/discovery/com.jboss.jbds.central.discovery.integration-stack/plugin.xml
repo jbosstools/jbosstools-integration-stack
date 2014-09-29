@@ -20,6 +20,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -40,7 +41,7 @@
         image32="images/jbds_icon32.png">
       </icon>
       <overview
-        url="http://devstudio.jboss.com/">
+        url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -48,6 +49,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -65,7 +67,7 @@
         image32="images/jbds_icon32.png">
       </icon>
       <overview
-        url="http://devstudio.jboss.com/">
+        url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -73,6 +75,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -100,7 +103,7 @@
         image32="images/jbds_icon32.png">
       </icon>
       <overview
-        url="http://devstudio.jboss.com/">
+        url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -108,6 +111,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -132,7 +136,7 @@
         image32="images/jbds_icon32.png">
       </icon>
       <overview
-        url="http://devstudio.jboss.com/">
+        url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -143,7 +147,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.url:https://devstudio.jboss.com/updates/7.0-development/central/integration-stack/}"
+       siteUrl="${jboss.discovery.site.url:https://devstudio.redhat.com/updates/7.0-development/central/integration-stack/}"
        name="BPEL Editor Examples"
        description="Examples related to the BPEL editor."
        id="jboss.integration-stack.bundle.bpr">
@@ -155,7 +159,7 @@
         image32="images/jbds_icon32.png">
       </icon>
       <overview
-        url="http://devstudio.jboss.com/">
+        url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
     -->

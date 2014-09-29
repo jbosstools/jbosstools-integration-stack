@@ -20,6 +20,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -48,6 +49,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -73,6 +75,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -131,6 +134,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -143,13 +147,14 @@
 	 image32="images/jbds_bpel_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -162,13 +167,14 @@
 	 image32="images/jbds_savara_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -182,13 +188,14 @@
 	 image32="images/jbds_drools_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -201,13 +208,14 @@
 	 image32="images/jbds_guvnor_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -221,7 +229,7 @@
 	 image32="images/jbds_jbpm_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -241,13 +249,14 @@
 	 image32="images/jbds_esb_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -262,13 +271,14 @@
 	 image32="images/jbds_switchyard_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -282,13 +292,14 @@
 	 image32="images/jbds_modeshape_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -304,13 +315,14 @@
 	 image32="images/jbds_tdesigner_32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.r"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -325,7 +337,7 @@
 	 image32="images/jbosstools_icon32.png">
       </icon>
       <overview
-	 url="http://devstudio.jboss.com/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 

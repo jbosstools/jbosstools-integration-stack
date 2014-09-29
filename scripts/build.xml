@@ -29,8 +29,8 @@
 
   <property name="project.build.directory" value="${output.dir}/target"/>
   <!-- this will either be the JBT or JBDS discovery site's directory.xml file 
-    https://devstudio.jboss.com/updates/8.0/devstudio-directory.xml
-    https://devstudio.jboss.com/updates/8.0-development/devstudio-directory.xml
+    https://devstudio.redhat.com/updates/8.0/devstudio-directory.xml
+    https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml
     http://download.jboss.org/jbosstools/updates/stable/luna/jbosstools-directory.xml
     http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml
     etc.
@@ -69,9 +69,9 @@ $java.home = ${java.home}
 	<property name="discovery.is.dir" value="com.jboss.jbds.central.discovery.integration-stack" />
 
 	<if><equals arg1="${BUILD_TYPE}" arg2="stable" trim="true" /><then>
-	    <property name="discovery.is.url" value="https://devstudio.jboss.com/updates/8.0/central/integration-stack/" /></then>
+	    <property name="discovery.is.url" value="https://devstudio.redhat.com/updates/8.0/central/integration-stack/" /></then>
 	<else>
-	    <property name="discovery.is.url" value="https://devstudio.jboss.com/updates/8.0-development/central/integration-stack/" /></else>
+	    <property name="discovery.is.url" value="https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/" /></else>
 	</if>
     </then></if>
 
@@ -187,7 +187,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
     <if><equals arg1="${BUILD_FORM}" arg2="production" trim="true" /><then>
 	<property name="central.discovery.is.jar.id" value="com.jboss.jbds.central.discovery.integration-stack-${VERSION}-SNAPSHOT.jar" />
 	<property name="discovery_jar_target_dir" value="${project.build.directory}/../../com.jboss.jbds.central.discovery.integration-stack/target/" />
-	<property name="output.url" value="https://devstudio.jboss.com/updates/${BUILD_TYPE}/central/integration-stack/${VERSION}/" />
+	<property name="output.url" value="https://devstudio.redhat.com/updates/${BUILD_TYPE}/central/integration-stack/${VERSION}/" />
     </then></if>
 
     <path id="central.discovery.is.jar.id">
