@@ -16,6 +16,7 @@
 
   <packaging>eclipse-plugin</packaging>
 
+<!--
   <build>
     <plugins>
       <plugin>
@@ -29,7 +30,7 @@
 	    <phase>generate-resources</phase>
 	    <configuration>
 	      <target>
-		<!-- ANT script to capture the Integration Stack central discovery URL and augment the plugin.properties. -->
+		< ! - - ANT script to capture the Integration Stack central discovery URL and augment the plugin.properties. - ->
 		<ant antfile="../../../scripts/build.xml" target="update.plugin.properties" dir=".">
 		  <property name="BUILD_FORM" value="production" />
 		  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
@@ -92,5 +93,5 @@
       </resource>
     </resources>
   </build>
-
+-->
 </project>
