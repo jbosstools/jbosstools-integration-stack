@@ -20,10 +20,11 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
        name="JBoss Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
@@ -48,10 +49,11 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
        id="jboss.integration-stack.bundle.ds">
@@ -73,10 +75,11 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
        name="JBoss Integration and SOA Development"
        description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM and Switchyard (Fuse Tooling not yet available)."
        id="jboss.integration-stack.bundle.soa">
@@ -108,10 +111,11 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="%jboss.is.update.url"
+       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
        name="JBoss SOA 5.x Development"
        description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
        id="com.jboss.jbds.soatooling.bundle.soap">
@@ -136,28 +140,5 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- BPEL Examples (Product only, not in community) - remove for now pending JBTIS-62
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.url:https://devstudio.redhat.com/updates/7.0-development/central/integration-stack/}"
-       name="BPEL Editor Examples"
-       description="Examples related to the BPEL editor."
-       id="jboss.integration-stack.bundle.bpr">
-      <iu id="com.jboss.jbds.bpel.feature"/>
-      <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
-
-      <icon
-        image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-        url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-    -->
   </extension>
 </plugin>
