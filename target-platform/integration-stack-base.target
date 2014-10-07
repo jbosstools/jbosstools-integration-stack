@@ -114,7 +114,17 @@
 
       <!-- Teiid -->
       <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
-      <unit id="org.eclipse.birt.feature.group" version="4.4.1.v201408290142-DPEq8eGixAot6Wst_F1wRaIdN1Ls"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.4.1.v201408290142"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.4.1.v201408290142"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.4.1.v201409021142"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.4.1.v201409050910"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.4.1.v201408290142"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.4.1.v201408290142"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.4.1.v201408290142"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.4.1.v201408290142"/>
+      <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
+      <unit id="org.eclipse.birt.core" version="4.4.1.v201409160530"/>
+
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201409180900-SR1/"/>
     </location>
 
@@ -123,9 +133,9 @@
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201308220617"/>
 
       <!-- BPMN2 - Modeler -->
-      <unit id="org.eclipse.bpmn2.modeler.feature.group" version="1.1.0.201408072130"/>
-      <unit id="org.eclipse.bpmn2.modeler.runtime.jboss.feature.group" version="1.1.0.201408072130"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.0.201408072130_0.7.0.201308220617_luna/"/>
+      <unit id="org.eclipse.bpmn2.modeler.feature.group" version="1.1.1.201409261846"/>
+      <unit id="org.eclipse.bpmn2.modeler.runtime.jboss.feature.group" version="1.1.1.201409261846"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201409261846_0.7.0.201308220617_luna/"/>
     </location>
 
     <!-- BPEL -->
