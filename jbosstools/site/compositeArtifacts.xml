@@ -33,7 +33,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/modeshape/3.7.0.Alpha1/"/>
 
     <!-- SWITCHYARD  -->
-    <child location="http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/switchyard/2.0.0/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/switchyard/2.0.0.Alpha3/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/8.6.x.luna.Alpha3/"/>
