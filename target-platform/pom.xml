@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.0.Beta1a-SNAPSHOT</version>
+  <version>4.2.0.Beta1b-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -29,7 +29,7 @@
     <tychoVersion>0.21.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.21.0</jboss-tycho-version>
-    <JBTCoreTPVersion>4.40.0.Beta4</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.41.0.Final</JBTCoreTPVersion>
   </properties>
 
   <repositories>
