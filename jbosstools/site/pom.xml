@@ -231,6 +231,7 @@
 	    </goals>
 
 	    <configuration>
+	      <referenceStrategy>compositeReferences</referenceStrategy>
 
 	      <associateSites>
 		<associateSite>http://download.jboss.org/jbosstools/updates/development/luna/</associateSite>

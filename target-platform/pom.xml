@@ -28,7 +28,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.21.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jboss-tycho-version>0.21.0</jboss-tycho-version>
+    <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <JBTCoreTPVersion>4.41.0.Final</JBTCoreTPVersion>
   </properties>
 
@@ -341,9 +341,6 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <!-- Using Tycho 0.21.0, must resolve aggregate-full.target, not integration-stack-base.target, or 
-		       build fails due to missing deps; make sure you've run this to update to latest IU versions first 
-		       (see README.update.txt)! -->
 		  <sourceTargetFile>${project.build.directory}/integration-stack-community.target</sourceTargetFile>
 		</configuration>
 	      </execution>
