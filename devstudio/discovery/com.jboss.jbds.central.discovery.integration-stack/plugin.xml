@@ -24,7 +24,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
@@ -53,7 +53,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
        id="jboss.integration-stack.bundle.ds">
@@ -79,7 +79,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
        description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM and Switchyard (Fuse Tooling not yet available)."
        id="jboss.integration-stack.bundle.soa">
@@ -115,7 +115,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.is.update.url:https://devstudio.redhat.com/updates/8.0-development/central/integration-stack/}"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss SOA 5.x Development"
        description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
        id="com.jboss.jbds.soatooling.bundle.soap">
