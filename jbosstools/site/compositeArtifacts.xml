@@ -36,7 +36,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/switchyard/2.0.0.Alpha3/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/8.6.x.luna.Alpha3/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/9.0.1.Beta1/"/>
 
   </children>
 
