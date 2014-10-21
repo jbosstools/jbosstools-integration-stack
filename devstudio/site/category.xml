@@ -178,6 +178,9 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.jboss.tools.bpel.feature.source"/>
 
 <!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
+<feature id="org.eclipse.bpmn2.modeler.source"/>
 
 <!-- drools/jbpm -->
 
