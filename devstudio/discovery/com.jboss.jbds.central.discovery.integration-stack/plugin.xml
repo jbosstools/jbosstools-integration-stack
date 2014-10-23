@@ -3,6 +3,7 @@
 <plugin>
   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
+    <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
        description="JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
@@ -81,7 +82,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM and Switchyard (Fuse Tooling not yet available)."
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -92,10 +93,10 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <!--
       <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.runtimes.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/> -->
+      <iu id="org.fusesource.ide.core.feature"/>
+      <iu id="org.fusesource.ide.jmx.feature"/>
+      <iu id="org.fusesource.ide.server.extensions.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>

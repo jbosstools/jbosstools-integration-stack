@@ -80,7 +80,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM and Switchyard (Fuse Tooling not yet available)."
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -91,10 +91,10 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <!--
       <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.runtimes.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/> -->
+      <iu id="org.fusesource.ide.core.feature"/>
+      <iu id="org.fusesource.ide.jmx.feature"/>
+      <iu id="org.fusesource.ide.server.extensions.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
@@ -107,7 +107,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- JBT single component sites
+    <!-- JBT single component sites -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
@@ -119,33 +119,14 @@
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
        id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.runtimes.feature"/>
+      <iu id="org.fusesource.ide.core.feature"/>
+      <iu id="org.fusesource.ide.jmx.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>
       <overview
 	 url="http://fusesource.com/products/fuse-ide/">
-      </overview>
-    </connectorDescriptor>
--->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Savara Editor"
-       description="JBoss Savara Editor"
-       id="org.savara.tools.feature">
-      <iu id="org.savara.tools.feature"/>
-      <icon
-	 image32="images/jbds_savara_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
