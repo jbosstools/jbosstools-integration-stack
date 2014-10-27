@@ -218,8 +218,8 @@
 
             <configuration>
 	      <referenceStrategy>compositeReferences</referenceStrategy>
-
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
+              <removeDefaultCategory>true</removeDefaultCategory>
 
               <symbols>
                 <update.site.name>${update.site.name}</update.site.name>
