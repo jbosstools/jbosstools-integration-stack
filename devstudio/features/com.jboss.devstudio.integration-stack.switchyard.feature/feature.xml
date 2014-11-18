@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="com.jboss.devstudio.integration-stack.switchyard.feature" label="%featureName" version="8.0.0.qualifier" provider-name="%providerName" plugin="com.jboss.devstudio.integration-stack">
+  <description url="https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Developer_Studio/">%description</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+
+  <requires>
+    <import feature="org.eclipse.help"/>
+    <import feature="org.eclipse.jdt"/>
+    <import feature="org.eclipse.jgit"/>
+    <import feature="org.eclipse.egit"/>
+    <import feature="org.eclipse.rse"/>
+    <import feature="org.eclipse.tm.terminal"/>
+    <!-- <import plugin="" /> -->
+  </requires>
+
+  <plugin id="com.jboss.devstudio.core.project.examples" download-size="0" install-size="0" version="0.0.0"/> 
+  <plugin id="com.jboss.devstudio.core.usage.branding" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+  <plugin id="com.jboss.devstudio.core.central" download-size="0" install-size="0" version="0.0.0" unpack="false"/>
+  <includes id="org.jboss.tools.central.feature" version="0.0.0"/> 
+  <includes id="org.jboss.tools.project.examples.feature" version="0.0.0"/> 
+  <includes id="org.jboss.tools.usage.feature" version="0.0.0"/>
+
+  <includes id="org.switchyard.tools.feature" version="0.0.0"/>
+  <includes id="org.switchyard.tools.bpel.feature" version="0.0.0"/>
+  <includes id="org.switchyard.tools.bpmn2.feature" version="0.0.0"/>
+  
+</feature>
