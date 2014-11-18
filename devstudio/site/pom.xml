@@ -217,7 +217,7 @@
             </goals>
 
             <configuration>
-	      <referenceStrategy>compositeReferences</referenceStrategy>
+              <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
               <removeDefaultCategory>true</removeDefaultCategory>
 
