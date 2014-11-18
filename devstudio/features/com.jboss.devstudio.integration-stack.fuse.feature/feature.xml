@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="com.jboss.devstudio.integration-stack.fuse.feature" label="%featureName" version="8.0.0.qualifier" provider-name="%providerName" plugin="com.jboss.devstudio.integration-stack">
+  <description url="https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Developer_Studio/">%description</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+
+  <requires>
+    <import feature="org.eclipse.help"/>
+    <import feature="org.eclipse.jdt"/>
+    <import feature="org.eclipse.jgit"/>
+    <import feature="org.eclipse.egit"/>
+    <import feature="org.eclipse.rse"/>
+    <import feature="org.eclipse.tm.terminal"/>
+    <!-- <import plugin="" /> -->
+
+    <import plugin="com.jboss.devstudio.core.project.examples"/>
+    <import plugin="com.jboss.devstudio.core.usage.branding"/>
+    <import plugin="com.jboss.devstudio.core.central"/>
+    <import feature="org.jboss.tools.central.feature"/> 
+    <import feature="org.jboss.tools.project.examples.feature"/> 
+    <import feature="org.jboss.tools.usage.feature"/>
+
+    <import feature="org.fusesource.ide.camel.editor.feature"/>
+    <import feature="org.fusesource.ide.core.feature"/>
+    <import feature="org.fusesource.ide.jmx.feature"/>
+    <import feature="org.fusesource.ide.server.extensions.feature"/>
+  </requires>
+</feature>
