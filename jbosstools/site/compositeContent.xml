@@ -12,10 +12,10 @@
   <children size="10">
 
     <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.101.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/bpel/1.3.100.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201410152001_0.7.0.201308220617_luna/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201411261859_0.7.0.201308220617_luna/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://downloads.jboss.org/jbpm/release/6.1.0.Final/updatesite/"/>
@@ -36,7 +36,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/switchyard/2.0.0.Alpha3/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/9.0.1.Beta1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/9.0.1.Beta2/"/>
 
   </children>
 
