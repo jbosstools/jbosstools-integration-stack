@@ -4,14 +4,6 @@
   <license url="%licenseURL">%license</license>
 
   <requires>
-    <import feature="org.eclipse.help"/>
-    <import feature="org.eclipse.jdt"/>
-    <import feature="org.eclipse.jgit"/>
-    <import feature="org.eclipse.egit"/>
-    <import feature="org.eclipse.rse"/>
-    <import feature="org.eclipse.tm.terminal"/>
-    <!-- <import plugin="" /> -->
-
     <import feature="org.jboss.tools.central.feature"/> 
     <import feature="org.jboss.tools.project.examples.feature"/> 
     <import feature="org.jboss.tools.usage.feature"/>
