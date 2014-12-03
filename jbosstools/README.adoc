@@ -1,21 +1,21 @@
 ## Sample invocation to build JBT IS
 
-		mvn clean install checkstyle:check -fae -e \
-		-DBUILD_ALIAS=Beta1 \
-		-DBUILD_KIND=jbosstools \
-		-DBUILD_NUMBER=69 \
-		-DBUILD_TYPE=development \
-		-DCOMPOSITE_SITE=file://${basedir}/ \
-		-DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta1,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta1b/REPO/
-		-DIS_TP_VERSION=4.2.0.Beta1b \
-		-DTARGET_PLATFORM=luna \
-		-DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta1b/REPO/ \
-		-DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/integration-stack/aggregate/4.2.0.Beta1 \
-		-DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
-		-DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
-		-DUPSTREAM_TP_SITE= \
-		-DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
-		-DVERSION=4.2.0.Beta1
+    mvn clean install checkstyle:check -fae -e \
+    -DBUILD_ALIAS=Beta1 \
+    -DBUILD_KIND=jbosstools \
+    -DBUILD_NUMBER=69 \
+    -DBUILD_TYPE=development \
+    -DCOMPOSITE_SITE=file://`pwd`/site/target/repository/ \
+    -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta1,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta1b/REPO/ \
+    -DIS_TP_VERSION=4.2.0.Beta1b \
+    -DTARGET_PLATFORM=luna \
+    -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta1b/REPO/ \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/integration-stack/aggregate/4.2.0.Beta1 \
+    -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
+    -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
+    -DUPSTREAM_TP_SITE= \
+    -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
+    -DVERSION=4.2.0.Beta1
 
 (Taken from console log of https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/JBTIS/job/JBTIS-aggregate-disc )
 
