@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="com.jboss.devstudio.integration-stack.switchyard.feature" label="%featureName" version="8.0.0.qualifier" provider-name="%providerName" plugin="com.jboss.devstudio.integration-stack">
-  <description url="https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Developer_Studio/">%description</description>
+<feature id="org.jboss.tools.integration-stack.switchyard.feature" label="%featureName" version="4.2.0.qualifier" provider-name="%providerName" plugin="org.jboss.tools.integration-stack">
   <copyright>%copyright</copyright>
   <license url="%licenseURL">%license</license>
 
@@ -13,9 +12,9 @@
     <import feature="org.eclipse.tm.terminal"/>
     <!-- <import plugin="" /> -->
 
-    <import plugin="com.jboss.devstudio.core.project.examples"/>
-    <import plugin="com.jboss.devstudio.core.usage.branding"/>
-    <import plugin="com.jboss.devstudio.core.central"/>
+    <import plugin="org.jboss.tools.core.project.examples"/>
+    <import plugin="org.jboss.tools.core.usage.branding"/>
+    <import plugin="org.jboss.tools.core.central"/>
     <import feature="org.jboss.tools.central.feature"/> 
     <import feature="org.jboss.tools.project.examples.feature"/> 
     <import feature="org.jboss.tools.usage.feature"/>
@@ -23,5 +22,8 @@
     <import feature="org.switchyard.tools.feature"/>
     <import feature="org.switchyard.tools.bpel.feature"/>
     <import feature="org.switchyard.tools.bpmn2.feature"/>
+
+    <import feature="org.jboss.tools.bpel.feature"/>
+    
   </requires>
 </feature>

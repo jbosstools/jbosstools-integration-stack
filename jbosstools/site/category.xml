@@ -20,6 +20,13 @@ Tools related to the development of Integration and SOA applications - includes 
   </description>
 </category-def>
 
+<!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
+<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.bpr.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.ds.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.ds.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.soa-legacy.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.soa-legacy.feature"/>
+<feature id="org.jboss.tools.integration-stack.fuse.feature" path="../../jbosstools/site/org.jboss.tools.integration-stack.fuse.feature"/>
+<feature id="org.jboss.tools.integration-stack.switchyard.feature" path="../../jbosstools/site/org.jboss.tools.integration-stack.switchyard.feature"/>
+
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
   <category name="BusinessLogic" />

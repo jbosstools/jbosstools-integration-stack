@@ -5,14 +5,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.jboss.jbds.integration-stack</groupId>
+    <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>4.2.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.jboss.devstudio.integration-stack</groupId>
+  <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>features</artifactId>
-  <name>JBDS Integration Stack Features</name>
+  <name>JBT Integration Stack Features</name>
 
   <packaging>pom</packaging>
 
