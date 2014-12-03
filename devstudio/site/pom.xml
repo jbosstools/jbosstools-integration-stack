@@ -141,6 +141,13 @@
 
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
         <version>${tycho-version}</version>
 
@@ -220,7 +227,6 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
               <removeDefaultCategory>true</removeDefaultCategory>
-
               <symbols>
                 <update.site.name>${update.site.name}</update.site.name>
                 <update.site.description>${update.site.description}</update.site.description>

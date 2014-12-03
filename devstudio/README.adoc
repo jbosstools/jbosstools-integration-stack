@@ -1,21 +1,21 @@
 ## Sample invocation to build JBDS IS
 
-		mvn clean install checkstyle:check -fae -e \
-		-DBUILD_ALIAS=Beta1 \
-		-DBUILD_KIND=devstudio \
-		-DBUILD_NUMBER=69 \
-		-DBUILD_TYPE=development \
-		-DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta1/ \
-		-DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/8.0/,https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/,http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/,https://devstudio.jboss.com/updates/8.0.0/8.0.0.Beta1.jbds-is-target-platform/ \
-		-DIS_TP_VERSION=4.2.0.Beta1b \
-		-DTARGET_PLATFORM=luna \
-		-DTP_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/ \
-		-DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/ \
-		-DUPSTREAM_DISCOVERY_XML=https://devstudio.jboss.com/updates/8.0/devstudio-directory.xml \
-		-DUPSTREAM_EXTRAS_SITE=https://devstudio.jboss.com/updates/8.0/ \
-		-DUPSTREAM_TP_SITE=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/ \
-		-DUPSTREAM_UPDATE_SITE=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/ \
-		-DVERSION=8.0.0.Beta1
+    mvn clean install checkstyle:check -fae -e \
+    -DBUILD_ALIAS=Beta1 \
+    -DBUILD_KIND=devstudio \
+    -DBUILD_NUMBER=69 \
+    -DBUILD_TYPE=development \
+    -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta1/ \
+    -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/8.0/,https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/,http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/,https://devstudio.jboss.com/updates/8.0.0/8.0.0.Beta1.jbds-is-target-platform/ \
+    -DIS_TP_VERSION=4.2.0.Beta1b \
+    -DTARGET_PLATFORM=luna \
+    -DTP_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/ \
+    -DUPDATE_SITE=http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/ \
+    -DUPSTREAM_DISCOVERY_XML=https://devstudio.jboss.com/updates/8.0/devstudio-directory.xml \
+    -DUPSTREAM_EXTRAS_SITE=https://devstudio.jboss.com/updates/8.0/ \
+    -DUPSTREAM_TP_SITE=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/ \
+    -DUPSTREAM_UPDATE_SITE=https://devstudio.jboss.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/ \
+    -DVERSION=8.0.0.Beta1
 
 (Taken from console log of https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/JBTIS/job/JBDSIS-aggregate-disc )
 
