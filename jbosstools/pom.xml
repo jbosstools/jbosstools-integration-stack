@@ -18,7 +18,6 @@
   <!-- Run a build like this:
       mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Beta1 -DVERSION=4.2.0.Beta1 \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
-      -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
        http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.0.Beta1/,\

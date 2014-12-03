@@ -20,8 +20,6 @@
   </description>
 
   <properties>
-    <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
-
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
@@ -29,22 +27,6 @@
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
   </properties>
-
-  <repositories>
-
-    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
-    <repository>
-      <id>integration-stack-site</id>
-      <url>${COMPOSITE_SITE}</url>
-      <layout>p2</layout>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-  </repositories>
 
   <pluginRepositories>
 

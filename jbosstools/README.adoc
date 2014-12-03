@@ -5,7 +5,7 @@
     -DBUILD_KIND=jbosstools \
     -DBUILD_NUMBER=69 \
     -DBUILD_TYPE=development \
-    -DCOMPOSITE_SITE=file://`pwd`/site/target/repository/ \
+    -DCOMPOSITE_SITE= \
     -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta1,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta1b/REPO/ \
     -DIS_TP_VERSION=4.2.0.Beta1b \
     -DTARGET_PLATFORM=luna \
