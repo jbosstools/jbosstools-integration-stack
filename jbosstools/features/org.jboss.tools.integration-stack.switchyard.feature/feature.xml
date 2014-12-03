@@ -12,9 +12,6 @@
     <import feature="org.eclipse.tm.terminal"/>
     <!-- <import plugin="" /> -->
 
-    <import plugin="org.jboss.tools.core.project.examples"/>
-    <import plugin="org.jboss.tools.core.usage.branding"/>
-    <import plugin="org.jboss.tools.core.central"/>
     <import feature="org.jboss.tools.central.feature"/> 
     <import feature="org.jboss.tools.project.examples.feature"/> 
     <import feature="org.jboss.tools.usage.feature"/>
