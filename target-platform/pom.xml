@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.0.Beta1b-SNAPSHOT</version>
+  <version>4.2.0.Beta2-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -21,7 +21,7 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>10</version>
+    <version>16</version>
   </parent>
 
   <properties>
@@ -141,9 +141,9 @@
 	      <sourceTargetArtifacts>
 		<item>
 		  <groupId>org.jboss.tools.targetplatforms</groupId>
-		  <artifactId>jbosstools-multiple</artifactId>
+		  <artifactId>jbosstools-unified</artifactId>
 		  <version>${JBTCoreTPVersion}</version>
-		  <classifier>jbosstools-multiple</classifier>
+		  <classifier>jbosstools-unified</classifier>
 		</item>
 	      </sourceTargetArtifacts>
 
