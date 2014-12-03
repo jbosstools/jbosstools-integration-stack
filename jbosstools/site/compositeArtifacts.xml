@@ -32,12 +32,12 @@
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/modeshape/3.7.0.Beta1/"/>
 
-    <!-- SWITCHYARD  -->
+    <!-- SWITCHYARD  temporary
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/switchyard/2.0.0.Alpha3/"/>
-
-    <!-- TEIID -->
+    -->
+    <!-- TEIID temporary
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/9.0.1.Beta2/"/>
-
+    -->
   </children>
 
 </repository>
