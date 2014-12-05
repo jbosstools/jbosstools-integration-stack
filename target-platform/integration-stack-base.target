@@ -111,10 +111,13 @@
 
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.4.v20140808-2040-CI"/>
-      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.4.v20140808-2040-CI"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.4.v20140808-2040-CI"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v20140808-2040-CI/"/>
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v201412041949/"/>
     </location>
 
     <!-- Fuse Tooling -->
