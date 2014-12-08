@@ -63,10 +63,6 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<feature id="org.jboss.tools.esb.test.feature">
-  <category name="SOADev" />
-</feature>
-
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="SOADev" />
