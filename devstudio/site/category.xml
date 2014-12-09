@@ -70,10 +70,6 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="SOADev5" />
 </feature>
 
-<feature id="org.jboss.tools.esb.test.feature">
-  <category name="SOADev5" />
-</feature>
-
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="SOADev" />
@@ -140,7 +136,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="SOADev5" />
 </feature>
 
-<!-- switchyard -->
+<!-- switchyard 
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
@@ -152,8 +148,8 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
-
-<!-- teiid -->
+-->
+<!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>
@@ -176,6 +172,9 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature.source"/>
+<feature id="org.eclipse.bpel.common.feature.source"/>
+<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
+<feature id="org.jboss.tools.bpel.feature.source"/>
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.modeler.examples.source"/>
@@ -183,10 +182,13 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.eclipse.bpmn2.modeler.source"/>
 
 <!-- drools/jbpm -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
+<feature id="org.drools.eclipse.feature.source"/>
+<feature id="org.guvnor.tools.feature.source"/>
+<feature id="org.jbpm.eclipse.feature.source"/>
 
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature.source"/>
-<feature id="org.jboss.tools.esb.test.feature.source"/>
 <feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
 
 <!-- fuse tooling -->
@@ -207,12 +209,12 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
 
-<!-- switchyard -->
+<!-- switchyard 
 <feature id="org.switchyard.tools.bpel.feature.source"/>
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
 <feature id="org.switchyard.tools.feature.source"/>
-
-<!-- teiid -->
+-->
+<!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
 <feature id="org.teiid.designer.feature.source"/>
 <feature id="org.teiid.designer.runtime.feature.source"/>
