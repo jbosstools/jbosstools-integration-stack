@@ -301,6 +301,18 @@
 	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-
   </extension>
+
+  <extension point="org.jboss.tools.central.proxyWizard">
+    <proxyWizard
+       id="fuse.integration.wizard"
+       description="%fuse.integration.wizard.description"
+       label="Fuse Integration Project"
+       priority="3"
+       iconPath="images/fuse_integration_wizard.png"
+       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
+      requiredComponentIds="jboss.integration-stack.bundle.fuse">
+    </proxyWizard>
+  </extension>	
+
 </plugin>
