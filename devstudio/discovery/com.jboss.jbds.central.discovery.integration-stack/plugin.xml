@@ -142,6 +142,7 @@
     </connectorDescriptor>
   </extension>
 
+  <!-- temporary - ref https://issues.jboss.org/browse/JBTIS-372
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
@@ -153,5 +154,5 @@
        requiredComponentIds="jboss.integration-stack.bundle.soa">
     </proxyWizard>
   </extension>	
-
+  -->
 </plugin>
