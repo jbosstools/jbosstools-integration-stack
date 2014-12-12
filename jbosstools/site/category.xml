@@ -162,7 +162,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <!-- ####### -->
 
 <!-- bpel -->
-<feature id="org.jboss.tools.bpel.feature.source"/>
+<feature id="org.eclipse.bpel.feature.source"/>
 <feature id="org.eclipse.bpel.common.feature.source"/>
 <feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
 <feature id="org.jboss.tools.bpel.feature.source"/>
