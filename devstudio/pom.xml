@@ -50,9 +50,13 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta1/</COMPOSITE_SITE>
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/8.0/</UPSTREAM_EXTRAS_SITE>
+    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
   </properties>
 
   <modules>
+    <module>features</module>
     <module>site</module>
     <module>discovery</module>
   </modules>
@@ -68,6 +72,23 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <releases>
 	<enabled>true</enabled>
       </releases>
+    </repository>
+
+    <!-- JBTIS-255 added to enable resolution of upstream deps; there's probably a better way to resolve dependencies from JBDS, JBDS TP, JBDS IS and JBDS IS TP -->
+    <repository>
+      <id>jbdevstudio-site-with-central-and-targetplatform</id>
+      <layout>p2</layout>
+      <url>${UPSTREAM_EXTRAS_SITE}</url>
+    </repository>
+    <repository>
+      <id>jbtis-site</id>
+      <layout>p2</layout>
+      <url>${COMPOSITE_SITE}</url>
+    </repository>
+    <repository>
+      <id>jbdsis-update-and-targetplatform-site</id>
+      <layout>p2</layout>
+      <url>${UPDATE_SITE}</url>
     </repository>
   </repositories>
 
@@ -101,12 +122,39 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
   <build>
     <plugins>
       <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-source-feature-plugin</artifactId>
+	<version>${tycho-version}</version>
+	<executions>
+		<execution>
+		<id>source-feature</id>
+		<phase>package</phase>
+		<goals>
+			<goal>source-feature</goal>
+		</goals>
+		</execution>
+	</executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-plugin</artifactId>
+	<version>${tycho-version}</version>
+	<executions>
+		<execution>
+			<id>attached-p2-metadata</id>
+			<phase>package</phase>
+			<goals>
+				<goal>p2-metadata</goal>
+			</goals>
+		</execution>
+	</executions>
+      </plugin>
+      <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-maven-plugin</artifactId>
         <version>${tycho-version}</version>
         <extensions>true</extensions>
       </plugin>
-
     </plugins>
   </build>
 
