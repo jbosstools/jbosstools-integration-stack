@@ -22,7 +22,7 @@
       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
        http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.0.Beta2/,\
-       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta2/REPO/
+       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta2a/REPO/
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -43,6 +43,7 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBT,JBT TP,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
+    <COMPOSITE_SITE>${basedir}/site</COMPOSITE_SITE>
   </properties>
 
   <modules>
@@ -90,5 +91,44 @@
     </pluginRepository>
 
   </pluginRepositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-source-feature-plugin</artifactId>
+	<version>${tycho-version}</version>
+	<executions>
+		<execution>
+		<id>source-feature</id>
+		<phase>package</phase>
+		<goals>
+			<goal>source-feature</goal>
+		</goals>
+		</execution>
+	</executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-p2-plugin</artifactId>
+	<version>${tycho-version}</version>
+	<executions>
+		<execution>
+			<id>attached-p2-metadata</id>
+			<phase>package</phase>
+			<goals>
+				<goal>p2-metadata</goal>
+			</goals>
+		</execution>
+	</executions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>

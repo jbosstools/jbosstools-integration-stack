@@ -20,7 +20,7 @@
   </description>
 
   <properties>
-    <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>${basedir}</COMPOSITE_SITE>
 
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
@@ -31,7 +31,6 @@
   </properties>
 
   <repositories>
-
     <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
@@ -63,53 +62,53 @@
 
   <profiles>
 
-    <!-- integration build type profile -->
+    <!-- integration build profile -->
     <profile>
       <id>integration</id>
 
       <activation>
-	<property>
-	  <name>BUILD_TYPE</name>
-	    <value>integration</value>
-	</property>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>integration</value>
+        </property>
       </activation>
 
       <properties>
-	<update.site.description>Integration Build</update.site.description>
+        <update.site.description>Integration Build</update.site.description>
       </properties>
 
     </profile>
 
-    <!-- development build type profile -->
+    <!-- development build profile -->
     <profile>
       <id>development</id>
 
       <activation>
-	<property>
-	  <name>BUILD_TYPE</name>
-	    <value>development</value>
-	</property>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>development</value>
+        </property>
       </activation>
 
       <properties>
-	<update.site.description>Development Milestone</update.site.description>
+        <update.site.description>Development Milestone</update.site.description>
       </properties>
 
     </profile>
 
-    <!-- stable build type profile -->
+    <!-- stable build profile -->
     <profile>
       <id>stable</id>
 
       <activation>
-	<property>
-	  <name>BUILD_TYPE</name>
-	    <value>stable</value>
-	</property>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>stable</value>
+        </property>
       </activation>
 
       <properties>
-	<update.site.description>Stable Release</update.site.description>
+        <update.site.description>Stable Release</update.site.description>
       </properties>
 
     </profile>
@@ -119,9 +118,9 @@
       <id>hudson</id>
 
       <activation>
-	<property>
-	  <name>BUILD_NUMBER</name>
-	</property>
+        <property>
+          <name>BUILD_NUMBER</name>
+        </property>
       </activation>
 
       <build>
@@ -133,7 +132,7 @@
             <configuration>
               <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
               <archiveSite>true</archiveSite>
-	      <update.site.description>Production Release</update.site.description>
+              <update.site.description>Production Release</update.site.description>
             </configuration>
           </plugin>
         </plugins>
@@ -159,38 +158,38 @@
         <version>${tycho-version}</version>
 
         <configuration>
-	  <environments>
-	    <environment>
-	      <os>macosx</os>
-	      <ws>cocoa</ws>
-	      <arch>x86</arch>
-	    </environment>
-	    <environment>
-	      <os>macosx</os>
-	      <ws>cocoa</ws>
-	      <arch>x86_64</arch>
-	    </environment>
-	    <environment>
-	      <os>win32</os>
-	      <ws>win32</ws>
-	      <arch>x86</arch>
-	    </environment>
-	    <environment>
-	      <os>win32</os>
-	      <ws>win32</ws>
-	      <arch>x86_64</arch>
-	    </environment>
-	    <environment>
-	      <os>linux</os>
-	      <ws>gtk</ws>
-	      <arch>x86</arch>
-	    </environment>
-	    <environment>
-	      <os>linux</os>
-	      <ws>gtk</ws>
-	      <arch>x86_64</arch>
-	    </environment>
-	  </environments>
+          <environments>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+          </environments>
 
           <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the
 	       full JBoss Tools Integration Stack (with community). -->
@@ -218,38 +217,37 @@
       </plugin>
 
       <plugin>
-	<groupId>org.jboss.tools.tycho-plugins</groupId>
-	<artifactId>repository-utils</artifactId>
-	<version>${jboss-tycho-version}</version>
+        <groupId>org.jboss.tools.tycho-plugins</groupId>
+        <artifactId>repository-utils</artifactId>
+        <version>${jboss-tycho-version}</version>
 
-	<executions>
-	  <execution>
-	    <id>generate-facade</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>generate-repository-facade</goal>
-	    </goals>
+        <executions>
+          <execution>
+            <id>generate-facade</id>
+            <phase>package</phase>
+            <goals>
+              <goal>generate-repository-facade</goal>
+            </goals>
 
-	    <configuration>
-	      <referenceStrategy>compositeReferences</referenceStrategy>
-
+            <configuration>
+              <referenceStrategy>compositeReferences</referenceStrategy>
+              <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 	      <associateSites>
 		<associateSite>http://download.jboss.org/jbosstools/updates/development/luna/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/luna/</associateSite>
 	      </associateSites>
-        <removeDefaultCategory>true</removeDefaultCategory>
-	      <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
-
-	      <symbols>
-		<update.site.name>${update.site.name}</update.site.name>
-		<update.site.description>${update.site.description}</update.site.description>
-		<update.site.version>${update.site.version}</update.site.version>
-		<target.eclipse.version>${target.eclipse.version}</target.eclipse.version>
-	      </symbols>
-	    </configuration>
-	  </execution>
-	</executions>
+              <removeDefaultCategory>true</removeDefaultCategory>
+              <symbols>
+                <update.site.name>${update.site.name}</update.site.name>
+                <update.site.description>${update.site.description}</update.site.description>
+                <update.site.version>${update.site.version}</update.site.version>
+                <target.eclipse.version>${target.eclipse.version}</target.eclipse.version>
+              </symbols>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
+
     </plugins>
 
   </build>
