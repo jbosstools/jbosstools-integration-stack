@@ -10,6 +10,7 @@
        name="JBoss Tools Integration Stack"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
@@ -108,9 +109,10 @@
     </connectorDescriptor>
 
     <!-- JBT single component sites -->
+    
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.soatooling.emt"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
@@ -124,7 +126,7 @@
       <iu id="org.fusesource.ide.jmx.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
       <icon
-	 image32="images/jbosstools_icon32.png">
+   image32="images/jbds_fuse_32.png">
       </icon>
       <overview
 	 url="http://fusesource.com/products/fuse-ide/">
