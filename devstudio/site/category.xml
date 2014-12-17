@@ -14,6 +14,12 @@ Tools related to data virtualization such as persistence and transformation - in
   </description>
 </category-def>
 
+<category-def name="FuseDevelopment" label="JBoss Fuse Development">
+  <description>
+Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
+  </description>
+</category-def>
+
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
 Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard.
@@ -78,28 +84,34 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.fusesource.ide.core.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <!--
 <feature id="org.fusesource.ide.fabric8.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 -->
 
 <feature id="org.fusesource.ide.jmx.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 <!--
 <feature id="org.fusesource.ide.sap.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 -->
 <feature id="org.fusesource.ide.server.extensions.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
