@@ -119,7 +119,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Fuse Development"
-       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
        id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.camel.editor.feature"/>
       <iu id="org.fusesource.ide.core.feature"/>
