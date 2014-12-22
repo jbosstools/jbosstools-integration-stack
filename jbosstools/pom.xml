@@ -31,8 +31,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.0.Beta2</VERSION>
-    <IS_TP_VERSION>4.2.0.Beta2a</IS_TP_VERSION>
+    <VERSION>4.2.0.Beta2a</VERSION>
+    <IS_TP_VERSION>4.2.0.Beta2b-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
