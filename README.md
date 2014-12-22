@@ -1,24 +1,32 @@
 # The JBoss Tools Integration Stack Project
 
 ## Summary
-
-This Maven/ Tycho project specifies the process for building the JBoss Tools Integration Stack project.  The JBoss Tools 
-Integration Stack is comprised of layered JBoss Developer Studio (JBDS) features/plugins.  The project provides the ability to 
-build a fully resolved Equinox/p2 update repository as well as the ability to build the Mylyn JBoss Central Discovery update mechanism.  
-The established Integration Stack capture is consistent with its JBoss core and target third-party dependencies but is independently 
-releasable.
+The Integration Stack is an aggregation of Eclipse features and plugins comprised of JBoss tooling in support of Data Virtualization, BRMS/BPMS, Fuse Tooling and legacy SOA 5.x development.  It is formed by a Maven project which produces an Eclipse p2 update site, a Mylyn discovery update mechanism augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repository.
 
 ## Components
 
-* [JBoss BPEL Editor](https://access.redhat.com/knowledge/docs/en-US/JBoss_Developer_Studio/4.0/html-single/JBoss_BPEL_User_Guide/index.html)/ [Riftsaw Open Source BPEL Engine](http://www.jboss.org/riftsaw) 
-* [Eclipse BPMN2 Modeler](http://eclipse.org/projects/project.php?id=soa.bpmn2-modeler)
-* [Drools Business Logic integration Platform/ jBPM 5](http://www.jboss.org/drools/)
-* [ESB - Enterprise Service Bus](http://www.jboss.org/jbossesb/)
-* [Fuse IDE](http://fusesource.com/products/fuse-ide/)
-* [jBPM 3 Legacy Flow Editor](http://www.jboss.org/jbpm/)
-* [Modeshape Distributed, Hierarchical, Transactional, and Consistent Data Support](http://www.jboss.org/modeshape)
-* [Switchyard Lightweight Service Delivery Framework](http://www.jboss.org/switchyard.html)
-* [Teiid Designer](http://www.jboss.org/teiiddesigner)
+### JBoss Business Process and Rules Development
+
+* link:/features/bpel.html[BPEL Designer] - Orchestrating your business processes.
+* link:/features/bpmn2.html[BPMN2 Modeler] - A graphical modeling tool which allows creation and editing of Business Process Modeling Notation diagrams using graphiti.
+* link:/features/drools.html[Drools] - A Business Logic integration Platform which provides a unified and integrated platform for Rules, Workflow and Event Processing.
+* link:/features/jbpm.html[jBPM] - A flexible Business Process Management (BPM) suite.
+
+### JBoss Data Virtualization Development
+
+* link:/features/modeshape.html[Modeshape] - A distributed, hierarchical, transactional and consistent data store with support for queries, full-text search, events, versioning, references, and flexible and dynamic schemas. It is very fast, highly available, extremely scalable, and it is 100% open source.
+* link:/features/teiiddesigner.html[Teiid Designer] - A visual tool that enables rapid, model-driven definition, integration, management and testing of data services without programming using the Teiid runtime framework.
+
+### JBoss Integration and SOA Development
+
+* All of the Business Process and Rules Development plugins, plus...
+* link:/features/apachecamel.html[Fuse Apache Camel Tooling] - A graphical tool for integrating software components that works with Apache ServiceMix, Apache ActiveMQ, Apache Camel and the FuseSource distributions.
+* link:/features/switchyard.html[SwitchYard] - A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
+
+### SOA 5.x Development
+
+* link:http://www.jboss.org/jbossesb"[JBoss ESB] - An enterprise service bus for connecting enterprise applications and services.
+* link:http://docs.jboss.com/jbpm/v3.2/userguide/html_single/"[jBPM3] - A flexible Business Process Management (BPM) Suite - JBoss Enterprise SOA Platform 5.3.x compatible version.
 
 ## Building the JBoss Tools Integration Stack Project
 
@@ -35,7 +43,7 @@ First build the target platform:
       $ cd .../jbosstools-integration-stack/target-platform
       $ mvn clean install
 
-Second build either the community (jbosstools) or production (devstudio) aggregate and Mylyn discovery:
+Second build the community (jbosstools) p2 aggregate and Mylyn discovery:
 
       $ cd .../jbosstools-integration-stack/jbosstools
       $ mvn clean install
@@ -45,7 +53,7 @@ site in the Eclipse/JBDS software install dialog (Help->Install New Software...)
 
 If you just want to check if things compile/ build you can run:
 
-      $ mvn clean verify -DskipTest=true
+      $ mvn clean verify
 
 ## Target Platform Definition Resolution within Maven/Tycho
 
@@ -53,17 +61,28 @@ The JBoss Tools Integration Stack Target Platform project creates two target fil
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies.
 
-e.g. target-platform-4.0.0-base.target
+e.g. aggregate-base.target
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies.
 
-e.g. target-platform-4.0.0-full.target
+e.g. aggregate-full.target
 
 These files are promoted to the nexus: (e.g.)
 
-https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/integration-stack/target-platform/4.0.0-SNAPSHOT/
+https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/4.2.0.Beta2a/
 
 Here's an example of how to reference the derived aggregate base target file:
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
 
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
@@ -71,50 +90,50 @@ Here's an example of how to reference the derived aggregate base target file:
         <version>${tycho-version}</version>
 
         <configuration>
-          <environments>
-            <environment>
-              <os>macosx</os>
-              <ws>cocoa</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>macosx</os>
-              <ws>cocoa</ws>
-              <arch>x86_64</arch>
-            </environment>
-            <environment>
-              <os>win32</os>
-              <ws>win32</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>win32</os>
-              <ws>win32</ws>
-              <arch>x86_64</arch>
-            </environment>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
-              <arch>x86_64</arch>
-            </environment>
-          </environments>
+	  <environments>
+	    <environment>
+	      <os>macosx</os>
+	      <ws>cocoa</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>macosx</os>
+	      <ws>cocoa</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	    <environment>
+	      <os>win32</os>
+	      <ws>win32</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>win32</os>
+	      <ws>win32</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	    <environment>
+	      <os>linux</os>
+	      <ws>gtk</ws>
+	      <arch>x86</arch>
+	    </environment>
+	    <environment>
+	      <os>linux</os>
+	      <ws>gtk</ws>
+	      <arch>x86_64</arch>
+	    </environment>
+	  </environments>
 
-           <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
-                JBoss Tools Integration Stack (with community). -->
-           <target>
-             <artifact>
-               <groupId>org.jboss.tools.integration-stack</groupId>
-               <artifactId>target-platform</artifactId>
-               <version>4.0.0-SNAPSHOT</version>
-               <type>target</type>
-               <classifier>base</classifier>
-             </artifact>
-           </target>
+          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the
+	       full JBoss Tools Integration Stack. -->
+          <target>
+            <artifact>
+              <groupId>org.jboss.tools.integration-stack</groupId>
+              <artifactId>target-platform</artifactId>
+              <version>${IS_TP_VERSION}</version>
+              <type>target</type>
+              <classifier>base</classifier>
+            </artifact>
+          </target>
         </configuration>
       </plugin>
 
