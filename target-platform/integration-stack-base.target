@@ -104,9 +104,9 @@
     <!-- BPMN2 Modeler -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpmn2.feature.feature.group" version="0.7.0.201308220617"/>
-      <unit id="org.eclipse.bpmn2.modeler.feature.group" version="1.1.1.201411261859"/>
-      <unit id="org.eclipse.bpmn2.modeler.runtime.jboss.feature.group" version="1.1.1.201411261859"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201411261859_0.7.0.201308220617_luna/"/>
+      <unit id="org.eclipse.bpmn2.modeler.feature.group" version="1.1.1.201412181844"/>
+      <unit id="org.eclipse.bpmn2.modeler.runtime.jboss.feature.group" version="1.1.1.201412181844"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201412181844_0.7.0.201308220617_luna/"/>
     </location>
 
     <!-- BPEL -->
