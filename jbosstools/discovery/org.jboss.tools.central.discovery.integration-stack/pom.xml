@@ -16,6 +16,106 @@
 
   <packaging>eclipse-plugin</packaging> 
 
+  <build>
+    <plugins>
+        <!-- get major.minor.incremental from root pom, then use ${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion} below -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>1.9.1</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <id>parse-version</id>
+            <goals>
+              <goal>parse-version</goal>
+            </goals>
+            <configuration>
+              <versionString>${project.version}</versionString>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <!-- to generate a feature.xml from plugin.xml, use 
+      -Dconnector=jboss.integration-stack.bundle.bpr or 
+      -Dconnector=jboss.integration-stack.bundle.ds or 
+      -Dconnector=jboss.integration-stack.bundle.soa or
+      -Dconnector=jboss.integration-stack.bundle.fuse
+      -Dconnector=org.switchyard.tools.feature ... 
+
+    Or as shell (requires xsltproc):
+
+      cd jbosstools-integration-stack/jbosstools/discovery/org.jboss.tools.central.discovery.integration-stack;
+      for d in bpr ds soa fuse; do 
+        mkdir -p ../../features/jboss.integration-stack.bundle.${d};
+        xsltproc \-\-stringparam connectorDescriptorId jboss.integration-stack.bundle.${d} \-\-stringparam featureVersion 4.2.0.qualifier generate-feature.xml-from-plugin.xml.xsl plugin.xml | tee ../../features/jboss.integration-stack.bundle.${d}/feature.xml;
+      done 
+    -->
+    <profile>
+      <id>generate-feature.xml-from-plugin.xml</id>
+      <activation>
+        <property>
+          <name>connector</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>xml-maven-plugin</artifactId>
+            <version>1.0</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>transform</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <transformationSets>
+                <transformationSet>
+                  <dir>${basedir}</dir>
+                  <outputDir>../../features/${connector}/</outputDir>
+                  <includes>
+                    <include>plugin.xml</include>
+                  </includes>
+                  <stylesheet>generate-feature.xml-from-plugin.xml.xsl</stylesheet>
+                   <fileMappers>
+                      <fileMapper implementation="org.codehaus.plexus.components.io.filemappers.RegExpFileMapper">
+                      <pattern>plugin.xml</pattern>
+                      <replacement>feature.xml</replacement>
+                    </fileMapper>
+                  </fileMappers>
+                  <parameters>
+                    <parameter>
+                      <name>connectorDescriptorId</name>
+                      <value>${connector}</value>
+                    </parameter>
+                    <parameter>
+                      <name>featureVersion</name>
+                      <value>${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.${parsedVersion.incrementalVersion}.qualifier</value>
+                    </parameter>
+                  </parameters>
+                </transformationSet>
+              </transformationSets>
+            </configuration>
+            <dependencies>
+              <dependency>
+                <groupId>net.sf.saxon</groupId>
+                <artifactId>saxon</artifactId>
+                <version>8.7</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
 <!--
   <build>
     <plugins>
