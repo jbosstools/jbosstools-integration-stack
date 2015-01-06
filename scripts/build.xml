@@ -202,48 +202,61 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
     <basename property="central.discovery.is.jar" file="${central.discovery.is.path}" />
 
     <if><not><equals arg1="${central.discovery.is.jar}" arg2="" trim="true" /></not><then>
-	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_ID}" regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
+	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_ID}" 
+		       regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
 	<mkdir dir="${project.build.directory}/plugins"/>
 
 	<!-- Rename and copy the integration stack discovery jar. -->
 	<propertyregex override="true" property="central.discovery.is.jar.renamed" defaultvalue="${central.discovery.is.jar}" input="${central.discovery.is.jar}" 
 		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}-${BUILD_TS}-B${BUILD_NUMBER}"/>
 	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.jar.renamed}"/>
-	<echo level="verbose">Generate ${project.build.directory}/${PREFIX}-directory.xml pointing at discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
+	<echo>Generating ${project.build.directory}/${PREFIX}-directory.xml using IS discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
 
-	<!-- Extract just the core central discovery jar from the stable JBoss tools directory XML file if it's set. -->
+	<!-- Start the creation of the Integration Stack directory XML file. (e.g. devstudio-integration-stack-directory.xml) -->
+	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
+&lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
+</echo>
+
+	<!-- Extract just the core central discovery jar from the JBoss tools directory XML file if it's set. -->
         <if><not><equals arg1="${UPSTREAM_DIRECTORY_XML}" arg2="" trim="true" /></not><then>
 	   <property name="CORE_JBOSSTOOLS_TEMP_DIR" value="${tmpdir}/jbosstools-directory" />
 	   <mkdir dir="${CORE_JBOSSTOOLS_TEMP_DIR}" />
 	   <get usetimestamp="true" dest="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" src="${UPSTREAM_DIRECTORY_XML}" />
 	   <xmlproperty file="${CORE_JBOSSTOOLS_TEMP_DIR}/jbosstools-directory.xml" keepRoot="false" semanticAttributes="true"/>
-	   <propertyregex override="true" property="entry.url" defaultvalue="${entry.url}" input="${entry.url}" regexp="\,.*" replace=""/>
-	   <echo level="verbose">Extracted core JBoss tools discovery jar: ${entry.url}</echo>
+
+	   <foreach target="processDiscURL" param="candidateURL" list="${entry.url}" delimiter=","/>
+
         </then></if>
 
-  <!-- if entry.url is an absolute path with http and download.jboss.org/jbosstools/, we're fine; if not, need to convert relative path to absolute -->
-  <if>
-    <not>
-      <and>
-        <contains string="${entry.url}" substring="http"/>
-        <contains string="${entry.url}" substring="download.jboss.org/jbosstools/"/>
-      </and>
-    </not>
-    <then>
-      <propertyregex override="true" property="entry.url" defaultvalue="${entry.url}" input="${UPSTREAM_DIRECTORY_XML}" regexp="(jbosstools|jbdevstudio|devstudio)-directory.xml" replace="${entry.url}"/>
-      <echo level="verbose">Revised core JBoss tools discovery jar: ${entry.url}</echo>
-    </then>
-  </if>
-
-	<!-- Create the Integration Stack directory XML file. -->
-	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
-&lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
-&lt;entry url="${entry.url}" permitCategories="true"/>
-&lt;entry url="${central.discovery.is.jar.renamed}" permitCategories="true"/>
+	<!-- Complete the creation of the Integration Stack directory XML file. -->
+	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml" append="true">&lt;entry url="${central.discovery.is.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
 </echo>
     </then></if>
 
+  </target>
+
+  <!-- Process discovery URLs that are extracted from the upstream core directory XML file. -->
+  <target name="processDiscURL">
+
+    <!-- If the file we're reading already has an integration-stack entry then skip it - we're providing a new one. -->
+    <if><not><contains string="${candidateURL}" substring="integration-stack"/></not><then>
+
+      <!-- If the candidate URL is not an absolute path (with http and download.jboss.org/jbosstools/) convert the relative path to absolute. -->
+      <if><not><and><contains string="${candidateURL}" substring="http"/>
+                    <contains string="${candidateURL}" substring="download.jboss.org/jbosstools/"/>
+		    </and></not><then>
+		    <propertyregex override="true" 
+				   property="candidateURL" 
+				   defaultvalue="${candidateURL}" 
+				   input="${UPSTREAM_DIRECTORY_XML}" 
+				   regexp="(jbosstools|jbdevstudio|devstudio)-directory.xml" 
+				   replace="${candidateURL}"/>
+		    <echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml" append="true">&lt;entry url="${candidateURL}" permitCategories="true"/>
+</echo>
+		    <echo level="verbose">Revised core JBoss tools discovery jar: ${candidateURL}</echo>
+      </then></if>
+    </then></if>
   </target>
 
   <target name="cleanup">
