@@ -146,7 +146,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
