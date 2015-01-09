@@ -16,13 +16,15 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Beta2 -DVERSION=4.2.0.Beta2 \
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Final -DVERSION=4.2.0.Final \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
       -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
-       http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.0.Beta2/,\
-       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta2a/REPO/
+       http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.0.Final/,\
+       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/
+      -or-
+      mvn clean install
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -31,8 +33,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.0.Beta2a</VERSION>
-    <IS_TP_VERSION>4.2.0.Beta2b</IS_TP_VERSION>
+    <VERSION>4.2.0.Final</VERSION>
+    <IS_TP_VERSION>4.2.0.Final</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

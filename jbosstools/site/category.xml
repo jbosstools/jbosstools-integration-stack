@@ -33,7 +33,7 @@ Tools related to the development of Integration and SOA applications - includes 
 </feature>
 
 <!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2.feature">
+<feature id="org.eclipse.bpmn2">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -179,6 +179,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.jboss.tools.bpel.feature.source"/>
 
 <!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.source"/>
 <feature id="org.eclipse.bpmn2.modeler.examples.source"/>
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>

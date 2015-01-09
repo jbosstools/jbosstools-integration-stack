@@ -21,7 +21,7 @@
     <import feature="org.jboss.tools.usage.feature"/>
 
     <import feature="org.jboss.tools.bpel.feature"/>
-    <import feature="org.eclipse.bpmn2.feature"/>
+    <import feature="org.eclipse.bpmn2"/>
     <import feature="org.eclipse.bpmn2.modeler"/>
     <import feature="org.eclipse.bpmn2.modeler.runtime.jboss"/>
     <import feature="org.drools.eclipse.feature"/>

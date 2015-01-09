@@ -29,7 +29,7 @@
        description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpmn2.feature"/>
+      <iu id="org.eclipse.bpmn2"/>
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.drools.eclipse.feature"/>
@@ -84,7 +84,7 @@
        description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpmn2.feature"/>
+      <iu id="org.eclipse.bpmn2"/>
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.drools.eclipse.feature"/>

@@ -69,7 +69,7 @@ e.g. aggregate-full.target
 
 These files are promoted to the nexus: (e.g.)
 
-https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/4.2.0.Beta2a/
+https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/4.2.0.Final/
 
 Here's an example of how to reference the derived aggregate base target file:
 
