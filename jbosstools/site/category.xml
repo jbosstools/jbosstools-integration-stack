@@ -48,7 +48,7 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- drools/jBPM -->
+<!-- drools/jBPM
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
@@ -63,13 +63,13 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature">
   <category name="SOADev" />
 </feature>
 
-<!-- fuse tooling -->
+<!-- fuse tooling
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
@@ -80,27 +80,25 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!--
 <feature id="org.fusesource.ide.fabric8.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
--->
 
 <feature id="org.fusesource.ide.jmx.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
-<!--
+
 <feature id="org.fusesource.ide.sap.feature">
   <category name="SOADev" />
 </feature>
--->
+
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature">
   <category name="BusinessLogic" />
@@ -124,21 +122,22 @@ Tools related to the development of Integration and SOA applications - includes 
 </feature>
 
 <!-- runtime detectors -->
+<!--
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
+-->
 <feature id="org.jboss.tools.runtime.esb.detector.feature">
   <category name="SOADev" />
 </feature>
-
+<!--
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
-<!-- switchyard -->
+-->
+<!-- switchyard
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
@@ -150,7 +149,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
@@ -184,24 +183,24 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>
 
-<!-- drools/jbpm -->
+<!-- drools/jbpm
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 <feature id="org.drools.eclipse.feature.source"/>
 <feature id="org.guvnor.tools.feature.source"/>
 <feature id="org.jbpm.eclipse.feature.source"/>
-
+-->
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature.source"/>
 <feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
 
-<!-- fuse tooling -->
+<!-- fuse tooling 
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
-<!--<feature id="org.fusesource.ide.fabric8.feature.source"/> -->
+<feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
-<!--<feature id="org.fusesource.ide.sap.feature.source"/> -->
+<feature id="org.fusesource.ide.sap.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
-
+-->
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature.source"/>
 <feature id="org.jboss.tools.jbpm.common.feature.source"/>
@@ -212,11 +211,11 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
 
-<!-- switchyard -->
+<!-- switchyard
 <feature id="org.switchyard.tools.bpel.feature.source"/>
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
 <feature id="org.switchyard.tools.feature.source"/>
-
+-->
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
 <feature id="org.teiid.designer.feature.source"/>
