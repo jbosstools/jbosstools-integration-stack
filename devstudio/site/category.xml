@@ -4,7 +4,7 @@
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
-Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor
+Tools related to business processes and rules development - includes support for BPEL
   </description>
 </category-def>
 
@@ -22,7 +22,7 @@ Tools related to integrating and developing software components that work with A
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for BPEL
   </description>
 </category-def>
 
@@ -33,7 +33,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.bpr.feature"/>
+<!-- <feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.bpr.feature"/> -->
 <feature id="com.jboss.devstudio.integration-stack.ds.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.soa.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature" path="../../jbosstools/site/com.jboss.devstudio.integration-stack.fuse.feature"/>
@@ -45,7 +45,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="SOADev5" />
 </feature>
 
-<!-- bpmn2 -->
+<!-- bpmn2
 <feature id="org.eclipse.bpmn2">
   <category name="BusinessLogic" />
   <category name="SOADev" />
@@ -60,7 +60,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- drools/jBPM
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
@@ -192,12 +192,12 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
 <feature id="org.jboss.tools.bpel.feature.source"/>
 
-<!-- bpmn2 -->
+<!-- bpmn2 
 <feature id="org.eclipse.bpmn2.source"/>
 <feature id="org.eclipse.bpmn2.modeler.examples.source"/>
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>
-
+-->
 <!-- drools/jbpm
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 <feature id="org.drools.eclipse.feature.source"/>
