@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+<description>JBoss Developer Studio Integration Stack Eclipse GA Updates</description>
+
+<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
+  <description>
+Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
+  </description>
+</category-def>
+
+<!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
+<feature id="com.jboss.devstudio.integration-stack.ds.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.ds.feature"/>
+
+<!-- modeshape -->
+<feature id="org.jboss.tools.modeshape.rest.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.jboss.tools.modeshape.jcr.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<!-- teiid designer -->
+<feature id="org.teiid.datatools.connectivity.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.runtime.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.teiid.client.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<!-- ####### -->
+<!-- Integration stack component sources : DO NOT CATEGORIZE -->
+<!-- ####### -->
+
+<!-- modeshape -->
+<feature id="org.jboss.tools.modeshape.rest.feature.source"/>
+<feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
+
+<!-- teiid designer -->
+<feature id="org.teiid.datatools.connectivity.feature.source"/>
+<feature id="org.teiid.designer.feature.source"/>
+<feature id="org.teiid.designer.runtime.feature.source"/>
+<feature id="org.teiid.designer.teiid.client.feature.source"/>
+
+</site>

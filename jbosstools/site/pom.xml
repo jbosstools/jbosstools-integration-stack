@@ -21,12 +21,9 @@
 
   <properties>
     <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>
-
     <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.description>-</update.site.description>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
-
-    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
   </properties>
 
@@ -112,33 +109,6 @@
       </properties>
 
     </profile>
-
-    <!-- Hudson production build activation criteria. -->
-    <profile>
-      <id>hudson</id>
-
-      <activation>
-        <property>
-          <name>BUILD_NUMBER</name>
-        </property>
-      </activation>
-
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.eclipse.tycho</groupId>
-            <artifactId>tycho-packaging-plugin</artifactId>
-            <version>${tycho-version}</version>
-            <configuration>
-              <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
-              <archiveSite>true</archiveSite>
-              <update.site.description>Production Release</update.site.description>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-
-    </profile>
   </profiles>
 
   <build>
@@ -211,7 +181,7 @@
         <version>${tycho-version}</version>
 
         <configuration>
-          <format>'v'yyyyMMdd-HHmm'-LOCAL'</format>
+          <format>'v'yyyyMMdd-HHmm'-H${BUILD_NUMBER}-${BUILD_ALIAS}'</format>
           <archiveSite>true</archiveSite>
         </configuration>
       </plugin>

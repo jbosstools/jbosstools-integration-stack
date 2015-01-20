@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>site</artifactId>
+  <artifactId>site-ea</artifactId>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
@@ -10,24 +10,24 @@
     <version>8.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate</name>
+  <name>JBDS Integration Stack Aggregate - Early Access</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack Eclipse update site.
+    Aggregated JBoss Developer Studio Integration Stack Eclipse early access update site.
 
-    This Maven project will create an update site for the layered release of the JBoss Developer Studio Integration Stack by mirroring 
-    artifacts from the composite site.  The category.xml defines the content..
+    This Maven project will create an early access update site for the layered release of the JBoss Developer Studio Integration Stack by 
+    mirroring artifacts from the composite site.  The category.xml defines the content.
   </description>
 
   <properties>
-    <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
+    <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
 
-    <!-- Community site from which the production devstudio build will draw. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final/</COMPOSITE_SITE>
-    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
+    <!-- Community site from which the production devstudio early access build will draw. -->
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final/earlyaccess/</COMPOSITE_SITE>
+    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/earlyaccess/all/repo/</UPDATE_SITE>
   </properties>
 
   <repositories>
@@ -45,61 +45,6 @@
       </releases>
     </repository>
   </repositories>
-
-  <profiles>
-
-    <!-- integration build profile -->
-    <profile>
-      <id>integration</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>integration</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Integration Build</update.site.description>
-      </properties>
-
-    </profile>
-
-    <!-- development build profile -->
-    <profile>
-      <id>development</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>development</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Development Milestone</update.site.description>
-      </properties>
-
-    </profile>
-
-    <!-- stable build profile -->
-    <profile>
-      <id>stable</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>stable</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Stable Release</update.site.description>
-      </properties>
-
-    </profile>
-
-  </profiles>
 
   <build>
     <sourceDirectory>src</sourceDirectory>

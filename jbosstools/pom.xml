@@ -23,8 +23,16 @@
       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
        http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.0.Final/,\
        http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/
+
       -or-
+
       mvn clean install
+
+      -or-
+
+      mvn clean install -Pstable
+
+      To generate .Final and early access update sites.
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -33,11 +41,18 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.0.Final</VERSION>
+    <VERSION>4.2.0.CR2</VERSION>
     <IS_TP_VERSION>4.2.0.Final</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
+
+    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.0.Final/REPO/</targetplatform.url>
+
+    <!-- The version to use for the target platform, defaults to project version. -->
+    <targetplatform.version>${project.version}</targetplatform.version>
     <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
@@ -45,13 +60,70 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBT,JBT TP,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>${basedir}/site</COMPOSITE_SITE>
+    <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
+    <update.site.description>-</update.site.description>
   </properties>
 
   <modules>
     <module>site</module>
     <module>discovery</module>
   </modules>
+
+  <profiles>  
+
+    <!-- integration build profile -->
+    <profile>
+      <id>integration</id>
+
+      <activation>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>integration</value>
+        </property>
+      </activation>
+
+      <properties>
+        <update.site.description>Integration Build</update.site.description>
+      </properties>
+
+    </profile>
+
+    <!-- development build profile -->
+    <profile>
+      <id>development</id>
+
+      <activation>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>development</value>
+        </property>
+      </activation>
+
+      <properties>
+        <update.site.description>Development Milestone</update.site.description>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>stable</id>
+
+      <activation>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>stable</value>
+        </property>
+      </activation>
+
+      <properties>
+        <update.site.description>Stable Release</update.site.description>
+      </properties>
+
+      <modules>
+	<module>site-final</module>
+	<module>site-ea</module>
+      </modules>
+    </profile>
+  </profiles>
 
   <repositories>
     <repository>

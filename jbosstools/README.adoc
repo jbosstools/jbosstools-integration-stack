@@ -1,21 +1,24 @@
 ## Sample invocation to build JBT IS
 
     mvn clean install checkstyle:check -fae -e \
-    -DBUILD_ALIAS=Beta2 \
+    -DBUILD_ALIAS=Final \
     -DBUILD_KIND=jbosstools \
     -DBUILD_NUMBER=69 \
     -DBUILD_TYPE=development \
     -DCOMPOSITE_SITE=file://`pwd`/site \
-    -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta2,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta2a/REPO/ \
-    -DIS_TP_VERSION=4.2.0.Beta2a \
+    -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/ \
+    -DIS_TP_VERSION=4.2.0.Final \
     -DTARGET_PLATFORM=luna \
-    -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Beta2a/REPO/ \
-    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Beta2 \
+    -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/ \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final \
     -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
     -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
     -DUPSTREAM_TP_SITE= \
     -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
-    -DVERSION=4.2.0.Beta2
+    -DVERSION=4.2.0.Final
 
 (Taken from console log of https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/JBTIS/job/JBTIS-aggregate-disc )
 
+# To build stable release update sites:
+
+    mvn clean install -Pstable

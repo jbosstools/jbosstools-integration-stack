@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>site</artifactId>
+  <artifactId>site-ga</artifactId>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
@@ -10,14 +10,14 @@
     <version>8.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate</name>
+  <name>JBDS Integration Stack Aggregate - GA</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack Eclipse update site.
+    Aggregated JBoss Developer Studio Integration Stack Eclipse GA update site.
 
-    This Maven project will create an update site for the layered release of the JBoss Developer Studio Integration Stack by mirroring 
-    artifacts from the composite site.  The category.xml defines the content..
+    This Maven project will create a GA update site for the layered release of the JBoss Developer Studio Integration Stack by mirroring 
+    artifacts from the composite site.  The category.xml defines the content.
   </description>
 
   <properties>
@@ -45,61 +45,6 @@
       </releases>
     </repository>
   </repositories>
-
-  <profiles>
-
-    <!-- integration build profile -->
-    <profile>
-      <id>integration</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>integration</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Integration Build</update.site.description>
-      </properties>
-
-    </profile>
-
-    <!-- development build profile -->
-    <profile>
-      <id>development</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>development</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Development Milestone</update.site.description>
-      </properties>
-
-    </profile>
-
-    <!-- stable build profile -->
-    <profile>
-      <id>stable</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>stable</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Stable Release</update.site.description>
-      </properties>
-
-    </profile>
-
-  </profiles>
 
   <build>
     <sourceDirectory>src</sourceDirectory>
