@@ -130,6 +130,24 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
 
       <modules>
 	<module>site-ga</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>earlyaccess</id>
+
+      <activation>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>stable</value>
+        </property>
+      </activation>
+
+      <properties>
+        <update.site.description>Early Access Release</update.site.description>
+      </properties>
+
+      <modules>
 	<module>site-ea</module>
       </modules>
     </profile>

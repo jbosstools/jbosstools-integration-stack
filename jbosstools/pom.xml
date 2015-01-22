@@ -120,6 +120,24 @@
 
       <modules>
 	<module>site-final</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>earlyaccess</id>
+
+      <activation>
+        <property>
+          <name>BUILD_TYPE</name>
+          <value>stable</value>
+        </property>
+      </activation>
+
+      <properties>
+        <update.site.description>Early Access Release</update.site.description>
+      </properties>
+
+      <modules>
 	<module>site-ea</module>
       </modules>
     </profile>
