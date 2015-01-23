@@ -60,7 +60,8 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.CR1/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.CR2</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>${COMPOSITE_SITE}/earlyaccess</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/8.0/</UPSTREAM_EXTRAS_SITE>
     <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
@@ -173,10 +174,16 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <layout>p2</layout>
       <url>${UPSTREAM_EXTRAS_SITE}</url>
     </repository>
+
     <repository>
       <id>jbtis-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_SITE}</url>
+    </repository>
+    <repository>
+      <id>jbtis-ea-site</id>
+      <layout>p2</layout>
+      <url>${COMPOSITE_EA_SITE}</url>
     </repository>
     <repository>
       <id>jbdsis-update-and-targetplatform-site</id>

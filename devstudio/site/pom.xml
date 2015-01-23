@@ -24,27 +24,8 @@
     <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-
-    <!-- Community site from which the production devstudio build will draw. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final/</COMPOSITE_SITE>
     <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
   </properties>
-
-  <repositories>
-
-    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
-    <repository>
-      <id>integration-stack-site</id>
-      <url>${COMPOSITE_SITE}</url>
-      <layout>p2</layout>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-  </repositories>
 
   <profiles>
 
