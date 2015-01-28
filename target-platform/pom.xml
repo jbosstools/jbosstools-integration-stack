@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.0.Final</version>
+  <version>4.2.1.CR1-EA</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -13,6 +13,15 @@
     JBoss Tools unified core target dependencies forming an 'aggregate-base.target' combined target.
 
     Then add any leftover community dependencies to the aggregate forming an aggregate-full.target.
+
+    Note that there are two integration stack base target platform files:
+   
+    1.  integration-stack-base.target - 
+        contains .Final component dependencies only - for use in generating a stable JBTIS TP.
+    2.  integration-stack-base-ea.target
+        contains all component dependencies - for use in generating a non .Final (early access) JBTIS TP
+
+    Use the stable profile (-P stable) to generate 1 above.
   </description>
 
   <packaging>pom</packaging>
@@ -25,12 +34,123 @@
   </parent>
 
   <properties>
+    <is_base_target>integration-stack-base-ea</is_base_target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.21.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <JBTCoreTPVersion>4.41.0.Final</JBTCoreTPVersion>
   </properties>
+
+  <profiles>
+
+    <profile>
+      <id>stable</id>
+      <activation>
+	<activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>
+	<is_base_target>integration-stack-base</is_base_target>
+      </properties>
+    </profile>
+
+    <!-- Mirror just the integration stack target dependencies.  This will be used by the production
+         build as an extra repo.  -->
+    <profile>
+      <id>mirror-integ-stack-target</id>
+      <activation>
+	<activeByDefault>false</activeByDefault>
+      </activation>
+
+      <build>
+	<plugins>
+
+	  <plugin>
+	    <groupId>org.jboss.tools.tycho-plugins</groupId>
+	    <artifactId>target-platform-utils</artifactId>
+	    <version>${jboss-tycho-version}</version>
+
+	    <executions>
+	      <execution>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>${project.build.directory}/integration-stack-community.target</sourceTargetFile>
+		</configuration>
+	      </execution>
+	    </executions>
+	  </plugin>
+
+	  <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-antrun-plugin</artifactId>
+	    <version>1.7</version>
+
+	    <executions>
+	      <execution>
+		<phase>package</phase>
+
+		<configuration>
+		  <quiet>true</quiet>
+		  <target>
+		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+		    <ant antfile="../scripts/remove.references.xml" dir=".">
+		      <property name="workDir" value="./target/target-platform.target.repo" />
+		    </ant>
+		  </target>
+		</configuration>
+		<goals>
+		  <goal>run</goal>
+		</goals>
+	      </execution>
+	    </executions>
+
+	    <dependencies>
+	      <dependency>
+		<groupId>commons-net</groupId>
+		<artifactId>commons-net</artifactId>
+		<version>1.4.1</version>
+	      </dependency>
+	      <dependency>
+		<groupId>org.apache.ant</groupId>
+		<artifactId>ant</artifactId>
+		<version>1.8.2</version>
+	      </dependency>
+	      <dependency>
+		<groupId>org.apache.ant</groupId>
+		<artifactId>ant-nodeps</artifactId>
+		<version>1.8.1</version>
+	      </dependency>
+	      <dependency>
+		<groupId>org.apache.ant</groupId>
+		<artifactId>ant-trax</artifactId>
+		<version>1.8.0</version>
+	      </dependency>
+	      <dependency>
+		<groupId>org.apache.ant</groupId>
+		<artifactId>ant-commons-net</artifactId>
+		<version>1.8.2</version>
+	      </dependency>
+	      <dependency>
+		<groupId>org.apache.ant</groupId>
+		<artifactId>ant-apache-regexp</artifactId>
+		<version>1.8.2</version>
+	      </dependency>
+	      <dependency>
+		<groupId>ant-contrib</groupId>
+		<artifactId>ant-contrib</artifactId>
+		<version>1.0b3</version>
+	      </dependency>
+	    </dependencies>
+
+	  </plugin>
+	</plugins>
+
+      </build>
+    </profile>
+  </profiles>
 
   <repositories>
 
@@ -148,7 +268,7 @@
 	      </sourceTargetArtifacts>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base.target</item>
+		<item>${basedir}/${is_base_target}.target</item>
 		<item>${basedir}/core-base.target</item>
 	      </sourceTargetFiles>
 
@@ -200,7 +320,7 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base.target</item>
+		<item>${basedir}/${is_base_target}.target</item>
 		<item>${basedir}/community.target</item>
 	      </sourceTargetFiles>
 
@@ -303,9 +423,9 @@
 	    <configuration>
 	      <artifacts>
 		<artifact>
-		  <file>integration-stack-base.target</file>
+		  <file>${is_base_target}.target</file>
 		  <type>target</type>
-		  <classifier>integration-stack-base</classifier>
+		  <classifier>${is_base_target}</classifier>
 		</artifact>
 	      </artifacts>
 	    </configuration>
@@ -316,104 +436,5 @@
 
     </plugins>
   </build>
-
-  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
-       build as an extra repo.  -->
-  <profiles>
-    <profile>
-      <id>mirror-integ-stack-target</id>
-      <activation>
-	<activeByDefault>false</activeByDefault>
-      </activation>
-
-      <build>
-	<plugins>
-
-	  <plugin>
-	    <groupId>org.jboss.tools.tycho-plugins</groupId>
-	    <artifactId>target-platform-utils</artifactId>
-	    <version>${jboss-tycho-version}</version>
-
-	    <executions>
-	      <execution>
-		<phase>package</phase>
-		<goals>
-		  <goal>mirror-target-to-repo</goal>
-		</goals>
-		<configuration>
-		  <sourceTargetFile>${project.build.directory}/integration-stack-community.target</sourceTargetFile>
-		</configuration>
-	      </execution>
-	    </executions>
-	  </plugin>
-
-	  <plugin>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-antrun-plugin</artifactId>
-	    <version>1.7</version>
-
-	    <executions>
-	      <execution>
-		<phase>package</phase>
-
-		<configuration>
-		  <quiet>true</quiet>
-		  <target>
-		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
-		    <ant antfile="../scripts/remove.references.xml" dir=".">
-		      <property name="workDir" value="./target/target-platform.target.repo" />
-		    </ant>
-		  </target>
-		</configuration>
-		<goals>
-		  <goal>run</goal>
-		</goals>
-	      </execution>
-	    </executions>
-
-	    <dependencies>
-	      <dependency>
-		<groupId>commons-net</groupId>
-		<artifactId>commons-net</artifactId>
-		<version>1.4.1</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant</artifactId>
-		<version>1.8.2</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-nodeps</artifactId>
-		<version>1.8.1</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-trax</artifactId>
-		<version>1.8.0</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-commons-net</artifactId>
-		<version>1.8.2</version>
-	      </dependency>
-	      <dependency>
-		<groupId>org.apache.ant</groupId>
-		<artifactId>ant-apache-regexp</artifactId>
-		<version>1.8.2</version>
-	      </dependency>
-	      <dependency>
-		<groupId>ant-contrib</groupId>
-		<artifactId>ant-contrib</artifactId>
-		<version>1.0b3</version>
-	      </dependency>
-	    </dependencies>
-
-	  </plugin>
-	</plugins>
-
-      </build>
-    </profile>
-  </profiles>
 
 </project>
