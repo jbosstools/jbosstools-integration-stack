@@ -167,7 +167,7 @@
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>
               <artifactId>target-platform</artifactId>
-              <version>${IS_TP_VERSION}</version>
+              <version>${IS_TP_EA_VERSION}</version>
               <type>target</type>
               <classifier>full</classifier>
             </artifact>
