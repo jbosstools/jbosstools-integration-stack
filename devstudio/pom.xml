@@ -15,14 +15,14 @@
     JBDS Integration Stack Aggregate update site + Central Discovery plugin, directory, and composite site generation.
   </description>
 
-  <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.0.Alpha8 -DVERSION=8.0.0.Alpha2 \
+  <!-- Run a build like this to generate release and early access update sites:
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.1.Final -DVERSION=8.0.0.GA \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
-      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/integration/kepler/integration-stack/aggregate/4.2.0.Alpha8/ \
+      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.0.Final/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,\
 https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/,\
-https://devstudio.redhat.com/updates/8.0.0/8.0.0.Alpha2.jbds-is-target-platform/,\
+https://devstudio.redhat.com/updates/8.0.0/8.0.0.GA.jbds-is-target-platform/,\
 http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
       -or-
@@ -34,12 +34,6 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
       -Dtargetplatform.url=file:///....
-
-      -or-
-
-      mvn clean install -Pstable
-
-      To generate .GA and early access update sites.
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -49,7 +43,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.0.CR2</VERSION>
-    <IS_TP_VERSION>4.2.0.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.2.1.Final</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -67,7 +61,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.0.Final/REPO/</targetplatform.url>
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/earlyaccess/REPO/</targetplatform.url>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -127,6 +121,8 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
 
       <properties>
         <update.site.description>Stable Release</update.site.description>
+	<!-- The URL for the JBTIS target platform that should be associated with this site. -->
+	<targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/REPO/</targetplatform.url>
       </properties>
 
       <modules>

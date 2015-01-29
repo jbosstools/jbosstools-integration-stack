@@ -133,14 +133,14 @@
           </environments>
 
           <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
-	       JBoss Tools Integration Stack. -->
+	       (early access) JBoss Tools Integration Stack. -->
           <target>
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base</classifier>
+              <classifier>base-ea</classifier>
             </artifact>
           </target>
         </configuration>

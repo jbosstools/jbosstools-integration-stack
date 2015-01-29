@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.0.Final</version>
+  <version>4.2.1.CR1</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -118,16 +118,16 @@
 	<artifactId>target-platform-utils</artifactId>
 	<version>${jboss-tycho-version}</version>
 
+	<!-- Merge:
+	     1. released integration-stack specific target dependencies:   integration-stack-base.target
+	     2. the JBoss Tools core target dependencies:                + core-base.target
+	     3. the JBoss Tools unified core target dependencies:        + jbosstools-unified.target
+                                                                           =============================
+	     to generate an aggregate base target dependencies file:       aggregate-base.target
+        -->
 	<executions>
 
-	  <!-- Merge:
-
-	       1. the integration-stack specific target dependencies:   integration-stack-base.target
-	       2. the JBoss Tools core target dependencies:           + core-base.target
-	       3. the JBoss Tools unified core target dependencies:   + jbosstools-unified.target
-                                                                        _____________________________
-	       to generate an aggregate base target dependencies file:  aggregate-base.target
-            -->
+	  <!-- aggregate-base.target -->
 	  <execution>
 
 	    <id>merge-base</id>
@@ -157,10 +157,12 @@
 	    </configuration>
 	  </execution>
 
-	  <!-- Merge:
+	  <!-- aggregate-full.target
+
+	       Merge:
 	       1. the previously generated aggregate base target file:    aggregate-base.target
 	       2. the community-specific target dependencies:           + community.target
-                                                                          _____________________
+                                                                          ====================
 	       to generate the full community target dependencies file:   aggregate-full.target
 	    -->
 	  <execution>
@@ -183,10 +185,12 @@
 	    </configuration>
 	  </execution>
 
-	  <!-- Merge:
-	       1. the integration-stack specific target dependencies:   integration-stack-base.target
+	  <!-- integration-stack-community.target
+
+	       Merge:
+	       1. the integration-stack specific target dependencies:     integration-stack-base.target
 	       2. the community-specific target dependencies:           + community.target
-                                                                    _____________________
+                                                                          =================================
 	       to generate the full community target dependencies file:   integration-stack-community.target
 	    -->
 	  <execution>
@@ -205,6 +209,92 @@
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/integration-stack-community.target</outputFile>
+
+	    </configuration>
+	  </execution>
+
+	  <!-- Merge:
+	       1. early access integration-stack specific target dependencies:       integration-stack-base-ea.target
+	       2. the JBoss Tools core target dependencies:                        + core-base.target
+	       3. the JBoss Tools unified core target dependencies:                + jbosstools-unified.target
+               =============================
+	       to generate an early access aggregate base target dependencies file:  aggregate-base-ea.target
+          -->
+	  <execution>
+
+	    <id>merge-base-ea</id>
+	    <phase>generate-resources</phase>
+	    <goals>
+	      <goal>merge-targets</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <sourceTargetArtifacts>
+		<item>
+		  <groupId>org.jboss.tools.targetplatforms</groupId>
+		  <artifactId>jbosstools-unified</artifactId>
+		  <version>${JBTCoreTPVersion}</version>
+		  <classifier>jbosstools-unified</classifier>
+		</item>
+	      </sourceTargetArtifacts>
+
+	      <sourceTargetFiles>
+		<item>${basedir}/integration-stack-base-ea.target</item>
+		<item>${basedir}/core-base.target</item>
+	      </sourceTargetFiles>
+
+	      <outputFile>${project.build.directory}/aggregate-base-ea.target</outputFile>
+
+	    </configuration>
+	  </execution>
+
+	  <!-- Merge:
+	       1. the previously generated aggregate base target file:    aggregate-base-ea.target
+	       2. the community-specific target dependencies:           + community.target
+                                                                          ========================
+	       to generate the full community target dependencies file:   aggregate-full-ea.target
+	    -->
+	  <execution>
+	    <id>merge-community-full-ea</id>
+	    <phase>generate-resources</phase>
+	    <goals>
+	      <goal>merge-targets</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <sourceTargetFiles>
+		<item>${basedir}/community.target</item>
+		<item>${project.build.directory}/aggregate-base-ea.target</item>
+	      </sourceTargetFiles>
+
+	      <outputFile>${project.build.directory}/aggregate-full-ea.target</outputFile>
+
+	    </configuration>
+	  </execution>
+
+	  <!-- Merge:
+	       1. the integration-stack specific target dependencies:     integration-stack-base-ea.target
+	       2. the community-specific target dependencies:           + community.target
+                                                                          ==================================
+	       to generate the full community target dependencies file:   integration-stack-community-ea.target
+	    -->
+	  <execution>
+	    <id>merge-community-ea</id>
+	    <phase>generate-resources</phase>
+	    <goals>
+	      <goal>merge-targets</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <sourceTargetFiles>
+		<item>${basedir}/integration-stack-base-ea.target</item>
+		<item>${basedir}/community.target</item>
+	      </sourceTargetFiles>
+
+	      <outputFile>${project.build.directory}/integration-stack-community-ea.target</outputFile>
 
 	    </configuration>
 	  </execution>
@@ -231,6 +321,8 @@
 	      <targetFiles>
 		<param>${project.build.directory}/aggregate-base.target</param>
 		<param>${project.build.directory}/aggregate-full.target</param>
+		<param>${project.build.directory}/aggregate-base-ea.target</param>
+		<param>${project.build.directory}/aggregate-full-ea.target</param>
 	      </targetFiles>
 	      <failOnError>true</failOnError>
 
@@ -246,6 +338,7 @@
 	<version>1.3</version>
 
 	<executions>
+
 	  <execution>
 	    <id>attach-artifacts-base</id>
 	    <phase>package</phase>
@@ -311,15 +404,81 @@
 	    </configuration>
 	  </execution>
 
+	  <execution>
+	    <id>attach-artifacts-base-ea</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>attach-artifact</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <tasks>
+		<echo>Packaging the aggregated early access base target dependencies.</echo>
+	      </tasks>
+
+	      <artifacts>
+		<artifact>
+		  <file>${project.build.directory}/aggregate-base-ea.target</file>
+		  <type>target</type>
+		  <classifier>base-ea</classifier>
+		</artifact>
+	      </artifacts>
+
+	    </configuration>
+	  </execution>
+
+	  <execution>
+	    <id>attach-artifacts-full-ea</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>attach-artifact</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <tasks>
+		<echo>Packaging the aggregated early access full target dependencies (base + community).</echo>
+	      </tasks>
+
+	      <artifacts>
+		<artifact>
+		  <file>${project.build.directory}/aggregate-full-ea.target</file>
+		  <type>target</type>
+		  <classifier>full-ea</classifier>
+		</artifact>
+	      </artifacts>
+
+	    </configuration>
+	  </execution>
+
+	  <execution>
+	    <id>attach-artifacts-target-platform-base-ea</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>attach-artifact</goal>
+	    </goals>
+	    <configuration>
+	      <artifacts>
+		<artifact>
+		  <file>integration-stack-base-ea.target</file>
+		  <type>target</type>
+		  <classifier>integration-stack-base-ea</classifier>
+		</artifact>
+	      </artifacts>
+	    </configuration>
+	  </execution>
+
 	</executions>
       </plugin>
 
     </plugins>
   </build>
 
-  <!-- Mirror just the integration stack target dependencies.  This will be used by the production
-       build as an extra repo.  -->
+  <!-- Mirror the integration stack target dependencies (release/ early/ early access).  This will be used by the 
+       production build as an extra repo.  -->
   <profiles>
+
     <profile>
       <id>mirror-integ-stack-target</id>
       <activation>
@@ -335,15 +494,33 @@
 	    <version>${jboss-tycho-version}</version>
 
 	    <executions>
+
+	      <!-- Mirror the integration stack target dependencies to a repository. -->
 	      <execution>
+		<id>mirror-target-platform-repo</id>
 		<phase>package</phase>
 		<goals>
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
 		  <sourceTargetFile>${project.build.directory}/integration-stack-community.target</sourceTargetFile>
+		  <outputRepository>${project.build.directory}/${project.artifactId}.target.repo</outputRepository>
 		</configuration>
 	      </execution>
+
+	      <!-- Mirror the integration stack early access target dependencies to a repository. -->
+	      <execution>
+		<id>mirror-target-platform-repo-ea</id>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>${project.build.directory}/integration-stack-community-ea.target</sourceTargetFile>
+		  <outputRepository>${project.build.directory}/${project.artifactId}-ea.target.repo</outputRepository>
+		</configuration>
+	      </execution>
+
 	    </executions>
 	  </plugin>
 
@@ -353,7 +530,9 @@
 	    <version>1.7</version>
 
 	    <executions>
+
 	      <execution>
+		<id>package-target-platform-repo</id>
 		<phase>package</phase>
 
 		<configuration>
@@ -369,6 +548,25 @@
 		  <goal>run</goal>
 		</goals>
 	      </execution>
+
+	      <execution>
+		<id>package-target-platform-repo-ea</id>
+		<phase>package</phase>
+
+		<configuration>
+		  <quiet>true</quiet>
+		  <target>
+		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+		    <ant antfile="../scripts/remove.references.xml" dir=".">
+		      <property name="workDir" value="./target/target-platform-ea.target.repo" />
+		    </ant>
+		  </target>
+		</configuration>
+		<goals>
+		  <goal>run</goal>
+		</goals>
+	      </execution>
+
 	    </executions>
 
 	    <dependencies>
