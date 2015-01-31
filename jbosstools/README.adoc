@@ -19,6 +19,6 @@
 
 (Taken from console log of https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/JBTIS/job/JBTIS-aggregate-disc )
 
-# To build stable release update sites:
+# To build referencing your own JBTIS target platform, build ../target-platform first, then:
 
-    mvn clean install -Pstable
+    mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.2.1.CR1 -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install

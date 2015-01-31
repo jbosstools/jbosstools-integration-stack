@@ -27,3 +27,6 @@
 
     mvn -DCOMPOSITE_SITE=file:///home/me/git-clone/jbosstools-integration-stack/jbosstools/site/target/repository/ clean install -Pstable
 
+# To build using local target platform and local jbosstools:
+
+    mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.2.1.CR1 -DCOMPOSITE_SITE=file:///home/me/jbosstools-integration-stack/jbosstools/site/target/repository/ -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install

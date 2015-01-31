@@ -30,10 +30,11 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       mvn clean install
 
       If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
-      -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site/target/repository/
+      -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site/target/repository/ 
+      -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ 
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///....
+      -Dtargetplatform.url=file:///.... -DIS_TP_VERSION=4.2.1.Final
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -43,7 +44,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.0.CR2</VERSION>
-    <IS_TP_VERSION>4.2.1.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.2.1.CR1</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -61,7 +62,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/earlyaccess/REPO/</targetplatform.url>
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/earlyaccess/REPO/</targetplatform.url>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -122,7 +123,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <properties>
         <update.site.description>Stable Release</update.site.description>
 	<!-- The URL for the JBTIS target platform that should be associated with this site. -->
-	<targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/REPO/</targetplatform.url>
+	<targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.CR1/REPO/</targetplatform.url>
       </properties>
 
       <modules>

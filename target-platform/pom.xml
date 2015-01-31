@@ -9,10 +9,18 @@
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
-    JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies +
-    JBoss Tools unified core target dependencies forming an 'aggregate-base.target' combined target.
+    Create the JBTIS target platform files and optionally a mirrored repository.
 
-    Then add any leftover community dependencies to the aggregate forming an aggregate-full.target.
+    JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies +
+    JBoss Tools unified core target dependencies forming an 'aggregate-base.target' and an 
+    'aggregate-base-ea.target' combined target.
+
+    Then add any leftover community dependencies to the aggregate forming an 'aggregate-full.target'/
+    'aggregate-full-ea.target'.
+
+    Build -P mirror to get:
+       target-platform-ea.target.repo
+       target-platform.target.repo
   </description>
 
   <packaging>pom</packaging>
@@ -475,12 +483,13 @@
     </plugins>
   </build>
 
-  <!-- Mirror the integration stack target dependencies (release/ early/ early access).  This will be used by the 
-       production build as an extra repo.  -->
+  <!-- Mirror the integration stack target dependencies (release/ early access).  These will be used by the 
+       jbosstools and devstudio poms as an extra repo for resolving the contents of the .target files into a
+       repository. -->
   <profiles>
 
     <profile>
-      <id>mirror-integ-stack-target</id>
+      <id>mirror</id>
       <activation>
 	<activeByDefault>false</activeByDefault>
       </activation>
