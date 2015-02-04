@@ -99,7 +99,7 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base-ea</classifier>
+              <classifier>full-ea</classifier>
             </artifact>
           </target>
         </configuration>

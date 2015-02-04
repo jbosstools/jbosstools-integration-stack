@@ -24,7 +24,9 @@
     <update.site.name>JBoss Developer Studio Integration Stack Update Site</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <COMPOSITE_SITE>file://${basedir}/../site/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>file://${basedir}/../site/</COMPOSITE_SITE>    
+    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/REPO/</targetplatform.url>
   </properties>
 
   <repositories>
@@ -99,7 +101,7 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base</classifier>
+              <classifier>full</classifier>
             </artifact>
           </target>
         </configuration>
