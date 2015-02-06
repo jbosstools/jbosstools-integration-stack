@@ -24,7 +24,7 @@
     <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/earlyaccess/all/repo/</UPDATE_SITE>
+    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc-luna-ea/all/repo/</UPDATE_SITE>
   </properties>
 
   <build>
