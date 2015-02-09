@@ -26,7 +26,7 @@
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <COMPOSITE_SITE>file://${basedir}/../site/</COMPOSITE_SITE>    
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/REPO/</targetplatform.url>
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/REPO/</targetplatform.url>
   </properties>
 
   <repositories>
