@@ -5,6 +5,6 @@
     <property name="p2.timestamp" value="13698077140000"/>
   </properties>
   <children size="1">
-    <child location="REPO/"/>
+    <child location="jbtis/earlyaccess/REPO/"/>
 </children>
 </repository>
