@@ -9,7 +9,6 @@
     -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/ \
     -DIS_TP_VERSION=4.2.0.Final \
     -DTARGET_PLATFORM=luna \
-    -DTP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/ \
     -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final \
     -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
     -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
@@ -21,4 +20,5 @@
 
 # To build referencing your own JBTIS target platform, build ../target-platform first, then:
 
-    mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.2.1.CR1 -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install
+    mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.2.1.Final \
+        -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install
