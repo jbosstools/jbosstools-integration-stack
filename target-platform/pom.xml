@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.1.CR1</version>
+  <version>4.2.1.CR2</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -200,6 +200,8 @@
 	       2. the community-specific target dependencies:           + community.target
                                                                           =================================
 	       to generate the full community target dependencies file:   integration-stack-community.target
+
+               This target file will be mirrored to create the JBTIS target platform repository.
 	    -->
 	  <execution>
 
@@ -225,7 +227,7 @@
 	       1. early access integration-stack specific target dependencies:       integration-stack-base-ea.target
 	       2. the JBoss Tools core target dependencies:                        + core-base.target
 	       3. the JBoss Tools unified core target dependencies:                + jbosstools-unified.target
-               =============================
+                                                                                     =============================
 	       to generate an early access aggregate base target dependencies file:  aggregate-base-ea.target
           -->
 	  <execution>
@@ -258,10 +260,10 @@
 	  </execution>
 
 	  <!-- Merge:
-	       1. the previously generated aggregate base target file:    aggregate-base-ea.target
-	       2. the community-specific target dependencies:           + community.target
-                                                                          ========================
-	       to generate the full community target dependencies file:   aggregate-full-ea.target
+	       1. the previously generated aggregate base EA target file:    aggregate-base-ea.target
+	       2. the community-specific target dependencies:              + community.target
+                                                                             ========================
+	       to generate the full community target dependencies file:      aggregate-full-ea.target
 	    -->
 	  <execution>
 	    <id>merge-community-full-ea</id>
@@ -287,6 +289,8 @@
 	       2. the community-specific target dependencies:           + community.target
                                                                           ==================================
 	       to generate the full community target dependencies file:   integration-stack-community-ea.target
+
+               This target file will be mirrored to create the JBTIS target platform early access repository.
 	    -->
 	  <execution>
 	    <id>merge-community-ea</id>
@@ -483,9 +487,9 @@
     </plugins>
   </build>
 
-  <!-- Mirror the integration stack target dependencies (release/ early access).  These will be used by the 
-       jbosstools and devstudio poms as an extra repo for resolving the contents of the .target files into a
-       repository. -->
+  <!-- Mirror the integration stack target dependencies (release/ early access) for both community (jbtis) and
+       production (jbdsis).  These will be used by the jbosstools and devstudio poms as an extra repo for resolving 
+       the contents of the .target files into a repository. -->
   <profiles>
 
     <profile>
@@ -504,7 +508,7 @@
 
 	    <executions>
 
-	      <!-- Mirror the integration stack target dependencies to a repository. -->
+	      <!-- Mirror the integration stack community target dependencies to a repository. -->
 	      <execution>
 		<id>mirror-target-platform-repo</id>
 		<phase>package</phase>
@@ -517,7 +521,7 @@
 		</configuration>
 	      </execution>
 
-	      <!-- Mirror the integration stack early access target dependencies to a repository. -->
+	      <!-- Mirror the integration stack community early access target dependencies to a repository. -->
 	      <execution>
 		<id>mirror-target-platform-repo-ea</id>
 		<phase>package</phase>
@@ -527,6 +531,32 @@
 		<configuration>
 		  <sourceTargetFile>${project.build.directory}/integration-stack-community-ea.target</sourceTargetFile>
 		  <outputRepository>${project.build.directory}/${project.artifactId}-ea.target.repo</outputRepository>
+		</configuration>
+	      </execution>
+
+	      <!-- Mirror the jbdsis integration stack target dependencies to a repository. -->
+	      <execution>
+		<id>mirror-target-platform-jbdsis-repo</id>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>${basedir}/integration-stack-base.target</sourceTargetFile>
+		  <outputRepository>${project.build.directory}/${project.artifactId}-jbdsis.target.repo</outputRepository>
+		</configuration>
+	      </execution>
+
+	      <!-- Mirror the jdbsis integration stack early access target dependencies to a repository. -->
+	      <execution>
+		<id>mirror-target-platform-jbdsis-repo-ea</id>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>${basedir}/integration-stack-base-ea.target</sourceTargetFile>
+		  <outputRepository>${project.build.directory}/${project.artifactId}-jbdsis-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
 
@@ -568,6 +598,42 @@
 		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
 		    <ant antfile="../scripts/remove.references.xml" dir=".">
 		      <property name="workDir" value="./target/target-platform-ea.target.repo" />
+		    </ant>
+		  </target>
+		</configuration>
+		<goals>
+		  <goal>run</goal>
+		</goals>
+	      </execution>
+
+	      <execution>
+		<id>package-target-platform-jbdsis-repo</id>
+		<phase>package</phase>
+
+		<configuration>
+		  <quiet>true</quiet>
+		  <target>
+		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+		    <ant antfile="../scripts/remove.references.xml" dir=".">
+		      <property name="workDir" value="./target/target-platform-jbdsis.target.repo" />
+		    </ant>
+		  </target>
+		</configuration>
+		<goals>
+		  <goal>run</goal>
+		</goals>
+	      </execution>
+
+	      <execution>
+		<id>package-target-platform-jbdsis-repo-ea</id>
+		<phase>package</phase>
+
+		<configuration>
+		  <quiet>true</quiet>
+		  <target>
+		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+		    <ant antfile="../scripts/remove.references.xml" dir=".">
+		      <property name="workDir" value="./target/target-platform-jbdsis-ea.target.repo" />
 		    </ant>
 		  </target>
 		</configuration>
