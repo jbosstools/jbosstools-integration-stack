@@ -1,7 +1,7 @@
 # The JBoss Tools Integration Stack Project
 
 ## Summary
-The Integration Stack is an aggregation of Eclipse features and plugins comprised of JBoss tooling in support of Data Virtualization, BRMS/BPMS, Fuse Tooling and legacy SOA 5.x development.  It is formed by a Maven project which produces an Eclipse p2 update site, a Mylyn discovery update mechanism augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repository.
+The Integration Stack is an aggregation of Eclipse features and plugins comprised of JBoss tooling in support of Data Virtualization, BRMS/BPMS, Fuse Tooling, SOA Tooling and legacy SOA 5.x development.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.
 
 ## Components
 
