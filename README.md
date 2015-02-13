@@ -51,47 +51,47 @@ The JBoss Tools Integration Stack Target Platform project creates four target fi
 
 * An aggregate of the JBoss Tools Core target dependencies and JBoss Tools multiple dependencies + released Integration Stack base target dependencies (base).
 
-[source,bash]
+
 ----
 	1. released integration-stack specific target dependencies:   integration-stack-base.target
 	2. the JBoss Tools core target dependencies:                + core-base.target
 	3. the JBoss Tools unified core target dependencies:        + jbosstools-multiple.target
-                                                                      -----------------------------
-	   to generate an aggregate base target dependencies file:    aggregate-base.target
+                                                                   -----------------------------
+        to generate an aggregate base target dependencies file:    aggregate-base.target
 ----
 e.g.  http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/aggregate-base.target
 
 * An aggregate of the JBoss Tools Core target dependencies and JBoss Tools multiple dependencies + early access Integration Stack base target dependencies (base-ea).
 
-[source,bash]
+
 ----
 	1. released integration-stack specific target dependencies:   integration-stack-base-ea.target
 	2. the JBoss Tools core target dependencies:                + core-base.target
 	3. the JBoss Tools unified core target dependencies:        + jbosstools-multiple.target
-                                                                      --------------------------------
-           to generate an aggregate base target dependencies file:    aggregate-base-ea.target
+                                                                   --------------------------------
+        to generate an aggregate base target dependencies file:    aggregate-base-ea.target
 ----
 e.g.  http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/aggregate-base-ea.target
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies (full).
 
-[source,bash]
+
 ----
 	1. the previously generated aggregate base EA target file:    aggregate-base.target
 	2. the community-specific target dependencies:              + community.target
-                                                                      ---------------------
-           to generate the full community target dependencies file:   aggregate-full.target
+                                                                   ---------------------
+        to generate the full community target dependencies file:   aggregate-full.target
 ----
 e.g.  http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/aggregate-full.target
 
 * An aggregate of the JBoss Tools Core target dependencies + early access Integration Stack base target dependencies + any other community dependencies (full-ea).
 
-[source,bash]
+
 ----
 	1. the previously generated aggregate base EA target file:    aggregate-base-ea.target
 	2. the community-specific target dependencies:              + community.target
-                                                                      ------------------------
-           to generate the full community target dependencies file:   aggregate-full-ea.target
+                                                                   ------------------------
+        to generate the full community target dependencies file:   aggregate-full-ea.target
 ----
 e.g.  http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/4.2.1.Final/aggregate-full-ea.target
 
@@ -135,13 +135,13 @@ This results in populating the site, site-final and site-ea target directories w
 
 This results in populating the site, site-ga and site-ea target directories with a live repository, target platform repository and an associated zip install site.  The site directory is used for creating the JBoss Central discovery update artifacts.  The site-ga directory contains only .Final released components.  The site-ea directory contains only early-access components.
 
-## Exmaples
+## Examples
 
 Here's an example of how to reference the derived aggregate base target file:
 
-[source,bash]
+
 ----
-  <build>
+<build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
 
@@ -207,9 +207,9 @@ Here's an example of how to reference the derived aggregate base target file:
 ----
 Don't forget to identify the repository where the target file can be found:
 
-[source,bash]
+
 ----
-  <distributionManagement>
+<distributionManagement>
 
     <repository>
       <id>jboss-releases-repository</id>
@@ -227,7 +227,7 @@ Don't forget to identify the repository where the target file can be found:
       <layout>default</layout>
     </snapshotRepository>
 
-  </distributionManagement>
+</distributionManagement>
 ----
 
 ## Contribute fixes and features
