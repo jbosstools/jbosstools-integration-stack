@@ -5,14 +5,14 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.1.Final</version>
+  <version>4.2.2.Beta1</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
     Create the JBTIS target platform files and optionally a mirrored repository.
 
     JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies +
-    JBoss Tools unified core target dependencies forming an 'aggregate-base.target' and an 
+    JBoss Tools multiple core target dependencies forming an 'aggregate-base.target' and an 
     'aggregate-base-ea.target' combined target.
 
     Then add any leftover community dependencies to the aggregate forming an 'aggregate-full.target'/
@@ -129,7 +129,7 @@
 	<!-- Merge:
 	     1. released integration-stack specific target dependencies:   integration-stack-base.target
 	     2. the JBoss Tools core target dependencies:                + core-base.target
-	     3. the JBoss Tools unified core target dependencies:        + jbosstools-unified.target
+	     3. the JBoss Tools multiple core target dependencies:       + jbosstools-multiple.target
                                                                            =============================
 	     to generate an aggregate base target dependencies file:       aggregate-base.target
         -->
@@ -149,9 +149,9 @@
 	      <sourceTargetArtifacts>
 		<item>
 		  <groupId>org.jboss.tools.targetplatforms</groupId>
-		  <artifactId>jbosstools-unified</artifactId>
+		  <artifactId>jbosstools-multiple</artifactId>
 		  <version>${JBTCoreTPVersion}</version>
-		  <classifier>jbosstools-unified</classifier>
+		  <classifier>jbosstools-multiple</classifier>
 		</item>
 	      </sourceTargetArtifacts>
 
@@ -226,7 +226,7 @@
 	  <!-- Merge:
 	       1. early access integration-stack specific target dependencies:       integration-stack-base-ea.target
 	       2. the JBoss Tools core target dependencies:                        + core-base.target
-	       3. the JBoss Tools unified core target dependencies:                + jbosstools-unified.target
+	       3. the JBoss Tools multiple core target dependencies:               + jbosstools-multiple.target
                                                                                      =============================
 	       to generate an early access aggregate base target dependencies file:  aggregate-base-ea.target
           -->
@@ -243,9 +243,9 @@
 	      <sourceTargetArtifacts>
 		<item>
 		  <groupId>org.jboss.tools.targetplatforms</groupId>
-		  <artifactId>jbosstools-unified</artifactId>
+		  <artifactId>jbosstools-multiple</artifactId>
 		  <version>${JBTCoreTPVersion}</version>
-		  <classifier>jbosstools-unified</classifier>
+		  <classifier>jbosstools-multiple</classifier>
 		</item>
 	      </sourceTargetArtifacts>
 
