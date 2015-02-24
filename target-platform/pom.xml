@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.1.8.Final-SNAPSHOT</version>
+  <version>4.1.9.Final</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -26,8 +26,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.18.1</tychoVersion>
-    <tychoExtrasVersion>0.18.1</tychoExtrasVersion>
+    <tychoVersion>0.21.0</tychoVersion>
+    <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+    <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <JBTCoreUnifiedTPVersion>4.32.0.Final</JBTCoreUnifiedTPVersion>
   </properties>
 
@@ -115,7 +116,7 @@
       <plugin>
 	<groupId>org.jboss.tools.tycho-plugins</groupId>
 	<artifactId>target-platform-utils</artifactId>
-	<version>0.16.0.CR2</version>
+	<version>${jboss-tycho-version}</version>
 
 	<executions>
 
@@ -294,7 +295,7 @@
        build as an extra repo.  -->
   <profiles>
     <profile>
-      <id>isbtp2repo</id>
+      <id>mirror</id>
       <activation>
 	<activeByDefault>false</activeByDefault>
       </activation>
@@ -305,7 +306,7 @@
 	  <plugin>
 	    <groupId>org.jboss.tools.tycho-plugins</groupId>
 	    <artifactId>target-platform-utils</artifactId>
-	    <version>0.16.0.CR2</version>
+	    <version>${jboss-tycho-version}</version>
 
 	    <executions>
 	      <execution>
