@@ -21,17 +21,17 @@ Tools related to the development of Integration and SOA applications - includes 
 </category-def>
 
 <!-- bpel -->
-<feature url="features/org.jboss.tools.bpel.feature_0.0.0.jar" id="org.jboss.tools.bpel.feature" version="0.0.0">
+<feature url="features/org.jboss.tools.bpel_0.0.0.jar" id="org.jboss.tools.bpel" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<!-- bpmn2 -->
-<feature url="features/org.eclipse.bpmn2_0.0.0.jar" id="org.eclipse.bpmn2" version="0.0.0">
+<!-- bpmn2
+<feature url="features/org.eclipse.bpmn2_0.0.0.jar" id="org.eclipse.bpmn2.feature" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
-
+-->
 <feature url="features/org.eclipse.bpmn2.modeler.feature_0.0.0.jar" id="org.eclipse.bpmn2.modeler.feature" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />

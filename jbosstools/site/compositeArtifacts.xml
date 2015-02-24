@@ -9,13 +9,13 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="10">
+  <children size="9">
 
     <!-- BPEL -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/bpel/1.2.101.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.2.201402102317_0.7.0.201308220617_kepler/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.0.4.Final_1.0.0.Final_kepler/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://downloads.jboss.org/jbpm/release/6.1.0.Final/updatesite/"/>
@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/esb/1.5.310.Final/"/>
 
     <!-- FUSE -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/fuse-tooling/7.2.2.Final/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/fuse-tooling/7.2.3.Final/all/repo/"/>
 
     <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
@@ -32,14 +32,11 @@
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/modeshape/3.6.0.Final/"/>
 
-    <!-- SAVARA -->
-    <child location="http://download.jboss.org/savara/releases/updates/2.2.2.Final/"/>
-
     <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/switchyard/1.1.6.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/teiiddesigner/8.3.4.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/teiiddesigner/8.6.1.CR1/"/>
 
   </children>
 
