@@ -34,7 +34,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </feature>
 
 <!-- bpmn2 -->
-<feature url="features/org.eclipse.bpmn2.feature_0.0.0.jar" id="org.eclipse.bpmn2.feature" version="0.0.0">
+<feature url="features/org.eclipse.bpmn2_0.0.0.jar" id="org.eclipse.bpmn2" version="0.0.0">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
