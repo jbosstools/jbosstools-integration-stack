@@ -10,10 +10,10 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.birt.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="0.0.0"/>
-      <unit id="org.jboss.tools.gwt.feature.feature.group" version="0.0.0"/>
+      <unit id="org.jboss.tools.birt.feature.feature.group" version="1.5.0.Final-v20130717-0050-B66"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="1.2.4.Final-v20140311-0548-B153"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="1.5.4.Final-v20140311-0548-B153"/>
+      <unit id="org.jboss.tools.gwt.feature.feature.group" version="1.1.0.Final-v20130205-2223-B78"/>
 
       <repository location="http://download.jboss.org/jbosstools/updates/stable/kepler/"/>
     </location>
