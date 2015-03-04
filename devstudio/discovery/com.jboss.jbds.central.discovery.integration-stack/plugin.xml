@@ -168,10 +168,10 @@
 
   </extension>
 
-  <!-- temporary - ref https://issues.jboss.org/browse/JBTIS-372
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
+       category="earlyaccess"
        description="%fuse.integration.wizard.description"
        label="Fuse Integration Project"
        priority="3"
@@ -180,5 +180,5 @@
        requiredComponentIds="jboss.integration-stack.bundle.fuse">
     </proxyWizard>
   </extension>	
-  -->
+
 </plugin>
