@@ -9,13 +9,13 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="10">
+  <children size="9">
 
     <!-- BPEL -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/bpel/1.3.100.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201501081320_1.0.0.201412192138_luna/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.2.Final_1.0.0.Final_luna/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://downloads.jboss.org/jbpm/release/6.2.0.CR3/updatesite/"/>
@@ -26,14 +26,14 @@
     <!-- FUSE TOOLING -->
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.Beta2/all/repo/"/>
 
-    <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
+    <!-- JBPM3 -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/switchyard/2.0.0.Beta1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/switchyard/2.0.0.Beta2/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.1.Final/"/>
