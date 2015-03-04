@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>discovery</artifactId>
-  <version>4.2.0-SNAPSHOT</version>
+  <version>4.2.1-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.2.0-SNAPSHOT</version>
+    <version>4.2.1-SNAPSHOT</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Discovery</name>
@@ -24,7 +24,7 @@
     community JBoss tools integration stack components.
 
     i.e.
-    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.2.0 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=luna
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=4.2.1 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=luna
   </description>
 
   <modules>

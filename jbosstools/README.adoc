@@ -6,15 +6,15 @@
     -DBUILD_NUMBER=69 \
     -DBUILD_TYPE=development \
     -DCOMPOSITE_SITE=file://`pwd`/site \
-    -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.0.Final/REPO/ \
-    -DIS_TP_VERSION=4.2.0.Final \
+    -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.CR1,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/REPO/ \
+    -DIS_TP_VERSION=4.2.1.Final \
     -DTARGET_PLATFORM=luna \
-    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.Final \
+    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.CR1 \
     -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
     -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
     -DUPSTREAM_TP_SITE= \
     -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
-    -DVERSION=4.2.0.Final
+    -DVERSION=4.2.1.CR1
 
 (Taken from console log of https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/JBTIS/job/JBTIS-aggregate-disc )
 

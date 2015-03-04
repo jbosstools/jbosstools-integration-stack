@@ -4,12 +4,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>com.jboss.jbds.central.discovery.integration-stack</artifactId>
-  <version>8.0.0-SNAPSHOT</version>
+  <version>8.0.1-SNAPSHOT</version>
 
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>discovery</artifactId>
-    <version>8.0.0-SNAPSHOT</version>
+    <version>8.0.1-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Discovery Plugins</name>
