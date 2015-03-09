@@ -37,7 +37,7 @@
     <tychoVersion>0.21.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
-    <JBTCoreTPVersion>4.41.0.Final</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.42.0.Final-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
   <repositories>
@@ -224,9 +224,10 @@
 	  </execution>
 
 	  <!-- Merge:
-	       1. early access integration-stack specific target dependencies:       integration-stack-base-ea.target
-	       2. the JBoss Tools core target dependencies:                        + core-base.target
-	       3. the JBoss Tools multiple core target dependencies:               + jbosstools-multiple.target
+	       1. integration-stack specific target dependencies:                    integration-stack-base.target
+	       2. early access integration-stack specific target dependencies:     + integration-stack-base-ea.target
+	       3. the JBoss Tools core target dependencies:                        + core-base.target
+	       4. the JBoss Tools multiple core target dependencies:               + jbosstools-multiple.target
                                                                                      =============================
 	       to generate an early access aggregate base target dependencies file:  aggregate-base-ea.target
           -->
@@ -250,6 +251,7 @@
 	      </sourceTargetArtifacts>
 
 	      <sourceTargetFiles>
+		<item>${basedir}/integration-stack-base.target</item>
 		<item>${basedir}/integration-stack-base-ea.target</item>
 		<item>${basedir}/core-base.target</item>
 	      </sourceTargetFiles>

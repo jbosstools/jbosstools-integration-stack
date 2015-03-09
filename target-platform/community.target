@@ -10,11 +10,11 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.birt.feature.feature.group" version="1.7.0.Final-v20141016-1529-B14"/>
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="1.3.0.Final-v20141016-1914-B105"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="2.0.0.Final-v20141016-1914-B105"/>
+      <unit id="org.jboss.tools.birt.feature.feature.group" version="1.7.0.Final-v20141209-0111-B18"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="1.3.2.Final-v20150109-2320-B116"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="2.0.1.Final-v20150109-2320-B116"/>
 
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Final-updatesite-core/"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.Beta1-updatesite-core/"/>
     </location>
 
   </locations>
