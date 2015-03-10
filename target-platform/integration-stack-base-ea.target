@@ -4,27 +4,10 @@
 <!-- 
    Mirrored third-party and Eclipse dependencies for the JBoss Tools Integration Stack.
 
-   This target file contains all dependent features/ plugins (released or not) to form
-   the early access target platform.
+   This target file contains all dependent features/ plugins to form the early access target platform.
 -->
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
-
-    <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
-    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.apache.servicemix.bundles.aopalliance" version="1.0.0.3"/>
-
-      <unit id="org.jboss.tools.locus.jcip.annotations" version="1.0.0.Final-v20131024-0922-B58"/>
-      <unit id="org.jboss.tools.locus.mockito" version="1.9.5.Final_patched_TEIIDDES-1681-v20131024-0922-B58"/>
-      <unit id="org.jboss.tools.locus.sf.saxon" version="9.2.1.5j-Final-v20131024-0922-B58"/>
-
-      <unit id="org.springframework.aspects" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.osgi.core" version="1.2.1"/>
-      <unit id="org.springframework.osgi.extender" version="1.2.1"/>
-      <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
-      <unit id="org.springframework.osgi.io" version="1.2.1"/>
-      <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.1.1.Final/update.site-1.1.1.Final.zip-unzip/"/>
-    </location>
 
     <!-- transitive dependencies for org.springframework.* -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -40,7 +23,7 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- transitive dependencies -->
-      <unit id="com.ibm.icu" version="52.1.0.v201404241930"/>
+      <unit id="com.ibm.icu" version="52.1.1.v201501240615"/>
       <unit id="javax.xml" version="1.3.4.v201005080400"/>
       <unit id="org.apache.ant" version="1.9.2.v201404171502"/>
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
@@ -48,7 +31,7 @@
       <unit id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
       <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
 
-      <unit id="org.eclipse.draw2d" version="3.9.100.201405261516"/>
+      <unit id="org.eclipse.draw2d" version="3.9.101.201408150207"/>
       <unit id="org.eclipse.equinox.simpleconfigurator.manipulator" version="2.0.0.v20131217-1203"/>
       <unit id="org.eclipse.jdt.junit.core" version="3.7.300.v20140409-1618"/>
       <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
@@ -56,10 +39,10 @@
       <unit id="org.junit" version="4.11.0.v201303080030"/>
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.0.0.201406111328"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.0.201406111328"/>
-      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.0.201406111328"/>
-      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.0.0.201406111328"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.0.2.201501201328"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.2.201501201328"/>
+      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.1.201501201328"/>
+      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.0.1.201501201328"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201405281429"/>
@@ -69,47 +52,26 @@
       <unit id="org.eclipse.emf.validation.feature.group" version="1.8.0.201405281429"/>
       <unit id="org.eclipse.emf.workspace.feature.group" version="1.8.0.201405281451"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.0.0.v20140602-0749"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.0.2.v20150202-0947"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
 
       <!-- Eclipse OCL/ALL -->
-      <unit id="org.eclipse.ocl.all.feature.group" version="5.0.0.v20140528-1458"/>
+      <unit id="org.eclipse.ocl.all.feature.group" version="5.0.2.v20140725-2242"/>
 
-      <unit id="javax.ws.rs" version="1.1.1.v20101004-1200"/>
-      <unit id="javax.xml.bind" version="2.1.9.v201005080401"/>
+      <unit id="javax.ws.rs" version="1.1.1.v20130318-1750"/>
+      <!-- <unit id="javax.xml.bind" version="2.1.9.v201005080401"/> -->
 
       <unit id="org.eclipse.core.net" version="1.2.200.v20140124-2013"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.0.v20131021-1936"/>
       <unit id="org.eclipse.equinox.security" version="1.2.0.v20130424-1801"/>      
 
       <!-- BPMN2 Modeler -->
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.0.v20140528-0646"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.0.v20140528-0646"/>
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.2.v20150204-0954"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.2.v20150204-0954"/>
       
-      <!-- Teiid -->
-      <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.4.0.v201405191524"/>
-      <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
-      <unit id="org.eclipse.birt.core" version="4.4.0.v201405191524"/>
-
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201406120900-RC4/"/>
-    </location>
-
-    <!-- BPMN2 Modeler -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpmn2.feature.group" version="1.0.0.201412192138"/>
-      <unit id="org.eclipse.bpmn2.modeler.feature.group" version="1.1.1.201501081320"/>
-      <unit id="org.eclipse.bpmn2.modeler.runtime.jboss.feature.group" version="1.1.1.201501081320"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.1.201501081320_1.0.0.201412192138_luna/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201502190900-SR2-RC4/"/>
     </location>
 
     <!-- BPEL -->
@@ -127,27 +89,6 @@
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.gemini.management" version="2.0.0.RELEASE"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/gemini/2.0.0.RELEASE/"/>
-    </location>
-
-    <!-- Teiid -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
-      <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
-      <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20140525021250/"/>
-    </location>
-
-    <!-- JBoss Tools Core Tests -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-
-      <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
-      <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.5.0.Final-v20141016-2021-B66"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.0.0.Final-v20141016-1911-B95"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.6.0.Final-v20141016-2021-B66"/>
-      <unit id="org.jboss.tools.common.test" version="3.6.0.Final-v20141016-2021-B66"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.6.0.Final-v20141016-1911-B95"/>
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.0.Final-updatesite-coretests/"/>
     </location>
 
   </locations>
