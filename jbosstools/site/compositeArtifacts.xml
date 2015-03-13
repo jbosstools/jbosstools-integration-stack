@@ -26,7 +26,7 @@
     <!-- FUSE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/fuse-tooling/7.2.3.Final/all/repo/"/>
 
-    <!-- JBPM: use nightly staging, development milestone, or stable release depending on best available -->
+    <!-- JBPM3 -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
 
     <!-- MODESHAPE -->
@@ -36,7 +36,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/switchyard/1.1.6.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/teiiddesigner/8.6.1.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/teiiddesigner/8.6.1.Final/"/>
 
   </children>
 

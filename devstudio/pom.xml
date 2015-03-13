@@ -16,9 +16,9 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.9.Final -DVERSION=7.1.0.CR1 \
+      mvn clean install -DTARGET_PLATFORM=kepler -DBUILD_TYPE=integration -DIS_TP_VERSION=4.1.11.Final -DVERSION=7.1.0.GA \
       -DBUILD_NUMBER=111 -DBUILD_ALIAS=CI-2013-08-21_20-10-23-B111 \
-      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.6.CR1/ \
+      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack/aggregate/4.1.7.Final/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.jboss.com/updates/7.0-development/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.core/,\
 https://devstudio.jboss.com/updates/7.0.0/7.0.0.GA.target-platform/,\
@@ -38,7 +38,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>kepler</TARGET_PLATFORM>
-    <VERSION>7.1.0.CR3</VERSION>
+    <VERSION>7.1.0.GA</VERSION>
     <IS_TP_VERSION>4.1.11.Final</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>

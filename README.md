@@ -17,24 +17,23 @@ releasable.
 * [Fuse IDE](http://fusesource.com/products/fuse-ide/)
 * [jBPM 3 Legacy Flow Editor](http://www.jboss.org/jbpm/)
 * [Modeshape Distributed, Hierarchical, Transactional, and Consistent Data Support](http://www.jboss.org/modeshape)
-* [Savara Testable Architecture Tool Support](http://www.jboss.org/savara)/ [Scribble Protocol Language](http://www.jboss.org/scribble)
 * [Switchyard Lightweight Service Delivery Framework](http://www.jboss.org/switchyard.html)
 * [Teiid Designer](http://www.jboss.org/teiiddesigner)
 
-## Building the JBoss Tools Integration Stack Project
+## Building the Kepler JBoss Tools Integration Stack Project
 
 To build the _JBoss Tools Integration Stack_ project requires specific versions of Java, Maven and Tycho. 
 The [How to Build JBoss Tools with Maven 3](https://community.jboss.org/wiki/HowToBuildJBossToolsWithMaven3)
 document will guide you through that setup.
 
-Fork a copy of the GIT project onto your local disk:
+Fork a copy of the GIT project onto your local disk (jbosstools-4.1.x branch):
 
-     https://github.com/jbosstools/jbosstools-integration-stack
+     https://github.com/jbosstools/jbosstools-integration-stack/tree/jbosstools-4.1.x
 
-First build the target platform:
+First build the target platform (optional):
 
       $ cd .../jbosstools-integration-stack/target-platform
-      $ mvn clean install
+      $ mvn -Pmirror clean install
 
 Second build either the community (jbosstools) or production (devstudio) aggregate and Mylyn discovery:
 
@@ -54,15 +53,15 @@ The JBoss Tools Integration Stack Target Platform project creates two target fil
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies.
 
-e.g. target-platform-4.0.0-base.target
+e.g. target-platform-4.1.11.Final-base.target
 
 * An aggregate of the JBoss Tools Core target dependencies + Integration Stack base target dependencies + any other community dependencies.
 
-e.g. target-platform-4.0.0-full.target
+e.g. target-platform-4.1.11.Final-full.target
 
 These files are promoted to the nexus: (e.g.)
 
-https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/integration-stack/target-platform/4.0.0-SNAPSHOT/
+https://repository.jboss.org/nexus/content/groups/public/org/jboss/tools/integration-stack/target-platform/4.1.11.Final/
 
 Here's an example of how to reference the derived aggregate base target file:
 
