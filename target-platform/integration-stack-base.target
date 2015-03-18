@@ -28,6 +28,47 @@
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
+      <!-- Eclipse EMF -->
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.0.2.201501201328"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.0.2.201501201328"/>
+      <unit  id="org.eclipse.emf.compare.rcp" version="2.2.1.201501201328"/>
+      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.0.1.201501201328"/>
+
+      <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
+      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.8.0.201405281429"/>
+      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.8.0.201405281426"/>
+      <unit id="org.eclipse.emf.query.feature.group" version="1.8.0.201405281426"/>
+      <unit id="org.eclipse.emf.transaction.feature.group" version="1.8.0.201405281451"/>
+      <unit id="org.eclipse.emf.validation.feature.group" version="1.8.0.201405281429"/>
+      <unit id="org.eclipse.emf.workspace.feature.group" version="1.8.0.201405281451"/>
+
+      <unit id="org.eclipse.uml2.feature.group" version="5.0.2.v20150202-0947"/>
+
+      <!-- Google Guava : Eclipse EMF -->
+      <unit id="com.google.guava" version="15.0.0.v201403281430"/>
+
+      <!-- Eclipse OCL/ALL -->
+      <unit id="org.eclipse.ocl.all.feature.group" version="5.0.2.v20140725-2242"/>
+
+      <unit id="javax.ws.rs" version="1.1.1.v20130318-1750"/>
+      <!-- <unit id="javax.xml.bind" version="2.1.9.v201005080401"/> -->
+
+      <!-- transitive dependencies -->
+      <unit id="com.ibm.icu" version="52.1.1.v201501240615"/>
+      <unit id="javax.xml" version="1.3.4.v201005080400"/>
+      <unit id="org.apache.ant" version="1.9.2.v201404171502"/>
+      <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
+      <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
+      <unit id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
+      <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
+
+      <unit id="org.eclipse.draw2d" version="3.9.101.201408150207"/>
+      <unit id="org.eclipse.equinox.simpleconfigurator.manipulator" version="2.0.0.v20131217-1203"/>
+      <unit id="org.eclipse.jdt.junit.core" version="3.7.300.v20140409-1618"/>
+      <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
+      <unit id="org.jsoup" version="1.7.2.v201304221138"/>
+      <unit id="org.junit" version="4.11.0.v201303080030"/>
+
       <!-- Teiid -->
       <unit id="org.apache.poi" version="3.9.0.v201303080712"/>
       <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.4.2.v201410272105"/>
@@ -41,6 +82,10 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.4.2.v201410272105"/>
 
+      <!-- BPMN2 Modeler -->
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.2.v20150204-0954"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.2.v20150204-0954"/>
+      
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201502190900-SR2-RC4/"/>
     </location>
 
@@ -65,6 +110,17 @@
       <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.3.CR1-updatesite-coretests/"/>
 <!--      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.Beta1-updatesite-coretests/"/> -->
    </location>
+
+    <!-- BPEL -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v201412041949/"/>
+    </location>
 
   </locations>
 </target>

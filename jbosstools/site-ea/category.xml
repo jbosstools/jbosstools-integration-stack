@@ -2,12 +2,6 @@
 <site>
 <description>JBoss Tools Integration Stack Eclipse Updates</description>
 
-<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
-  <description>
-Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor
-  </description>
-</category-def>
-
 <category-def name="FuseDevelopment" label="JBoss Fuse Development">
   <description>
 Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
@@ -16,45 +10,38 @@ Tools related to integrating and developing software components that work with A
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Fuse Tooling, Guvnor, jBPM and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, ESB, Fuse Tooling, Guvnor, jBPM6 and Switchyard.
   </description>
 </category-def>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <!-- drools/jBPM -->
 <feature id="org.drools.eclipse.feature">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.guvnor.tools.feature">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.jbpm.eclipse.feature">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
@@ -95,22 +82,8 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- jBPM3 -->
-<feature id="org.jboss.tools.jbpm.convert.feature">
-  <category name="BusinessLogic" />
-</feature>
-
-<feature id="org.jboss.tools.jbpm.common.feature">
-  <category name="BusinessLogic" />
-</feature>
-
-<feature id="org.jboss.tools.jbpm3.feature">
-  <category name="BusinessLogic" />
-</feature>
-
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
@@ -119,7 +92,6 @@ Tools related to the development of Integration and SOA applications - includes 
 </feature>
 
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
@@ -170,11 +142,10 @@ Tools related to the development of Integration and SOA applications - includes 
 <!--<feature id="org.fusesource.ide.sap.feature.source"/> -->
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
 
-<!-- jBPM3 -->
-<feature id="org.jboss.tools.jbpm.convert.feature.source"/>
-<feature id="org.jboss.tools.jbpm.common.feature.source"/>
-<feature id="org.jboss.tools.jbpm3.feature.source"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
+<!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature"/>
+<feature id="org.jboss.tools.runtime.esb.detector.feature"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>

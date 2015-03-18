@@ -2,11 +2,79 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse .Final Updates</description>
 
+<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
+  <description>
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM6, Drools and Guvnor
+  </description>
+</category-def>
+
 <category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
   </description>
 </category-def>
+
+<category-def name="SOADev" label="JBoss Integration and SOA Development">
+  <description>
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard.
+  </description>
+</category-def>
+
+<!-- bpel -->
+<feature id="org.jboss.tools.bpel.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<!-- drools/jBPM -->
+<feature id="org.drools.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.guvnor.tools.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<!-- esb -->
+<feature id="org.jboss.tools.esb.feature">
+  <category name="SOADev" />
+</feature>
+
+<!-- jBPM3 -->
+<feature id="org.jboss.tools.jbpm.convert.feature">
+  <category name="BusinessLogic" />
+</feature>
+
+<feature id="org.jboss.tools.jbpm.common.feature">
+  <category name="BusinessLogic" />
+</feature>
+
+<feature id="org.jboss.tools.jbpm3.feature">
+  <category name="BusinessLogic" />
+</feature>
 
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature">
@@ -15,6 +83,21 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <feature id="org.jboss.tools.modeshape.jcr.feature">
   <category name="DataVirtualization" />
+</feature>
+
+<!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jboss.tools.runtime.esb.detector.feature">
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
 </feature>
 
 <!-- teiid designer -->
@@ -38,9 +121,42 @@ Tools related to data virtualization such as persistence and transformation - in
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
 
+<!-- bpel -->
+<feature id="org.eclipse.bpel.feature.source"/>
+<feature id="org.eclipse.bpel.common.feature.source"/>
+<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
+<feature id="org.jboss.tools.bpel.feature.source"/>
+
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.source"/>
+<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
+<feature id="org.eclipse.bpmn2.modeler.source"/>
+
+<!-- drools/jbpm -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
+<feature id="org.drools.eclipse.feature.source"/>
+<feature id="org.guvnor.tools.feature.source"/>
+<feature id="org.jbpm.eclipse.feature.source"/>
+
+<!-- esb -->
+<feature id="org.jboss.tools.esb.feature.source"/>
+<feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+
+<!-- jBPM3 -->
+<feature id="org.jboss.tools.jbpm.convert.feature.source"/>
+<feature id="org.jboss.tools.jbpm.common.feature.source"/>
+<feature id="org.jboss.tools.jbpm3.feature.source"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
+
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
+
+<!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature"/>
+<feature id="org.jboss.tools.runtime.esb.detector.feature"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
