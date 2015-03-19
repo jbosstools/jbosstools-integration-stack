@@ -20,15 +20,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.2.0.201303060654-RELEASE-e4.3/"/>
     </location>
 
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-
-      <unit id="org.eclipse.core.net" version="1.2.200.v20140124-2013"/>
-      <unit id="org.eclipse.equinox.cm" version="1.1.0.v20131021-1936"/>
-      <unit id="org.eclipse.equinox.security" version="1.2.0.v20130424-1801"/>      
-
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201502190900-SR2-RC4/"/>
-    </location>
-
     <!-- Fuse Tooling -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.gemini.management" version="2.0.0.RELEASE"/>

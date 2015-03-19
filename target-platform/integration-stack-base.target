@@ -86,6 +86,9 @@
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.11.2.v20150204-0954"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.11.2.v20150204-0954"/>
       
+      <unit id="org.eclipse.core.net" version="1.2.200.v20140124-2013"/>
+      <unit id="org.eclipse.equinox.cm" version="1.1.0.v20131021-1936"/>
+      <unit id="org.eclipse.equinox.security" version="1.2.0.v20130424-1801"/>      
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/luna/201502190900-SR2-RC4/"/>
     </location>
 
