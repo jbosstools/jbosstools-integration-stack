@@ -10,6 +10,17 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
+    <!-- BPEL -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.4.v201412041949"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v201412041949/"/>
+    </location>
+
     <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.servicemix.bundles.aopalliance" version="1.0.0.3"/>
@@ -110,20 +121,8 @@
       <unit id="org.jboss.tools.common.base.test" version="3.6.2.CR1-v20150312-0213-B97"/>
       <unit id="org.jboss.tools.common.test" version="3.6.2.CR1-v20150312-0213-B97"/>
       <unit id="org.jboss.tools.jmx.core.test" version="1.6.3.CR1-v20150312-0240-B128"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.3.CR1-updatesite-coretests/"/>
-<!--      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.Beta1-updatesite-coretests/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.CR1-updatesite-coretests/"/>
    </location>
-
-    <!-- BPEL -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.4.v201412041949"/>
-      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.4.v201412041949"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.4.v201412041949"/>
-      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.4.v201412041949"/>
-      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.4.v201412041949"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.4.v201412041949"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.4.v201412041949/"/>
-    </location>
 
   </locations>
 </target>

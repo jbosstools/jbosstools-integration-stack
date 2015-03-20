@@ -14,8 +14,7 @@
       <unit id="org.jboss.tools.community.central.feature.feature.group" version="1.3.3.CR1-v20150312-1720-B119"/>
       <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="2.0.2.CR1-v20150312-1720-B119"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/staging/luna/jbosstools-4.2.3.CR1-updatesite-core/"/>
-<!--      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.Beta1-updatesite-core/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.CR1-updatesite-core/"/>
     </location>
 
   </locations>
