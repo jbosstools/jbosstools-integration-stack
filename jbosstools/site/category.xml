@@ -80,22 +80,16 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!--
 <feature id="org.fusesource.ide.fabric8.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
--->
 
 <feature id="org.fusesource.ide.jmx.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
-<!--
-<feature id="org.fusesource.ide.sap.feature">
-  <category name="SOADev" />
-</feature>
--->
+
 <feature id="org.fusesource.ide.server.extensions.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
@@ -197,9 +191,8 @@ Tools related to the development of Integration and SOA applications - includes 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
-<!--<feature id="org.fusesource.ide.fabric8.feature.source"/> -->
+<feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
-<!--<feature id="org.fusesource.ide.sap.feature.source"/> -->
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
 
 <!-- jBPM3 -->

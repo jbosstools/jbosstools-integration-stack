@@ -38,10 +38,10 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.1.CR1</VERSION>
+    <VERSION>4.2.3.Final</VERSION>
     <IS_TP_VERSION>4.2.2.CR1a</IS_TP_VERSION>
-    <tycho-version>0.21.0</tycho-version>
-    <jboss-tycho-version>0.21.1</jboss-tycho-version>
+    <tycho-version>0.22.0</tycho-version>
+    <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
