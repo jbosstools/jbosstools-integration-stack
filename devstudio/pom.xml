@@ -55,14 +55,14 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.0.CR2</COMPOSITE_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.CR1</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>${COMPOSITE_SITE}/earlyaccess</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/8.0/</UPSTREAM_EXTRAS_SITE>
     <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
-    <targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/8.0.0.GA.jbds-is-target-platform/earlyaccess/REPO/</targetplatform.url>
+    <targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${VERSION}.jbds-is-target-platform/earlyaccess/REPO/</targetplatform.url>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -123,7 +123,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <properties>
         <update.site.description>Stable Release</update.site.description>
 	<!-- The URL for the stable JBDSIS target platform repository that should be associated with this site. -->
-	<targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/8.0.0.GA.jbds-is-target-platform/REPO/</targetplatform.url>
+	<targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${VERSION}.jbds-is-target-platform/REPO/</targetplatform.url>
       </properties>
 
       <modules>
