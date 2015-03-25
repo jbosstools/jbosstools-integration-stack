@@ -196,6 +196,12 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <layout>p2</layout>
       <url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</url>
     </repository>
+
+    <repository>
+      <id>jbdsis-targetplatform-ea-site</id>
+      <layout>p2</layout>
+      <url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/earlyaccess/REPO/</url>
+    </repository>
   </repositories>
 
   <pluginRepositories>
