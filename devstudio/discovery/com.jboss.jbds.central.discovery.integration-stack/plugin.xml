@@ -22,7 +22,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -113,7 +113,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"

@@ -14,12 +14,6 @@ Tools related to data virtualization such as persistence and transformation - in
   </description>
 </category-def>
 
-<category-def name="SOADev" label="JBoss Integration and SOA Development">
-  <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM6.   Fuse Tooling and Switchyard are available as Early Access.
-  </description>
-</category-def>
-
 <category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
 SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
@@ -27,45 +21,39 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
+<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.ds.feature"/>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <!-- drools/jBPM -->
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.jbpm.eclipse.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <!-- esb -->
@@ -107,7 +95,6 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </feature>
 
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
