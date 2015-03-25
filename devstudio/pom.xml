@@ -45,6 +45,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.1.CR1</VERSION>
     <IS_TP_VERSION>4.2.2.CR1b</IS_TP_VERSION>
+    <JBDSIS_TP_VERSION>8.0.1.CR1</JBDSIS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -62,7 +63,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
-    <targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${VERSION}.jbds-is-target-platform/earlyaccess/REPO/</targetplatform.url>
+    <targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</targetplatform.url>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -123,7 +124,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <properties>
         <update.site.description>Stable Release</update.site.description>
 	<!-- The URL for the stable JBDSIS target platform repository that should be associated with this site. -->
-	<targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${VERSION}.jbds-is-target-platform/REPO/</targetplatform.url>
+	<targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</targetplatform.url>
       </properties>
 
       <modules>
@@ -177,15 +178,23 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
       <layout>p2</layout>
       <url>${COMPOSITE_SITE}</url>
     </repository>
+
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_EA_SITE}</url>
     </repository>
+
     <repository>
       <id>jbdsis-update-and-targetplatform-site</id>
       <layout>p2</layout>
       <url>${UPDATE_SITE}</url>
+    </repository>
+
+    <repository>
+      <id>jbdsis-targetplatform-site</id>
+      <layout>p2</layout>
+      <url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</url>
     </repository>
   </repositories>
 
