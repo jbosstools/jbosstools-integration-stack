@@ -71,9 +71,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
   </properties>
 
   <modules>
-    <module>site</module>
     <module>features</module>
-    <module>discovery</module>
   </modules>
 
   <profiles>   
@@ -129,6 +127,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
 
       <modules>
 	<module>site-ga</module>
+        <module>discovery</module>
       </modules>
     </profile>
 
@@ -148,6 +147,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
 
       <modules>
 	<module>site-ea</module>
+        <module>discovery</module>
       </modules>
     </profile>
 

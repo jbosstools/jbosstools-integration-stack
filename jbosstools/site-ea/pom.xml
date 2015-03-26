@@ -16,18 +16,20 @@
   <description>
     Aggregated JBoss Developer Studio Integration Stack early access Eclipse update site.
 
-    This Maven project will create an update site for the early access release of the JBoss Developer Studio Integration Stack by 
-    mirroring artifacts from the composite site.  The category.xml defines the content..
+    This Maven project will create an update site for the early access release of the JBoss Developer Studio Integration Stack.
   </description>
 
   <properties>
+    <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>
     <update.site.name>JBoss Developer Studio Integration Stack Early Access Update Site</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <COMPOSITE_SITE>file://${basedir}/../site/</COMPOSITE_SITE>
+    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
+    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.url>
   </properties>
 
   <repositories>
+    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
@@ -40,6 +42,21 @@
       </releases>
     </repository>
   </repositories>
+
+  <pluginRepositories>
+
+    <!-- Needed by tycho-eclipse plugin support. -->
+    <pluginRepository>
+      <id>tycho-snapshots</id>
+      <url>https://oss.sonatype.org/content/groups/public/</url>
+    </pluginRepository>
+
+    <pluginRepository>
+      <id>jboss-snapshots-repository</id>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+    </pluginRepository>
+
+  </pluginRepositories>
 
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -146,47 +163,6 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
-
-      <plugin>
-        <artifactId>maven-assembly-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>assemble-site</id>
-            <phase>package</phase>
-            <goals>
-              <goal>single</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <descriptors>
-            <descriptor>src/main/assembly/descriptor.xml</descriptor>
-          </descriptors>
-        </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.eclipse.tycho.extras</groupId>
-        <artifactId>tycho-p2-extras-plugin</artifactId>
-        <version>${tycho-version}</version>
-        <executions>
-          <execution>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>mirror</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <source>
-            <repository>
-              <url>${targetplatform.url}</url>
-              <layout>p2</layout>
-            </repository>
-          </source>
-         <destination>${project.build.directory}/targetplatform</destination>
-        </configuration>
       </plugin>
 
     </plugins>

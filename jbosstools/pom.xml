@@ -62,10 +62,9 @@
   </properties>
 
   <modules>
-    <module>site</module>
-    <module>discovery</module>
     <module>site-final</module>
     <module>site-ea</module>
+    <module>discovery</module>
   </modules>
 
   <profiles>  

@@ -15,8 +15,8 @@ Tools related to the development of Integration and SOA applications - includes 
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site/com.jboss.devstudio.integration-stack.soa.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.fuse.feature" path="../../jbosstools/site/com.jboss.devstudio.integration-stack.fuse.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site-ea/com.jboss.devstudio.integration-stack.soa.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.fuse.feature" path="../../jbosstools/site-ea/com.jboss.devstudio.integration-stack.fuse.feature"/>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
