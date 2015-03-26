@@ -262,7 +262,6 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 
 	<!-- Complete the creation of the Integration Stack directory XML file. -->
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml" append="true">&lt;entry url="${central.discovery.is.jar.renamed}" permitCategories="true"/>
-&lt;/directory>
 </echo>
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml" append="true">&lt;entry url="${central.discovery.is.ea.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
