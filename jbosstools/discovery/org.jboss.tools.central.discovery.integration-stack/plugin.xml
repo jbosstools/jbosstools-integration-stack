@@ -10,7 +10,6 @@
        name="JBoss Tools Integration Stack"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
@@ -73,7 +72,6 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -90,14 +88,6 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.jmx.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/>
-      <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.bpel.feature"/>
-      <iu id="org.switchyard.tools.bpmn2.feature"/>
-
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>
@@ -107,29 +97,6 @@
     </connectorDescriptor>
 
     <!-- JBT single component sites -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Fuse Development"
-       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-       id="jboss.integration-stack.bundle.fuse">
-      <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.jmx.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/>
-      <icon
-   image32="images/jbds_fuse_32.png">
-      </icon>
-      <overview
-	 url="http://fusesource.com/products/fuse-ide/">
-      </overview>
-    </connectorDescriptor>
-
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
@@ -217,28 +184,6 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss SwitchYard Tools"
-       description="JBoss SwitchYard Tools"
-       id="org.switchyard.tools.feature">
-      <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.bpel.feature"/>
-      <iu id="org.switchyard.tools.bpmn2.feature"/>
-      <icon
-	 image32="images/jbds_switchyard_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.emt"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss ModeShape Tooling"
        description="Resource (un)publishing to ModeShape repositories"
        id="org.jboss.tools.modeshape.rest.feature">
@@ -296,18 +241,5 @@
       </overview>
     </connectorDescriptor>
   </extension>
-
-  <extension point="org.jboss.tools.central.proxyWizard">
-    <proxyWizard
-       id="fuse.integration.wizard"
-       category="earlyaccess"
-       description="%fuse.integration.wizard.description"
-       label="Fuse Integration Project"
-       priority="3"
-       iconPath="images/fuse_integration_wizard.png"
-       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
-       requiredComponentIds="jboss.integration-stack.bundle.fuse">
-    </proxyWizard>
-  </extension>	
 
 </plugin>

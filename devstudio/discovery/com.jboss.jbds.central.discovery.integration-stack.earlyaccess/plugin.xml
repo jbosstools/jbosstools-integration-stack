@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+
+    <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
+    <connectorCategory
+       description="JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
+       id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       name="JBoss Developer Studio Integration Stack"
+       relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
+    </connectorCategory>
+
+    <!-- JBoss Integration and SOA Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Integration and SOA Development"
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard."
+       id="jboss.integration-stack.bundle.soa">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpmn2"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.guvnor.tools.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.fusesource.ide.camel.editor.feature"/>
+      <iu id="org.fusesource.ide.core.feature"/>
+      <iu id="org.fusesource.ide.fabric8.feature"/>
+      <iu id="org.fusesource.ide.jmx.feature"/>
+      <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <iu id="org.switchyard.tools.feature"/>
+      <iu id="org.switchyard.tools.bpel.feature"/>
+      <iu id="org.switchyard.tools.bpmn2.feature"/>
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- Fuse -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Fuse Development"
+       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       id="jboss.integration-stack.bundle.fuse">
+      <iu id="org.fusesource.ide.camel.editor.feature"/>
+      <iu id="org.fusesource.ide.core.feature"/>
+      <iu id="org.fusesource.ide.fabric8.feature"/>
+      <iu id="org.fusesource.ide.jmx.feature"/>
+      <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <icon
+   image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+   url="http://fusesource.com/products/fuse-ide/">
+      </overview>
+    </connectorDescriptor>
+
+  </extension>
+
+  <extension point="org.jboss.tools.central.proxyWizard">
+    <proxyWizard
+       id="fuse.integration.wizard"
+       category="earlyaccess"
+       description="%fuse.integration.wizard.description"
+       label="Fuse Integration Project"
+       priority="3"
+       iconPath="images/fuse_integration_wizard.png"
+       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
+       requiredComponentIds="jboss.integration-stack.bundle.fuse">
+    </proxyWizard>
+  </extension>	
+
+</plugin>

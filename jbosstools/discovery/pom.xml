@@ -29,6 +29,7 @@
 
   <modules>
     <module>org.jboss.tools.central.discovery.integration-stack</module>
+    <module>org.jboss.tools.central.discovery.integration-stack.earlyaccess</module>
     <module>generation</module>
   </modules>
 
