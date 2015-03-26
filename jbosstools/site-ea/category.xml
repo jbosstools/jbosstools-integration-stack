@@ -76,10 +76,6 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-  <category name="SOADev" />
-</feature>
-
 <!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
@@ -124,8 +120,6 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature"/>
-<feature id="org.jboss.tools.runtime.esb.detector.feature"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>
