@@ -62,11 +62,13 @@ $java.home = ${java.home}
 
     <if><equals arg1="${BUILD_FORM}" arg2="community" trim="true" /><then>
 	<property name="discovery.is.dir" value="org.jboss.tools.central.discovery.integration-stack" />
+	<property name="discovery.is.ea.dir" value="org.jboss.tools.central.discovery.integration-stack.earlyaccess" />
 	<property name="discovery.is.url" value="http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/central/integration-stack/" />
     </then></if>
 
     <if><equals arg1="${BUILD_FORM}" arg2="production" trim="true" /><then>
 	<property name="discovery.is.dir" value="com.jboss.jbds.central.discovery.integration-stack" />
+	<property name="discovery.is.ea.dir" value="com.jboss.jbds.central.discovery.integration-stack.earlyaccess" />
 
 	<if><equals arg1="${BUILD_TYPE}" arg2="stable" trim="true" /><then>
 	    <property name="discovery.is.url" value="https://devstudio.redhat.com/updates/8.0/central/integration-stack/" /></then>
@@ -76,11 +78,18 @@ $java.home = ${java.home}
     </then></if>
 
     <property name="discovery.is.path" value="${basedir}/../${discovery.is.dir}/plugin.properties" />
+    <property name="discovery.is.ea.path" value="${basedir}/../${discovery.is.ea.dir}/plugin.properties" />
+
     <echo>discovery.is.path = ${discovery.is.path}</echo>
+    <echo>discovery.is.ea.path = ${discovery.is.ea.path}</echo>
     <echo>discovery.is.url = ${discovery.is.url}</echo>
 
     <!-- Update the plugin.properties file. -->
     <echo file="${discovery.is.path}" append="true">
+jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
+</echo>
+
+    <echo file="${discovery.is.ea.path}" append="true">
 jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 </echo>
   </target>
@@ -181,12 +190,16 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
     <if><equals arg1="${BUILD_FORM}" arg2="community" trim="true" /><then>
 	<property name="central.discovery.is.jar.id" value="org.jboss.tools.central.discovery.integration-stack-${VERSION}-SNAPSHOT.jar" />
 	<property name="discovery_jar_target_dir" value="${project.build.directory}/../../org.jboss.tools.central.discovery.integration-stack/target/" />
+	<property name="central.discovery.is.ea.jar.id" value="org.jboss.tools.central.discovery.integration-stack.earlyaccess-${VERSION}-SNAPSHOT.jar" />
+	<property name="discovery_ea_jar_target_dir" value="${project.build.directory}/../../org.jboss.tools.central.discovery.integration-stack.earlyaccess/target/" />
 	<property name="output.url" value="http://download.jboss.org/jbosstools/discovery/${BUILD_TYPE}/integration-stack/${VERSION}/" />
     </then></if>
 
     <if><equals arg1="${BUILD_FORM}" arg2="production" trim="true" /><then>
 	<property name="central.discovery.is.jar.id" value="com.jboss.jbds.central.discovery.integration-stack-${VERSION}-SNAPSHOT.jar" />
 	<property name="discovery_jar_target_dir" value="${project.build.directory}/../../com.jboss.jbds.central.discovery.integration-stack/target/" />
+	<property name="central.discovery.is.ea.jar.id" value="com.jboss.jbds.central.discovery.integration-stack.earlyaccess-${VERSION}-SNAPSHOT.jar" />
+	<property name="discovery_ea_jar_target_dir" value="${project.build.directory}/../../com.jboss.jbds.central.discovery.integration-stack.earlyaccess/target/" />
 	<property name="output.url" value="https://devstudio.redhat.com/updates/${BUILD_TYPE}/central/integration-stack/${VERSION}/" />
     </then></if>
 
@@ -197,9 +210,20 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 	  </fileset>
     </path>
 
+    <path id="central.discovery.is.ea.jar.id">
+	  <fileset dir="${discovery_ea_jar_target_dir}">
+	    <include name="*.central.discovery*.jar" />
+	    <exclude name="*-sources.jar" />
+	  </fileset>
+    </path>
+
     <property name="central.discovery.is.path" refid="central.discovery.is.jar.id" />
     <echo level="debug">central.discovery.is.path = ${central.discovery.is.path}</echo>
     <basename property="central.discovery.is.jar" file="${central.discovery.is.path}" />
+
+    <property name="central.discovery.is.ea.path" refid="central.discovery.is.ea.jar.id" />
+    <echo level="debug">central.discovery.is.ea.path = ${central.discovery.is.ea.path}</echo>
+    <basename property="central.discovery.is.ea.jar" file="${central.discovery.is.ea.path}" />
 
     <if><not><equals arg1="${central.discovery.is.jar}" arg2="" trim="true" /></not><then>
 	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_ID}" 
@@ -211,6 +235,14 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}-${BUILD_TS}-B${BUILD_NUMBER}"/>
 	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.jar.renamed}"/>
 	<echo>Generating ${project.build.directory}/${PREFIX}-directory.xml using IS discovery jar: ${project.build.directory}/plugins/${central.discovery.is.jar.renamed}</echo>
+
+	<!-- Rename and copy the integration stack early access discovery jar. -->
+        <if><not><equals arg1="${central.discovery.is.ea.jar}" arg2="" trim="true" /></not><then>
+           <propertyregex override="true" property="central.discovery.is.ea.jar.renamed" defaultvalue="${central.discovery.is.ea.jar}" input="${central.discovery.is.ea.jar}" 
+                          regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}-${BUILD_TS}-B${BUILD_NUMBER}"/>
+           <copy file="${central.discovery.is.ea.path}" tofile="${project.build.directory}/plugins/${central.discovery.is.ea.jar.renamed}"/>
+           <echo>Generating ${project.build.directory}/${PREFIX}-directory.xml using IS EA discovery jar: ${project.build.directory}/plugins/${central.discovery.is.ea.jar.renamed}</echo>
+        </then></if>
 
 	<!-- Start the creation of the Integration Stack directory XML file. (e.g. devstudio-integration-stack-directory.xml) -->
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
@@ -230,6 +262,9 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 
 	<!-- Complete the creation of the Integration Stack directory XML file. -->
 	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml" append="true">&lt;entry url="${central.discovery.is.jar.renamed}" permitCategories="true"/>
+&lt;/directory>
+</echo>
+	<echo file="${project.build.directory}/plugins/${PREFIX}-directory.xml" append="true">&lt;entry url="${central.discovery.is.ea.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
 </echo>
     </then></if>
