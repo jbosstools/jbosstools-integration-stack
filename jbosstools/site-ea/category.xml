@@ -10,40 +10,9 @@ Tools related to integrating and developing software components that work with A
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM6 and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling, and Switchyard.  Select the non Early Access SOA Development for released SOA related tooling.
   </description>
 </category-def>
-
-<!-- bpel -->
-<feature id="org.jboss.tools.bpel.feature">
-  <category name="SOADev" />
-</feature>
-
-<!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2">
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.eclipse.bpmn2.modeler">
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
-  <category name="SOADev" />
-</feature>
-
-<!-- drools/jBPM -->
-<feature id="org.drools.eclipse.feature">
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.guvnor.tools.feature">
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.jbpm.eclipse.feature">
-  <category name="SOADev" />
-</feature>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
@@ -71,11 +40,6 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- runtime detectors -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature">
-  <category name="SOADev" />
-</feature>
-
 <!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
@@ -93,33 +57,12 @@ Tools related to the development of Integration and SOA applications - includes 
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
 
-<!-- bpel -->
-<feature id="org.eclipse.bpel.feature.source"/>
-<feature id="org.eclipse.bpel.common.feature.source"/>
-<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
-<feature id="org.jboss.tools.bpel.feature.source"/>
-
-<!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2.source"/>
-<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
-<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
-<feature id="org.eclipse.bpmn2.modeler.source"/>
-
-<!-- drools/jbpm -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
-<feature id="org.drools.eclipse.feature.source"/>
-<feature id="org.guvnor.tools.feature.source"/>
-<feature id="org.jbpm.eclipse.feature.source"/>
-
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
 <feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
-
-<!-- runtime detectors -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature"/>
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>
