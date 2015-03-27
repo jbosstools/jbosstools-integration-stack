@@ -10,7 +10,7 @@ Tools related to integrating and developing software components that work with A
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling, and Switchyard.  Select the non Early Access SOA Development for released SOA related tooling.
+Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling, and Switchyard.
   </description>
 </category-def>
 
