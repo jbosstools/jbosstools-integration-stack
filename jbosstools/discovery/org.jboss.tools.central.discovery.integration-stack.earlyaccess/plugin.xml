@@ -11,9 +11,7 @@
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
-      <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
     </connectorCategory>
 
     <!-- JBoss Integration and SOA Development -->
