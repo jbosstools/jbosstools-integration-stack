@@ -16,7 +16,7 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM6.  For Fuse Tooling and Switchyard please enable Early Access.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM6.
   </description>
 </category-def>
 
@@ -27,9 +27,9 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/features/com.jboss.devstudio.integration-stack.bpr.feature/target"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"  path="../../devstudio/features/com.jboss.devstudio.integration-stack.ds.feature/target"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/features/com.jboss.devstudio.integration-stack.soa.feature/target"/>
+<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.bpr.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.ds.feature"  path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.ds.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.soa.feature"/>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
