@@ -44,7 +44,7 @@ http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/re
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.1.CR1</VERSION>
-    <IS_TP_VERSION>4.2.2.CR1b</IS_TP_VERSION>
+    <IS_TP_VERSION>4.2.2.Final</IS_TP_VERSION>
     <JBDSIS_TP_VERSION>8.0.1.CR1</JBDSIS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>

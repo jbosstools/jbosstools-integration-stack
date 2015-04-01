@@ -116,12 +116,12 @@
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.5.1.CR1-v20150312-0213-B97"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.0.3.CR1-v20150312-0240-B128"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.6.2.CR1-v20150312-0213-B97"/>
-      <unit id="org.jboss.tools.common.test" version="3.6.2.CR1-v20150312-0213-B97"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.6.3.CR1-v20150312-0240-B128"/>
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.CR1-updatesite-coretests/"/>
+      <unit id="org.jboss.tools.tests" version="3.5.1.Final-v20150325-0456-B99"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.0.3.Final-v20150325-0035-B129"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.6.2.Final-v20150325-0456-B99"/>
+      <unit id="org.jboss.tools.common.test" version="3.6.2.Final-v20150325-0456-B99"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.6.3.Final-v20150325-0035-B129"/>
+      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.Final-updatesite-coretests/"/>
    </location>
 
   </locations>
