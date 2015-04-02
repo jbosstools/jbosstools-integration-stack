@@ -1,24 +1,24 @@
-## Sample invocation to build JBT IS
+## Sample invocation to build JBTIS
 
-    mvn clean install checkstyle:check -fae -e \
-    -DBUILD_ALIAS=Final \
-    -DBUILD_KIND=jbosstools \
-    -DBUILD_NUMBER=69 \
-    -DBUILD_TYPE=development \
-    -DCOMPOSITE_SITE=file://`pwd`/site \
-    -DCOMPOSITE_URLS=,http://download.jboss.org/jbosstools/updates/development/luna/,,http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.CR1,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/REPO/ \
-    -DIS_TP_VERSION=4.2.1.Final \
-    -DTARGET_PLATFORM=luna \
-    -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.CR1 \
-    -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
-    -DUPSTREAM_EXTRAS_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
-    -DUPSTREAM_TP_SITE= \
-    -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/development/luna/ \
-    -DVERSION=4.2.1.CR1
+    mvn clean install
 
-(Taken from console log of https://jenkins.mw.lab.eng.bos.redhat.com/hudson/view/DevStudio/view/JBTIS/job/JBTIS-aggregate-disc )
+   - or -
 
-# To build referencing your own JBTIS target platform, build ../target-platform first, then:
+    mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/ -DTARGET_PLATFORM=luna -DIS_TP_VERSION=4.2.2.Final \
+        -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
+        -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/REPO \
+        -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/earlyaccess/REPO \
+        -DBUILD_ALIAS=${BUILD_ID}-B${BUILD_NUMBER} -DBUILD_TYPE=development \
+        -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/integration-stack/aggregate/4.2.1.Final \
+        -DskipRevisionCheckWhenPublishing=true -DVERSION=4.2.1.Final -DBUILD_KIND=jbosstools \
+         clean install checkstyle:check -DBUILD_KIND=jbosstools -DBUILD_NUMBER=351 -DBUILD_ALIAS=2015-03-27_13-40-33-B351 -DBUILD_TYPE=development \
+        -DTARGET_PLATFORM=luna \
+        -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/stable/luna/,\
+                         http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.Final, \
+                         http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.Final/earlyaccess,\
+                         http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/earlyaccess/REPO
+
+# To build referencing your own JBTIS early access target platform, build ../target-platform first, then:
 
     mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.2.1.Final \
         -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install
