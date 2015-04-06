@@ -29,7 +29,6 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature"  path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.ds.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.soa.feature"/>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
