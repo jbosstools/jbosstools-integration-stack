@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.2.1-SNAPSHOT</version>
+  <version>4.2.2-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -37,7 +37,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.1.Final</VERSION>
+    <VERSION>4.2.2.CR1</VERSION>
     <IS_TP_VERSION>4.2.2.Final</IS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
