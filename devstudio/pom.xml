@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>8.0.1-SNAPSHOT</version>
+  <version>8.0.2-SNAPSHOT</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -42,7 +42,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>8.0.1.GA</VERSION>
+    <VERSION>8.0.2.CR1</VERSION>
     <IS_TP_VERSION>4.2.2.Final</IS_TP_VERSION>
     <JBDSIS_TP_VERSION>8.0.1.GA</JBDSIS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
