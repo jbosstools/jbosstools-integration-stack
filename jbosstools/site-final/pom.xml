@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.2.1-SNAPSHOT</version>
+    <version>4.3.0-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate - Final</name>
@@ -29,10 +29,24 @@
   </properties>
 
   <repositories>
-    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
+
+    <!-- Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
+      <layout>p2</layout>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+
+    <!-- Integration Stack target platform repo. -->
+    <repository>
+      <id>integration-stack-tp-site</id>
+      <url>${targetplatform.url}</url>
       <layout>p2</layout>
       <snapshots>
         <enabled>true</enabled>
@@ -76,11 +90,6 @@
 
         <configuration>
           <environments>
-            <environment>
-              <os>macosx</os>
-              <ws>cocoa</ws>
-              <arch>x86</arch>
-            </environment>
             <environment>
               <os>macosx</os>
               <ws>cocoa</ws>
@@ -150,8 +159,8 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/updates/stable/luna/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/luna/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/staging/mars/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/mars/</associateSite>
 	      </associateSites>
               <removeDefaultCategory>true</removeDefaultCategory>
               <symbols>

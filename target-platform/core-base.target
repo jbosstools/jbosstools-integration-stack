@@ -18,6 +18,7 @@
       <unit id="org.jboss.tools.cdi.feature.feature.group" version="1.7.0.Alpha1-v20150213-0551-B3"/>
       <unit id="org.jboss.tools.cdi.seam.feature.feature.group" version="1.7.0.Alpha1-v20150213-0551-B3"/>
       <unit id="org.jboss.tools.central.feature.feature.group" version="2.0.0.Alpha1-v20150213-0945-B3"/>
+      <unit id="org.jboss.tools.discovery.core" version="1.0.0.Alpha1-v20150213-0945-B3"/>
       <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
       <unit id="org.jboss.tools.common.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
       <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.7.0.Alpha1-v20150212-2256-B1"/>
