@@ -9,28 +9,13 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="7">
-
-    <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/bpel/1.3.100.Final/"/>
-
-    <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.2.Final_1.1.0.Final_luna/"/>
-
-    <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/6.2.0.Final/updatesite/"/>
+  <children size="2">
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/ESB/1.5.530.Final/"/>
 
     <!-- JBPM3 -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
-
-    <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
-
-    <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.1.Final/"/>
 
   </children>
 

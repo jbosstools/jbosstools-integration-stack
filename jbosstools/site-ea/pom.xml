@@ -7,14 +7,14 @@
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.2.1-SNAPSHOT</version>
+    <version>4.3.0-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate - Early Access</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack early access Eclipse update site.
+    Aggregated JBoss Developer Studio Integration Stack Early Access Eclipse update site.
 
     This Maven project will create an update site for the early access release of the JBoss Developer Studio Integration Stack.
   </description>
@@ -22,17 +22,32 @@
   <properties>
     <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>
     <update.site.name>JBoss Developer Studio Integration Stack Early Access Update Site</update.site.name>
+    <update.site.description>Early Access Release</update.site.description>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.url>
+    <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <repositories>
-    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
+
+    <!-- Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
+      <layout>p2</layout>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+
+    <!-- Integration Stack early access target platform repo. -->
+    <repository>
+      <id>integration-stack-tp-site</id>
+      <url>${targetplatform.ea.url}</url>
       <layout>p2</layout>
       <snapshots>
         <enabled>true</enabled>
@@ -79,11 +94,6 @@
             <environment>
               <os>macosx</os>
               <ws>cocoa</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>macosx</os>
-              <ws>cocoa</ws>
               <arch>x86_64</arch>
             </environment>
             <environment>
@@ -108,7 +118,7 @@
             </environment>
           </environments>
 
-          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
+          <!-- Pick up the merged target dependencies of the JBoss Tools core multiple target and the base
 	       (early access) JBoss Tools Integration Stack. -->
           <target>
             <artifact>
@@ -150,8 +160,8 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/updates/stable/luna/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/luna/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/updates/staging/mars/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/mars/</associateSite>
 	      </associateSites>
               <removeDefaultCategory>true</removeDefaultCategory>
               <symbols>

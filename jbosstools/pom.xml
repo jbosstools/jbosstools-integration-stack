@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.2.1-SNAPSHOT</version>
+  <version>4.3.0-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -16,19 +16,19 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.2.Final -DVERSION=4.2.1.Final \
+      mvn clean install -DTARGET_PLATFORM=mars -DBUILD_TYPE=integration -DIS_TP_VERSION=4.3.0.Alpha1 -DVERSION=4.3.0.Alpha1 \
       -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
-      -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
-      -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
-       http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.1.Final/,\
-       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/earlyaccess/REPO/
+      -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/mars/jbosstools-directory.xml \
+      -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/mars/,\
+       http://download.jboss.org/jbosstools/updates/integration/mars/integration-stack/aggregate/4.3.0.Alpha1/,\
+       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha1/jbtis/earlyaccess/REPO/
 
       -or-
 
       mvn clean install
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -DIS_TP_VERSION=4.2.2.Final
+      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.3.0.Alpha1
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -36,16 +36,13 @@
     <BUILD_TS>v20130101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
-    <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.1.Final</VERSION>
-    <IS_TP_VERSION>4.2.2.Final</IS_TP_VERSION>
+    <TARGET_PLATFORM>mars</TARGET_PLATFORM>
+    <VERSION>4.3.0.Alpha1</VERSION>
+    <IS_TP_VERSION>4.3.0.Alpha1a</IS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
-
-    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.url>
+    <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -116,20 +113,6 @@
       </properties>
     </profile>
 
-    <profile>
-      <id>earlyaccess</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>stable</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Early Access Release</update.site.description>
-      </properties>
-    </profile>
   </profiles>
 
   <repositories>
