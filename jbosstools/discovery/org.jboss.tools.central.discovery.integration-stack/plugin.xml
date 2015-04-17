@@ -179,7 +179,6 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -200,7 +199,6 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
