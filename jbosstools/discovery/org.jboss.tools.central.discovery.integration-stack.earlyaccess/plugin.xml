@@ -16,7 +16,7 @@
 
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
@@ -45,7 +45,7 @@
 
     <!-- JBT single component sites -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
@@ -69,7 +69,7 @@
     </connectorDescriptor>
 
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"

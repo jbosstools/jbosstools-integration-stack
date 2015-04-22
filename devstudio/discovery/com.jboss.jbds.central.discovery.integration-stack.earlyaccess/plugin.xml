@@ -15,7 +15,7 @@
 
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
        certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
@@ -43,7 +43,7 @@
 
     <!-- Fuse -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
        certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"

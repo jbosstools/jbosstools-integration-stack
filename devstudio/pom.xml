@@ -16,12 +16,12 @@
   </description>
 
   <!-- Run a build like this to generate release and early access update sites:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.2.Final -DVERSION=8.0.1.GA \
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.2.Final -DVERSION=8.0.2.GA \
       -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.1.Final/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,\
        https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/,\
-       https://devstudio.redhat.com/updates/8.0.0/8.0.1.GA.jbds-is-target-platform/,\
+       https://devstudio.redhat.com/updates/8.0.0/8.0.2.GA.jbds-is-target-platform/,\
        http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
       -or-
