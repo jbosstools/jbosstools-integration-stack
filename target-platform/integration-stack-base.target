@@ -124,5 +124,22 @@
       <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.2.3.Final-updatesite-coretests/"/>
    </location>
 
+    <!-- transitive dependencies for org.springframework.* -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.springframework.aop" version="3.1.4.RELEASE"/>
+      <unit id="org.springframework.beans" version="3.1.4.RELEASE"/>
+      <unit id="org.springframework.context" version="3.1.4.RELEASE"/>
+      <unit id="org.springframework.core" version="3.1.4.RELEASE"/>
+      <unit id="org.springframework.expression" version="3.1.4.RELEASE"/>
+      <unit id="org.springframework.transaction" version="3.1.4.RELEASE"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/springide/3.2.0.201303060654-RELEASE-e4.3/"/>
+    </location>
+
+    <!-- Fuse Tooling -->
+    <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.gemini.management" version="2.0.0.RELEASE"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/gemini/2.0.0.RELEASE/"/>
+    </location>
+
   </locations>
 </target>
