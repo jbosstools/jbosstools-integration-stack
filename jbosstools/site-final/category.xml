@@ -14,9 +14,15 @@ Tools related to data virtualization such as persistence and transformation - in
   </description>
 </category-def>
 
+<category-def name="FuseDevelopment" label="JBoss Fuse Development">
+  <description>
+Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
+  </description>
+</category-def>
+
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM6.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM6 and Fuse Tooling.
   </description>
 </category-def>
 
@@ -68,6 +74,32 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature">
   <category name="SOADev5" />
+</feature>
+
+<!-- fuse tooling -->
+<feature id="org.fusesource.ide.camel.editor.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.fusesource.ide.core.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.fusesource.ide.fabric8.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.fusesource.ide.jmx.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.fusesource.ide.server.extensions.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
 </feature>
 
 <!-- jBPM3 -->
@@ -152,6 +184,13 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature.source"/>
 <feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+
+<!-- fuse tooling -->
+<feature id="org.fusesource.ide.camel.editor.feature.source"/>
+<feature id="org.fusesource.ide.core.feature.source"/>
+<feature id="org.fusesource.ide.fabric8.feature.source"/>
+<feature id="org.fusesource.ide.jmx.feature.source"/>
+<feature id="org.fusesource.ide.server.extensions.feature.source"/>
 
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature.source"/>
