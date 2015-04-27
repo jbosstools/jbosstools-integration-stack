@@ -24,13 +24,9 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling, and Switchyard.  Select the non Early Access SOA Development for released SOA related tooling."
+       description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling data transformation and Switchyard."
        id="jboss.integration-stack.bundle.soa">
-      <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.fabric8.feature"/>
-      <iu id="org.fusesource.ide.jmx.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
@@ -53,18 +49,14 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Fuse Development"
-       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       description="Tools related to Fuse Tooling data mapping and transformation."
        id="jboss.integration-stack.bundle.fuse">
-      <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.fabric8.feature"/>
-      <iu id="org.fusesource.ide.jmx.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <icon
    image32="images/jbds_fuse_32.png">
       </icon>
       <overview
-	 url="http://fusesource.com/products/fuse-ide/">
+	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
@@ -91,18 +83,5 @@
     </connectorDescriptor>
 
   </extension>
-
-  <extension point="org.jboss.tools.central.proxyWizard">
-    <proxyWizard
-       id="fuse.integration.wizard"
-       category="earlyaccess"
-       description="%fuse.integration.wizard.description"
-       label="Fuse Integration Project"
-       priority="3"
-       iconPath="images/fuse_integration_wizard.png"
-       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
-       requiredComponentIds="jboss.integration-stack.bundle.fuse">
-    </proxyWizard>
-  </extension>	
 
 </plugin>

@@ -4,42 +4,18 @@
 
 <category-def name="FuseDevelopment" label="JBoss Fuse Development">
   <description>
-Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
+Tools related to Fuse Tooling data mapping and transformation.
   </description>
 </category-def>
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling and Switchyard. 
+Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling data transformation and Switchyard. 
   </description>
 </category-def>
 
-<!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-<feature id="com.jboss.devstudio.integration-stack.fuse.feature" path="../../jbosstools/site-ea/com.jboss.devstudio.integration-stack.fuse.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site-ea/com.jboss.devstudio.integration-stack.soa.feature"/>
-
 <!-- fuse tooling -->
-<feature id="org.fusesource.ide.camel.editor.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.fusesource.ide.core.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.fusesource.ide.fabric8.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.fusesource.ide.jmx.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.fusesource.ide.server.extensions.feature">
+<feature id="org.jboss.tools.fuse.transformation.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
@@ -62,11 +38,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <!-- ####### -->
 
 <!-- fuse tooling -->
-<feature id="org.fusesource.ide.camel.editor.feature.source"/>
-<feature id="org.fusesource.ide.core.feature.source"/>
-<feature id="org.fusesource.ide.fabric8.feature.source"/>
-<feature id="org.fusesource.ide.jmx.feature.source"/>
-<feature id="org.fusesource.ide.server.extensions.feature.source"/>
+<feature id="org.jboss.tools.fuse.transformation.feature.source"/>
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>

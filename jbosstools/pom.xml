@@ -28,7 +28,7 @@
       mvn clean install
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -DIS_TP_VERSION=4.2.2.Final
+      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.2.2.Final
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -43,9 +43,6 @@
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
-
-    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.url>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
@@ -116,20 +113,6 @@
       </properties>
     </profile>
 
-    <profile>
-      <id>earlyaccess</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>stable</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Early Access Release</update.site.description>
-      </properties>
-    </profile>
   </profiles>
 
   <repositories>

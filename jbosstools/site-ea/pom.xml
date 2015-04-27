@@ -22,10 +22,11 @@
   <properties>
     <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>
     <update.site.name>JBoss Developer Studio Integration Stack Early Access Update Site</update.site.name>
+    <update.site.description>Early Access Release</update.site.description>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.url>
+    <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <repositories>
@@ -33,6 +34,19 @@
     <repository>
       <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
+      <layout>p2</layout>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+
+    <!-- Integration Stack early access target platform repo. -->
+    <repository>
+      <id>integration-stack-tp-site</id>
+      <url>${targetplatform.ea.url}</url>
       <layout>p2</layout>
       <snapshots>
         <enabled>true</enabled>

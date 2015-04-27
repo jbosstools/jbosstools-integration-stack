@@ -2,75 +2,39 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>site-final</artifactId>
+  <artifactId>site-ga</artifactId>
 
   <parent>
-    <groupId>org.jboss.tools.integration-stack</groupId>
+    <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.2.2-SNAPSHOT</version>
+    <version>8.0.2-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate - Final</name>
+  <name>JBDS Integration Stack Aggregate - GA</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack final Eclipse update site.
+    Aggregated JBoss Developer Studio Integration Stack Eclipse GA update site.
 
-    This Maven project will create an update site for the .Final release of the JBoss Developer Studio Integration Stack.
+    This Maven project will create a GA update site for the layered release of the JBoss Developer Studio Integration Stack by mirroring 
+    artifacts from the composite site.  The category.xml defines the content.
   </description>
 
   <properties>
-    <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>    
-    <update.site.name>JBoss Developer Studio Integration Stack Update Site</update.site.name>
-    <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
+    <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
+    <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
-    <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/REPO/</targetplatform.url>
+    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
   </properties>
-
+<!--
   <repositories>
-    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
-      <id>integration-stack-site</id>
-      <url>${COMPOSITE_SITE}</url>
+      <id>jbdsis-ea-update-and-targetplatform-site</id>
       <layout>p2</layout>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-
-    <!-- Integration Stack target platform repo. -->
-    <repository>
-      <id>integration-stack-tp-site</id>
-      <url>${targetplatform.url}</url>
-      <layout>p2</layout>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
+      <url>${EA_UPDATE_SITE}</url>
     </repository>
   </repositories>
-
-  <pluginRepositories>
-
-    <!-- Needed by tycho-eclipse plugin support. -->
-    <pluginRepository>
-      <id>tycho-snapshots</id>
-      <url>https://oss.sonatype.org/content/groups/public/</url>
-    </pluginRepository>
-
-    <pluginRepository>
-      <id>jboss-snapshots-repository</id>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-    </pluginRepository>
-
-  </pluginRepositories>
-
+-->
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -129,7 +93,7 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>full</classifier>
+              <classifier>base</classifier>
             </artifact>
           </target>
         </configuration>
@@ -162,10 +126,6 @@
             <configuration>
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
-	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/updates/stable/luna/</associateSite>
-		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/luna/</associateSite>
-	      </associateSites>
               <removeDefaultCategory>true</removeDefaultCategory>
               <symbols>
                 <update.site.name>${update.site.name}</update.site.name>
@@ -176,6 +136,47 @@
             </configuration>
           </execution>
         </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>assemble-site</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptors>
+            <descriptor>src/main/assembly/descriptor.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.eclipse.tycho.extras</groupId>
+        <artifactId>tycho-p2-extras-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <executions>
+          <execution>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>mirror</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <source>
+            <repository>
+              <url>${targetplatform.url}</url>
+              <layout>p2</layout>
+            </repository>
+          </source>
+         <destination>${project.build.directory}/targetplatform</destination>
+        </configuration>
       </plugin>
 
     </plugins>

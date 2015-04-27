@@ -24,7 +24,8 @@
     <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc-luna-ea/all/repo/</UPDATE_SITE>
+    <!-- The URL for the stable JBDSIS target platform repository that should be associated with this site. -->
+    <targetplatform.ea.url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <build>
@@ -163,7 +164,7 @@
         <configuration>
           <source>
             <repository>
-              <url>${targetplatform.url}</url>
+              <url>${targetplatform.ea.url}</url>
               <layout>p2</layout>
             </repository>
           </source>
