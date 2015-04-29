@@ -13,6 +13,7 @@
       <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
     </connectorCategory>
       
     <!-- JBoss Business Process and Rules Development -->
@@ -124,9 +125,8 @@
 
     <!-- JBT single component sites -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -273,7 +273,6 @@
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
-       category="earlyaccess"
        description="%fuse.integration.wizard.description"
        label="Fuse Integration Project"
        priority="3"
