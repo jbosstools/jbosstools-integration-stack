@@ -9,11 +9,11 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
     </connectorCategory>
       
     <!-- JBoss Business Process and Rules Development -->
@@ -69,6 +69,30 @@
       </overview>
     </connectorDescriptor>
 
+    <!-- JBT single component sites -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Fuse Development"
+       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       id="jboss.integration-stack.bundle.fuse">
+      <iu id="org.fusesource.ide.camel.editor.feature"/>
+      <iu id="org.fusesource.ide.core.feature"/>
+      <iu id="org.fusesource.ide.fabric8.feature"/>
+      <iu id="org.fusesource.ide.jmx.feature"/>
+      <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <icon
+	  image32="images/jbds_fuse_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
@@ -117,30 +141,6 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <icon
 	 image32="images/jbds_drools_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- JBT single component sites -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Fuse Development"
-       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-       id="jboss.integration-stack.bundle.fuse">
-      <iu id="org.fusesource.ide.camel.editor.feature"/>
-      <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.fabric8.feature"/>
-      <iu id="org.fusesource.ide.jmx.feature"/>
-      <iu id="org.fusesource.ide.server.extensions.feature"/>
-      <icon
-	  image32="images/jbds_fuse_32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">

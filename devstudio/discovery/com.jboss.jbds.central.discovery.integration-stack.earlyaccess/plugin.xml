@@ -5,9 +5,9 @@
 
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
-       description="JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
+       description="Early Access JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       name="JBoss Developer Studio Integration Stack"
+       name="JBoss Developer Studio Integration Stack Early Access"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
@@ -24,7 +24,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
        description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling Data Transformation and SwitchYard."
-       id="jboss.integration-stack.bundle.soa">
+       id="jboss.integration-stack.bundle.soa.ea">
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
@@ -48,7 +48,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Fuse Development"
        description="Tools related to Fuse Tooling data mapping and transformation."
-       id="jboss.integration-stack.bundle.fuse">
+       id="jboss.integration-stack.bundle.fuse.ea">
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <icon
 	  image32="images/jbds_icon32.png">

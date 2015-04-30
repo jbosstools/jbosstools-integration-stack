@@ -9,12 +9,11 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
-
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
       
