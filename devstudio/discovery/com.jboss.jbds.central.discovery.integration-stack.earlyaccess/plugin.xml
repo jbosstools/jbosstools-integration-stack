@@ -6,17 +6,17 @@
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
        description="Early Access JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
-       id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Developer Studio Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa" /> 
     </connectorCategory>
 
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa"
        certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
@@ -37,10 +37,10 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- Fuse -->
+    <!-- Fuse Tooling -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
        certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
