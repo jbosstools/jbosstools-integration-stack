@@ -86,6 +86,10 @@
         <update.site.description>Integration Build</update.site.description>
       </properties>
 
+      <modules>
+	<module>site-ga</module>
+        <module>discovery</module>
+      </modules>
     </profile>
 
     <!-- development build profile -->
@@ -102,6 +106,11 @@
       <properties>
         <update.site.description>Development Milestone</update.site.description>
       </properties>
+
+      <modules>
+	<module>site-ga</module>
+        <module>discovery</module>
+      </modules>
     </profile>
 
     <profile>
