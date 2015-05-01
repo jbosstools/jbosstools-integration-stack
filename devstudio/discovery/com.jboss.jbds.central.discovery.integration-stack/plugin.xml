@@ -74,9 +74,9 @@
 
     <!-- Fuse Tooling -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -163,11 +163,11 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
+  </extension>	
 
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
-       category="earlyaccess"
        description="%fuse.integration.wizard.description"
        label="Fuse Integration Project"
        priority="3"
