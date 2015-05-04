@@ -36,7 +36,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
+<!--<feature id="com.jboss.devstudio.integration-stack.soa.feature"/> -->
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">

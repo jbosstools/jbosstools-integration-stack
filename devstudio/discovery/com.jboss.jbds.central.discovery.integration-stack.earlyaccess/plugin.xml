@@ -4,19 +4,11 @@
   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
-    <connectorCategory
-       description="Early Access JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
-       id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       name="JBoss Developer Studio Integration Stack Early Access"
-       relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa" /> 
-    </connectorCategory>
 
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
        certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
@@ -24,7 +16,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
        description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling Data Transformation and SwitchYard."
-       id="jboss.integration-stack.bundle.soa.ea">
+       id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
@@ -39,8 +31,8 @@
 
     <!-- Fuse Tooling -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
        certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
@@ -48,7 +40,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Fuse Development"
        description="Tools related to Fuse Tooling data mapping and transformation."
-       id="jboss.integration-stack.bundle.fuse.ea">
+       id="jboss.integration-stack.bundle.fuse">
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <icon
 	  image32="images/jbds_icon32.png">
