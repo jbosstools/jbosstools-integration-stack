@@ -8,10 +8,10 @@
 	<import plugin="com.jboss.devstudio.core.project.examples"/>
 	<import plugin="com.jboss.devstudio.core.usage.branding"/>
 	<import plugin="com.jboss.devstudio.core.central"/>
+	<import plugin="org.jboss.tools.usage"/>
+
 	<import feature="org.jboss.tools.central.feature"/> 
 	<import feature="org.jboss.tools.project.examples.feature"/> 
-	<import feature="org.jboss.tools.usage.feature"/>
-
 	<import feature="org.fusesource.ide.camel.editor.feature"/>
 	<import feature="org.fusesource.ide.core.feature"/>
 	<import feature="org.fusesource.ide.jmx.feature"/>

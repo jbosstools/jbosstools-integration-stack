@@ -16,10 +16,10 @@
     <import plugin="com.jboss.devstudio.core.project.examples"/>
     <import plugin="com.jboss.devstudio.core.usage.branding"/>
     <import plugin="com.jboss.devstudio.core.central"/>
+    <import plugin="org.jboss.tools.usage"/>
+
     <import feature="org.jboss.tools.central.feature"/> 
     <import feature="org.jboss.tools.project.examples.feature"/> 
-    <import feature="org.jboss.tools.usage.feature"/>
-
     <import feature="org.jboss.tools.modeshape.rest.feature"/>
     <import feature="org.jboss.tools.modeshape.jcr.feature"/>
     <import feature="org.teiid.datatools.connectivity.feature"/>

@@ -54,7 +54,7 @@
       <unit id="org.jboss.tools.runtime.seam.detector.feature.feature.group" version="3.6.2.Final-v20150325-0431-B95"/>
       <unit id="org.jboss.tools.seam.feature.feature.group" version="3.6.2.Final-v20150325-0431-B95"/>
       <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="1.1.2.Final-v20150325-0456-B99"/>
-      <unit id="org.jboss.tools.usage.feature.feature.group" version="2.0.2.Final-v20150325-0456-B99"/>
+      <unit id="org.jboss.tools.usage" version="2.0.2.Final-v20150325-0456-B99"/>
       <unit id="org.jboss.tools.vpe.browsersim.feature.feature.group" version="3.6.2.Final-v20150324-2137-B57"/>
       <unit id="org.jboss.tools.vpe.feature.feature.group" version="3.6.2.Final-v20150325-0347-B93"/>
       <unit id="org.jboss.tools.ws.feature.feature.group" version="1.7.3.Final-v20150324-2159-B84"/>
