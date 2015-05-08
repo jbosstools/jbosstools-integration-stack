@@ -10,11 +10,12 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.birt.feature.feature.group" version="1.8.0.Alpha1-v20150213-1550-B4"/>
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.0.Alpha1-v20150213-0945-B3"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Alpha1-v20150213-0945-B3"/>
+      <unit id="org.jboss.tools.birt.feature.feature.group" version="1.8.0.Alpha2-v20150417-1613-B13"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.0.Alpha2-v20150417-1854-B11"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Alpha2-v20150417-1854-B11"/>
 
-      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.3.0.Alpha1-updatesite-core/"/>
+<!--      <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.3.0.Alpha1-updatesite-core/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/"/>
     </location>
 
   </locations>
