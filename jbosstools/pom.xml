@@ -16,12 +16,13 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=mars -DBUILD_TYPE=integration -DIS_TP_VERSION=4.3.0.Alpha2 -DVERSION=4.3.0.Alpha1 \
-      -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
-      -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Alpha2/jbosstools-directory.xml \
-      -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/mars/,\
-       http://download.jboss.org/jbosstools/updates/integration/mars/integration-stack/aggregate/4.3.0.Alpha1/,\
-       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO/
+       mvn -DVERSION=4.3.0.Alpha1 -DTARGET_PLATFORM=mars -DIS_TP_VERSION=4.3.0.Alpha2 \
+        -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Alpha2/jbosstools-directory.xml \
+        -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO \
+        -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO \
+        -DBUILD_TYPE=development -DBUILD_ALIAS=alpha1 -DBUILD_KIND=jbosstools -DskipRevisionCheckWhenPublishing=true clean install checkstyle:check \
+        -Pstable -DBUILD_KIND=jbosstools -DBUILD_NUMBER=365 -DBUILD_ALIAS=2015-05-12_12-56-24-B365 -DBUILD_TYPE=development -DTARGET_PLATFORM=mars \
+        -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/,http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha1,http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha1/earlyaccess,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO
 
       -or-
 
@@ -39,8 +40,8 @@
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
     <VERSION>4.3.0.Alpha1</VERSION>
     <IS_TP_VERSION>4.3.0.Alpha2</IS_TP_VERSION>
-    <tycho-version>0.22.0</tycho-version>
-    <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
+    <tycho-version>0.21.0</tycho-version>
+    <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
