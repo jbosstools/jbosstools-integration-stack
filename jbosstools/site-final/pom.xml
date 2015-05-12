@@ -159,7 +159,7 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/updates/staging/mars/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/mars/staging/updates/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/mars/</associateSite>
 	      </associateSites>
               <removeDefaultCategory>true</removeDefaultCategory>
