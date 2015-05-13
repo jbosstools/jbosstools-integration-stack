@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>8.0.1-SNAPSHOT</version>
+  <version>9.0.0-SNAPSHOT</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -41,38 +41,35 @@
     <BUILD_TS>v20130101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
-    <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>8.0.1.GA</VERSION>
-    <IS_TP_VERSION>4.2.2.Final</IS_TP_VERSION>
-    <JBDSIS_TP_VERSION>8.0.1.GA</JBDSIS_TP_VERSION>
+    <TARGET_PLATFORM>mars</TARGET_PLATFORM>
+    <VERSION>9.0.0.Alpha1</VERSION>
+    <IS_TP_VERSION>4.3.0.Alpha2</IS_TP_VERSION>
+    <JBDSIS_TP_VERSION>9.0.0.Alpha1</JBDSIS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/updates/8.0/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/snapshots/builds/jbosstools-discovery.central_master/latest/all/repo/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.1.Final</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>${COMPOSITE_SITE}/earlyaccess</COMPOSITE_EA_SITE>
-    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/8.0/</UPSTREAM_EXTRAS_SITE>
-    <UPDATE_SITE>http://www.qa.jboss.com/binaries/RHDS/builds/staging/JBDSIS-aggregate-disc/all/repo/</UPDATE_SITE>
-    <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
-
-    <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
-    <targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</targetplatform.url>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha1/repo/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha1/earlyaccess/repo/</COMPOSITE_EA_SITE>
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/9.0/</UPSTREAM_EXTRAS_SITE>
+    <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
   </properties>
 
+<!--
   <modules>
     <module>features</module>
   </modules>
-
+-->
   <profiles>   
 
     <!-- integration build profile -->
@@ -120,8 +117,6 @@
 
       <properties>
         <update.site.description>Stable Release</update.site.description>
-	<!-- The URL for the stable JBDSIS target platform repository that should be associated with this site. -->
-	<targetplatform.url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</targetplatform.url>
       </properties>
 
       <modules>
@@ -132,17 +127,6 @@
 
     <profile>
       <id>earlyaccess</id>
-
-      <activation>
-        <property>
-          <name>BUILD_TYPE</name>
-          <value>stable</value>
-        </property>
-      </activation>
-
-      <properties>
-        <update.site.description>Early Access Release</update.site.description>
-      </properties>
 
       <modules>
 	<module>site-ea</module>
@@ -185,21 +169,15 @@
     </repository>
 
     <repository>
-      <id>jbdsis-update-and-targetplatform-site</id>
-      <layout>p2</layout>
-      <url>${UPDATE_SITE}</url>
-    </repository>
-
-    <repository>
       <id>jbdsis-targetplatform-site</id>
       <layout>p2</layout>
-      <url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/REPO/</url>
+      <url>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</url>
     </repository>
 
     <repository>
       <id>jbdsis-targetplatform-ea-site</id>
       <layout>p2</layout>
-      <url>https://devstudio.jboss.com/updates/8.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/earlyaccess/REPO/</url>
+      <url>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</url>
     </repository>
   </repositories>
 

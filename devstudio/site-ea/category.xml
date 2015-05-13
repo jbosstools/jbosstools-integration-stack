@@ -2,21 +2,73 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse Updates</description>
 
+<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
+  <description>
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor
+  </description>
+</category-def>
+
+<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
+  <description>
+Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
+  </description>
+</category-def>
+
+<category-def name="SOADev" label="JBoss Integration and SOA Development">
+  <description>
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM6, Fuse Tooling and Switchyard.
+  </description>
+</category-def>
+
 <category-def name="FuseDevelopment" label="JBoss Fuse Development">
   <description>
 Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
   </description>
 </category-def>
 
-<category-def name="SOADev" label="JBoss Integration and SOA Development">
-  <description>
-Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling and Switchyard. 
-  </description>
-</category-def>
-
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
+<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.bpr.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.ds.feature"  path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature" path="../../jbosstools/site-ea/com.jboss.devstudio.integration-stack.fuse.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site-ea/com.jboss.devstudio.integration-stack.soa.feature"/>
+
+<!-- bpel -->
+<feature id="org.jboss.tools.bpel.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<!-- drools/jBPM -->
+<feature id="org.drools.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.guvnor.tools.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
@@ -25,6 +77,11 @@ Tools related to the development of Integration and SOA applications - includes 
 </feature>
 
 <feature id="org.fusesource.ide.core.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jboss.tools.fuse.transformation.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
@@ -44,6 +101,15 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
+<!-- modeshape -->
+<feature id="org.jboss.tools.modeshape.rest.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.jboss.tools.modeshape.jcr.feature">
+  <category name="DataVirtualization" />
+</feature>
+
 <!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
@@ -57,9 +123,48 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
+<!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
+  <category name="SOADev" />
+</feature>
+
+<!-- teiid designer -->
+<feature id="org.teiid.datatools.connectivity.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.runtime.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.teiid.client.feature">
+  <category name="DataVirtualization" />
+</feature>
+
 <!-- ####### -->
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
+
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.source"/>
+<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
+<feature id="org.eclipse.bpmn2.modeler.source"/>
+
+<!-- drools/jbpm -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
+<feature id="org.drools.eclipse.feature.source"/>
+<feature id="org.guvnor.tools.feature.source"/>
+<feature id="org.jbpm.eclipse.feature.source"/>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
@@ -68,9 +173,23 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
 
+<!-- modeshape -->
+<feature id="org.jboss.tools.modeshape.rest.feature.source"/>
+<feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
+
+<!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
 <feature id="org.switchyard.tools.feature.source"/>
+
+<!-- teiid designer -->
+<feature id="org.teiid.datatools.connectivity.feature.source"/>
+<feature id="org.teiid.designer.feature.source"/>
+<feature id="org.teiid.designer.runtime.feature.source"/>
+<feature id="org.teiid.designer.teiid.client.feature.source"/>
 
 </site>

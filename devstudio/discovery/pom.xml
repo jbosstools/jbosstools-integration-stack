@@ -9,7 +9,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>8.0.1-SNAPSHOT</version>
+    <version>9.0.0-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Discovery</name>
@@ -42,11 +42,6 @@
 
 	<configuration>
           <environments>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
-              <arch>x86</arch>
-            </environment>
             <environment>
               <os>linux</os>
               <ws>gtk</ws>
