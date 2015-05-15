@@ -16,24 +16,25 @@
   </description>
 
   <!-- Run a build like this to generate release and early access update sites:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.2.Final -DVERSION=8.0.1.GA \
-      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.1.Final/ \
-      -DUPSTREAM_DIRECTORY_XML=https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml \
+      mvn clean install -Pstable -Pearlyaccess -DTARGET_PLATFORM=mars -DBUILD_TYPE=integration -DIS_TP_VERSION=4.3.0.Alpha2 -DVERSION=9.0.0.Alpha1 \
+      -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha1/repo/ \
+      -DCOMPOSITE_EA_SITE=http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha1/earlyaccess/repo/ \
+      -DUPSTREAM_DIRECTORY_XML=https://devstudio.redhat.com/9.0/snapshots/builds/jbosstools-discovery.central_master/latest/all/repo/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,\
        https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/,\
-       https://devstudio.redhat.com/updates/8.0.0/8.0.1.GA.jbds-is-target-platform/,\
+       https://devstudio.redhat.com/updates/9.0.0/9.0.0.Alpha1.jbds-is-target-platform/,\
        http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
       -or-
 
-      mvn clean install
+      mvn clean install -Pstable -Pearlyaccess
 
       If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
       -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site/target/repository/ 
       -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ 
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -DIS_TP_VERSION=4.2.2.Final
+      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.3.0.Alpha1
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -65,11 +66,10 @@
     <update.site.description>-</update.site.description>
   </properties>
 
-<!--
   <modules>
     <module>features</module>
   </modules>
--->
+
   <profiles>   
 
     <!-- integration build profile -->

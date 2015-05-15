@@ -19,7 +19,7 @@
       <unit id="org.jboss.tools.as.test.core" version="3.1.0.Alpha2-v20150417-0145-B13"/>
       <unit id="org.jboss.tools.common.base.test" version="3.7.0.Alpha2-v20150416-1940-B11"/>
       <unit id="org.jboss.tools.common.test" version="3.7.0.Alpha2-v20150416-1940-B11"/>
-      <!-- <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Alpha2-v20150417-0145-B13"/> -->
+      <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Alpha2-v20150417-0145-B13"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.3.0.Alpha1-updatesite-coretests/"/> -->
       <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/coretests/4.3.0.Alpha2/"/>
    </location>

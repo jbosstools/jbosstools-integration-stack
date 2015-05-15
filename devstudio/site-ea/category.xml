@@ -27,10 +27,10 @@ Tools related to integrating and developing software components that work with A
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-<feature id="com.jboss.devstudio.integration-stack.bpr.feature" path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.bpr.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"  path="../../devstudio/site-ga/com.jboss.devstudio.integration-stack.ds.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.fuse.feature" path="../../jbosstools/site-ea/com.jboss.devstudio.integration-stack.fuse.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature" path="../../devstudio/site-ea/com.jboss.devstudio.integration-stack.soa.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
@@ -39,7 +39,7 @@ Tools related to integrating and developing software components that work with A
 </feature>
 
 <!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2">
+<feature id="org.eclipse.bpmn2.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -71,6 +71,7 @@ Tools related to integrating and developing software components that work with A
 </feature>
 
 <!-- fuse tooling -->
+<!--
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
@@ -100,7 +101,7 @@ Tools related to integrating and developing software components that work with A
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature">
   <category name="DataVirtualization" />
@@ -111,6 +112,7 @@ Tools related to integrating and developing software components that work with A
 </feature>
 
 <!-- switchyard -->
+<!--
 <feature id="org.switchyard.tools.feature">
   <category name="SOADev" />
 </feature>
@@ -122,6 +124,7 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.switchyard.tools.bpmn2.feature">
   <category name="SOADev" />
 </feature>
+-->
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
@@ -155,7 +158,7 @@ Tools related to integrating and developing software components that work with A
 <!-- ####### -->
 
 <!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2.source"/>
+<feature id="org.eclipse.bpmn2.feature.source"/>
 <feature id="org.eclipse.bpmn2.modeler.examples.source"/>
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>
@@ -167,11 +170,13 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.jbpm.eclipse.feature.source"/>
 
 <!-- fuse tooling -->
+<!--
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
 <feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
+-->
 
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
@@ -182,10 +187,11 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 
 <!-- switchyard -->
+<!--
 <feature id="org.switchyard.tools.bpel.feature.source"/>
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
 <feature id="org.switchyard.tools.feature.source"/>
-
+-->
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
 <feature id="org.teiid.designer.feature.source"/>
