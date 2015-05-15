@@ -159,7 +159,7 @@
         <configuration>
           <source>
             <repository>
-              <url>${targetplatform.url}</url>
+              <url>${targetplatform.ea.url}</url>
               <layout>p2</layout>
             </repository>
           </source>

@@ -21,7 +21,7 @@
 
   <properties>
     <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>    
-    <update.site.name>JBoss Developer Studio Integration Stack Update Site</update.site.name>
+    <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the JBTIS target platform that should be associated with this site. -->
@@ -30,7 +30,7 @@
 
   <repositories>
 
-    <!-- Integration Stack composite repo. -->
+    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
@@ -159,7 +159,7 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/mars/staging/updates/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/mars/development/updates/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/mars/</associateSite>
 	      </associateSites>
               <removeDefaultCategory>true</removeDefaultCategory>
