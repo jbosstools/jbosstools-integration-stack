@@ -40,8 +40,8 @@
       <!-- Eclipse EMF -->
       <unit id="org.eclipse.emf.compare.feature.group" version="3.1.0.201505051321"/>
       <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.1.0.201505051321"/>
-      <unit  id="org.eclipse.emf.compare.rcp" version="2.3.0.201505051321"/>
-      <unit  id="org.eclipse.emf.compare.rcp.ui" version="4.1.0.201505051321"/>
+      <unit id="org.eclipse.emf.compare.rcp" version="2.3.0.201505051321"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.1.0.201505051321"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.9.0.201503250348"/>
@@ -50,6 +50,9 @@
       <unit id="org.eclipse.emf.transaction.feature.group" version="1.9.0.201503250534"/>
       <unit id="org.eclipse.emf.validation.feature.group" version="1.9.0.201503250348"/>
       <unit id="org.eclipse.emf.workspace.feature.group" version="1.9.0.201503250534"/>
+      <unit id="org.eclipse.emf.mapping.ecore2xml" version="2.9.0.v20150504-0831"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.11.0.v20150428-0315"/>
+      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.11.0.v20150504-0831"/>
 
       <unit id="org.eclipse.uml2.feature.group" version="5.1.0.v20150504-0916"/>
 
@@ -73,7 +76,7 @@
 
       <unit id="org.eclipse.draw2d" version="3.10.0.201505040206"/>
       <unit id="org.eclipse.equinox.simpleconfigurator.manipulator" version="2.0.100.v20150423-1455"/>
-      <unit id="org.eclipse.jdt.junit.core" version="3.7.400.v20150423-0747"/>
+<!--      <unit id="org.eclipse.jdt.junit.core" version="3.7.400.v20150423-0747"/> -->
       <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
       <unit id="org.jsoup" version="1.7.2.v201304221138"/>
       <unit id="org.junit" version="4.11.0.v201303080030"/>
@@ -97,24 +100,27 @@
       
       <unit id="org.eclipse.core.net" version="1.2.300.v20141118-1725"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.100.v20150205-1358"/>
-      <unit id="org.eclipse.equinox.security" version="1.2.100.v20150423-1356"/>      
-
+<!--      <unit id="org.eclipse.equinox.security" version="1.2.100.v20150423-1356"/>  -->
+ 
       <!-- Fuse Tooling -->
-      <unit id="org.eclipse.tm.terminal.feature.feature.group" version="4.0.0.201505051502"/>      
-
+<!--      <unit id="org.eclipse.cdt.feature.group" version="8.7.0.201505050312"/>     -->
+  
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201505081000-M7/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Fuse Tooling Data Transformation -->
+      <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
+      <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
+      <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
       <unit id="org.apache.xmlbeans" version="2.3.0.v201405241900"/>
 
       <!-- Teiid -->
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
       <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/R20150124073747/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20150428165605/"/>
     </location>
 
     <!-- transitive dependencies for org.springframework.* (Fuse Tooling) -->
