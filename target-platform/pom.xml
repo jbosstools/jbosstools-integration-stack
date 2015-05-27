@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.3.0.Alpha2b</version>
+  <version>4.3.0.Alpha2b-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -37,28 +37,11 @@
     <tychoVersion>0.21.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
-    <JBTCoreTPVersion>4.50.0.Beta1-SNAPSHOT</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.50.0.Alpha2</JBTCoreTPVersion>
+<!--    <JBTCoreTPVersion>4.50.0.Beta1-SNAPSHOT</JBTCoreTPVersion> -->
   </properties>
 
   <repositories>
-
-    <repository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshots Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-      <snapshots>
-	<enabled>true</enabled>
-      </snapshots>
-    </repository>
-
-    <repository>
-      <id>jboss-releases</id>
-      <name>JBoss Releases Maven Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
-      <releases>
-	<enabled>true</enabled>
-      </releases>
-    </repository>
 
     <repository>
       <id>jboss-public-repository-group</id>
