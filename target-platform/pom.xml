@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.2.4.Final</version>
+  <version>4.2.5.Final</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>

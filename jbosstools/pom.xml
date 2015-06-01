@@ -37,8 +37,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.2.CR1</VERSION>
-    <IS_TP_VERSION>4.2.4.Final</IS_TP_VERSION>  <!-- JBTIS-440 - delay using new Saxon until JBTIS 4.2.3/ JBDSIS 8.0.3 -->
+    <VERSION>4.2.2.CR2</VERSION>
+    <IS_TP_VERSION>4.2.5.Final</IS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
