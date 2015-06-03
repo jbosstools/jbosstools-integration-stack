@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.CR1/all/repo/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/switchyard/2.0.0.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/switchyard/2.0.0.Final/"/>
 
   </children>
 
