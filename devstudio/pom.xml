@@ -42,7 +42,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>8.0.2.CR2</VERSION>
+    <VERSION>8.0.2.CR3</VERSION>
     <IS_TP_VERSION>4.2.5.Final</IS_TP_VERSION>
     <JBDSIS_TP_VERSION>8.0.2.GA</JBDSIS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
@@ -55,7 +55,7 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.2.CR2</COMPOSITE_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.2.CR3</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>${COMPOSITE_SITE}/earlyaccess</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/8.0/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.4 (Luna) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
