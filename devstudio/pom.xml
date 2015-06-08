@@ -30,11 +30,11 @@
       mvn clean install -Pstable -Pearlyaccess
 
       If have already generated a local JBTIS build, can use this instead of a published site for upstream JBTIS COMPOSITE_SITE:
-      -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site/target/repository/ 
+      -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site-final/target/repository/ 
       -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ 
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.3.0.Alpha1
+      mvn clean install -Pstable -Pearlyaccess  -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site-final/target/repository/  -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ -DJBDSIS_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis.target.repo -DJBDSIS_EA_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis-ea.target.repo
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -43,9 +43,11 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>9.0.0.Alpha1</VERSION>
-    <IS_TP_VERSION>4.3.0.Alpha2</IS_TP_VERSION>
-    <JBDSIS_TP_VERSION>9.0.0.Alpha1</JBDSIS_TP_VERSION>
+    <VERSION>9.0.0.Alpha2</VERSION>
+    <IS_TP_VERSION>4.3.0.Beta1</IS_TP_VERSION>
+    <JBDSIS_TP_VERSION>9.0.0.Beta1</JBDSIS_TP_VERSION>
+    <JBDSIS_TP_SITE>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
+    <JBDSIS_EA_TP_SITE>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform-ea/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -56,8 +58,8 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha1/repo/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha1/earlyaccess/repo/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha2/repo/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha2/earlyaccess/repo/</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/9.0/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
@@ -65,6 +67,7 @@
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
   </properties>
+
 
   <modules>
     <module>features</module>
@@ -171,13 +174,13 @@
     <repository>
       <id>jbdsis-targetplatform-site</id>
       <layout>p2</layout>
-      <url>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</url>
+      <url>${JBDSIS_TP_SITE}</url>
     </repository>
 
     <repository>
       <id>jbdsis-targetplatform-ea-site</id>
       <layout>p2</layout>
-      <url>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</url>
+      <url>${JBDSIS_EA_TP_SITE}</url>
     </repository>
   </repositories>
 
