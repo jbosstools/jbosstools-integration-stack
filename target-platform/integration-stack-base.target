@@ -15,10 +15,10 @@
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.6.0.Beta2-v20150605-1701-B738"/>
+      <unit id="org.jboss.tools.tests" version="3.6.0.Beta2-v20150609-0436-B740"/>
       <unit id="org.jboss.tools.as.test.core" version="3.1.0.Beta2-v20150605-0027-B774"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.7.0.Beta2-v20150605-1701-B738"/>
-      <unit id="org.jboss.tools.common.test" version="3.7.0.Beta2-v20150605-1701-B738"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.7.0.Beta2-v20150609-0436-B740"/>
+      <unit id="org.jboss.tools.common.test" version="3.7.0.Beta2-v20150609-0436-B740"/>
       <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Beta2-v20150605-0027-B774"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/static/releases/jbosstools-4.3.0.Alpha1-updatesite-coretests/"/> -->
