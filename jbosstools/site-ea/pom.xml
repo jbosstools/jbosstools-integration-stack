@@ -24,7 +24,6 @@
     <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
     <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 

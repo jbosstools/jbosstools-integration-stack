@@ -38,8 +38,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>4.3.0.Alpha2</VERSION>
-    <IS_TP_VERSION>4.3.0.Beta1</IS_TP_VERSION>
+    <VERSION>4.3.0.Alpha1</VERSION>
+    <IS_TP_VERSION>4.3.0.Beta1-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -47,7 +47,9 @@
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
-    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.Alpha2/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
+
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Beta1a/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
+<!--    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.Beta1a/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML> -->
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
@@ -159,40 +161,44 @@
 
   <build>
     <plugins>
+
       <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
         <artifactId>tycho-source-feature-plugin</artifactId>
 	<version>${tycho-version}</version>
 	<executions>
-		<execution>
-		<id>source-feature</id>
-		<phase>package</phase>
-		<goals>
-			<goal>source-feature</goal>
-		</goals>
-		</execution>
-	</executions>
+          <execution>
+            <id>source-feature</id>
+            <phase>package</phase>
+            <goals>
+              <goal>source-feature</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
+
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-plugin</artifactId>
 	<version>${tycho-version}</version>
 	<executions>
-		<execution>
-			<id>attached-p2-metadata</id>
-			<phase>package</phase>
-			<goals>
-				<goal>p2-metadata</goal>
-			</goals>
-		</execution>
-	</executions>
+          <execution>
+            <id>attached-p2-metadata</id>
+            <phase>package</phase>
+            <goals>
+              <goal>p2-metadata</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
+
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-maven-plugin</artifactId>
         <version>${tycho-version}</version>
         <extensions>true</extensions>
       </plugin>
+
     </plugins>
   </build>
 
