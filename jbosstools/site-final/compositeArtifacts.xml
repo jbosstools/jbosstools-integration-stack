@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/ESB/1.5.530.Final/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.CR2/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/fuse-tooling/7.3.0.Final/all/repo/"/>
 
     <!-- JBPM3 -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
