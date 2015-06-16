@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.3.0.Beta1-SNAPSHOT</version>
+  <version>4.3.0.Beta1a-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -37,7 +37,7 @@
     <tychoVersion>0.22.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
-    <JBTCoreTPVersion>4.50.0.Beta1-SNAPSHOT</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.50.0.Beta2-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
   <repositories>
@@ -106,7 +106,7 @@
       <plugin>
 	<groupId>org.jboss.tools.tycho-plugins</groupId>
 	<artifactId>target-platform-utils</artifactId>
-        <version>${jboss-tycho-version}</version>
+        <version>0.22.1-SNAPSHOT</version>
 
 	<!-- Merge:
 	     1. released integration-stack specific target dependencies:   integration-stack-base.target
@@ -488,7 +488,7 @@
 	  <plugin>
 	    <groupId>org.jboss.tools.tycho-plugins</groupId>
 	    <artifactId>target-platform-utils</artifactId>
-            <version>${jboss-tycho-version}</version>
+            <version>0.22.1-SNAPSHOT</version>
 
 	    <executions>
 

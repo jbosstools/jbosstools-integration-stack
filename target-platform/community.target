@@ -10,12 +10,11 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.0.Beta1-v20150605-1112-B18"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150605-1112-B18"/>
-      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150605-1112-B18"/>
-      <unit id="org.jboss.tools.common.feature.feature.group" version="3.7.0.Beta2-v20150605-0217-B19"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.0.Beta1-v20150612-2355-B29"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150612-2355-B29"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150612-2355-B29"/>
 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1a/"/>
     </location>
 
   </locations>
