@@ -27,7 +27,7 @@
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
      <unit id="org.jboss.tools.common" version="3.7.0.Beta1-v20150608-1702-B21"/>
 
-     <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1a/"/>
+     <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1b/"/>
    </location>
 
   </locations>

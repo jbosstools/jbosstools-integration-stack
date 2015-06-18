@@ -14,7 +14,7 @@
       <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150612-2355-B29"/>
       <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150612-2355-B29"/>
 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1a/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1b/"/>
     </location>
 
   </locations>
