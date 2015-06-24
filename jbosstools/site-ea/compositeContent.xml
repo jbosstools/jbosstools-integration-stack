@@ -21,16 +21,16 @@
     <child location="http://download.jboss.org/jbpm/release/6.2.0.Final/updatesite/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/fuse-tooling/7.3.0.Beta4/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/fuse-tooling/7.3.0.Final/all/repo/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/switchyard/2.0.0.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/switchyard/2.0.0.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/teiiddesigner/9.0.2.Beta1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/teiiddesigner/9.0.2.Final/"/>
 
   </children>
 
