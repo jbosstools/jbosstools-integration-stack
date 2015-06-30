@@ -1,17 +1,5 @@
 [
 	{
-		"id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
-		"label":"JBoss Business Process and Rules Development (BPEL, BPMN2, jBPM, Drools, Guvnor)",
-		"description":"",
-		"selected":"false",
-		"path":"jbdsis"
-	},{
-		"id":"com.jboss.devstudio.integration-stack.ds.feature.feature.group",
-		"label":"JBoss Data Virtualization Development (ModeShape, Teiid Designer)",
-		"description":"",
-		"selected":"false",
-		"path":"jbdsis"
-	},{
 		"id":"com.jboss.devstudio.integration-stack.fuse.feature.feature.group",
 		"label":"JBoss Fuse Development (Fuse tooling related to Camel route development)",
 		"description":"",

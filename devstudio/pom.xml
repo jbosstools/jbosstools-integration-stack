@@ -43,24 +43,25 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>9.0.0.Alpha2</VERSION>
-    <IS_TP_VERSION>4.3.0.Beta1</IS_TP_VERSION>
-    <JBDSIS_TP_VERSION>9.0.0.Beta1</JBDSIS_TP_VERSION>
-    <JBDSIS_TP_SITE>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
-    <JBDSIS_EA_TP_SITE>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform-ea/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
+    <VERSION>9.0.0.Alpha1</VERSION>
+    <IS_TP_VERSION>4.3.0.Beta1a</IS_TP_VERSION>
+    <JBDSIS_INSTALLER>http://www.qa.jboss.com/binaries/RHDS/9.0/staging/builds/devstudio-9.0.0.Beta1c-build-product/2015-06-18_22-05-04-B58/installer/jboss-devstudio-9.0.0.Beta1-installer-standalone.jar</JBDSIS_INSTALLER>
+    <JBDSIS_TP_VERSION>9.0.0.Beta1a</JBDSIS_TP_VERSION>
+    <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
+    <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/snapshots/builds/jbosstools-discovery.central_master/latest/all/repo/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/staging/updates/discovery.central/9.0.0.Beta1c/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha2/repo/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/aggregate/4.3.0.Alpha2/earlyaccess/repo/</COMPOSITE_EA_SITE>
-    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/updates/9.0/</UPSTREAM_EXTRAS_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/9.0/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
@@ -68,11 +69,11 @@
     <update.site.description>-</update.site.description>
   </properties>
 
-
+<!-- - temp
   <modules>
     <module>features</module>
   </modules>
-
+-->
   <profiles>   
 
     <!-- integration build profile -->
@@ -134,6 +135,14 @@
       <modules>
 	<module>site-ea</module>
         <module>discovery</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>build_installer</id>
+
+      <modules>
+	<module>installer</module>
       </modules>
     </profile>
 
