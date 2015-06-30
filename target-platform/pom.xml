@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.3.0.Alpha1b</version>
+  <version>4.3.0.Beta1a</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -29,69 +29,16 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>16</version>
+    <version>17</version>
   </parent>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.21.0</tychoVersion>
+    <tychoVersion>0.22.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jboss-tycho-version>0.21.1</jboss-tycho-version>
-    <JBTCoreTPVersion>4.50.0.Alpha2</JBTCoreTPVersion>
+    <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
+    <JBTCoreTPVersion>4.50.0.Beta1</JBTCoreTPVersion>
   </properties>
-
-  <repositories>
-
-    <repository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshots Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
-      <snapshots>
-	<enabled>true</enabled>
-      </snapshots>
-    </repository>
-
-    <repository>
-      <id>jboss-releases</id>
-      <name>JBoss Releases Maven Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
-      <releases>
-	<enabled>true</enabled>
-      </releases>
-    </repository>
-
-    <repository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Maven Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </snapshots>
-    </repository>
-
-  </repositories>
-
-  <pluginRepositories>
-
-    <pluginRepository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Repository Group</name>
-      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </pluginRepository>
-
-  </pluginRepositories>
 
   <reporting>
     <plugins>
@@ -124,7 +71,7 @@
       <plugin>
 	<groupId>org.jboss.tools.tycho-plugins</groupId>
 	<artifactId>target-platform-utils</artifactId>
-	<version>${jboss-tycho-version}</version>
+        <version>0.22.1-SNAPSHOT</version>
 
 	<!-- Merge:
 	     1. released integration-stack specific target dependencies:   integration-stack-base.target
@@ -506,7 +453,7 @@
 	  <plugin>
 	    <groupId>org.jboss.tools.tycho-plugins</groupId>
 	    <artifactId>target-platform-utils</artifactId>
-	    <version>${jboss-tycho-version}</version>
+            <version>0.22.1-SNAPSHOT</version>
 
 	    <executions>
 

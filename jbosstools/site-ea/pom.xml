@@ -14,24 +14,22 @@
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack Early Access Eclipse update site.
+    Aggregated JBoss Developer Studio Integration Stack early access Eclipse update site.
 
     This Maven project will create an update site for the early access release of the JBoss Developer Studio Integration Stack.
   </description>
 
   <properties>
     <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>
-    <update.site.name>JBoss Developer Studio Integration Stack Early Access Update Site</update.site.name>
-    <update.site.description>Early Access Release</update.site.description>
+    <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <!-- The URL for the JBTIS target platform that should be associated with this site. -->
     <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <repositories>
 
-    <!-- Integration Stack composite repo. -->
+    <!-- Specify the equinox/p2 Integration Stack composite repo. -->
     <repository>
       <id>integration-stack-site</id>
       <url>${COMPOSITE_SITE}</url>
@@ -118,7 +116,7 @@
             </environment>
           </environments>
 
-          <!-- Pick up the merged target dependencies of the JBoss Tools core multiple target and the base
+          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
 	       (early access) JBoss Tools Integration Stack. -->
           <target>
             <artifact>
@@ -160,7 +158,7 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
 	      <associateSites>
-		<associateSite>http://download.jboss.org/jbosstools/updates/staging/mars/</associateSite>
+		<associateSite>http://download.jboss.org/jbosstools/mars/staging/updates/</associateSite>
 		<associateSite>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/mars/</associateSite>
 	      </associateSites>
               <removeDefaultCategory>true</removeDefaultCategory>
