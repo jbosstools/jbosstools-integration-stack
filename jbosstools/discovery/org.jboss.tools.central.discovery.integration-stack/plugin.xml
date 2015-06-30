@@ -86,7 +86,7 @@
       <iu id="org.fusesource.ide.jmx.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
       <icon
-	  image32="images/jbds_fuse_32.png">
+	  image32="images/jbosstools_icon32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">
