@@ -27,11 +27,12 @@ Tools related to integrating and developing software components that work with A
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
+<!--
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
-
+-->
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
   <category name="BusinessLogic" />

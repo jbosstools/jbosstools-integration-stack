@@ -25,7 +25,7 @@
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
-    <targetplatform.ea.url>https://devstudio.jboss.com/updates/9.0.0/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</targetplatform.ea.url>
+    <targetplatform.ea.url>https://devstudio.jboss.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <build>

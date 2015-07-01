@@ -1,0 +1,15 @@
+[
+	{
+		"id":"com.jboss.devstudio.integration-stack.fuse.feature.feature.group",
+		"label":"JBoss Fuse Development (Fuse tooling related to Camel route development)",
+		"description":"",
+		"selected":"false",
+		"path":"jbdsis"
+	},{
+		"id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
+		"label":"JBoss Integration and SOA Development",
+		"description":"",
+		"selected":"false",
+		"path":"jbdsis"
+	}
+]
