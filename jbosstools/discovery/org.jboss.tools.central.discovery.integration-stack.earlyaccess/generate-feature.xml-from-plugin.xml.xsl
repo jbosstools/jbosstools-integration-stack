@@ -4,7 +4,7 @@
 cd jbosstools-integration-stack/jbosstools/discovery/org.jboss.tools.central.discovery.integration-stack;
 for d in bpr ds soa fuse; do 
   mkdir -p ../../features/jboss.integration-stack.bundle.${d};
-  xsltproc \-\-stringparam connectorDescriptorId jboss.integration-stack.bundle.${d} \-\-stringparam featureVersion 4.2.2.qualifier generate-feature.xml-from-plugin.xml.xsl plugin.xml | tee ../../features/jboss.integration-stack.bundle.${d}/feature.xml;
+  xsltproc \-\-stringparam connectorDescriptorId jboss.integration-stack.bundle.${d} \-\-stringparam featureVersion 4.2.3.qualifier generate-feature.xml-from-plugin.xml.xsl plugin.xml | tee ../../features/jboss.integration-stack.bundle.${d}/feature.xml;
 done 
 
 -->

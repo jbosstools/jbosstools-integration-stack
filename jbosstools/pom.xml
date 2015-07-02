@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.2.2-SNAPSHOT</version>
+  <version>4.2.3-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -16,19 +16,19 @@
   </description>
 
   <!-- Run a build like this:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.2.Final -DVERSION=4.2.2.Final \
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.6.Final -DVERSION=4.2.3.Beta1 \
       -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
-       http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.2.Final/,\
-       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/earlyaccess/REPO/
+       http://download.jboss.org/jbosstools/updates/integration/luna/integration-stack/aggregate/4.2.3.Beta1/,\
+       http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.6.Final/jbtis/earlyaccess/REPO/
 
       -or-
 
       mvn clean install
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.2.2.Final
+      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.2.6.Final
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -37,8 +37,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.2.CR3</VERSION>
-    <IS_TP_VERSION>4.2.5.Final</IS_TP_VERSION>
+    <VERSION>4.2.3.Beta1</VERSION>
+    <IS_TP_VERSION>4.2.6.Final</IS_TP_VERSION>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
