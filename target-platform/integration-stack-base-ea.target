@@ -33,7 +33,8 @@
       <unit id="org.springframework.osgi.extender" version="1.2.1"/>
       <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
       <unit id="org.springframework.osgi.io" version="1.2.1"/>
-      <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.2.0.Final/update.site-1.2.0.Final.zip-unzip/"/>
+      <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20150709-1710"/>
+      <repository location="file:///home/pleacu/git-clone/jbosstools-locus/site/target/repository/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -109,6 +110,7 @@
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
+      <unit id="javax.validation" version="1.0.0.GA_v201205091237"/>
 
       <!-- Teiid -->
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
