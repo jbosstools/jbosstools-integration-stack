@@ -15,20 +15,22 @@
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.6.0.Beta1-v20150608-1702-B21"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.1.0.Beta1-v20150612-2158-B25"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.7.0.Beta1-v20150608-1702-B21"/>
-      <unit id="org.jboss.tools.common.test" version="3.7.0.Beta1-v20150608-1702-B21"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Beta1-v20150612-2158-B25"/>
+      <unit id="org.jboss.tools.tests" version="3.6.0.Beta2-v20150711-0435-B766"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.1.0.Beta2-v20150709-1626-B809"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.7.0.Beta2-v20150711-0435-B766"/>
+      <unit id="org.jboss.tools.common.test" version="3.7.0.Beta2-v20150711-0435-B766"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Beta2-v20150709-1626-B809"/>
 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.0.Beta1a/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/coretests/4.3.0.Beta1/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/snapshots/updates/coretests/master/"/>
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.common" version="3.7.0.Beta1-v20150608-1702-B21"/>
+      <unit id="org.jboss.tools.common" version="3.7.0.Beta2-v20150711-0435-B766"/>
 
       <!-- "http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1c/" -->
-      <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/snapshots/updates/core/master/"/>
    </location>
 
   </locations>
