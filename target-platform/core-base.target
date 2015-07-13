@@ -10,7 +10,7 @@
     <!-- JBoss Tools Core Base Dependencies
          ref: <repository loc>/site.properties -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.hibernate.eclipse.feature.feature.group" version="5.0.0.Beta2-v20150711-1506-B1023"/>
+      <unit id="org.hibernate.eclipse.feature.feature.group" version="5.0.0.Beta2-v20150713-1506-B1025"/>
       <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.6.0.Beta2-v20150709-1626-B809"/>
       <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.1.0.Beta2-v20150709-1626-B809"/>
       <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.4.101.Beta2-v20150711-0625-B284"/>
