@@ -36,6 +36,25 @@
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Guvnor"
+       description="JBoss Guvnor synch"
+       id="org.guvnor.tools.feature">
+      <iu id="org.guvnor.tools.feature"/>
+      <icon
+	 image32="images/jbds_guvnor_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
        kind="task"
        license="Free, EPL"
