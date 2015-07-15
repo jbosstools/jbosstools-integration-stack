@@ -9,43 +9,11 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.soatooling.bdgj" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.r" /> 
     </connectorCategory>
       
-    <!-- JBoss Integration and SOA Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM6."
-       id="jboss.integration-stack.bundle.soa">
-      <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpmn2"/>
-      <iu id="org.eclipse.bpmn2.modeler"/>
-      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
-      <iu id="org.drools.eclipse.feature"/>
-      <iu id="org.guvnor.tools.feature"/>
-      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
-      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-      <iu id="org.jbpm.eclipse.feature"/>
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor>
-
     <!-- JBT single component sites -->
-
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
@@ -60,45 +28,6 @@
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <icon
 	 image32="images/jbds_drools_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Guvnor"
-       description="JBoss Guvnor synch"
-       id="org.guvnor.tools.feature">
-      <iu id="org.guvnor.tools.feature"/>
-      <icon
-	 image32="images/jbds_guvnor_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.bdgj"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss jBPM Tools"
-       description="JBoss Tools for jBPM, Runtime Detection"
-       id="org.jboss.jbpm.eclipse.feature">
-      <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-      <icon
-	 image32="images/jbds_jbpm_32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">
