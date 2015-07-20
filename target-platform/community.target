@@ -10,12 +10,12 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.0.Beta1-v20150619-0016-B31"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150619-0016-B31"/>
-      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.0.Beta1-v20150619-0016-B31"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.0.Beta2-v20150717-0316-B32"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.0.Beta2-v20150717-0316-B32"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.0.Beta2-v20150717-0316-B32"/>
 
-      <!-- "http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta1c/" -->
-      <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta2/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/> -->
     </location>
 
   </locations>

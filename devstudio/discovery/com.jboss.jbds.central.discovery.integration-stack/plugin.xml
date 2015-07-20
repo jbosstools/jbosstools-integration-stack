@@ -9,12 +9,12 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
-<!--      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
+<!--      
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
--->
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
+-->
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
-
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
       
@@ -72,8 +72,8 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
--->
-    <!-- JBoss Integration and SOA Development -->
+
+    < ! - - JBoss Integration and SOA Development - - >
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
@@ -101,7 +101,7 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-
+-->
     <!-- JBoss SOA Legacy Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"

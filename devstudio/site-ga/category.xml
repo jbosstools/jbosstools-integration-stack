@@ -4,14 +4,29 @@
 
 <category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
-SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
+SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor, ESB and jBPM 3.
   </description>
 </category-def>
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
 
+<!-- bpel -->
+<feature id="org.jboss.tools.bpel.feature">
+  <category name="SOADev5" />
+</feature>
+
+<!-- drools -->
+<feature id="org.drools.eclipse.feature">
+  <category name="SOADev5" />
+</feature>
+
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature">
+  <category name="SOADev5" />
+</feature>
+
+<!-- guvnor -->
+<feature id="org.guvnor.tools.feature">
   <category name="SOADev5" />
 </feature>
 
@@ -29,6 +44,10 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </feature>
 
 <!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature">
+  <category name="SOADev5" />
+</feature>
+
 <feature id="org.jboss.tools.runtime.esb.detector.feature">
   <category name="SOADev5" />
 </feature>
@@ -41,9 +60,21 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
 
+<!-- bpel -->
+<feature id="org.eclipse.bpel.feature.source"/>
+<feature id="org.eclipse.bpel.common.feature.source"/>
+<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
+<feature id="org.jboss.tools.bpel.feature.source"/>
+
+<!-- drools -->
+<feature id="org.drools.eclipse.feature.source"/>
+
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature.source"/>
 <feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+
+<!-- guvnor -->
+<feature id="org.guvnor.tools.feature.source"/>
 
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature.source"/>
@@ -52,6 +83,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
 
 <!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 <feature id="org.jboss.tools.runtime.esb.detector.feature"/>
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 

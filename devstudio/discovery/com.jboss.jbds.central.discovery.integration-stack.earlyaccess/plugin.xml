@@ -9,9 +9,66 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
     </connectorCategory>
+
+    <!-- JBoss Business Process and Rules Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Business Process and Rules Development"
+       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
+       id="jboss.integration-stack.bundle.bpr">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpmn2"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.guvnor.tools.feature"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Data Virtualization Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Data Virtualization Development"
+       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
+       id="jboss.integration-stack.bundle.ds">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
 
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
@@ -23,8 +80,18 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling, and Switchyard.  Select the non Early Access SOA Development for released SOA related tooling."
+       description="Tools related to the development of Integration and SOA applications - includes support for  BPEL, BPMN2, Drools, Guvnor and jBPM."
        id="jboss.integration-stack.bundle.soa">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpmn2"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.guvnor.tools.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+<!--
       <iu id="org.fusesource.ide.camel.editor.feature"/>
       <iu id="org.fusesource.ide.core.feature"/>
       <iu id="org.fusesource.ide.fabric8.feature"/>
@@ -33,6 +100,7 @@
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
+-->
       <icon
         image32="images/jbds_icon32.png">
       </icon>
@@ -41,7 +109,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- Fuse -->
+    <!-- Fuse Tooling - - >
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
@@ -65,9 +133,9 @@
    url="http://fusesource.com/products/fuse-ide/">
       </overview>
     </connectorDescriptor>
-
+-->
   </extension>
-
+<!--
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
@@ -80,5 +148,5 @@
        requiredComponentIds="jboss.integration-stack.bundle.fuse">
     </proxyWizard>
   </extension>	
-
+-->
 </plugin>

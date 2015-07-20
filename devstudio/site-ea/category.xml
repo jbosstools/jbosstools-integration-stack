@@ -55,18 +55,8 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<!-- drools/jBPM -->
+<!-- drools -->
 <feature id="org.drools.eclipse.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.guvnor.tools.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.jbpm.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -103,6 +93,19 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 -->
+
+<!-- guvnor -->
+<feature id="org.guvnor.tools.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<!-- jBPM6 -->
+<feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature">
   <category name="DataVirtualization" />
@@ -158,17 +161,20 @@ Tools related to integrating and developing software components that work with A
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
 
+<!-- bpel -->
+<feature id="org.eclipse.bpel.feature.source"/>
+<feature id="org.eclipse.bpel.common.feature.source"/>
+<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
+<feature id="org.jboss.tools.bpel.feature.source"/>
+
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature.source"/>
 <feature id="org.eclipse.bpmn2.modeler.examples.source"/>
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>
 
-<!-- drools/jbpm -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
+<!-- drools -->
 <feature id="org.drools.eclipse.feature.source"/>
-<feature id="org.guvnor.tools.feature.source"/>
-<feature id="org.jbpm.eclipse.feature.source"/>
 
 <!-- fuse tooling -->
 <!--
@@ -179,11 +185,18 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
 -->
 
+<!-- guvnor -->
+<feature id="org.guvnor.tools.feature.source"/>
+
+<!-- jBPM6 -->
+<feature id="org.jbpm.eclipse.feature.source"/>
+
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
 
 <!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 <feature id="org.jboss.tools.runtime.drools.detector.feature"/>
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 
