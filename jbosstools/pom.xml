@@ -48,7 +48,7 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
 
-    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Beta1c/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Beta2/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 <!--    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.Beta1a/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML> -->
 
     <!-- 
