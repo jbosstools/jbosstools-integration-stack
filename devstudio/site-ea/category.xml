@@ -136,10 +136,6 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-  <category name="SOADev" />
-</feature>
-
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
@@ -197,8 +193,6 @@ Tools related to integrating and developing software components that work with A
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
-<feature id="org.jboss.tools.runtime.drools.detector.feature"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
 
 <!-- switchyard -->
 <!--

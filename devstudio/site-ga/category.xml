@@ -2,6 +2,12 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse GA Updates</description>
 
+<category-def name="SOADev" label="JBoss Integration and SOA Development">
+  <description>
+Tools related to the development of Integration and SOA applications.
+  </description>
+</category-def>
+
 <category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
 SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor, ESB and jBPM 3.
@@ -12,11 +18,13 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <!-- drools -->
 <feature id="org.drools.eclipse.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
@@ -27,6 +35,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor
 
 <!-- guvnor -->
 <feature id="org.guvnor.tools.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
@@ -45,6 +54,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
@@ -61,9 +71,11 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor
 <!-- ####### -->
 
 <!-- bpel -->
+<!-- missing bpel eclipse sources...
 <feature id="org.eclipse.bpel.feature.source"/>
 <feature id="org.eclipse.bpel.common.feature.source"/>
 <feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
+-->
 <feature id="org.jboss.tools.bpel.feature.source"/>
 
 <!-- drools -->

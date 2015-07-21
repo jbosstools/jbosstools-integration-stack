@@ -160,7 +160,7 @@ Tools related to the development of Integration and SOA applications - includes 
 <!-- guvnor -->
 <feature id="org.guvnor.tools.feature.source"/>
 
-<!-- jBPM3 -->
+<!-- jBPM6 -->
 <feature id="org.jbpm.eclipse.feature.source"/>
 
 <!-- fuse tooling -->
@@ -175,8 +175,6 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
 
-<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
-
 <!-- switchyard 
 <feature id="org.switchyard.tools.bpel.feature.source"/>
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
@@ -187,5 +185,8 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.teiid.designer.feature.source"/>
 <feature id="org.teiid.designer.runtime.feature.source"/>
 <feature id="org.teiid.designer.teiid.client.feature.source"/>
+
+<!-- runtime detectors -->
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 
 </site>

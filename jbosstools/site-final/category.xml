@@ -2,6 +2,12 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse .Final Updates</description>
 
+<category-def name="SOADev" label="JBoss Integration and SOA Development">
+  <description>
+Tools related to the development of Integration and SOA applications.
+  </description>
+</category-def>
+
 <category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
 SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
@@ -10,11 +16,13 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
 <!-- drools -->
 <feature id="org.drools.eclipse.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
@@ -25,6 +33,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <!-- guvnor -->
 <feature id="org.guvnor.tools.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
@@ -43,6 +52,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
+  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
@@ -84,7 +94,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
-<feature id="org.jboss.tools.runtime.esb.detector.feature"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+<feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
 
 </site>

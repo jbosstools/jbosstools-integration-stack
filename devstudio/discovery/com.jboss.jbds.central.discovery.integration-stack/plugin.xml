@@ -12,8 +12,8 @@
 <!--      
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
 -->
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
@@ -72,8 +72,8 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-
-    < ! - - JBoss Integration and SOA Development - - >
+-->
+    <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
@@ -83,17 +83,13 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM."
+       description="Tools related to the development of Integration and SOA applications."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpmn2"/>
-      <iu id="org.eclipse.bpmn2.modeler"/>
-      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-      <iu id="org.jbpm.eclipse.feature"/>
       <icon
         image32="images/jbds_icon32.png">
       </icon>
@@ -101,7 +97,7 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
--->
+
     <!-- JBoss SOA Legacy Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"

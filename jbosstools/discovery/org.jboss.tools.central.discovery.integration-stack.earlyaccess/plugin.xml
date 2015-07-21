@@ -9,15 +9,15 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.brms" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.dv" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.soa" /> 
     </connectorCategory>
 
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
@@ -46,7 +46,7 @@
     <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.dv"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
@@ -72,23 +72,18 @@
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.soa"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor and jBPM6."
+       description="Tools related to the development of Integration and SOA applications."
        id="jboss.integration-stack.bundle.soa">
-      <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
-      <iu id="org.drools.eclipse.feature"/>
-      <iu id="org.guvnor.tools.feature"/>
-      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
-      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
@@ -107,27 +102,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss BPEL"
-       description="JBoss Business Logic - Orchestrating your business processes"
-       id="org.jboss.tools.bpel.feature">
-      <iu id="org.jboss.tools.bpel.feature"/>
-      <icon
-	 image32="images/jbds_bpel_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Business Process Management"
+       name="JBoss Business Process Modeling"
        description="A graphical modeling tool which allows creation and editing of Business Process Modeling Notation diagrams "
        id="org.eclipse.bpmn2.feature">
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -135,47 +110,6 @@
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Drools"
-       description="JBoss Drools Core, Task Management, Runtime Detection"
-       id="org.drools.eclipse.feature">
-      <iu id="org.drools.eclipse.feature"/>
-      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
-      <icon
-	 image32="images/jbds_drools_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Guvnor"
-       description="JBoss Guvnor synch"
-       id="org.guvnor.tools.feature">
-      <iu id="org.guvnor.tools.feature"/>
-      <icon
-	 image32="images/jbds_guvnor_32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">
