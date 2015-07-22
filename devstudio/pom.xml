@@ -33,7 +33,7 @@
     <VERSION>9.0.0.Alpha1</VERSION>
     <IS_TP_VERSION>4.3.0.Beta1b-SNAPSHOT</IS_TP_VERSION>
     <JBDSIS_INSTALLER>http://www.qa.jboss.com/binaries/RHDS/9.0/staging/builds/devstudio-9.0.0.Beta2-build-product/2015-07-17_09-58-40-B67/all/jboss-devstudio-9.0.0.Beta2-v20150717-1420-B67-installer-standalone.jar</JBDSIS_INSTALLER>
-    <JBDSIS_TP_VERSION>9.0.0.Beta1a</JBDSIS_TP_VERSION>
+    <JBDSIS_TP_VERSION>9.0.0.Beta1</JBDSIS_TP_VERSION>
     <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
     <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
     <tycho-version>0.22.0</tycho-version>
@@ -49,18 +49,20 @@
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1/earlyaccess/</COMPOSITE_EA_SITE>
 <!--    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/9.0/</UPSTREAM_EXTRAS_SITE> -->
-    <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 8&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
   </properties>
 
-<!-- - temp
   <modules>
-    <module>features</module>
+    <module>site-ga</module>
+    <module>site-ea</module>
+    <module>discovery</module>
+<!-- temp    <module>features</module> -->
   </modules>
--->
+
   <profiles>   
 
     <profile>
@@ -74,7 +76,7 @@
       </activation>
 
       <properties>
-        <update.site.description>Integration Build</update.site.description>
+        <update.site.description>Continuous Integration Build</update.site.description>
       </properties>
 
     </profile>
@@ -108,19 +110,6 @@
         <update.site.description>Stable Release</update.site.description>
       </properties>
 
-      <modules>
-	<module>site-ga</module>
-        <module>discovery</module>
-      </modules>
-    </profile>
-
-    <profile>
-      <id>earlyaccess</id>
-
-      <modules>
-	<module>site-ea</module>
-        <module>discovery</module>
-      </modules>
     </profile>
 
     <profile>
