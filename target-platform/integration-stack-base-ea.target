@@ -110,6 +110,7 @@
       <unit id="com.fasterxml.jackson.core.jackson-annotations" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-core" version="2.5.0.v201504151636"/>
       <unit id="com.fasterxml.jackson.core.jackson-databind" version="2.5.0.v201504151636"/>
+      <unit id="javax.validation" version="1.0.0.GA_v201205091237"/>
 
       <!-- Teiid -->
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
