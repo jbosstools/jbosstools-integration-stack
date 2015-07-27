@@ -10,27 +10,38 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
+    <!-- BPEL -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.5.Final"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.5.Final"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.5.Final"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.5.Final"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.5.Final"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.5.Final"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.5.Final/"/>
+    </location>
+
    <!-- JBoss Tools Core Tests -->
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
-      <unit id="org.jboss.tools.tests" version="3.6.0.Beta2-v20150716-2016-B23"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.1.0.Beta2-v20150716-2030-B26"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.7.0.Beta2-v20150716-2016-B23"/>
-      <unit id="org.jboss.tools.common.test" version="3.7.0.Beta2-v20150716-2016-B23"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Beta2-v20150716-2030-B26"/>
+      <unit id="org.jboss.tools.tests" version="3.6.0.Beta2-v20150724-1456-B25"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.1.0.Beta2-v20150723-0026-B29"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.7.0.Beta2-v20150724-1456-B25"/>
+      <unit id="org.jboss.tools.common.test" version="3.7.0.Beta2-v20150724-1456-B25"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.Beta2-v20150723-0026-B29"/>
 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.0.Beta2/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.0.Beta2b/"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/coretests/4.3.0.Beta1/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2015-07-14_18-48-51-B4500/all/repo/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.common" version="3.7.0.Beta2-v20150716-2016-B23"/>
+      <unit id="org.jboss.tools.common" version="3.7.0.Beta2-v20150724-1456-B25"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta2/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.Beta2b/"/>
    </location>
 
   </locations>
