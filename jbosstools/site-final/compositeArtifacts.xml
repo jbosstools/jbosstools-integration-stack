@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/ESB/1.5.530.Final/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/fuse-tooling/7.3.0.Final/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/fuse-tooling/7.3.1.Final/all/repo/"/>
 
     <!-- JBPM3 -->
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
@@ -33,7 +33,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.2.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.3.Final/"/>
 
   </children>
 
