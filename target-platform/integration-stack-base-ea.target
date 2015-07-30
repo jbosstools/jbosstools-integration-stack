@@ -81,14 +81,23 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.5.0.v201506092134"/>
 
-      <!-- BPMN2 Modeler -->
+      <!-- BPMN2 Modeler, Fuse Tooling, SwitchYard -->
+      <!-- TEMPORARY - add back in with Eclipse Mars SR1 - ref JBTIS-467 
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.12.0.v20150603-0807"/>
       <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.12.0.v20150603-0807"/>
-      
+      -->      
       <unit id="org.eclipse.core.net" version="1.2.300.v20141118-1725"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.100.v20150205-1358"/>
 
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201506121000-RC4/"/>
+    </location>
+
+    <!-- TEMPORARY - remove when Eclipse Mars SR1 arrives - ref JBTIS-467 -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <!-- BPMN2 Modeler, Fuse Tooling, SwitchYard -->
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.13.0.v20150720-0642"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.13.0.v20150720-0642"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/graphiti/0.13.0.v20150720-0642/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
