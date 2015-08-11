@@ -67,18 +67,12 @@ Tools related to the development of Integration and SOA applications - includes 
 </feature>
 
 <!-- fuse tooling -->
-<!--
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.fusesource.ide.core.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.fusesource.ide.fabric8.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
@@ -92,7 +86,12 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
--->
+
+<feature id="org.jboss.tools.fuse.transformation.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature">
   <category name="DataVirtualization" />
@@ -164,13 +163,12 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.jbpm.eclipse.feature.source"/>
 
 <!-- fuse tooling -->
-<!--
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
-<feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
--->
+<feature id="org.jboss.tools.fuse.transformation.feature.source"/>
+
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>

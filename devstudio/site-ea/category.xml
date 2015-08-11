@@ -62,7 +62,6 @@ Tools related to integrating and developing software components that work with A
 </feature>
 
 <!-- fuse tooling -->
-<!--
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
@@ -78,11 +77,6 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<feature id="org.fusesource.ide.fabric8.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
 <feature id="org.fusesource.ide.jmx.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
@@ -92,7 +86,6 @@ Tools related to integrating and developing software components that work with A
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
--->
 
 <!-- guvnor -->
 <feature id="org.guvnor.tools.feature">
@@ -173,13 +166,11 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.drools.eclipse.feature.source"/>
 
 <!-- fuse tooling -->
-<!--
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
-<feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
--->
+<feature id="org.jboss.tools.fuse.transformation.feature.source"/>
 
 <!-- guvnor -->
 <feature id="org.guvnor.tools.feature.source"/>

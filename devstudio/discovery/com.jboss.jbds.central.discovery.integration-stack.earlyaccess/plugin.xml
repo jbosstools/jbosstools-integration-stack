@@ -86,12 +86,13 @@
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.jbpm.eclipse.feature"/>
-<!--
+
       <iu id="org.fusesource.ide.camel.editor.feature"/>
       <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.fabric8.feature"/>
       <iu id="org.fusesource.ide.jmx.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <iu id="org.jboss.tools.fuse.transformation.feature"/>
+<!--
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
@@ -104,7 +105,7 @@
       </overview>
     </connectorDescriptor>
 
-    <!-- Fuse Tooling - - >
+    <!-- Fuse Tooling -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
@@ -118,9 +119,9 @@
        id="jboss.integration-stack.bundle.fuse">
       <iu id="org.fusesource.ide.camel.editor.feature"/>
       <iu id="org.fusesource.ide.core.feature"/>
-      <iu id="org.fusesource.ide.fabric8.feature"/>
       <iu id="org.fusesource.ide.jmx.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
+      <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <icon
    image32="images/jbds_icon32.png">
       </icon>
@@ -128,9 +129,9 @@
    url="http://fusesource.com/products/fuse-ide/">
       </overview>
     </connectorDescriptor>
--->
+
   </extension>
-<!--
+
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
@@ -143,5 +144,5 @@
        requiredComponentIds="jboss.integration-stack.bundle.fuse">
     </proxyWizard>
   </extension>	
--->
+
 </plugin>

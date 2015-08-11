@@ -10,14 +10,14 @@
     <version>9.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate - GA</name>
+  <name>JBDS Integration Stack Aggregate</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack Eclipse GA update site.
+    Aggregated JBoss Developer Studio Integration Stack Eclipse update site.
 
-    This Maven project will create a GA update site for the layered release of the JBoss Developer Studio Integration Stack by mirroring 
-    artifacts from the composite site.  The category.xml defines the content.
+    This Maven project will create an update site for the layered release of the JBoss Developer Studio Integration Stack by mirroring 
+    artifacts from the composite site.
   </description>
 
   <properties>

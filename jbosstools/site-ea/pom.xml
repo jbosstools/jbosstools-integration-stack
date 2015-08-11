@@ -10,13 +10,13 @@
     <version>4.3.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate - Early Access</name>
+  <name>JBoss Tools Integration Stack - Early Access</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack early access Eclipse update site.
+    Aggregated JBoss Tools Integration Stack early access Eclipse update site.
 
-    This Maven project will create an update site for the early access release of the JBoss Developer Studio Integration Stack.
+    This Maven project will create an update site for the early access release of the JBoss Tools Integration Stack.
   </description>
 
   <properties>

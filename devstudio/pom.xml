@@ -31,7 +31,7 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
     <VERSION>9.0.0.Alpha1</VERSION>
-    <IS_TP_VERSION>4.3.0.Beta1d-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.3.0.Beta1e-SNAPSHOT</IS_TP_VERSION>
     <JBDSIS_INSTALLER>http://www.qa.jboss.com/binaries/RHDS/9.0/staging/builds/devstudio-9.0.0.Beta2-build-product/2015-07-17_09-58-40-B67/all/jboss-devstudio-9.0.0.Beta2-v20150717-1420-B67-installer-standalone.jar</JBDSIS_INSTALLER>
     <JBDSIS_TP_VERSION>9.0.0.Beta1</JBDSIS_TP_VERSION>
     <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>

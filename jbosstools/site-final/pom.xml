@@ -10,13 +10,13 @@
     <version>4.3.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate - Final</name>
+  <name>JBoss Tools Integration Stack</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack final Eclipse update site.
+    Aggregated JBoss Tools Integration Stack Eclipse update site.
 
-    This Maven project will create an update site for the .Final release of the JBoss Developer Studio Integration Stack.
+    This Maven project will create an update site for the JBoss Tools Integration Stack.
   </description>
 
   <properties>
