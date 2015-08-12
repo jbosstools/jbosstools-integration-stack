@@ -12,6 +12,7 @@
 <!--      
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
 -->
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 

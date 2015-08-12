@@ -9,6 +9,7 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.brms" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.dv" /> 
@@ -71,7 +72,7 @@
 
    <!-- JBoss Fuse Development -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
        certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
