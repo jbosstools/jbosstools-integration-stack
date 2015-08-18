@@ -21,7 +21,7 @@
         -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO \
         -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO \
         -DBUILD_TYPE=development -DBUILD_ALIAS=alpha1 -DBUILD_KIND=jbosstools -DskipRevisionCheckWhenPublishing=true clean install checkstyle:check \
-        -Pstable -DBUILD_KIND=jbosstools -DBUILD_NUMBER=365 -DBUILD_ALIAS=2015-05-12_12-56-24-B365 -DBUILD_TYPE=development -DTARGET_PLATFORM=mars \
+        -DBUILD_KIND=jbosstools -DBUILD_NUMBER=365 -DBUILD_ALIAS=2015-05-12_12-56-24-B365 -DBUILD_TYPE=development -DTARGET_PLATFORM=mars \
         -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/,http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha1,http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha1/earlyaccess,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO
 
       -or-
@@ -39,7 +39,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
     <VERSION>4.3.0.Alpha1</VERSION>
-    <IS_TP_VERSION>4.3.0.Beta1e-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.3.0.Beta1e</IS_TP_VERSION>
     <tycho-version>0.21.0</tycho-version>
     <jboss-tycho-version>0.21.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,8 +48,7 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
 
-    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Beta2/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
-<!--    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.Beta1a/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML> -->
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.Beta2/bosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 

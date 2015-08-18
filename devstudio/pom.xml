@@ -15,13 +15,13 @@
     JBDS Integration Stack Aggregate update site + Central Discovery plugin, directory, and composite site generation (GA/EA).
   </description>
 
-  <!-- Pick up your local JBTIS bits and JBTIS target platform instead of published sites:
+  <!-- Pick up your local JBTIS bits and JBDSIS target platform instead of published sites:
 
-      mvn clean install -Pstable -Pearlyaccess -Pbuild_installer \
-      -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site-final/target/repository/  \
-      -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ \
-      -DJBDSIS_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis.target.repo \
-      -DJBDSIS_EA_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis-ea.target.repo
+      mvn clean install -Pbuild_installer \
+        -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site-final/target/repository/  \
+        -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ \
+        -DJBDSIS_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis.target.repo \
+        -DJBDSIS_EA_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis-ea.target.repo
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -31,15 +31,15 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
     <VERSION>9.0.0.Alpha1</VERSION>
-    <IS_TP_VERSION>4.3.0.Beta1e-SNAPSHOT</IS_TP_VERSION>
-    <JBDSIS_INSTALLER>http://www.qa.jboss.com/binaries/RHDS/9.0/staging/builds/devstudio-9.0.0.Beta2-build-product/2015-07-17_09-58-40-B67/all/jboss-devstudio-9.0.0.Beta2-v20150717-1420-B67-installer-standalone.jar</JBDSIS_INSTALLER>
+    <IS_TP_VERSION>4.3.0.Beta1e</IS_TP_VERSION>
+    <JBDS_INSTALLER>https://devstudio.jboss.com/9.0/development/builds/installer/9.0.0.Beta2/jboss-devstudio-9.0.0.Beta2-v20150726-0459-B93-installer-standalone.jar</JBDS_INSTALLER>
     <JBDSIS_TP_VERSION>9.0.0.Beta1</JBDSIS_TP_VERSION>
     <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
     <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
     <tycho-version>0.22.0</tycho-version>
     <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/staging/updates/discovery.central/9.0.0.Beta1c/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/development/updates/discovery.central/9.0.0.Beta2/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
@@ -48,7 +48,7 @@
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1/earlyaccess/</COMPOSITE_EA_SITE>
-<!--    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/9.0/</UPSTREAM_EXTRAS_SITE> -->
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/9.0/development/updates/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
@@ -60,7 +60,7 @@
     <module>site-ga</module>
     <module>site-ea</module>
     <module>discovery</module>
-<!-- temp    <module>features</module> -->
+    <module>features</module>
   </modules>
 
   <profiles>   
@@ -136,13 +136,12 @@
     </repository>
 
     <!-- JBTIS-355 added to enable resolution of upstream deps; there's probably a better way to resolve dependencies from JBDS, JBDS TP, JBDS IS and JBDS IS TP -->
-<!-- dont know if we still need this or not...
     <repository>
       <id>jbdevstudio-site-with-central-and-targetplatform</id>
       <layout>p2</layout>
       <url>${UPSTREAM_EXTRAS_SITE}</url>
     </repository>
--->
+
     <repository>
       <id>jbtis-site</id>
       <layout>p2</layout>

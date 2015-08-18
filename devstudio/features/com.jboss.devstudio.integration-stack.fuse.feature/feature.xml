@@ -16,5 +16,6 @@
 	<import feature="org.fusesource.ide.core.feature"/>
 	<import feature="org.fusesource.ide.jmx.feature"/>
 	<import feature="org.fusesource.ide.server.extensions.feature"/>
+	<import feature="org.jboss.tools.fuse.transformation.feature"/>
   </requires>
 </feature>

@@ -60,7 +60,7 @@
 	      <goal>wget</goal>
 	    </goals>
 	    <configuration>
-	      <url>${JBDSIS_INSTALLER}</url>
+	      <url>${JBDS_INSTALLER}</url>
 	      <unpack>true</unpack>
 	      <outputDirectory>target/installer</outputDirectory>
 	    </configuration>

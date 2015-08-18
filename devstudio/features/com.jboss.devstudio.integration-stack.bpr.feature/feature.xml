@@ -10,8 +10,6 @@
     <import feature="org.eclipse.jgit"/>
     <import feature="org.eclipse.egit"/>
     <import feature="org.eclipse.rse"/>
-    <import feature="org.eclipse.tm.terminal"/>
-    <!-- <import plugin="" /> -->
 
     <import plugin="com.jboss.devstudio.core.project.examples"/>
     <import plugin="com.jboss.devstudio.core.usage.branding"/>
@@ -21,7 +19,7 @@
     <import feature="org.jboss.tools.central.feature"/> 
     <import feature="org.jboss.tools.project.examples.feature"/> 
     <import feature="org.jboss.tools.bpel.feature"/>
-    <import feature="org.eclipse.bpmn2"/>
+    <import feature="org.eclipse.bpmn2.feature"/>
     <import feature="org.eclipse.bpmn2.modeler"/>
     <import feature="org.eclipse.bpmn2.modeler.runtime.jboss"/>
     <import feature="org.drools.eclipse.feature"/>

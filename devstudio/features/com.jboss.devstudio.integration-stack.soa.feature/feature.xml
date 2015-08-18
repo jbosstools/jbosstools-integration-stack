@@ -13,7 +13,7 @@
 	<import feature="org.jboss.tools.central.feature"/> 
 	<import feature="org.jboss.tools.project.examples.feature"/> 
 	<import feature="org.jboss.tools.bpel.feature"/>
-	<import feature="org.eclipse.bpmn2"/>
+	<import feature="org.eclipse.bpmn2.feature"/>
 	<import feature="org.eclipse.bpmn2.modeler"/>
 	<import feature="org.eclipse.bpmn2.modeler.runtime.jboss"/>
 	<import feature="org.drools.eclipse.feature"/>
@@ -23,11 +23,13 @@
 	<import feature="org.jbpm.eclipse.feature"/>
 	<import feature="org.fusesource.ide.camel.editor.feature"/>
 	<import feature="org.fusesource.ide.core.feature"/>
-	<import feature="org.fusesource.ide.fabric8.feature"/>
 	<import feature="org.fusesource.ide.jmx.feature"/>
 	<import feature="org.fusesource.ide.server.extensions.feature"/>
+	<import feature="org.jboss.tools.fuse.transformation.feature"/>
+<!--
 	<import feature="org.switchyard.tools.feature"/>
 	<import feature="org.switchyard.tools.bpel.feature"/>
 	<import feature="org.switchyard.tools.bpmn2.feature"/>
+-->
   </requires>
 </feature>

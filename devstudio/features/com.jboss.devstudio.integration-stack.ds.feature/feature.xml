@@ -10,8 +10,6 @@
     <import feature="org.eclipse.jgit"/>
     <import feature="org.eclipse.egit"/>
     <import feature="org.eclipse.rse"/>
-    <import feature="org.eclipse.tm.terminal"/>
-    <!-- <import plugin="" /> -->
 
     <import plugin="com.jboss.devstudio.core.project.examples"/>
     <import plugin="com.jboss.devstudio.core.usage.branding"/>
