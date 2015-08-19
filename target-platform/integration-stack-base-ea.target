@@ -94,6 +94,14 @@
 
     <!-- TEMPORARY - remove when Eclipse Mars SR1 arrives - ref JBTIS-467 -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.m2e.feature.feature.group" version="1.6.2.20150819-1555"/>
+      <unit id="org.eclipse.m2e.tests.common" version="1.6.2.20150819-1555"/>
+
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e/1.6.2.20150819-1555/"/>
+    </location>
+
+    <!-- TEMPORARY - remove when Eclipse Mars SR1 arrives - ref JBTIS-467 -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- BPMN2 Modeler, Fuse Tooling, SwitchYard -->
       <unit id="org.eclipse.graphiti.feature.feature.group" version="0.13.0.v20150720-0642"/>
