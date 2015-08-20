@@ -15,13 +15,13 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/bpel/1.3.100.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.0.201504151830_1.2.0.Final_mars/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.1.201508191851_1.2.1_mars/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://download.jboss.org/jbpm/release/6.2.0.Final/updatesite/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/updates/integration/mars/integration-stack/fuse-tooling/8.0.0/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/fuse-tooling/8.0.0.Alpha1/all/repo/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
