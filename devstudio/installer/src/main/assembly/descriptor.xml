@@ -19,8 +19,19 @@
 			<outputDirectory>/</outputDirectory>
 		</fileSet>
 		<fileSet>
-			<directory>${project.build.directory}/integration-stack</directory>
+			<directory>${project.build.directory}/integration-stack-ga</directory>
+			<outputDirectory>jbdsis/ga</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/integration-stack-ea</directory>
+			<outputDirectory>jbdsis/ea</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/structure</directory>
 			<outputDirectory>jbdsis</outputDirectory>
+			<includes>
+				<include>*.xml</include>
+			</includes>
 		</fileSet>
 		<fileSet>
 			<directory>src/main/resources</directory>

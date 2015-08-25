@@ -1,102 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Developer Studio Integration Stack Eclipse GA Updates</description>
-
-<category-def name="SOADev" label="JBoss Integration and SOA Development">
-  <description>
-Tools related to the development of Integration and SOA applications.
-  </description>
-</category-def>
-
-<category-def name="SOADev5" label="JBoss SOA 5.x Development">
-  <description>
-SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor, ESB and jBPM 3.
-  </description>
-</category-def>
-
-<!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-
-<!-- bpel -->
-<feature id="org.jboss.tools.bpel.feature">
-  <category name="SOADev" />
-  <category name="SOADev5" />
-</feature>
-
-<!-- drools -->
-<feature id="org.drools.eclipse.feature">
-  <category name="SOADev" />
-  <category name="SOADev5" />
-</feature>
-
-<!-- esb -->
-<feature id="org.jboss.tools.esb.feature">
-  <category name="SOADev5" />
-</feature>
-
-<!-- guvnor -->
-<feature id="org.guvnor.tools.feature">
-  <category name="SOADev" />
-  <category name="SOADev5" />
-</feature>
-
-<!-- jBPM3 -->
-<feature id="org.jboss.tools.jbpm.convert.feature">
-  <category name="SOADev5" />
-</feature>
-
-<feature id="org.jboss.tools.jbpm.common.feature">
-  <category name="SOADev5" />
-</feature>
-
-<feature id="org.jboss.tools.jbpm3.feature">
-  <category name="SOADev5" />
-</feature>
-
-<!-- runtime detectors -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature">
-  <category name="SOADev" />
-  <category name="SOADev5" />
-</feature>
-
-<feature id="org.jboss.tools.runtime.esb.detector.feature">
-  <category name="SOADev5" />
-</feature>
-
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-  <category name="SOADev5" />
-</feature>
-
-<!-- ####### -->
-<!-- Integration stack component sources : DO NOT CATEGORIZE -->
-<!-- ####### -->
-
-<!-- bpel -->
-<!-- missing bpel eclipse sources...
-<feature id="org.eclipse.bpel.feature.source"/>
-<feature id="org.eclipse.bpel.common.feature.source"/>
-<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
--->
-<feature id="org.jboss.tools.bpel.feature.source"/>
-
-<!-- drools -->
-<feature id="org.drools.eclipse.feature.source"/>
-
-<!-- esb -->
-<feature id="org.jboss.tools.esb.feature.source"/>
-<feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
-
-<!-- guvnor -->
-<feature id="org.guvnor.tools.feature.source"/>
-
-<!-- jBPM3 -->
-<feature id="org.jboss.tools.jbpm.convert.feature.source"/>
-<feature id="org.jboss.tools.jbpm.common.feature.source"/>
-<feature id="org.jboss.tools.jbpm3.feature.source"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
-
-<!-- runtime detectors -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
-<feature id="org.jboss.tools.runtime.esb.detector.feature"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-
+   <description>
+      JBoss Developer Studio Integration Stack Eclipse GA Updates
+   </description>
+   <feature id="org.jboss.tools.bpel.feature">
+      <category name="SOADev"/>
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.drools.eclipse.feature">
+      <category name="SOADev"/>
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.esb.feature">
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.guvnor.tools.feature">
+      <category name="SOADev"/>
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.jbpm.convert.feature">
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.jbpm.common.feature">
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.jbpm3.feature">
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.runtime.drools.detector.feature">
+      <category name="SOADev"/>
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.runtime.esb.detector.feature">
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
+      <category name="SOADev5"/>
+   </feature>
+   <feature id="org.jboss.tools.bpel.feature.source"/>
+   <feature id="org.drools.eclipse.feature.source"/>
+   <feature id="org.jboss.tools.esb.feature.source"/>
+   <feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+   <feature id="org.guvnor.tools.feature.source"/>
+   <feature id="org.jboss.tools.jbpm.convert.feature.source"/>
+   <feature id="org.jboss.tools.jbpm.common.feature.source"/>
+   <feature id="org.jboss.tools.jbpm3.feature.source"/>
+   <feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
+   <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
+   <feature id="org.jboss.tools.runtime.esb.detector.feature"/>
+   <feature id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+   <feature url="features/org.eclipse.rse_3.7.0.201505221634.jar" id="org.eclipse.rse" version="3.7.0.201505221634"/>
+   <feature url="features/org.eclipse.zest_1.6.0.201506010206.jar" id="org.eclipse.zest" version="1.6.0.201506010206"/>
+   <feature url="features/org.eclipse.rse.core_3.7.0.201505221634.jar" id="org.eclipse.rse.core" version="3.7.0.201505221634"/>
+   <feature url="features/org.eclipse.rse.ftp_3.7.0.201505221634.jar" id="org.eclipse.rse.ftp" version="3.7.0.201505221634"/>
+   <feature url="features/org.eclipse.rse.local_3.7.0.201505221634.jar" id="org.eclipse.rse.local" version="3.7.0.201505221634"/>
+   <feature url="features/org.eclipse.rse.ssh_3.7.0.201505221634.jar" id="org.eclipse.rse.ssh" version="3.7.0.201505221634"/>
+   <feature url="features/org.eclipse.rse.terminals_3.8.0.201505221634.jar" id="org.eclipse.rse.terminals" version="3.8.0.201505221634"/>
+   <feature url="features/org.eclipse.rse.useractions_3.7.0.201505221634.jar" id="org.eclipse.rse.useractions" version="3.7.0.201505221634"/>
+   <category-def name="SOADev" label="JBoss Integration and SOA Development">
+      <description>
+         Tools related to the development of Integration and SOA applications.
+      </description>
+   </category-def>
+   <category-def name="SOADev5" label="JBoss SOA 5.x Development">
+      <description>
+         SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor, ESB and jBPM 3.
+      </description>
+   </category-def>
 </site>
