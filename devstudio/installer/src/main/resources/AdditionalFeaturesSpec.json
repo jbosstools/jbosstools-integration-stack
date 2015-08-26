@@ -4,24 +4,24 @@
 		"label":"JBoss Fuse Development",
 		"description":"Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.",
 		"selected":"false",
-		"path":"jbdsis"
+		"path":"jbds"
 	},{
 		"id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
 		"label":"JBoss Business Process and Rules Development",
 		"description":"Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor.",
 		"selected":"false",
-		"path":"jbdsis"
+		"path":"jbds"
 	},{
 		"id":"com.jboss.devstudio.integration-stack.ds.feature.feature.group",
 		"label":"JBoss Data Virtualization Development",
 		"description":"Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.",
 		"selected":"false",
-		"path":"jbdsis"
+		"path":"jbds"
 	},{
 		"id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
 		"label":"JBoss Integration and SOA Development",
 		"description":"Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM and Switchyard.",
 		"selected":"false",
-		"path":"jbdsis"
+		"path":"jbds"
 	}
 ]
