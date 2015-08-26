@@ -15,12 +15,13 @@
 			<directory>${project.build.directory}/installer</directory>
 			<excludes>
 				<exclude>res/AdditionalFeaturesSpec.json</exclude>
+				<exclude>jbds/**</exclude>
 			</excludes>
 			<outputDirectory>/</outputDirectory>
 		</fileSet>
 		<fileSet>
-			<directory>${project.build.directory}/integration-stack</directory>
-			<outputDirectory>jbdsis</outputDirectory>
+			<directory>${project.build.directory}/repository</directory>
+			<outputDirectory>jbds</outputDirectory>
 		</fileSet>
 		<fileSet>
 			<directory>src/main/resources</directory>

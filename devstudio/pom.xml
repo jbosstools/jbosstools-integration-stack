@@ -54,6 +54,10 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
+    <!-- The URL for the stable JBDSIS target platform repository that should be associated with this site. -->
+    <targetplatform.url>https://devstudio.jboss.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</targetplatform.url>
+    <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
+    <targetplatform.ea.url>https://devstudio.jboss.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <modules>

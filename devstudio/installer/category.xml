@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<description>
+		JBoss Developer Studio Integration Stack Installer
+	</description>
+
+	<!-- copy IU's from JBDS Core Installer -->
+	<feature id="org.jboss.tools.bpel.feature" />
+	<feature id="org.testng.eclipse" />
+	<bundle id="com.jboss.devstudio.core.package" />
+
+	<!-- IBDS IS IU's -->
+	<feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
+	<feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
+	<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
+	<feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
+
+</site>
