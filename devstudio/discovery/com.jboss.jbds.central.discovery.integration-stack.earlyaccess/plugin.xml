@@ -19,7 +19,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -48,7 +48,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -74,7 +74,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.notavailable"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -99,7 +99,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
