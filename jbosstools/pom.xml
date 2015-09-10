@@ -16,13 +16,13 @@
   </description>
 
   <!-- Run a build like this:
-       mvn -DVERSION=4.3.0.Alpha1 -DTARGET_PLATFORM=mars -DIS_TP_VERSION=4.3.0.Alpha2 \
+       mvn -DVERSION=4.3.0.Alpha2 -DTARGET_PLATFORM=mars -DIS_TP_VERSION=4.3.0.Alpha2 \
         -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Alpha2/jbosstools-directory.xml \
         -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO \
         -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO \
         -DBUILD_TYPE=development -DBUILD_ALIAS=alpha1 -DBUILD_KIND=jbosstools -DskipRevisionCheckWhenPublishing=true clean install checkstyle:check \
         -DBUILD_KIND=jbosstools -DBUILD_NUMBER=365 -DBUILD_ALIAS=2015-05-12_12-56-24-B365 -DBUILD_TYPE=development -DTARGET_PLATFORM=mars \
-        -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/,http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha1,http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha1/earlyaccess,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO
+        -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/,http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha2,http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha2/earlyaccess,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO
 
       -or-
 
@@ -38,7 +38,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>4.3.0.Alpha1</VERSION>
+    <VERSION>4.3.0.Alpha2</VERSION>
     <IS_TP_VERSION>4.3.0.Beta1f-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.23.1</tycho-version>
     <jboss-tycho-version>0.23.1-SNAPSHOT</jboss-tycho-version>

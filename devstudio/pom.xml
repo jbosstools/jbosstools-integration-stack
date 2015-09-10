@@ -30,7 +30,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>9.0.0.Alpha1</VERSION>
+    <VERSION>9.0.0.Alpha2</VERSION>
     <IS_TP_VERSION>4.3.0.Beta1e</IS_TP_VERSION>
     <JBDS_INSTALLER>https://devstudio.jboss.com/9.0/development/builds/installer/9.0.0.Beta2/jboss-devstudio-9.0.0.Beta2-v20150726-0459-B93-installer-standalone.jar</JBDS_INSTALLER>
     <JBDSIS_TP_VERSION>9.0.0.Beta1</JBDSIS_TP_VERSION>
@@ -46,8 +46,8 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha2/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/4.3.0.Alpha2/earlyaccess/</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.jboss.com/9.0/development/updates/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
