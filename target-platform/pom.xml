@@ -37,7 +37,7 @@
     <tychoVersion>0.23.1</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jboss-tycho-version>0.23.1-SNAPSHOT</jboss-tycho-version>
-    <JBTCoreTPVersion>4.50.0.Beta2</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.50.0.CR1-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
   <reporting>
