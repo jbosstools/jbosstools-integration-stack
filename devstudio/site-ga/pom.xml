@@ -25,7 +25,7 @@
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the stable JBDSIS target platform repository that should be associated with this site. -->
-    <targetplatform.url>https://devstudio.jboss.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</targetplatform.url>
+    <targetplatform.url>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</targetplatform.url>
   </properties>
 
   <build>
