@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/fuse-tooling/8.0.0.Alpha1/all/repo/"/>
 
     <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/modeshape/3.8.0.Beta1/"/>
 
     <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/switchyard/2.1.0.Alpha1/"/>
