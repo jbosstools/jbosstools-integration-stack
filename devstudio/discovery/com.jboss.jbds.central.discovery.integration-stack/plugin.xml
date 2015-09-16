@@ -9,17 +9,15 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
-<!--      
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
--->
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
       
-    <!-- JBoss Business Process and Rules Development
+    <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
@@ -47,8 +45,9 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
--->
-    <!-- JBoss Data Virtualization Development 
+
+
+    <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
@@ -73,7 +72,27 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
--->
+
+	<!-- JBoss Fuse Development -->
+	<connectorDescriptor
+	  categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+	  groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+	  certificationId="com.jboss.jbds.discovery.certification.notavailable"
+	  kind="task"
+	  license="Free, EPL"
+	  provider="JBoss by Red Hat"
+	  siteUrl="${jboss.discovery.site.integration-stack.url}"
+	  name="JBoss Fuse Development"
+	  description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned. Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+	  id="jboss.integration-stack.bundle.fuse">
+	 <icon
+	    image32="images/jbds_icon32.png">
+	 </icon>
+	 <overview
+	    url="http://tools.jboss.org/features/apachecamel.html">
+	 </overview>
+	</connectorDescriptor>
+
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
