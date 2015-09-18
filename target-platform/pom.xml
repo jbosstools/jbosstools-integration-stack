@@ -36,8 +36,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.23.1</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jboss-tycho-version>0.23.1-SNAPSHOT</jboss-tycho-version>
-    <JBTCoreTPVersion>4.50.0.CR1-SNAPSHOT</JBTCoreTPVersion>
+    <jboss-tycho-version>0.23.1</jboss-tycho-version>
+    <JBTCoreTPVersion>4.51.0.Final</JBTCoreTPVersion>
   </properties>
 
   <reporting>
