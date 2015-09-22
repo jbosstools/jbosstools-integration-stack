@@ -48,7 +48,7 @@
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Alpha2/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Alpha2/earlyaccess/</COMPOSITE_EA_SITE>
-    <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/9.0/development/updates/</UPSTREAM_EXTRAS_SITE>
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/9.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
