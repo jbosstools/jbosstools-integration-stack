@@ -22,7 +22,7 @@ Tools related to integrating and developing software components that work with A
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM6 and Fuse Tooling.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, Guvnor, jBPM6 and SwitchYard.
   </description>
 </category-def>
 
@@ -36,7 +36,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
-<!--<feature id="com.jboss.devstudio.integration-stack.soa.feature"/> -->
+<feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
@@ -108,6 +108,11 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="SOADev" />
 </feature>
 
+<feature id="org.jboss.tools.fuse.transformation.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature">
   <category name="SOADev5" />
@@ -144,6 +149,19 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
   <category name="SOADev" />
   <category name="SOADev5" />
+</feature>
+
+<!-- switchyard -->
+<feature id="org.switchyard.tools.feature">
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.switchyard.tools.bpel.feature">
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.switchyard.tools.bpmn2.feature">
+  <category name="SOADev" />
 </feature>
 
 <!-- teiid designer -->
@@ -195,6 +213,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.fusesource.ide.fabric8.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
+<feature id="org.jboss.tools.fuse.transformation.feature.source"/>
 
 <!-- jBPM3 -->
 <feature id="org.jboss.tools.jbpm.convert.feature.source"/>
@@ -205,6 +224,11 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
+
+<!-- switchyard -->
+<feature id="org.switchyard.tools.bpel.feature.source"/>
+<feature id="org.switchyard.tools.bpmn2.feature.source"/>
+<feature id="org.switchyard.tools.feature.source"/>
 
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>

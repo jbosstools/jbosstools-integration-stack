@@ -4,19 +4,19 @@
 
    - or -
 
-    mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/ -DTARGET_PLATFORM=luna -DIS_TP_VERSION=4.2.6.Final \
+    mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/ -DTARGET_PLATFORM=luna  \
         -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
-        -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.6.Final/jbtis/REPO \
-        -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.6.Final/jbtis/earlyaccess/REPO \
+        -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.7.Final/jbtis/REPO \
+        -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.7.Final/jbtis/earlyaccess/REPO \
         -DBUILD_ALIAS=${BUILD_ID}-B${BUILD_NUMBER} -DBUILD_TYPE=development \
-        -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/integration-stack/aggregate/4.2.3.Final \
+        -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/integration-stack/aggregate/4.2.4.Final \
         -DskipRevisionCheckWhenPublishing=true -DVERSION=4.2.1.Final -DBUILD_KIND=jbosstools \
          clean install checkstyle:check -DBUILD_KIND=jbosstools -DBUILD_NUMBER=351 -DBUILD_ALIAS=2015-03-27_13-40-33-B351 -DBUILD_TYPE=development \
         -DTARGET_PLATFORM=luna \
         -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/stable/luna/,\
                          http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.Final, \
                          http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/aggregate/4.2.1.Final/earlyaccess,\
-                         http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.6.Final/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.6.Final/jbtis/earlyaccess/REPO
+                         http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.7.Final/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.7.Final/jbtis/earlyaccess/REPO
 
 # To build referencing your own JBTIS early access target platform, build ../target-platform first, then:
 

@@ -1,48 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Developer Studio Integration Stack Eclipse Updates</description>
-
-<category-def name="FuseDevelopment" label="JBoss Fuse Development">
-  <description>
-Tools related to Fuse Tooling data mapping and transformation.
-  </description>
-</category-def>
-
-<category-def name="SOADev" label="JBoss Integration and SOA Development">
-  <description>
-Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling data transformation and Switchyard. 
-  </description>
-</category-def>
-
-<!-- fuse tooling -->
-<feature id="org.jboss.tools.fuse.transformation.feature">
-  <category name="FuseDevelopment" />
-  <category name="SOADev" />
-</feature>
-
-<!-- switchyard -->
-<feature id="org.switchyard.tools.feature">
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.switchyard.tools.bpel.feature">
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.switchyard.tools.bpmn2.feature">
-  <category name="SOADev" />
-</feature>
+<description>JBoss Developer Studio Integration Stack Early Access Eclipse Updates</description>
 
 <!-- ####### -->
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
-
-<!-- fuse tooling -->
-<feature id="org.jboss.tools.fuse.transformation.feature.source"/>
-
-<!-- switchyard -->
-<feature id="org.switchyard.tools.bpel.feature.source"/>
-<feature id="org.switchyard.tools.bpmn2.feature.source"/>
-<feature id="org.switchyard.tools.feature.source"/>
 
 </site>

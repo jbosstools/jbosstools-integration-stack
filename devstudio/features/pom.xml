@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>8.0.3-SNAPSHOT</version>
+    <version>8.0.4-SNAPSHOT</version>
   </parent>
 
   <groupId>com.jboss.devstudio.integration-stack</groupId>
@@ -19,8 +19,7 @@
   <modules>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.bpr.feature</module>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.ds.feature</module>
-    <!-- JBTIS-432 - SOA not EM eligible until 8.0.3 (SwitchYard)
-    <module>../../devstudio/features/com.jboss.devstudio.integration-stack.soa.feature</module> -->
+    <module>../../devstudio/features/com.jboss.devstudio.integration-stack.soa.feature</module>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.fuse.feature</module>
   </modules>
 

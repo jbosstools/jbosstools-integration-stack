@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>8.0.3-SNAPSHOT</version>
+  <version>8.0.4-SNAPSHOT</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -16,7 +16,7 @@
   </description>
 
   <!-- Run a build like this to generate release and early access update sites:
-      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.5.Final -DVERSION=8.0.3.GA \
+      mvn clean install -DTARGET_PLATFORM=luna -DBUILD_TYPE=integration -DIS_TP_VERSION=4.2.7.Final \
       -DCOMPOSITE_SITE=http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.2.Final/ \
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,\
@@ -42,11 +42,11 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>8.0.3.GA</VERSION>
-    <IS_TP_VERSION>4.2.5.Final</IS_TP_VERSION>
+    <VERSION>8.0.4-SNAPSHOT</VERSION>
+    <IS_TP_VERSION>4.2.7.Final</IS_TP_VERSION>
     <JBDSIS_TP_VERSION>8.0.3.GA</JBDSIS_TP_VERSION>
-    <tycho-version>0.22.0</tycho-version>
-    <jboss-tycho-version>0.22.1-SNAPSHOT</jboss-tycho-version>
+    <tycho-version>0.23.1</tycho-version>
+    <jboss-tycho-version>0.23.1</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/updates/8.0/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
@@ -137,7 +137,7 @@
       <id>earlyaccess</id>
 
       <modules>
-	<module>site-ea</module>
+	<!-- <module>site-ea</module> no content -->
         <module>discovery</module>
       </modules>
     </profile>
@@ -170,12 +170,13 @@
       <url>${COMPOSITE_SITE}</url>
     </repository>
 
+    <!-- no content
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_EA_SITE}</url>
     </repository>
-
+    -->
     <repository>
       <id>jbdsis-targetplatform-site</id>
       <layout>p2</layout>

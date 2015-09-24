@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>8.0.3-SNAPSHOT</version>
+    <version>8.0.4-SNAPSHOT</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate - GA</name>

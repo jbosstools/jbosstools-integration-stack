@@ -3,84 +3,14 @@
 <plugin>
   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
-    <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
+    <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. 
+        Example group ID: <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" /> -->
     <connectorCategory
        description="Early Access JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.prod" /> 
-      <group id="com.jboss.jbds.central.discovery.soatooling.ea.emt" /> 
     </connectorCategory>
 
-    <!-- JBoss Integration and SOA Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.prod"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling data transformation and Switchyard."
-       id="jboss.integration-stack.bundle.soa.ea">
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
-      <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.bpel.feature"/>
-      <iu id="org.switchyard.tools.bpmn2.feature"/>
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- JBT single component sites -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Fuse Development"
-       description="Tools related to Fuse Tooling data mapping and transformation."
-       id="jboss.integration-stack.bundle.fuse.ea">
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
-      <icon
-   image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.ea.emt"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss SwitchYard Tools"
-       description="JBoss SwitchYard Tools Early Access"
-       id="org.switchyard.tools.feature.ea">
-      <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.bpel.feature"/>
-      <iu id="org.switchyard.tools.bpmn2.feature"/>
-      <icon
-	 image32="images/jbds_switchyard_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
   </extension>
-
 </plugin>
