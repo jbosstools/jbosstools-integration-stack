@@ -4,52 +4,6 @@
   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
-
-    <!-- JBoss Integration and SOA Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling Data Transformation and SwitchYard."
-       id="jboss.integration-stack.bundle.soa">
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
-      <iu id="org.switchyard.tools.feature"/>
-      <iu id="org.switchyard.tools.bpel.feature"/>
-      <iu id="org.switchyard.tools.bpmn2.feature"/>
-      <icon
-        image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-        url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- Fuse Tooling -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="com.jboss.jbds.discovery.certification.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Fuse Development"
-       description="Tools related to Fuse Tooling data mapping and transformation."
-       id="jboss.integration-stack.bundle.fuse">
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
-      <icon
-	  image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-	  url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
   </extension>
 
 </plugin>
