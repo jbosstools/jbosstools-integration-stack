@@ -32,16 +32,16 @@
       <unit id="org.jboss.tools.common.test" version="3.7.0.CR1-v20150915-2036-B30"/>
       <unit id="org.jboss.tools.jmx.core.test" version="1.7.0.CR1-v20150917-2320-B41"/>
 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.0.CR1a/"/>
-      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/coretests/4.3.0.Beta1/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/development/updates/coretests/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.0.CR1a/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2015-07-14_18-48-51-B4500/all/repo/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.jboss.tools.common" version="3.7.0.CR1-v20150915-2036-B30"/>
 
-      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.CR1a/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/development/updates/core/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.CR1a/"/> -->
    </location>
 
   </locations>

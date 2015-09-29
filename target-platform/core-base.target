@@ -64,9 +64,9 @@
       <unit id="org.jboss.tools.wtp.runtimes.tomcat.feature.feature.group" version="1.3.0.CR1-v20150917-2320-B41"/>
       <unit id="org.mozilla.xpcom" version="1.9.2.16"/>
 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.CR1a/"/>
-<!--      <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2015-07-14_09-30-58-B10320/all/repo/"/> -->
-<!--      <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/development/updates/core/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.CR1a/"/> -->
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2015-07-14_09-30-58-B10320/all/repo/"/> -->
    </location>
 
   </locations>
