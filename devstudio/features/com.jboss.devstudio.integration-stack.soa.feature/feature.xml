@@ -26,6 +26,8 @@
 	<import feature="org.fusesource.ide.fabric8.feature"/>
 	<import feature="org.fusesource.ide.jmx.feature"/>
 	<import feature="org.fusesource.ide.server.extensions.feature"/>
+        <import feature="org.jboss.tools.fuse.transformation.feature"/>
+
 	<import feature="org.switchyard.tools.feature"/>
 	<import feature="org.switchyard.tools.bpel.feature"/>
 	<import feature="org.switchyard.tools.bpmn2.feature"/>
