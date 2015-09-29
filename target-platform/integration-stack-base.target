@@ -41,7 +41,7 @@
       <unit id="org.jboss.tools.common" version="3.7.0.CR1-v20150915-2036-B30"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Beta1/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.0.CR1a/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/development/updates/"/>
    </location>
 
   </locations>
