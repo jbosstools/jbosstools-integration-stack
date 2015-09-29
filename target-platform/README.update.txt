@@ -7,6 +7,6 @@ To update the versions of IUs included in a given .target file:
 3. run this:
 
 for tf in *.target; do 
-  mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.19.0-SNAPSHOT:fix-versions -DtargetFile=${tf}
+  mvn -U org.jboss.tools.tycho-plugins:target-platform-utils:0.23.1-SNAPSHOT:fix-versions -DtargetFile=${tf}
   if [[ -f ${tf}_fixedVersion.target ]]; then rm -f ${tf} *_update_hints.txt; mv -f ${tf}{_fixedVersion.target,}; fi
 done
