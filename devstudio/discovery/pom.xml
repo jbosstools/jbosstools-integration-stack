@@ -22,13 +22,14 @@
     production JBoss tools integration stack components.
 
     i.e.
-    mvn clean install -DPREFIX=jbosstools-integration-stack -DVERSION=8.0.1 -DBUILD_TYPE=integration -DBUILD_NUMBER=99 -DBUILD_ALIAS=integration -DBUILD_TS=v20130212-1334 -DTARGET_PLATFORM=luna
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DTARGET_PLATFORM=mars -DCOMPOSITE_URLS=... -DCOMPOSITE_EA_URLS=...
   </description>
 
   <modules>
     <module>com.jboss.jbds.central.discovery.integration-stack</module>
     <module>com.jboss.jbds.central.discovery.integration-stack.earlyaccess</module>
     <module>generation</module>
+    <module>generation-ea</module>
   </modules>
 
   <build>
@@ -50,11 +51,6 @@
             <environment>
               <os>win32</os>
               <ws>win32</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>macosx</os>
-              <ws>cocoa</ws>
               <arch>x86</arch>
             </environment>
           </environments>

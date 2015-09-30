@@ -4,7 +4,7 @@
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>generation</artifactId>
+  <artifactId>generation-ea</artifactId>
   <version>4.3.0-SNAPSHOT</version>
 
   <parent>
@@ -13,7 +13,7 @@
     <version>4.3.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBoss Tools Integration Stack Discovery Directory</name>
+  <name>JBoss Tools Integration Stack Early Access Discovery Directory</name>
 
   <packaging>pom</packaging>
 
@@ -40,12 +40,12 @@
 		  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
 		  <property name="BUILD_TS" value="${BUILD_TS}" />
 		  <property name="BUILD_FORM" value="community" />
-		  <property name="BUILD_EA" value="false" />
+		  <property name="BUILD_EA" value="true" />
 		  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
 		  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
 
 		  <!-- Pass in this value from Maven - see ../../pom.xml -->
-		  <property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
+		  <property name="COMPOSITE_URLS" value="${COMPOSITE_EA_URLS}"/>
 		  <property name="UPSTREAM_DIRECTORY_XML" value="${UPSTREAM_DIRECTORY_XML}"/>
 		</ant>
 	      </target>
