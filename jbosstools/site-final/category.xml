@@ -55,7 +55,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="SOADev" />
 </feature>
 
-<!-- drools/jBPM -->
+<!-- drools/jBPM6 -->
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
@@ -67,6 +67,16 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 </feature>
 
 <feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.navigator.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -193,11 +203,13 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>
 
-<!-- drools/jbpm -->
+<!-- drools/jbpm6 -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 <feature id="org.drools.eclipse.feature.source"/>
 <feature id="org.guvnor.tools.feature.source"/>
 <feature id="org.jbpm.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.navigator.feature.source"/>
 
 <!-- esb -->
 <feature id="org.jboss.tools.esb.feature.source"/>
