@@ -9,162 +9,43 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.prod" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.brms" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.dv" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
     </connectorCategory>
 
- <!-- JBoss Business Process and Rules Development -->
+    <!-- JBoss Integration Stack Generic Connector -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.prod"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.generic"
        certificationId="org.jboss.tools.discovery.certification.notavailable"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Business Process and Rules Development"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
-       id="jboss.integration-stack.bundle.bpr">
+       name="JBoss Tools Integration Stack Early Access Components"
+       description="Fuse Tooling, Data Virtualization, BRMS and SOA Tooling plugins are available by selecting 'Enable Early Access'.  Also available in JBoss Tools 4.2.x."
+       id="jboss.integration-stack.ea.bundle.fuse">  <!-- get the generic message to go away when Fuse Tooling is installed -->
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>
       <overview
 	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Data Virtualization Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.prod"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Data Virtualization Development"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
-       id="jboss.integration-stack.bundle.ds">
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor>
-       <!-- JBoss Fuse Development -->
-       <connectorDescriptor
-          categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-          groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-          certificationId="org.jboss.tools.discovery.certification.notavailable"
-          kind="task"
-          license="Free, EPL"
-          provider="JBoss by Red Hat"
-          siteUrl="${jboss.discovery.site.integration-stack.url}"
-          name="JBoss Fuse Development"
-          description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-          id="jboss.integration-stack.bundle.fuse">
-         <icon
-        image32="images/jbosstools_icon32.png">
-         </icon>
-         <overview
-       url="http://devstudio.redhat.com/">
-         </overview>
-       </connectorDescriptor>
-
-
-    <!-- JBoss Integration and SOA Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.prod"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Integration and SOA Development"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Tools related to the development of Integration and SOA applications."
-       id="jboss.integration-stack.bundle.soa">
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor>
-    
-    <!-- JBT single component sites -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss BPEL"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. JBoss Business Logic - Orchestrating your business processes"
-       id="org.jboss.tools.bpel.feature">
-      <icon
-	 image32="images/jbds_bpel_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Business Process Modeling"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. A graphical modeling tool which allows creation and editing of Business Process Modeling Notation diagrams "
-       id="org.eclipse.bpmn2.feature">
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Drools"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. JBoss Drools Core, Task Management, Runtime Detection"
-       id="org.drools.eclipse.feature">
-      <icon
-	 image32="images/jbds_drools_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.emt"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss ESB Tools"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. JBoss ESB Tools, Runtime Detection"
+       description="JBoss ESB Tools, Runtime Detection"
        id="org.jboss.tools.esb.feature">
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
       <icon
 	 image32="images/jbds_esb_32.png">
       </icon>
@@ -175,93 +56,20 @@
 
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Guvnor"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. JBoss governance tools"
-       id="org.guvnor.tools.feature">
-      <icon
-	 image32="images/jbds_guvnor_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
+       certificationId="org.jboss.tools.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss jBPM Tools"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. JBoss Tools for jBPM, Runtime Detection"
-       id="org.jboss.jbpm.eclipse.feature">
+       name="JBoss Tools Runtime Detection"
+       description="JBoss Tools Runtime Detection for jBPM, Drools and ESB"
+       id="org.jboss.runtime.drools.detector.feature">
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
       <icon
 	 image32="images/jbds_jbpm_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-    
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.brms"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Runtime Detection for Drools, ESB, jBPM"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Runtime Detection for Drools, ESB, jBPM"
-       id="org.jboss.tools.runtime.drools.detector.feature">
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss ModeShape Tooling"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Resource (un)publishing to ModeShape repositories"
-       id="org.jboss.tools.modeshape.rest.feature">
-      <icon
-	 image32="images/jbds_modeshape_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Teiid Designer"
-       description="Available in JBoss Tools 4.2.x. Coming soon to 4.3 - stay tuned. Create metadata models + VDBs"
-       id="org.teiid.designer.feature">
-      <icon
-	 image32="images/jbds_tdesigner_32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">

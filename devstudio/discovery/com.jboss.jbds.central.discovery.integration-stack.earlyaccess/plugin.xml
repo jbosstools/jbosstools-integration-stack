@@ -9,15 +9,14 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Developer Studio Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-bpr" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
 
-    <!-- JBoss Business Process and Rules Development
+    <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-bpr"
@@ -25,7 +24,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Business Process and Rules Development"
        description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
@@ -44,9 +43,9 @@
       <overview
         url="http://devstudio.redhat.com/">
       </overview>
-    </connectorDescriptor> -->
+    </connectorDescriptor>
 
-    <!-- JBoss Data Virtualization Development
+    <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds"
@@ -54,7 +53,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
        id="jboss.integration-stack.bundle.ds">
@@ -70,34 +69,34 @@
       <overview
         url="http://devstudio.redhat.com/">
       </overview>
-    </connectorDescriptor> -->
+    </connectorDescriptor>
 
-       <!-- JBoss Fuse Development
-       <connectorDescriptor
-          categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-          groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
-          certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
-          kind="task"
-          license="Free, EPL"
-          provider="JBoss by Red Hat"
-          siteUrl="${jboss.discovery.site.integration-stack.url}"
-          name="JBoss Fuse Development"
-          description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-          id="jboss.integration-stack.bundle.fuse">
-         <iu id="org.fusesource.ide.camel.editor.feature"/>
-         <iu id="org.fusesource.ide.core.feature"/>
-         <iu id="org.fusesource.ide.jmx.feature"/>
-         <iu id="org.fusesource.ide.server.extensions.feature"/>
-         <iu id="org.jboss.tools.fuse.transformation.feature"/>
-         <icon
-            image32="images/jbds_icon32.png">
-         </icon>
-         <overview
-            url="http://tools.jboss.org/features/apachecamel.html">
-         </overview>
-       </connectorDescriptor> -->
+    <!-- JBoss Fuse Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss Fuse Development"
+       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       id="jboss.integration-stack.bundle.fuse">
+       <iu id="org.fusesource.ide.camel.editor.feature"/>
+       <iu id="org.fusesource.ide.core.feature"/>
+       <iu id="org.fusesource.ide.jmx.feature"/>
+       <iu id="org.fusesource.ide.server.extensions.feature"/>
+       <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <icon
+          image32="images/jbds_icon32.png">
+       </icon>
+       <overview
+          url="http://tools.jboss.org/features/apachecamel.html">
+       </overview>
+    </connectorDescriptor>
 
-    <!-- JBoss Integration and SOA Development
+    <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa"
@@ -105,7 +104,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
        description="Tools related to the development of Integration and SOA applications - includes support for BPMN2 and jBPM."
        id="jboss.integration-stack.bundle.soa">
@@ -113,7 +112,6 @@
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.jbpm.eclipse.feature"/>
-
       <iu id="org.fusesource.ide.camel.editor.feature"/>
       <iu id="org.fusesource.ide.core.feature"/>
       <iu id="org.fusesource.ide.jmx.feature"/>
@@ -129,42 +127,9 @@
       <overview
         url="http://devstudio.redhat.com/">
       </overview>
-    </connectorDescriptor> -->
+    </connectorDescriptor>
+  </extension>	
 
-    <!-- JBoss SOA Legacy Development
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy"
-       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss SOA 5.x Development"
-       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
-       id="com.jboss.jbds.soatooling.bundle.soap">
-
-      <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
-      <iu id="org.drools.eclipse.feature"/>
-      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
-      <iu id="org.jboss.tools.esb.feature"/>
-      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
-      <iu id="org.jboss.tools.jbpm.common.feature"/>
-      <iu id="org.jboss.tools.jbpm.convert.feature"/>
-      <iu id="org.jboss.tools.jbpm3.feature"/>
-      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-      <iu id="org.jbpm.gd.jpdl.feature"/> 
-
-      <icon
-        image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-        url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor> -->
-  </extension>
-  
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"

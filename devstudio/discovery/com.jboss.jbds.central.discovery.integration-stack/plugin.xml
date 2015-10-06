@@ -9,94 +9,22 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
 
-    <!-- JBoss Business Process and Rules Development 
-         Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor.
-    -->
+    <!-- JBoss Integration Stack Generic Connector -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-generic"
        certificationId="com.jboss.jbds.discovery.certification.notavailable"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Business Process and Rules Development"
-       description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned."
-       id="jboss.integration-stack.bundle.bpr">
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://devstudio.redhat.com/">
-       </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Data Virtualization Development 
-         Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
-    -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
-       certificationId="com.jboss.jbds.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Data Virtualization Development"
-       description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned."
-       id="jboss.integration-stack.bundle.ds">
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://devstudio.redhat.com/">
-       </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Fuse Development 
-         Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
-    -->
-    <connectorDescriptor
-      categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-      groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-      certificationId="com.jboss.jbds.discovery.certification.notavailable"
-      kind="task"
-      license="Free, EPL"
-      provider="JBoss by Red Hat"
-      siteUrl="${jboss.discovery.site.integration-stack.url}"
-      name="JBoss Fuse Development"
-      description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned."
-      id="jboss.integration-stack.bundle.fuse">
-      <icon
-         image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-         url="http://tools.jboss.org/features/apachecamel.html">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Integration and SOA Development 
-         Tools related to the development of Integration and SOA applications - includes support for BPMN2 and jBPM.
-    -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
-       certificationId="com.jboss.jbds.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Integration and SOA Development"
-       description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned."
-       id="jboss.integration-stack.bundle.soa">
+       name="Red Hat JBoss Developer Studio Integration Stack Early Access Components"
+       description="Fuse Tooling, Data Virtualization, BRMS and SOA plugins are available by selecting 'Enable Early Access'.  Also available in Red Hat JBoss Developer Studio 8.x."
+       id="jboss.integration-stack.bundle.fuse">  <!-- get the generic message to go away when Fuse Tooling is installed -->
        <icon
           image32="images/jbds_icon32.png">
        </icon>
@@ -111,14 +39,24 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy"
-       certificationId="com.jboss.jbds.discovery.certification.notavailable"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss SOA 5.x Development"
-       description="Available in Red Hat JBoss Developer Studio 8.x. Coming soon to 9.0 - stay tuned."
+       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
        id="com.jboss.jbds.soatooling.bundle.soap">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <iu id="org.jboss.tools.jbpm.common.feature"/>
+      <iu id="org.jboss.tools.jbpm.convert.feature"/>
+      <iu id="org.jboss.tools.jbpm3.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.gd.jpdl.feature"/> 
        <icon
           image32="images/jbds_icon32.png">
        </icon>
