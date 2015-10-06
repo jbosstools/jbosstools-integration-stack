@@ -55,6 +55,7 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBT,JBT TP,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
+    <COMPOSITE_EA_URLS><!-- JBT,JBT TP,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_EA_URLS>
     <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
     <update.site.description>-</update.site.description>
   </properties>

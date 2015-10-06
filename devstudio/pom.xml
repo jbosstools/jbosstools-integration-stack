@@ -46,6 +46,7 @@
       if all blank, no composite site will be generated 
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
+    <COMPOSITE_EA_URLS><!-- JBT,JBT TP,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_EA_URLS>
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Alpha2/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Alpha2/earlyaccess/</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/9.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
