@@ -66,6 +66,7 @@
       <iu id="org.teiid.designer.feature"/>
       <iu id="org.teiid.designer.runtime.feature"/>
       <iu id="org.teiid.designer.teiid.client.feature"/>
+      <iu id="org.teiid.designer.crypto.dummy.feature"/>
       <icon
         image32="images/jbds_icon32.png">
       </icon>

@@ -26,5 +26,6 @@
     <import feature="org.teiid.designer.feature"/>
     <import feature="org.teiid.designer.runtime.feature"/>
     <import feature="org.teiid.designer.teiid.client.feature"/>
+    <import feature="org.teiid.designer.crypto.dummy.feature"/>
   </requires>
 </feature>
