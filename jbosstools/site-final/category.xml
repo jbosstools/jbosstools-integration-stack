@@ -187,7 +187,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
   <category name="DataVirtualization" />
 </feature>
 
-<feature id="org.teiid.designer.crypto.dummy.feature">
+<feature id="org.teiid.designer.library.feature">
   <category name="DataVirtualization" />
 </feature>
 
@@ -242,7 +242,7 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 <feature id="org.teiid.designer.feature.source"/>
 <feature id="org.teiid.designer.runtime.feature.source"/>
 <feature id="org.teiid.designer.teiid.client.feature.source"/>
-<feature id="org.teiid.designer.crypto.dummy.feature.source"/>
+<feature id="org.teiid.designer.library.feature.source"/>
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>
