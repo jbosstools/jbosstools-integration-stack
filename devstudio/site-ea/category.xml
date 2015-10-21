@@ -4,7 +4,7 @@
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
-Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor
   </description>
 </category-def>
 
@@ -16,7 +16,7 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM6, Fuse Tooling and Switchyard.
+Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM6, KIE, Fuse Tooling and Switchyard.
   </description>
 </category-def>
 
@@ -54,12 +54,6 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<!-- drools -->
-<feature id="org.drools.eclipse.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />
@@ -86,14 +80,28 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<!-- guvnor -->
+<!-- drools/jbpm6 -->
+<feature id="org.drools.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
 <feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<!-- jBPM6 -->
 <feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.navigator.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -174,6 +182,10 @@ Tools related to integrating and developing software components that work with A
 
 <!-- jBPM6 -->
 <feature id="org.jbpm.eclipse.feature.source"/>
+
+<!-- kie -->
+<feature id="org.kie.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.navigator.feature.source"/>
 
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>

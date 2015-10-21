@@ -25,7 +25,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Business Process and Rules Development"
-       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
+       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor."
        id="jboss.integration-stack.ea.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -34,6 +34,8 @@
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
@@ -116,6 +118,8 @@
       <iu id="org.fusesource.ide.server.extensions.feature"/>
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
@@ -204,6 +208,26 @@
       <iu id="org.guvnor.tools.feature"/>
       <icon
 	 image32="images/jbds_guvnor_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+       groupId="om.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss KIE Tools"
+       description="JBoss Tools Knowledge Is Everything"
+       id="org.jboss.jbpm.eclipse.feature">
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
+      <icon
+	 image32="images/jbds_drools_32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">

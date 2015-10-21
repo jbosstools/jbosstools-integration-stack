@@ -57,7 +57,6 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"

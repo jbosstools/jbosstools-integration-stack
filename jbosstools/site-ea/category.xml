@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Tools Integration Stack Eclipse Updates</description>
+<description>JBoss Tools Integration Stack Early Access Eclipse Updates</description>
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
@@ -48,20 +48,28 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
-<!-- drools -->
+<!-- drools/jBPM6 -->
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<!-- guvnor -->
 <feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
-<!-- jBPM6 -->
 <feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.navigator.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
@@ -153,14 +161,12 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
 <feature id="org.eclipse.bpmn2.modeler.source"/>
 
-<!-- drools -->
+<!-- drools/jbpm6 -->
 <feature id="org.drools.eclipse.feature.source"/>
-
-<!-- guvnor -->
 <feature id="org.guvnor.tools.feature.source"/>
-
-<!-- jBPM6 -->
 <feature id="org.jbpm.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.navigator.feature.source"/>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>

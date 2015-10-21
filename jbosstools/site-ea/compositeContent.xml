@@ -18,10 +18,10 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.1.201509111741_1.2.1_mars/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/6.2.0.Final/updatesite/"/>
+    <child location="http://download.jboss.org/jbpm/release/6.3.0.Final/updatesite/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/fuse-tooling/8.0.0.Alpha1/all/repo/"/>
+    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Alpha1/all/repo/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/modeshape/3.8.0.Beta1/"/>
@@ -30,7 +30,7 @@
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/switchyard/2.1.0.Alpha1/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.3.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/teiiddesigner/9.0.4.Final/"/>
 
   </children>
 

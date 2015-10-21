@@ -26,7 +26,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Business Process and Rules Development"
-       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor."
+       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -35,6 +35,8 @@
       <iu id="org.drools.eclipse.feature"/>
       <iu id="org.guvnor.tools.feature"/>
       <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
       <icon
@@ -106,7 +108,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPMN2 and jBPM."
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM, KIE, Fuse Tooling and SwitchYard."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.eclipse.bpmn2.feature"/>
       <iu id="org.eclipse.bpmn2.modeler"/>
@@ -117,6 +119,8 @@
       <iu id="org.fusesource.ide.jmx.feature"/>
       <iu id="org.fusesource.ide.server.extensions.feature"/>
       <iu id="org.jboss.tools.fuse.transformation.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.switchyard.tools.feature"/>
       <iu id="org.switchyard.tools.bpel.feature"/>
       <iu id="org.switchyard.tools.bpmn2.feature"/>
