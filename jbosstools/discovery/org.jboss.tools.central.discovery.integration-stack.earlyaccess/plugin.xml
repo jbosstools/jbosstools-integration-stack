@@ -217,6 +217,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="om.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
