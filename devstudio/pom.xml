@@ -37,7 +37,8 @@
     <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
     <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
     <tycho-version>0.23.1</tycho-version>
-    <jboss-tycho-version>0.23.1</jboss-tycho-version>
+    <jboss-tycho-version>0.23.3-SNAPSHOT</jboss-tycho-version>
+
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.central/9.0.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
@@ -47,8 +48,8 @@
     -->
     <COMPOSITE_URLS><!-- JBDS,JBDS TP,JBDS-IS,JBDS-IS TP update site URLs --></COMPOSITE_URLS>
     <COMPOSITE_EA_URLS><!-- JBT,JBT TP,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_EA_URLS>
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.1.Beta1/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.1.Beta1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Alpha2/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Alpha2/earlyaccess/</COMPOSITE_EA_SITE>
     <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/9.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
@@ -77,7 +78,7 @@
       </activation>
 
       <properties>
-        <update.site.description>Continuous Integration Build</update.site.description>
+        <update.site.description>Snapshot Build</update.site.description>
       </properties>
 
     </profile>
@@ -119,6 +120,32 @@
       <modules>
 	<module>installer</module>
       </modules>
+    </profile>
+
+    <profile>
+      <id>hudson</id>
+      <activation>
+        <property>
+          <name>BUILD_NUMBER</name>
+        </property>
+      </activation>
+      <properties>
+        <!-- to test p2StatsUrl, must pass in two vars: mvn clean install -DJOB_NAME=jbosstools-server_master -DBUILD_NUMBER=450002 -->
+        <p2StatsUrl>http://download.jboss.org/jbosstools/usage/installs/${JOB_NAME}/${project.version}/${BUILD_ALIAS}/${buildQualifier}/</p2StatsUrl>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.eclipse.tycho</groupId>
+            <artifactId>tycho-packaging-plugin</artifactId>
+            <version>${tycho-version}</version>
+            <configuration>
+              <format>'${BUILD_ALIAS}-v'yyyyMMdd-HHmm'-B${BUILD_NUMBER}'</format>
+              <archiveSite>true</archiveSite>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
 
   </profiles>
@@ -197,6 +224,15 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-packaging-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <format>'${BUILD_ALIAS}-v'yyyyMMdd-HHmm</format>
+          <archiveSite>true</archiveSite>
+        </configuration>
+      </plugin>
 
       <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
