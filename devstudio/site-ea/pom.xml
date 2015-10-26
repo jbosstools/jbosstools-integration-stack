@@ -22,6 +22,7 @@
 
   <properties>
     <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
+    <update.site.description>Snapshot Build</update.site.description>
     <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
