@@ -23,7 +23,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Developer Studio Integration Stack Early Access Components"
        description="Fuse Tooling, Data Virtualization, BRMS and SOA plugins are available by selecting 'Enable Early Access'.  Also available in JBoss Developer Studio 8.x."
-       id="jboss.integration-stack.bundle.fuse">  <!-- get the generic message to go away when Fuse Tooling is installed -->
+       id="jboss.integration-stack.generic.notavailable">  <!-- cannot use the fuse connector ID or we get a conflict when installing via wizard or drag-n-drop install -->
        <icon
           image32="images/jbds_icon32.png">
        </icon>

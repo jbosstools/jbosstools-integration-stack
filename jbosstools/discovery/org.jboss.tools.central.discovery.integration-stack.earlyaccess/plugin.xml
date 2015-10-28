@@ -125,7 +125,7 @@
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Fuse Development"
        description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
-       id="jboss.integration-stack.ea.bundle.fuse">
+       id="jboss.integration-stack.bundle.fuse">
        <iu id="org.fusesource.ide.camel.editor.feature"/>
        <iu id="org.fusesource.ide.core.feature"/>
        <iu id="org.fusesource.ide.jmx.feature"/>
@@ -321,6 +321,19 @@
 	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-
   </extension>
+
+  <extension point="org.jboss.tools.central.proxyWizard">
+    <proxyWizard
+       id="fuse.integration.wizard"
+       category="earlyaccess"
+       description="%fuse.integration.wizard.description"
+       label="Fuse Integration Project"
+       priority="3"
+       iconPath="images/fuse_integration_wizard.png"
+       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
+       requiredComponentIds="jboss.integration-stack.bundle.fuse">
+    </proxyWizard>
+  </extension>
+
 </plugin>

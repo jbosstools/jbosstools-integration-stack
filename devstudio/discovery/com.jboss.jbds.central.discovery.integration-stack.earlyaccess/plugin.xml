@@ -173,8 +173,8 @@
        priority="3"
        iconPath="images/fuse_integration_wizard.png"
        wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
-       requiredComponentIds="jboss.integration-stack.ea.bundle.fuse">
+       requiredComponentIds="jboss.integration-stack.bundle.fuse">
     </proxyWizard>
-  </extension>	
+  </extension>
 
 </plugin>
