@@ -9,12 +9,55 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.soatooling.ea.emt" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.prod" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv" /> 
     </connectorCategory>
 
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.ea.emt"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss ESB Tools"
+       description="JBoss ESB Tools, Runtime Detection"
+       id="org.jboss.tools.esb.feature">
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <icon
+	 image32="images/jbds_esb_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
+       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Tools Runtime Detection"
+       description="JBoss Tools Runtime Detection for jBPM, Drools and ESB"
+       id="org.jboss.runtime.drools.detector.feature">
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <icon
+	 image32="images/jbds_jbpm_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+    
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
