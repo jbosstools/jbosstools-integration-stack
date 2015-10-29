@@ -21,7 +21,7 @@
 
   <properties>
     <COMPOSITE_SITE>file://${basedir}</COMPOSITE_SITE>    
-    <update.site.name>JBoss Developer Studio Integration Stack</update.site.name>
+    <update.site.name>JBoss Tools Integration Stack</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <targetplatform.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/REPO/</targetplatform.url>

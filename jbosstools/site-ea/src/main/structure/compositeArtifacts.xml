@@ -1,5 +1,5 @@
 <?compositeArtifactRepository version='1.0.0'?>
-<repository name="JBoss Developer Studio - Integration Stack Root" type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"
+<repository name="JBoss Tools Integration Stack Root" type="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"
   version="1.0.0">
   <properties size="2">
     <property name="p2.compressed" value="true" /><!--

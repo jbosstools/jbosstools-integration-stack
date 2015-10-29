@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Developer Studio Integration Stack Eclipse .Final Updates</description>
+<description>JBoss Tools Integration Stack Eclipse .Final Updates</description>
 
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>

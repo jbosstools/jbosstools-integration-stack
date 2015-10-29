@@ -9,43 +9,14 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Developer Studio Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa-legacy" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa-legacy" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
 
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa-legacy"
-       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss SOA 5.x Development"
-       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
-       id="com.jboss.jbds.soatooling.bundle.soap">
-      <iu id="org.jboss.tools.bpel.feature"/>
-      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
-      <iu id="org.drools.eclipse.feature"/>
-      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
-      <iu id="org.jboss.tools.esb.feature"/>
-      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
-      <iu id="org.jboss.tools.jbpm.common.feature"/>
-      <iu id="org.jboss.tools.jbpm.convert.feature"/>
-      <iu id="org.jboss.tools.jbpm3.feature"/>
-      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-      <iu id="org.jbpm.gd.jpdl.feature"/> 
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://devstudio.redhat.com/">
-       </overview>
-    </connectorDescriptor>
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
@@ -164,6 +135,39 @@
     </connectorDescriptor>
   </extension>	
 
+   <!-- JBoss SOA Legacy Development 
+         SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
+    -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa-legacy"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss SOA 5.x Development"
+       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
+       id="com.jboss.jbds.soatooling.bundle.soap">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <iu id="org.jboss.tools.jbpm.common.feature"/>
+      <iu id="org.jboss.tools.jbpm.convert.feature"/>
+      <iu id="org.jboss.tools.jbpm3.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.gd.jpdl.feature"/> 
+       <icon
+          image32="images/jbds_icon32.png">
+       </icon>
+       <overview
+          url="http://devstudio.redhat.com/">
+       </overview>
+    </connectorDescriptor>
+
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
        id="fuse.integration.wizard"
@@ -175,6 +179,6 @@
        wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
        requiredComponentIds="jboss.integration-stack.bundle.fuse">
     </proxyWizard>
-  </extension>
+  </extension>	
 
 </plugin>
