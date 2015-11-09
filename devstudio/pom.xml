@@ -43,7 +43,7 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
     <VERSION>8.0.4-SNAPSHOT</VERSION>
-    <IS_TP_VERSION>4.2.8.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.2.9-SNAPSHOT</IS_TP_VERSION>
     <JBDSIS_TP_VERSION>8.0.4.GA</JBDSIS_TP_VERSION>
     <tycho-version>0.23.1</tycho-version>
     <jboss-tycho-version>0.23.1</jboss-tycho-version>
