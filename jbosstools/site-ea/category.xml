@@ -26,10 +26,17 @@ Tools related to the development of Integration and SOA applications - includes 
   </description>
 </category-def>
 
+<category-def name="SOADev5" label="JBoss SOA 5.x Development">
+  <description>
+SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
+  </description>
+</category-def>
+
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
+  <category name="SOADev5" />
 </feature>
 
 <!-- bpmn2 -->
@@ -52,11 +59,13 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
+  <category name="SOADev5" />
 </feature>
 
 <feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
+  <category name="SOADev5" />
 </feature>
 
 <feature id="org.jbpm.eclipse.feature">
@@ -72,6 +81,11 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.kie.eclipse.navigator.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
+</feature>
+
+<!-- esb -->
+<feature id="org.jboss.tools.esb.feature">
+  <category name="SOADev5" />
 </feature>
 
 <!-- fuse tooling -->
@@ -100,6 +114,19 @@ Tools related to the development of Integration and SOA applications - includes 
   <category name="SOADev" />
 </feature>
 
+<!-- jBPM3 -->
+<feature id="org.jboss.tools.jbpm.convert.feature">
+  <category name="SOADev5" />
+</feature>
+
+<feature id="org.jboss.tools.jbpm.common.feature">
+  <category name="SOADev5" />
+</feature>
+
+<feature id="org.jboss.tools.jbpm3.feature">
+  <category name="SOADev5" />
+</feature>
+
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature">
   <category name="DataVirtualization" />
@@ -113,6 +140,15 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
   <category name="BusinessLogic" />
   <category name="SOADev" />
+  <category name="SOADev5" />
+</feature>
+
+<feature id="org.jboss.tools.runtime.esb.detector.feature">
+  <category name="SOADev5" />
+</feature>
+
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
+  <category name="SOADev5" />
 </feature>
 
 <!-- switchyard -->
@@ -168,12 +204,22 @@ Tools related to the development of Integration and SOA applications - includes 
 <feature id="org.kie.eclipse.feature.source"/>
 <feature id="org.kie.eclipse.navigator.feature.source"/>
 
+<!-- esb -->
+<feature id="org.jboss.tools.esb.feature.source"/>
+<feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
 <feature id="org.fusesource.ide.jmx.feature.source"/>
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
 <feature id="org.jboss.tools.fuse.transformation.feature.source"/>
+
+<!-- jBPM3 -->
+<feature id="org.jboss.tools.jbpm.convert.feature.source"/>
+<feature id="org.jboss.tools.jbpm.common.feature.source"/>
+<feature id="org.jboss.tools.jbpm3.feature.source"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
 
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
@@ -192,5 +238,7 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
+<feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
+<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
 
 </site>

@@ -59,7 +59,7 @@
   </properties>
 
   <modules>
-    <module>site-ga</module>
+    <!-- <module>site-ga</module> nothing yet -->
     <module>site-ea</module>
     <module>discovery</module>
     <module>features</module>

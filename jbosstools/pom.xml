@@ -52,7 +52,7 @@
   </properties>
 
   <modules>
-    <module>site-final</module>
+    <!-- <module>site-final</module> nothing yet -->
     <module>site-ea</module>
     <module>discovery</module>
   </modules>
