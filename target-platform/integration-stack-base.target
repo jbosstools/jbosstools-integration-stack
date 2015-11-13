@@ -37,7 +37,7 @@
       <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
       <unit id="org.springframework.osgi.io" version="1.2.1"/>
 
-      <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.4.0-SNAPSHOT/update.site-1.4.0-SNAPSHOT.zip-unzip/"/>
+      <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.4.0/update.site-1.4.0.zip-unzip/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
