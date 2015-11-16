@@ -15,15 +15,16 @@
 
       <unit id="org.jboss.tools.locus.jcip.annotations" version="1.0.0.v20131024-0922"/>
       <unit id="org.jboss.tools.locus.sf.saxon" version="9.2.1.v20131024-0922"/>
-      <unit id="org.jboss.tools.locus.sf.saxon" version="9.5.1.v20150427-1451"/>
+      <unit id="org.jboss.tools.locus.sf.saxon" version="9.5.1.v20151110-1025"/>
       <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20150709-1710"/>
+      <unit id="org.jboss.tools.locus.apache.directory.bouncycastle.stub" version="1.0.0.v20151110-1025"/>
 
       <unit id="org.springframework.aspects" version="3.1.4.RELEASE"/>
       <unit id="org.springframework.osgi.core" version="1.2.1"/>
       <unit id="org.springframework.osgi.extender" version="1.2.1"/>
       <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
       <unit id="org.springframework.osgi.io" version="1.2.1"/>
-      <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.3.0.Final/update.site-1.3.0.Final.zip-unzip/"/>
+      <repository location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/update.site/1.4.0/update.site-1.4.0.zip-unzip/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
