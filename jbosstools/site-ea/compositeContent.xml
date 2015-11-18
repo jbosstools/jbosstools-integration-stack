@@ -33,7 +33,7 @@
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/modeshape/3.8.0.Beta1/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/switchyard/2.1.0.Alpha2/"/>
+    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/switchyard/2.1.0.Beta1/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/teiiddesigner/"/>
