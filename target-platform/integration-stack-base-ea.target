@@ -30,10 +30,10 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.1.1.201509010903"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.1.1.201509010903"/>
-      <unit id="org.eclipse.emf.compare.rcp" version="2.3.1.201509010903"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.1.1.201509010903"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.1.1.201509120604"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.1.1.201509120604"/>
+      <unit id="org.eclipse.emf.compare.rcp" version="2.3.1.201509120604"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.1.1.201509120604"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.9.0.201505312255"/>
@@ -104,13 +104,14 @@
       <unit id="org.w3c.dom.smil" version="1.0.0.v200806040011"/>
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
       -->
+
       <unit id="org.eclipse.core.net" version="1.2.300.v20141118-1725"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.100.v20150205-1358"/>
 
       <unit id="org.eclipse.m2e.feature.feature.group" version="1.6.2.20150902-0002"/>
       <unit id="org.eclipse.m2e.tests.common" version="1.6.2.20150902-0002"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201509081000-SR1.RC3/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201509161958-SR1.RC4/"/>
     </location>
 
     <!-- TEMPORARY - remove when Eclipse Mars SR1 arrives - ref JBTIS-467 -->
