@@ -19,7 +19,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.soatooling.ea.emt"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -39,7 +39,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -178,7 +178,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -219,7 +219,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -240,7 +240,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -260,7 +260,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="om.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.earlyaccess"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
