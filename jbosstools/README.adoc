@@ -1,6 +1,7 @@
-## Sample invocation to build JBTIS
+## Sample invocation to build JBTIS (must first build target platform)
 
-    mvn clean install
+    cd ../target-platform && mvn clean install -Pmirror
+    cd ../jbosstools && mvn clean install
 
    - or -
 

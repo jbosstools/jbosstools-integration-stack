@@ -1,6 +1,8 @@
-## Sample invocation to build JBDSIS
+## Sample invocation to build JBDSIS (must first build target platform and JBTIS)
 
-    mvn clean install
+    cd ../target-platform && mvn clean install -Pmirror
+    cd ../jbosstools && mvn clean install
+    cd ../devstudio && mvn clean install -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/
 
 # Pick up your local JBTIS bits and JBDSIS target platform instead of published sites.
 
