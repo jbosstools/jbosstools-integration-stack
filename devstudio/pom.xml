@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>8.0.5-SNAPSHOT</version>
+  <version>8.0.5.CR1</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -21,7 +21,7 @@
       -DUPSTREAM_DIRECTORY_XML=https://devstudio.redhat.com/updates/8.0-development/devstudio-directory.xml \
       -DCOMPOSITE_URLS=https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-updatesite-core/,\
        https://devstudio.redhat.com/updates/8.0.0/jboss-devstudio-8.0.0.GA-target-platform/,\
-       https://devstudio.redhat.com/updates/8.0.0/8.0.4.GA.jbds-is-target-platform/,\
+       https://devstudio.redhat.com/updates/8.0.0/8.0.5.GA.jbds-is-target-platform/,\
        http://download.jboss.org/jbosstools/builds/staging/JBDSIS-aggregate-disc/all/repo/
 
       -or-
