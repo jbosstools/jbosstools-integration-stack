@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.4.Final_1.1.0.Final_luna/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/6.3.0.Final/updatesite/"/>
+    <child location="http://download.jboss.org/jbpm/release/6.3.1.Final/updatesite/"/>
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/ESB/1.5.530.Final/"/>
@@ -33,10 +33,10 @@
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/modeshape/3.7.0.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/switchyard/2.0.1.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/switchyard/2.0.2.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.4.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/release/luna/integration-stack/teiiddesigner/9.0.5.Final/"/>
 
   </children>
 
