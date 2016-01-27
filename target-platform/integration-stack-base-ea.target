@@ -18,7 +18,7 @@
       <unit id="org.jboss.tools.locus.sf.saxon" version="9.5.1.v20151110-1025"/>
       <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
       <unit id="org.jboss.tools.locus.apache.directory.bouncycastle.stub" version="1.0.0.v20151110-1025"/>
-      <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160125-1950"/>
+      <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
       <unit id="org.jboss.tools.locus.jaxb-impl" version="2.2.7.v20160113-1915"/>
       <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
 
@@ -33,10 +33,10 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.1.0.201506080833"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.1.0.201506080833"/>
-      <unit id="org.eclipse.emf.compare.rcp" version="2.3.0.201506080833"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.1.0.201506080833"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.1.1.201509120604"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.1.1.201509120604"/>
+      <unit id="org.eclipse.emf.compare.rcp" version="2.3.1.201509120604"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.1.1.201509120604"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.9.0.201505312255"/>
@@ -45,10 +45,10 @@
       <unit id="org.eclipse.emf.transaction.feature.group" version="1.9.0.201506010221"/>
       <unit id="org.eclipse.emf.validation.feature.group" version="1.9.0.201505312255"/>
       <unit id="org.eclipse.emf.workspace.feature.group" version="1.9.0.201506010221"/>
-      <unit id="org.eclipse.emf.ecore.feature.group" version="2.11.0.v20150512-0501"/>
-      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.11.0.v20150601-0402"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.11.1.v20150805-0538"/>
+      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.11.1.v20150806-0404"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.1.0.v20150601-0733"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.1.2.v20160118-1129"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
@@ -61,13 +61,13 @@
       <!-- transitive dependencies -->
       <unit id="com.ibm.icu" version="54.1.1.v201501272100"/>
       <unit id="javax.xml" version="1.3.4.v201005080400"/>
-      <unit id="org.apache.ant" version="1.9.4.v201504302020"/>
+      <unit id="org.apache.ant" version="1.9.6.v201510161327"/>
       <unit id="org.apache.commons.codec" version="1.6.0.v201305230611"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.logging" version="1.0.4.v201101211617"/>
       <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
 
-      <unit id="org.eclipse.draw2d" version="3.10.0.201506010206"/>
+      <unit id="org.eclipse.draw2d" version="3.10.1.201508170204"/>
       <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
       <unit id="org.junit" version="4.11.0.v201303080030"/>
@@ -110,8 +110,7 @@
 
       <unit id="org.eclipse.core.net" version="1.2.300.v20141118-1725"/>
       <unit id="org.eclipse.equinox.cm" version="1.1.100.v20150205-1358"/>
-
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/201506181000-SR0/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/20160120-0945-2.RC1/"/>
     </location>
 
     <!-- TEMPORARY - remove when Eclipse Mars SR1 arrives - ref JBTIS-467 -->
