@@ -23,7 +23,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss ESB Tools"
        description="JBoss ESB Tools, Runtime Detection"
        id="org.jboss.tools.esb.feature">
@@ -43,7 +43,7 @@
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Tools Runtime Detection"
        description="JBoss Tools Runtime Detection for jBPM, Drools and ESB"
        id="org.jboss.runtime.drools.detector.feature">
