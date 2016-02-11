@@ -31,7 +31,7 @@
   <property name="project.build.directory" value="${output.dir}/target"/>
 
   <!-- this will either be the JBT or JBDS discovery site's directory.xml file -->
-  <property name="UPSTREAM_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.0.CR1/jbosstools-directory.xml"/>
+  <property name="UPSTREAM_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.1.Beta2/jbosstools-directory.xml"/>
 
   <target name="init">
     <echo level="verbose">
