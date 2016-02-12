@@ -133,9 +133,8 @@
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-  </extension>	
 
-   <!-- JBoss SOA Legacy Development 
+    <!-- JBoss SOA Legacy Development 
          SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
     -->
     <connectorDescriptor
@@ -167,6 +166,7 @@
           url="http://devstudio.redhat.com/">
        </overview>
     </connectorDescriptor>
+  </extension>	
 
   <extension point="org.jboss.tools.central.proxyWizard">
     <proxyWizard
