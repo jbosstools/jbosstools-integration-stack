@@ -2,6 +2,15 @@
 <?eclipse version="3.4"?>
 <plugin>
   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
+    
+     <certification id="com.jboss.jbds.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+ 
+This content is provided via Early Access 
+so that it can be evaluated + monitored, in order to execute 
+appropriate tests + report issues to plug-in providers as required.</description>
+         <icon image48="images/redhat_48.png"></icon>
+     </certification>
 
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
@@ -21,7 +30,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-bpr"
-       certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -52,7 +61,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds"
-       certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -78,7 +87,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
-       certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -103,7 +112,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa"
-       certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -140,7 +149,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa-legacy"
-       certificationId="com.jboss.jbds.discovery.certification.experimental.earlyaccess"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
