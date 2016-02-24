@@ -3,6 +3,15 @@
 <plugin>
   <extension point="org.eclipse.mylyn.discovery.core.connectorDiscovery">
 
+    <certification id="org.jboss.tools.discovery.certification.supported.earlyaccess" name="Supported - Early Access" url="https://devstudio.redhat.com/9.0/stable/updates/#central">
+         <description>Supported by Red Hat.
+ 
+This content is provided via Early Access 
+so that it can be evaluated + monitored, in order to execute 
+appropriate tests + report issues to plug-in providers as required.</description>
+         <icon image48="images/jbosstools_48.png"></icon>
+    </certification>
+      
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
        description="Early Access JBoss Integration Stack Tools for use with individual JBoss projects (or products)"
