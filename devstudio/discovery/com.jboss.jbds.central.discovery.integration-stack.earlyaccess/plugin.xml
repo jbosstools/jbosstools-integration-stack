@@ -93,13 +93,16 @@ appropriate tests + report issues to plug-in providers as required.</description
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Fuse Development"
-       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, SwitchYard."
        id="jboss.integration-stack.bundle.fuse">
        <iu id="org.fusesource.ide.camel.editor.feature"/>
        <iu id="org.fusesource.ide.core.feature"/>
        <iu id="org.fusesource.ide.jmx.feature"/>
        <iu id="org.fusesource.ide.server.extensions.feature"/>
        <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <iu id="org.switchyard.tools.feature"/>
+       <iu id="org.switchyard.tools.bpel.feature"/>
+       <iu id="org.switchyard.tools.bpmn2.feature"/>
        <icon
           image32="images/jbds_icon32.png">
        </icon>

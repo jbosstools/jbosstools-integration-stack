@@ -18,55 +18,13 @@ appropriate tests + report issues to plug-in providers as required.</description
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.soatooling.ea.emt" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.prod" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.prod" /> 
+      <group id="com.jboss.jbds.central.discovery.soatooling.ea.emt" /> 
     </connectorCategory>
 
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.soatooling.ea.emt"
-       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss ESB Tools"
-       description="JBoss ESB Tools, Runtime Detection"
-       id="org.jboss.tools.esb.feature">
-      <iu id="org.jboss.tools.esb.feature"/>
-      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
-      <icon
-	 image32="images/jbds_esb_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
-       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss Tools Runtime Detection"
-       description="JBoss Tools Runtime Detection for jBPM, Drools and ESB"
-       id="org.jboss.runtime.drools.detector.feature">
-      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
-      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
-      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
-      <icon
-	 image32="images/jbds_jbpm_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-    
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
@@ -133,13 +91,16 @@ appropriate tests + report issues to plug-in providers as required.</description
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Fuse Development"
-       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse."
+       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, SwitchYard."
        id="jboss.integration-stack.bundle.fuse">
        <iu id="org.fusesource.ide.camel.editor.feature"/>
        <iu id="org.fusesource.ide.core.feature"/>
        <iu id="org.fusesource.ide.jmx.feature"/>
        <iu id="org.fusesource.ide.server.extensions.feature"/>
        <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <iu id="org.switchyard.tools.feature"/>
+       <iu id="org.switchyard.tools.bpel.feature"/>
+       <iu id="org.switchyard.tools.bpmn2.feature"/>
        <icon
           image32="images/jbosstools_icon32.png">
        </icon>
@@ -183,7 +144,50 @@ appropriate tests + report issues to plug-in providers as required.</description
       </overview>
     </connectorDescriptor> 
 
-    <!-- JBT single component sites -->
+    <!-- JBTIS single component sites -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+       groupId="com.jboss.jbds.central.discovery.soatooling.ea.emt"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss ESB Tools"
+       description="JBoss ESB Tools, Runtime Detection"
+       id="org.jboss.tools.esb.feature">
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <icon
+	 image32="images/jbds_esb_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+    
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss Tools Runtime Detection"
+       description="JBoss Tools Runtime Detection for jBPM, Drools and ESB"
+       id="org.jboss.runtime.drools.detector.feature">
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <icon
+	 image32="images/jbds_jbpm_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+    
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.brms"
@@ -309,6 +313,28 @@ appropriate tests + report issues to plug-in providers as required.</description
     </connectorDescriptor>
 
     <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss SwitchYard"
+       description="Your service delivery framework."
+       id="org.switchyard.tools.feature">
+      <iu id="org.switchyard.tools.feature"/>
+      <iu id="org.switchyard.tools.bpel.feature"/>
+      <iu id="org.switchyard.tools.bpmn2.feature"/>
+      <icon
+	 image32="images/jbds_switchyard_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"
        certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
@@ -330,6 +356,7 @@ appropriate tests + report issues to plug-in providers as required.</description
 	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
+    
   </extension>
 
   <extension point="org.jboss.tools.central.proxyWizard">

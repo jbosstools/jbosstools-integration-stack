@@ -22,7 +22,7 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <category-def name="FuseDevelopment" label="JBoss Fuse Development">
   <description>
-Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
+Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, SwitchYard.
   </description>
 </category-def>
 
@@ -142,14 +142,17 @@ Tools related to integrating and developing software components that work with A
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.switchyard.tools.bpel.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.switchyard.tools.bpmn2.feature">
+  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
@@ -249,15 +252,5 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.teiid.designer.feature.source"/>
 <feature id="org.teiid.designer.runtime.feature.source"/>
 <feature id="org.teiid.designer.teiid.client.feature.source"/>
-
-<!-- do I need this -->
-   <feature url="features/org.eclipse.rse_3.7.0.201505221634.jar" id="org.eclipse.rse" version="3.7.0.201505221634"/>
-   <feature url="features/org.eclipse.zest_1.6.0.201506010206.jar" id="org.eclipse.zest" version="1.6.1.201508170204"/>
-   <feature url="features/org.eclipse.rse.core_3.7.0.201505221634.jar" id="org.eclipse.rse.core" version="3.7.0.201505221634"/>
-   <feature url="features/org.eclipse.rse.ftp_3.7.0.201505221634.jar" id="org.eclipse.rse.ftp" version="3.7.0.201505221634"/>
-   <feature url="features/org.eclipse.rse.local_3.7.0.201505221634.jar" id="org.eclipse.rse.local" version="3.7.0.201505221634"/>
-   <feature url="features/org.eclipse.rse.ssh_3.7.0.201505221634.jar" id="org.eclipse.rse.ssh" version="3.7.0.201505221634"/>
-   <feature url="features/org.eclipse.rse.terminals_3.8.0.201505221634.jar" id="org.eclipse.rse.terminals" version="3.8.0.201505221634"/>
-   <feature url="features/org.eclipse.rse.useractions_3.7.0.201505221634.jar" id="org.eclipse.rse.useractions" version="3.7.0.201505221634"/>
 
 </site>
