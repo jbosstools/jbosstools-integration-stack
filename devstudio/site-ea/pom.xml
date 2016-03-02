@@ -46,33 +46,6 @@
         <version>${tycho-version}</version>
 
         <configuration>
-          <environments>
-            <environment>
-              <os>macosx</os>
-              <ws>cocoa</ws>
-              <arch>x86_64</arch>
-            </environment>
-            <environment>
-              <os>win32</os>
-              <ws>win32</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>win32</os>
-              <ws>win32</ws>
-              <arch>x86_64</arch>
-            </environment>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
-              <arch>x86</arch>
-            </environment>
-            <environment>
-              <os>linux</os>
-              <ws>gtk</ws>
-              <arch>x86_64</arch>
-            </environment>
-          </environments>
 
           <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
 	       JBoss Tools Integration Stack (early access). -->
@@ -116,6 +89,7 @@
               <referenceStrategy>compositeReferences</referenceStrategy>
               <siteTemplateFolder>${siteTemplateFolder}</siteTemplateFolder>
               <removeDefaultCategory>true</removeDefaultCategory>
+              <p2StatsUrl>${p2StatsUrl}</p2StatsUrl>
               <symbols>
                 <update.site.name>${update.site.name}</update.site.name>
                 <update.site.description>${update.site.description}</update.site.description>
