@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>discovery</artifactId>
-  <version>4.2.5.Final</version>
+  <version>4.2.6.CR1</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.2.5.Final</version>
+    <version>4.2.6.CR1</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Discovery</name>

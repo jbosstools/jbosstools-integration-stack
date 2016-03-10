@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.2.5.Final</version>
+  <version>4.2.6.CR1</version>
 
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -20,7 +20,7 @@
       -DCOMPOSITE_SITE=file://`pwd`/site/target/repository \
       -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/updates/development/luna/jbosstools-directory.xml \
       -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/updates/development/luna/,\
-       http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.5.Final/,\
+       http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/aggregate/4.2.6.CR1/,\
        http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.9.Final/jbtis/earlyaccess/REPO/
 
       -or-
@@ -37,7 +37,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>luna</TARGET_PLATFORM>
-    <VERSION>4.2.5.Final</VERSION>
+    <VERSION>4.2.6.CR1</VERSION>
     <IS_TP_VERSION>4.2.9.Final</IS_TP_VERSION>
     <tycho-version>0.23.1</tycho-version>
     <jboss-tycho-version>0.23.1</jboss-tycho-version>
