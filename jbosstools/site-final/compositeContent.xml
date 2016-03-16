@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.1.5.Final_1.1.0.Final_luna/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/6.3.1.Final/updatesite/"/>
+    <child location="http://download.jboss.org/jbpm/release/6.4.0.CR1/updatesite/"/>
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack/ESB/1.5.530.Final/"/>
