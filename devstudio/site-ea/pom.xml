@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>8.0.6.CR2</version>
+    <version>8.0.6.CR3</version>
   </parent>
 
   <name>JBDS Integration Stack Aggregate - Early Access</name>
