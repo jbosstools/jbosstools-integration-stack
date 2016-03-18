@@ -103,8 +103,8 @@
 	      </sourceTargetArtifacts>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base.target</item>
-		<item>${basedir}/core-base.target</item>
+		<item>${basedir}/src/targets/integration-stack-base.target</item>
+		<item>${basedir}/src/targets/core-base.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-base.target</outputFile>
@@ -131,7 +131,7 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/community.target</item>
+		<item>${basedir}/src/targets/community.target</item>
 		<item>${project.build.directory}/aggregate-base.target</item>
 	      </sourceTargetFiles>
 
@@ -161,8 +161,8 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base.target</item>
-		<item>${basedir}/community.target</item>
+		<item>${basedir}/src/targets/integration-stack-base.target</item>
+		<item>${basedir}/src/targets/community.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/integration-stack-community.target</outputFile>
@@ -198,9 +198,9 @@
 	      </sourceTargetArtifacts>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base.target</item>
-		<item>${basedir}/integration-stack-base-ea.target</item>
-		<item>${basedir}/core-base.target</item>
+		<item>${basedir}/src/targets/integration-stack-base.target</item>
+		<item>${basedir}/src/targets/integration-stack-base-ea.target</item>
+		<item>${basedir}/src/targets/core-base.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-base-ea.target</outputFile>
@@ -224,7 +224,7 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/community.target</item>
+		<item>${basedir}/src/targets/community.target</item>
 		<item>${project.build.directory}/aggregate-base-ea.target</item>
 	      </sourceTargetFiles>
 
@@ -251,8 +251,8 @@
 	    <configuration>
 
 	      <sourceTargetFiles>
-		<item>${basedir}/integration-stack-base-ea.target</item>
-		<item>${basedir}/community.target</item>
+		<item>${basedir}/src/targets/integration-stack-base-ea.target</item>
+		<item>${basedir}/src/targets/community.target</item>
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/integration-stack-community-ea.target</outputFile>
@@ -357,7 +357,7 @@
 	    <configuration>
 	      <artifacts>
 		<artifact>
-		  <file>integration-stack-base.target</file>
+		  <file>src/targets/integration-stack-base.target</file>
 		  <type>target</type>
 		  <classifier>integration-stack-base</classifier>
 		</artifact>
@@ -422,7 +422,7 @@
 	    <configuration>
 	      <artifacts>
 		<artifact>
-		  <file>integration-stack-base-ea.target</file>
+		  <file>src/targets/integration-stack-base-ea.target</file>
 		  <type>target</type>
 		  <classifier>integration-stack-base-ea</classifier>
 		</artifact>
@@ -491,7 +491,7 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <sourceTargetFile>${basedir}/integration-stack-base.target</sourceTargetFile>
+		  <sourceTargetFile>${basedir}/src/targets/integration-stack-base.target</sourceTargetFile>
 		  <outputRepository>${project.build.directory}/${project.artifactId}-jbdsis.target.repo</outputRepository>
 		</configuration>
 	      </execution>
@@ -504,7 +504,7 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <sourceTargetFile>${basedir}/integration-stack-base-ea.target</sourceTargetFile>
+		  <sourceTargetFile>${basedir}/src/targets/integration-stack-base-ea.target</sourceTargetFile>
 		  <outputRepository>${project.build.directory}/${project.artifactId}-jbdsis-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
@@ -632,6 +632,17 @@
 	    </dependencies>
 
 	  </plugin>
+
+          <plugin>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <configuration>
+               <descriptors>
+                 <descriptor>src/assemblies/publish-jbtis-tp-assembly.xml</descriptor>
+                 <descriptor>src/assemblies/publish-jbtis-ea-tp-assembly.xml</descriptor>
+               </descriptors>
+              <finalName>${project.artifactId}-${project.version}</finalName>
+            </configuration>
+          </plugin>
 	</plugins>
 
       </build>
