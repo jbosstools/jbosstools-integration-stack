@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.3.Final_1.2.1.Final_mars/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/6.4.0-201601201107/updatesite/"/>
+    <child location="http://downloads.jboss.org/drools/release/6.4.0.CR1/org.drools.updatesite-6.4.0.CR1/"/>
 
     <!-- ESB -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/esb/1.6.100.Final/"/>
