@@ -96,13 +96,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
   <target name="basic.build" description="discovery plugin build extra processing steps" depends="init,generate.directory.xml,generate.composite.site,cleanup" />
 
   <target name="get.ant-contrib" unless="ant-contrib.jar.exists">
-    <property name="ANTCONTRIB_MIRROR" value="http://sourceforge.net/projects/ant-contrib/files/ant-contrib/ant-contrib-1.0b2" />
-    <get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" src="${ANTCONTRIB_MIRROR}/ant-contrib-1.0b2-bin.zip" />
-    <touch file="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" />
-    <mkdir dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" />
-    <unzip src="${COMMON_TOOLS}/ant-contrib-1.0b2-bin.zip" dest="${tmpdir}/ant-contrib-1.0b2-bin.zip_" overwrite="true" />
-    <copy file="${tmpdir}/ant-contrib-1.0b2-bin.zip_/ant-contrib/lib/ant-contrib.jar" tofile="${COMMON_TOOLS}/ant-contrib.jar" failonerror="true" />
-    <delete dir="${tmpdir}/ant-contrib-1.0b2-bin.zip_" includeemptydirs="true" quiet="true" />
+    <get usetimestamp="true" dest="${COMMON_TOOLS}/ant-contrib.jar" src="http://central.maven.org/maven2/ant-contrib/ant-contrib/1.0b2/ant-contrib-1.0b2.jar" />
   </target>
 
 	<target name="generate.composite.site">
