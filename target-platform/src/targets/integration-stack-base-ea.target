@@ -28,7 +28,7 @@
       <unit id="org.springframework.osgi.extender" version="1.2.1"/>
       <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
       <unit id="org.springframework.osgi.io" version="1.2.1"/>
-      <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0-SNAPSHOT/jbosstools-locus-1.6.0-SNAPSHOT-updatesite.zip-unzip/"/>
+      <repository location="https://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -46,10 +46,10 @@
       <unit id="org.eclipse.emf.transaction.feature.group" version="1.9.0.201506010221"/>
       <unit id="org.eclipse.emf.validation.feature.group" version="1.9.0.201505312255"/>
       <unit id="org.eclipse.emf.workspace.feature.group" version="1.9.0.201506010221"/>
-      <unit id="org.eclipse.emf.ecore.feature.group" version="2.11.1.v20150805-0538"/>
-      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.11.1.v20150806-0404"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.11.2.v20160208-0816"/>
+      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.11.1.v20160208-0841"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.1.2.v20160118-1129"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.1.2.v20160201-0816"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
@@ -113,7 +113,7 @@
       <unit id="org.eclipse.equinox.cm" version="1.1.100.v20150205-1358"/>
       <unit id="org.eclipse.zest.feature.group" version="1.6.1.201508170204"/>
       
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/20160120-0945-2.RC1/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/20160217-1705-2.RC4/"/>
     </location>
     
     <!-- TM and RSE are in Luna site but this way we get sources too -->
@@ -128,7 +128,7 @@
       <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201505221634"/>
     </location>
     
-    <!-- TEMPORARY - remove when Eclipse Mars SR1 arrives - ref JBTIS-467 -->
+    <!-- TEMPORARY - remove when Eclipse Neon arrives - ref JBTIS-467 -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- BPMN2 Modeler, Fuse Tooling, SwitchYard -->

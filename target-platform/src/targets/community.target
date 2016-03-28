@@ -10,14 +10,14 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.1.Beta2-v20160121-2329-B74"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.1.Beta2-v20160121-2329-B74"/>
-      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.1.Beta2-v20160121-2329-B74"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.0.1.CR1-v20160324-1911-B99"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.0.1.CR1-v20160324-1911-B99"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.0.1.CR1-v20160324-1911-B99"/>
 
-      <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.1.Beta2"/> 
-      <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> 
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.1.Beta1/"/>
-      <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.site_4.3.mars/2015-12-10_09-44-25-B172/all/repo/"/>  -->
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.1.Beta2"/>  -->
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.1.CR1/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.site_4.3.mars/2015-12-10_09-44-25-B172/all/repo/"/>  -->
     </location>
 
   </locations>
