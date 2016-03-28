@@ -9,7 +9,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>discovery</artifactId>
-    <version>8.0.6.CR3</version>
+    <version>8.0.6.GA</version>
   </parent>
 
   <name>JBDS Integration Stack Discovery Directory</name>
