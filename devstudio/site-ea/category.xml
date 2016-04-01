@@ -2,12 +2,6 @@
 <site>
 <description>JBoss Developer Studio Integration Stack Eclipse Updates</description>
 
-<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
-  <description>
-Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor
-  </description>
-</category-def>
-
 <category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
@@ -26,40 +20,9 @@ Tools related to integrating and developing software components that work with A
   </description>
 </category-def>
 
-<category-def name="SOADev5" label="JBoss SOA 5.x Development">
-   <description>
-      SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor, ESB and jBPM 3.
-   </description>
-</category-def>
-
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
-<feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
-
-<!-- bpel -->
-<feature id="org.jboss.tools.bpel.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-  <category name="SOADev5"/>
-</feature>
-
-<!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.eclipse.bpmn2.modeler">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
@@ -87,50 +50,6 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<!-- drools/jbpm6 -->
-<feature id="org.drools.eclipse.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-  <category name="SOADev5"/>
-</feature>
-
-<feature id="org.guvnor.tools.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-  <category name="SOADev5"/>
-</feature>
-
-<feature id="org.jbpm.eclipse.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.kie.eclipse.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.kie.eclipse.navigator.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<!-- esb -->
-<feature id="org.jboss.tools.esb.feature">
-   <category name="SOADev5"/>
-</feature>
-
-<!-- jBPM -->
-<feature id="org.jboss.tools.jbpm.convert.feature">
-   <category name="SOADev5"/>
-</feature>
-<feature id="org.jboss.tools.jbpm.common.feature">
-   <category name="SOADev5"/>
-</feature>
-<feature id="org.jboss.tools.jbpm3.feature">
-   <category name="SOADev5"/>
-</feature>
-
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature">
   <category name="DataVirtualization" />
@@ -156,21 +75,6 @@ Tools related to integrating and developing software components that work with A
   <category name="SOADev" />
 </feature>
 
-<!-- runtime detectors -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature">
-  <category name="BusinessLogic" />
-  <category name="SOADev" />
-  <category name="SOADev5"/>
-</feature>
-
-<feature id="org.jboss.tools.runtime.esb.detector.feature">
-   <category name="SOADev5"/>
-</feature>
-
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-   <category name="SOADev5"/>
-</feature>
-
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
@@ -192,24 +96,6 @@ Tools related to integrating and developing software components that work with A
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
 
-<!-- bpel -->
-<feature id="org.eclipse.bpel.feature.source"/>
-<feature id="org.eclipse.bpel.common.feature.source"/>
-<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
-<feature id="org.jboss.tools.bpel.feature.source"/>
-
-<!-- bpmn2 -->
-<feature id="org.eclipse.bpmn2.feature.source"/>
-<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
-<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
-<feature id="org.eclipse.bpmn2.modeler.source"/>
-
-<!-- drools -->
-<feature id="org.drools.eclipse.feature.source"/>
-
-<!-- esb -->
-<feature id="org.jboss.tools.esb.feature.source"/>
-
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
 <feature id="org.fusesource.ide.core.feature.source"/>
@@ -217,30 +103,9 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.fusesource.ide.server.extensions.feature.source"/>
 <feature id="org.jboss.tools.fuse.transformation.feature.source"/>
 
-<!-- guvnor -->
-<feature id="org.guvnor.tools.feature.source"/>
-
-<!-- jBPM -->
-<feature id="org.jboss.tools.jbpm.convert.feature.source"/>
-<feature id="org.jboss.tools.jbpm.common.feature.source"/>
-<feature id="org.jboss.tools.jbpm3.feature.source"/>
-
-<!-- jBPM6 -->
-<feature id="org.jbpm.eclipse.feature.source"/>
-
-<!-- kie -->
-<feature id="org.kie.eclipse.feature.source"/>
-<feature id="org.kie.eclipse.navigator.feature.source"/>
-
 <!-- modeshape -->
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
-
-<!-- runtime detectors -->
-<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
-<feature id="org.jboss.tools.runtime.esb.detector.feature.source"/>
-<feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
-<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 
 <!-- switchyard -->
 <feature id="org.switchyard.tools.bpel.feature.source"/>

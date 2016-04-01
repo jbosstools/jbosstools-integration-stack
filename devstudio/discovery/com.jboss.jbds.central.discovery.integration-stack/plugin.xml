@@ -9,6 +9,10 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
     </connectorCategory>
 
@@ -22,8 +26,97 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Developer Studio Integration Stack Early Access Components"
-       description="Fuse Tooling, Data Virtualization, BRMS and SOA plugins are available by selecting 'Enable Early Access'.  Also available in JBoss Developer Studio 8.x."
+       description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Developer Studio 8.x."
        id="jboss.integration-stack.generic.notavailable">  <!-- cannot use the fuse connector ID or we get a conflict when installing via wizard or drag-n-drop install -->
+       <icon
+          image32="images/jbds_icon32.png">
+       </icon>
+       <overview
+          url="http://devstudio.redhat.com/">
+       </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Business Process and Rules Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Business Process and Rules Development"
+       description="Tools related to business processes and rules development support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor."
+       id="jboss.integration-stack.bundle.bpr">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpmn2.feature"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.guvnor.tools.feature"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Integration and SOA Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Integration and SOA Development"
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Guvnor, jBPM, KIE."
+       id="jboss.integration-stack.bundle.soa">
+      <iu id="org.eclipse.bpmn2.feature"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.jboss.tools.fuse.transformation.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
+
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss SOA Legacy Development 
+         SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
+    -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss SOA 5.x Development"
+       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
+       id="com.jboss.jbds.soatooling.bundle.soap">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <iu id="org.jboss.tools.esb.feature"/>
+      <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
+      <iu id="org.jboss.tools.jbpm.common.feature"/>
+      <iu id="org.jboss.tools.jbpm.convert.feature"/>
+      <iu id="org.jboss.tools.jbpm3.feature"/>
+      <iu id="org.jboss.tools.runtime.jbpm.detector.feature"/>
+      <iu id="org.jbpm.gd.jpdl.feature"/> 
        <icon
           image32="images/jbds_icon32.png">
        </icon>

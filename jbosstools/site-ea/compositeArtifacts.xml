@@ -9,25 +9,13 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="9">
-
-    <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/bpel/1.3.200.Final/"/>
+  <children size="5">
 
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.4.Final_1.2.1.Final_mars/"/>
 
-    <!-- DROOLS/JBPM6 -->
-    <child location="http://downloads.jboss.org/drools/release/6.4.0.CR2/org.drools.updatesite/"/>
-
-    <!-- ESB -->
-    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/esb/1.6.100.Final/"/>
-    
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta1/all/repo/"/>
-
-    <!-- JBPM3 -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta2/all/repo/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/modeshape/3.8.0.Beta1/"/>
