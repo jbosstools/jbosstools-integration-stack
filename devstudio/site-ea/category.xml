@@ -24,6 +24,22 @@ Tools related to integrating and developing software components that work with A
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />
@@ -95,6 +111,12 @@ Tools related to integrating and developing software components that work with A
 <!-- ####### -->
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
+
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.feature.source"/>
+<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
+<feature id="org.eclipse.bpmn2.modeler.source"/>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>

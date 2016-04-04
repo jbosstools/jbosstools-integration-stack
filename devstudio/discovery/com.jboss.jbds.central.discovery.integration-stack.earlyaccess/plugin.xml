@@ -51,6 +51,9 @@
        name="JBoss Fuse Development"
        description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, SwitchYard."
        id="jboss.integration-stack.bundle.fuse">
+       <iu id="org.eclipse.bpmn2.feature"/>
+       <iu id="org.eclipse.bpmn2.modeler"/>
+       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
        <iu id="org.fusesource.ide.camel.editor.feature"/>
        <iu id="org.fusesource.ide.core.feature"/>
        <iu id="org.fusesource.ide.jmx.feature"/>
