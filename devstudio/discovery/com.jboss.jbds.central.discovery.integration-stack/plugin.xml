@@ -9,11 +9,11 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
     </connectorCategory>
 
     <!-- JBoss Integration Stack Generic Connector -->
@@ -81,7 +81,6 @@
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <iu id="org.kie.eclipse.feature"/>
       <iu id="org.kie.eclipse.navigator.feature"/>
 

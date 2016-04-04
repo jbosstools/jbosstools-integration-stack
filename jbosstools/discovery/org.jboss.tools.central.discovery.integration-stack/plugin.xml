@@ -9,11 +9,31 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.prod" /> 
     </connectorCategory>
+
+    <!-- JBoss Integration Stack Generic Connector -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.generic"
+       certificationId="org.jboss.tools.discovery.certification.notavailable"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Tools Integration Stack Early Access Components"
+       description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Tools 4.2.x."
+       id="jboss.integration-stack.generic.notavailable">  <!-- cannot use the fuse connector ID or we get a conflict when installing via wizard or drag-n-drop install -->
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor>
 
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
@@ -59,8 +79,6 @@
       <iu id="org.eclipse.bpmn2.modeler"/>
       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
       <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
-      <iu id="org.jboss.tools.fuse.transformation.feature"/>
       <iu id="org.kie.eclipse.feature"/>
       <iu id="org.kie.eclipse.navigator.feature"/>
       <icon
@@ -70,26 +88,6 @@
 	 url="http://www.jboss.org/tools/">
       </overview>
     </connectorDescriptor> 
-
-    <!-- JBoss Integration Stack Generic Connector -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.generic"
-       certificationId="org.jboss.tools.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Tools Integration Stack Early Access Components"
-       description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Tools 4.2.x."
-       id="jboss.integration-stack.generic.notavailable">  <!-- cannot use the fuse connector ID or we get a conflict when installing via wizard or drag-n-drop install -->
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor>
 
     <!-- JBTIS single component sites -->
     <connectorDescriptor
