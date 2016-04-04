@@ -40,8 +40,8 @@
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.central/9.0.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
-    <COMPOSITE_SITE></COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Beta1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.CR1/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.CR1/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
     <JBDSIS_TP_VERSION>9.0.1.Final-SNAPSHOT</JBDSIS_TP_VERSION>
@@ -172,13 +172,12 @@
       <url>${UPSTREAM_EXTRAS_SITE}</url>
     </repository>
 
-    <!-- temporarily disable this repo - until we get a released component
     <repository>
       <id>jbtis-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_SITE}</url>
     </repository>
-    -->
+
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
