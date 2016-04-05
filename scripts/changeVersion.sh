@@ -21,8 +21,8 @@ fi
 # uppercase the versions
 CMD_1=$1
 CMD_2=$2
-CMD_1=${CMD_1^^}
-CMD_2=${CMD_2^^}
+#CMD_1=${CMD_1^^}
+#CMD_2=${CMD_2^^}
 
 # cut away the snapshot from the source version
 if [[ ${CMD_1} == *-SNAPSHOT ]]

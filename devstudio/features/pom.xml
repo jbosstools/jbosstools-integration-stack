@@ -7,7 +7,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>9.0.0.CR1</version>
+    <version>9.0.0.CR1a</version>
   </parent>
 
   <groupId>com.jboss.devstudio.integration-stack</groupId>

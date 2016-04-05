@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>generation-ea</artifactId>
-  <version>4.3.0.CR1</version>
+  <version>4.3.0.CR1a</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>discovery</artifactId>
-    <version>4.3.0.CR1</version>
+    <version>4.3.0.CR1a</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Early Access Discovery Directory</name>

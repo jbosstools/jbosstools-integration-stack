@@ -20,6 +20,22 @@ Tools related to the development of Integration and SOA applications - includes 
   </description>
 </category-def>
 
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.feature">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="FuseDevelopment" />
+  <category name="SOADev" />
+</feature>
+
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature">
   <category name="FuseDevelopment" />

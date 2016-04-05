@@ -22,7 +22,7 @@ Tools related to integrating and developing software components that work with A
 
 <!-- JBTIS-355: container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.fuse.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature">
