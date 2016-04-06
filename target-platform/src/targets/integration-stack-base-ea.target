@@ -9,6 +9,17 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
+    <!-- BPEL -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.5.Finala/"/>
+    </location>
+
     <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.servicemix.bundles.aopalliance" version="1.0.0.3"/>
@@ -104,6 +115,18 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/mars/20160217-1705-2.RC4/"/>
     </location>
 
+    <!-- TM and RSE are in Luna site but this way we get sources too -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/4.0.0.RC4/"/>
+      <unit id="org.eclipse.rse.feature.group" version="3.7.0.201505221634"/>
+      <unit id="org.eclipse.rse.core.feature.group" version="3.7.0.201505221634"/>
+      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201505221634"/>
+      <unit id="org.eclipse.rse.terminals.feature.group" version="3.8.0.201505221634"/>
+      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.0.201505221634"/>
+      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201505221634"/>
+      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201505221634"/>
+    </location>
+    
     <!-- TEMPORARY - remove when Eclipse Neon arrives - ref JBTIS-467 -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
@@ -242,6 +265,33 @@
       <unit id="org.apache.directory.studio.slf4j-eclipselog" version="2.0.0.v20150618"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/apache-directory/2.0.0-r1685424-SNAPSHOT/studio"/>
     </location>
+
+   <!-- JBoss Tools Core Tests -->
+   <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+
+      <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
+      <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
+      <!-- <unit id="org.jboss.tools.test.feature.feature.group" version="3.6.0.Final-v20150924-2213-B38"/> -->
+      <unit id="org.jboss.tools.tests" version="3.6.1.Final-v20160401-0436-B108"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.1.1.Final-v20160401-1549-B112"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.7.1.Final-v20160401-0436-B108"/>
+      <unit id="org.jboss.tools.common.test" version="3.7.1.Final-v20160401-0436-B108"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.7.1.Final-v20160401-1549-B112"/>
+
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/coretests/4.3.1.Beta2/"/>  -->
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.1.CR1a/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2015-07-14_18-48-51-B4500/all/repo/"/> -->
+   </location>
+
+   <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.jboss.tools.common" version="3.7.1.Final-v20160401-0436-B108"/>
+
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.1.Beta2"/> -->
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.1.CR1a/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.site_4.3.mars/2015-12-10_09-44-25-B172/all/repo/"/> -->
+   </location>
 
   </locations>
 </target>
