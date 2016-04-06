@@ -112,7 +112,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 		]]>
 		</script>
 
-		<mkdir dir="${project.build.directory}/discovery-site/"/>
+		<mkdir dir="${project.build.directory}/${DISCOVERY_SITE}/"/>
 
     <for list="${COMPOSITE_URLS}" param="cURL" delimiter=", 
 ">
@@ -126,14 +126,14 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 			<param name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
 			<param name="compositeType" value="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository"/>
 			<param name="compositeClass" value="compositeMetadataRepository"/>
-			<param name="compositeFile" value="${project.build.directory}/discovery-site/compositeContent.xml"/>
+			<param name="compositeFile" value="${project.build.directory}/${DISCOVERY_SITE}/compositeContent.xml"/>
 		</antcall>
 		<antcall target="generate.composite.xml.file">
 			<param name="compositeName" value="${compositeName}"/>
 			<param name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
 			<param name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
 			<param name="compositeClass" value="compositeArtifactRepository"/>
-			<param name="compositeFile" value="${project.build.directory}/discovery-site/compositeArtifacts.xml"/>
+			<param name="compositeFile" value="${project.build.directory}/${DISCOVERY_SITE}/compositeArtifacts.xml"/>
 		</antcall>
 	</target>
 
@@ -144,7 +144,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 		<property name="COMPOSITE_URLS" value="http://1,http://2,http://3,http://4"/>
 		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
 		<property name="compositeClass" value="compositeArtifactRepository"/>
-		<property name="compositeFile" value="${project.build.directory}/discovery-site/compositeArtifacts.xml"/>
+		<property name="compositeFile" value="${project.build.directory}/${DISCOVERY_SITE}/compositeArtifacts.xml"/>
 
     <echo file="${compositeFile}">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
 &lt;?${compositeClass} version='1.0.0'?&gt;
@@ -221,16 +221,16 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
     <if><not><equals arg1="${central.discovery.is.jar}" arg2="" trim="true" /></not><then>
 	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_ID}" 
 		       regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
-	<mkdir dir="${project.build.directory}/discovery-site/plugins"/>
+	<mkdir dir="${project.build.directory}/${DISCOVERY_SITE}/plugins"/>
 
 	<!-- Rename and copy the integration stack discovery jar. -->
 	<propertyregex override="true" property="central.discovery.is.jar.renamed" defaultvalue="${central.discovery.is.jar}" input="${central.discovery.is.jar}" 
 		       regexp="-[0-9.]+-SNAPSHOT" replace="_${VERSION}-${BUILD_TS}-B${BUILD_NUMBER}"/>
-	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/discovery-site/plugins/${central.discovery.is.jar.renamed}"/>
-	<echo>Generating ${project.build.directory}/discovery-site/${PREFIX}-directory.xml using IS discovery jar: ${project.build.directory}/discovery-site/plugins/${central.discovery.is.jar.renamed}</echo>
+	<copy file="${central.discovery.is.path}" tofile="${project.build.directory}/${DISCOVERY_SITE}/plugins/${central.discovery.is.jar.renamed}"/>
+	<echo>Generating ${project.build.directory}/${DISCOVERY_SITE}/${PREFIX}-directory.xml using IS discovery jar: ${project.build.directory}/${DISCOVERY_SITE}/plugins/${central.discovery.is.jar.renamed}</echo>
 
 	<!-- Start the creation of the Integration Stack directory XML file. (e.g. devstudio-integration-stack-directory.xml) -->
-	<echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
+	<echo file="${project.build.directory}/${DISCOVERY_SITE}/${PREFIX}-directory.xml">&lt;?xml version='1.0' encoding='UTF-8'?>
 &lt;directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
 </echo>
 
@@ -246,7 +246,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
         </then></if>
 
 	<!-- Complete the creation of the Integration Stack directory XML file. -->
-	<echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml" append="true">&lt;entry url="plugins/${central.discovery.is.jar.renamed}" permitCategories="true"/>
+	<echo file="${project.build.directory}/${DISCOVERY_SITE}/${PREFIX}-directory.xml" append="true">&lt;entry url="plugins/${central.discovery.is.jar.renamed}" permitCategories="true"/>
 &lt;/directory>
 </echo>
     </then></if>
@@ -269,7 +269,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 				   input="${UPSTREAM_DIRECTORY_XML}" 
 				   regexp="(jbosstools|jbdevstudio|devstudio)-directory.xml" 
 				   replace="${candidateURL}"/>
-		    <echo file="${project.build.directory}/discovery-site/${PREFIX}-directory.xml" append="true">&lt;entry url="${candidateURL}" permitCategories="true"/>
+		    <echo file="${project.build.directory}/${DISCOVERY_SITE}/${PREFIX}-directory.xml" append="true">&lt;entry url="${candidateURL}" permitCategories="true"/>
 </echo>
 		    <echo level="verbose">Revised core JBoss tools discovery jar: ${candidateURL}</echo>
       </then></if>

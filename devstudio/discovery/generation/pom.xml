@@ -44,6 +44,37 @@
 								  <!-- pass in this value from Maven - see ../../pom.xml -->
 								  <property name="COMPOSITE_URLS" value="${COMPOSITE_URLS}"/>
 								  <property name="UPSTREAM_DIRECTORY_XML" value="${UPSTREAM_DIRECTORY_XML}"/>
+                                                                  <property name="DISCOVERY_SITE" value="discovery-site"/>
+								</ant>
+				      </target>
+				    </configuration>
+				    <goals>
+				      <goal>run</goal>
+				    </goals>
+				  </execution>
+
+				  <execution>
+				    <id>install-master</id>
+				    <phase>install</phase>
+				    <configuration>
+				    <quiet>true</quiet>
+				      <target>
+								<!-- ANT script to capture the Integration Stack central discovery jar and directory XML content. -->
+								<ant antfile="../../../scripts/build.xml" target="basic.build" dir=".">
+								  <property name="PREFIX" value="${PREFIX}" />
+								  <property name="VERSION" value="${VERSION}" />
+								  <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
+								  <property name="BUILD_ID" value="${BUILD_ID}" />
+								  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
+								  <property name="BUILD_TS" value="${BUILD_TS}" />
+								  <property name="BUILD_FORM" value="production" />
+                                                                  <property name="BUILD_EA" value="false" />
+								  <property name="BUILD_TYPE" value="${BUILD_TYPE}" />
+								  <property name="TARGET_PLATFORM" value="${TARGET_PLATFORM}" />
+								  <!-- pass in this value from Maven - see ../../pom.xml -->
+								  <property name="COMPOSITE_URLS" value="${COMPOSITE_MASTER_URLS}"/>
+								  <property name="UPSTREAM_DIRECTORY_XML" value="${UPSTREAM_DIRECTORY_XML}"/>
+                                                                  <property name="DISCOVERY_SITE" value="discovery-site-master"/>
 								</ant>
 				      </target>
 				    </configuration>

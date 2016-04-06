@@ -45,8 +45,10 @@
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
       if all blank, no composite site will be generated 
     -->
-    <COMPOSITE_URLS><!-- JBT,JBT TP,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
-    <COMPOSITE_EA_URLS><!-- JBT,JBT TP,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_EA_URLS>
+    <COMPOSITE_URLS><!-- JBT,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
+    <COMPOSITE_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_EA_URLS>
+    <COMPOSITE_MASTER_URLS><!-- JBT,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_MASTER_URLS>
+    <COMPOSITE_MASTER_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_MASTER_EA_URLS>
     <COMPOSITE_SITE>file://${basedir}/</COMPOSITE_SITE>
     <update.site.description>-</update.site.description>
   </properties>
