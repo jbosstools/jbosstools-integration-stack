@@ -22,17 +22,14 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature">
-  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler">
-  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
-  <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
 
