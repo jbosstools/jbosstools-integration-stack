@@ -141,24 +141,24 @@
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <!-- <unit id="org.jboss.tools.test.feature.feature.group" version="3.6.0.Final-v20150924-2213-B38"/> -->
-      <unit id="org.jboss.tools.tests" version="3.6.1.Final-v20160401-0436-B108"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.1.1.Final-v20160401-1549-B112"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.7.1.Final-v20160401-0436-B108"/>
-      <unit id="org.jboss.tools.common.test" version="3.7.1.Final-v20160401-0436-B108"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.7.1.Final-v20160401-1549-B112"/>
+      <unit id="org.jboss.tools.tests" version="3.6.1.Final-v20160408-2358-B112"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.1.1.Final-v20160409-0826-B118"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.7.1.Final-v20160408-2358-B112"/>
+      <unit id="org.jboss.tools.common.test" version="3.7.1.Final-v20160408-2358-B112"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.7.1.Final-v20160409-0826-B118"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/coretests/4.3.1.Beta2/"/>  -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.1.CR1a/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/coretests/4.3.1.CR1c/"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2015-07-14_18-48-51-B4500/all/repo/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.common" version="3.7.1.Final-v20160401-0436-B108"/>
+      <unit id="org.jboss.tools.common" version="3.7.1.Final-v20160408-2358-B112"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.1.Beta2"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.1.CR1a/"/>
+      <repository location="http://download.jboss.org/jbosstools/mars/staging/updates/core/4.3.1.CR1c/"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/snapshots/builds/jbosstools-build-sites.aggregate.site_4.3.mars/2015-12-10_09-44-25-B172/all/repo/"/> -->
    </location>
 
