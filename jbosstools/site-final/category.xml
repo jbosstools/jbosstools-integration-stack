@@ -16,7 +16,7 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <category-def name="SOADev5" label="JBoss SOA 5.x Development">
   <description>
-SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.
+SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.  The features in this category are deprecated.
   </description>
 </category-def>
 

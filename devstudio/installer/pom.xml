@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>9.0.0.CR1a</version>
+    <version>9.0.0.GA</version>
   </parent>
   <artifactId>installer</artifactId>
   <packaging>pom</packaging>
@@ -29,14 +29,14 @@
 		<artifactItem>
 		  <groupId>com.jboss.jbds.integration-stack</groupId>
 		  <artifactId>site-ga</artifactId>
-		  <version>9.0.0.CR1a</version>
+		  <version>9.0.0.GA</version>
 		  <type>zip</type>
 		  <outputDirectory>target/integration-stack-ga</outputDirectory>
 		</artifactItem>
 		<artifactItem>
 		  <groupId>com.jboss.jbds.integration-stack</groupId>
 		  <artifactId>site-ea</artifactId>
-		  <version>9.0.0.CR1a</version>
+		  <version>9.0.0.GA</version>
 		  <type>zip</type>
 		  <outputDirectory>target/integration-stack-ea</outputDirectory>
 		</artifactItem>

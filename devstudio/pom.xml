@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>9.0.0.CR1a</version>
+  <version>9.0.0.GA</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -30,21 +30,21 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>9.0.0.CR1a</VERSION>
-    <IS_TP_VERSION>4.3.1.Final-SNAPSHOT</IS_TP_VERSION>
-    <JBDS_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/9.0.0.GA/jboss-devstudio-9.0.0.GA-v20151002-2235-B124-installer-standalone.jar</JBDS_INSTALLER>
+    <VERSION>9.0.0.GA</VERSION>
+    <IS_TP_VERSION>4.3.1.Final</IS_TP_VERSION>
+    <JBDS_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/9.1.0.GA/jboss-devstudio-9.1.0.GA-v20151002-2235-B124-installer-standalone.jar</JBDS_INSTALLER>
     <tycho-version>0.23.1</tycho-version>
-    <jboss-tycho-version>0.23.3-SNAPSHOT</jboss-tycho-version>
+    <jboss-tycho-version>0.23.3</jboss-tycho-version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.central/9.0.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.central/9.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.CR1/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.CR1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Final/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.0.Final/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
-    <JBDSIS_TP_VERSION>9.0.1.Final-SNAPSHOT</JBDSIS_TP_VERSION>
+    <JBDSIS_TP_VERSION>9.0.1.GA</JBDSIS_TP_VERSION>
     <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
     <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
 

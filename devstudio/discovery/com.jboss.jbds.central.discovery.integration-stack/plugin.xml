@@ -103,7 +103,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss SOA 5.x Development"
-       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3."
+       description="SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3. The features in this category are deprecated."
        id="com.jboss.jbds.soatooling.bundle.soap">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpel.apache.ode.runtime.feature"/>

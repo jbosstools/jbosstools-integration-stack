@@ -98,7 +98,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss ESB Tools"
-       description="JBoss ESB Tools, Runtime Detection"
+       description="JBoss ESB Tools, Runtime Detection.  This feature is deprecated."
        id="org.jboss.tools.esb.feature">
       <iu id="org.jboss.tools.esb.feature"/>
       <iu id="org.jboss.tools.runtime.esb.detector.feature"/>
@@ -198,7 +198,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Guvnor"
-       description="JBoss governance tools"
+       description="JBoss governance tools.  This feature is deprecated."
        id="org.guvnor.tools.feature">
       <iu id="org.guvnor.tools.feature"/>
       <icon
