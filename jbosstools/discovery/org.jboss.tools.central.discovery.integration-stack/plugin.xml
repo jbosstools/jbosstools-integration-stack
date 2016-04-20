@@ -44,7 +44,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Business Process and Rules Development"
-       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor."
+       description="Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools, KIE and Guvnor. Guvnor is deprecated."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
       <iu id="org.eclipse.bpmn2.feature"/>
@@ -97,7 +97,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss ESB Tools"
+       name="JBoss ESB Tools (Deprecated)"
        description="JBoss ESB Tools, Runtime Detection.  This feature is deprecated."
        id="org.jboss.tools.esb.feature">
       <iu id="org.jboss.tools.esb.feature"/>
@@ -197,7 +197,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Guvnor"
+       name="JBoss Guvnor (Deprecated)"
        description="JBoss governance tools.  This feature is deprecated."
        id="org.guvnor.tools.feature">
       <iu id="org.guvnor.tools.feature"/>
@@ -228,7 +228,6 @@
 	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-
     
   </extension>
 </plugin>

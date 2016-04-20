@@ -4,7 +4,7 @@
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
-Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM6, Drools and Guvnor
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM6, Drools and Guvnor.  Guvnor is deprecated.
   </description>
 </category-def>
 
@@ -14,9 +14,9 @@ Tools related to the development of Integration and SOA applications - includes 
   </description>
 </category-def>
 
-<category-def name="SOADev5" label="JBoss SOA 5.x Development">
+<category-def name="SOADev5" label="JBoss SOA 5.x Development (Deprecated)">
   <description>
-SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB and jBPM 3.  The features in this category are deprecated.
+SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB, Guvnor and jBPM 3.   ESB, Guvnor and jBPM 3 are deprecated.
   </description>
 </category-def>
 
@@ -52,7 +52,6 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB an
 
 <feature id="org.guvnor.tools.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
   <category name="SOADev5" />
 </feature>
 
