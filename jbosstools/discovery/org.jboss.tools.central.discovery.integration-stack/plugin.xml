@@ -117,7 +117,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Tools Runtime Detection"
+       name="JBoss Tools Runtime Detection (Deprecated)"
        description="JBoss Tools Runtime Detection for jBPM, Drools and ESB"
        id="org.jboss.runtime.drools.detector.feature">
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
