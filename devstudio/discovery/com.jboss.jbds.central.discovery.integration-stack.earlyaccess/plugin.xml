@@ -10,8 +10,67 @@
        name="JBoss Developer Studio Integration Stack Early Access"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-bpr" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.extras-bpel-examples" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa" /> 
     </connectorCategory>
+
+    <!-- JBoss Business Process and Rules Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-bpr"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss Business Process and Rules Development"
+       description="Tools related to business processes and rules development support for BPEL, BPMN2, Drools, jBPM6 and KIE."
+       id="jboss.integration-stack.bundle.bpr">
+      <iu id="org.jboss.tools.bpel.feature"/>
+      <iu id="org.eclipse.bpmn2.feature"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.drools.eclipse.feature"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
+      <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Integration and SOA Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-soa"
+       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
+       name="JBoss Integration and SOA Development"
+       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, jBPM6 and KIE."
+       id="jboss.integration-stack.bundle.soa">
+      <iu id="org.eclipse.bpmn2.feature"/>
+      <iu id="org.eclipse.bpmn2.modeler"/>
+      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+      <iu id="org.jbpm.eclipse.feature"/>
+      <iu id="org.kie.eclipse.feature"/>
+      <iu id="org.kie.eclipse.navigator.feature"/>
+
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
 
     <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor

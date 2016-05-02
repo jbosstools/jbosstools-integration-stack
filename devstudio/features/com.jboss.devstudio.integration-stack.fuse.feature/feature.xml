@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="com.jboss.devstudio.integration-stack.fuse.feature" label="%featureName" version="9.0.1.qualifier" provider-name="%providerName">
+<feature id="com.jboss.devstudio.integration-stack.fuse.feature" label="%featureName" version="10.0.0.qualifier" provider-name="%providerName">
   <description url="https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Developer_Studio/">%description</description>
   <copyright>%copyright</copyright>
   <license url="%licenseURL">%license</license>

@@ -5,12 +5,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>discovery</artifactId>
-  <version>4.3.1-SNAPSHOT</version>
+  <version>4.4.0-SNAPSHOT</version>
 
   <parent>
     <groupId>org.jboss.tools.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>4.3.1-SNAPSHOT</version>
+    <version>4.4.0-SNAPSHOT</version>
   </parent>
 
   <name>JBoss Tools Integration Stack Discovery</name>
@@ -24,7 +24,7 @@
     community JBoss tools integration stack components.
 
     i.e.
-    mvn clean install -DPREFIX=jbosstools-integration-stack -DTARGET_PLATFORM=mars -DCOMPOSITE_URLS=... -DCOMPOSITE_EA_URLS=...
+    mvn clean install -DPREFIX=jbosstools-integration-stack -DCOMPOSITE_URLS=... -DCOMPOSITE_EA_URLS=...
   </description>
 
   <modules>

@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.3.1-SNAPSHOT</version>
+  <version>4.4.0-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -20,7 +20,7 @@
       mvn clean install
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.3.0.Final
+      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.4.0.Alpha1-SNAPSHOT
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -28,13 +28,13 @@
     <BUILD_TS>v20150101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
-    <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>4.3.1-SNAPSHOT</VERSION>
-    <IS_TP_VERSION>4.3.1.Final</IS_TP_VERSION>
+    <TARGET_PLATFORM>neon</TARGET_PLATFORM>
+    <VERSION>4.4.0-SNAPSHOT</VERSION>
+    <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
     <tycho-version>0.23.1</tycho-version>
-    <jboss-tycho-version>0.23.1</jboss-tycho-version>
+    <jboss-tycho-version>0.23.3</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>

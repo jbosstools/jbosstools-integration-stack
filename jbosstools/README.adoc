@@ -21,5 +21,9 @@
 
 # To build referencing your own JBTIS early access target platform, build ../target-platform first, then:
 
-    mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.3.0.Alpha2 \
-        -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install
+mvn -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site-final/target/repository \
+    -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository \
+    -Dtargetplatform.url=file://`pwd`/../target-platform/target/target-platform.target.repo \
+    -Dtargetplatform.ea.url=file://`pwd`/../target-platform/target/target-platform-ea.target.repo/ \
+    -DIS_TP_VERSION=4.3.1.Final \
+    clean install -Pbuild_installer

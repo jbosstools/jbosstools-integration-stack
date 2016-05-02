@@ -2,6 +2,18 @@
 <site>
 <description>JBoss Tools Integration Stack Early Access Eclipse Updates</description>
 
+<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
+  <description>
+Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM6 and Drools.
+  </description>
+</category-def>
+
+<category-def name="SOADev" label="JBoss Integration and SOA Development">
+  <description>
+Tools related to the development of Integration and SOA applications - includes support for BRMS, Fuse Tooling and Switchyard.
+  </description>
+</category-def>
+
 <category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
@@ -14,11 +26,11 @@ Tools related to integrating and developing software components that work with A
   </description>
 </category-def>
 
-<category-def name="SOADev" label="JBoss Integration and SOA Development">
-  <description>
-Tools related to the development of Integration and SOA applications - includes support for Fuse Tooling, and Switchyard.
-  </description>
-</category-def>
+<!-- bpel -->
+<feature id="org.jboss.tools.bpel.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature">
@@ -30,6 +42,32 @@ Tools related to the development of Integration and SOA applications - includes 
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="SOADev" />
+</feature>
+
+<!-- drools/jBPM6 -->
+<feature id="org.drools.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jbpm.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.kie.eclipse.navigator.feature">
+  <category name="BusinessLogic" />
+  <category name="SOADev" />
+</feature>
+
+<feature id="org.jboss.tools.runtime.drools.detector.feature">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
@@ -104,6 +142,26 @@ Tools related to the development of Integration and SOA applications - includes 
 <!-- ####### -->
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
+
+<!-- bpel -->
+<feature id="org.eclipse.bpel.feature.source"/>
+<feature id="org.eclipse.bpel.common.feature.source"/>
+<feature id="org.eclipse.bpel.apache.ode.runtime.feature.source"/>
+<feature id="org.jboss.tools.bpel.feature.source"/>
+
+<!-- bpmn2 -->
+<feature id="org.eclipse.bpmn2.feature.source"/>
+<feature id="org.eclipse.bpmn2.modeler.examples.source"/>
+<feature id="org.eclipse.bpmn2.modeler.runtime.jboss.source"/>
+<feature id="org.eclipse.bpmn2.modeler.source"/>
+
+<!-- drools/jbpm6 -->
+<feature id="org.drools.eclipse.feature.source"/>
+<feature id="org.guvnor.tools.feature.source"/>
+<feature id="org.jbpm.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.feature.source"/>
+<feature id="org.kie.eclipse.navigator.feature.source"/>
+<feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>
 
 <!-- fuse tooling -->
 <feature id="org.fusesource.ide.camel.editor.feature.source"/>
