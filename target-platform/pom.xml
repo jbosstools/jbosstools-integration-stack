@@ -40,6 +40,20 @@
     <JBTCoreTPVersion>4.60.0.Alpha1-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
+  <!-- TEMPORARY: JBIDE-22248 and rt/Ticket/Display.html?id=401756 -->
+  <distributionManagement>
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <url>https://origin-repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshots Repository</name>
+      <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
   <reporting>
     <plugins>
       <plugin>
