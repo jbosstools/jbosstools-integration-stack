@@ -26,6 +26,5 @@
     <import feature="org.guvnor.tools.feature"/>
     <import feature="org.jbpm.eclipse.feature"/>
     <import feature="org.jboss.tools.runtime.drools.detector.feature"/>
-    <import feature="org.jboss.tools.runtime.jbpm.detector.feature"/>
   </requires>
 </feature>

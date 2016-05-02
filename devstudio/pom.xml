@@ -32,8 +32,8 @@
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>10.0.0-SNAPSHOT</VERSION>
     <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
-    <JBDS_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</JBDS_INSTALLER>
-    <tycho-version>0.23.1</tycho-version>
+    <JBDS_INSTALLER>https://devstudio.redhat.com/10.0/staging/builds/installer/devstudio-10.0.0.Alpha1-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-10.0.0.Alpha1-v20160414-0124-B497-installer-standalone.jar</JBDS_INSTALLER>
+    <tycho-version>0.24.0</tycho-version>
     <jboss-tycho-version>0.23.3</jboss-tycho-version>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -46,7 +46,7 @@
     <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
     <JBDSIS_TP_VERSION>10.0.0.Alpha1-SNAPSHOT</JBDSIS_TP_VERSION>
     <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
-    <JBDSIS_EA_TP_SITE>${JBDSIS_TP_SITE}/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
+    <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
 
     <!-- Must pass this in to define the URLs to use to generate the discovery site's composite*.xml files;  if blank no composite site will be generated  -->
     <COMPOSITE_URLS><!-- JBT,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
@@ -63,7 +63,7 @@
   </properties>
 
   <modules>
-    <module>site-ga</module>
+    <!-- <module>site-ga</module> nothing yet -->
     <module>site-ea</module>
     <module>discovery</module>
     <module>features</module>
@@ -174,12 +174,14 @@
       <url>${UPSTREAM_EXTRAS_SITE}</url>
     </repository>
 
+    <!-- No released components yet
     <repository>
       <id>jbtis-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_SITE}</url>
     </repository>
-
+    -->
+    
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>

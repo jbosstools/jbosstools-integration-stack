@@ -116,18 +116,18 @@
     <!-- Birt Report - Teiid -->
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.poi" version="3.9.0.v201405241750"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.5.0.v201510231925"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.5.0.v201510231925"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.6.0.v201602022206"/>
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
-      <unit id="org.eclipse.birt.core" version="4.5.0.v201510231925"/>
+      <unit id="org.eclipse.birt.core" version="4.6.0.v201602022206"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.5.0.v201510231925/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.6.0.v201602022206/"/>
     </location>
 
     <!-- TM and RSE are in Luna site but this way we get sources too -->
