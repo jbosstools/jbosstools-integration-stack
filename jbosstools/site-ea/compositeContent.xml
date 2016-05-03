@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.4.Final_1.2.1.Final_mars/"/>
 
     <!-- DROOLS/JBPM6 -->
-    <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/drools/6.4.0.Final/"/>
+    <child location="http://downloads.jboss.org/jbpm/release/6.4.1.Final/updatesite/"/>
 
     <!-- FUSE TOOLING -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta2/all/repo/"/>
