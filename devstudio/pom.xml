@@ -6,7 +6,7 @@
 
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>9.0.1-SNAPSHOT</version>
+  <version>9.0.0-SNAPSHOT</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -30,7 +30,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>9.0.1-SNAPSHOT</VERSION>
+    <VERSION>9.0.0-SNAPSHOT</VERSION>
     <IS_TP_VERSION>4.3.1.Final</IS_TP_VERSION>
     <JBDS_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</JBDS_INSTALLER>
     <tycho-version>0.23.1</tycho-version>
