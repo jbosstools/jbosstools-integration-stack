@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="com.jboss.devstudio.integration-stack.bpr.feature" label="%featureName" version="9.0.0.qualifier" provider-name="%providerName" plugin="com.jboss.devstudio.integration-stack">
+<feature
+    id="com.jboss.devstudio.integration-stack.bpr.feature"
+    label="%featureName" version="9.0.1.qualifier"
+    provider-name="%providerName"
+    license-feature="org.jboss.tools.foundation.license.feature"
+    license-feature-version="0.0.0"
+    plugin="com.jboss.devstudio.integration-stack">
+  
   <description url="https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Developer_Studio/">%description</description>
   <copyright>%copyright</copyright>
   <license url="%licenseURL">%license</license>
@@ -25,6 +32,8 @@
     <import feature="org.drools.eclipse.feature"/>
     <import feature="org.guvnor.tools.feature"/>
     <import feature="org.jbpm.eclipse.feature"/>
+    <import feature="org.kie.eclipse.feature"/>
+    <import feature="org.kie.eclipse.navigator.feature"/>
     <import feature="org.jboss.tools.runtime.drools.detector.feature"/>
     <import feature="org.jboss.tools.runtime.jbpm.detector.feature"/>
   </requires>

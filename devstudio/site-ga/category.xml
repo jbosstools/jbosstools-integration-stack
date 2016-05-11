@@ -106,7 +106,8 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, Guvnor
 </feature>
 
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature">
-   <category name="SOADev5"/>
+  <category name="BusinessLogic" />
+  <category name="SOADev5"/>
 </feature>
 
 <!-- ####### -->
