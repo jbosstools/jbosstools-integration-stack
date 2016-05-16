@@ -61,6 +61,7 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
+    <skipTests>false</skipTests>
   </properties>
 
   <modules>
@@ -68,6 +69,7 @@
     <module>site-ea</module>
     <module>discovery</module>
     <module>features</module>
+    <module>tests</module>
   </modules>
 
   <profiles>   
