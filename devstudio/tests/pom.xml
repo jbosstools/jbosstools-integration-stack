@@ -24,6 +24,7 @@
          </activation>
 
          <modules>
+            <module>build-config</module>
             <module>com.jboss.jbds.integration-stack.tests.test</module>
          </modules>
       </profile>
