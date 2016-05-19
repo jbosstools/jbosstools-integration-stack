@@ -39,7 +39,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
-        <version>${tycho-version}</version>
+        <version>${tychoVersion}</version>
 
 	<configuration>
 	  <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
@@ -61,7 +61,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-packaging-plugin</artifactId>
-        <version>${tycho-version}</version>
+        <version>${tychoVersion}</version>
 
         <configuration>
           <format>'v'yyyyMMdd-HHmm'-LOCAL'</format>

@@ -17,15 +17,25 @@ import org.eclipse.equinox.p2.repository.metadata.IMetadataRepositoryManager;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 
+/**
+ * @author pleacu
+ *
+ */
 public class Activator extends Plugin {
    private static Activator plugin;
    private IProvisioningAgent agent;
    private ServiceReference<IProvisioningAgent> agentReference;
 
+ /**
+    * 
+    */
    public Activator()
    {
    }
 
+   /* (non-Javadoc)
+    * @see org.eclipse.core.runtime.Plugin#start(org.osgi.framework.BundleContext)
+    */
    public void start(BundleContext context)
       throws Exception
    {
@@ -33,6 +43,9 @@ public class Activator extends Plugin {
       plugin = this;
    }
 
+   /* (non-Javadoc)
+    * @see org.eclipse.core.runtime.Plugin#stop(org.osgi.framework.BundleContext)
+    */
    public void stop(BundleContext context)
       throws Exception
    {
@@ -44,11 +57,17 @@ public class Activator extends Plugin {
       super.stop( context );
    }
 
+   /**
+    * @return
+    */
    public static Activator getDefault()
    {
       return plugin;
    }
 
+   /**
+     * @return
+    */
    public synchronized IProvisioningAgent getProvisioningAgent()
    {
       if (agent == null) {
@@ -68,6 +87,9 @@ public class Activator extends Plugin {
       return agent;
    }
 
+   /**
+    * @return
+    */
    public static IMetadataRepositoryManager getRepositoryManager()
    {
        IProvisioningAgent agent = getDefault().getProvisioningAgent();

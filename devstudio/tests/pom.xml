@@ -5,10 +5,10 @@
    <parent>
       <groupId>com.jboss.jbds.integration-stack</groupId>
       <artifactId>parent</artifactId>
-      <version>9.0.1-SNAPSHOT</version>
+      <version>10.0.0-SNAPSHOT</version>
    </parent>
 
-   <version>9.0.1-SNAPSHOT</version>
+   <version>10.0.0-SNAPSHOT</version>
    <groupId>com.jboss.jbds.integration-stack</groupId>
    <artifactId>tests</artifactId>
    <name>Integration Stack Tests</name>
@@ -24,6 +24,7 @@
          </activation>
 
          <modules>
+            <module>build-config</module>
             <module>com.jboss.jbds.integration-stack.tests.test</module>
          </modules>
       </profile>

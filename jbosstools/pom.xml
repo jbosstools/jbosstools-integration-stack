@@ -31,8 +31,9 @@
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>4.4.0-SNAPSHOT</VERSION>
     <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
-    <tycho-version>0.24.0</tycho-version>
-    <jboss-tycho-version>0.23.3</jboss-tycho-version>
+    <tychoVersion>0.25.0</tychoVersion>
+    <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+    <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
@@ -159,7 +160,7 @@
       <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
         <artifactId>tycho-source-feature-plugin</artifactId>
-	<version>${tycho-version}</version>
+	<version>${tychoVersion}</version>
 	<executions>
           <execution>
             <id>source-feature</id>
@@ -174,7 +175,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-plugin</artifactId>
-	<version>${tycho-version}</version>
+	<version>${tychoVersion}</version>
 	<executions>
           <execution>
             <id>attached-p2-metadata</id>
@@ -189,7 +190,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-maven-plugin</artifactId>
-        <version>${tycho-version}</version>
+        <version>${tychoVersion}</version>
         <extensions>true</extensions>
       </plugin>
 

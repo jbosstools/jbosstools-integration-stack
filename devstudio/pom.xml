@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
 	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
 
+  <modelVersion>4.0.0</modelVersion>
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
   <version>10.0.0-SNAPSHOT</version>
@@ -32,17 +32,16 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>10.0.0-SNAPSHOT</VERSION>
+    <version>${VERSION}</version>
     <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
-    <JBDS_INSTALLER>https://devstudio.redhat.com/10.0/staging/builds/installer/devstudio-10.0.0.Alpha1-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-10.0.0.Alpha1-v20160414-0124-B497-installer-standalone.jar</JBDS_INSTALLER>
-    <tycho-version>0.24.0</tycho-version>
-    <jboss-tycho-version>0.23.3</jboss-tycho-version>
+    <JBDS_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</JBDS_INSTALLER>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.earlyaccess/9.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.Alpha1-SNAPSHOT/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>${COMPOSITE_SITE}/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.Alpha1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
     <JBDSIS_TP_VERSION>10.0.0.Alpha1-SNAPSHOT</JBDSIS_TP_VERSION>
@@ -56,12 +55,17 @@
     <COMPOSITE_MASTER_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_MASTER_EA_URLS>
 
     <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/9.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
-    <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat JBoss Developer Studio 10&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
     <skipTests>false</skipTests>
+    <tychoVersion>0.25.0</tychoVersion>
+    <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+    <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
+    <tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-integration-stack.git</tycho.scmUrl>    
+    <skipBaselineComparison>true</skipBaselineComparison>
   </properties>
 
   <modules>
@@ -123,6 +127,7 @@
 
     <profile>
       <id>build_installer</id>
+ 
       <activation>
         <property>
           <name>BUILD_INSTALLER</name>
@@ -149,7 +154,7 @@
           <plugin>
             <groupId>org.eclipse.tycho</groupId>
             <artifactId>tycho-packaging-plugin</artifactId>
-            <version>${tycho-version}</version>
+            <version>${tychoVersion}</version>
             <configuration>
               <format>'${BUILD_ALIAS}-v'yyyyMMdd-HHmm'-B${BUILD_NUMBER}'</format>
               <archiveSite>true</archiveSite>
@@ -162,6 +167,19 @@
   </profiles>
 
   <repositories>
+
+    <repository>
+      <id>jboss.public.repo</id>
+      <name>JBoss Public Repository</name>
+      <url>http://repository.jboss.org/nexus/content/repositories/public</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+
     <repository>
       <id>jboss-releases-repository</id>
       <name>JBoss Releases Repository</name>
@@ -181,14 +199,13 @@
       <url>${UPSTREAM_EXTRAS_SITE}</url>
     </repository>
 
-    <!-- No released components yet
+    <!-- not yet
     <repository>
       <id>jbtis-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_SITE}</url>
     </repository>
     -->
-    
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
@@ -233,14 +250,58 @@
       </snapshots>
     </pluginRepository>
 
+    <pluginRepository>
+      <id>jboss.public.repo</id>
+      <name>JBoss Public Repository</name>
+      <url>http://repository.jboss.org/nexus/content/repositories/public</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+
   </pluginRepositories>
 
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>2.17</version>
+        <configuration>
+            <configLocation>checkstyle/checkstyle.xml</configLocation>
+            <suppressionsLocation>checkstyle/suppressions.xml</suppressionsLocation>
+            <failOnError>true</failOnError>
+            <useFile/>
+        </configuration>
+        <dependencies>
+            <dependency>
+                <groupId>com.jboss.jbds.integration-stack.tests</groupId>
+                <artifactId>build-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>com.puppycrawl.tools</groupId>
+              <artifactId>checkstyle</artifactId>
+              <version>6.17</version>
+            </dependency>
+        </dependencies>
+        <executions>
+            <execution>
+                <id>check-style</id>
+                <phase>site</phase>
+                <goals>
+                    <goal>checkstyle</goal>
+                </goals>
+            </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-packaging-plugin</artifactId>
-        <version>${tycho-version}</version>
+        <version>${tychoVersion}</version>
         <configuration>
           <format>'${BUILD_ALIAS}-v'yyyyMMdd-HHmm</format>
           <archiveSite>true</archiveSite>
@@ -250,7 +311,7 @@
       <plugin>
         <groupId>org.eclipse.tycho.extras</groupId>
         <artifactId>tycho-source-feature-plugin</artifactId>
-	<version>${tycho-version}</version>
+	<version>${tychoVersion}</version>
 	<executions>
 	  <execution>
 	    <id>source-feature</id>
@@ -265,7 +326,7 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-p2-plugin</artifactId>
-	<version>${tycho-version}</version>
+	<version>${tychoVersion}</version>
 	<executions>
 	  <execution>
 	    <id>attached-p2-metadata</id>
@@ -280,14 +341,14 @@
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>tycho-maven-plugin</artifactId>
-        <version>${tycho-version}</version>
+        <version>${tychoVersion}</version>
         <extensions>true</extensions>
       </plugin>
 
       <plugin>
         <groupId>org.eclipse.tycho</groupId>
         <artifactId>target-platform-configuration</artifactId>
-        <version>${tycho-version}</version>
+        <version>${tychoVersion}</version>
 
 	<configuration>
           <environments>
@@ -319,6 +380,7 @@
           </environments>
         </configuration>
       </plugin>
+
     </plugins>
   </build>
 
