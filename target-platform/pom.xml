@@ -34,9 +34,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.23.1</tychoVersion>
+    <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jboss-tycho-version>0.23.1</jboss-tycho-version>
+    <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
     <JBTCoreTPVersion>4.60.0.Alpha1-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
@@ -85,7 +85,7 @@
       <plugin>
 	<groupId>org.jboss.tools.tycho-plugins</groupId>
 	<artifactId>target-platform-utils</artifactId>
-        <version>${jboss-tycho-version}</version>
+        <version>${jbossTychoPluginsVersion}</version>
 
 	<!-- Merge:
 	     1. released integration-stack specific target dependencies:   integration-stack-base.target
@@ -467,7 +467,7 @@
 	  <plugin>
 	    <groupId>org.jboss.tools.tycho-plugins</groupId>
 	    <artifactId>target-platform-utils</artifactId>
-            <version>${jboss-tycho-version}</version>
+            <version>${jbossTychoPluginsVersion}</version>
 
 	    <executions>
 
