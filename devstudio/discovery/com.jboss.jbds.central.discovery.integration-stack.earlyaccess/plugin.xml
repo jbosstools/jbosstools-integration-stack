@@ -9,80 +9,8 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Developer Studio Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
     </connectorCategory>
 
-    <!-- JBoss Data Virtualization Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds"
-       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss Data Virtualization Development"
-       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
-       id="jboss.integration-stack.bundle.ds">
-      <iu id="org.jboss.tools.modeshape.rest.feature"/>
-      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
-      <iu id="org.teiid.datatools.connectivity.feature"/>
-      <iu id="org.teiid.designer.feature"/>
-      <iu id="org.teiid.designer.runtime.feature"/>
-      <iu id="org.teiid.designer.teiid.client.feature"/>
-      <icon
-        image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-        url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Fuse Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
-       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss Fuse Development"
-       description="Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, SwitchYard."
-       id="jboss.integration-stack.bundle.fuse">
-       <iu id="org.eclipse.bpmn2.feature"/>
-       <iu id="org.eclipse.bpmn2.modeler"/>
-       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
-       <iu id="org.fusesource.ide.camel.editor.feature"/>
-       <iu id="org.fusesource.ide.core.feature"/>
-       <iu id="org.fusesource.ide.jmx.feature"/>
-       <iu id="org.fusesource.ide.server.extensions.feature"/>
-       <iu id="org.jboss.tools.fuse.transformation.feature"/>
-       <iu id="org.switchyard.tools.feature"/>
-       <iu id="org.switchyard.tools.bpel.feature"/>
-       <iu id="org.switchyard.tools.bpmn2.feature"/>
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://tools.jboss.org/features/apachecamel.html">
-       </overview>
-    </connectorDescriptor>
-
-  </extension>	
-
-  <extension point="org.jboss.tools.central.proxyWizard">
-    <proxyWizard
-       id="fuse.integration.wizard"
-       category="earlyaccess"
-       description="%fuse.integration.wizard.description"
-       label="Fuse Integration Project"
-       priority="3"
-       iconPath="images/fuse_integration_wizard.png"
-       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
-       requiredComponentIds="jboss.integration-stack.bundle.fuse">
-    </proxyWizard>
   </extension>	
 
 </plugin>

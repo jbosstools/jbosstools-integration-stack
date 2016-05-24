@@ -9,13 +9,67 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.dv" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.prod" /> 
     </connectorCategory>
 
-    <!-- JBoss Integration Stack Generic Connector -->
+    <!-- JBoss Data Virtualization Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Data Virtualization Development"
+       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
+       id="jboss.integration-stack.bundle.ds">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor> 
+
+    <!-- JBoss Fuse Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Fuse Development"
+       description="Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse, SwitchYard."
+       id="jboss.integration-stack.bundle.fuse">
+       <iu id="org.fusesource.ide.camel.editor.feature"/>
+       <iu id="org.fusesource.ide.core.feature"/>
+       <iu id="org.fusesource.ide.jmx.feature"/>
+       <iu id="org.fusesource.ide.server.extensions.feature"/>
+       <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <iu id="org.switchyard.tools.feature"/>
+       <iu id="org.switchyard.tools.bpel.feature"/>
+       <iu id="org.switchyard.tools.bpmn2.feature"/>
+       <icon
+          image32="images/jbosstools_icon32.png">
+       </icon>
+       <overview
+          url="http://devstudio.redhat.com/">
+       </overview>
+    </connectorDescriptor> 
+
+    <!-- JBoss Integration Stack Generic Connector
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.generic"
@@ -26,7 +80,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Tools Integration Stack Early Access Components"
        description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Tools 4.2.x."
-       id="jboss.integration-stack.generic.notavailable">  <!-- cannot use the fuse connector ID or we get a conflict when installing via wizard or drag-n-drop install -->
+       id="jboss.integration-stack.generic.notavailable">
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>
@@ -34,7 +88,7 @@
 	 url="http://www.jboss.org/tools/">
       </overview>
     </connectorDescriptor>
-
+    -->
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
@@ -229,5 +283,81 @@
       </overview>
     </connectorDescriptor>
     
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss ModeShape Tooling"
+       description="Resource (un)publishing to ModeShape repositories"
+       id="org.jboss.tools.modeshape.rest.feature">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <icon
+	 image32="images/jbds_modeshape_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss SwitchYard"
+       description="Your service delivery framework."
+       id="org.switchyard.tools.feature">
+      <iu id="org.switchyard.tools.feature"/>
+      <iu id="org.switchyard.tools.bpel.feature"/>
+      <iu id="org.switchyard.tools.bpmn2.feature"/>
+      <icon
+	 image32="images/jbds_switchyard_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Teiid Designer"
+       description="Create metadata models + VDBs"
+       id="org.teiid.designer.feature">
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
+      <icon
+	 image32="images/jbds_tdesigner_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+    
   </extension>
+
+  <extension point="org.jboss.tools.central.proxyWizard">
+    <proxyWizard
+       id="fuse.integration.wizard"
+       description="%fuse.integration.wizard.description"
+       label="Fuse Integration Project"
+       priority="3"
+       iconPath="images/fuse_integration_wizard.png"
+       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
+       requiredComponentIds="jboss.integration-stack.bundle.fuse">
+    </proxyWizard>
+  </extension>
+
 </plugin>
