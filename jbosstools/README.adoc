@@ -5,21 +5,18 @@
 
    - or -
 
-    mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/ -DTARGET_PLATFORM=mars -DIS_TP_VERSION=4.3.0.Alpha2 \
-        -DUPSTREAM_DISCOVERY_XML=http://download.jboss.org/jbosstools/mars/staging/updates/discovery.central/4.3.0.Alpha2/jbosstools-directory.xml \
-        -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.2.Final/jbtis/REPO \
-        -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO \
-        -DBUILD_ALIAS=${BUILD_ID}-B${BUILD_NUMBER} -DBUILD_TYPE=development \
-        -DUPDATE_SITE=http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/mars/integration-stack/aggregate/4.3.0.Alpha2 \
-        -DskipRevisionCheckWhenPublishing=true -DVERSION=4.2.1.Final -DBUILD_KIND=jbosstools \
-         clean install checkstyle:check -DBUILD_KIND=jbosstools -DBUILD_NUMBER=351 -DBUILD_ALIAS=2015-03-27_13-40-33-B351 -DBUILD_TYPE=development \
-        -DTARGET_PLATFORM=mars \
-        -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.0.Alpha2/,\
-                         http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha2, \
-                         http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/aggregate/4.3.0.Alpha2/earlyaccess,\
-                         http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/REPO,http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.0.Alpha2/jbtis/earlyaccess/REPO
+    mvn -DUPSTREAM_UPDATE_SITE=http://download.jboss.org/jbosstools/mars/stable/updates/ -DTARGET_PLATFORM=mars -DIS_TP_VERSION=4.3.1.Final \
+        -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/mars/stable/updates/discovery.earlyaccess/4.3.1.Final/jbosstools-directory.xml \
+        -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.1.Final/jbtis/REPO \
+        -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.1.Final/jbtis/earlyaccess/REPO \
+        -DBUILD_TYPE=development -DskipRevisionCheckWhenPublishing=true -DVERSION=4.2.1.Final -DBUILD_KIND=jbosstools \
+         clean install checkstyle:check -DBUILD_KIND=jbosstools -DTARGET_PLATFORM=mars \
+        -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/mars/stable/updates/,\
+	                 http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.1-SNAPSHOT,\
+			 http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.1.Final/jbtis/REPO
 
 # To build referencing your own JBTIS early access target platform, build ../target-platform first, then:
 
-    mvn -U -Dtycho.localArtifacts=ignore -DIS_TP_VERSION=4.3.0.Alpha2 \
-        -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo clean install
+    mvn -B -U -Dtargetplatform.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform.target.repo \
+        -Dtargetplatform.ea.url=file:///home/me/jbosstools-integration-stack/target-platform/target/target-platform-ea.target.repo \
+	 clean install
