@@ -33,6 +33,8 @@
   </parent>
 
   <properties>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1-SNAPSHOT/jbtis/REPO/</baseRepositoryUrl>
+    <baseRepositoryUrlEA>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1-SNAPSHOT/jbtis/earlyaccess/REPO/</baseRepositoryUrlEA>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
@@ -656,6 +658,67 @@
                </descriptors>
               <finalName>${project.artifactId}-${project.version}</finalName>
             </configuration>
+          </plugin>
+
+          <plugin>
+            <groupId>org.eclipse.tycho.extras</groupId>
+            <artifactId>tycho-eclipserun-plugin</artifactId>
+            <version>${tychoVersion}</version>
+            <configuration>
+              <repositories>
+                <repository>
+                  <id>p2diff</id>
+                  <layout>p2</layout>
+                  <url>http://download.jboss.org/jbosstools/updates/requirements/p2diff/20160508-2315/</url>
+                </repository>
+                <repository>
+                  <id>mars</id>
+                  <layout>p2</layout>
+                  <url>http://download.jboss.org/jbosstools/updates/requirements/mars/201509161958-SR1.RC4/</url>
+                </repository>
+              </repositories>
+
+              <dependencies>
+                <dependency>
+                  <type>eclipse-plugin</type>
+                  <artifactId>org.eclipse.equinox.p2.example.p2diff</artifactId>
+                  <version>0.0.0</version>
+                </dependency>
+                <dependency>
+                  <type>eclipse-feature</type>
+                  <artifactId>org.eclipse.rcp</artifactId>
+                  <version>0.0.0</version>
+                </dependency>
+                <dependency>
+                  <type>eclipse-plugin</type>
+                  <artifactId>org.eclipse.equinox.p2.transport.ecf</artifactId>
+                  <version>0.0.0</version>
+                </dependency>
+              </dependencies>
+              <skip>${p2diff.skip}</skip>
+            </configuration>
+            <executions>
+              <execution>
+                <id>generate-p2diff</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>eclipse-run</goal>
+                </goals>
+                <configuration>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}.p2diff ${baseRepositoryUrl} file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
+                </configuration>
+              </execution>
+              <execution>
+                <id>generate-p2diff-ea</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>eclipse-run</goal>
+                </goals>
+                <configuration>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}-ea.p2diff ${baseRepositoryUrlEA} file:${project.build.directory}/${project.artifactId}-ea.target.repo</appArgLine>
+                </configuration>
+              </execution>
+            </executions>
           </plugin>
 	</plugins>
 
