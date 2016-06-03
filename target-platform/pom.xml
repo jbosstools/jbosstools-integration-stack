@@ -39,7 +39,7 @@
     <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.60.0.Alpha1-SNAPSHOT</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.60.0.Final-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
   <!-- TEMPORARY: JBIDE-22248 and rt/Ticket/Display.html?id=401756 -->
