@@ -8,7 +8,7 @@
 	},{
 		"id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
 		"label":"JBoss Business Process and Rules Development",
-		"description":"Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor.  Guvnor is deprecated.",
+		"description":"Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM6 and Drools.",
 		"selected":"false",
 		"path":"jbdsis"
 	},{

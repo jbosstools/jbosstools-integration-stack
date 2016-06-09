@@ -24,7 +24,6 @@
 	<import feature="org.eclipse.bpmn2.modeler"/>
 	<import feature="org.eclipse.bpmn2.modeler.runtime.jboss"/>
 	<import feature="org.drools.eclipse.feature"/>
-	<import feature="org.guvnor.tools.feature"/>
         <import feature="org.kie.eclipse.feature"/>
         <import feature="org.kie.eclipse.navigator.feature"/>
 	<import feature="org.jboss.tools.runtime.drools.detector.feature"/>
