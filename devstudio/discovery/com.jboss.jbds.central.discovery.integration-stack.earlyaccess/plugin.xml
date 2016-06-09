@@ -118,9 +118,11 @@
        <iu id="org.fusesource.ide.jmx.feature"/>
        <iu id="org.fusesource.ide.server.extensions.feature"/>
        <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <!-- JBTIS-730
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
        <iu id="org.switchyard.tools.bpmn2.feature"/>
+       -->
        <icon
           image32="images/jbds_icon32.png">
        </icon>

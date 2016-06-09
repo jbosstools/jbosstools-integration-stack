@@ -106,7 +106,7 @@ Tools related to integrating and developing software components that work with A
   <category name="DataVirtualization" />
 </feature>
 
-<!-- switchyard -->
+<!-- switchyard JBTIS-730
 <feature id="org.switchyard.tools.feature">
   <category name="FuseDevelopment" />
   <category name="SOADev" />
@@ -121,7 +121,7 @@ Tools related to integrating and developing software components that work with A
   <category name="FuseDevelopment" />
   <category name="SOADev" />
 </feature>
-
+-->
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
@@ -157,7 +157,6 @@ Tools related to integrating and developing software components that work with A
 
 <!-- drools/jbpm6 -->
 <feature id="org.drools.eclipse.feature.source"/>
-<feature id="org.guvnor.tools.feature.source"/>
 <feature id="org.jbpm.eclipse.feature.source"/>
 <feature id="org.kie.eclipse.feature.source"/>
 <feature id="org.kie.eclipse.navigator.feature.source"/>
@@ -174,11 +173,11 @@ Tools related to integrating and developing software components that work with A
 <feature id="org.jboss.tools.modeshape.rest.feature.source"/>
 <feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
 
-<!-- switchyard -->
+<!-- switchyard JBTIS-730
 <feature id="org.switchyard.tools.bpel.feature.source"/>
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
 <feature id="org.switchyard.tools.feature.source"/>
-
+-->
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
 <feature id="org.teiid.designer.feature.source"/>
