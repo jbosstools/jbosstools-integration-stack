@@ -12,7 +12,7 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 		<fileSet>
-			<directory>${project.build.directory}/installer</directory>
+			<directory>${project.build.directory}/installer/</directory>
 			<excludes>
 				<exclude>res/AdditionalFeaturesSpec.json</exclude>
 			</excludes>
