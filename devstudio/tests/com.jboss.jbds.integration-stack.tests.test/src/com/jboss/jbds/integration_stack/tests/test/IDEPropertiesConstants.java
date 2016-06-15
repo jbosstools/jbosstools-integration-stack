@@ -35,6 +35,7 @@ public interface IDEPropertiesConstants {
          add("jboss.discovery.site.integration-stack.url");
          add("jboss.discovery.earlyaccess.site.integration-stack.url");
          add("jboss.discovery.site.integration-stack-sap.url");
+         add("jboss.discovery.site.integration-stack-sap.feature");
       }
    };
 
