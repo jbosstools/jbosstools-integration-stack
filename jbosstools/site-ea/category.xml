@@ -34,14 +34,17 @@ Tools related to integrating and developing software components that work with A
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 

@@ -40,14 +40,17 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
+  <category name="BusinessLogic" />
   <category name="SOADev" />
 </feature>
 
