@@ -34,7 +34,7 @@
     <VERSION>10.0.0-SNAPSHOT</VERSION>
     <version>${VERSION}</version>
     <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
-    <JBDS_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</JBDS_INSTALLER>
+    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</DEVSTUDIO_INSTALLER>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.earlyaccess/9.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>

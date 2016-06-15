@@ -12,7 +12,7 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 		<fileSet>
-			<directory>${project.build.directory}/installer</directory>
+			<directory>${project.build.directory}/installer/</directory>
 			<excludes>
 				<exclude>res/AdditionalFeaturesSpec.json</exclude>
 			</excludes>
@@ -20,15 +20,15 @@
 		</fileSet>
 		<fileSet>
 			<directory>${project.build.directory}/integration-stack-ga</directory>
-			<outputDirectory>jbdsis/ga</outputDirectory>
+			<outputDirectory>devstudio-is/ga</outputDirectory>
 		</fileSet>
 		<fileSet>
 			<directory>${project.build.directory}/integration-stack-ea</directory>
-			<outputDirectory>jbdsis/ea</outputDirectory>
+			<outputDirectory>devstudio-is/ea</outputDirectory>
 		</fileSet>
 		<fileSet>
 			<directory>src/main/structure</directory>
-			<outputDirectory>jbdsis</outputDirectory>
+			<outputDirectory>devstudio-is</outputDirectory>
 			<includes>
 				<include>*.xml</include>
 			</includes>
