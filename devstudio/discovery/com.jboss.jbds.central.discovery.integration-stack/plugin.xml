@@ -11,7 +11,7 @@
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack..bundle-ds" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa-legacy" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
@@ -69,8 +69,8 @@
 
     <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle-ds"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
