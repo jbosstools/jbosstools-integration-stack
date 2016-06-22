@@ -11,7 +11,7 @@
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack..bundle.dv" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.dv" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.prod" /> 
     </connectorCategory>
@@ -67,15 +67,15 @@
 
     <!-- JBoss Data Virtualization Development -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle.dv"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
-       id="jboss.integration-stack..bundle.ds">
+       id="jboss.integration-stack.bundle.ds">
       <iu id="org.jboss.tools.modeshape.rest.feature"/>
       <iu id="org.jboss.tools.modeshape.jcr.feature"/>
       <iu id="org.teiid.datatools.connectivity.feature"/>
@@ -256,8 +256,8 @@
     </connectorDescriptor>
     
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle.dv"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -276,8 +276,8 @@
     </connectorDescriptor>
 
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle.dv"
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
