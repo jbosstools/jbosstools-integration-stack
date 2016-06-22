@@ -11,6 +11,7 @@
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack..bundle.dv" /> 
       <group id="com.jboss.jbds.central.discovery.soatooling.emt" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.prod" /> 
     </connectorCategory>
@@ -56,6 +57,31 @@
       <iu id="org.kie.eclipse.feature"/>
       <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <icon
+	 image32="images/jbosstools_icon32.png">
+      </icon>
+      <overview
+	 url="http://www.jboss.org/tools/">
+      </overview>
+    </connectorDescriptor> 
+
+    <!-- JBoss Data Virtualization Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle.dv"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Data Virtualization Development"
+       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
+       id="jboss.integration-stack..bundle.ds">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
       <icon
 	 image32="images/jbosstools_icon32.png">
       </icon>
@@ -223,6 +249,48 @@
       <iu id="org.kie.eclipse.navigator.feature"/>
       <icon
 	 image32="images/jbds_drools_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+    
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle.dv"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss ModeShape Tooling"
+       description="Resource (un)publishing to ModeShape repositories"
+       id="org.jboss.tools.modeshape.rest.feature">
+      <iu id="org.jboss.tools.modeshape.rest.feature"/>
+      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
+      <icon
+	 image32="images/jbds_modeshape_32.png">
+      </icon>
+      <overview
+	 url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack..bundle" 
+       groupId="com.jboss.jbds.central.discovery.integration-stack..bundle.dv"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Teiid Designer"
+       description="Create metadata models + VDBs"
+       id="org.teiid.designer.feature">
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
+      <icon
+	 image32="images/jbds_tdesigner_32.png">
       </icon>
       <overview
 	 url="http://devstudio.redhat.com/">

@@ -10,34 +10,7 @@
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse" />
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv" /> 
     </connectorCategory>
-
-    <!-- JBoss Data Virtualization Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"
-       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss Data Virtualization Development"
-       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
-       id="jboss.integration-stack.ea.bundle.ds">
-      <iu id="org.jboss.tools.modeshape.rest.feature"/>
-      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
-      <iu id="org.teiid.datatools.connectivity.feature"/>
-      <iu id="org.teiid.designer.feature"/>
-      <iu id="org.teiid.designer.runtime.feature"/>
-      <iu id="org.teiid.designer.teiid.client.feature"/>
-      <icon
-	 image32="images/jbosstools_icon32.png">
-      </icon>
-      <overview
-	 url="http://www.jboss.org/tools/">
-      </overview>
-    </connectorDescriptor> 
 
     <!-- JBoss Fuse Development -->
     <connectorDescriptor
@@ -69,27 +42,6 @@
 
     <!-- JBTIS single component sites -->
     <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"
-       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss ModeShape Tooling"
-       description="Resource (un)publishing to ModeShape repositories"
-       id="org.jboss.tools.modeshape.rest.feature">
-      <iu id="org.jboss.tools.modeshape.rest.feature"/>
-      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
-      <icon
-	 image32="images/jbds_modeshape_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
        certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
@@ -111,29 +63,6 @@
       </overview>
     </connectorDescriptor>
 
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"
-       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
-       name="JBoss Teiid Designer"
-       description="Create metadata models + VDBs"
-       id="org.teiid.designer.feature">
-      <iu id="org.teiid.datatools.connectivity.feature"/>
-      <iu id="org.teiid.designer.feature"/>
-      <iu id="org.teiid.designer.runtime.feature"/>
-      <iu id="org.teiid.designer.teiid.client.feature"/>
-      <icon
-	 image32="images/jbds_tdesigner_32.png">
-      </icon>
-      <overview
-	 url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-    
   </extension>
 
   <extension point="org.jboss.tools.central.proxyWizard">

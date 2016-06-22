@@ -8,6 +8,12 @@ Tools related to business processes and rules development - includes support for
   </description>
 </category-def>
 
+<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
+  <description>
+Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
+  </description>
+</category-def>
+
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
 Tools related to the development of Integration and SOA applications - includes support for BRMS (see Early Access for Fuse Tooling, and Switchyard).
@@ -88,6 +94,32 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB, G
   <category name="SOADev5" />
 </feature>
 
+<!-- modeshape -->
+<feature id="org.jboss.tools.modeshape.rest.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.jboss.tools.modeshape.jcr.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<!-- teiid designer -->
+<feature id="org.teiid.datatools.connectivity.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.runtime.feature">
+  <category name="DataVirtualization" />
+</feature>
+
+<feature id="org.teiid.designer.teiid.client.feature">
+  <category name="DataVirtualization" />
+</feature>
+
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
   <category name="BusinessLogic" />
@@ -135,6 +167,16 @@ SOA Tools related to version 5.x of the integration stack - BPEL, Drools, ESB, G
 <feature id="org.jboss.tools.jbpm.common.feature.source"/>
 <feature id="org.jboss.tools.jbpm3.feature.source"/>
 <feature id="org.jboss.tools.runtime.jbpm.detector.feature.source"/>
+
+<!-- modeshape -->
+<feature id="org.jboss.tools.modeshape.rest.feature.source"/>
+<feature id="org.jboss.tools.modeshape.jcr.feature.source"/>
+
+<!-- teiid designer -->
+<feature id="org.teiid.datatools.connectivity.feature.source"/>
+<feature id="org.teiid.designer.feature.source"/>
+<feature id="org.teiid.designer.runtime.feature.source"/>
+<feature id="org.teiid.designer.teiid.client.feature.source"/>
 
 <!-- runtime detectors -->
 <feature id="org.jboss.tools.runtime.drools.detector.feature.source"/>

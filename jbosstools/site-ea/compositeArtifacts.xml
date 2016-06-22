@@ -9,7 +9,7 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="5">
+  <children size="3">
 
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.2.4.Final_1.2.1.Final_mars/"/>
@@ -17,14 +17,8 @@
     <!-- FUSE TOOLING -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta2/all/repo/"/>
 
-    <!-- MODESHAPE -->
-    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/modeshape/3.8.0.Beta1/"/>
-
     <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/switchyard/2.1.0.Beta3/"/>
-
-    <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/teiiddesigner/10.0.0.Beta3/"/>
 
   </children>
 
