@@ -38,8 +38,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.60.0.Final-SNAPSHOT</JBTCoreTPVersion>
+    <jbossTychoPluginsVersion>0.25.1-SNAPSHOT</jbossTychoPluginsVersion>
+    <JBTCoreTPVersion>4.60.1.AM1-SNAPSHOT</JBTCoreTPVersion>
   </properties>
 
   <!-- TEMPORARY: JBIDE-22248 and rt/Ticket/Display.html?id=401756 -->
