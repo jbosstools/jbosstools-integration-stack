@@ -87,11 +87,9 @@
        <iu id="org.fusesource.ide.jmx.feature"/>
        <iu id="org.fusesource.ide.server.extensions.feature"/>
        <iu id="org.jboss.tools.fuse.transformation.feature"/>
-       <!-- JBTIS-730
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
        <iu id="org.switchyard.tools.bpmn2.feature"/>
-       -->
        <icon
           image32="images/jbosstools_icon32.png">
        </icon>
@@ -230,7 +228,7 @@
 	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
-<!-- JBTIS-730
+
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-fuse"
@@ -252,7 +250,7 @@
 	 url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
--->
+
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"
