@@ -73,7 +73,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Data Virtualization Development"
+       name="JBoss Data Virtualization Development  (ModeShape is deprecated)"
        description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
        id="jboss.integration-stack.bundle.ds">
       <iu id="org.jboss.tools.modeshape.rest.feature"/>
@@ -262,7 +262,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss ModeShape Tooling"
+       name="JBoss ModeShape Tooling (Deprecated)"
        description="Resource (un)publishing to ModeShape repositories"
        id="org.jboss.tools.modeshape.rest.feature">
       <iu id="org.jboss.tools.modeshape.rest.feature"/>

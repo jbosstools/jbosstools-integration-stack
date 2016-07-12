@@ -8,7 +8,7 @@ Tools related to business processes and rules development - includes support for
   </description>
 </category-def>
 
-<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
+<category-def name="DataVirtualization" label="JBoss Data Virtualization Development (ModeShape is Deprecated)">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.
   </description>
