@@ -14,7 +14,6 @@ The Integration Stack is an aggregation of Eclipse features and plugins comprise
 
 ### JBoss Data Virtualization Development
 
-* [Modeshape](http://tools.jboss.org/features/modeshape.html) - A distributed, hierarchical, transactional and consistent data store with support for queries, full-text search, events, versioning, references, and flexible and dynamic schemas. It is very fast, highly available, extremely scalable, and it is 100% open source.
 * [Teiid Designer](http://tools.jboss.org/features/teiiddesigner.html) - A visual tool that enables rapid, model-driven definition, integration, management and testing of data services without programming using the Teiid runtime framework.
 
 ### JBoss Fuse Development
@@ -26,11 +25,6 @@ The Integration Stack is an aggregation of Eclipse features and plugins comprise
 * All of the Business Process and Rules Development plugins, plus...
 * [Fuse Apache Camel Tooling](http://tools.jboss.org/features/apachecamel.html) - A graphical tool for integrating software components that works with Apache ServiceMix, Apache ActiveMQ, Apache Camel and the FuseSource distributions.
 * [SwitchYard](http://tools.jboss.org/features/switchyard.html) - A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
-
-### SOA 5.x Development
-
-* [JBoss ESB](http://www.jboss.org/jbossesb) - An enterprise service bus for connecting enterprise applications and services.
-* [jBPM3](http://docs.jboss.com/jbpm/v3.2/userguide/html_single/) - A flexible Business Process Management (BPM) Suite - JBoss Enterprise SOA Platform 5.3.x compatible version.
 
 ## Building the JBoss Tools Integration Stack Project
 

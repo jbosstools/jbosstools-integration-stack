@@ -34,10 +34,10 @@
     <VERSION>10.0.0-SNAPSHOT</VERSION>
     <version>${VERSION}</version>
     <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
-    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</DEVSTUDIO_INSTALLER>
+    <DEVSTUDIO_INSTALLER>https://devstudio.jboss.com/static/10.0/stable/builds/devstudio-10.0.0.GA-build-product/latest/all/devstudio-10.0.0.GA-v20160615-1853-B33-installer-standalone.jar</DEVSTUDIO_INSTALLER>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.earlyaccess/9.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/stable/updates/discovery.earlyaccess/10.0.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.Alpha1-SNAPSHOT/</COMPOSITE_SITE>
@@ -54,7 +54,7 @@
     <COMPOSITE_MASTER_URLS><!-- JBT,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_MASTER_URLS>
     <COMPOSITE_MASTER_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_MASTER_EA_URLS>
 
-    <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/9.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/10.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat JBoss Developer Studio 10&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->

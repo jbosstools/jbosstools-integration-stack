@@ -82,10 +82,8 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"
        name="JBoss Data Virtualization Development"
-       description="Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape."
+       description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."
        id="jboss.integration-stack.ea.bundle.ds">
-      <iu id="org.jboss.tools.modeshape.rest.feature"/>
-      <iu id="org.jboss.tools.modeshape.jcr.feature"/>
       <iu id="org.teiid.datatools.connectivity.feature"/>
       <iu id="org.teiid.designer.feature"/>
       <iu id="org.teiid.designer.runtime.feature"/>

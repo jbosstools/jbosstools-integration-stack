@@ -25,8 +25,6 @@
 
     <import feature="org.jboss.tools.central.feature"/> 
     <import feature="org.jboss.tools.project.examples.feature"/> 
-    <import feature="org.jboss.tools.modeshape.rest.feature"/>
-    <import feature="org.jboss.tools.modeshape.jcr.feature"/>
     <import feature="org.teiid.datatools.connectivity.feature"/>
     <import feature="org.teiid.designer.feature"/>
     <import feature="org.teiid.designer.runtime.feature"/>
