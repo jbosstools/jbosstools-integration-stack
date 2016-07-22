@@ -34,7 +34,7 @@
 								  <property name="PREFIX" value="${PREFIX}" />
 								  <property name="VERSION" value="${VERSION}" />
 								  <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
-								  <property name="BUILD_ID" value="${BUILD_ID}" />
+								  <property name="BUILD_TIMESTAMP" value="${BUILD_TIMESTAMP}" />
 								  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
 								  <property name="BUILD_TS" value="${BUILD_TS}" />
 								  <property name="BUILD_FORM" value="production" />
@@ -64,7 +64,7 @@
 								  <property name="PREFIX" value="${PREFIX}" />
 								  <property name="VERSION" value="${VERSION}" />
 								  <property name="BUILD_ALIAS" value="${BUILD_ALIAS}" />
-								  <property name="BUILD_ID" value="${BUILD_ID}" />
+								  <property name="BUILD_TIMESTAMP" value="${BUILD_TIMESTAMP}" />
 								  <property name="BUILD_NUMBER" value="${BUILD_NUMBER}" />
 								  <property name="BUILD_TS" value="${BUILD_TS}" />
 								  <property name="BUILD_FORM" value="production" />
