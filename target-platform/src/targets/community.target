@@ -10,14 +10,14 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.1.0.Final-v20160613-2000-B8"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.1.0.Final-v20160613-2000-B8"/>
-      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.0.Final-v20160613-2000-B8"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.1.1.v20160614-2133"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.1.1.v20160614-2134"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.1.v20160614-2134"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/development/updates/core/4.3.1.Beta2"/>  -->
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.0.Final-b/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.1.AM2/"/>
     </location>
 
   </locations>
