@@ -1,0 +1,9 @@
+[
+    {
+	"label":"JBoss Fuse Server",
+	"description":"Fuse Server/ Runtime",
+	"selected":"true",
+	"path":"devstudio-is/runtime/jboss-fuse-full-6.3.0.redhat-077.zip",
+	"size":"804978918"
+    }
+]

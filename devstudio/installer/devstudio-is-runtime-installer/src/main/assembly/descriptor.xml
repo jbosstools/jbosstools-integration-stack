@@ -1,0 +1,51 @@
+<assembly
+	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+	<!-- leave <id> blank so that the generated composite zip (targetplatform 
+		+ repo) will overwrite existing site-4.2.0-SNAPSHOT.zip instead of creating 
+		site-4.2.0-SNAPSHOT-<id>.zip -->
+	<id></id>
+	<formats>
+		<format>jar</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+        <!-- outputDirectory is the location within the assembled installer jar where the file set will appear.-->
+	<fileSets>
+		<fileSet>
+			<directory>${project.build.directory}/installer/</directory>
+			<excludes>
+				<exclude>res/AdditionalFeaturesSpec.json</exclude>
+				<exclude>res/AdditionalRuntimesSpec.json</exclude>
+			</excludes>
+			<outputDirectory>/</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/integration-stack-ga</directory>
+			<outputDirectory>devstudio-is/ga</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/integration-stack-ea</directory>
+			<outputDirectory>devstudio-is/ea</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/structure</directory>
+			<outputDirectory>devstudio-is</outputDirectory>
+			<includes>
+				<include>*.xml</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>src/main/resources</directory>
+			<outputDirectory>res</outputDirectory>
+			<includes>
+				<include>*.json</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/fuse-runtime</directory>
+			<outputDirectory>devstudio-is/runtime</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>

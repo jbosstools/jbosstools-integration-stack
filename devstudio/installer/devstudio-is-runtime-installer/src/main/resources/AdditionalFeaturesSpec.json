@@ -1,0 +1,27 @@
+[
+	{
+		"id":"com.jboss.devstudio.integration-stack.fuse.feature.feature.group",
+		"label":"JBoss Fuse Development",
+		"description":"Tools related to integrating software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.",
+		"selected":"true",
+		"path":"devstudio-is"
+	},{
+		"id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
+		"label":"JBoss Business Process and Rules Development",
+		"description":"Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor.  Guvnor is deprecated.",
+		"selected":"false",
+		"path":"devstudio-is"
+	},{
+		"id":"com.jboss.devstudio.integration-stack.ds.feature.feature.group",
+		"label":"JBoss Data Virtualization Development",
+		"description":"Tools related to data virtualization such as persistence and transformation - includes support for JCR CND Editor, Teiid Designer and Modeshape.",
+		"selected":"false",
+		"path":"devstudio-is"
+	},{
+		"id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
+		"label":"JBoss Integration and SOA Development",
+		"description":"Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, jBPM and Switchyard.",
+		"selected":"false",
+		"path":"devstudio-is"
+	}
+]

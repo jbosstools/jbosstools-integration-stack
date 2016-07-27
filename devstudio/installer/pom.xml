@@ -12,7 +12,7 @@
 
   <modules>
     <module>devstudio-is-installer</module>
-    <!-- <module>devstudio-runtime-installer</module> -->
+    <!-- <module>devstudio-is-runtime-installer</module>  -->
   </modules>
 
 </project>
