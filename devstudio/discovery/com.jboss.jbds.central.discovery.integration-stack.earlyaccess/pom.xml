@@ -12,7 +12,7 @@
     <version>10.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Early Access Discovery Plugins</name>
+  <name>Devstudio Integration Stack Early Access Discovery Plugins</name>
 
   <packaging>eclipse-plugin</packaging>
 </project>

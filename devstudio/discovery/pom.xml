@@ -12,13 +12,13 @@
     <version>10.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Discovery</name>
+  <name>Devstudio Integration Stack Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    JBDS Central Integration Stack discovery generation.
+    Devstudio Central Integration Stack discovery generation.
 
-    This Maven/Tycho project will create the JBDS central discovery update plugin and mylyn directory XML for the 
+    This Maven/Tycho project will create the devstudio central discovery update plugin and mylyn directory XML for the 
     production JBoss tools integration stack components.
 
     i.e.

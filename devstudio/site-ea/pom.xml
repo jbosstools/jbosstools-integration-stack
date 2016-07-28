@@ -10,7 +10,7 @@
     <version>10.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>JBDS Integration Stack Aggregate - Early Access</name>
+  <name>Devstudio Integration Stack Aggregate - Early Access</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
@@ -23,10 +23,10 @@
   <properties>
     <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.description>Snapshot Build</update.site.description>
-    <update.site.version>JBDSIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
+    <update.site.version>DEVSTUDIOIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <!-- The URL for the JBDSIS target platform repository that should be associated with this site. -->
-    <targetplatform.ea.url>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</targetplatform.ea.url>
+    <!-- The URL for the DEVSTUDIOIS target platform repository that should be associated with this site. -->
+    <targetplatform.ea.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/devstudiois/earlyaccess/REPO/</targetplatform.ea.url>
   </properties>
 
   <build>

@@ -12,7 +12,7 @@
 
   <groupId>com.jboss.devstudio.integration-stack</groupId>
   <artifactId>features</artifactId>
-  <name>JBDS Integration Stack Features</name>
+  <name>Devstudio Integration Stack Features</name>
 
   <packaging>pom</packaging>
 

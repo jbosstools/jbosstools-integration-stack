@@ -8,20 +8,20 @@
   <artifactId>parent</artifactId>
   <version>10.0.0-SNAPSHOT</version>
 
-  <name>JBDS Integration Stack Aggregate/Discovery</name>
+  <name>Devstudio Integration Stack Aggregate/Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    JBDS Integration Stack Aggregate update site + Central Discovery plugin, directory, and composite site generation (GA/EA).
+    Devstudio Integration Stack Aggregate update site + Central Discovery plugin, directory, and composite site generation (GA/EA).
   </description>
 
-  <!-- Pick up your local JBTIS bits and JBDSIS target platform instead of published sites:
+  <!-- Pick up your local JBTIS bits and devstudiois target platform instead of published sites:
 
       mvn clean install \
         -DCOMPOSITE_SITE=file://`pwd`/../jbosstools/site-final/target/repository/  \
         -DCOMPOSITE_EA_SITE=file://`pwd`/../jbosstools/site-ea/target/repository/ \
-        -DJBDSIS_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis.target.repo \
-        -DJBDSIS_EA_TP_SITE=file://`pwd`/../target-platform/target/target-platform-jbdsis-ea.target.repo
+        -DDEVSTUDIOIS_TP_SITE=file://`pwd`/../target-platform/target/target-platform-devstudiois.target.repo \
+        -DDEVSTUDIOIS_EA_TP_SITE=file://`pwd`/../target-platform/target/target-platform-devstudiois-ea.target.repo
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -40,14 +40,14 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/stable/updates/discovery.earlyaccess/10.0.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
-    <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
+    <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.Alpha1-SNAPSHOT/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.Alpha1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
-    <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
-    <JBDSIS_TP_VERSION>10.0.0.Alpha1-SNAPSHOT</JBDSIS_TP_VERSION>
-    <JBDSIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/REPO/</JBDSIS_TP_SITE>
-    <JBDSIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/jbdsistarget/${JBDSIS_TP_VERSION}.jbds-is-target-platform/jbdsis/earlyaccess/REPO/</JBDSIS_EA_TP_SITE>
+    <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
+    <DEVSTUDIOIS_TP_VERSION>10.0.0.Alpha1-SNAPSHOT</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/devstudiois/REPO/</DEVSTUDIOIS_TP_SITE>
+    <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/devstudiois/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 
     <!-- Must pass this in to define the URLs to use to generate the discovery site's composite*.xml files;  if blank no composite site will be generated  -->
     <COMPOSITE_URLS><!-- JBT,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_URLS>
@@ -193,7 +193,6 @@
       </releases>
     </repository>
 
-    <!-- JBTIS-355 added to enable resolution of upstream deps; there's probably a better way to resolve dependencies from JBDS, JBDS TP, JBDS IS and JBDS IS TP -->
     <repository>
       <id>jbdevstudio-site-with-central-and-targetplatform</id>
       <layout>p2</layout>
@@ -214,15 +213,15 @@
     </repository>
 
     <repository>
-      <id>jbdsis-targetplatform-site</id>
+      <id>devstudiois-targetplatform-site</id>
       <layout>p2</layout>
-      <url>${JBDSIS_TP_SITE}</url>
+      <url>${DEVSTUDIOIS_TP_SITE}</url>
     </repository>
 
     <repository>
-      <id>jbdsis-targetplatform-ea-site</id>
+      <id>devstudiois-targetplatform-ea-site</id>
       <layout>p2</layout>
-      <url>${JBDSIS_EA_TP_SITE}</url>
+      <url>${DEVSTUDIOIS_EA_TP_SITE}</url>
     </repository>
   </repositories>
 

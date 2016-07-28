@@ -95,11 +95,11 @@ e.g.  target-platform.target.repo - http://download.jboss.org/jbosstools/targetp
 
 e.g.  target-platform-ea.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/jbtis/earlyaccess/REPO/
 
-e.g.  target-platform-jbdsis.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/jbdsis/REPO/
+e.g.  target-platform-devstudiois.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/devstudiois/REPO/
 
-e.g.  target-platform-jbdsis-ea.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/jbdsis/earlyaccess/REPO/
+e.g.  target-platform-devstudiois-ea.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/devstudiois/earlyaccess/REPO/
 
-The jbdsis repositories are built separately so as to avoid pulling in any community bits.
+The devstudiois repositories are built separately so as to avoid pulling in any community bits.
 
 The integration-stack tycho target dependency (.target) files are deployed to the JBoss nexus releases repository for use by the integration stack component projects.  If you are an integration stack component developer or potentially a QE test developer, your maven POM target-platform-configuration should reference one of these as your target-platform artifact.
 
@@ -109,7 +109,7 @@ Target artifacts local to the IS:
 
 * integration-stack-base.target - integration stack component required dependencies
 * core.base.target - JBoss tools core required dependencies
-* community.target - dependencies specific to the community (not required for JBDS)
+* community.target - dependencies specific to the community (not required for DEVSTUDIO)
 
 Target artifacts drawn from org.jboss.tools.targetplatforms:
 

@@ -453,7 +453,7 @@
   </build>
 
   <!-- Mirror the integration stack target dependencies (release/ early access) for both community (jbtis) and
-       production (jbdsis).  These will be used by the jbosstools and devstudio poms as an extra repo for resolving 
+       production (devstudiois).  These will be used by the jbosstools and devstudio poms as an extra repo for resolving 
        the contents of the .target files into a repository. -->
   <profiles>
 
@@ -499,29 +499,29 @@
 		</configuration>
 	      </execution>
 
-	      <!-- Mirror the jbdsis integration stack target dependencies to a repository. -->
+	      <!-- Mirror the devstudiois integration stack target dependencies to a repository. -->
 	      <execution>
-		<id>mirror-target-platform-jbdsis-repo</id>
+		<id>mirror-target-platform-devstudiois-repo</id>
 		<phase>package</phase>
 		<goals>
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
 		  <sourceTargetFile>${basedir}/src/targets/integration-stack-base.target</sourceTargetFile>
-		  <outputRepository>${project.build.directory}/${project.artifactId}-jbdsis.target.repo</outputRepository>
+		  <outputRepository>${project.build.directory}/${project.artifactId}-devstudiois.target.repo</outputRepository>
 		</configuration>
 	      </execution>
 
 	      <!-- Mirror the jdbsis integration stack early access target dependencies to a repository. -->
 	      <execution>
-		<id>mirror-target-platform-jbdsis-repo-ea</id>
+		<id>mirror-target-platform-devstudiois-repo-ea</id>
 		<phase>package</phase>
 		<goals>
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
 		  <sourceTargetFile>${basedir}/src/targets/integration-stack-base-ea.target</sourceTargetFile>
-		  <outputRepository>${project.build.directory}/${project.artifactId}-jbdsis-ea.target.repo</outputRepository>
+		  <outputRepository>${project.build.directory}/${project.artifactId}-devstudiois-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
 
@@ -572,7 +572,7 @@
 	      </execution>
 
 	      <execution>
-		<id>package-target-platform-jbdsis-repo</id>
+		<id>package-target-platform-devstudiois-repo</id>
 		<phase>package</phase>
 
 		<configuration>
@@ -580,7 +580,7 @@
 		  <target>
 		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
 		    <ant antfile="../scripts/remove.references.xml" dir=".">
-		      <property name="workDir" value="./target/target-platform-jbdsis.target.repo" />
+		      <property name="workDir" value="./target/target-platform-devstudiois.target.repo" />
 		    </ant>
 		  </target>
 		</configuration>
@@ -590,7 +590,7 @@
 	      </execution>
 
 	      <execution>
-		<id>package-target-platform-jbdsis-repo-ea</id>
+		<id>package-target-platform-devstudiois-repo-ea</id>
 		<phase>package</phase>
 
 		<configuration>
@@ -598,7 +598,7 @@
 		  <target>
 		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
 		    <ant antfile="../scripts/remove.references.xml" dir=".">
-		      <property name="workDir" value="./target/target-platform-jbdsis-ea.target.repo" />
+		      <property name="workDir" value="./target/target-platform-devstudiois-ea.target.repo" />
 		    </ant>
 		  </target>
 		</configuration>
