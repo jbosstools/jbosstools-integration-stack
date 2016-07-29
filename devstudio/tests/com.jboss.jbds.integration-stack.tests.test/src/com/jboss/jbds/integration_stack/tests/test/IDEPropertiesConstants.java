@@ -55,6 +55,11 @@ public interface IDEPropertiesConstants {
       {
          add("Alpha1");
          add("Alpha2");
+         add("AM1");
+         add("AM2");
+         add("AM3");
+         add("AM4");
+         add("AM5");
          add("Beta1");
          add("Beta2");
          add("Beta3");
