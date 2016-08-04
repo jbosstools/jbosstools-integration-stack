@@ -32,7 +32,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>4.4.0-SNAPSHOT</VERSION>
-    <IS_TP_VERSION>4.4.0.Alpha1-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.0.Alpha1</IS_TP_VERSION>
     <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>

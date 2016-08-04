@@ -659,7 +659,7 @@
               <finalName>${project.artifactId}-${project.version}</finalName>
             </configuration>
           </plugin>
-<!-- temporary, pleacu
+
           <plugin>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-eclipserun-plugin</artifactId>
@@ -672,9 +672,9 @@
                   <url>http://download.jboss.org/jbosstools/updates/requirements/p2diff/20160508-2315/</url>
                 </repository>
                 <repository>
-                  <id>mars</id>
+                  <id>neon</id>
                   <layout>p2</layout>
-                  <url>http://download.jboss.org/jbosstools/updates/requirements/mars/201509161958-SR1.RC4/</url>
+                  <url>http://download.jboss.org/jbosstools/updates/requirements/neon/201606082315-RC4/</url>
                 </repository>
               </repositories>
 
@@ -705,7 +705,7 @@
                   <goal>eclipse-run</goal>
                 </goals>
                 <configuration>
-                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}.p2diff ${baseRepositoryUrl} file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}.p2diff ${baseRepositoryUrl} file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
                 </configuration>
               </execution>
               <execution>
@@ -715,12 +715,11 @@
                   <goal>eclipse-run</goal>
                 </goals>
                 <configuration>
-                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${artifactId}-ea.p2diff ${baseRepositoryUrlEA} file:${project.build.directory}/${project.artifactId}-ea.target.repo</appArgLine>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-ea.p2diff ${baseRepositoryUrlEA} file:${project.build.directory}/${project.artifactId}-ea.target.repo</appArgLine>
                 </configuration>
               </execution>
             </executions>
           </plugin>
--->
 	</plugins>
 
       </build>
