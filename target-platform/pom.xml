@@ -659,7 +659,7 @@
               <finalName>${project.artifactId}-${project.version}</finalName>
             </configuration>
           </plugin>
-
+<!-- temporary, pleacu
           <plugin>
             <groupId>org.eclipse.tycho.extras</groupId>
             <artifactId>tycho-eclipserun-plugin</artifactId>
@@ -720,6 +720,7 @@
               </execution>
             </executions>
           </plugin>
+-->
 	</plugins>
 
       </build>
