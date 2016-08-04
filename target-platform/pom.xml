@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.4.0.Alpha1-SNAPSHOT</version>
+  <version>4.4.0.Alpha1</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -33,8 +33,8 @@
   </parent>
 
   <properties>
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1-SNAPSHOT/jbtis/REPO/</baseRepositoryUrl>
-    <baseRepositoryUrlEA>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1-SNAPSHOT/jbtis/earlyaccess/REPO/</baseRepositoryUrlEA>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1/jbtis/REPO/</baseRepositoryUrl>
+    <baseRepositoryUrlEA>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1/jbtis/earlyaccess/REPO/</baseRepositoryUrlEA>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
