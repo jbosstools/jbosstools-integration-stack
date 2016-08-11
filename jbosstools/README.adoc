@@ -9,10 +9,10 @@
         -DUPSTREAM_DIRECTORY_XML=http://download.jboss.org/jbosstools/mars/stable/updates/discovery.earlyaccess/4.3.1.Final/jbosstools-directory.xml \
         -DCOMPOSITE_TP_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.1.Final/jbtis/REPO \
         -DCOMPOSITE_TP_EA_SITE=http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.1.Final/jbtis/earlyaccess/REPO \
-        -DBUILD_TYPE=development -DskipRevisionCheckWhenPublishing=true -DVERSION=4.2.1.Final -DBUILD_KIND=jbosstools \
+        -DBUILD_TYPE=development -DskipRevisionCheckWhenPublishing=true -DVERSION=4.3.2.Final -DBUILD_KIND=jbosstools \
          clean install checkstyle:check -DBUILD_KIND=jbosstools -DTARGET_PLATFORM=mars \
         -DCOMPOSITE_URLS=http://download.jboss.org/jbosstools/mars/stable/updates/,\
-	                 http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.1-SNAPSHOT,\
+	                 http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.2-SNAPSHOT,\
 			 http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.3.1.Final/jbtis/REPO
 
 # To build referencing your own JBTIS early access target platform, build ../target-platform first, then:

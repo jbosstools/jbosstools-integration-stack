@@ -5,7 +5,7 @@
    <parent>
       <groupId>com.jboss.jbds.integration-stack</groupId>
       <artifactId>tests</artifactId>
-      <version>9.0.1-SNAPSHOT</version>
+      <version>9.0.2-SNAPSHOT</version>
       <relativePath>../</relativePath>
    </parent>
 

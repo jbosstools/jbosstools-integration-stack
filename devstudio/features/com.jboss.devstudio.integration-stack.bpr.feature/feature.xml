@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
     id="com.jboss.devstudio.integration-stack.bpr.feature"
-    label="%featureName" version="9.0.1.qualifier"
+    label="%featureName" version="9.0.2.qualifier"
     provider-name="%providerName"
     license-feature="org.jboss.tools.foundation.license.feature"
     license-feature-version="0.0.0"
