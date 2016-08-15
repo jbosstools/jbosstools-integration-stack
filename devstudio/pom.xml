@@ -27,6 +27,8 @@
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
     <BUILD_INSTALLER>-</BUILD_INSTALLER>
     <BUILD_NUMBER>1</BUILD_NUMBER>
+    <BUILD_TIMESTAMP>${maven.build.timestamp}</BUILD_TIMESTAMP>
+    <maven.build.timestamp.format>yyyy-MM-dd_HH-mm-ss</maven.build.timestamp.format>
     <BUILD_TS>v20130101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
@@ -62,7 +64,9 @@
     <update.site.description>-</update.site.description>
     <skipTests>false</skipTests>
     <jboss-tycho-version>0.23.3</jboss-tycho-version>
-    <tychoVersion>0.24.0</tychoVersion>
+    <tychoVersion>0.25.0</tychoVersion>
+    <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
+    <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
     <tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-integration-stack.git</tycho.scmUrl>    
     <skipBaselineComparison>true</skipBaselineComparison>
   </properties>
