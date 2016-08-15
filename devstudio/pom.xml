@@ -43,7 +43,7 @@
 
     <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.2-SNAPSHOT/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/4.3.0.Final/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_EA_SITE></COMPOSITE_EA_SITE>  <!-- no content -->
 
     <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
     <JBDSIS_TP_VERSION>9.0.2.GA</JBDSIS_TP_VERSION>
@@ -208,17 +208,17 @@
       <url>${COMPOSITE_SITE}</url>
     </repository>
 
+    <repository>
+      <id>jbdsis-targetplatform-site</id>
+      <layout>p2</layout>
+      <url>${JBDSIS_TP_SITE}</url>
+    </repository>
+
     <!-- No Early access components
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_EA_SITE}</url>
-    </repository>
-    -->
-    <repository>
-      <id>jbdsis-targetplatform-site</id>
-      <layout>p2</layout>
-      <url>${JBDSIS_TP_SITE}</url>
     </repository>
 
     <repository>
@@ -226,7 +226,8 @@
       <layout>p2</layout>
       <url>${JBDSIS_EA_TP_SITE}</url>
     </repository>
-  </repositories>
+    -->
+</repositories>
 
   <pluginRepositories>
 

@@ -27,10 +27,12 @@
 
   <modules>
     <module>com.jboss.jbds.central.discovery.integration-stack</module>
-    <module>com.jboss.jbds.central.discovery.integration-stack.earlyaccess</module>
     <module>generation</module>
+    <!-- no content
+    <module>com.jboss.jbds.central.discovery.integration-stack.earlyaccess</module>
     <module>generation-ea</module>
-  </modules>
+    -->
+</modules>
 
   <build>
     <sourceDirectory>src</sourceDirectory>
