@@ -33,13 +33,13 @@
   </parent>
 
   <properties>
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1/jbtis/REPO/</baseRepositoryUrl>
-    <baseRepositoryUrlEA>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1/jbtis/earlyaccess/REPO/</baseRepositoryUrlEA>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${version}/jbtis/</baseRepositoryUrl>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.25.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.25.1-SNAPSHOT</jbossTychoPluginsVersion>
     <JBTCoreTPVersion>4.60.1.AM1-SNAPSHOT</JBTCoreTPVersion>
+    <p2diff.skip>false</p2diff.skip>
   </properties>
 
   <!-- TEMPORARY: JBIDE-22248 and rt/Ticket/Display.html?id=401756 -->
@@ -705,7 +705,7 @@
                   <goal>eclipse-run</goal>
                 </goals>
                 <configuration>
-                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}.p2diff ${baseRepositoryUrl} file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}.p2diff -mode=ignoreVersions ${baseRepositoryUrl}/REPO file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
                 </configuration>
               </execution>
               <execution>
@@ -715,7 +715,7 @@
                   <goal>eclipse-run</goal>
                 </goals>
                 <configuration>
-                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-ea.p2diff ${baseRepositoryUrlEA} file:${project.build.directory}/${project.artifactId}-ea.target.repo</appArgLine>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-ea.p2diff -mode=ignoreVersions ${baseRepositoryUrl}/earlyaccess/REPO file:${project.build.directory}/${project.artifactId}-ea.target.repo</appArgLine>
                 </configuration>
               </execution>
             </executions>
