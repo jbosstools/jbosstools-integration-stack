@@ -252,6 +252,12 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/apache-directory/2.0.0-r1685424-SNAPSHOT/studio"/>
     </location>
 
+    <!-- Fuse/SY -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.swtbot.ide.feature.group" version="2.3.0.201506081302"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/swtbot/2.3.0/"/>
+    </location>
+
    <!-- JBoss Tools Core Tests -->
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
