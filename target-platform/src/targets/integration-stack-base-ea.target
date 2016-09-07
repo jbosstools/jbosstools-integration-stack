@@ -8,6 +8,23 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
+    <!-- m2e-wtp for Fuse tooling -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.3.1.20160831-1005"/>
+      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.3.1.20160831-1005"/>
+      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.3.1.20160831-1005"/>
+      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.3.1.20160831-1005"/>
+
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-wtp/1.3.1.20160831-1005/"/>
+    </location>
+
+    <!-- m2eclipse-tycho for Fuse tooling -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.9.0.201609061714"/>
+
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.9.0.201609061714/"/>
+    </location>
+
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
