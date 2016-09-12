@@ -21,10 +21,10 @@
     <child location="http://downloads.jboss.org/jbpm/release/6.4.1.Final/updatesite/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta4/"/>
+    <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/fuse-tooling/9.0.0.Alpha1/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/neon/integration/updates/integration-stack/switchyard/2.2.0/"/>
+    <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/switchyard/2.2.0.Alpha2/"/>
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/release/mars/integration-stack/teiiddesigner/10.0.1.Final/"/>

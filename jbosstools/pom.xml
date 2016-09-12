@@ -32,10 +32,10 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>4.4.0-SNAPSHOT</VERSION>
-    <IS_TP_VERSION>4.4.0.Alpha1</IS_TP_VERSION>
-    <tychoVersion>0.25.0</tychoVersion>
+    <IS_TP_VERSION>4.4.0.Alpha2-SNAPSHOT</IS_TP_VERSION>
+    <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.25.0-SNAPSHOT</jbossTychoPluginsVersion>
+    <jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
