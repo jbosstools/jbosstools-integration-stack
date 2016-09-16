@@ -7,5 +7,5 @@
     <groupId>com.jboss.jbds.integration-stack.tests</groupId>
     <artifactId>build-config</artifactId>
     <name>Integration Stack Tests/Build Configuration</name>
-    <version>9.0.2-SNAPSHOT</version>
+    <version>9.0.2.CR1</version>
 </project>
