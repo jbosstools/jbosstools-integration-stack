@@ -127,6 +127,14 @@
       <unit id="org.eclipse.equinox.cm" version="1.1.200.v20160324-1850"/>
       <unit id="org.eclipse.zest.feature.group" version="1.7.0.201606061308"/>
       
+      <unit id="org.eclipse.rse.feature.group" version="3.7.1.201603211627"/>
+      <unit id="org.eclipse.rse.core.feature.group" version="3.7.1.201603211627"/>
+      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201603211627"/>
+      <unit id="org.eclipse.rse.telnet.feature.group" version="3.7.0.201603211627"/>
+      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.1.201603211627"/>
+      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201603211627"/>
+      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201603211627"/>
+
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201606082315-RC4/"/>
     </location>
 
@@ -148,18 +156,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.6.0.v201602022206/"/>
     </location>
 
-    <!-- TM and RSE including sources.
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/tm/4.1.0.201603190914/"/>
-      <unit id="org.eclipse.rse.feature.group" version="3.7.0.201505221634"/>
-      <unit id="org.eclipse.rse.core.feature.group" version="3.7.0.201505221634"/>
-      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201505221634"/>
-      <unit id="org.eclipse.rse.terminals.feature.group" version="3.8.0.201505221634"/>
-      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.0.201505221634"/>
-      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201505221634"/>
-      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201505221634"/>
-    </location>
-    -->    
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Fuse Tooling Data Transformation -->
