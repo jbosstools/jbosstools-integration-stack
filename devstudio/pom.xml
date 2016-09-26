@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>9.0.2.CR1</version>
+  <version>9.0.2-SNAPSHOT</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -63,10 +63,10 @@
     <targetplatform.version>${project.version}</targetplatform.version>
     <update.site.description>-</update.site.description>
     <skipTests>false</skipTests>
-    <jboss-tycho-version>0.25.1-SNAPSHOT</jboss-tycho-version>
-    <tychoVersion>0.25.0</tychoVersion>
+    <jboss-tycho-version>0.26.0-SNAPSHOT</jboss-tycho-version>
+    <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.25.1-SNAPSHOT</jbossTychoPluginsVersion>
+    <jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
     <tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-integration-stack.git</tycho.scmUrl>    
     <skipBaselineComparison>true</skipBaselineComparison>
   </properties>
