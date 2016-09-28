@@ -28,7 +28,7 @@
 
     <!-- FUSE TOOLING -->
     <!-- <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta4/"/> -->
-    <child location="http://download.jboss.org/jbosstools/mars/integration/updates/integration-stack/fuse-tooling/8.0.0.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/mars/integration/updates/integration-stack/fuse-tooling/8.0.0.CR2/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/modeshape/3.8.0.Final/"/>
