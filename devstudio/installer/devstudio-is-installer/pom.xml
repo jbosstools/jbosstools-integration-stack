@@ -9,7 +9,7 @@
   <artifactId>devstudio-is-installer</artifactId>
   <packaging>pom</packaging>
   <name>Devstudio Integration Stack Installer</name>
-  <version>9.0.2.CR2</version>
+  <version>9.0.2.CR1</version>
   
   <build>
     <plugins>
