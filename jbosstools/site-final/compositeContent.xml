@@ -27,8 +27,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/jbpm/4.5.200.Final/"/>
 
     <!-- FUSE TOOLING -->
-    <!-- <child location="http://download.jboss.org/jbosstools/mars/development/updates/integration-stack/fuse-tooling/8.0.0.Beta4/"/> -->
-    <child location="http://download.jboss.org/jbosstools/mars/integration/updates/integration-stack/fuse-tooling/8.0.0.CR2/"/>
+    <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/fuse-tooling/8.0.0.Final/"/>
 
     <!-- MODESHAPE -->
     <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/modeshape/3.8.0.Final/"/>
