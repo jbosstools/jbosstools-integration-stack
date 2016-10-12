@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.jboss.devstudio.integration-stack</groupId>
 		<artifactId>features</artifactId>
-		<version>9.0.2-SNAPSHOT</version>
+		<version>9.0.3-SNAPSHOT</version>
 	</parent>
 	<groupId>com.jboss.devstudio.integration-stack.features</groupId>
 	<artifactId>com.jboss.devstudio.integration-stack.ds.feature</artifactId>

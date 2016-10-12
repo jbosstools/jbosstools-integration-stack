@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.3.2-SNAPSHOT</version>
+  <version>4.3.3-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -31,7 +31,7 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>4.3.2-SNAPSHOT</VERSION>
+    <VERSION>4.3.3-SNAPSHOT</VERSION>
     <IS_TP_VERSION>4.3.4.Final</IS_TP_VERSION>
     <tycho-version>0.26.0</tycho-version>
     <jboss-tycho-version>0.26.0-SNAPSHOT</jboss-tycho-version>

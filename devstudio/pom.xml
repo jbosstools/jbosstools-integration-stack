@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>9.0.2-SNAPSHOT</version>
+  <version>9.0.3-SNAPSHOT</version>
 
   <name>JBDS Integration Stack Aggregate/Discovery</name>
 
@@ -33,16 +33,16 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>mars</TARGET_PLATFORM>
-    <VERSION>9.0.2-SNAPSHOT</VERSION>
+    <VERSION>9.0.3-SNAPSHOT</VERSION>
     <version>${VERSION}</version>
-    <IS_TP_VERSION>4.3.2.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.3.4.Final</IS_TP_VERSION>
     <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/9.0/stable/builds/installer/devstudio-9.1.0.GA-build-product/2016-04-13_21-15-48-B497/all/jboss-devstudio-9.1.0.GA-v20160414-0124-B497-installer-standalone.jar</DEVSTUDIO_INSTALLER>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/9.0/stable/updates/discovery.earlyaccess/9.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- Must pass in to define the JBTIS from which the JBDS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.2-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack/4.3.3-SNAPSHOT/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE></COMPOSITE_EA_SITE>  <!-- no content -->
 
     <!-- Must pass in to define the JBDSIS Target Platform plugins to be extracted. -->
