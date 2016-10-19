@@ -9,22 +9,7 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="6">
-
-    <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/bpel/1.3.200.Final/"/>
-
-    <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.3.1.Final_1.3.1.Final_neon/"/>
-
-    <!-- DROOLS/JBPM6 -->
-    <child location="http://downloads.jboss.org/jbpm/release/6.4.1.Final/updatesite/"/>
-
-    <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/fuse-tooling/9.0.0.Alpha1/"/>
-
-    <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/switchyard/2.2.0.Alpha2/"/>
+  <children size="1">
 
     <!-- TEIID -->
     <child location="http://download.jboss.org/jbosstools/updates/release/mars/integration-stack/teiiddesigner/10.0.1.Final/"/>
