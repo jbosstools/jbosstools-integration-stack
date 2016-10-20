@@ -37,8 +37,10 @@
     <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.1.0.GA-build-product/latest/all/devstudio-10.1.0.GA-v20160902-1725-B43-installer-standalone.jar</DEVSTUDIO_INSTALLER>
     <!-- https://developers.redhat.com/download-manager/file/jboss-fuse-karaf-6.3.0.redhat-187.zip
 	 http://origin-repository.jboss.org/nexus/content/groups/product-ga/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187
-         http://fusewin.tpb.lab.eng.brq.redhat.com:8081/nexus/content/groups/fuse-all/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip -->
-    <FUSE_RUNTIME>http://download-node-02.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip</FUSE_RUNTIME>
+         http://fusewin.tpb.lab.eng.brq.redhat.com:8081/nexus/content/groups/fuse-all/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip
+	 http://download-node-02.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip
+    -->
+    <FUSE_RUNTIME>http://fusewin.tpb.lab.eng.brq.redhat.com:8081/nexus/content/groups/fuse-all/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip</FUSE_RUNTIME>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/stable/updates/discovery.earlyaccess/10.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
 

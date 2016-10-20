@@ -18,12 +18,12 @@ The Integration Stack is an aggregation of Eclipse features and plugins comprise
 
 ### JBoss Fuse Development
 
-* [Fuse Tooling] - A graphical tool for integrating software components that works with Apache ServiceMix, Apache ActiveMQ, Apache Camel and the FuseSource distributions.
+* [Fuse Tooling] - An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
 
 ### JBoss Integration and SOA Development
 
 * All of the Business Process and Rules Development plugins, plus...
-* [Fuse Apache Camel Tooling](http://tools.jboss.org/features/apachecamel.html) - A graphical tool for integrating software components that works with Apache ServiceMix, Apache ActiveMQ, Apache Camel and the FuseSource distributions.
+* [Fuse Apache Camel Tooling](http://tools.jboss.org/features/apachecamel.html) - An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
 * [SwitchYard](http://tools.jboss.org/features/switchyard.html) - A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
 
 ## Building the JBoss Tools Integration Stack Project

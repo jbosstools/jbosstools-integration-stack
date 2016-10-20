@@ -16,7 +16,7 @@ Tools related to the development of Integration and SOA applications - includes 
 
 <category-def name="FuseDevelopment" label="JBoss Fuse Development">
   <description>
-Tools related to integrating and developing software components that work with Apache ServiceMix, ActiveMQ and Camel - support for Fuse.
+An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
   </description>
 </category-def>
 
