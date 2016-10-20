@@ -1,11 +1,13 @@
 # The JBoss Tools Integration Stack Project
 
 ## Summary
-The Integration Stack is an aggregation of Eclipse features and plugins comprised of JBoss tooling in support of Data Virtualization, BRMS/BPMS, Fuse Tooling, SOA Tooling and legacy SOA 5.x development.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.
+The Integration Stack for JBoss Developer Studio is a set of features and plugins for Eclipse that further enhances the IDE development functionality provided by JBoss Developer Studio. It’s where the Fuse Tooling, DataVirt Tooling and BRMS tooling is aggregated.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.  This site also produces a stand-alone installer containing all of JBossTools core and the Integration Stack components as well as a stand-alone installer which contains core, IS and a supplemental runtime server.
 
-## Components
+## Components/ Frameworks
 
 ### JBoss Business Process and Rules Development
+
+JBoss Business Process and Rules Development plug-ins provide design, debug and testing tooling for developing business processes for Red Hat JBoss BRMS and Red Hat JBoss BPM Suite.
 
 * [BPEL Designer](http://tools.jboss.org/features/bpel.html) - Orchestrating your business processes.
 * [BPMN2 Modeler](http://tools.jboss.org/features/bpmn2.html) - A graphical modeling tool which allows creation and editing of Business Process Modeling Notation diagrams using graphiti.
@@ -14,11 +16,15 @@ The Integration Stack is an aggregation of Eclipse features and plugins comprise
 
 ### JBoss Data Virtualization Development
 
+JBoss Data Virtualization Development plug-ins provide a graphical interface to manage various aspects of Red Hat JBoss Data Virtualization instances, including the ability to design virtual databases and interact with associated governance repositories.
+
 * [Teiid Designer](http://tools.jboss.org/features/teiiddesigner.html) - A visual tool that enables rapid, model-driven definition, integration, management and testing of data services without programming using the Teiid runtime framework.
 
 ### JBoss Fuse Development
 
-* [Fuse Tooling] - An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
+An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
+
+* [Fuse Tooling] - JBoss Fuse Development provides tooling for Red Hat JBoss Fuse.  It features the latest versions of the Fuse Data Transformation tooling, SwitchYard and access to the Fuse SAP Tool Suite.
 
 ### JBoss Integration and SOA Development
 

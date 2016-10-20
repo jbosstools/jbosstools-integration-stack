@@ -18,13 +18,13 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.3.2.Final_1.3.1.Final_neon/"/>
 
     <!-- DROOLS/JBPM6 -->
-    <child location="http://downloads.jboss.org/jbpm/release/6.4.1.Final/updatesite/"/>
+    <child location="http://downloads.jboss.org/drools/updatesites/updatesite-6.5.0.CR1-v20161020-044101-B18/"/>
 
     <!-- FUSE TOOLING -->
     <child location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/fuse-tooling/9.0.0.CR1/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/switchyard/2.2.0.Alpha2/"/>
+    <child location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/switchyard/2.2.0.CR1/"/>
 
   </children>
 
