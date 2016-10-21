@@ -9,12 +9,32 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
     </connectorCategory>
+
+    <!-- JBoss Integration Stack Generic Connector -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-generic"
+       certificationId="com.jboss.jbds.discovery.certification.notavailable"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Developer Studio Integration Stack Early Access Components"
+       description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Developer Studio 9.x."
+       id="jboss.integration-stack.generic.notavailable"> 
+       <icon
+          image32="images/jbds_icon32.png">
+       </icon>
+       <overview
+          url="http://devstudio.redhat.com/">
+       </overview>
+    </connectorDescriptor>
 
     <!-- JBoss Fuse Development -->
     <connectorDescriptor
@@ -101,26 +121,6 @@
       <overview
         url="http://devstudio.redhat.com/">
       </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Integration Stack Generic Connector -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-generic"
-       certificationId="com.jboss.jbds.discovery.certification.notavailable"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Developer Studio Integration Stack Early Access Components"
-       description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Developer Studio 9.x."
-       id="jboss.integration-stack.generic.notavailable"> 
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://devstudio.redhat.com/">
-       </overview>
     </connectorDescriptor>
 
   </extension>

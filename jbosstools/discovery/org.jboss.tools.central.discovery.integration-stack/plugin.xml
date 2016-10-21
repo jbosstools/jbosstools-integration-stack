@@ -9,10 +9,10 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.prod" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
     </connectorCategory>
 
     <!-- JBoss Integration Stack Generic Connector -->
