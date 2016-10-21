@@ -22,11 +22,13 @@
 			<directory>${project.build.directory}/integration-stack-ga</directory>
 			<outputDirectory>devstudio-is/ga</outputDirectory>
 		</fileSet>
+                <!--
 		<fileSet>
 			<directory>${project.build.directory}/integration-stack-ea</directory>
 			<outputDirectory>devstudio-is/ea</outputDirectory>
 		</fileSet>
-		<fileSet>
+                -->
+                <fileSet>
 			<directory>src/main/structure</directory>
 			<outputDirectory>devstudio-is</outputDirectory>
 			<includes>

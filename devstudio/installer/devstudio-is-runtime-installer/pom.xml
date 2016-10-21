@@ -28,7 +28,6 @@
 	    </goals>
 	    <configuration>
 	      <artifactItems>
-                <!-- No released artifacts yet
 		<artifactItem>
 		  <groupId>com.jboss.jbds.integration-stack</groupId>
 		  <artifactId>site-ga</artifactId>
@@ -36,8 +35,9 @@
 		  <type>zip</type>
 		  <outputDirectory>target/integration-stack-ga</outputDirectory>
 		</artifactItem>
-                -->
+
                 <!-- Uncomment for early access testing only. -->
+                <!--
 		<artifactItem>
 		  <groupId>com.jboss.jbds.integration-stack</groupId>
 		  <artifactId>site-ea</artifactId>
@@ -45,7 +45,7 @@
 		  <type>zip</type>
 		  <outputDirectory>target/integration-stack-ea</outputDirectory>
 		</artifactItem>
-
+                -->
               </artifactItems>
 	    </configuration>
 	  </execution>
