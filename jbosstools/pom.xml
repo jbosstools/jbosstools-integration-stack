@@ -34,7 +34,7 @@
     <VERSION>4.3.3-SNAPSHOT</VERSION>
     <IS_TP_VERSION>4.3.4.Final</IS_TP_VERSION>
     <tycho-version>0.26.0</tycho-version>
-    <jboss-tycho-version>0.26.0-SNAPSHOT</jboss-tycho-version>
+    <jboss-tycho-version>0.26.0</jboss-tycho-version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.5 (Mars) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 

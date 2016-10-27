@@ -36,7 +36,7 @@
     <child location="http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack/switchyard/2.1.0.Final/"/>
 
     <!-- TEIID -->
-    <child location="http://download.jboss.org/jbosstools/updates/development/mars/integration-stack/teiiddesigner/10.0.2.Beta1/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/release/mars/integration-stack/teiiddesigner/10.0.2.Final/"/>
 
   </children>
 
