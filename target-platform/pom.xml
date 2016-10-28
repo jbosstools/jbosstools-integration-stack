@@ -39,7 +39,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
+    <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
     <JBTCoreTPVersion>4.60.1.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
   </properties>

@@ -35,7 +35,7 @@
     <IS_TP_VERSION>4.4.0.CR1</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
+    <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 

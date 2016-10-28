@@ -68,7 +68,7 @@
     <skipTests>false</skipTests>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.26.0-SNAPSHOT</jbossTychoPluginsVersion>
+    <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
     <tycho.scmUrl>scm:git:https://github.com/jbosstools/jbosstools-integration-stack.git</tycho.scmUrl>    
     <skipBaselineComparison>true</skipBaselineComparison>
   </properties>
