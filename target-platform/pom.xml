@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.4.0.CR1</version>
+  <version>4.4.0.CR2</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -221,6 +221,32 @@
 	      </sourceTargetFiles>
 
 	      <outputFile>${project.build.directory}/aggregate-base-ea.target</outputFile>
+
+	    </configuration>
+	  </execution>
+
+	  <!-- Merge:
+	       1. integration-stack specific target dependencies:                    integration-stack-base.target
+	       2. early access integration-stack specific target dependencies:     + integration-stack-base-ea.target
+                                                                                     =============================
+	       to generate an IS-only EA aggregate base target dependencies file:    aggregate-base-is-ea.target
+          -->
+	  <execution>
+
+	    <id>merge-base-is-ea</id>
+	    <phase>generate-resources</phase>
+	    <goals>
+	      <goal>merge-targets</goal>
+	    </goals>
+
+	    <configuration>
+
+	      <sourceTargetFiles>
+		<item>${basedir}/src/targets/integration-stack-base.target</item>
+		<item>${basedir}/src/targets/integration-stack-base-ea.target</item>
+	      </sourceTargetFiles>
+
+	      <outputFile>${project.build.directory}/aggregate-base-is-ea.target</outputFile>
 
 	    </configuration>
 	  </execution>
@@ -495,7 +521,7 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <sourceTargetFile>${project.build.directory}/integration-stack-community-ea.target</sourceTargetFile>
+		  <sourceTargetFile>${project.build.directory}/aggregate-base-is-ea.target</sourceTargetFile>
 		  <outputRepository>${project.build.directory}/${project.artifactId}-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
@@ -521,7 +547,7 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
-		  <sourceTargetFile>${basedir}/src/targets/integration-stack-base-ea.target</sourceTargetFile>
+		  <sourceTargetFile>${project.build.directory}/aggregate-base-is-ea.target</sourceTargetFile>
 		  <outputRepository>${project.build.directory}/${project.artifactId}-devstudiois-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
