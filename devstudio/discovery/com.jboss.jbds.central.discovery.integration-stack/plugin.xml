@@ -114,6 +114,14 @@
       <iu id="org.jbpm.eclipse.feature"/>
       <iu id="org.kie.eclipse.feature"/>
       <iu id="org.kie.eclipse.navigator.feature"/>
+       <iu id="org.fusesource.ide.camel.editor.feature"/>
+       <iu id="org.fusesource.ide.core.feature"/>
+       <iu id="org.fusesource.ide.jmx.feature"/>
+       <iu id="org.fusesource.ide.server.extensions.feature"/>
+       <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <iu id="org.switchyard.tools.feature"/>
+       <iu id="org.switchyard.tools.bpel.feature"/>
+       <iu id="org.switchyard.tools.bpmn2.feature"/>
 
       <icon
         image32="images/jbds_icon32.png">
