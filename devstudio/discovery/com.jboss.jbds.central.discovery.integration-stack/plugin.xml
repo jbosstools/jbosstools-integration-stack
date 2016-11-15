@@ -26,7 +26,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Developer Studio Integration Stack Early Access Components"
-       description="Fuse Tooling and Data Virtualization are available by selecting 'Enable Early Access'.  Also available in JBoss Developer Studio 9.x."
+       description="Data Virtualization is available by selecting 'Enable Early Access'."
        id="jboss.integration-stack.generic.notavailable"> 
        <icon
           image32="images/jbds_icon32.png">
