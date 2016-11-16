@@ -106,7 +106,7 @@
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, jBPM6 and KIE."
+       description="Tools related to the development of Integration and SOA applications."
        id="jboss.integration-stack.bundle.soa">
       <iu id="org.eclipse.bpmn2.feature"/>
       <iu id="org.eclipse.bpmn2.modeler"/>
