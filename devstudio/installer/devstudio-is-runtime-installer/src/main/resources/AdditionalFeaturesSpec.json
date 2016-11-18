@@ -1,21 +1,24 @@
 [
 	{
-		"id":"com.jboss.devstudio.integration-stack.fuse.feature.feature.group",
-		"label":"JBoss Fuse Development",
-		"description":"An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.",
-		"selected":"true",
-		"path":"devstudio-is"
+            "id":"com.jboss.devstudio.integration-stack.fuse.feature.feature.group",
+            "label":"JBoss Fuse Development",
+            "description":"An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.",
+            "selected":"true",
+            "path":"devstudio-is",
+            "size":"80000000"
 	},{
-		"id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
-		"label":"JBoss Business Process and Rules Development",
-		"description":"Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM, Drools and Guvnor.  Guvnor is deprecated.",
-		"selected":"false",
-		"path":"devstudio-is"
+            "id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
+            "label":"JBoss Business Process and Rules Development",
+            "description":"Tools related to business processes and rules development.",
+            "selected":"false",
+            "path":"devstudio-is",
+            "size":"41000000"   
 	},{
-		"id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
-		"label":"JBoss Integration and SOA Development",
-		"description":"Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, Fuse Tooling, jBPM and Switchyard.",
-		"selected":"false",
-		"path":"devstudio-is"
+            "id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
+            "label":"JBoss Integration and SOA Development",
+            "description":"Tools related to the development of Integration and SOA applications.",
+            "selected":"false",
+            "path":"devstudio-is",
+            "size":"121000000"
 	}
 ]
