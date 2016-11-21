@@ -8,49 +8,31 @@
 <target name="integration-stack-base-ea-target" sequenceNumber="7">
   <locations>
 
-    <!-- Birt Report - Teiid Designer -->
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.apache.poi" version="3.9.0.v201405241750"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
-      <unit id="org.eclipse.birt.core" version="4.6.0.v201602022206"/>
-      <unit id="org.eclipse.core.runtime.compatibility" version="3.2.300.v20150423-0821"/>		
-
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.6.0.v201602022206/"/>
-    </location>
-
    <!-- JBoss Tools Core Tests -->
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <!-- <unit id="org.jboss.tools.test.feature.feature.group" version="3.6.0.Final-v20150924-2213-B38"/> -->
-      <unit id="org.jboss.tools.tests" version="3.7.1.v20160607-2053"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.2.1.v20160901-2242"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.8.1.v20160607-2053"/>
-      <unit id="org.jboss.tools.common.test" version="3.8.1.v20160607-2053"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.8.1.v20160607-2122"/>
+      <unit id="org.jboss.tools.tests" version="3.7.2.v20160913-1817"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.2.2.v20160913-2241"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.8.2.v20160913-1811"/>
+      <unit id="org.jboss.tools.common.test" version="3.8.2.v20160913-1843"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.8.2.v20161101-0007"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2016-04-22_12-52-32-B5049/all/repo/"/>-->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
-      <!-- <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.AM1/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.1.Final/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.AM3/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.1.Final/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.common" version="3.8.1.v20160825-2041"/>
+      <unit id="org.jboss.tools.common" version="3.8.2.v20160913-1843"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
-      <!-- <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.AM1/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.1.Final/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.AM3/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.1.Final/"/> -->
    </location>
 
   </locations>

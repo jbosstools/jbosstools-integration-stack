@@ -5,17 +5,17 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.4.0.Final</version>
+  <version>4.4.1.Beta1-SNAPSHOT</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
-    Create the JBTIS target platform files and optionally a mirrored repository.
+    Create the JBTIS and DevstudioIS target platform files and optionally a mirrored repository.
 
     JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies +
-    JBoss Tools multiple core target dependencies forming an 'aggregate-base.target' and an 
+    JBoss Tools multiple core target dependencies form an 'aggregate-base.target' and an 
     'aggregate-base-ea.target' combined target.
 
-    Then add any leftover community dependencies to the aggregate forming an 'aggregate-full.target'/
+    Add any leftover community dependencies to the aggregate forming an 'aggregate-full.target' and an
     'aggregate-full-ea.target'.
 
     Build -P mirror to get:
@@ -31,16 +31,16 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>17</version>
+    <version>21</version>
   </parent>
 
   <properties>
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Alpha1/jbtis/</baseRepositoryUrl>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.0.Final/jbtis/</baseRepositoryUrl>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.60.1.Final</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.61.0.AM3-SNAPSHOT</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
   </properties>
 
@@ -392,23 +392,6 @@
 	  </execution>
 
 	  <execution>
-	    <id>attach-artifacts-target-platform-base</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>attach-artifact</goal>
-	    </goals>
-	    <configuration>
-	      <artifacts>
-		<artifact>
-		  <file>src/targets/integration-stack-base.target</file>
-		  <type>target</type>
-		  <classifier>integration-stack-base</classifier>
-		</artifact>
-	      </artifacts>
-	    </configuration>
-	  </execution>
-
-	  <execution>
 	    <id>attach-artifacts-base-ea</id>
 	    <phase>package</phase>
 	    <goals>
@@ -456,23 +439,6 @@
 	    </configuration>
 	  </execution>
 
-	  <execution>
-	    <id>attach-artifacts-target-platform-base-ea</id>
-	    <phase>package</phase>
-	    <goals>
-	      <goal>attach-artifact</goal>
-	    </goals>
-	    <configuration>
-	      <artifacts>
-		<artifact>
-		  <file>src/targets/integration-stack-base-ea.target</file>
-		  <type>target</type>
-		  <classifier>integration-stack-base-ea</classifier>
-		</artifact>
-	      </artifacts>
-	    </configuration>
-	  </execution>
-
 	</executions>
       </plugin>
 
@@ -480,8 +446,9 @@
   </build>
 
   <!-- Mirror the integration stack target dependencies (release/ early access) for both community (jbtis) and
-       production (devstudiois).  These will be used by the jbosstools and devstudio poms as an extra repo for resolving 
-       the contents of the .target files into a repository. -->
+       production (devstudiois).  These will be used by the jbosstools and devstudio poms as an extra repo for
+       resolving the contents of the .target files into a repository.
+  -->
   <profiles>
 
     <profile>

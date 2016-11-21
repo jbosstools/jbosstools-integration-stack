@@ -15,16 +15,6 @@
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.9.0.201609061714/"/>
     </location>
     
-    <!-- m2e-wtp for Fuse tooling -->		
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">		
-      <unit id="org.eclipse.m2e.wtp.feature.feature.group" version="1.3.1.20160831-1005"/>		
-      <unit id="org.eclipse.m2e.wtp.jaxrs.feature.feature.group" version="1.3.1.20160831-1005"/>		
-      <unit id="org.eclipse.m2e.wtp.jpa.feature.feature.group" version="1.3.1.20160831-1005"/>		
-      <unit id="org.eclipse.m2e.wtp.jsf.feature.feature.group" version="1.3.1.20160831-1005"/>		
-		
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2e-wtp/1.3.1.20160831-1005/"/>		
-    </location>
-
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
@@ -34,6 +24,24 @@
       <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
       <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.0.5.Finala/"/>
+    </location>
+
+    <!-- Birt Report - Teiid Designer -->
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.apache.poi" version="3.9.0.v201405241750"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
+      <unit id="org.eclipse.birt.core" version="4.6.0.v201602022206"/>
+      <unit id="org.eclipse.core.runtime.compatibility" version="3.2.300.v20150423-0821"/>		
+
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/birt/4.6.0.v201602022206/"/>
     </location>
 
     <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
@@ -61,10 +69,10 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.2.0.201605311222"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.2.0.201605311222"/>
-      <unit id="org.eclipse.emf.compare.rcp" version="2.4.0.201605311222"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.2.0.201605311222"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.2.1.201608311750"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.2.1.201608311750"/>
+      <unit id="org.eclipse.emf.compare.rcp" version="2.4.1.201608311750"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.2.1.201608311750"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.10.0.201606071713"/>
@@ -76,7 +84,7 @@
       <unit id="org.eclipse.emf.ecore.feature.group" version="2.12.0.v20160420-0247"/>
       <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.12.0.v20160526-0356"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.2.0.v20160516-0939"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.2.1.v20160822-0739"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
@@ -101,8 +109,8 @@
       <unit id="org.junit" version="4.11.0.v201303080030"/>
 
       <!-- Graphiti - BPMN2 Modeler, Fuse Tooling, SwitchYard -->
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.13.0.v20160608-1043"/>
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.13.1.v20160830-1309"/>
       <unit id="org.apache.batik.css" version="1.7.0.v201011041433"/>
       <unit id="org.apache.batik.dom" version="1.7.1.v201505191845"/>
       <unit id="org.apache.batik.ext.awt" version="1.7.0.v201011041433"/>
@@ -110,14 +118,14 @@
       <unit id="org.apache.batik.util" version="1.7.0.v201011041433"/>
       <unit id="org.apache.batik.util.gui" version="1.7.0.v200903091627"/>
       <unit id="org.apache.batik.xml" version="1.7.0.v201011041433"/>
-      <unit id="org.eclipse.graphiti" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.doc" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.export.batik" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.mm" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.pattern" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.tools.newprojectwizard" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.ui" version="0.13.0.v20160608-1043"/>
-      <unit id="org.eclipse.graphiti.ui.capabilities" version="0.13.0.v20160608-1043"/>
+      <unit id="org.eclipse.graphiti" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.doc" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.export.batik" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.mm" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.pattern" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.tools.newprojectwizard" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.ui" version="0.13.1.v20160830-1309"/>
+      <unit id="org.eclipse.graphiti.ui.capabilities" version="0.13.1.v20160830-1309"/>
       <unit id="org.w3c.css.sac" version="1.3.1.v200903091627"/>
       <unit id="org.w3c.dom.smil" version="1.0.0.v200806040011"/>
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
@@ -134,7 +142,7 @@
       <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201603211627"/>
       <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201603211627"/>
 
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201606082315-RC4/"/>
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/neon/201609281000/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -235,25 +243,24 @@
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <!-- <unit id="org.jboss.tools.test.feature.feature.group" version="3.6.0.Final-v20150924-2213-B38"/> -->
-      <unit id="org.jboss.tools.tests" version="3.7.1.v20160607-2053"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.2.1.v20160901-2242"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.8.1.v20160607-2053"/>
-      <unit id="org.jboss.tools.common.test" version="3.8.1.v20160607-2053"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.8.1.v20160607-2122"/>
+      <unit id="org.jboss.tools.tests" version="3.7.2.v20160913-1817"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.2.2.v20160913-2241"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.8.2.v20160913-1811"/>
+      <unit id="org.jboss.tools.common.test" version="3.8.2.v20160913-1843"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.8.2.v20161101-0007"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2016-04-22_12-52-32-B5049/all/repo/"/>-->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
-      <!-- <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.AM1/"/>-->
-      <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.1.Final/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.AM3/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.1.Final/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.common" version="3.8.1.v20160825-2041"/>
+      <unit id="org.jboss.tools.common" version="3.8.2.v20160913-1843"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
-      <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
-      <!-- <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.AM1/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.1.Final/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.AM3/"/>
+      <!-- <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.1.Final/"/> -->
    </location>
 
   </locations>
