@@ -75,9 +75,9 @@ $java.home = ${java.home}
         </if>
 
 	<if><equals arg1="${BUILD_TYPE}" arg2="stable" trim="true" /><then>
-	    <property name="discovery.is.url" value="https://devstudio.redhat.com/updates/9.0/central/integration-stack/" /></then>
+	    <property name="discovery.is.url" value="https://devstudio.redhat.com/10.0/stable/updates/integration-stack/discovery/" /></then>
 	<else>
-	    <property name="discovery.is.url" value="https://devstudio.redhat.com/updates/9.0-development/central/integration-stack/" /></else>
+	    <property name="discovery.is.url" value="https://devstudio.redhat.com/10.0/development/updates/integration-stack/discovery/" /></else>
 	</if>
     </then></if>
 
@@ -101,8 +101,8 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 
 	<target name="generate.composite.site">
 		<condition property="compositeName" 
-			value="JBoss Developer Studio Integration Stack Central - composite staging site" 
-			 else="JBoss Tools Integration Stack Central - composite staging site">
+			value="JBoss Developer Studio Integration Stack Central - composite site" 
+			 else="JBoss Tools Integration Stack Central - composite site">
 			<equals arg1="${BUILD_FORM}" arg2="production"/>
 		</condition>
 
@@ -140,7 +140,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 	<target name="generate.composite.xml.file">
 		<!-- fileType is either org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository or
 		     org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository -->
-		<property name="compositeName" value="JBoss Tools Integration Stack Central - composite staging site"/>
+		<property name="compositeName" value="JBoss Tools Integration Stack Central - composite site"/>
 		<property name="COMPOSITE_URLS" value="http://1,http://2,http://3,http://4"/>
 		<property name="compositeType" value="org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository"/>
 		<property name="compositeClass" value="compositeArtifactRepository"/>

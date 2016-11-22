@@ -7,7 +7,7 @@
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
   <version>4.4.1-SNAPSHOT</version>
-
+  
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
   <packaging>pom</packaging>
@@ -20,7 +20,7 @@
       mvn clean install
 
       If have already generated a local JBTIS TP build, can use this instead of pulling down the TP from remote:
-      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.4.0.Alpha1-SNAPSHOT
+      -Dtargetplatform.url=file:///.... -Dtargetplatform.ea.url=file:///.... -DIS_TP_VERSION=4.4.1.Beta1-SNAPSHOT
   -->
   <properties>
     <BUILD_ALIAS>LOCAL</BUILD_ALIAS>
@@ -31,8 +31,8 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
-    <VERSION>4.4.0-SNAPSHOT</VERSION>
-    <IS_TP_VERSION>4.4.0.CR1</IS_TP_VERSION>
+    <VERSION>${project.version}</VERSION>
+    <IS_TP_VERSION>4.4.1.Beta1-SNAPSHOT</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
@@ -58,7 +58,7 @@
 
   <modules>
     <module>site-final</module>
-    <module>site-ea</module>
+    <!-- <module>site-ea</module> no content -->
     <module>discovery</module>
   </modules>
 

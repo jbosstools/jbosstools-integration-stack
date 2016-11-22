@@ -7,7 +7,6 @@
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
   <version>10.1.0-SNAPSHOT</version>
-
   <name>Devstudio Integration Stack Aggregate/Discovery</name>
 
   <packaging>pom</packaging>
@@ -33,10 +32,11 @@
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
-    <VERSION>10.0.0-SNAPSHOT</VERSION>
-    <version>${VERSION}</version>
-    <IS_TP_VERSION>4.4.0.CR1</IS_TP_VERSION>
-    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.1.0.GA-build-product/latest/all/devstudio-10.1.0.GA-v20160902-1725-B43-installer-standalone.jar</DEVSTUDIO_INSTALLER>
+    <VERSION>${project.version}</VERSION>
+    <IS_TP_VERSION>4.4.1.Beta1-SNAPSHOT</IS_TP_VERSION>
+    <!--<DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.1.0.GA-build-product/latest/all/devstudio-10.1.0.GA-v20160902-1725-B43-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
+
+    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/10.0/staging/builds/devstudio-10.2.0.AM3-build-product/2016-11-04_17-13-49-B6372/all/devstudio-10.2.0.AM3-v20161104-1659-B6372-installer-standalone.jar</DEVSTUDIO_INSTALLER>
     <!-- https://developers.redhat.com/download-manager/file/jboss-fuse-karaf-6.3.0.redhat-187.zip
 	 http://origin-repository.jboss.org/nexus/content/groups/product-ga/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187
          http://fusewin.tpb.lab.eng.brq.redhat.com:8081/nexus/content/groups/fuse-all/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip
@@ -44,14 +44,15 @@
     -->
     <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip</FUSE_RUNTIME>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/stable/updates/discovery.earlyaccess/10.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
-
+    <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/stable/updates/discovery.earlyaccess/10.1.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/staging/updates/discovery.earlyaccess/10.2.0.AM3/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.CR1/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.0.CR1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.1.CR1-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.1.CR1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
-    <DEVSTUDIOIS_TP_VERSION>10.0.0.CR1</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>10.0.1.Beta1-SNAPSHOT</DEVSTUDIOIS_TP_VERSION>
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/devstudiois/REPO/</DEVSTUDIOIS_TP_SITE>
     <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/devstudiois/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 
@@ -77,7 +78,7 @@
 
   <modules>
     <module>site-ga</module>
-    <module>site-ea</module>
+    <!-- <module>site-ea</module> no content -->
     <module>discovery</module>
     <module>features</module>
     <module>tests</module>
@@ -210,12 +211,14 @@
       <layout>p2</layout>
       <url>${COMPOSITE_SITE}</url>
     </repository>
-
+    
+    <!-- No Early access components
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_EA_SITE}</url>
-    </repository>
+      </repository>
+    -->
 
     <repository>
       <id>devstudiois-targetplatform-site</id>

@@ -11,12 +11,13 @@
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
     </connectorCategory>
 
-    <!-- JBoss Integration Stack Generic Connector -->
+    <!-- JBoss Integration Stack Generic Connector
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-generic"
@@ -35,7 +36,7 @@
           url="http://devstudio.redhat.com/">
        </overview>
     </connectorDescriptor>
-
+    -->
     <!-- JBoss Fuse Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
@@ -88,6 +89,30 @@
       <iu id="org.kie.eclipse.feature"/>
       <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
+      <icon
+        image32="images/jbds_icon32.png">
+      </icon>
+      <overview
+        url="http://devstudio.redhat.com/">
+      </overview>
+    </connectorDescriptor>
+
+    <!-- JBoss Data Virtualization Development -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Data Virtualization Development"
+       description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."
+       id="jboss.integration-stack.bundle.ds">
+      <iu id="org.teiid.datatools.connectivity.feature"/>
+      <iu id="org.teiid.designer.feature"/>
+      <iu id="org.teiid.designer.runtime.feature"/>
+      <iu id="org.teiid.designer.teiid.client.feature"/>
       <icon
         image32="images/jbds_icon32.png">
       </icon>
