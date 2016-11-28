@@ -40,7 +40,7 @@
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.61.0.AM3-SNAPSHOT</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.61.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
   </properties>
 

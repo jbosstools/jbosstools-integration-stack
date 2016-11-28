@@ -15,14 +15,14 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <!-- <unit id="org.jboss.tools.test.feature.feature.group" version="3.6.0.Final-v20150924-2213-B38"/> -->
       <unit id="org.jboss.tools.tests" version="3.7.2.v20160913-1817"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.2.2.v20160913-2241"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.2.2.v20161121-2100"/>
       <unit id="org.jboss.tools.common.base.test" version="3.8.2.v20160913-1811"/>
       <unit id="org.jboss.tools.common.test" version="3.8.2.v20160913-1843"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.8.2.v20161101-0007"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.8.2.v20161121-2100"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2016-04-22_12-52-32-B5049/all/repo/"/>-->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.AM3/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.Final/"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.1.Final/"/> -->
    </location>
 
@@ -31,7 +31,7 @@
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/mars/stable/updates/core/"/> -->
-      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.AM3/"/>
+      <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.Final/"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.1.Final/"/> -->
    </location>
 
