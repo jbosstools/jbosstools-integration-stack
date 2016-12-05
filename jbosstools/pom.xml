@@ -32,7 +32,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.1.Beta1-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.1.CR1</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
@@ -119,7 +119,7 @@
     <repository>
       <id>jboss-releases-repository</id>
       <name>JBoss Releases Repository</name>
-      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
+      <url>https://origin-repository.jboss.org/nexus/content/repositories/releases/</url>
       <snapshots>
 	<enabled>false</enabled>
       </snapshots>
@@ -139,13 +139,13 @@
 
     <pluginRepository>
       <id>jboss-snapshots-repository</id>
-      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
+      <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
     </pluginRepository>
 
     <pluginRepository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
+      <url>http://origin-repository.jboss.org/nexus/content/groups/public/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
