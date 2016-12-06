@@ -42,18 +42,23 @@
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
     <JBTCoreTPVersion>4.61.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
+    <jbossNexus>origin-repository.jboss.org</jbossNexus>
   </properties>
 
   <distributionManagement>
     <repository>
       <id>jboss-releases-repository</id>
-      <name>JBoss Releases Repository</name>
-      <url>https://origin-repository.jboss.org/nexus/service/local/staging/deploy/maven2/</url>
+      <name>JBoss Release Staging Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</url>
+      <layout>default</layout>
     </repository>
     <snapshotRepository>
       <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshots Repository</name>
-      <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
+      <name>JBoss Snapshot Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://${jbossNexus}/nexus/content/repositories/snapshots/</url>
+      <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
   
@@ -448,6 +453,10 @@
   <!-- Mirror the integration stack target dependencies (release/ early access) for both community (jbtis) and
        production (devstudiois).  These will be used by the jbosstools and devstudio poms as an extra repo for
        resolving the contents of the .target files into a repository.
+
+       Note that we don't enable 'includeSources' since we're mirroring the IS dependencies only - not the full
+       aggregated set of dependencies (too large).  Component developers should mirror the generated nexus .target
+       file (classifier base or base-ea) locally to their projects if they want source debugging.
   -->
   <profiles>
 
