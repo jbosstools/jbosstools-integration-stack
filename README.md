@@ -1,7 +1,7 @@
 # The JBoss Tools Integration Stack Project
 
 ## Summary
-The Integration Stack for JBoss Developer Studio is a set of features and plugins for Eclipse that further enhances the IDE development functionality provided by JBoss Developer Studio. It’s where the Fuse Tooling, DataVirt Tooling and BRMS tooling is aggregated.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.  This site also produces a stand-alone installer containing all of JBossTools core and the Integration Stack components as well as a stand-alone installer which contains core, IS and a supplemental runtime server.
+The Integration Stack for JBoss Developer Studio is a set of features and plugins for Eclipse that further enhances the IDE development functionality provided by JBoss Developer Studio. It’s where the Fuse Tooling, DataVirt Tooling and BRMS tooling is aggregated.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories, JAR installers and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.  This site also produces a stand-alone installer containing all of JBossTools core and the Integration Stack components as well as a stand-alone installer which contains core, IS and a supplemental runtime server.
 
 ## Components/ Frameworks
 
@@ -12,7 +12,7 @@ JBoss Business Process and Rules Development plug-ins provide design, debug and 
 * [BPEL Designer](http://tools.jboss.org/features/bpel.html) - Orchestrating your business processes.
 * [BPMN2 Modeler](http://tools.jboss.org/features/bpmn2.html) - A graphical modeling tool which allows creation and editing of Business Process Modeling Notation diagrams using graphiti.
 * [Drools](http://tools.jboss.org/features/drools.html) - A Business Logic integration Platform which provides a unified and integrated platform for Rules, Workflow and Event Processing.
-* [jBPM](http://tools.jboss.org/features/jbpm.html) - A flexible Business Process Management (BPM) suite.
+* [jBPM6](http://tools.jboss.org/features/jbpm.html) - A flexible Business Process Management (BPM) suite.
 
 ### JBoss Data Virtualization Development
 
@@ -42,7 +42,9 @@ Fork a copy of the GIT project onto your local disk:
 
      https://github.com/jbosstools/jbosstools-integration-stack
 
-### Building the JBoss Tools Integration Stack Target Platform Project (not required)
+### Building the JBoss Tools Integration Stack Target Platform Project (not required - you can find canned versions in nexus)
+
+https://origin-repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/
 
       $ cd .../jbosstools-integration-stack/target-platform
       $ mvn clean install  # specific -Pmirror if you'd like the TP repositories generated
@@ -50,7 +52,6 @@ Fork a copy of the GIT project onto your local disk:
 The JBoss Tools Integration Stack Target Platform project creates four target files:
 
 * An aggregate of the JBoss Tools Core target dependencies and JBoss Tools multiple dependencies + released Integration Stack base target dependencies (base).
-
 
 ----
 	1. released integration-stack specific target dependencies:   integration-stack-base.target
@@ -97,9 +98,9 @@ e.g.  http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/
 
 The JBoss Tools Integration Stack Target Platform project also creates four repositories:
 
-e.g.  target-platform.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/jbtis/REPO/
+e.g.  target-platform.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/jbtis/REPO/
 
-e.g.  target-platform-ea.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.2.1.Final/jbtis/earlyaccess/REPO/
+e.g.  target-platform-ea.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/jbtis/earlyaccess/REPO/
 
 e.g.  target-platform-devstudiois.target.repo - http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/devstudiois/REPO/
 
@@ -109,7 +110,7 @@ The devstudiois repositories are built separately so as to avoid pulling in any 
 
 The integration-stack tycho target dependency (.target) files are deployed to the JBoss nexus releases repository for use by the integration stack component projects.  If you are an integration stack component developer or potentially a QE test developer, your maven POM target-platform-configuration should reference one of these as your target-platform artifact.
 
-e.g.  https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/4.2.1.Final/
+e.g.  https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/4.4.1.Final/
 
 Target artifacts local to the IS:
 
@@ -162,11 +163,6 @@ Here's an example of how to reference the derived aggregate base target file:
 	    <environment>
 	      <os>macosx</os>
 	      <ws>cocoa</ws>
-	      <arch>x86</arch>
-	    </environment>
-	    <environment>
-	      <os>macosx</os>
-	      <ws>cocoa</ws>
 	      <arch>x86_64</arch>
 	    </environment>
 	    <environment>
@@ -199,14 +195,13 @@ Here's an example of how to reference the derived aggregate base target file:
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base-ea</classifier>
+              <classifier>base</classifier>
             </artifact>
           </target>
         </configuration>
       </plugin>
 ----
 Don't forget to identify the repository where the target file can be found:
-
 
 ----
 <distributionManagement>
