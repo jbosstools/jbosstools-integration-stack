@@ -47,8 +47,11 @@
       <unit id="org.jboss.tools.maven.project.examples.feature.feature.group" version="3.1.2.v20160922-1944"/>
       <unit id="org.jboss.tools.maven.seam.feature.feature.group" version="1.8.2.v20160922-1942"/>
       <unit id="org.jboss.tools.maven.sourcelookup.feature.feature.group" version="1.8.2.v20160922-1942"/>
+      <unit id="org.jboss.tools.openshift.cdk.feature.feature.group" version="3.3.1.v20161025-0131"/>
       <unit id="org.jboss.tools.openshift.egit.integration.feature.feature.group" version="3.3.1.v20160919-1711"/>
       <unit id="org.jboss.tools.openshift.express.feature.feature.group" version="3.3.1.v20161117-0751"/>
+      <unit id="org.jboss.tools.openshift.feature.feature.group" version="3.3.1.v20161125-0956"/>
+      <unit id="org.jboss.tools.openshift.js.feature.feature.group" version="1.0.0.v20161116-1518"/>
       <unit id="org.jboss.tools.portlet.feature.feature.group" version="1.6.0.Final-v20141209-0339-B20"/>
       <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.2.v20160922-1944"/>
       <unit id="org.jboss.tools.richfaces.feature.feature.group" version="3.8.2.v20160913-1839"/>
