@@ -26,7 +26,7 @@
     <update.site.version>DEVSTUDIOIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the stable DEVSTUDIOIS target platform repository that should be associated with this site. -->
-    <targetplatform.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/devstudiois/REPO/</targetplatform.url>
+    <targetplatform.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</targetplatform.url>
   </properties>
 
   <build>
