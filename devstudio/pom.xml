@@ -33,7 +33,7 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.1.CR2-SNAPSHOT</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.1.CR2</IS_TP_VERSION>
 
     <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.2.0.GA-build-product/2016-11-25_14-44-04-B55/all/devstudio-10.2.0.GA-v20161125-1418-B55-installer-standalone.jar</DEVSTUDIO_INSTALLER>
     <!-- <DEVSTUDIO_INSTALLER>file:///home/pleacu/git-clone/jbdevstudio-product/installer/target/devstudio-10.3.0.Beta1-v20161205-1527-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
@@ -51,7 +51,7 @@
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.1.CR1/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
-    <DEVSTUDIOIS_TP_VERSION>10.0.1.CR2-SNAPSHOT</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>10.0.1.CR2</DEVSTUDIOIS_TP_VERSION>
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
     <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 
