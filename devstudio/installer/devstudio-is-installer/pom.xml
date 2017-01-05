@@ -8,94 +8,11 @@
   </parent>
   <artifactId>devstudio-is-installer</artifactId>
   <packaging>pom</packaging>
-  <name>Devstudio Integration Stack Installer</name>
+  <name>Red Hat JBoss Developer Studio Integration Stack Installer</name>
 
-  <build>
-    <plugins>
+  <modules>
+    <module>full</module>
+    <module>fuse</module>
+  </modules>
 
-      <!-- Get the GA aggregate integration stack. -->
-      <plugin>
-	<groupId>org.apache.maven.plugins</groupId>
-	<artifactId>maven-dependency-plugin</artifactId>
-
-	<executions>
-
-	  <execution>
-	    <id>copy-is-aggregate</id>
-	    <phase>prepare-package</phase>
-	    <goals>
-	      <goal>unpack</goal>
-	    </goals>
-	    <configuration>
-	      <artifactItems>
-		<artifactItem>
-		  <groupId>com.jboss.jbds.integration-stack</groupId>
-		  <artifactId>site-ga</artifactId>
-		  <version>10.1.0-SNAPSHOT</version>
-		  <type>zip</type>
-		  <outputDirectory>target/integration-stack-ga</outputDirectory>
-		</artifactItem>
-
-                <!-- Uncomment for early access testing only. -->
-                <!--
-		<artifactItem>
-		  <groupId>com.jboss.jbds.integration-stack</groupId>
-		  <artifactId>site-ea</artifactId>
-		  <version>10.1.0-SNAPSHOT</version>
-		  <type>zip</type>
-		  <outputDirectory>target/integration-stack-ea</outputDirectory>
-		</artifactItem>
-                -->
-              </artifactItems>
-	    </configuration>
-	  </execution>
-	</executions>
-      </plugin>
-
-      <!-- Get the devstudio installer. -->
-      <plugin>
-	<groupId>com.googlecode.maven-download-plugin</groupId>
-	<artifactId>download-maven-plugin</artifactId>
-	<version>1.2.1</version>
-
-	<executions>
-	  <execution>
-	    <id>fetch-target-platform</id>
-	    <phase>generate-sources</phase>
-	    <goals>
-	      <goal>wget</goal>
-	    </goals>
-	    <configuration>
-	      <url>${DEVSTUDIO_INSTALLER}</url>
-	      <unpack>true</unpack>
-	      <outputDirectory>target/installer</outputDirectory>
-	    </configuration>
-	  </execution>
-	</executions>
-      </plugin>
-
-      <!-- Assemble a site based on the specified descriptor XML. -->
-      <plugin>
-	<artifactId>maven-assembly-plugin</artifactId>
-	<executions>
-	  <execution>
-	    <id>assemble-site</id>
-	    <phase>install</phase>
-	    <goals>
-	      <goal>single</goal>
-	    </goals>
-	  </execution>
-	</executions>
-	<configuration>
-	  <archive>
-	    <manifestFile>target/installer/META-INF/MANIFEST.MF</manifestFile>
-	  </archive>
-	  <descriptors>
-	    <descriptor>src/main/assembly/descriptor.xml</descriptor>
-	  </descriptors>
-	</configuration>
-      </plugin>
-
-    </plugins>
-  </build>
 </project>
