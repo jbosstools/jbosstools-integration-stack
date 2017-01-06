@@ -1,0 +1,9 @@
+devstudio-fuse-tooling
+devstudio-fuse-tooling_deps
+rh-eclipse46.cfg
+devstudio-fuse-tooling-*.src.rpm
+devstudio-fuse-tooling.tar.xz
+yum_repo/
+mock_logs/
+devstudio-fuse-tooling.spec
+*.cfg

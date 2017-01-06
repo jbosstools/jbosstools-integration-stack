@@ -1,0 +1,5 @@
+# list of top-level features to include in rh-eclipse46-devstudio rpm
+# dependencies and includes will be included automatically so no need to list them here explicitly
+# lines starting with # will be ignored
+
+com.jboss.devstudio.integration-stack.fuse.feature
