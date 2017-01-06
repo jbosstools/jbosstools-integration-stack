@@ -48,9 +48,9 @@
   <distributionManagement>
     <repository>
       <id>jboss-releases-repository</id>
-      <name>JBoss Release Staging Repository</name>
+      <name>JBoss Releases Repository</name>
       <uniqueVersion>false</uniqueVersion>
-      <url>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</url>
+      <url>https://${jbossNexus}/nexus/content/repositories/releases/</url>
       <layout>default</layout>
     </repository>
     <snapshotRepository>
