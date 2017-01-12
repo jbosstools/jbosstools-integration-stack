@@ -42,7 +42,7 @@
          http://fusewin.tpb.lab.eng.brq.redhat.com:8081/nexus/content/groups/fuse-all/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip
 	 http://download-node-02.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip
     -->
-    <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187/jboss-fuse-karaf-6.3.0.redhat-187.zip</FUSE_RUNTIME>
+    <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-224/jboss-fuse-karaf-6.3.0.redhat-224.zip</FUSE_RUNTIME>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
