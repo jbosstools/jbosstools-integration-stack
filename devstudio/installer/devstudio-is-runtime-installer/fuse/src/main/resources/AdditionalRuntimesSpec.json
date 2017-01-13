@@ -3,7 +3,7 @@
 	"label":"JBoss Fuse Karaf Server",
 	"description":"Fuse Karaf Server/ Runtime",
 	"selected":"true",
-	"path":"devstudio-is/runtime/jboss-fuse-karaf-6.3.0.redhat-187.zip",
+	"path":"devstudio-is/runtime/jboss-fuse-karaf-6.3.0.redhat-224.zip",
 	"size":"785784505"
     }
 ]
