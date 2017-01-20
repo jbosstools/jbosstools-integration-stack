@@ -21,7 +21,7 @@
     <child location="http://downloads.jboss.org/drools/updatesites/updatesite-6.5.1.Final-v20161109-054101-B1259/"/>
 
     <!-- FUSE TOOLING -->
-    <child location="http://download.jboss.org/jbosstools/neon/staging/builds/integration-stack/fuse-tooling/9.1.0.CI/"/>
+    <child location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/fuse-tooling/9.1.0.CR1/"/>
 
     <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/switchyard/2.3.0.CR1/"/>
