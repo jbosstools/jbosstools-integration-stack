@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/neon/staging/builds/integration-stack/fuse-tooling/9.1.0.CI/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/neon/staging/builds/integration-stack/switchyard/2.3.0.CI/"/>
+    <child location="http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/switchyard/2.3.0.CR1/"/>
 
     <!-- TEIID DESIGNER -->
     <child location="http://download.jboss.org/jbosstools/updates/development/neon/integration-stack/teiiddesigner/11.0.1.CR1/"/>
