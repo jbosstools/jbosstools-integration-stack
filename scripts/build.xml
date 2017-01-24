@@ -220,7 +220,7 @@ jboss.is.update.url =$${jboss.discovery.site.url:${discovery.is.url}}
 
     <if><not><equals arg1="${central.discovery.is.jar}" arg2="" trim="true" /></not><then>
 	<propertyregex override="true" property="BUILD_TS" defaultvalue="${BUILD_TS}" input="${BUILD_TIMESTAMP}" 
-		       regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
+		       regexp="([0-9]+)-([0-9]+)-([0-9]+)_([0-9]+)-([0-9]+)" replace="v\1\2\3-\4\5" />
 	<mkdir dir="${project.build.directory}/${DISCOVERY_SITE}/plugins"/>
 
 	<!-- Rename and copy the integration stack discovery jar. -->
