@@ -27,7 +27,7 @@
     <BUILD_INSTALLER>-</BUILD_INSTALLER>
     <BUILD_NUMBER>1</BUILD_NUMBER>
     <BUILD_TIMESTAMP>${maven.build.timestamp}</BUILD_TIMESTAMP>
-    <maven.build.timestamp.format>yyyy-MM-dd_HH-mm-ss</maven.build.timestamp.format>
+    <maven.build.timestamp.format>yyyy-MM-dd_HH-mm</maven.build.timestamp.format>
     <BUILD_TS>v20130101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>devstudio-integration-stack</PREFIX>
@@ -96,9 +96,8 @@
       </activation>
 
       <properties>
-        <update.site.description>Snapshot Build</update.site.description>
+        <update.site.description>Snapshot Build (${BUILD_TIMESTAMP})</update.site.description>
       </properties>
-
     </profile>
 
     <profile>
@@ -112,7 +111,7 @@
       </activation>
 
       <properties>
-        <update.site.description>Development Milestone</update.site.description>
+        <update.site.description>Development Milestone (${BUILD_TIMESTAMP})</update.site.description>
       </properties>
     </profile>
 
@@ -127,7 +126,7 @@
       </activation>
 
       <properties>
-        <update.site.description>Stable Release</update.site.description>
+        <update.site.description>Stable Release (${BUILD_TIMESTAMP})</update.site.description>
       </properties>
 
     </profile>
@@ -311,7 +310,7 @@
         <artifactId>tycho-packaging-plugin</artifactId>
         <version>${tychoVersion}</version>
         <configuration>
-          <format>'${BUILD_ALIAS}-v'yyyyMMdd-HHmm</format>
+          <format>'${BUILD_ALIAS}-v'yyyyMMdd-HHmm'-B${BUILD_NUMBER}'</format>
           <archiveSite>true</archiveSite>
         </configuration>
       </plugin>

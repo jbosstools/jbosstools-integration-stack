@@ -22,8 +22,7 @@
 
   <properties>
     <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
-    <update.site.description>Snapshot Build</update.site.description>
-    <update.site.version>DEVSTUDIOIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
+    <update.site.version>DEVSTUDIOIS-${VERSION}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the DEVSTUDIOIS target platform repository that should be associated with this site. -->
     <targetplatform.ea.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</targetplatform.ea.url>
