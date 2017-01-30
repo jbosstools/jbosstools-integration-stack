@@ -22,7 +22,9 @@
        target-platform-ea.target.repo
        target-platform.target.repo
 
-    Build -Dp2diff.skip to turn off p2 differentiation.
+    Build -D p2diff.skip to turn off p2 differentiation.
+
+    Build -P jboss-release to push to the nexus release repo, push to nexus staging repo otherwise
   </description>
 
   <packaging>pom</packaging>
@@ -43,25 +45,9 @@
     <JBTCoreTPVersion>4.61.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
+    <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo>
   </properties>
 
-  <distributionManagement>
-    <repository>
-      <id>jboss-releases-repository</id>
-      <name>JBoss Releases Repository</name>
-      <uniqueVersion>false</uniqueVersion>
-      <url>https://${jbossNexus}/nexus/content/repositories/releases/</url>
-      <layout>default</layout>
-    </repository>
-    <snapshotRepository>
-      <id>jboss-snapshots-repository</id>
-      <name>JBoss Snapshot Repository</name>
-      <uniqueVersion>false</uniqueVersion>
-      <url>https://${jbossNexus}/nexus/content/repositories/snapshots/</url>
-      <layout>default</layout>
-    </snapshotRepository>
-  </distributionManagement>
-  
   <reporting>
     <plugins>
       <plugin>
@@ -461,6 +447,16 @@
   <profiles>
 
     <profile>
+      <id>jboss-release</id>
+      <activation>
+	<activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>      
+          <nexusRepo>https://${jbossNexus}/nexus/content/repositories/releases/</nexusRepo>
+      </properties>
+    </profile>
+    
+    <profile>
       <id>mirror</id>
       <activation>
 	<activeByDefault>false</activeByDefault>
@@ -730,4 +726,21 @@
     </profile>
   </profiles>
 
+  <distributionManagement>
+    <repository>
+      <id>jboss-releases-repository</id>
+      <name>JBoss Releases Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>${nexusRepo}</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <id>jboss-snapshots-repository</id>
+      <name>JBoss Snapshot Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://${jbossNexus}/nexus/content/repositories/snapshots/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+  </distributionManagement>
+  
 </project>
