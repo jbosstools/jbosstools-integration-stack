@@ -27,7 +27,7 @@
     <child location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/switchyard/2.3.0.CR2/"/>
 
     <!-- TEIID DESIGNER -->
-    <child location="http://download.jboss.org/jbosstools/updates/release/neon/integration-stack/teiiddesigner/11.0.1.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/stable/neon/integration-stack/teiiddesigner/11.0.1.Final/"/>
 
   </children>
 
