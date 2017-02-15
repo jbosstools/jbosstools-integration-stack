@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.4.1-SNAPSHOT</version>
+  <version>4.4.2-SNAPSHOT</version>
   
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -32,7 +32,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.1.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.2.AM1-SNAPSHOT</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
@@ -42,7 +42,7 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
 
-    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/static/neon/stable/updates/discovery.central/4.4.2.Final/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/neon/staging/updates/discovery.central/4.4.3.AM2/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
