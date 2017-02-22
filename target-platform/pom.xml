@@ -33,16 +33,18 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>21</version>
+    <version>22</version>
   </parent>
 
   <properties>
+    <!-- For p2diff comparison -->
     <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/jbtis/</baseRepositoryUrl>
+    
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.62.0.Final-SNAPSHOT</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.62.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
     <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo>

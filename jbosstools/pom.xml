@@ -42,7 +42,7 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
 
-    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/neon/staging/updates/discovery.central/4.4.3.AM2/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/neon/staging/updates/discovery.central/4.4.3.Final/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
