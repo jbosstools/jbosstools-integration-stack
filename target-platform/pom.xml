@@ -24,7 +24,6 @@
 
     Build -D p2diff.skip to turn off p2 differentiation.
 
-    Build -P jboss-release to push to the nexus release repo, push to nexus staging repo otherwise
   </description>
 
   <packaging>pom</packaging>
@@ -47,7 +46,8 @@
     <JBTCoreTPVersion>4.62.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
-    <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo>
+    <nexusRepo>https://${jbossNexus}/nexus/content/repositories/releases/</nexusRepo>
+    <!-- <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo> -->
   </properties>
 
   <reporting>
@@ -448,16 +448,6 @@
   -->
   <profiles>
 
-    <profile>
-      <id>jboss-release</id>
-      <activation>
-	<activeByDefault>false</activeByDefault>
-      </activation>
-      <properties>      
-          <nexusRepo>https://${jbossNexus}/nexus/content/repositories/releases/</nexusRepo>
-      </properties>
-    </profile>
-    
     <profile>
       <id>mirror</id>
       <activation>
