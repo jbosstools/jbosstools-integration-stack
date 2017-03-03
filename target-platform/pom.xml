@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.4.2.AM2-SNAPSHOT</version>
+  <version>4.4.2.AM2</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -77,6 +77,17 @@
 	<artifactId>tycho-maven-plugin</artifactId>
 	<version>${tychoVersion}</version>
 	<extensions>true</extensions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
+        <version>1.6.7</version>
+        <extensions>true</extensions>
+        <configuration>
+          <nexusUrl>https://${jbossNexus}/nexus/</nexusUrl>
+          <serverId>jboss-releases-repository</serverId>
+        </configuration>
       </plugin>
 
       <plugin>
