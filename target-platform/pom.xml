@@ -78,7 +78,7 @@
 	<version>${tychoVersion}</version>
 	<extensions>true</extensions>
       </plugin>
-
+      <!--
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -89,7 +89,7 @@
           <serverId>jboss-releases-repository</serverId>
         </configuration>
       </plugin>
-
+      -->
       <plugin>
 	<groupId>org.jboss.tools.tycho-plugins</groupId>
 	<artifactId>target-platform-utils</artifactId>
