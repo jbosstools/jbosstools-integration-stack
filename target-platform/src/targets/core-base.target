@@ -64,7 +64,7 @@
       <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/neon/development/updates/core/4.4.3.AM2/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/updates/core/master"/> -->
       <!-- <repository id="jbt-core-4.4.3.Final" location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.3.Final/"/> -->
-      <repository id="jbt-core-4.4.2.Final" location="http://download.jboss.org/jbosstools/neon/stable/updates/core/"/>
+      <repository id="jbt-core-4.4.3.Final" location="http://download.jboss.org/jbosstools/neon/stable/updates/core/"/>
     </location>
 
   </locations>
