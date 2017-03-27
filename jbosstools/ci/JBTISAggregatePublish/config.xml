@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;h2&gt;&lt;a style=&quot;color:green&quot;&gt;JBoss Tools Integration Stack publishing (Neon).&lt;/h2&gt;&#xd;
+  &#xd;
+  &lt;p&gt;Promote community Integration Stack components from staging.&lt;/p&gt;&#xd;
+&#xd;
+&lt;p&gt;This job should be run after a good build of:&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+  &lt;a href=&quot;https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/JBTISAggregate/&quot;/&gt;https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/JBTISAggregate/&lt;/a&gt;&#xd;
+&lt;/p&gt;&#xd;
+  &lt;p&gt;Resulting sites: (based on BUILD_TYPE - e.g.&apos;development&apos;)&lt;/p&gt;&#xd;
+  &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/${VERSION}/&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+  &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/${VERSION}/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+  &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/discovery/${VERSION}/&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/discovery/${VERSION}/&lt;/a&gt;&lt;/li&gt; &#xd;
+  &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/discovery/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/discovery/${VERSION}/earlyaccess&lt;/a&gt;&lt;/li&gt; &#xd;
+  &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/jbosstools-integration-stack-${VERSION}-updatesite.zip/&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/jbosstools-integration-stack-${VERSION}-updatesite.zip/&lt;/a&gt;&lt;/li&gt;&#xd;
+  &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip/&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/neon/development/updates/integration-stack/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip/&lt;/a&gt;&lt;/li&gt;&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>5</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.25.1">
+      <projectUrl>https://github.com/jbosstools/jbosstools-integration-stack/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set"/>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>JBTIS version.
+4.4.3.CR1-SNAPSHOT
+4.4.1.Final</description>
+          <defaultValue>4.4.2.Final</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TARGET_PLATFORM</name>
+          <description>The base Eclipse platform to which the build is targeted.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>neon</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SOURCE_PATH</name>
+          <description>Relative path under http://download.jboss.org/jbosstools/ to the update site folder you want to promote.</description>
+          <defaultValue>neon/staging/updates/integration-stack/${VERSION}/</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DISCOVERY_SOURCE_PATH</name>
+          <description>Staging location of discovery elements.
+
+# neon/staging/updates/integration-stack/discovery/${VERSION}/</description>
+          <defaultValue>neon/staging/updates/integration-stack/discovery/${VERSION}/</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
+          <description>The type of build being published:
+&lt;li&gt;development (milestone)&lt;/li&gt;
+&lt;li&gt;stable (release)&lt;/li&gt;</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>stable</string>
+              <string>development</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PARENT_FOLDER</name>
+          <description>Parent folder to the project.</description>
+          <defaultValue>integration-stack</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_KIND</name>
+          <description>Community or production promotion.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>jbosstools</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>EA_ENABLED</name>
+          <description>Check box to process early access components and metadata.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>devstudiois-rhel-7.3-5502</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>org.apache.maven.plugins:maven-dependency-plugin:2.9:unpack</targets>
+      <mavenName>(Default)</mavenName>
+      <properties>artifact=org.jboss.tools.releng:jbosstools-releng-publish:4.4.0.Final-SNAPSHOT::tar.gz
+outputDirectory=${WORKSPACE}/sources
+trimVersion=true
+mdep.stripClassifier=true
+mdep.stripVersion=true</properties>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command># Copy from staging to the local workspace.
+rsync -aPrzq --protocol=28 tools@filemgmt.jboss.org:/downloads_htdocs/tools/${SOURCE_PATH} ${WORKSPACE}/${JOB_NAME}
+rsync -aPrzq --protocol=28 tools@filemgmt.jboss.org:/downloads_htdocs/tools/${DISCOVERY_SOURCE_PATH} ${WORKSPACE}/discovery
+
+# Promote the update site.
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/${JOB_NAME} -t ${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION} --del
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/${JOB_NAME} -t static/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION} --del
+
+# Promote the central discovery components.
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/discovery -t ${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/${VERSION} --del
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/discovery -t static/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/${VERSION} --del
+
+# Promote the released update site zip
+cd ${WORKSPACE}
+rm -f site-final*
+wget http://download.jboss.org/jbosstools/${TARGET_PLATFORM}/staging/builds/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite.zip
+wget http://download.jboss.org/jbosstools/${TARGET_PLATFORM}/staging/builds/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256
+
+rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite.zip \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite.zip
+
+rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256 \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256
+
+rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite.zip \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/static/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite.zip
+
+rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256 \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/static/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256
+
+# Promote the earlyaccess update site zip
+if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+   cd ${WORKSPACE}
+   rm -f site-ea*
+   wget http://download.jboss.org/jbosstools/${TARGET_PLATFORM}/staging/builds/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+   wget http://download.jboss.org/jbosstools/${TARGET_PLATFORM}/staging/builds/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256 \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/static/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256 \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/static/${TARGET_PLATFORM}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+
+fi</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.build__timeout.BuildTimeoutWrapper plugin="build-timeout@1.18">
+      <strategy class="hudson.plugins.build_timeout.impl.AbsoluteTimeOutStrategy">
+        <timeoutMinutes>240</timeoutMinutes>
+      </strategy>
+      <operationList>
+        <hudson.plugins.build__timeout.operations.FailOperation/>
+      </operationList>
+    </hudson.plugins.build__timeout.BuildTimeoutWrapper>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+  </buildWrappers>
+</project>

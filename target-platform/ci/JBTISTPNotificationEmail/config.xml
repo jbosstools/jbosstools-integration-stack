@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&#xd;
+Send an email describing new JBTIS target platform availability.&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set">
+          <string>lheinema</string>
+        </coownersIds>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>
+JBoss Tools Integration Stack Target Platform version.
+</description>
+          <defaultValue>4.4.3.CR1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DEVSTUDIOIS_TP_VERSION</name>
+          <description>
+Devstudio Integration Stack Target Platform version.
+</description>
+          <defaultValue>10.3.0.CR1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>STAGE</name>
+          <description>Publish target platform components to staging.</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>POM_ACTION</name>
+          <description>
+Either install or deploy to nexus (must enable staging).
+</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>install</string>
+              <string>deploy</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM" plugin="multiple-scms@0.6">
+    <scms>
+      <hudson.plugins.git.GitSCM plugin="git@3.0.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/jbosstools/jbosstools-build-ci.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>*/jbosstools-4.4.x</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+            <relativeTargetDir>jbosstools-build-ci</relativeTargetDir>
+          </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        </extensions>
+      </hudson.plugins.git.GitSCM>
+      <hudson.plugins.git.GitSCM plugin="git@3.0.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+            <url>git://github.com/jbosstools/jbosstools-integration-stack.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </hudson.plugins.git.GitSCM>
+    </scms>
+  </scm>
+  <assignedNode>devstudiois-rhel-7.3-3143</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command># computed values
+nexusdir=$(echo ${VERSION} | sed -e &apos;s/SNAPSHOT//&apos;)
+sendmail=0
+rm -f ${WORKSPACE}/mailbody.${JOB_NAME}.txt
+
+if [[ ${VERSION} == ${nexusdir} ]]; then
+   nexusdir=&quot;releases&quot;
+else
+   nexusdir=&quot;snapshots&quot;
+fi
+
+TOrecipients=pleacu@redhat.com
+CCrecipients=&quot;&quot;
+sender=&quot;pleacu@redhat.com&quot;
+subject=&quot;Integration Stack target platform update available - JBTIS TP ${VERSION}, DEVSTUDIOIS TP ${DEVSTUDIOIS_TP_VERSION}&quot;
+
+if [[ ${POM_ACTION} == &quot;deploy&quot; ]]; then
+echo -n &quot;
+  Greetings,
+     An updated target platform is now available - JBTIS TP ${VERSION}, DEVSTUDIOIS TP ${DEVSTUDIOIS_TP_VERSION}
+
+   https://repository.jboss.org/nexus/content/repositories/${nexusdir}/org/jboss/tools/integration-stack/target-platform/${VERSION}/
+   http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${VERSION}/
+   
+   https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform
+
+&quot; &gt; ${WORKSPACE}/mailbody.${JOB_NAME}.txt
+   sendmail=1
+   
+else
+   if [[ ${STAGE} == &quot;true&quot; ]]; then
+echo -n &quot;
+  Greetings,
+     An updated target platform is now available in staging only:
+     
+     http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${VERSION}
+     
+&quot; &gt; ${WORKSPACE}/mailbody.${JOB_NAME}.txt
+   sendmail=1
+   fi
+fi
+
+# use mailx -r or sendmail -f, depending on what&apos;s available on the server
+if [[ ${sendmail} == 1 ]]; then
+
+   if [[ -x /bin/mailx ]]; then 
+     /bin/mailx -s &quot;${subject}&quot; -c &quot;${CCrecipients}&quot; -r &quot;${sender}&quot; &quot;${TOrecipients}&quot; &lt; ${WORKSPACE}/mailbody.${JOB_NAME}.txt
+   else 
+     /bin/mail -s &quot;${subject}&quot; &quot;${TOrecipients}&quot; -c&quot;${CCrecipients}&quot; -- -f&quot;${sender}&quot; &lt; ${WORKSPACE}/mailbody.${JOB_NAME}.txt
+   fi
+fi
+
+rm -f ${WORKSPACE}/mailbody.${JOB_NAME}.txt
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.4.3">
+      <colorMapName>xterm</colorMapName>
+    </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
+    <hudson.plugins.xvnc.Xvnc plugin="xvnc@1.24">
+      <takeScreenshot>false</takeScreenshot>
+      <useXauthority>true</useXauthority>
+    </hudson.plugins.xvnc.Xvnc>
+  </buildWrappers>
+</project>

@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<matrix-project plugin="matrix-project@1.8">
+  <actions/>
+  <description>&lt;h2&gt;&lt;a style=&quot;color:green&quot;&gt;Integration Stack community and production installation test matrix (Neon)&lt;/h2&gt;&#xd;
+  Test Neon installation of:&#xd;
+&lt;li&gt;JBTIS 4.4.x from snapshot update site and Central&lt;/li&gt;&#xd;
+  &lt;li&gt;DevstudioIS 10.x.y from snapshot update site and Central&lt;/li&gt;&#xd;
+&#xd;
+     &lt;p&gt;Onto variations on the latest Neon or Eclipse builds:&#xd;
+      &lt;li&gt;388^artifact^org.eclipse.epp.packages^archive^20160613-1800_eclipse-jee-neon-R-linux.gtk.x86.tar.gz (from hudson.eclipse.org)&lt;/li&gt;&#xd;
+      &lt;li&gt;eclipse-platform-4.6.x-linux-gtk.tar.gz (Eclipse Platform Binary)&lt;/li&gt;&#xd;
+&#xd;
+&lt;p&gt;This verifies that the latest installation can be installed on top of the latest release.&#xd;
+  &#xd;
+&lt;p&gt; Sources: &lt;a href=https://github.com/jbosstools/jbosstools-build-ci/tree/jbosstools-4.4.x/util&gt;jbosstools-build-ci/util/&lt;/a&gt;&#xd;
+  &#xd;
+  &lt;h3&gt;Requires RHEL7 and JDK1.8&lt;/h3&gt;&#xd;
+  &#xd;
+  &lt;h3&gt;Typical issues causing failures&lt;/h3&gt;&#xd;
+  &lt;ul&gt;&#xd;
+    &lt;li&gt;Incompatible Eclipse version (different Eclipse version used to do install vs. TP)&lt;/li&gt;&#xd;
+    &lt;li&gt;Dependency issue (different version in build TP and install TP)&lt;/li&gt;&#xd;
+    &lt;li&gt;Timeout during download&lt;/li&gt;&#xd;
+    &lt;li&gt;Inconsistency between discovery XML and central/EA sites&lt;/li&gt;&#xd;
+  &lt;/ul&gt;&#xd;
+&#xd;
+    Eclipse versions used to run tests:&#xd;
+    &lt;p&gt;&#xd;
+&lt;li&gt;eclipse_downloads_drops4_R-4.6.2-201611241400_eclipse-platform-4.6.2-linux-gtk.tar.gz&lt;/li&gt;&#xd;
+&lt;li&gt;technology_epp_downloads_release_neon_1a_eclipse-jee-neon-1a-linux-gtk.tar.gz&lt;/li&gt;&#xd;
+&lt;li&gt;technology_epp_downloads_release_neon_2_eclipse-jee-neon-2-linux-gtk.tar.gz&lt;/li&gt;&#xd;
+&lt;li&gt;eclipse_downloads_drops4_R-4.6-201606061100_eclipse-platform-4.6-linux-gtk.tar.gz&lt;/li&gt;</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.25.1">
+      <projectUrl>https://github.com/jbosstools/jbosstools-build-ci/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set"/>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <matrixOptions>
+        <throttleMatrixBuilds>true</throttleMatrixBuilds>
+        <throttleMatrixConfigurations>false</throttleMatrixConfigurations>
+      </matrixOptions>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>(RHEL7||beaker||jboss-prod)&amp;&amp;!ia64&amp;&amp;!ppc64&amp;&amp;!dev179-rhel6-x86_64</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec></spec>
+      <upstreamProjects>DevstudioISAggregate</upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <axes>
+    <hudson.matrix.TextAxis>
+      <name>eclipseID</name>
+      <values>
+        <string>eclipse_downloads_drops4_R-4.6.2-201611241400_eclipse-platform-4.6.2-linux-gtk.tar.gz</string>
+      </values>
+    </hudson.matrix.TextAxis>
+    <hudson.matrix.TextAxis>
+      <name>PROJECT</name>
+      <values>
+        <string>JBTIS</string>
+        <string>DEVSTUDIOIS</string>
+      </values>
+    </hudson.matrix.TextAxis>
+    <hudson.matrix.TextAxis>
+      <name>SET</name>
+      <values>
+        <string>master</string>
+      </values>
+    </hudson.matrix.TextAxis>
+    <hudson.matrix.LabelExpAxis>
+      <name>label_exp</name>
+      <values>
+        <string>devstudiois-rhel-7.3-5455</string>
+      </values>
+    </hudson.matrix.LabelExpAxis>
+    <hudson.matrix.JDKAxis>
+      <name>jdk</name>
+      <values>
+        <string>jdk1.8</string>
+      </values>
+    </hudson.matrix.JDKAxis>
+  </axes>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>export eclipseReleaseName=neon; echo &quot;eclipseReleaseName=${eclipseReleaseName}&quot; &gt; INSTALL_PLAN.properties
+export devstudioReleaseVersion=10.0; echo &quot;devstudioReleaseVersion=${devstudioReleaseVersion}&quot; &gt;&gt; INSTALL_PLAN.properties
+
+java -version
+export MOZILLA_FIVE_HOME=/qa/tools/opt/firefox-5; echo &quot;MOZILLA_FIVE_HOME=${MOZILLA_FIVE_HOME}&quot; &gt;&gt; INSTALL_PLAN.properties
+export SWT_GTK3=0; echo &quot;SWT_GTK3=${SWT_GTK3}&quot; &gt;&gt; INSTALL_PLAN.properties
+
+if [[ ${eclipseID//^/} != ${eclipseID} ]]; then
+  un=$(uname -a); if [[ ${un//64/} != ${un} ]]; then eclipseID=${eclipseID//x86/x86_64}; fi
+  export downloadURL=&quot;https://hudson.eclipse.org/packaging/job/${eclipseReleaseName}.epp-tycho-build/${eclipseID//^//}&quot;
+else
+  export downloadURL=&quot;http://www.eclipse.org/downloads/download.php?r=1&amp;file=/${eclipseID//_//}&quot;
+fi
+echo &quot;downloadURL=${downloadURL}&quot; &gt;&gt; INSTALL_PLAN.properties
+
+</command>
+    </hudson.tasks.Shell>
+    <EnvInjectBuilder plugin="envinject@1.93.1">
+      <info>
+        <propertiesFilePath>${WORKSPACE}/INSTALL_PLAN.properties</propertiesFilePath>
+      </info>
+    </EnvInjectBuilder>
+    <hudson.tasks.Maven>
+      <targets>org.apache.maven.plugins:maven-dependency-plugin:2.5.1:get</targets>
+      <mavenName>maven-3.3.9</mavenName>
+      <properties>artifact=com.googlecode.maven-download-plugin:maven-download-plugin:1.1.0:jar
+remoteRepositories=https://oss.sonatype.org/content/repositories/snapshots/
+repoId=</properties>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Maven>
+      <targets>org.apache.maven.plugins:maven-dependency-plugin:2.7:unpack -U</targets>
+      <mavenName>maven-3.3.9</mavenName>
+      <properties>artifact=org.jboss.tools.installation-tests:scripts:4.4.0-SNAPSHOT:zip:delivery
+outputDirectory=${WORKSPACE}</properties>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.plugins.groovy.Groovy plugin="groovy@1.30">
+      <scriptSource class="hudson.plugins.groovy.FileScriptSource">
+        <scriptFile>${WORKSPACE}/getAndInstallEclipse.groovy</scriptFile>
+      </scriptSource>
+      <groovyName>(Default)</groovyName>
+      <parameters></parameters>
+      <scriptParameters></scriptParameters>
+      <properties>eclipseCacheDirectory=/home/hudson/static_build_env/jbds/tools/sources
+downloadURL=${downloadURL}</properties>
+      <javaOpts></javaOpts>
+      <classPath></classPath>
+    </hudson.plugins.groovy.Groovy>
+    <hudson.tasks.Maven>
+      <targets>-U org.apache.maven.plugins:maven-dependency-plugin:2.9:unpack</targets>
+      <mavenName>maven-3.3.9</mavenName>
+      <properties>artifact=org.jboss.tools.releng:jbosstools-releng-publish:4.3.1.CR1-SNAPSHOT:tar.gz
+outputDirectory=${WORKSPACE}/sources
+trimVersion=true
+mdep.stripClassifier=true
+mdep.stripVersion=true</properties>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command># Install plan is semi-colon-separated pair of URLs: 
+# 1. JBTIS/DEVSTUDIOIS composite site
+# 2. URL with directory.xml
+# NOTE: Jenkins requires semi-colons, but to pass to shell, must use quotes
+# On commandline, can use comma-separated pair instead so quotes aren&apos;t needed
+
+# replace _ with / (slashes are bad in matrix job params): this will map to either master/ or master/earlyaccess/
+SETPATH=${SET//_/\/}
+
+# use composite site with JBTIS/DEVSTUDIOIS + Central (or JBTIS/DEVSTUDIOIS + Central + EA) in order to resolve ALL artifacts in a single operation
+if [[ ${PROJECT} == &quot;JBTIS&quot; ]]; then
+  # http://download.jboss.org/jbosstools/${eclipseReleaseName}/snapshots/updates/integration-stack/discovery/${SETPATH}/jbosstools-directory.xml not parsing correctly
+  # so just install everything
+  INSTALL_PLAN=&quot;http://download.jboss.org/jbosstools/${eclipseReleaseName}/snapshots/updates/integration-stack/discovery/${SETPATH}/&quot; 
+elif [[ ${PROJECT} == &quot;DEVSTUDIOIS&quot; ]]; then
+  # https://devstudio.redhat.com/${devstudioReleaseVersion}/snapshots/updates/integration-stack/discovery/${SETPATH}/devstudio-directory.xml not parsing correctly
+  # so just install everything
+  INSTALL_PLAN=&quot;https://devstudio.redhat.com/${devstudioReleaseVersion}/snapshots/updates/integration-stack/discovery/${SETPATH}/&quot;
+fi
+
+# comma-separated list of IUs (omit .feature.group) to exclude from installation
+EXCLUDES=&quot;org.eclipse.e4.rcp,.*epp.package.*,org.eclipse.equinox.*,org.eclipse.help,org.eclipse.platform,org.eclipse.rcp,org.eclipse.m2e.*&quot;
+
+echo &quot;Install everything into ${eclipseID} from ${PROJECT} and its ${SETPATH} site&quot;
+${WORKSPACE}/sources/util/installFromCentral.sh -ECLIPSE ${WORKSPACE}/eclipse -INSTALL_PLAN &quot;${INSTALL_PLAN}&quot; -EXCLUDES &quot;${EXCLUDES}&quot; | tee ${WORKSPACE}/log.txt
+
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.Mailer plugin="mailer@1.19">
+      <recipients>pleacu@redhat.com </recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.build__timeout.BuildTimeoutWrapper plugin="build-timeout@1.18">
+      <strategy class="hudson.plugins.build_timeout.impl.AbsoluteTimeOutStrategy">
+        <timeoutMinutes>60</timeoutMinutes>
+      </strategy>
+      <operationList>
+        <hudson.plugins.build__timeout.operations.WriteDescriptionOperation>
+          <description>Build timed out (after {0} minutes). Marking the build as failed.</description>
+        </hudson.plugins.build__timeout.operations.WriteDescriptionOperation>
+        <hudson.plugins.build__timeout.operations.FailOperation/>
+      </operationList>
+    </hudson.plugins.build__timeout.BuildTimeoutWrapper>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+  </buildWrappers>
+  <executionStrategy class="hudson.matrix.DefaultMatrixExecutionStrategyImpl">
+    <runSequentially>true</runSequentially>
+    <touchStoneCombinationFilter>PROJECT==&quot;DEVSTUDIOIS&quot;&amp;&amp;eclipseID.contains(&quot;^&quot;)</touchStoneCombinationFilter>
+    <touchStoneResultCondition>
+      <name>SUCCESS</name>
+      <ordinal>0</ordinal>
+      <color>BLUE</color>
+      <completeBuild>true</completeBuild>
+    </touchStoneResultCondition>
+  </executionStrategy>
+  <childCustomWorkspace>${SHORT_COMBINATION}</childCustomWorkspace>
+</matrix-project>
