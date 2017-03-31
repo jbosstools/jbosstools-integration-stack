@@ -6,7 +6,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>4.4.2-SNAPSHOT</version>
+  <version>4.4.3-SNAPSHOT</version>
   
   <name>JBoss Tools Integration Stack Aggregate/Discovery</name>
 
@@ -32,7 +32,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.2.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.3.CR1-SNAPSHOT</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
