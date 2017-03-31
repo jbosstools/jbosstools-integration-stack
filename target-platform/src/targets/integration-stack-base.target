@@ -17,13 +17,19 @@
     
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
-      <unit id="org.eclipse.bpel.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.0.5.Final-v20160115-1558"/>
-      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
-      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.0.5.Final-v20160115-1558"/>
-      <repository id="jbt-bpel" location="http://download.jboss.org/jbosstools/updates/requirements/bpel/"/>
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.0.Final-v20160121-1401"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.1.0.Final-v20160121-1401"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.1.0.Final-v20160121-1401"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.1.0.Final-v20160121-1401"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.1.0.Final-v20160121-1401"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.1.0.Final-v20160121-1401"/>
+      <repository id="jbt-bpel" location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.1.0.Final/"/>
+    </location>
+
+    <!-- Reddeer - QE -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+       <unit id="org.jboss.reddeer.graphiti.feature.feature.group" version="1.2.1.Final"/>
+      <repository id="jbt-reddeer" location="http://download.jboss.org/jbosstools/neon/stable/updates/reddeer/1.2.1/"/>
     </location>
 
     <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
@@ -71,7 +77,7 @@
       <unit id="org.eclipse.emf.ecore.feature.group" version="2.12.0.v20160420-0247"/>
       <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.12.0.v20160526-0356"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.2.2.v20161114-0827"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.2.3.v20170227-0935"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
@@ -141,7 +147,7 @@
       <unit id="org.eclipse.birt.core" version="4.6.0.v201606072122"/>
 
       <!-- <repository id="jbt-neon" location="http://download.jboss.org/jbosstools/updates/requirements/neon/"/>  -->
-      <repository id="jbt-neon" location="http://download.jboss.org/jbosstools/updates/requirements/neon/201612071000-RC4/"/> 
+      <repository id="jbt-neon" location="http://download.jboss.org/jbosstools/updates/requirements/neon/201703231000-Neon.3/"/> 
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -239,25 +245,27 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <unit id="org.jboss.tools.test.feature.feature.group" version="3.7.3.v20161213-1258"/>
       <unit id="org.jboss.tools.tests" version="3.7.3.v20161213-1258"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.2.3.v20170119-2212"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.8.3.v20161213-1258"/>
-      <unit id="org.jboss.tools.common.test" version="3.8.3.v20161213-1258"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.8.3.v20170119-2212"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.2.4.v20170329-2126"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.8.4.v20170316-1803"/>
+      <unit id="org.jboss.tools.common.test" version="3.8.4.v20170316-1803"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.9.0.v20170329-1655"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2016-04-22_12-52-32-B5049/all/repo/"/>-->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.2.Final/"/> -->
+      <repository id="jbt-core-tests-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.4.AM2/"/>
       <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/neon/development/updates/coretests/4.4.3.AM2/"/> -->
-      <repository id="jbt-coretests-4.4.3.Final" location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.3.Final/"/>
+      <!-- <repository id="jbt-coretests-4.4.3.Final" location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.3.Final/"/> -->
       <!-- <repository id="jbt-coretests-4.4.2.Final" location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.2.Final/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.common" version="3.8.3.v20161213-1258"/>
+      <unit id="org.jboss.tools.common" version="3.8.4.v20170316-1803"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
-      <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/neon/development/updates/core/4.4.3.AM2/"/> -->
-      <repository id="jbt-core-4.4.3.Final" location="http://download.jboss.org/jbosstools/neon/stable/updates/core/"/>
+      <repository id="jbt-core-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.4.AM2/"/>
+      <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/neon/development/updates/core/4.4.4.AM1/"/> -->
+      <!-- <repository id="jbt-core-4.4.3.Final" location="http://download.jboss.org/jbosstools/neon/stable/updates/core/"/> -->
       <!-- <repository id="jbt-core-4.4.2.Final" location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.2.Final/"/> -->
    </location>
 
