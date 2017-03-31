@@ -37,13 +37,13 @@
 
   <properties>
     <!-- For p2diff comparison -->
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.1.Final/jbtis/</baseRepositoryUrl>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.2.Final/jbtis/</baseRepositoryUrl>
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.62.0.Final</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.63.0.Final-SNAPSHOT</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
     <!-- hudson doesn't have write permissions to the releases repo below - build -P jboss-release manually to push to nexus -->
