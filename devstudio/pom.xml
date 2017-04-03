@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>10.2.0-SNAPSHOT</version>
+  <version>10.3.0-SNAPSHOT</version>
   <name>Devstudio Integration Stack Aggregate/Discovery</name>
 
   <packaging>pom</packaging>
@@ -49,7 +49,7 @@
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.2.AM1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
-    <DEVSTUDIOIS_TP_VERSION>10.2.0.GA</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>10.3.0.GA</DEVSTUDIOIS_TP_VERSION>
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
     <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 
