@@ -10,28 +10,28 @@
     <!-- JBoss Tools Core Base Dependencies
          ref: <repository loc>/site.properties -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-       <unit id="org.hibernate.eclipse.feature.feature.group" version="5.1.4.v20170320-1114"/>
-       <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.6.104.v20170308-1740"/>
-       <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.2.4.v20170329-2139"/>
+       <unit id="org.hibernate.eclipse.feature.feature.group" version="5.2.0.v20170318-0929"/>
+       <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.6.110.v20170308-1750"/>
+       <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.3.0.v20170324-1939"/>
        <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/>
        <unit id="org.jboss.tools.cdi.deltaspike.feature.feature.group" version="1.8.3.v20161214-1452"/>
        <unit id="org.jboss.tools.cdi.feature.feature.group" version="1.8.3.v20161214-1452"/>
        <unit id="org.jboss.tools.cdi.seam.feature.feature.group" version="1.8.3.v20161214-1452"/>
        <unit id="org.jboss.tools.central.feature.feature.group" version="2.1.3.v20170116-1347"/>
        <unit id="org.jboss.tools.discovery.core" version="1.2.3.v20161214-0939"/>
-       <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.common.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.8.4.v20170315-2230"/>
-       <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.common.feature.feature.group" version="3.8.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.3.4.v20170330-0227"/>
-       <unit id="org.jboss.tools.foundation.security.linux.feature.feature.group" version="1.3.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.foundation.help.ui" version="1.3.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.foundation.license.feature.feature.group" version="1.3.4.v20170316-1803"/>
-       <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.9.0.v20170329-1707"/>
+       <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.common.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.8.100.v20170316-1239"/>
+       <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.common.feature.feature.group" version="3.9.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.4.0.v20170404-2348"/>
+       <unit id="org.jboss.tools.foundation.security.linux.feature.feature.group" version="1.4.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.foundation.help.ui" version="1.4.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.foundation.license.feature.feature.group" version="1.4.0.v20170316-1838"/>
+       <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.10.0.v20170329-1706"/>
        <unit id="org.jboss.tools.jsf.feature.feature.group" version="3.8.3.v20161214-1452"/>
        <unit id="org.jboss.tools.jst.feature.feature.group" version="3.8.3.v20161214-1634"/>
        <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.3.0.201610261805"/>
@@ -44,14 +44,14 @@
        <unit id="org.jboss.tools.maven.project.examples.feature.feature.group" version="3.1.3.v20161214-0939"/>
        <unit id="org.jboss.tools.maven.seam.feature.feature.group" version="1.8.3.v20161214-0939"/>
        <unit id="org.jboss.tools.maven.sourcelookup.feature.feature.group" version="1.8.3.v20161214-0939"/>
-       <unit id="org.jboss.tools.openshift.cdk.feature.feature.group" version="3.3.3.v20170323-1409"/>
-       <unit id="org.jboss.tools.openshift.egit.integration.feature.feature.group" version="3.3.3.v20170329-0817"/>
-       <unit id="org.jboss.tools.openshift.express.feature.feature.group" version="3.3.3.v20170329-0817"/>
-       <unit id="org.jboss.tools.openshift.feature.feature.group" version="3.3.3.v20170330-0321"/>
-       <unit id="org.jboss.tools.openshift.js.feature.feature.group" version="3.3.3.v20170329-2232"/>
+       <unit id="org.jboss.tools.openshift.cdk.feature.feature.group" version="3.4.0.v20170322-1357"/>
+       <unit id="org.jboss.tools.openshift.egit.integration.feature.feature.group" version="3.4.0.v20170329-0820"/>
+       <unit id="org.jboss.tools.openshift.express.feature.feature.group" version="3.4.0.v20170329-0820"/>
+       <unit id="org.jboss.tools.openshift.feature.feature.group" version="3.4.0.v20170404-0308"/>
+       <unit id="org.jboss.tools.openshift.js.feature.feature.group" version="3.4.0.v20170329-2233"/>
        <unit id="org.jboss.tools.portlet.feature.feature.group" version="1.6.0.Final-v20141209-0339-B20"/>
        <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.3.v20170210-2258"/>
-       <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="3.2.4.v20170316-1803"/>
+       <unit id="org.jboss.tools.runtime.core.feature.feature.group" version="3.2.100.v20170316-1838"/>
        <unit id="org.jboss.tools.runtime.seam.detector.feature.feature.group" version="3.8.3.v20161214-1452"/>
        <unit id="org.jboss.tools.seam.feature.feature.group" version="3.8.3.v20161214-1452"/>
        <unit id="org.jboss.tools.stacks.core.feature.feature.group" version="1.3.3.v20161213-1258"/>
@@ -60,7 +60,7 @@
        <unit id="org.mozilla.xpcom" version="1.9.2.16"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
-      <repository id="jbt-core-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.4.AM2/"/>
+      <repository id="jbt-core-4.5.0.AM0" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.AM0/"/>
       <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/neon/development/updates/core/4.4.3.AM2/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/updates/core/master"/> -->
       <!-- <repository id="jbt-core-4.4.3.Final" location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.3.Final/"/> -->
