@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
-  <version>10.3.0-SNAPSHOT</version>
+  <version>11.0.0-SNAPSHOT</version>
   <name>Devstudio Integration Stack Aggregate/Discovery</name>
 
   <packaging>pom</packaging>
@@ -33,7 +33,7 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.2.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.5.0.AM1-SNAPSHOT</IS_TP_VERSION>
 
     <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.3.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER>
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.2.0.GA-build-product/2016-11-25_14-44-04-B55/all/devstudio-10.2.0.GA-v20161125-1418-B55-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
@@ -42,14 +42,14 @@
     <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-224/jboss-fuse-karaf-6.3.0.redhat-224.zip</FUSE_RUNTIME>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.3.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/11.0/staging/updates/discovery.earlyaccess/11.0.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.2.AM1-SNAPSHOT/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.2.AM1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
-    <DEVSTUDIOIS_TP_VERSION>10.3.0.GA</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>11.0.0.AM1-SNAPSHOT</DEVSTUDIOIS_TP_VERSION>
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
     <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 
@@ -59,7 +59,7 @@
     <COMPOSITE_MASTER_URLS><!-- JBT,JBT-IS,JBT-IS TP update site URLs --></COMPOSITE_MASTER_URLS>
     <COMPOSITE_MASTER_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_MASTER_EA_URLS>
 
-    <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/10.0/stable/updates/</UPSTREAM_EXTRAS_SITE>
+    <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/11.0/staging/updates/</UPSTREAM_EXTRAS_SITE>
     <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat JBoss Developer Studio 10&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
