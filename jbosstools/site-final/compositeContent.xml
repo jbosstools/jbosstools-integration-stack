@@ -15,8 +15,7 @@
     <child location="http://download.jboss.org/jbosstools/neon/staging/builds/integration-stack/bpel/1.3.3.CR1/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/1.3.3.Final_1.3.1.Final_neon/"/>
-    <!-- <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.0.Final_1.3.1.Final_oxygen/"/> -->
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.0.Final_1.3.1.Final_oxygen/"/>
 
     <!-- DROOLS/JBPM6 -->
     <child location="http://downloads.jboss.org/drools/updatesites/updatesite-6.5.1.Final-v20161109-054101-B1259/"/>
@@ -25,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/fuse-tooling/9.1.0.Final/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/switchyard/2.3.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/neon/staging/builds/integration-stack/switchyard/2.4.0.CI/"/>
 
     <!-- TEIID DESIGNER -->
     <child location="http://download.jboss.org/jbosstools/updates/stable/neon/integration-stack/teiiddesigner/11.0.1.Final/"/>
