@@ -20,7 +20,7 @@
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.bpr.feature</module>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.ds.feature</module>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.soa.feature</module>
-    <module>../../devstudio/features/com.jboss.devstudio.integration-stack.fuse.feature</module>
+    <module>../../devstudio/features/com.jboss.devstudio.integration-stack.switchyard.feature</module>
   </modules>
 
 </project>

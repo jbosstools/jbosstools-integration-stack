@@ -10,11 +10,11 @@
        name="JBoss Developer Studio Integration Stack"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
+      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-switchyard" />
     </connectorCategory>
 
     <!-- JBoss Integration Stack Generic Connector
@@ -37,36 +37,6 @@
        </overview>
     </connectorDescriptor>
     -->
-    <!-- JBoss Fuse Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-fuse"
-       certificationId="com.jboss.jbds.discovery.certification.supported"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Fuse Development"
-       description="An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP."
-       id="jboss.integration-stack.bundle.fuse">
-       <iu id="org.eclipse.bpmn2.feature"/>
-       <iu id="org.eclipse.bpmn2.modeler"/>
-       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
-       <iu id="org.fusesource.ide.camel.editor.feature"/>
-       <iu id="org.fusesource.ide.core.feature"/>
-       <iu id="org.fusesource.ide.jmx.feature"/>
-       <iu id="org.fusesource.ide.server.extensions.feature"/>
-       <iu id="org.jboss.tools.fuse.transformation.feature"/>
-       <iu id="org.switchyard.tools.feature"/>
-       <iu id="org.switchyard.tools.bpel.feature"/>
-       <iu id="org.switchyard.tools.bpmn2.feature"/>
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://tools.jboss.org/features/apachecamel.html">
-       </overview>
-    </connectorDescriptor>
 
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
@@ -133,17 +103,12 @@
        name="JBoss Integration and SOA Development"
        description="Tools related to the development of Integration and SOA applications."
        id="jboss.integration-stack.bundle.soa">
-      <iu id="org.eclipse.bpmn2.feature"/>
-      <iu id="org.eclipse.bpmn2.modeler"/>
-      <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
-      <iu id="org.jbpm.eclipse.feature"/>
-      <iu id="org.kie.eclipse.feature"/>
-      <iu id="org.kie.eclipse.navigator.feature"/>
-       <iu id="org.fusesource.ide.camel.editor.feature"/>
-       <iu id="org.fusesource.ide.core.feature"/>
-       <iu id="org.fusesource.ide.jmx.feature"/>
-       <iu id="org.fusesource.ide.server.extensions.feature"/>
-       <iu id="org.jboss.tools.fuse.transformation.feature"/>
+       <iu id="org.eclipse.bpmn2.feature"/>
+       <iu id="org.eclipse.bpmn2.modeler"/>
+       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+       <iu id="org.jbpm.eclipse.feature"/>
+       <iu id="org.kie.eclipse.feature"/>
+       <iu id="org.kie.eclipse.navigator.feature"/>
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
        <iu id="org.switchyard.tools.bpmn2.feature"/>
@@ -156,18 +121,32 @@
       </overview>
     </connectorDescriptor>
 
-  </extension>
+    <!-- JBoss Tools SwitchYard -->
+    <connectorDescriptor
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
+       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-switchyard"
+       certificationId="com.jboss.jbds.discovery.certification.supported"
+       kind="task"
+       license="Free, EPL"
+       provider="JBoss by Red Hat"
+       siteUrl="${jboss.discovery.site.integration-stack.url}"
+       name="JBoss Tools SwitchYard (DEPRECATED)"
+       description="A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications."
+       id="jboss.integration-stack.bundle.switchyard">
+       <iu id="org.eclipse.bpmn2.feature"/>
+       <iu id="org.eclipse.bpmn2.modeler"/>
+       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
+       <iu id="org.switchyard.tools.feature"/>
+       <iu id="org.switchyard.tools.bpel.feature"/>
+       <iu id="org.switchyard.tools.bpmn2.feature"/>
+       <icon
+          image32="images/jbds_icon32.png">
+       </icon>
+       <overview
+          url="http://tools.jboss.org/features/apachecamel.html">
+       </overview>
+    </connectorDescriptor>
 
-  <extension point="org.jboss.tools.central.proxyWizard">
-    <proxyWizard
-       id="fuse.integration.wizard"
-       description="%fuse.integration.wizard.description"
-       label="Fuse Integration Project"
-       priority="3"
-       iconPath="images/fuse_integration_wizard.png"
-       wizardId="org.fusesource.ide.branding.wizards.FuseProjectWizard"
-       requiredComponentIds="jboss.integration-stack.bundle.fuse">
-    </proxyWizard>
-  </extension>	
+  </extension>
 
 </plugin>

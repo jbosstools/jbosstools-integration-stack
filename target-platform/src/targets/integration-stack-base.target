@@ -8,6 +8,17 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
+    <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="9.1.0.Final-v20170214-0902-B104"/>
+      <unit id="org.fusesource.ide.core.feature.feature.group" version="9.1.0.Final-v20170214-0902-B104"/>
+      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="9.1.0.Final-v20170214-0902-B104"/>
+      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="9.1.0.Final-v20170214-0902-B104"/>
+      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="9.1.0.Final-v20170214-0902-B104"/>
+      <repository id="temp-fuse-tooling" location="http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack/fuse-tooling/9.1.0.Final/"/>
+    </location>
+    <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->
+    
     <!-- m2eclipse-tycho for Fuse tooling -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.9.0.201609061714"/>

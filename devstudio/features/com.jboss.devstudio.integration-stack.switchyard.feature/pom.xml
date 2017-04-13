@@ -9,6 +9,6 @@
 		<version>11.0.0-SNAPSHOT</version>
 	</parent>
 	<groupId>com.jboss.devstudio.integration-stack.features</groupId>
-	<artifactId>com.jboss.devstudio.integration-stack.fuse.feature</artifactId>
+	<artifactId>com.jboss.devstudio.integration-stack.switchyard.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 </project>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-    id="com.jboss.devstudio.integration-stack.fuse.feature"
+    id="com.jboss.devstudio.integration-stack.switchyard.feature"
     label="%featureName" version="11.0.0.qualifier"
     provider-name="%providerName"
     license-feature="org.jboss.tools.foundation.license.feature"
@@ -19,11 +19,6 @@
 
 	<import feature="org.jboss.tools.central.feature"/> 
 	<import feature="org.jboss.tools.project.examples.feature"/> 
-	<import feature="org.fusesource.ide.camel.editor.feature"/>
-	<import feature="org.fusesource.ide.core.feature"/>
-	<import feature="org.fusesource.ide.jmx.feature"/>
-	<import feature="org.fusesource.ide.server.extensions.feature"/>
-	<import feature="org.jboss.tools.fuse.transformation.feature"/>
 	<import feature="org.switchyard.tools.feature"/>
 	<import feature="org.switchyard.tools.bpel.feature"/>
 	<import feature="org.switchyard.tools.bpmn2.feature"/>

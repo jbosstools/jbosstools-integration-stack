@@ -2,7 +2,7 @@
 <!-- you can run this transformation on the commandline like this (requires xsltproc):
 
 cd jbosstools-integration-stack/jbosstools/discovery/org.jboss.tools.central.discovery.integration-stack;
-for d in bpr ds soa fuse; do 
+for d in bpr ds soa switchyard; do 
   mkdir -p ../../features/jboss.integration-stack.bundle.${d};
   xsltproc \-\-stringparam connectorDescriptorId jboss.integration-stack.bundle.${d} \-\-stringparam featureVersion 4.4.1.qualifier generate-feature.xml-from-plugin.xml.xsl plugin.xml | tee ../../features/jboss.integration-stack.bundle.${d}/feature.xml;
 done 
@@ -10,7 +10,7 @@ done
 -->
 	<xsl:output method="xml" indent="yes" omit-xml-declaration="no" encoding="UTF-8"/>
   <xsl:strip-space elements="*"/>
- 	<xsl:param name="connectorDescriptorId">jboss.integration-stack.bundle.fuse</xsl:param>
+ 	<xsl:param name="connectorDescriptorId">jboss.integration-stack.bundle.switchyard</xsl:param>
  	<xsl:param name="featureVersion">0.0.0.qualifier</xsl:param>
 	<xsl:template match="//connectorDescriptor">
     <xsl:for-each select=".">
