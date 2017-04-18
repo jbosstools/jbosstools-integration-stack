@@ -22,7 +22,7 @@
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2016-04-22_12-52-32-B5049/all/repo/"/>-->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/mars/stable/updates/coretests/4.3.0.Final/"/> -->
-      <repository  id="jbt-coretests-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.4.AM2/"/>
+      <repository  id="jbt-coretests-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/coretests/4.4.4.AM2a/"/>
       <!-- <repository id="jbt-coretests-4.4.2.Final" location="http://download.jboss.org/jbosstools/static/neon/development/updates/coretests/4.4.3.AM2/"/> -->
       <!-- <repository id="jbt-coretests-4.4.3.Final" location="http://download.jboss.org/jbosstools/static/neon/stable/updates/coretests/4.4.3.Final/"/> -->
    </location>
@@ -31,7 +31,7 @@
       <unit id="org.jboss.tools.common" version="3.8.4.v20170316-1803"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
-      <repository id="jbt-core-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.4.AM2/"/>
+      <repository id="jbt-core-4.4.4.AM2" location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.4.AM2a/"/>
       <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/neon/development/updates/core/4.4.3.AM2/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/neon/staging/updates/core/4.4.2.Final/"/> -->
       <!-- <repository id="jbt-core-4.4.2.Final" location="http://download.jboss.org/jbosstools/static/neon/stable/updates/core/4.4.2.Final/"/> -->
