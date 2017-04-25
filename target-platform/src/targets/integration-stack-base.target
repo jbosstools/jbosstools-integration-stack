@@ -12,7 +12,7 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>
 
-      <repository id="jbt-m2eclipse-tycho" location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/"/>
+      <repository id="jbt-m2eclipse-tycho" location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>
     </location>
     
     <!-- BPEL -->
