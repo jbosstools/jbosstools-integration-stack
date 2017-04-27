@@ -33,23 +33,23 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.2.Final</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.3.CR1</IS_TP_VERSION>
 
-    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.3.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER>
-    <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.2.0.GA-build-product/2016-11-25_14-44-04-B55/all/devstudio-10.2.0.GA-v20161125-1418-B55-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
-    <!-- <DEVSTUDIO_INSTALLER>file:///home/pleacu/git-clone/jbdevstudio-product/installer/target/devstudio-10.3.0.Beta1-v20161205-1527-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
+    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/10.0/staging/builds/devstudio-10.4.0.AM3-build-product/2017-04-21_02-10-20-B478/all/devstudio-10.4.0.AM3-v20170421-0111-B478-installer-standalone.jar</DEVSTUDIO_INSTALLER>
+    <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.3.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- http://origin-repository.jboss.org/nexus/content/groups/product-ga/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187 -->
-    <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-224/jboss-fuse-karaf-6.3.0.redhat-224.zip</FUSE_RUNTIME>
+    <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-254/jboss-fuse-karaf-6.3.0.redhat-254.zip</FUSE_RUNTIME>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.3.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+
+    <!--<UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.3.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/staging/updates/discovery.earlyaccess/10.4.0.AM3/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.2.AM1-SNAPSHOT/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.2.AM1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.3.CR1-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.3.CR1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
-    <DEVSTUDIOIS_TP_VERSION>10.3.0.GA</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>10.3.0.CR1</DEVSTUDIOIS_TP_VERSION>
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
     <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 
