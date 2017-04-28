@@ -60,6 +60,7 @@
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
        <iu id="org.switchyard.tools.bpmn2.feature"/>
+       <iu id="org.eclipse.wst.common_core_EBZ511793.feature.patch"/>
        <icon
           image32="images/jbds_icon32.png">
        </icon>
@@ -147,7 +148,7 @@
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
        <iu id="org.switchyard.tools.bpmn2.feature"/>
-
+       <iu id="org.eclipse.wst.common_core_EBZ511793.feature.patch"/>
       <icon
         image32="images/jbds_icon32.png">
       </icon>
