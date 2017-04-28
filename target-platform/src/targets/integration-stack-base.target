@@ -8,6 +8,13 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
+    <!-- m2eclipse-tycho for Fuse tooling - needed for installers - ref JBTIS-1098-->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">		
+      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>		
+		
+      <repository id="jbt-m2eclipse-tycho" location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>		
+    </location>
+
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.0.Final-v20160121-1401"/>
