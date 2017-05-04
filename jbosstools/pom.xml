@@ -30,14 +30,14 @@
     <BUILD_TS>v20150101-0001</BUILD_TS>
     <BUILD_TYPE>integration</BUILD_TYPE>
     <PREFIX>jbosstools-integration-stack</PREFIX>
-    <TARGET_PLATFORM>neon</TARGET_PLATFORM>
+    <TARGET_PLATFORM>oxygen</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
     <IS_TP_VERSION>4.5.0.AM1-SNAPSHOT</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <target.eclipse.version>4.6 (Neon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.7 (Oxygen) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;JBoss Developer Studio 9&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
