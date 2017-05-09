@@ -33,9 +33,9 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>neon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.4.3.CR2</IS_TP_VERSION>
+    <IS_TP_VERSION>4.4.3.Final-SNAPSHOT</IS_TP_VERSION>
 
-    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/10.0/staging/builds/devstudio-10.4.0.AM3-build-product/2017-04-21_02-10-20-B478/all/devstudio-10.4.0.AM3-v20170421-0111-B478-installer-standalone.jar</DEVSTUDIO_INSTALLER>
+    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/10.0/staging/builds/devstudio-10.4.0.AM4-build-product/2017-05-03_12-38-40-B26/all/devstudio-10.4.0.GA-v20170503-1144-B26-installer-standalone.jar</DEVSTUDIO_INSTALLER>
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/10.0/stable/builds/devstudio-10.3.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- http://origin-repository.jboss.org/nexus/content/groups/product-ga/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187 -->
     <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-254/jboss-fuse-karaf-6.3.0.redhat-254.zip</FUSE_RUNTIME>
@@ -45,8 +45,8 @@
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/10.0/staging/updates/discovery.earlyaccess/10.4.0.AM3/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.3.CR1-SNAPSHOT/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.3.CR1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.3.CR2-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack/4.4.3.CR2-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
     <DEVSTUDIOIS_TP_VERSION>10.3.0.CR2</DEVSTUDIOIS_TP_VERSION>
