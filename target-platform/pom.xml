@@ -37,7 +37,7 @@
 
   <properties>
     <!-- For p2diff comparison -->
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.3.CR2/jbtis/</baseRepositoryUrl>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.4.3.Final/jbtis/</baseRepositoryUrl>
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.26.0</tychoVersion>
