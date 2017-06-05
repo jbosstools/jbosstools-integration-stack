@@ -8,17 +8,6 @@
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
 
-    <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.0.0.v20170526-0921"/>
-      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.0.0.v20170523-0654"/>
-      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.0.0.v20170523-0654"/>
-      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.0.0.v20170523-0654"/>
-      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.0.0.v20170523-0654"/>
-      <repository id="temp-fuse-tooling" location="http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-fuse_master/2017-05-31_15-20-44-B7-save/all/repo/"/>
-    </location>
-    <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->
-    
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
