@@ -39,7 +39,6 @@
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/11.0/stable/builds/devstudio-11.0.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- <DEVSTUDIO_INSTALLER>file:///home/pleacu/git-clone/jbdevstudio-product/installer/target/devstudio-10.3.0.Beta1-v20161205-1527-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- http://origin-repository.jboss.org/nexus/content/groups/product-ga/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187 -->
-    <FUSE_RUNTIME>http://download.eng.bos.redhat.com/brewroot/repos/jb-fuse-6.2-build/latest/maven/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-224/jboss-fuse-karaf-6.3.0.redhat-224.zip</FUSE_RUNTIME>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.AM1/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
