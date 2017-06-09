@@ -36,18 +36,11 @@
 
       <unit id="org.jboss.tools.locus.jcip.annotations" version="1.0.0.v20131024-0922"/>
       <unit id="org.jboss.tools.locus.sf.saxon" version="9.5.1.v20151110-1025"/>
-      <unit id="org.jboss.tools.locus.jsonschema2pojo.jsonschema2pojo-core" version="0.4.13.v20160122-1745"/>
       <unit id="org.jboss.tools.locus.apache.directory.bouncycastle.stub" version="1.0.0.v20151110-1025"/>
       <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
       <unit id="org.jboss.tools.locus.jaxb-impl" version="2.2.7.v20160113-1915"/>
       <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
       <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
-      
-      <unit id="org.springframework.aspects" version="3.1.4.RELEASE"/>
-      <unit id="org.springframework.osgi.core" version="1.2.1"/>
-      <unit id="org.springframework.osgi.extender" version="1.2.1"/>
-      <unit id="org.springframework.osgi.extensions.annotations" version="1.2.1"/>
-      <unit id="org.springframework.osgi.io" version="1.2.1"/>
       <repository id="jbt-locus-1.6.0.Final" location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
     </location>
 
