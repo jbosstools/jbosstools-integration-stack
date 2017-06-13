@@ -18,7 +18,12 @@
        <repository id="temp-fuse-tooling" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/proto/2017-06-02_13-53-35-B8/all/repo/"/>		
      </location>		
      <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->
-
+     
+    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>
+      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>
+    </location>
+    
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
