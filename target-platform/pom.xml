@@ -200,6 +200,7 @@
                                                                                      =============================
 	       to generate an early access aggregate base target dependencies file:  aggregate-base-ea.target
           -->
+          <!--
 	  <execution>
 
 	    <id>merge-base-ea</id>
@@ -229,13 +230,14 @@
 
 	    </configuration>
 	  </execution>
-
+          -->
 	  <!-- Merge:
 	       1. integration-stack specific target dependencies:                    integration-stack-base.target
 	       2. early access integration-stack specific target dependencies:     + integration-stack-base-ea.target
                                                                                      =============================
 	       to generate an IS-only EA aggregate base target dependencies file:    aggregate-base-is-ea.target
           -->
+          <!--
 	  <execution>
 
 	    <id>merge-base-is-ea</id>
@@ -255,13 +257,14 @@
 
 	    </configuration>
 	  </execution>
-
+          -->
 	  <!-- Merge:
 	       1. the previously generated aggregate base EA target file:    aggregate-base-ea.target
 	       2. the community-specific target dependencies:              + community.target
                                                                              ========================
 	       to generate the full community target dependencies file:      aggregate-full-ea.target
-	    -->
+	  -->
+	  <!--
 	  <execution>
 	    <id>merge-community-full-ea</id>
 	    <phase>generate-resources</phase>
@@ -280,7 +283,7 @@
 
 	    </configuration>
 	  </execution>
-
+          -->
 	  <!-- Merge:
 	       1. the integration-stack specific target dependencies:     integration-stack-base-ea.target
 	       2. the community-specific target dependencies:           + community.target
@@ -289,6 +292,7 @@
 
                This target file will be mirrored to create the JBTIS target platform early access repository.
 	    -->
+          <!--
 	  <execution>
 	    <id>merge-community-ea</id>
 	    <phase>generate-resources</phase>
@@ -307,7 +311,7 @@
 
 	    </configuration>
 	  </execution>
-
+          -->
 	</executions>
       </plugin>
 
@@ -330,9 +334,11 @@
 	      <targetFiles>
 		<param>${project.build.directory}/aggregate-base.target</param>
 		<param>${project.build.directory}/aggregate-full.target</param>
+                <!--
 		<param>${project.build.directory}/aggregate-base-ea.target</param>
 		<param>${project.build.directory}/aggregate-full-ea.target</param>
-	      </targetFiles>
+                -->
+              </targetFiles>
 	      <failOnError>true</failOnError>
 
 	    </configuration>
@@ -395,7 +401,7 @@
 
 	    </configuration>
 	  </execution>
-
+          <!--
 	  <execution>
 	    <id>attach-artifacts-base-ea</id>
 	    <phase>package</phase>
@@ -443,7 +449,7 @@
 
 	    </configuration>
 	  </execution>
-
+          -->
 	</executions>
       </plugin>
 
@@ -486,7 +492,7 @@
 
 	    <executions>
 
-	      <!-- Mirror the integration stack community target dependencies to a repository. -->
+	      <!-- Mirror the integration stack community target dependencies to a repository. (target-platform.target.repo) -->
 	      <execution>
 		<id>mirror-target-platform-repo</id>
 		<phase>package</phase>
@@ -499,7 +505,7 @@
 		</configuration>
 	      </execution>
 
-	      <!-- Mirror the integration stack community early access target dependencies to a repository. -->
+	      <!-- Mirror the integration stack community early access target dependencies to a repository.
 	      <execution>
 		<id>mirror-target-platform-repo-ea</id>
 		<phase>package</phase>
@@ -511,8 +517,8 @@
 		  <outputRepository>${project.build.directory}/${project.artifactId}-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
-
-	      <!-- Mirror the devstudiois integration stack target dependencies to a repository. -->
+              -->
+	      <!-- Mirror the devstudiois integration stack target dependencies to a repository. (target-platform-devstudiois.target.repo) -->
 	      <execution>
 		<id>mirror-target-platform-devstudiois-repo</id>
 		<phase>package</phase>
@@ -525,7 +531,7 @@
 		</configuration>
 	      </execution>
 
-	      <!-- Mirror the jdbsis integration stack early access target dependencies to a repository. -->
+	      <!-- Mirror the devstudiois integration stack early access target dependencies to a repository. 
 	      <execution>
 		<id>mirror-target-platform-devstudiois-repo-ea</id>
 		<phase>package</phase>
@@ -537,7 +543,7 @@
 		  <outputRepository>${project.build.directory}/${project.artifactId}-devstudiois-ea.target.repo</outputRepository>
 		</configuration>
 	      </execution>
-
+              -->
 	    </executions>
 	  </plugin>
 
@@ -565,7 +571,7 @@
 		  <goal>run</goal>
 		</goals>
 	      </execution>
-
+              <!--
 	      <execution>
 		<id>package-target-platform-repo-ea</id>
 		<phase>package</phase>
@@ -573,7 +579,7 @@
 		<configuration>
 		  <quiet>true</quiet>
 		  <target>
-		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+		    < ! - - ANT script to remove the <references> section from the mirror repo content.xml. - - >
 		    <ant antfile="../scripts/remove.references.xml" dir=".">
 		      <property name="workDir" value="./target/target-platform-ea.target.repo" />
 		    </ant>
@@ -583,7 +589,7 @@
 		  <goal>run</goal>
 		</goals>
 	      </execution>
-
+              -->
 	      <execution>
 		<id>package-target-platform-devstudiois-repo</id>
 		<phase>package</phase>
@@ -601,7 +607,7 @@
 		  <goal>run</goal>
 		</goals>
 	      </execution>
-
+              <!--
 	      <execution>
 		<id>package-target-platform-devstudiois-repo-ea</id>
 		<phase>package</phase>
@@ -609,7 +615,7 @@
 		<configuration>
 		  <quiet>true</quiet>
 		  <target>
-		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
+		    < ! - - ANT script to remove the <references> section from the mirror repo content.xml. - - >
 		    <ant antfile="../scripts/remove.references.xml" dir=".">
 		      <property name="workDir" value="./target/target-platform-devstudiois-ea.target.repo" />
 		    </ant>
@@ -619,7 +625,7 @@
 		  <goal>run</goal>
 		</goals>
 	      </execution>
-
+              -->
 	    </executions>
 
 	    <dependencies>
