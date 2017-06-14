@@ -7,23 +7,12 @@
 -->
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
-    
-    <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->		
-     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">		
-       <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.0.0.v20170526-0921"/>		
-       <unit id="org.fusesource.ide.core.feature.feature.group" version="10.0.0.v20170523-0654"/>		
-       <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.0.0.v20170523-0654"/>		
-       <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.0.0.v20170523-0654"/>		
-       <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.0.0.v20170523-0654"/>		
-       <repository id="temp-fuse-tooling" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/proto/2017-06-02_13-53-35-B8/all/repo/"/>		
-     </location>		
-     <!-- TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY TEMPORARY -->
-     
+
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>
       <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>
     </location>
-    
+
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
@@ -38,13 +27,9 @@
     <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.apache.servicemix.bundles.aopalliance" version="1.0.0.3"/>
-
       <unit id="org.jboss.tools.locus.jcip.annotations" version="1.0.0.v20131024-0922"/>
       <unit id="org.jboss.tools.locus.sf.saxon" version="9.5.1.v20151110-1025"/>
       <unit id="org.jboss.tools.locus.apache.directory.bouncycastle.stub" version="1.0.0.v20151110-1025"/>
-      <unit id="org.jboss.tools.locus.jaxb-core" version="2.2.7.v20160127-1545"/>
-      <unit id="org.jboss.tools.locus.jaxb-impl" version="2.2.7.v20160113-1915"/>
-      <unit id="org.jboss.tools.locus.jaxb-xjc" version="2.2.7.v20160125-1950"/>
       <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
       <repository id="jbt-locus-1.6.0.Final" location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
     </location>
@@ -142,7 +127,6 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.7.0.v201703152011"/>
 
-      <!-- <repository id="jbt-neon" location="http://download.jboss.org/jbosstools/updates/requirements/neon/"/>  -->
       <repository id="jbt-oxygen" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201705181200-Oxygen.0.M7/"/> 
     </location>
 
@@ -215,22 +199,27 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <unit id="org.jboss.tools.test.feature.feature.group" version="3.7.100.v20170529-1436"/>
       <unit id="org.jboss.tools.tests" version="3.7.100.v20170529-1436"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.3.0.v20170531-1920"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.3.0.v20170606-1712"/>
       <unit id="org.jboss.tools.common.base.test" version="3.9.0.v20170316-1838"/>
       <unit id="org.jboss.tools.common.test" version="3.9.0.v20170316-1838"/>
       <unit id="org.jboss.tools.jmx.core.test" version="1.10.0.v20170406-2053"/>
 
-      <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-build-sites.aggregate.coretests-site_master/2016-04-22_12-52-32-B5049/all/repo/"/>-->
+      <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-coretests/2017-06-13_17-52-18-B1053/all/repo/"/>
       <!-- <repository location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.4.2.Final/"/> -->
-      <repository id="jbt-coretests-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.0.AM1/"/>
+      <!-- <repository id="jbt-coretests-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.0.AM1/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.0.0.v20170526-0921"/>              
+      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.0.0.v20170523-0654"/>              
+      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.0.0.v20170523-0654"/>               
+      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.0.0.v20170523-0654"/>         
+      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.0.0.v20170523-0654"/>          
       <unit id="org.jboss.tools.common" version="3.9.0.v20170316-1838"/>
 
-      <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/snapshots/builds/jbosstools-build-sites.aggregate.site_master/2016-04-22_12-52-32-B12137/all/repo/"/> -->
-      <repository id="jbt-core-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.AM1/"/>
+      <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/>
+      <!-- <repository id="jbt-core-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.AM1/"/> -->
       <!-- <repository id="jbt-core-4.4.3.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.4.4.AM1/"/> -->
    </location>
 
