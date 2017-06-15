@@ -87,9 +87,8 @@ public class IDEPropertiesSanityTest {
 		for (Iterator iterator = rawProperties.entrySet().iterator(); iterator.hasNext();) {
 			Entry entry = (Entry) iterator.next();
 			String propertyKey = (String) entry.getKey();
-			if (propertyKey.contains("integration-stack")) {
-			    result.add(new String[] {propertyKey,
-                   (String) entry.getValue()});
+			if (propertyKey.contains("integration-stack") && (!propertyKey.contains("sap"))) {
+			    result.add(new String[] {propertyKey, (String) entry.getValue()});
 			}
 		}
 		return result;
