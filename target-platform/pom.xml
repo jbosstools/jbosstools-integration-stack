@@ -673,7 +673,7 @@
             <configuration>
                <descriptors>
                  <descriptor>src/assemblies/publish-jbtis-tp-assembly.xml</descriptor>
-                 <descriptor>src/assemblies/publish-jbtis-ea-tp-assembly.xml</descriptor>
+                 <!-- <descriptor>src/assemblies/publish-jbtis-ea-tp-assembly.xml</descriptor> -->
                </descriptors>
               <finalName>${project.artifactId}-${project.version}</finalName>
             </configuration>
@@ -727,6 +727,7 @@
                   <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}.p2diff -mode=ignoreVersions ${baseRepositoryUrl}/REPO file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
                 </configuration>
               </execution>
+              <!--
               <execution>
                 <id>generate-p2diff-ea</id>
                 <phase>verify</phase>
@@ -737,6 +738,7 @@
                   <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}-ea.p2diff -mode=ignoreVersions ${baseRepositoryUrl}/earlyaccess/REPO file:${project.build.directory}/${project.artifactId}-ea.target.repo</appArgLine>
                 </configuration>
               </execution>
+              -->
             </executions>
           </plugin>
 
