@@ -207,25 +207,25 @@
       <url>${COMPOSITE_SITE}</url>
     </repository>
     
-    <!-- No Early access components
-    <repository>
-      <id>jbtis-ea-site</id>
-      <layout>p2</layout>
-      <url>${COMPOSITE_EA_SITE}</url>
-      </repository>
-    -->
-
     <repository>
       <id>devstudiois-targetplatform-site</id>
       <layout>p2</layout>
       <url>${DEVSTUDIOIS_TP_SITE}</url>
     </repository>
 
+    <!-- No Early access components
+    <repository>
+      <id>jbtis-ea-site</id>
+      <layout>p2</layout>
+      <url>${COMPOSITE_EA_SITE}</url>
+      </repository>
+
     <repository>
       <id>devstudiois-targetplatform-ea-site</id>
       <layout>p2</layout>
       <url>${DEVSTUDIOIS_EA_TP_SITE}</url>
     </repository>
+    -->
   </repositories>
 
   <pluginRepositories>
