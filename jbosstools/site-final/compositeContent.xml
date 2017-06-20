@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.0.Final/"/>
 
     <!-- DROOLS/JBPM6 -->
-    <child location="http://downloads.jboss.org/drools/updatesites/updatesite-6.5.1.Final-v20161109-054101-B1259/"/>
+    <child location="http://download.jboss.org/jbpm/release/7.0.1.Final/updatesite/"/>
 
     <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/switchyard/2.4.0.CI/"/>
