@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Send an email describing new DevstudioIS and JBTIS availability.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.25.1">
+      <projectUrl>https://github.com/jbosstools/jbosstools-build-ci/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set"/>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>ECLIPSE_PLATFORM</name>
+          <description>Base eclipse platform.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>oxygen</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>Devstudio Integration Stack version.</description>
+          <defaultValue>11.0.0.AM1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>JBTIS_VERSION</name>
+          <description>JBTIS version from which devstudio IS components are taken.</description>
+          <defaultValue>4.5.0.AM1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION_MAJOR</name>
+          <description>Production version major number.</description>
+          <defaultValue>11</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IS_TP_VERSION</name>
+          <description>Integration Stack target platform version.</description>
+          <defaultValue>4.5.0.AM1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="org.jenkinsci.plugins.multiplescms.MultiSCM" plugin="multiple-scms@0.6">
+    <scms>
+      <hudson.plugins.git.GitSCM plugin="git@3.0.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <url>https://github.com/jbosstools/jbosstools-build-ci.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions>
+          <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+            <relativeTargetDir>jbosstools-build-ci</relativeTargetDir>
+          </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        </extensions>
+      </hudson.plugins.git.GitSCM>
+      <hudson.plugins.git.GitSCM plugin="git@3.0.1">
+        <configVersion>2</configVersion>
+        <userRemoteConfigs>
+          <hudson.plugins.git.UserRemoteConfig>
+            <name>origin</name>
+            <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+            <url>git://github.com/jbosstools/jbosstools-integration-stack.git</url>
+          </hudson.plugins.git.UserRemoteConfig>
+        </userRemoteConfigs>
+        <branches>
+          <hudson.plugins.git.BranchSpec>
+            <name>master</name>
+          </hudson.plugins.git.BranchSpec>
+        </branches>
+        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+        <submoduleCfg class="list"/>
+        <extensions/>
+      </hudson.plugins.git.GitSCM>
+    </scms>
+  </scm>
+  <assignedNode>devstudiois-rhel-7.3</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk1.8</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command># computed values
+releasedcomponents=$(cat ${WORKSPACE}/jbosstools/site-final/compositeContent.xml | sed -n &apos;/&lt;!--/{p;n;p}&apos; | sed -e &apos;s/&lt;child location=\&quot;//&apos; | sed -e &apos;s/\&quot;\/&gt;//&apos;)
+eacomponents=$(cat ${WORKSPACE}/jbosstools/site-ea/compositeContent.xml | sed -n &apos;/\&lt;\!\-\-/{p;n;p}&apos; | sed -e &apos;s/&lt;child location=\&quot;//&apos; | sed -e &apos;s/\&quot;\/&gt;//&apos;)
+
+if [[ ${eacomponents} == &quot;&quot; ]]; then
+   eacomponents=&quot;    None&quot;
+fi
+
+#TOrecipients=&quot;pleacu@redhat.com, lheinema@redhat.com&quot;
+TOrecipients=&quot;pleacu@redhat.com&quot;
+CCrecipients=&quot;&quot;
+sender=&quot;pleacu@redhat.com&quot;
+subject=&quot;QE Handoff - DevstudioIS ${VERSION}, JBTIS ${JBTIS_VERSION}&quot;
+rm -f ${WORKSPACE}/mailbody.devstudiois_email.txt
+
+echo -n &quot;
+  Greetings,
+      An Eclipse-${ECLIPSE_PLATFORM} capable, Devstudio ${VERSION_MAJOR} compatible Integration Stack candidate tooling release is available for QE testing.
+
+  * Released components
+${releasedcomponents}
+
+  * Early Access components
+${eacomponents}
+
+   This release is for *internal consumption only* until after QE has sanctioned it.
+
+   DevstudioIS ${VERSION}, JBTIS ${JBTIS_VERSION}
+
+      1. If installing from Eclipse Oxygen:
+          - install &apos;Red Hat JBoss Developer Studio 11.0.0.AM1&apos;
+            Update site: https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/
+
+      2. Start jbdevstudio or eclipse-with-devstudio from step 1, then:
+          Help &gt; Install New Software...
+          Add...
+          - use this for &apos;Location:&apos; for the integration stack:
+            https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/  # Released
+
+      Done!
+
+   JBoss Central is supported for DevstudioIS:
+
+      * Specify the integration stack discovery artifact:
+        ./devstudio -vmargs \
+           -Djboss.discovery.directory.url=https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/discovery/${VERSION}/devstudio-directory.xml \
+           -Djboss.discovery.site.integration-stack.url=https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/discovery/${VERSION}/ 
+
+   The standard Eclipse installer is available for JBTIS:
+
+      * Install JBoss Tools 4.5.0.AM1:
+          - Update site: http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/
+
+      * Start eclipse-with-jboss-tools, then:
+          Help &gt; Install New Software...
+          Add...
+          - use this for &apos;Location:&apos; for the integration stack:
+            http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/integration-stack/
+
+   JBoss Central is supported for JBTIS:
+
+      * Install JBoss Tools 4.5.0.AM1:
+          - Update site: http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/
+
+      * Specify the integration stack discovery artifacts:
+        ./eclipse -vmargs \
+           -Djboss.discovery.directory.url=http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/integration-stack/discovery/${JBTIS_VERSION}/jbosstools-directory.xml \
+           -Djboss.discovery.site.integration-stack.url=http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/integration-stack/discovery/${JBTIS_VERSION} 
+
+   Stand-alone installers:
+   
+      https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-standalone-installer.jar
+      https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-standalone-installer.jar.sha256
+
+   Offline zip files are supported for both production and community installs:
+
+      1. https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-updatesite.zip
+         https://devstudio.redhat.com/${VERSION_MAJOR}/staging/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-updatesite.zip.sha256
+      2. http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/integration-stack/${JBTIS_VERSION}/jbosstools-integration-stack-${JBTIS_VERSION}-updatesite.zip
+         http://download.jboss.org/jbosstools/${ECLIPSE_PLATFORM}/staging/updates/integration-stack/${JBTIS_VERSION}/jbosstools-integration-stack-${JBTIS_VERSION}-updatesite.zip.sha256
+         
+   For component and QE test developers - the JBTIS target platforms are:
+
+      https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/${IS_TP_VERSION}/
+      http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${IS_TP_VERSION}/
+
+&quot; &gt; ${WORKSPACE}/mailbody.devstudiois_email.txt
+
+# use mailx -r or sendmail -f, depending on what&apos;s available on the server
+if [[ -x /bin/mailx ]]; then 
+  /bin/mailx -s &quot;${subject}&quot; -c &quot;${CCrecipients}&quot; -r &quot;${sender}&quot; &quot;${TOrecipients}&quot; &lt; ${WORKSPACE}/mailbody.devstudiois_email.txt
+else 
+  /bin/mail -s &quot;${subject}&quot; &quot;${TOrecipients}&quot; -c&quot;${CCrecipients}&quot; -- -f &quot;${sender}&quot; &lt; ${WORKSPACE}/mailbody.devstudiois_email.txt
+fi
+
+rm -f ${WORKSPACE}/mailbody.devstudiois_email.txt
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.4.3">
+      <colorMapName>xterm</colorMapName>
+    </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
+    <hudson.plugins.xvnc.Xvnc plugin="xvnc@1.24">
+      <takeScreenshot>false</takeScreenshot>
+      <useXauthority>true</useXauthority>
+    </hudson.plugins.xvnc.Xvnc>
+  </buildWrappers>
+</project>

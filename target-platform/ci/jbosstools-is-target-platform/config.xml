@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;h2&gt;&lt;a style=&quot;color:green&quot;&gt;Produce tycho/maven target platforms and repositories that can be used by integration stack component builds (Oxygen).&lt;/h2&gt;&#xd;
+  &#xd;
+&lt;p&gt;JBoss Tools integration stack component target dependencies + JBoss Tools core target dependencies + JBoss Tools multiple core target dependencies forming an &apos;aggregate-base.target&apos; combined target.&lt;/p&gt;&#xd;
+  &lt;p&gt;Then add any leftover community dependencies to the aggregate forming an &apos;aggregate-full.target&apos;.&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+  &lt;a href=&quot;https://github.com/jbosstools/jbosstools-integration-stack/tree/master/target-platform/&quot;&gt;https://github.com/jbosstools/jbosstools-integration-stack/tree/master/target-platform/&lt;/a&gt;&#xd;
+&lt;/p&gt;&#xd;
+  &#xd;
+  &lt;h3&gt;&lt;a style=&quot;color:blue&quot;&gt;Note: If you change the JBTIS TP version you must also change the JBTIS target composites:&lt;/h3&gt;&#xd;
+&lt;p&gt;&#xd;
+  &lt;a href=&quot;https://github.com/jbosstools/jbosstools-download.jboss.org/tree/master/jbosstools/targetplatforms/jbtistarget/oxygen&quot;&gt;&#xd;
+    https://github.com/jbosstools/jbosstools-download.jboss.org/tree/master/jbosstools/targetplatforms/jbtistarget/oxygen&lt;/a&gt;&#xd;
+&lt;/p&gt;&#xd;
+&lt;p&gt;Resulting sites:&lt;/p&gt;  &#xd;
+   &lt;p&gt;&lt;a style=&quot;color:green&quot;&gt;If STAGING enabled:&lt;/p&gt; &#xd;
+   &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${VERSION}&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${VERSION}&lt;/a&gt;&lt;/li&gt;  &#xd;
+   &lt;p&gt;&lt;a style=&quot;color:green&quot;&gt;if DEPLOY enabled:&lt;/p&gt; &#xd;
+   &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${VERSION}&quot;&gt;&#xd;
+     http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${VERSION}&lt;/a&gt;&lt;/li&gt; &#xd;
+   &lt;li&gt;&lt;a href=&quot;https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}&quot;&gt;&#xd;
+     https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}&lt;/a&gt;&lt;/li&gt; &#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>5</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set"/>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>Integration Stack version.  The default value is the community version. 
+
+4.4.3.CR1-SNAPSHOT
+4.4.2.AM1-SNAPSHOT
+4.4.1.Final
+4.4.1.CR1
+4.4.1.Beta1-SNAPSHOT
+4.4.0.Final
+</description>
+          <defaultValue>4.5.0.CR1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DEVSTUDIOIS_TP_VERSION</name>
+          <description>Devstudio IS TP version used in repository deployment.
+10.3.0.CR1-SNAPSHOT
+10.2.0.AM1-SNAPSHOT</description>
+          <defaultValue>11.0.0.CR1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>STAGE</name>
+          <description>Publish target platform components to staging.</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>POM_ACTION</name>
+          <description>Either install or deploy to nexus (must enable staging).</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>install</string>
+              <string>deploy</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>SKIP_P2_DIFF</name>
+          <description>Skip the P2 difference check.</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>EA_ENABLED</name>
+          <description>Early Access.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>origin</name>
+        <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+        <url>git://github.com/jbosstools/jbosstools-integration-stack.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        <relativeTargetDir>sources</relativeTargetDir>
+      </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+      <hudson.plugins.git.extensions.impl.PerBuildTag/>
+    </extensions>
+  </scm>
+  <assignedNode>devstudiois-rhel-7.3</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>(System)</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>-U
+-B
+clean
+${POM_ACTION}
+-DBUILD_NUMBER=${BUILD_NUMBER}
+-DVERSION=${VERSION}
+-Dp2diff.skip=${SKIP_P2_DIFF}
+-Denforcer.skip=true
+-Pmirror
+assembly:single
+
+
+</targets>
+      <mavenName>(Default)</mavenName>
+      <jvmOptions>-Xmx512m -XX:MaxPermSize=256m</jvmOptions>
+      <pom>${WORKSPACE}/sources/target-platform/pom.xml</pom>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Maven>
+      <targets>org.apache.maven.plugins:maven-dependency-plugin:2.9:unpack</targets>
+      <mavenName>(Default)</mavenName>
+      <properties>artifact=org.jboss.tools.releng:jbosstools-releng-publish:4.4.0.Final-SNAPSHOT::tar.gz
+outputDirectory=${WORKSPACE}/sources
+trimVersion=true
+mdep.stripClassifier=true
+mdep.stripVersion=true</properties>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command># Publish the Integration Stack target platform components to the staging area (if enabled).
+
+# Update the staging area with the integration stack target platform repository.
+if [[ ${STAGE} == &quot;true&quot; ]]; then
+
+   # Create parent folders into which REPOs will be pushed
+   echo &quot;mkdir ${VERSION}/&quot; | sftp tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/
+   echo &quot;mkdir ${VERSION}/jbtis&quot; | sftp tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/
+   echo &quot;mkdir ${VERSION}/devstudiois&quot; | sftp tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/
+   echo &quot;mkdir ${VERSION}/jbtis/earlyaccess&quot; | sftp tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/
+   echo &quot;mkdir ${VERSION}/devstudiois/earlyaccess&quot; | sftp tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/
+
+   # Released component target platform dependencies.
+   sha256sum ${WORKSPACE}/sources/target-platform/target/*-release.zip | awk &apos;BEGIN {FS=&quot; &quot;}{print $1}&apos; &gt; \
+      ${WORKSPACE}/sources/target-platform/target/target-platform-${VERSION}-release.zip.sha256
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform.target.repo/ \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/jbtis/REPO
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/*-release.zip \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/jbtis/target-platform-${VERSION}.zip
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform-${VERSION}-release.zip.sha256 \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/jbtis/target-platform-${VERSION}.zip.sha256
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform-devstudiois.target.repo/ \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/devstudiois/REPO
+   rsync -zq --protocol=28 ${WORKSPACE}/sources/target-platform/target/aggregate-base.target \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/
+   rsync -zq --protocol=28 ${WORKSPACE}/sources/target-platform/target/aggregate-full.target \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/
+
+   # Early access component target platform dependencies.
+   if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+      sha256sum ${WORKSPACE}/sources/target-platform/target/*-earlyaccess.zip | awk &apos;BEGIN {FS=&quot; &quot;}{print $1}&apos; &gt; \
+         ${WORKSPACE}/sources/target-platform/target/target-platform-${VERSION}-earlyaccess.zip.sha256
+
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform-ea.target.repo/ \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/jbtis/earlyaccess/REPO
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform-${VERSION}-earlyaccess.zip \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/jbtis/earlyaccess/target-platform-${VERSION}-earlyaccess.zip
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform-${VERSION}-earlyaccess.zip.sha256 \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/jbtis/earlyaccess/target-platform-${VERSION}-earlyaccess.zip.sha256
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/target-platform/target/target-platform-ea.target.repo/ \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/devstudiois/earlyaccess/REPO
+      rsync -zq --protocol=28 ${WORKSPACE}/sources/target-platform/target/aggregate-base-ea.target \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/
+      rsync -zq --protocol=28 ${WORKSPACE}/sources/target-platform/target/aggregate-full-ea.target \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/
+      rsync -zq --protocol=28 ${WORKSPACE}/sources/scripts/composite*.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION}/
+   fi   
+   if [[ ${POM_ACTION} == &quot;deploy&quot; ]]; then
+            
+      # Make a local copy of the staging TP bits in their correct name and format.
+      rsync -aPrzq --protocol=28 tools@filemgmt.jboss.org:/downloads_htdocs/tools/builds/staging/JBTIS-target-platform/${VERSION} \
+         ${WORKSPACE}/deploy/
+
+      TP_ROOT=tools@filemgmt.jboss.org:/downloads_htdocs/tools
+      . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/deploy/${VERSION} \
+         -t targetplatforms/jbtistarget/${VERSION} -DESTINATION ${TP_ROOT}
+      
+      TP_ROOT=devstudio@filemgmt.jboss.org:/www_htdocs/devstudio
+      . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/deploy/${VERSION}/devstudiois \
+         -t targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform -DESTINATION ${TP_ROOT}
+   fi
+
+fi
+
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>sources/target-platform/target/*.target, sources/target-platform/target/target-platform.target.repo/*.*</artifacts>
+      <allowEmptyArchive>false</allowEmptyArchive>
+      <onlyIfSuccessful>false</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+    </hudson.tasks.ArtifactArchiver>
+    <hudson.tasks.Mailer plugin="mailer@1.19">
+      <recipients>pleacu@redhat.com </recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>false</sendToIndividuals>
+    </hudson.tasks.Mailer>
+    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.32">
+      <configs>
+        <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
+          <configs>
+            <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
+          </configs>
+          <projects>jbosstools-is-target-platform-notification-email</projects>
+          <condition>SUCCESS</condition>
+          <triggerWithNoParameters>false</triggerWithNoParameters>
+        </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
+      </configs>
+    </hudson.plugins.parameterizedtrigger.BuildTrigger>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.build__timeout.BuildTimeoutWrapper plugin="build-timeout@1.18">
+      <strategy class="hudson.plugins.build_timeout.impl.AbsoluteTimeOutStrategy">
+        <timeoutMinutes>180</timeoutMinutes>
+      </strategy>
+      <operationList>
+        <hudson.plugins.build__timeout.operations.AbortOperation/>
+      </operationList>
+    </hudson.plugins.build__timeout.BuildTimeoutWrapper>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.4.3">
+      <colorMapName>xterm</colorMapName>
+    </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
+  </buildWrappers>
+</project>

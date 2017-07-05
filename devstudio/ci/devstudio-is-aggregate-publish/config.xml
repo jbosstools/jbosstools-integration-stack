@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;h2&gt;&lt;a style=&quot;color:green&quot;&gt;Red Hat JBoss Developer Studio Integration Stack publishing from staging&lt;/h2&gt;&#xd;
+&#xd;
+&lt;p&gt;This job should be run after a good build of:&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+  &lt;a href=&quot;https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/devstudio-is-aggregate&quot;/&gt;&#xd;
+  https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/devstudio-is-aggregate/&lt;/a&gt;&#xd;
+&lt;/p&gt;&#xd;
+&#xd;
+&lt;p&gt;Source site:&lt;/p&gt;&#xd;
+&lt;p&gt;&#xd;
+  &lt;a href=&quot;https://devstudio.redhat.com/11/staging/updates/integration-stack/${VERSION}&quot;/&gt;&#xd;
+  https://devstudio.redhat.com/11/staging/updates/integration-stack/${VERSION}&lt;/a&gt;&#xd;
+&lt;/p&gt;&#xd;
+&#xd;
+&lt;p&gt;Resulting sites/files: (e.g. 11.0.0.CR1) - Mirrored to https://devstudio.redhat.com/static/11/...&lt;/p&gt;&#xd;
+&lt;li&gt;&lt;a href=&quot;https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/&quot;&gt;&#xd;
+     https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li&gt;&lt;a href=&quot;https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/earlyaccess&quot;&gt;&#xd;
+     https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/earlyaccess&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li&gt;&lt;a href=&quot;https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/${VERSION}/&quot;&gt;&#xd;
+     https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li&gt;&lt;a href=&quot;https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-updatesite.zip&quot;&gt;&#xd;
+     https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-updatesite.zip&lt;/a&gt;&lt;/li&gt;&#xd;
+&lt;li&gt;&lt;a href=&quot;https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip&quot;&gt;&#xd;
+     https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip&lt;/a&gt;&lt;/li&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>5</daysToKeep>
+        <numToKeep>3</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.25.1">
+      <projectUrl>https://github.com/jbosstools/jbosstools-integration-stack/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set"/>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
+          <description>The type of build being published:
+&lt;li&gt; integration (better than nightly/snapshot/CI, but not quite a milestone - for use with downstream components)
+&lt;li&gt; development (milestone)
+&lt;li&gt; stable (release)</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>stable</string>
+              <string>integration</string>
+              <string>development</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>EA_ENABLED</name>
+          <description>Check box to process early access components and metadata.</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>VERSION_MAJOR</name>
+          <description>The base Eclipse platform to which this build is targeted.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>11</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>DevstudioIS version.
+10.3.0.GA
+10.3.0.CR1-SNAPSHOT
+10.2.0.GA
+10.0.0.GA</description>
+          <defaultValue>11.0.0.AM1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>PARENT_FOLDER</name>
+          <description>Parent folder to the project.</description>
+          <defaultValue>integration-stack</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SOURCE_PATH</name>
+          <description>Relative path under https://devstudio.redhat.com/ to the update site folder you want to promote.</description>
+          <defaultValue>11/staging/updates/integration-stack</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+    <EnvInjectJobProperty plugin="envinject@1.93.1">
+      <info>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+      <on>true</on>
+      <keepJenkinsSystemVariables>true</keepJenkinsSystemVariables>
+      <keepBuildVariables>true</keepBuildVariables>
+      <overrideBuildParameters>false</overrideBuildParameters>
+    </EnvInjectJobProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>devstudiois-rhel-7.3</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk1.8</jdk>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>org.apache.maven.plugins:maven-dependency-plugin:2.9:unpack</targets>
+      <mavenName>maven-3.3.9</mavenName>
+      <properties>artifact=org.jboss.tools.releng:jbosstools-releng-publish:4.4.0.Final-SNAPSHOT::tar.gz
+outputDirectory=${WORKSPACE}/sources
+trimVersion=true
+mdep.stripClassifier=true
+mdep.stripVersion=true</properties>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command>## Publish the production Integration Stack update sites, target platform repositories, offline zip files and discovery 
+## XML/ composite site/ plugin jars to the designated BUILD_TYPE/updates area.  
+##    e.g. - https://devstudio.redhat.com/11/development/updates/integration-stack/
+
+DEVSTUDIO_ROOT=devstudio@filemgmt.jboss.org:/www_htdocs/devstudio
+
+## Create a local copy of the bits to be promoted.
+rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/${VERSION}/* ${WORKSPACE}/devstudiois-publish
+rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/discovery/${VERSION}/* ${WORKSPACE}/devstudiois-publish/discovery
+rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/${VERSION}/* ${WORKSPACE}/devstudiois-publish/
+
+### Promote the release.
+
+# Promote the released components update site (including installers), target platform and discovery
+
+# https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish \
+  -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION} -DESTINATION ${DEVSTUDIO_ROOT}
+
+# Promote the released components target platform - 
+# https://devstudio.redhat.com/11/stable/updates/integration-stack/${VERSION}/targetplatform/
+#. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/targetplatform \
+#  -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/targetplatform -DESTINATION ${DEVSTUDIO_ROOT}
+  
+# Promote the Discovery composite site.
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/discovery/ \
+   -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/ -DESTINATION ${DEVSTUDIO_ROOT}
+   
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/discovery/ \
+   -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/${VERSION}/ -DESTINATION ${DEVSTUDIO_ROOT}
+   
+## Promote the early access components update site, target platform and discovery
+if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+
+   # https://devstudio.redhat.com/11/stable/updates/integration-stack/${VERSION}/earlyaccess/
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/earlyaccess \
+     -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/earlyaccess -DESTINATION ${DEVSTUDIO_ROOT}
+
+   # Promote the early access components target platform - 
+   #   https://devstudio.redhat.com/11/development/updates/integration-stack/${VERSION}/earlyaccess/targetplatform/
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/earlyaccess/targetplatform \
+     -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/earlyaccess/targetplatform -DESTINATION ${DEVSTUDIO_ROOT}
+ 
+   # Discovery early access composite site.
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/discovery/earlyaccess/ \
+      -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/earlyaccess/ -DESTINATION ${DEVSTUDIO_ROOT}
+   
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/discovery/earlyaccess/ \
+      -t ${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/${VERSION}/earlyaccess/ -DESTINATION ${DEVSTUDIO_ROOT}
+fi
+
+## Mirror the release to static
+
+## Promote the released components update site (including installers), target platform and discovery
+
+# https://devstudio.redhat.com/static/11/development/updates/integration-stack/${VERSION}/
+###. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish \
+###  -t static/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION} -DESTINATION ${DEVSTUDIO_ROOT}
+
+# Promote the released components target platform - 
+# https://devstudio.redhat.com/static/11/stable/updates/integration-stack/${VERSION}/targetplatform/
+#. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/targetplatform \
+#  -t static/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/targetplatform -DESTINATION ${DEVSTUDIO_ROOT}
+
+# Promote the JBoss Central discovery sites and meta-data.
+
+# Discovery composite site.
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/discovery/ \
+   -t static/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/${VERSION}/ -DESTINATION ${DEVSTUDIO_ROOT}
+   
+## Promote the early access components update site, target platform and discovery   
+if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+
+   # Promote the early access components update site - 
+   #   https://devstudio.redhat.com/static/11/stable/updates/integration-stack/${VERSION}/earlyaccess/
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/earlyaccess \
+     -t static/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/earlyaccess -DESTINATION ${DEVSTUDIO_ROOT}
+
+   # Promote the early access components target platform - 
+   # https://devstudio.redhat.com/static/11/development/updates/integration-stack/${VERSION}/earlyaccess/targetplatform/
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/earlyaccess/targetplatform \
+     -t static/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/earlyaccess/targetplatform -DESTINATION ${DEVSTUDIO_ROOT}
+
+   # Discovery early access composite site.
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/devstudiois-publish/discovery/earlyaccess/ \
+      -t static/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/discovery/${VERSION}/earlyaccess/ -DESTINATION ${DEVSTUDIO_ROOT}
+fi
+
+### Promote the update site zips
+
+export SOURCE_PATH=11/staging/updates/integration-stack
+export ZIP_DESTINATION=${DEVSTUDIO_ROOT}/${VERSION_MAJOR}/${BUILD_TYPE}/updates/${PARENT_FOLDER}/${VERSION}/
+
+# Promote the released update site zip.
+#rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/devstudio-integration-stack-${VERSION}-updatesite.zip \
+#   ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite.zip
+#rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/devstudio-integration-stack-${VERSION}-updatesite.zip.sha256 \
+#   ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite.zip.sha256
+#rsync -aPrzq --protocol=28 ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite.zip \
+#  ${ZIP_DESTINATION}/devstudio-integration-stack-${VERSION}-updatesite.zip
+#rsync -aPrzq --protocol=28 ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite.zip.sha256 \
+#  ${ZIP_DESTINATION}/devstudio-integration-stack-${VERSION}-updatesite.zip.sha256
+
+# Promote the EA update site zip
+if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+   rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip \
+      ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+   rsync -aPrzq --protocol=28 ${DEVSTUDIO_ROOT}/${SOURCE_PATH}/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256 \
+      ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip \
+     ${ZIP_DESTINATION}/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/devstudiois-publish/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256 \
+     ${ZIP_DESTINATION}/devstudio-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+  
+fi</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.build__timeout.BuildTimeoutWrapper plugin="build-timeout@1.18">
+      <strategy class="hudson.plugins.build_timeout.impl.AbsoluteTimeOutStrategy">
+        <timeoutMinutes>360</timeoutMinutes>
+      </strategy>
+      <operationList>
+        <hudson.plugins.build__timeout.operations.FailOperation/>
+      </operationList>
+    </hudson.plugins.build__timeout.BuildTimeoutWrapper>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+  </buildWrappers>
+</project>

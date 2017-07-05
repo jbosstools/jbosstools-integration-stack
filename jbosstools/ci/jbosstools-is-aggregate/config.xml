@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&lt;h2&gt;&lt;a style=&quot;color:green&quot;&gt;JBoss Tools Integration Stack aggregate/ discovery (Oxygen/ 4.5.x).&lt;/a&gt;&lt;/h2&gt;&#xd;
+ &#xd;
+ &lt;p&gt;Produce an Eclipse aggregate update site and JBoss Central discovery site for the JBoss Tools Integration Stack.&lt;/p&gt;&#xd;
+ &#xd;
+ &lt;p&gt;JBoss Central discovery upstream merge partner: &lt;i&gt;See UPSTREAM_DIRECTORY_XML&lt;/i&gt;&lt;/p&gt;&#xd;
+ &#xd;
+ &lt;p&gt;This project should be run only if referencing a nexus build of the JBTIS target platform. See the JBTIS TP Jenkins job: &lt;/p&gt;&#xd;
+ &#xd;
+ &lt;a href=&quot;https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/JBTIS/job/jbosstools-is-target-platform/&quot;&gt;https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/JBTIS/job/jbosstools-is-target-platform/&lt;/a&gt;&#xd;
+ &#xd;
+ &lt;p&gt;Resulting sites:&lt;/p&gt;&#xd;
+ &lt;p&gt;&#xd;
+ &lt;a style=&quot;color:green&quot;&gt;INTEGRATION/ SNAPSHOTS - MASTER (default) -&lt;/a&gt;&lt;/p&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/${VERSION}/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/discovery/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/discovery/{$VERSION}/&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/discovery/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/discovery/{$VERSION}/earlyaccess/&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;&#xd;
+ &#xd;
+ &lt;p&gt;&lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/master/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/master/&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/master/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/master/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/discovery/master/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/discovery/master/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/discovery/master/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/discovery/master/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &#xd;
+ &lt;p&gt;&lt;a style=&quot;color:green&quot;&gt;STAGING (if enabled) -&lt;/a&gt;&lt;/p&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/discovery/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/discovery/${VERSION}/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/discovery/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/discovery/${VERSION}/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}.zip&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}.zip&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-earlyaccess.zip&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-earlyaccess.zip&lt;/a&gt;&lt;/li&gt;&#xd;
+ &#xd;
+ &lt;p&gt;&lt;a style=&quot;color:green&quot;&gt;BUILDS (Mirror - if staging enabled) -&lt;/a&gt;&lt;/p&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/earlyaccess/&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/discovery/${VERSION}/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/discovery/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/discovery/${VERSION}/earlyaccess/&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/discovery/earlyaccess/${VERSION}/&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}.zip&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}.zip&lt;/a&gt;&lt;/li&gt;&#xd;
+ &lt;li&gt;&lt;a href=&quot;http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-earlyaccess.zip&quot;&gt;&#xd;
+ http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-earlyaccess.zip&lt;/a&gt;&lt;/li&gt; &#xd;
+ &lt;p&gt;&#xd;
+ To publish this build to a new location (development/ stable), use: &lt;a href=&quot;https://devstudiois-jenkins.rhev-ci-vms.eng.rdu2.redhat.com/job/JBTIS/job/jbosstools-is-aggregate-publish/&quot;&gt;jbosstools-is-aggregate-publish&lt;/a&gt;&#xd;
+ &lt;/p&gt;&#xd;
+  &#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>5</daysToKeep>
+        <numToKeep>5</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.plugins.disk__usage.DiskUsageProperty plugin="disk-usage@0.28"/>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.25.1">
+      <projectUrl>https://github.com/jbosstools/jbosstools-integration-stack/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+    <org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty plugin="zmq-event-publisher@0.0.5">
+      <enabled>false</enabled>
+    </org.jenkinsci.plugins.ZMQEventPublisher.HudsonNotificationProperty>
+    <com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty plugin="ownership@0.9.1">
+      <ownership>
+        <ownershipEnabled>true</ownershipEnabled>
+        <primaryOwnerId>pleacu</primaryOwnerId>
+        <coownersIds class="sorted-set"/>
+      </ownership>
+    </com.synopsys.arc.jenkins.plugins.ownership.jobs.JobOwnerJobProperty>
+    <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
+      <autoRebuild>false</autoRebuild>
+      <rebuildDisabled>false</rebuildDisabled>
+    </com.sonyericsson.rebuild.RebuildSettings>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.BooleanParameterDefinition>
+          <name>STAGE</name>
+          <description>
+Push update site and discovery info to staging area.
+</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>VERSION</name>
+          <description>
+Integration Stack version. The default value is the community version. 
+4.5.0.AM1
+4.5.0.AM1-SNAPSHOT
+4.5.0.CR1-SNAPSHOT 
+4.5.0.CR1 
+4.5.0.Final
+</description>
+          <defaultValue>4.5.0.CR1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>EA_ENABLED</name>
+          <description>
+Check box to process early access components and metadata.
+</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>BUILD_ALIAS</name>
+          <description>
+Distinguish the aggregate build of the JBoss Tools Integration Stack - default to continuous integration (CI) followed by timestamp and build ID. 
+Leave blank for staging build. ${BUILD_ID}-B${BUILD_NUMBER}
+</description>
+          <defaultValue>${BUILD_TIMESTAMP}</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>BUILD_KIND</name>
+          <description>JBoss Tools build.</description>
+          <defaultValue>jbosstools</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
+          <description>
+The type of build being published: </description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>integration</string>
+              <string>development</string>
+              <string>stable</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>IS_TP_VERSION</name>
+          <description>
+Integration Stack Target Platform version. 
+Must set a specific version, such as 4.1.3-SNAPSHOT or 4.1.5.Alpha5 4.4.2.AM1-SNAPSHOT 4.4.1.Final 4.4.1.Beta1-SNAPSHOT 4.4.0.Final
+</description>
+          <defaultValue>4.5.0.CR1-SNAPSHOT</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>TARGET_PLATFORM</name>
+          <description>Target Eclipse version.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>oxygen</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>UPSTREAM_DIRECTORY_XML</name>
+          <description>
+# use LATEST (changing) JBT Central Directory.xml 
+http://download.jboss.org/jbosstools/static/oxygen/stable/updates/discovery.central/4.5.0.Final/jbosstools-directory.xml
+</description>
+          <defaultValue>http://download.jboss.org/jbosstools/oxygen/staging/updates/discovery.central/4.5.0.AM1d/jbosstools-directory.xml</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>UPSTREAM_UPDATE_SITE</name>
+          <description>
+# use LATEST (changing) JBT release site
+http://download.jboss.org/jbosstools/oxygen/stable/updates/</description>
+          <defaultValue>http://download.jboss.org/jbosstools/oxygen/staging/updates/</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>UPDATE_SITE</name>
+          <description>
+# use a SPECIFIC JBT-IS aggregate site 
+# http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION} 
+# http://download.jboss.org/jbosstools/oxygen/${BUILD_TYPE}/updates/integration-stack/${VERSION}
+</description>
+          <defaultValue>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>UPDATE_MASTER_SITE</name>
+          <description></description>
+          <defaultValue>http://download.jboss.org/jbosstools/oxygen/snapshots/updates/integration-stack/master</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>COMPOSITE_TP_SITE</name>
+          <description>
+JBTIS target platform URL for use in the discovery composites.
+</description>
+          <defaultValue>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${IS_TP_VERSION}/jbtis/REPO</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>COMPOSITE_TP_EA_SITE</name>
+          <description>
+JBTIS early access target platform URL for use in the discovery composites. 
+http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${IS_TP_VERSION}/jbtis/earlyaccess/REPO
+</description>
+          <defaultValue>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/${IS_TP_VERSION}/jbtis/earlyaccess/REPO</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DISCOVERY_SITE</name>
+          <description>
+# Used to generate the JBoss Central discovery composite site. 
+# http://download.jboss.org/jbosstools/oxygen/${BUILD_TYPE}/updates/integration-stack/${VERSION} 
+# http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION} 
+# http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/${VERSION}
+</description>
+          <defaultValue>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DISCOVERY_EA_SITE</name>
+          <description>
+# Used to generate the JBoss Central discovery early access composite site. 
+# http://download.jboss.org/jbosstools/oxygen/${BUILD_TYPE}/updates/integration-stack/${VERSION}/earlyaccess 
+# http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/${VERSION}/earlyaccess
+</description>
+          <defaultValue>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/${VERSION}/earlyaccess</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>skipRevisionCheckWhenPublishing</name>
+          <description>
+Check box to always publish new build to staging / nightly. </description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <hudson.plugins.throttleconcurrents.ThrottleJobProperty plugin="throttle-concurrents@1.9.0">
+      <maxConcurrentPerNode>0</maxConcurrentPerNode>
+      <maxConcurrentTotal>0</maxConcurrentTotal>
+      <categories class="java.util.concurrent.CopyOnWriteArrayList"/>
+      <throttleEnabled>false</throttleEnabled>
+      <throttleOption>project</throttleOption>
+      <limitOneJobWithMatchingParams>false</limitOneJobWithMatchingParams>
+      <paramsToUseForLimit></paramsToUseForLimit>
+    </hudson.plugins.throttleconcurrents.ThrottleJobProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <name>origin</name>
+        <refspec>+refs/heads/*:refs/remotes/origin/*</refspec>
+        <url>git://github.com/jbosstools/jbosstools-integration-stack.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions>
+      <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+        <relativeTargetDir>sources</relativeTargetDir>
+      </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
+      <hudson.plugins.git.extensions.impl.PerBuildTag/>
+    </extensions>
+  </scm>
+  <assignedNode>devstudiois-rhel-7.3</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <jdk>jdk1.8</jdk>
+  <triggers>
+    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.25.1">
+      <spec></spec>
+    </com.cloudbees.jenkins.GitHubPushTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>-U
+-B
+clean
+install
+checkstyle:check
+-DBUILD_KIND=${BUILD_KIND}
+-DBUILD_NUMBER=${BUILD_NUMBER}
+-DBUILD_ALIAS=${BUILD_ALIAS}
+-DBUILD_TYPE=${BUILD_TYPE}
+-DTARGET_PLATFORM=${TARGET_PLATFORM}
+-DVERSION=${VERSION}
+-DCOMPOSITE_URLS=${UPSTREAM_UPDATE_SITE},${DISCOVERY_SITE},${COMPOSITE_TP_SITE}
+-DCOMPOSITE_EA_URLS=${UPSTREAM_UPDATE_SITE},${DISCOVERY_EA_SITE},${COMPOSITE_TP_SITE},${COMPOSITE_TP_EA_SITE}
+-DCOMPOSITE_MASTER_URLS=${UPSTREAM_UPDATE_SITE},${UPDATE_MASTER_SITE},${COMPOSITE_TP_SITE}
+-DCOMPOSITE_MASTER_EA_URLS=${UPSTREAM_UPDATE_SITE},${UPDATE_MASTER_SITE}/earlyaccess,${COMPOSITE_TP_SITE},${COMPOSITE_TP_EA_SITE}
+</targets>
+      <mavenName>(Default)</mavenName>
+      <jvmOptions>-Xmx512m</jvmOptions>
+      <pom>${WORKSPACE}/sources/${BUILD_KIND}/pom.xml</pom>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Maven>
+      <targets>org.apache.maven.plugins:maven-dependency-plugin:2.9:unpack
+</targets>
+      <mavenName>maven-3.3.9</mavenName>
+      <properties>artifact=org.jboss.tools.releng:jbosstools-releng-publish:4.4.0.Final-SNAPSHOT::tar.gz
+outputDirectory=${WORKSPACE}/sources
+trimVersion=true
+mdep.stripClassifier=true
+mdep.stripVersion=true</properties>
+      <usePrivateRepository>true</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command># Publish the Integration Stack update site and central discovery info.
+
+export skipRevisionCheckWhenPublishing=${skipRevisionCheckWhenPublishing}
+
+export TARGET_DIR=&quot;snapshots&quot;
+
+echo ${BUILD_TIMESTAMP}
+
+# Publish the Integration Stack update sites and discovery XML, plugin and discovery composite site to the &apos;snapshots/updates&apos; and 
+# &apos;integration/updates&apos; areas (Continuous Integration).
+
+# SNAPSHOTS - MASTER/ INTEGRATION
+
+# Released components update site
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/repository/ \
+     -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/master/ --del
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/repository/ \
+     -t ${TARGET_PLATFORM}/integration/updates/integration-stack/${VERSION}/ --del
+
+# Publish the discovery composite site and directory files to &apos;snapshots - master&apos;.
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site-master/plugins \
+   -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/plugins
+rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site-master/compositeArtifacts.xml \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/compositeArtifacts.xml
+rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site-master/compositeContent.xml \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/compositeContent.xml
+rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site-master/jbosstools-integration-stack-directory.xml \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/jbosstools-directory.xml
+
+# Publish the discovery composite site and directory files to &apos;integration&apos;.
+. ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/plugins \
+   -t ${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/plugins
+rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/compositeArtifacts.xml \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/compositeArtifacts.xml
+rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/compositeContent.xml \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/compositeContent.xml
+rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/jbosstools-integration-stack-directory.xml \
+   tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/jbosstools-directory.xml
+
+if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+
+   # Early Access update site.
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/repository/ \
+      -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/master/earlyaccess/ --del
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/repository/ \
+      -t ${TARGET_PLATFORM}/integration/updates/integration-stack/${VERSION}/earlyaccess --del
+      
+   # Publish the early access discovery composite site and directory files to &apos;snapshots - master&apos;.
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site-master/plugins \
+      -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/earlyaccess/plugins --del
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site-master/compositeArtifacts.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/earlyaccess/compositeArtifacts.xml
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site-master/compositeContent.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/earlyaccess/compositeContent.xml
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site-master/jbosstools-integration-stack-directory.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/master/earlyaccess/jbosstools-directory.xml
+
+   # Publish the early access discovery composite site and directory files to &apos;integration&apos;.
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/plugins \
+      -t ${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/earlyaccess/plugins --del
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/compositeArtifacts.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/earlyaccess/compositeArtifacts.xml
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/compositeContent.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/earlyaccess/compositeContent.xml
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/jbosstools-integration-stack-directory.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/integration/updates/integration-stack/discovery/${VERSION}/earlyaccess/jbosstools-directory.xml
+
+fi
+
+# Publish the Integration Stack update sites and discovery XML, plugin and discovery composite sites to the &apos;staging&apos; area and mirror to &apos;staging/builds&apos;.
+# STAGING
+if [[ ${STAGE} == &quot;true&quot; ]]; then
+
+   export TARGET_DIR=&quot;staging&quot;
+
+   # Released components update site
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/ \
+        -t ${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/${VERSION} --del
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/repository/ \
+        -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/${VERSION}/ --del
+   
+   # Publish the discovery composite site and directory file to staging/updates.
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/plugins \
+      -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/plugins --del
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/compositeArtifacts.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/compositeArtifacts.xml
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/compositeContent.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/compositeContent.xml
+   rsync -arz --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/jbosstools-integration-stack-directory.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/jbosstools-directory.xml
+
+   # Publish the discovery composite site and directory file to staging/builds (mirror).
+   . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/plugins \
+      -t ${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/plugins --del
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/compositeArtifacts.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/compositeArtifacts.xml
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/compositeContent.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/compositeContent.xml
+   rsync -arz --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation/target/discovery-site/jbosstools-integration-stack-directory.xml \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/jbosstools-directory.xml
+   
+   # Rename and promote the released update site zip and sha256 files to staging/updates.
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/site-final-*.zip \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite.zip
+
+   sha256sum ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/site-final-*.zip | awk &apos;BEGIN {FS=&quot; &quot;}{print $1}&apos; &gt; \
+      ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/site-final-${VERSION}-updatesite.zip.sha256
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/site-final-${VERSION}-updatesite.zip.sha256 \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256
+    
+   # Promote the released update site zip and sha256 files to builds (mirror)
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/site-final-*.zip \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite.zip
+
+   rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-final/target/site-final-${VERSION}-updatesite.zip.sha256 \
+      tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite.zip.sha256
+       
+   if [[ ${EA_ENABLED} == &quot;true&quot; ]]; then
+   
+      # Early Access update site.
+      . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/ \
+           -t ${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/${VERSION}/earlyaccess --del
+      . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/repository/ \
+           -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/${VERSION}/earlyaccess/ --del
+           
+      # Publish the early access discovery composite site and directory file to staging/updates.
+      . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/plugins \
+         -t ${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/earlyaccess/plugins --del
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/compositeArtifacts.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/earlyaccess/compositeArtifacts.xml
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/compositeContent.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/earlyaccess/compositeContent.xml
+      rsync -arz --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/jbosstools-integration-stack-directory.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/discovery/${VERSION}/earlyaccess/jbosstools-directory.xml
+
+      # Publish the early access discovery composite site and directory file to staging/builds (mirror).
+      . ${WORKSPACE}/sources/publish/rsync.sh -s ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/plugins \
+         -t ${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/earlyaccess/plugins --del
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/compositeArtifacts.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/earlyaccess/compositeArtifacts.xml
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/compositeContent.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/earlyaccess/compositeContent.xml
+      rsync -arz --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/discovery/generation-ea/target/discovery-site/jbosstools-integration-stack-directory.xml \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/discovery/${VERSION}/earlyaccess/jbosstools-directory.xml
+
+
+      # Rename and promote the earlyaccess update site zip and sha256 files to staging/updates.
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/site-ea-*.zip \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+
+      sha256sum ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/site-ea-*.zip | awk &apos;BEGIN {FS=&quot; &quot;}{print $1}&apos; &gt; \
+         ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/site-ea-${VERSION}-updatesite.zip.sha256
+
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/site-ea-${VERSION}-updatesite.zip.sha256 \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/updates/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+
+      # Promote the earlyaccess update site zip and sha256 files to builds (mirror).
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/site-ea-*.zip \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip
+
+      rsync -aPrzq --protocol=28 ${WORKSPACE}/sources/${BUILD_KIND}/site-ea/target/site-ea-${VERSION}-updatesite.zip.sha256 \
+         tools@filemgmt.jboss.org:/downloads_htdocs/tools/${TARGET_PLATFORM}/${TARGET_DIR}/builds/integration-stack/${VERSION}/jbosstools-integration-stack-${VERSION}-updatesite-earlyaccess.zip.sha256
+   fi
+fi
+
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>sources/jbosstools/discovery/generation*/target/discovery-site/*,sources/jbosstools/site*/target/*.zip,sources/*/site*/target/repository/*</artifacts>
+      <allowEmptyArchive>true</allowEmptyArchive>
+      <onlyIfSuccessful>true</onlyIfSuccessful>
+      <fingerprint>false</fingerprint>
+      <defaultExcludes>true</defaultExcludes>
+      <caseSensitive>true</caseSensitive>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+    <hudson.plugins.build__timeout.BuildTimeoutWrapper plugin="build-timeout@1.18">
+      <strategy class="hudson.plugins.build_timeout.impl.AbsoluteTimeOutStrategy">
+        <timeoutMinutes>200</timeoutMinutes>
+      </strategy>
+      <operationList>
+        <hudson.plugins.build__timeout.operations.AbortOperation/>
+      </operationList>
+    </hudson.plugins.build__timeout.BuildTimeoutWrapper>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+  </buildWrappers>
+</project>
