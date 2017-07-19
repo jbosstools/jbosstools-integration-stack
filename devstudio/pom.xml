@@ -33,22 +33,22 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>oxygen</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.5.0.AM1</IS_TP_VERSION>
+    <IS_TP_VERSION>4.5.0.CR1a</IS_TP_VERSION>
 
-    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/11/staging/builds/devstudio-11.0.0.AM1a-build-product/2017-06-13_19-43-31-B319/all/devstudio-11.0.0.AM1-v20170613-1838-B319-installer-standalone.jar</DEVSTUDIO_INSTALLER>
-    <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/11.0/stable/builds/devstudio-11.0.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
+    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/11/staging/builds/devstudio-11.0.0.AM2-build-product/2017-07-13_22-11-43-B489/all/devstudio-11.0.0.AM2-v20170713-2124-B489-installer-standalone.jar</DEVSTUDIO_INSTALLER>
+    <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/11/stable/builds/devstudio-11.0.0.GA-build-product/2017-02-18_16-51-02-B94/all/devstudio-10.3.0.GA-v20170218-1636-B94-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- <DEVSTUDIO_INSTALLER>file:///home/pleacu/git-clone/jbdevstudio-product/installer/target/devstudio-10.3.0.Beta1-v20161205-1527-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- http://origin-repository.jboss.org/nexus/content/groups/product-ga/org/jboss/fuse/jboss-fuse-karaf/6.3.0.redhat-187 -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
-    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.AM1a/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.AM2/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
     <COMPOSITE_SITE>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/4.5.0.CR1-SNAPSHOT/</COMPOSITE_SITE>
     <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/4.5.0.CR1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
-    <DEVSTUDIOIS_TP_VERSION>11.0.0.AM1</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>11.0.0.CR1a</DEVSTUDIOIS_TP_VERSION>
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
     <DEVSTUDIOIS_EA_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</DEVSTUDIOIS_EA_TP_SITE>
 

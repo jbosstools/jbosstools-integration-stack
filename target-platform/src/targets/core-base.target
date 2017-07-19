@@ -60,8 +60,8 @@
        <unit id="org.mozilla.xpcom" version="1.9.2.16"/>
 
       <!-- <repository id="jbt-core-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <repository id="jbt-core-4.5.0.AM2" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.AM2/"/>
-      <!-- <repository id="jbt-core-4.5.0.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.0.AM1/"/> -->
+      <!-- <repository id="jbt-core-4.5.0.AM2" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.AM2/"/> -->
+      <repository id="jbt-core-4.5.0.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.0.AM2/"/>
     </location>
 
   </locations>
