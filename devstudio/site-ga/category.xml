@@ -6,7 +6,7 @@
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
+<!-- JBTIS-1147 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/> -->
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.switchyard.feature"/>
 
