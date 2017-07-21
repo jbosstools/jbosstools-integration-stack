@@ -6,15 +6,9 @@
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
+<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.switchyard.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
-
-<category-def name="SwitchYard" label="JBoss Tools SwitchYard">
-  <description>
-A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
-  </description>
-</category-def>
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
@@ -31,6 +25,12 @@ Tools related to data virtualization such as persistence and transformation - in
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
 Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, jBPM6, KIE and Switchyard.
+  </description>
+</category-def>
+
+<category-def name="SwitchYard" label="JBoss Tools SwitchYard (DEPRECATED)">
+  <description>
+A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
   </description>
 </category-def>
 

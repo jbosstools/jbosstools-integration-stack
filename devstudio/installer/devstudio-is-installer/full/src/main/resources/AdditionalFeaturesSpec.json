@@ -1,12 +1,5 @@
 [
 	{
-            "id":"com.jboss.devstudio.integration-stack.switchyard.feature.feature.group",
-            "label":"JBoss Tools SwitchYard",
-            "description":"A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.",
-            "selected":"false",
-            "path":"devstudio-is",
-            "size":"2100000"
-	},{
             "id":"com.jboss.devstudio.integration-stack.bpr.feature.feature.group",
             "label":"JBoss Business Process and Rules Development",
             "description":"Tools related to business processes and rules development.",
@@ -27,5 +20,12 @@
             "selected":"false",
             "path":"devstudio-is",
             "size":"100000000"
+	},{
+            "id":"com.jboss.devstudio.integration-stack.switchyard.feature.feature.group",
+            "label":"JBoss Tools SwitchYard (DEPRECATED)",
+            "description":"A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.",
+            "selected":"false",
+            "path":"devstudio-is",
+            "size":"2100000"
 	}
 ]

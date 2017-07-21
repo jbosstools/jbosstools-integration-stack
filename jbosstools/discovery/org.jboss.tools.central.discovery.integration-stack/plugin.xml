@@ -199,7 +199,7 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Tools SwitchYard"
+       name="JBoss Tools SwitchYard (DEPRECATED)"
        description="Your service delivery framework."
        id="org.switchyard.tools.feature">
       <iu id="org.switchyard.tools.feature"/>
