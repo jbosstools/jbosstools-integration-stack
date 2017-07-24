@@ -44,8 +44,8 @@
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/11/staging/updates/discovery.earlyaccess/11.0.0.AM2/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/4.5.0.CR1-SNAPSHOT/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/4.5.0.CR1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/4.5.0.CR2-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/4.5.0.CR2-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
