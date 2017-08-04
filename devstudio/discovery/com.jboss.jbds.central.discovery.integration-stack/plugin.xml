@@ -134,9 +134,6 @@
        name="JBoss Tools SwitchYard (DEPRECATED)"
        description="A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications."
        id="jboss.integration-stack.bundle.switchyard">
-       <iu id="org.eclipse.bpmn2.feature"/>
-       <iu id="org.eclipse.bpmn2.modeler"/>
-       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
        <iu id="org.switchyard.tools.bpmn2.feature"/>
