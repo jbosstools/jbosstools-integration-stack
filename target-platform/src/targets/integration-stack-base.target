@@ -206,8 +206,8 @@
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-coretests/2017-06-13_17-52-18-B1053/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
-      <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.0.Final/"/>
-      <!-- <repository id="jbt-coretests-4.5.0.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/coretests/4.5.0.AM2/"/> -->
+      <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.0.Final/"/> -->
+      <repository id="jbt-coretests-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/>
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -220,8 +220,8 @@
       <unit id="org.jboss.tools.common" version="3.9.0.v20170316-1838"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.Final/"/>
-      <!-- <repository id="jbt-core-4.5.0.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.0.AM2/"/> -->
+      <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.Final/"/> -->
+      <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/"/>
    </location>
 
   </locations>
