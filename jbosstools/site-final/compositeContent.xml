@@ -12,7 +12,7 @@
   <children size="4">
 
     <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/oxygen/integration/updates/integration-stack/bpel/1.4.0.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/bpel/1.4.0.Final/"/>
 
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.0.Final/"/>
@@ -21,7 +21,7 @@
     <child location="http://download.jboss.org/jbpm/release/7.0.1.Final/updatesite/"/>
 
     <!-- SWITCHYARD -->
-    <child location="http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/switchyard/2.4.0.CR2/"/>
+    <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/switchyard/2.4.0.Final/"/>
 
     <!-- TEIID DESIGNER -->
     <!-- JBTIS-1147 <child location="http://download.jboss.org/jbosstools/updates/stable/neon/integration-stack/teiiddesigner/11.0.1.Final/"/> -->
