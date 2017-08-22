@@ -15,7 +15,7 @@
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/bpel/1.4.0.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.1.CR1-SNAPSHOT/"/>
 
     <!-- DROOLS/JBPM -->
     <child location="http://download.jboss.org/jbpm/release/7.0.1.Final/updatesite/"/>
@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/switchyard/2.4.0.Final/"/>
 
     <!-- TEIID DESIGNER -->
-    <!-- JBTIS-1147 <child location="http://download.jboss.org/jbosstools/updates/stable/neon/integration-stack/teiiddesigner/11.0.1.Final/"/> -->
+    <child location="http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/teiiddesigner/11.1.0.AM1/"/>
     
   </children>
 
