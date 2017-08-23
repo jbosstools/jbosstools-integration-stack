@@ -65,7 +65,6 @@
     </connectorDescriptor> 
 
     <!-- JBoss Data Virtualization Development -->
-    <!-- JBTIS-1147
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
@@ -87,7 +86,7 @@
 	 url="http://www.jboss.org/tools/">
       </overview>
     </connectorDescriptor> 
-    -->
+
     <!-- JBoss Integration and SOA Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"

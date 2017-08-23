@@ -6,7 +6,7 @@
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
-<!-- JBTIS-1147 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/> -->
+<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.switchyard.feature"/>
 
@@ -99,7 +99,6 @@ A lightweight service delivery framework providing full lifecycle support for de
 </feature>
 
 <!-- teiid designer -->
-<!-- JBTIS-1147
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>
@@ -115,7 +114,7 @@ A lightweight service delivery framework providing full lifecycle support for de
 <feature id="org.teiid.designer.teiid.client.feature">
   <category name="DataVirtualization" />
 </feature>
--->
+
 <!-- ####### -->
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
@@ -149,10 +148,9 @@ A lightweight service delivery framework providing full lifecycle support for de
 <feature id="org.switchyard.tools.feature.source"/>
 
 <!-- teiid designer -->
-<!-- JBTIS-1147
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
 <feature id="org.teiid.designer.feature.source"/>
 <feature id="org.teiid.designer.runtime.feature.source"/>
 <feature id="org.teiid.designer.teiid.client.feature.source"/>
--->
+
 </site>

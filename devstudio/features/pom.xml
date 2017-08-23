@@ -18,7 +18,7 @@
 
   <modules>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.bpr.feature</module>
-    <!-- JBTIS-1147 <module>../../devstudio/features/com.jboss.devstudio.integration-stack.ds.feature</module> -->
+    <module>../../devstudio/features/com.jboss.devstudio.integration-stack.ds.feature</module>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.soa.feature</module>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.switchyard.feature</module>
   </modules>
