@@ -8,7 +8,7 @@
     -->
     <property name="p2.timestamp" value="1374501649000" />
   </properties>
-  <children size="2">
+  <children size="1">
     <child location="ga" />
     <!-- <child location="ea" /> no content -->
   </children>
