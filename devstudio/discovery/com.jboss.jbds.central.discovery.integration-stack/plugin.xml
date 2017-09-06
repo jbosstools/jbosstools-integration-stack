@@ -21,7 +21,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-generic"
-       certificationId="com.jboss.jbds.discovery.certification.notavailable"
+       certificationId="com.jboss.devstudio.discovery.certification.notavailable"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -42,7 +42,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
-       certificationId="com.jboss.jbds.discovery.certification.supported"
+       certificationId="com.jboss.devstudio.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -71,7 +71,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
-       certificationId="com.jboss.jbds.discovery.certification.supported"
+       certificationId="com.jboss.devstudio.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -95,7 +95,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
-       certificationId="com.jboss.jbds.discovery.certification.supported"
+       certificationId="com.jboss.devstudio.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
@@ -125,7 +125,7 @@
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-switchyard"
-       certificationId="com.jboss.jbds.discovery.certification.supported"
+       certificationId="com.jboss.devstudio.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
        provider="JBoss by Red Hat"
