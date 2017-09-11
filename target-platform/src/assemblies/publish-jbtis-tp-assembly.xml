@@ -8,7 +8,7 @@
   <includeBaseDirectory>false</includeBaseDirectory>
 	<fileSets>
 	  <fileSet>
-            <directory>target/target-platform.target.repo</directory>
+            <directory>target/target-platform-aggregate-is.target.repo</directory>
 	    <outputDirectory/>
 	    <includes>
 	      <include>*</include>
