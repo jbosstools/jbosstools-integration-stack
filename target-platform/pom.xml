@@ -577,7 +577,7 @@
 		  <target>
 		    <!-- ANT script to remove the <references> section from the mirror repo content.xml. -->
 		    <ant antfile="../scripts/remove.references.xml" dir=".">
-		      <property name="workDir" value="./target/target-platform.target.repo" />
+		      <property name="workDir" value="./target/target-platform-aggregate-is.target.repo" />
 		    </ant>
 		  </target>
 		</configuration>
