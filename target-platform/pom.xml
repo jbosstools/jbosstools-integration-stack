@@ -37,7 +37,7 @@
 
   <properties>
     <!-- For p2diff comparison -->
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.5.0.AM1/jbtis/</baseRepositoryUrl>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.5.0.Final/jbtis/</baseRepositoryUrl>
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <tychoVersion>0.26.0</tychoVersion>
@@ -492,7 +492,7 @@
 
 	    <executions>
 
-	      <!-- Mirror the integration stack community target dependencies to a repository. (target-platform.target.repo) -->
+	      <!-- Mirror the integration stack community target dependencies to a repository. (target-platform.target.repo) 
 	      <execution>
 		<id>mirror-target-platform-repo</id>
 		<phase>package</phase>
@@ -504,7 +504,7 @@
 		  <outputRepository>${project.build.directory}/${project.artifactId}.target.repo</outputRepository>
 		</configuration>
 	      </execution>
-
+              -->
 	      <!-- Mirror the integration stack community early access target dependencies to a repository.
 	      <execution>
 		<id>mirror-target-platform-repo-ea</id>
@@ -518,6 +518,20 @@
 		</configuration>
 	      </execution>
               -->
+
+	      <!-- Mirror the aggregate integration stack target dependencies to a repository. (target-platform-aggregate-is.target.repo) -->
+	      <execution>
+		<id>mirror-target-platform-aggregate-is-repo</id>
+		<phase>package</phase>
+		<goals>
+		  <goal>mirror-target-to-repo</goal>
+		</goals>
+		<configuration>
+		  <sourceTargetFile>${project.build.directory}/aggregate-base.target</sourceTargetFile>
+		  <outputRepository>${project.build.directory}/${project.artifactId}-aggregate-is.target.repo</outputRepository>
+		</configuration>
+	      </execution>
+
 	      <!-- Mirror the devstudiois integration stack target dependencies to a repository. (target-platform-devstudiois.target.repo) -->
 	      <execution>
 		<id>mirror-target-platform-devstudiois-repo</id>
