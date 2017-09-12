@@ -1,6 +1,6 @@
 <?compositeMetadataRepository version='1.0.0'?>
 <repository 
-   name="JBoss Tools Integration Stack 4.5 - Composite Update Site" 
+   name="JBoss Tools Integration Stack - Composite Update Site" 
    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
 
   <properties size="3">
@@ -24,7 +24,7 @@
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/switchyard/2.4.0.Final/"/>
 
     <!-- TEIID DESIGNER -->
-    <child location="http://download.jboss.org/jbosstools/oxygen/staging/builds/integration-stack/teiiddesigner/11.1.0.Beta1/"/>
+    <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/teiiddesigner/11.1.0.Final/"/>
 
   </children>
 
