@@ -31,7 +31,7 @@
   <property name="project.build.directory" value="${output.dir}/target"/>
 
   <!-- this will either be the JBT or JBDS discovery site's directory.xml file -->
-  <property name="UPSTREAM_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/mars/development/updates/discovery.central/4.3.1.Beta2/jbosstools-directory.xml"/>
+  <property name="UPSTREAM_DIRECTORY_XML" value="http://download.jboss.org/jbosstools/oxygen/stable/updates/discovery.central/4.5.0.Final/jbosstools-directory.xml"/>
 
   <target name="init">
     <echo level="verbose">
@@ -57,7 +57,7 @@ $java.home = ${java.home}
   <target name="update.plugin.properties" depends="init">
 
     <if><equals arg1="${BUILD_FORM}" arg2="community" trim="true" /><then>
-	<property name="discovery.is.url" value="http://download.jboss.org/jbosstools/updates/${BUILD_TYPE}/luna/central/integration-stack/" />
+	<property name="discovery.is.url" value="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/discovery/" />
 
         <if><equals arg1="${BUILD_EA}" arg2="true" trim="true" /><then>
            <property name="discovery.is.dir" value="org.jboss.tools.central.discovery.integration-stack.earlyaccess" /></then>
@@ -75,9 +75,9 @@ $java.home = ${java.home}
         </if>
 
 	<if><equals arg1="${BUILD_TYPE}" arg2="stable" trim="true" /><then>
-	    <property name="discovery.is.url" value="https://devstudio.redhat.com/10.0/stable/updates/integration-stack/discovery/" /></then>
+	    <property name="discovery.is.url" value="https://devstudio.redhat.com/11/stable/updates/integration-stack/discovery/" /></then>
 	<else>
-	    <property name="discovery.is.url" value="https://devstudio.redhat.com/10.0/development/updates/integration-stack/discovery/" /></else>
+	    <property name="discovery.is.url" value="https://devstudio.redhat.com/11/development/updates/integration-stack/discovery/" /></else>
 	</if>
     </then></if>
 

@@ -57,27 +57,31 @@ public class P2RepositoryTest {
 		Set<String> rootlocations = new HashSet<String>();
 		
 		// Production sites
+		rootlocations.add("https://devstudio.redhat.com/11/stable/updates/integration-stack/");
+		rootlocations.add("https://devstudio.redhat.com/11/development/updates/integration-stack/");
+		rootlocations.add("https://devstudio.redhat.com/11/staging/updates/integration-stack/");
+		
+		rootlocations.add("https://devstudio.redhat.com/10.0/stable/updates/integration-stack/");
+		rootlocations.add("https://devstudio.redhat.com/10.0/development/updates/integration-stack/");
+		rootlocations.add("https://devstudio.redhat.com/10.0/staging/updates/integration-stack/");
+		
 		rootlocations.add("https://devstudio.redhat.com/9.0/stable/updates/integration-stack/");
 		rootlocations.add("https://devstudio.redhat.com/9.0/development/updates/integration-stack/");
 		rootlocations.add("https://devstudio.redhat.com/9.0/staging/updates/integration-stack/");
 		
-		rootlocations.add("https://devstudio.redhat.com/updates/8.0/integration-stack/");
-		rootlocations.add("https://devstudio.jboss.com/updates/8.0-development/integration-stack/");
-		
-		rootlocations.add("https://devstudio.jboss.com/updates/7.0/integration-stack/");
-		rootlocations.add("https://devstudio.jboss.com/updates/7.0-development/integration-stack/");
-		
 		// Community sites
+		rootlocations.add("http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack");
+		rootlocations.add("http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack");
+		rootlocations.add("http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack");
+		
+		rootlocations.add("http://download.jboss.org/jbosstools/neon/stable/updates/integration-stack");
+		rootlocations.add("http://download.jboss.org/jbosstools/neon/development/updates/integration-stack");
+		rootlocations.add("http://download.jboss.org/jbosstools/neon/staging/updates/integration-stack");
+		
 		rootlocations.add("http://download.jboss.org/jbosstools/mars/stable/updates/integration-stack");
 		rootlocations.add("http://download.jboss.org/jbosstools/mars/development/updates/integration-stack");
 		rootlocations.add("http://download.jboss.org/jbosstools/mars/staging/updates/integration-stack");
 		
-		rootlocations.add("http://download.jboss.org/jbosstools/updates/stable/luna/integration-stack");
-		rootlocations.add("http://download.jboss.org/jbosstools/updates/development/luna/integration-stack/");
-
-		rootlocations.add("http://download.jboss.org/jbosstools/updates/stable/kepler/integration-stack");
-		rootlocations.add("http://download.jboss.org/jbosstools/updates/development/kepler/integration-stack/");
-
 		// ide-config.properties derived sites
 		rootlocations.addAll(getP2ReposFromProperties(IDEPropertiesSanityTest.loadIDEProperties()));
 		

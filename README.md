@@ -1,7 +1,7 @@
 # The JBoss Tools Integration Stack Project
 
 ## Summary
-The Integration Stack for JBoss Developer Studio is a set of features and plugins for Eclipse that further enhances the IDE development functionality provided by JBoss Developer Studio. It’s where the Fuse Tooling, DataVirt Tooling and BRMS tooling is aggregated.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories, JAR installers and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.  This site also produces a stand-alone installer containing all of JBossTools core and the Integration Stack components as well as a stand-alone installer which contains core, IS and a supplemental runtime server.
+The Integration Stack for JBoss Developer Studio is a set of features and plugins for Eclipse that further enhances the IDE development functionality provided by JBoss Developer Studio. It’s where the DataVirt Tooling and BRMS tooling is aggregated.  It is formed by three Maven projects which produce Eclipse p2 update sites, Mylyn discovery update mechanisms augmenting JBoss Central and an aggregation of associated component target dependencies and JBoss Core tooling target dependencies.  The p2 update sites are comprised of Final/GA and early-access repositories, JAR installers and offline zips files.  The target dependencies take the form of generated .target files (tycho mojo) and a target p2 update repositories split along Final/early-access and community/production lines.  This site also produces a stand-alone installer containing all of JBossTools core and the Integration Stack components.
 
 ## Components/ Frameworks
 
@@ -20,16 +20,9 @@ JBoss Data Virtualization Development plug-ins provide a graphical interface to 
 
 * [Teiid Designer](http://tools.jboss.org/features/teiiddesigner.html) - A visual tool that enables rapid, model-driven definition, integration, management and testing of data services without programming using the Teiid runtime framework.
 
-### JBoss Fuse Development
-
-An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
-
-* [Fuse Tooling] - JBoss Fuse Development provides tooling for Red Hat JBoss Fuse.  It features the latest versions of the Fuse Data Transformation tooling, SwitchYard and access to the Fuse SAP Tool Suite.
-
 ### JBoss Integration and SOA Development
 
 * All of the Business Process and Rules Development plugins, plus...
-* [Fuse Apache Camel Tooling](http://tools.jboss.org/features/apachecamel.html) - An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.
 * [SwitchYard](http://tools.jboss.org/features/switchyard.html) - A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
 
 ## Building the JBoss Tools Integration Stack Project
