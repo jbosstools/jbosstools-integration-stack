@@ -43,10 +43,10 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.3.1.201706130827"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.1.201706130827"/>
-      <unit id="org.eclipse.emf.compare.rcp" version="2.5.1.201706130827"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.4.0.201706130827"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.3.2.201709090201"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.2.201709090201"/>
+      <unit id="org.eclipse.emf.compare.rcp" version="2.5.1.201709090201"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.4.1.201709090201"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
       <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.11.0.201706061352"/>
@@ -116,18 +116,18 @@
 
       <!-- Birt Report - Teiid Designer -->
       <unit id="org.apache.poi" version="3.9.0.v201405241750"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.7.0.v201706142203"/>
-      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.7.0.v201706142203"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive.ui" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.report.data.oda.hive" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc.ui" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.report.data.oda.jdbc" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils.ui" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.report.data.bidi.utils" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb.ui" version="4.7.0.v201706222054"/>
+      <unit id="org.eclipse.birt.data.oda.mongodb" version="4.7.0.v201706222054"/>
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
-      <unit id="org.eclipse.birt.core" version="4.7.0.v201706142203"/>
+      <unit id="org.eclipse.birt.core" version="4.7.0.v201706222054"/>
 
-      <repository id="jbt-oxygen" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201706161000-Oxygen.0.RC4a/"/> 
+      <repository id="jbt-oxygen.1.RC4" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/20170920-1610-Oxygen.1.RC4/"/> 
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -199,29 +199,29 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <unit id="org.jboss.tools.test.feature.feature.group" version="3.7.100.v20170529-1436"/>
       <unit id="org.jboss.tools.tests" version="3.7.100.v20170529-1436"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.3.0.v20170801-2206"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.9.0.v20170316-1838"/>
-      <unit id="org.jboss.tools.common.test" version="3.9.0.v20170316-1838"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.10.0.v20170406-2053"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.3.1.v20170816-1859"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.9.1.v20170821-1410"/>
+      <unit id="org.jboss.tools.common.test" version="3.9.1.v20170821-1410"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.10.1.v20170811-1737"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-coretests/2017-06-13_17-52-18-B1053/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
-      <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.0.Final/"/> -->
-      <repository id="jbt-coretests-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/>
+      <repository id="jbt-coretests-4.5.1.AM2" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.1.AM2/"/>
+      <!-- <repository id="jbt-coretests-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/>
-      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.0.0.v20170728-0625"/>              
-      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.0.0.v20170731-1235"/>              
-      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.0.0.v20170728-0625"/>               
-      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.0.0.v20170728-0625"/>         
-      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.0.0.v20170724-0737"/>          
-      <unit id="org.jboss.tools.common" version="3.9.0.v20170316-1838"/>
+      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.1.0.v20170913-1442"/>              
+      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.1.0.v20170913-1442"/>              
+      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.1.0.v20170912-1422"/>               
+      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.1.0.v20170912-1422"/>         
+      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.1.0.v20170815-0910"/>          
+      <unit id="org.jboss.tools.common" version="3.9.1.v20170821-1410"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.0.Final/"/> -->
-      <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/"/>
+      <repository id="jbt-core-4.5.1.AM2" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.1.AM2/"/>
+      <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/"/> -->
    </location>
 
   </locations>

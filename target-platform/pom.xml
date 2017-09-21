@@ -43,7 +43,7 @@
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.70.2.Final</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.71.0.AM3-SNAPSHOT</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
     <!-- hudson doesn't have write permissions to the releases repo below - build -P jboss-release manually to push to nexus -->
@@ -738,7 +738,7 @@
                   <goal>eclipse-run</goal>
                 </goals>
                 <configuration>
-                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}.p2diff -mode=ignoreVersions ${baseRepositoryUrl}/REPO file:${project.build.directory}/${project.artifactId}.target.repo</appArgLine>
+                  <appArgLine>-application org.eclipse.equinox.p2.example.p2diff.application -outputFile=${project.build.directory}/${project.artifactId}.p2diff -mode=ignoreVersions ${baseRepositoryUrl}/REPO file:${project.build.directory}/${project.artifactId}-aggregate-is.target.repo</appArgLine>
                 </configuration>
               </execution>
               <!--
