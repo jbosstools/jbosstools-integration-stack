@@ -1,6 +1,6 @@
 <?compositeMetadataRepository version='1.0.0'?>
 <repository 
-   name="JBoss Tools Integration Stack 4.4 - Composite Update Site" 
+   name="JBoss Tools Integration Stack 4.5 - Early Access Composite Update Site" 
    type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
 
   <properties size="3">
@@ -8,8 +8,11 @@
     <property name="p2.atomic.composite.loading" value="false"/>
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
+  
+  <children size="1">
 
-  <children size="0">
+    <!-- Teiid Designer JBTIS-1172 -->
+    <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/teiiddesigner/11.1.0.Final/"/>
 
   </children>
 

@@ -6,7 +6,7 @@
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
+<!-- <feature id="com.jboss.devstudio.integration-stack.ds.feature"/> - JBTIS-1172 -->
 <feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.switchyard.feature"/>
 
@@ -16,12 +16,13 @@ Tools related to business processes and rules development - includes support for
   </description>
 </category-def>
 
+<!-- JBTIS-1172
 <category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer.
   </description>
 </category-def>
-
+-->
 <category-def name="SOADev" label="JBoss Integration and SOA Development">
   <description>
 Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, jBPM6, KIE and Switchyard.
@@ -98,7 +99,7 @@ A lightweight service delivery framework providing full lifecycle support for de
   <category name="SOADev" />
 </feature>
 
-<!-- teiid designer -->
+<!-- teiid designer JBTIS-1172
 <feature id="org.teiid.datatools.connectivity.feature">
   <category name="DataVirtualization" />
 </feature>
@@ -114,7 +115,7 @@ A lightweight service delivery framework providing full lifecycle support for de
 <feature id="org.teiid.designer.teiid.client.feature">
   <category name="DataVirtualization" />
 </feature>
-
+-->
 <!-- ####### -->
 <!-- Integration stack component sources : DO NOT CATEGORIZE -->
 <!-- ####### -->
@@ -147,10 +148,10 @@ A lightweight service delivery framework providing full lifecycle support for de
 <feature id="org.switchyard.tools.bpmn2.feature.source"/>
 <feature id="org.switchyard.tools.feature.source"/>
 
-<!-- teiid designer -->
+<!-- teiid designer JBTIS-1172
 <feature id="org.teiid.datatools.connectivity.feature.source"/>
 <feature id="org.teiid.designer.feature.source"/>
 <feature id="org.teiid.designer.runtime.feature.source"/>
 <feature id="org.teiid.designer.teiid.client.feature.source"/>
-
+-->
 </site>

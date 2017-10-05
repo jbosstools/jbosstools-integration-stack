@@ -24,7 +24,9 @@
     <update.site.name>JBoss Tools Integration Stack Early Access</update.site.name>
     <update.site.version>JBTIS-${VERSION}-${BUILD_ALIAS}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
-    <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.ea.url>
+    <!-- An EA TP is not needed - for now just pick up the non-EA version.
+    <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/earlyaccess/REPO/</targetplatform.ea.url> -->
+    <targetplatform.ea.url>http://download.jboss.org/jbosstools/builds/staging/JBTIS-target-platform/${IS_TP_VERSION}/jbtis/REPO/</targetplatform.ea.url>
   </properties>
 
   <repositories>
@@ -124,7 +126,9 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>full-ea</classifier>
+              <!-- An EA TP is not needed - for now just pick up the non-EA version.
+              <classifier>full-ea</classifier>  -->
+              <classifier>full</classifier>
             </artifact>
           </target>
         </configuration>

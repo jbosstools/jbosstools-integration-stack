@@ -73,7 +73,7 @@
 
   <modules>
     <module>site-ga</module>
-    <!-- <module>site-ea</module> no content -->
+    <module>site-ea</module> <!-- JBTIS-1172 -->
     <module>discovery</module>
     <module>features</module>
     <module>tests</module>

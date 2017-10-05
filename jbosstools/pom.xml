@@ -58,7 +58,7 @@
 
   <modules>
     <module>site-final</module>
-    <!-- <module>site-ea</module> no content -->
+    <module>site-ea</module>   <!-- JBTIS-1172 -->
     <module>discovery</module>
   </modules>
 

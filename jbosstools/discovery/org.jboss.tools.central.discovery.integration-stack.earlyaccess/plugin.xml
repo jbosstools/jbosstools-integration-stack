@@ -9,7 +9,32 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
+      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv" /> 
     </connectorCategory>
+
+    <!-- JBoss Data Virtualization Development JBTIS-1172 -->
+    <connectorDescriptor		
+       categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"		
+       groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"		
+       certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"		
+       kind="task"		
+       license="Free, EPL"		
+       provider="JBoss by Red Hat"		
+       siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"		
+       name="JBoss Data Virtualization Development"		
+       description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."		
+       id="jboss.integration-stack.ea.bundle.ds">		
+      <iu id="org.teiid.datatools.connectivity.feature"/>		
+      <iu id="org.teiid.designer.feature"/>		
+      <iu id="org.teiid.designer.runtime.feature"/>		
+      <iu id="org.teiid.designer.teiid.client.feature"/>		
+      <icon		
+	 image32="images/jbosstools_icon32.png">		
+      </icon>		
+      <overview		
+	 url="http://www.jboss.org/tools/">		
+      </overview>		
+    </connectorDescriptor>
 
     <!-- JBTIS single component sites -->
   </extension>

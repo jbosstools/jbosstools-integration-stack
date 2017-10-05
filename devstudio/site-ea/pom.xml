@@ -54,7 +54,9 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <classifier>base-ea</classifier>
+              <!-- JBTIS-1172
+              <classifier>base-ea</classifier> -->
+              <classifier>base</classifier>
             </artifact>
           </target>
         </configuration>

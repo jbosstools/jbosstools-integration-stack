@@ -9,7 +9,7 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
 
-  <children size="5">
+  <children size="4">
 
     <!-- BPEL -->
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/bpel/1.4.0.Final/"/>
@@ -23,9 +23,9 @@
     <!-- SWITCHYARD -->
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/switchyard/2.4.0.Final/"/>
 
-    <!-- TEIID DESIGNER -->
+    <!-- TEIID DESIGNER - JBTIS-1172
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/teiiddesigner/11.1.0.Final/"/>
-    
+    -->
   </children>
 
 </repository>
