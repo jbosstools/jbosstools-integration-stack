@@ -212,13 +212,13 @@
       <url>${DEVSTUDIOIS_TP_SITE}</url>
     </repository>
 
-    <!-- No Early access components
+    <!-- No Early access components - JBTIS-1172 -->
     <repository>
       <id>jbtis-ea-site</id>
       <layout>p2</layout>
       <url>${COMPOSITE_EA_SITE}</url>
       </repository>
-
+    <!-- no content
     <repository>
       <id>devstudiois-targetplatform-ea-site</id>
       <layout>p2</layout>
