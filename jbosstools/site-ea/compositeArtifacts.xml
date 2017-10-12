@@ -12,7 +12,7 @@
   <children size="1">
 
     <!-- Teiid Designer JBTIS-1172 -->
-    <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/teiiddesigner/11.1.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/teiiddesigner/11.1.1.Beta1/"/>
 
   </children>
 
