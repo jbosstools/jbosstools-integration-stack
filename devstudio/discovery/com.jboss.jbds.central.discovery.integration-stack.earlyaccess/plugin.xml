@@ -16,7 +16,7 @@
     <connectorDescriptor		
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"		
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds"		
-       certificationId="com.jboss.jbds.discovery.certification.supported.earlyaccess"		
+       certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
        kind="task"		
        license="Free, EPL"		
        provider="JBoss by Red Hat"		
