@@ -11,7 +11,7 @@
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.jboss.tools.common" version="3.9.1.v20170821-1410"/>
 
-      <repository id="jbt-core-4.5.1.AM3" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.1.AM3/"/>
+      <repository id="jbt-core-4.5.1.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.1.Final/"/>
       <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/"/> -->
    </location>
 
