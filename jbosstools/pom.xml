@@ -32,7 +32,7 @@
     <PREFIX>jbosstools-integration-stack</PREFIX>
     <TARGET_PLATFORM>oxygen</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.5.1.Beta1</IS_TP_VERSION>
+    <IS_TP_VERSION>4.5.1.Beta1a</IS_TP_VERSION>
     <tychoVersion>0.26.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
@@ -42,7 +42,7 @@
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>
 
-    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/oxygen/stable/updates/discovery.central/4.5.0.Final/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
+    <UPSTREAM_DIRECTORY_XML>http://download.jboss.org/jbosstools/oxygen/staging/updates/discovery.central/4.5.1.Final/jbosstools-directory.xml</UPSTREAM_DIRECTORY_XML>
 
     <!-- 
       Must pass this in via commandline to define URLs to use to generate the discovery site's composite*.xml files; 
