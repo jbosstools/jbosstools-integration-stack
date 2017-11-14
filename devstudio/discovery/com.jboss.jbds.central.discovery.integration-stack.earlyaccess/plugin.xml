@@ -12,7 +12,7 @@
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
     </connectorCategory>
     
-    <!-- JBoss Data Virtualization Development -->		
+    <!-- JBoss Data Virtualization Development
     <connectorDescriptor		
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"		
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds"		
@@ -35,7 +35,7 @@
         url="http://devstudio.redhat.com/">		
       </overview>		
     </connectorDescriptor>		
-
+  -->
   </extension>	
 
 </plugin>

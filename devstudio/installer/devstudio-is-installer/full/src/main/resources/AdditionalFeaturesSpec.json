@@ -7,6 +7,13 @@
             "path":"devstudio-is",
             "size":"41000000"
 	},{
+            "id":"com.jboss.devstudio.integration-stack.ds.feature.feature.group",			
+             "label":"JBoss Data Virtualization Development",			
+             "description":"Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer.",
+             "selected":"false",			
+             "path":"devstudio-is",		
+             "size":"73000000"
+ 	},{
             "id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
             "label":"JBoss Integration and SOA Development",
             "description":"Tools related to the development of Integration and SOA applications.",

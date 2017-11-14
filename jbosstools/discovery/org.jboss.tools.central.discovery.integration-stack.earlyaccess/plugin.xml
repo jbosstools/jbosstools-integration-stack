@@ -9,10 +9,10 @@
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
        name="JBoss Tools Integration Stack Early Access"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv" /> 
+      <!-- <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv" />  -->
     </connectorCategory>
 
-    <!-- JBoss Data Virtualization Development JBTIS-1172 -->
+    <!-- JBoss Data Virtualization Development
     <connectorDescriptor		
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"		
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle.dv"		
@@ -35,7 +35,7 @@
 	 url="http://www.jboss.org/tools/">		
       </overview>		
     </connectorDescriptor>
-
+    -->
     <!-- JBTIS single component sites -->
   </extension>
 

@@ -9,11 +9,11 @@
     <property name="p2.timestamp" value="1376942836000"/>
   </properties>
   
-  <children size="1">
+  <children size="0">
 
-    <!-- Teiid Designer JBTIS-1172 -->
+    <!-- Teiid Designer -->
     <!-- <child location="http://download.jboss.org/jbosstools/oxygen/development/updates/integration-stack/teiiddesigner/11.1.1.Beta1/"/> -->
-    <child location="http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/teiiddesigner/11.1.1.Beta3/"/>
+    <!-- <child location="http://download.jboss.org/jbosstools/oxygen/staging/updates/integration-stack/teiiddesigner/11.1.1.Beta3/"/> -->
   </children>
 
 </repository>

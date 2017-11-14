@@ -25,7 +25,7 @@
     <update.site.version>DEVSTUDIOIS-${VERSION}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the DEVSTUDIOIS target platform repository that should be associated with this site. -->
-    <!-- JBTIS-1172 - no need for the EA TP
+    <!-- No need for the EA TP
     <targetplatform.ea.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/earlyaccess/REPO/</targetplatform.ea.url> -->
     <targetplatform.ea.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</targetplatform.ea.url>
   </properties>
@@ -56,8 +56,8 @@
               <artifactId>target-platform</artifactId>
               <version>${IS_TP_VERSION}</version>
               <type>target</type>
-              <!-- JBTIS-1172
-              <classifier>base-ea</classifier> -->
+	      <!-- Only use the base-ea TP if needed -->
+              <!-- <classifier>base-ea</classifier> -->
               <classifier>base</classifier>
             </artifact>
           </target>
