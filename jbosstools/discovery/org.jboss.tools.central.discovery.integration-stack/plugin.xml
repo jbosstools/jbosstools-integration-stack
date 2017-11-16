@@ -16,7 +16,7 @@
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-switchyard" />
     </connectorCategory>
 
-    <!-- JBoss Integration Stack Generic Connector -->
+    <!-- JBoss Integration Stack Generic Connector
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.generic"
@@ -35,7 +35,7 @@
 	 url="http://www.jboss.org/tools/">
       </overview>
     </connectorDescriptor>
-
+    -->
     <!-- JBoss Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
