@@ -130,8 +130,8 @@
        license="Free, EPL"
        provider="JBoss by Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Tools SwitchYard (DEPRECATED)"
-       description="A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications."
+       name="JBoss Tools SwitchYard (Deprecated)"
+       description="A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications (Deprecated)"
        id="jboss.integration-stack.bundle.switchyard">
        <iu id="org.switchyard.tools.feature"/>
        <iu id="org.switchyard.tools.bpel.feature"/>
