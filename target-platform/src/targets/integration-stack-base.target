@@ -127,7 +127,8 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.7.0.v201706222054"/>
 
-      <repository id="jbt-oxygen.1.RC4" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201710111001-Oxygen.1a/"/> 
+      <!-- <repository id="jbt-oxygen.1.RC4" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201710111001-Oxygen.1a/"/> -->
+      <repository id="jbt-oxygen.2.RC4" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201712131135-Oxygen.2.RC4/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -199,31 +200,31 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <unit id="org.jboss.tools.test.feature.feature.group" version="3.7.100.v20170529-1436"/>
       <unit id="org.jboss.tools.tests" version="3.7.100.v20170529-1436"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.3.1.v20171011-1819"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.9.1.v20170821-1410"/>
-      <unit id="org.jboss.tools.common.test" version="3.9.1.v20170821-1410"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.10.1.v20170811-1737"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.5.2.v20171204-1659"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.9.2.v20180104-1618"/>
+      <unit id="org.jboss.tools.common.test" version="3.9.2.v20180104-1618"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.10.2.v20171120-1610"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-coretests/2017-06-13_17-52-18-B1053/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
       <!-- <repository id="jbt-coretests-4.5.1.AM3" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.1.AM3/"/> -->
-      <repository id="jbt-coretests-4.5.1.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.1.Final/"/>
-      <!-- <repository id="jbt-coretests-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
+      <!-- <repository id="jbt-coretests-4.5.1.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.1.Final/"/> -->
+      <repository id="jbt-coretests-4.5.2.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.2.Final/"/>
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/>
-      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.1.0.v20171020-0946"/>              
-      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.1.0.v20171023-1219"/>              
-      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.1.0.v20170929-1551"/>               
-      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.1.0.v20171012-0822"/>         
-      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.1.0.v20170929-1551"/>          
-      <unit id="org.jboss.tools.common" version="3.9.1.v20170821-1410"/>
+      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.2.0.v20180117-1512"/>              
+      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.2.0.v20180117-1512"/>              
+      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.2.0.v20180105-1835"/>               
+      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.2.0.v20180116-1446"/>         
+      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.2.0.v20180117-1512"/>          
+      <unit id="org.jboss.tools.common" version="3.9.2.v20180104-1618"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
       <!-- <repository id="jbt-core-4.5.1.AM3" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.1.AM3/"/> -->
-      <repository id="jbt-core-4.5.1.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.1.Final/"/>
-      <!-- <repository id="jbt-core-4.5.0.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.0.Final/"/> -->
+      <!-- <repository id="jbt-core-4.5.1.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.1.Final/"/> -->
+      <repository id="jbt-core-4.5.2.Final" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.2.Final/"/>
    </location>
 
   </locations>

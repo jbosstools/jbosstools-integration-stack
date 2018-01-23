@@ -5,7 +5,7 @@
 
   <groupId>org.jboss.tools.integration-stack</groupId>
   <artifactId>target-platform</artifactId>
-  <version>4.5.1.Final</version>
+  <version>4.5.2.CR1</version>
 
   <name>JBoss Tools Integration Stack Target Platform</name>
   <description>
@@ -32,18 +32,18 @@
   <parent>
     <groupId>org.jboss</groupId>
     <artifactId>jboss-parent</artifactId>
-    <version>22</version>
+    <version>25</version>
   </parent>
 
   <properties>
     <!-- For p2diff comparison -->
-    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.5.0.Final/jbtis/</baseRepositoryUrl>
+    <baseRepositoryUrl>http://download.jboss.org/jbosstools/targetplatforms/jbtistarget/4.5.1.Final/jbtis/</baseRepositoryUrl>
     
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <tychoVersion>0.26.0</tychoVersion>
+    <tychoVersion>1.0.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
-    <jbossTychoPluginsVersion>0.26.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.71.0.Final</JBTCoreTPVersion>
+    <jbossTychoPluginsVersion>1.0.0</jbossTychoPluginsVersion>
+    <JBTCoreTPVersion>4.72.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
     <!-- hudson doesn't have write permissions to the releases repo below - build -P jboss-release manually to push to nexus -->
@@ -761,7 +761,7 @@
       </build>
     </profile>
   </profiles>
-
+<!--
   <distributionManagement>
     <repository>
       <id>jboss-releases-repository</id>
@@ -778,5 +778,5 @@
       <layout>default</layout>
     </snapshotRepository>
   </distributionManagement>
-  
+-->  
 </project>
