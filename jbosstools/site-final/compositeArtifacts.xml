@@ -15,8 +15,7 @@
     <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/bpel/1.4.0.Final/"/>
 
     <!-- BPMN2 -->
-    <!-- <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.2.Final/"/> wait for 4.5.2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.1.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/oxygen/1.4.2.Final/"/>
     
     <!-- DROOLS/JBPM -->
     <child location="http://download.jboss.org/jbpm/release/7.5.0.Final/updatesite/"/>
