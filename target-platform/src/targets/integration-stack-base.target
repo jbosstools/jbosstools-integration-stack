@@ -193,8 +193,14 @@
       <repository id="jbt-apache" location="http://download.jboss.org/jbosstools/updates/requirements/apache-directory/2.0.0.v20161101-M12/"/>
     </location>
 
-   <!-- JBoss Tools Core Tests -->
-   <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+    <!-- Needed for SwitchYard only. -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/>
+      <repository id="freemarker-1.5.300" location="http://download.jboss.org/jbosstools/neon/stable/updates/core/freemarker/1.5.300.v20161214-1103/"/>
+    </location>
+
+    <!-- JBoss Tools Core Tests -->
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Required by BPEL, ESB, and any projects w/ UI tests -->
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
