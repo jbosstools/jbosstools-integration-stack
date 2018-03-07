@@ -9,7 +9,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>parent</artifactId>
-    <version>11.2.0-SNAPSHOT</version>
+    <version>11.3.0-SNAPSHOT</version>
   </parent>
 
   <name>Devstudio Integration Stack Discovery</name>
