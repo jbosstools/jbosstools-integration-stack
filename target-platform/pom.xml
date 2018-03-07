@@ -43,7 +43,7 @@
     <tychoVersion>1.0.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>1.0.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.72.0.Final</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.73.0.AM2-SNAPSHOT</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>origin-repository.jboss.org</jbossNexus>
     <!-- hudson doesn't have write permissions to the releases repo below - build -P jboss-release manually to push to nexus -->
