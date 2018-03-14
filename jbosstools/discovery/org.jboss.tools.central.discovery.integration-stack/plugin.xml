@@ -74,7 +74,7 @@
        siteUrl="${jboss.discovery.site.integration-stack.url}"
        name="JBoss Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."
-       id="jboss.integration-stack.ea.bundle.ds">
+       id="jboss.integration-stack.bundle.ds">
       <iu id="org.teiid.datatools.connectivity.feature"/>
       <iu id="org.teiid.designer.feature"/>
       <iu id="org.teiid.designer.runtime.feature"/>
