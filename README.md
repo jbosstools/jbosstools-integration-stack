@@ -37,7 +37,7 @@ Fork a copy of the GIT project onto your local disk:
 
 ### Building the JBoss Tools Integration Stack Target Platform Project (not required - you can find canned versions in nexus)
 
-https://origin-repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/
+https://repository.jboss.org/nexus/content/repositories/releases/org/jboss/tools/integration-stack/target-platform/
 
       $ cd .../jbosstools-integration-stack/target-platform
       $ mvn clean install  # specific -Pmirror if you'd like the TP repositories generated

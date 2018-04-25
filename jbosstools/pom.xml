@@ -119,7 +119,7 @@
     <repository>
       <id>jboss-releases-repository</id>
       <name>JBoss Releases Repository</name>
-      <url>https://origin-repository.jboss.org/nexus/content/repositories/releases/</url>
+      <url>https://repository.jboss.org/nexus/content/repositories/releases/</url>
       <snapshots>
 	<enabled>false</enabled>
       </snapshots>
@@ -139,13 +139,13 @@
 
     <pluginRepository>
       <id>jboss-snapshots-repository</id>
-      <url>https://origin-repository.jboss.org/nexus/content/repositories/snapshots/</url>
+      <url>https://repository.jboss.org/nexus/content/repositories/snapshots/</url>
     </pluginRepository>
 
     <pluginRepository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>http://origin-repository.jboss.org/nexus/content/groups/public/</url>
+      <url>http://repository.jboss.org/nexus/content/groups/public/</url>
       <releases>
         <enabled>true</enabled>
       </releases>

@@ -45,7 +45,7 @@
     <jbossTychoPluginsVersion>1.0.0</jbossTychoPluginsVersion>
     <JBTCoreTPVersion>4.73.1.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
-    <jbossNexus>origin-repository.jboss.org</jbossNexus>
+    <jbossNexus>repository.jboss.org</jbossNexus>
     <!-- hudson doesn't have write permissions to the releases repo below - build -P jboss-release manually to push to nexus -->
     <!-- <nexusRepo>https://${jbossNexus}/nexus/content/repositories/releases/</nexusRepo> -->
     <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo>
