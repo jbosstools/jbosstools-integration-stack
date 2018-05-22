@@ -7,21 +7,21 @@
 -->
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
-
+<!--
     <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>
       <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>
     </location>
-
+-->
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
-      <unit id="org.eclipse.bpel.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.1.1.Final-v20170531-1920"/>
-      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.1.1.Final-v20170531-1920"/>
-      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.1.1.Final-v20170531-1920"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.1.1.Final-v20170531-1920"/>
-      <repository id="jbt-bpel" location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.1.1.Final/"/>
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.2.Final-v20180514-2000"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.1.2.Final-v20180514-2000"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.1.2.Final-v20180514-2000"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.1.2.Final-v20180514-2000"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.1.2.Final-v20180514-2000"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.1.2.Final-v20180514-2000"/>
+      <repository id="jbt-bpel" location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.1.2.Final/"/>
     </location>
 
     <!-- JBoss Tools Locus - objects either not in Eclipse Orbit or needed sooner than scheduled. -->
@@ -43,46 +43,46 @@
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
       <!-- Eclipse EMF -->
-      <unit id="org.eclipse.emf.compare.feature.group" version="3.3.2.201709090201"/>
-      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.2.201709090201"/>
-      <unit id="org.eclipse.emf.compare.rcp" version="2.5.1.201709090201"/>
-      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.4.1.201709090201"/>
+      <unit id="org.eclipse.emf.compare.feature.group" version="3.3.3.201805161152"/>
+      <unit id="org.eclipse.emf.compare.ide.ui.feature.group" version="3.3.3.201805161152"/>
+      <unit id="org.eclipse.emf.compare.rcp" version="2.5.1.201805161152"/>
+      <unit id="org.eclipse.emf.compare.rcp.ui" version="4.4.2.201805161152"/>
 
       <!-- Eclipse EMF/OCL + deps like EMF Query and UML2 -->
-      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.11.0.201706061352"/>
-      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.11.0.201706061326"/>
-      <unit id="org.eclipse.emf.query.feature.group" version="1.11.0.201706061326"/>
-      <unit id="org.eclipse.emf.transaction.feature.group" version="1.11.0.201706061339"/>
-      <unit id="org.eclipse.emf.validation.feature.group" version="1.11.0.201706061352"/>
-      <unit id="org.eclipse.emf.workspace.feature.group" version="1.11.0.201706061339"/>
-      <unit id="org.eclipse.emf.ecore.feature.group" version="2.13.0.v20170609-0707"/>
-      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.13.0.v20170609-0928"/>
+      <unit id="org.eclipse.emf.validation.ocl.feature.group" version="1.12.0.201805030717"/>
+      <unit id="org.eclipse.emf.query.ocl.feature.group" version="1.12.0.201805030653"/>
+      <unit id="org.eclipse.emf.query.feature.group" version="1.12.0.201805030653"/>
+      <unit id="org.eclipse.emf.transaction.feature.group" version="1.12.0.201805140824"/>
+      <unit id="org.eclipse.emf.validation.feature.group" version="1.12.0.201805030717"/>
+      <unit id="org.eclipse.emf.workspace.feature.group" version="1.12.0.201805140824"/>
+      <unit id="org.eclipse.emf.ecore.feature.group" version="2.14.0.v20180420-1131"/>
+      <unit id="org.eclipse.emf.codegen.ecore.ui.feature.group" version="2.14.0.v20180418-0836"/>
 
-      <unit id="org.eclipse.uml2.feature.group" version="5.3.0.v20170605-1616"/>
+      <unit id="org.eclipse.uml2.feature.group" version="5.4.0.v20180514-1331"/>
 
       <!-- Google Guava : Eclipse EMF -->
       <unit id="com.google.guava" version="21.0.0.v20170206-1425"/>
 
       <!-- Eclipse OCL/ALL -->
-      <unit id="org.eclipse.ocl.all.feature.group" version="5.3.0.v20170522-1736"/>
+      <unit id="org.eclipse.ocl.all.feature.group" version="5.4.0.v20180514-1830"/>
 
       <unit id="javax.ws.rs" version="2.0.1.v201504171603"/>
 
       <!-- transitive dependencies -->
       <unit id="com.ibm.icu" version="58.2.0.v20170418-1837"/>
       <unit id="javax.xml" version="1.3.4.v201005080400"/>
-      <unit id="org.apache.ant" version="1.10.1.v20170504-0840"/>
+      <unit id="org.apache.ant" version="1.10.3.v20180417-1627"/>
       <unit id="org.apache.commons.httpclient" version="3.1.0.v201012070820"/>
       <unit id="org.apache.commons.logging" version="1.1.1.v201101211721"/>
       <unit id="org.eclipse.draw2d" version="3.10.100.201606061308"/>
-      <unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
+      <unit id="org.hamcrest.core" version="1.3.0.v20180420-1519"/>
       <unit id="org.hamcrest.library" version="1.3.0.v201505072020"/>
       <unit id="org.jsoup" version="1.7.2.v201411291515"/>
       <unit id="org.junit" version="4.12.0.v201504281640"/>
 
-      <!-- Graphiti - BPMN2 Modeler, SwitchYard -->
-      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.14.0.201705161212"/>
+      <!-- Graphiti - BPMN2 Modeler -->
+      <unit id="org.eclipse.graphiti.feature.feature.group" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.export.feature.feature.group" version="0.15.0.201805151240"/>
       <unit id="org.apache.batik.css" version="1.7.0.v201011041433"/>
       <unit id="org.apache.batik.dom" version="1.7.1.v201505191845"/>
       <unit id="org.apache.batik.ext.awt" version="1.7.0.v201011041433"/>
@@ -90,29 +90,29 @@
       <unit id="org.apache.batik.util" version="1.7.0.v201011041433"/>
       <unit id="org.apache.batik.util.gui" version="1.7.0.v200903091627"/>
       <unit id="org.apache.batik.xml" version="1.7.0.v201011041433"/>
-      <unit id="org.eclipse.graphiti" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.doc" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.export.batik" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.mm" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.pattern" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.tools.newprojectwizard" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.ui" version="0.14.0.201705161212"/>
-      <unit id="org.eclipse.graphiti.ui.capabilities" version="0.14.0.201705161212"/>
+      <unit id="org.eclipse.graphiti" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.doc" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.export.batik" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.mm" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.pattern" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.tools.newprojectwizard" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.ui" version="0.15.0.201805151240"/>
+      <unit id="org.eclipse.graphiti.ui.capabilities" version="0.15.0.201805151240"/>
       <unit id="org.w3c.css.sac" version="1.3.1.v200903091627"/>
-      <unit id="org.w3c.dom.smil" version="1.0.0.v200806040011"/>
+      <unit id="org.w3c.dom.smil" version="1.0.1.v200903091627"/>
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
 
-      <unit id="org.eclipse.core.net" version="1.3.100.v20170516-0820"/>
-      <unit id="org.eclipse.equinox.cm" version="1.2.0.v20170105-1446"/>
+      <unit id="org.eclipse.core.net" version="1.3.200.v20180207-1711"/>
+      <unit id="org.eclipse.equinox.cm" version="1.2.100.v20171221-2204"/>
       <unit id="org.eclipse.zest.feature.group" version="1.7.0.201606061308"/>
       
-      <unit id="org.eclipse.rse.feature.group" version="3.7.3.201704251225"/>
-      <unit id="org.eclipse.rse.core.feature.group" version="3.7.3.201704251225"/>
-      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201704251225"/>
-      <unit id="org.eclipse.rse.telnet.feature.group" version="3.7.0.201704251225"/>
-      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.1.201704251225"/>
-      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201704251225"/>
-      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.0.201704251225"/>
+      <unit id="org.eclipse.rse.feature.group" version="3.7.100.201803021406"/>
+      <unit id="org.eclipse.rse.core.feature.group" version="3.7.3.201803021406"/>
+      <unit id="org.eclipse.rse.ssh.feature.group" version="3.7.0.201803021406"/>
+      <unit id="org.eclipse.rse.telnet.feature.group" version="3.7.0.201803021406"/>
+      <unit id="org.eclipse.rse.ftp.feature.group" version="3.7.1.201803021406"/>
+      <unit id="org.eclipse.rse.local.feature.group" version="3.7.0.201803021406"/>
+      <unit id="org.eclipse.rse.useractions.feature.group" version="3.7.100.201803021406"/>
 
       <!-- Birt Report - Teiid Designer -->
       <unit id="org.apache.poi" version="3.9.0.v201405241750"/>
@@ -127,8 +127,7 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.7.0.v201706222054"/>
 
-      <!-- <repository id="jbt-oxygen.1.RC4" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201710111001-Oxygen.1a/"/> -->
-      <repository id="jbt-oxygen.3.RC2" location="http://download.jboss.org/jbosstools/updates/requirements/oxygen/201804090900-Oxygen.3a.RC2/"/>
+      <repository id="jbt-Photon.0.M7" location="http://download.jboss.org/jbosstools/updates/requirements/photon/201805161906-Photon.0.M7/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
@@ -137,7 +136,7 @@
       <unit id="org.codehaus.jackson.core" version="1.6.0.v20101005-0925"/>
       <unit id="org.codehaus.jackson.mapper" version="1.6.0.v20101005-0925"/>
       <unit id="javax.xml.soap" version="1.3.0.v201105210645"/>
-      <repository id="jbt-orbit" location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20170516192513/"/>
+      <repository id="jbt-orbit" location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20180504181223/"/>
     </location>
 
     <!-- -->
@@ -193,12 +192,6 @@
       <repository id="jbt-apache" location="http://download.jboss.org/jbosstools/updates/requirements/apache-directory/2.0.0.v20161101-M12/"/>
     </location>
 
-    <!-- Needed for SwitchYard only. -->
-    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/>
-      <repository id="freemarker-1.5.300" location="http://download.jboss.org/jbosstools/neon/stable/updates/core/freemarker/1.5.300.v20161214-1103/"/>
-    </location>
-
     <!-- JBoss Tools Core Tests -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
 
@@ -206,30 +199,30 @@
       <!-- TODO: consider migrating UI tests to https://github.com/jbosstools/jbosstools-integration-tests/ so they're built downstream instead of within the components' builds -->
       <unit id="org.jboss.tools.test.feature.feature.group" version="3.7.101.v20180215-2018"/>
       <unit id="org.jboss.tools.tests" version="3.7.101.v20180215-2018"/>
-      <unit id="org.jboss.tools.as.test.core" version="3.5.3.v20180329-1604"/>
-      <unit id="org.jboss.tools.common.base.test" version="3.9.3.v20180215-2018"/>
-      <unit id="org.jboss.tools.common.test" version="3.9.3.v20180215-2018"/>
-      <unit id="org.jboss.tools.jmx.core.test" version="1.10.3.v20180206-1417"/>
+      <unit id="org.jboss.tools.as.test.core" version="3.6.0.v20180420-1326"/>
+      <unit id="org.jboss.tools.common.base.test" version="3.10.0.v20180419-1807"/>
+      <unit id="org.jboss.tools.common.test" version="3.10.0.v20180419-1807"/>
+      <unit id="org.jboss.tools.jmx.core.test" version="1.10.4.v20180425-2045"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-coretests/2017-06-13_17-52-18-B1053/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
-      <!-- <repository id="jbt-coretests-4.5.1.AM3" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/coretests/4.5.1.AM3/"/> -->
-      <repository id="jbt-coretests-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.3.Final/"/>
+      <repository id="jbt-coretests-4.6.0.AM1" location="http://download.jboss.org/jbosstools/photon/staging/updates/coretests/4.6.0.AM1/"/>
+      <!-- <repository id="jbt-coretests-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.3.Final/"/> -->
       <!-- <repository id="jbt-coretests-4.5.3.AM3" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/coretests/4.5.3.AM3/"/> -->
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <!-- <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/> -->
-      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="10.3.0.v20180410-1308"/>              
-      <unit id="org.fusesource.ide.core.feature.feature.group" version="10.3.0.v20180411-1150"/>              
-      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="10.3.0.v20180316-1454"/>               
-      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="10.3.0.v20180316-1454"/>         
-      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="10.3.0.v20180316-1454"/>          
-      <unit id="org.jboss.tools.common" version="3.9.3.v20180215-2018"/>
+      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="11.0.0.v20180423-1354"/>              
+      <unit id="org.fusesource.ide.core.feature.feature.group" version="11.0.0.v20180430-1737"/>              
+      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="11.0.0.v20180419-1151"/>               
+      <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="11.0.0.v20180419-1151"/>         
+      <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="11.0.0.v20180419-1151"/>          
+      <unit id="org.jboss.tools.common" version="3.10.0.v20180419-1807"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <!-- <repository id="jbt-core-4.5.1.AM3" location="http://download.jboss.org/jbosstools/oxygen/staging/updates/core/4.5.1.AM3/"/> -->
-      <repository id="jbt-core-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.3.Final/"/>
+      <repository id="jbt-core-4.6.0.AM1" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.6.0.AM1/"/>
+      <!-- <repository id="jbt-core-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.3.Final/"/> -->
       <!-- <repository id="jbt-core-4.5.3.AM3" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.3.AM3/"/> -->
    </location>
 
