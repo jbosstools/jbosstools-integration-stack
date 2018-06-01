@@ -44,16 +44,6 @@
       -Dconnector=jboss.integration-stack.bundle.bpr or 
       -Dconnector=jboss.integration-stack.bundle.ds or 
       -Dconnector=jboss.integration-stack.bundle.soa or
-      -Dconnector=jboss.integration-stack.bundle.switchyard
-      -Dconnector=org.switchyard.tools.feature ... 
-
-    Or as shell (requires xsltproc):
-
-      cd jbosstools-integration-stack/jbosstools/discovery/org.jboss.tools.central.discovery.integration-stack;
-      for d in bpr ds soa switchyard; do 
-        mkdir -p ../../features/jboss.integration-stack.bundle.${d};
-        xsltproc \-\-stringparam connectorDescriptorId jboss.integration-stack.bundle.${d} \-\-stringparam featureVersion 4.4.1.qualifier generate-feature.xml-from-plugin.xml.xsl plugin.xml | tee ../../features/jboss.integration-stack.bundle.${d}/feature.xml;
-      done 
     -->
     <profile>
       <id>generate-feature.xml-from-plugin.xml</id>
