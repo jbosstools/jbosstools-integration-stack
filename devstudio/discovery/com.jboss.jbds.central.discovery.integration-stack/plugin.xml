@@ -13,8 +13,6 @@
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" />
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-soa" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-switchyard" />
     </connectorCategory>
 
     <!-- JBoss Integration Stack Generic Connector
@@ -89,59 +87,6 @@
       <overview
         url="http://devstudio.redhat.com/">
       </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Integration and SOA Development -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-soa"
-       certificationId="com.jboss.devstudio.discovery.certification.supported"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Integration and SOA Development"
-       description="Tools related to the development of Integration and SOA applications."
-       id="jboss.integration-stack.bundle.soa">
-       <iu id="org.eclipse.bpmn2.feature"/>
-       <iu id="org.eclipse.bpmn2.modeler"/>
-       <iu id="org.eclipse.bpmn2.modeler.runtime.jboss"/>
-       <iu id="org.jbpm.eclipse.feature"/>
-       <iu id="org.kie.eclipse.feature"/>
-       <iu id="org.kie.eclipse.navigator.feature"/>
-       <iu id="org.switchyard.tools.feature"/>
-       <iu id="org.switchyard.tools.bpel.feature"/>
-       <iu id="org.switchyard.tools.bpmn2.feature"/>
-
-      <icon
-        image32="images/jbds_icon32.png">
-      </icon>
-      <overview
-        url="http://devstudio.redhat.com/">
-      </overview>
-    </connectorDescriptor>
-
-    <!-- JBoss Tools SwitchYard -->
-    <connectorDescriptor
-       categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
-       groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-switchyard"
-       certificationId="com.jboss.devstudio.discovery.certification.supported"
-       kind="task"
-       license="Free, EPL"
-       provider="JBoss by Red Hat"
-       siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Tools SwitchYard (Deprecated)"
-       description="A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications (Deprecated)"
-       id="jboss.integration-stack.bundle.switchyard">
-       <iu id="org.switchyard.tools.feature"/>
-       <iu id="org.switchyard.tools.bpel.feature"/>
-       <iu id="org.switchyard.tools.bpmn2.feature"/>
-       <icon
-          image32="images/jbds_icon32.png">
-       </icon>
-       <overview
-          url="http://tools.jboss.org/features/apachecamel.html">
-       </overview>
     </connectorDescriptor>
 
   </extension>

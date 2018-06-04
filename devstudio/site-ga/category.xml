@@ -7,8 +7,6 @@
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.soa.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.switchyard.feature"/>
 
 <category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
   <description>
@@ -22,80 +20,43 @@ Tools related to data virtualization such as persistence and transformation - in
   </description>
 </category-def>
 
-<category-def name="SOADev" label="JBoss Integration and SOA Development">
-  <description>
-Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, jBPM, KIE and Switchyard.
-  </description>
-</category-def>
-
-<category-def name="SwitchYard" label="JBoss Tools SwitchYard (DEPRECATED)">
-  <description>
-A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.
-  </description>
-</category-def>
-
 <!-- bpel -->
 <feature id="org.jboss.tools.bpel.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <!-- bpmn2 -->
 <feature id="org.eclipse.bpmn2.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.eclipse.bpmn2.modeler.runtime.jboss">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <!-- drools/jbpm6 -->
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.jbpm.eclipse.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.kie.eclipse.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.kie.eclipse.navigator.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
 </feature>
 
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
   <category name="BusinessLogic" />
-  <category name="SOADev" />
-</feature>
-
-<!-- switchyard -->
-<feature id="org.switchyard.tools.feature">
-  <category name="SwitchYard" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.switchyard.tools.bpel.feature">
-  <category name="SwitchYard" />
-  <category name="SOADev" />
-</feature>
-
-<feature id="org.switchyard.tools.bpmn2.feature">
-  <category name="SwitchYard" />
-  <category name="SOADev" />
 </feature>
 
 <!-- teiid designer -->
@@ -141,11 +102,6 @@ A lightweight service delivery framework providing full lifecycle support for de
 <!-- kie -->
 <feature id="org.kie.eclipse.feature.source"/>
 <feature id="org.kie.eclipse.navigator.feature.source"/>
-
-<!-- switchyard -->
-<feature id="org.switchyard.tools.bpel.feature.source"/>
-<feature id="org.switchyard.tools.bpmn2.feature.source"/>
-<feature id="org.switchyard.tools.feature.source"/>
 
 <!-- teiid designer -->
 <feature id="org.teiid.datatools.connectivity.feature.source"/>

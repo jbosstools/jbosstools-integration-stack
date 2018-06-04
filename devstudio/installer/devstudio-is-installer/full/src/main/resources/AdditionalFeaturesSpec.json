@@ -14,25 +14,11 @@
              "path":"devstudio-is",		
              "size":"73000000"
  	},{
-            "id":"com.jboss.devstudio.integration-stack.soa.feature.feature.group",
-            "label":"JBoss Integration and SOA Development",
-            "description":"Tools related to the development of Integration and SOA applications.",
-            "selected":"false",
-            "path":"devstudio-is",
-            "size":"100000000"
-	},{
             "id":"com.jboss.devstudio.fuse.feature.feature.group",
             "label":"JBoss Fuse Tools",
             "description":"An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.",
             "selected":"false",
             "path":"devstudio",
             "size":"80000000"
-	},{
-            "id":"com.jboss.devstudio.integration-stack.switchyard.feature.feature.group",
-            "label":"JBoss Tools SwitchYard (DEPRECATED)",
-            "description":"A lightweight service delivery framework providing full lifecycle support for developing, deploying, and managing service-oriented applications.",
-            "selected":"false",
-            "path":"devstudio-is",
-            "size":"2100000"
 	}
 ]
