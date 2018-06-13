@@ -12,7 +12,7 @@
       <unit id="org.jboss.tools.common" version="3.10.0.v20180419-1807"/>
 
       <!-- <repository id="jbt-core-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.3.Final/"/> -->
-      <repository id="jbt-core-4.6.0.AM1" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.6.0.AM1/"/>
+      <repository id="jbt-core-4.6.0.AM2" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.6.0.AM2/"/>
    </location>
 
   </locations>
