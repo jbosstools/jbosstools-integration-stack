@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <description>
-      JBoss Developer Studio Integration Stack Eclipse GA Updates
+      Red Hat Developer Studio Integration Stack Eclipse GA Updates
    </description>
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
 <feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 
-<category-def name="BusinessLogic" label="JBoss Business Process and Rules Development">
+<category-def name="BusinessLogic" label="Red Hat Business Process and Rules Development">
   <description>
 Tools related to business processes and rules development - includes support for BPEL, BPMN2, Drools, jBPM and KIE.
   </description>
 </category-def>
 
-<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">
+<category-def name="DataVirtualization" label="Red Hat Data Virtualization Development">
   <description>
 Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer.
   </description>

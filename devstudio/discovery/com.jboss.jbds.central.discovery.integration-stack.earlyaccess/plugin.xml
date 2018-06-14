@@ -5,23 +5,23 @@
     
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
-       description="Early Access JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
+       description="Early Access Red Hat Developer Studio Integration Stack Tools for use with individual projects (or products)."
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       name="JBoss Developer Studio Integration Stack Early Access"
+       name="Red Hat Developer Studio Integration Stack Early Access"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
     </connectorCategory>
     
-    <!-- JBoss Data Virtualization Development
+    <!-- Red Hat Data Virtualization Development
     <connectorDescriptor		
        categoryId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle"		
        groupId="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds"		
        certificationId="com.jboss.devstudio.discovery.certification.supported.earlyaccess"
        kind="task"		
        license="Free, EPL"		
-       provider="JBoss by Red Hat"		
+       provider="Red Hat"		
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"		
-       name="JBoss Data Virtualization Development"		
+       name="Red Hat Data Virtualization Development"		
        description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."		
        id="jboss.integration-stack.ea.bundle.ds">		
       <iu id="org.teiid.datatools.connectivity.feature"/>		
@@ -29,7 +29,7 @@
       <iu id="org.teiid.designer.runtime.feature"/>		
       <iu id="org.teiid.designer.teiid.client.feature"/>		
       <icon		
-        image32="images/jbds_icon32.png">		
+        image32="images/32-devstudio.icon.png">		
       </icon>		
       <overview		
         url="http://devstudio.redhat.com/">		

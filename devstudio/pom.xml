@@ -59,7 +59,7 @@
     <COMPOSITE_MASTER_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_MASTER_EA_URLS>
 
     <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/11/staging/updates/</UPSTREAM_EXTRAS_SITE>
-    <target.eclipse.version>4.7 (Oxygen) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat JBoss Developer Studio 10&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.7 (Oxygen) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat Developer Studio 10&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>

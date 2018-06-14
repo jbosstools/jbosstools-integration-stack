@@ -1,8 +1,8 @@
 [
 	{
             "id":"com.jboss.devstudio.integration-stack.fuse.feature.feature.group",
-            "label":"JBoss Fuse Development",
-            "description":"An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to JBoss Fuse or JBoss EAP.",
+            "label":"Red Hat Fuse Development",
+            "description":"An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to Fuse or EAP.",
             "selected":"true",
             "path":"devstudio-is",
             "size":"80000000"

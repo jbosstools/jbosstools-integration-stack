@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-<description>JBoss Developer Studio Integration Stack Eclipse Updates</description>
+<description>Red Hat Developer Studio Integration Stack Eclipse Updates</description>
 
-<category-def name="DataVirtualization" label="JBoss Data Virtualization Development">		
+<category-def name="DataVirtualization" label="Red Hat Data Virtualization Development">		
   <description>		
 Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer.		
   </description>		

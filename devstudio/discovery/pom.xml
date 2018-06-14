@@ -12,14 +12,14 @@
     <version>12.0.0-SNAPSHOT</version>
   </parent>
 
-  <name>Devstudio Integration Stack Discovery</name>
+  <name>Red Hat Developer Studio Integration Stack Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    Devstudio Central Integration Stack discovery generation.
+    Red Hat Developer Studio Central Integration Stack discovery generation.
 
     This Maven/Tycho project will create the devstudio central discovery update plugin and mylyn directory XML for the 
-    production JBoss tools integration stack components.
+    production Red Hat Developer Studio Integration Stack components.
 
     i.e.
     mvn clean install -DPREFIX=jbosstools-integration-stack -DCOMPOSITE_URLS=... -DCOMPOSITE_EA_URLS=...
@@ -42,8 +42,7 @@
         <version>${tychoVersion}</version>
 
 	<configuration>
-	  <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the full
-               JBoss Tools Integration Stack. -->
+	  <!-- Pick up the merged target dependencies of the Tools core unified target and the full Integration Stack. -->
 	  <target>
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>

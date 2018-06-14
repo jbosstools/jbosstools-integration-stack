@@ -19,7 +19,7 @@
        certificationId="org.jboss.tools.discovery.certification.supported.earlyaccess"		
        kind="task"		
        license="Free, EPL"		
-       provider="JBoss by Red Hat"		
+       provider="Red Hat"		
        siteUrl="${jboss.discovery.earlyaccess.site.integration-stack.url}"		
        name="JBoss Data Virtualization Development"		
        description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."		

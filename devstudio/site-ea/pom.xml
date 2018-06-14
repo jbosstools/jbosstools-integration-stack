@@ -14,14 +14,14 @@
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated JBoss Developer Studio Integration Stack Eclipse early access update site.
+    Aggregated Red Hat Developer Studio Integration Stack Eclipse early access update site.
 
-    This Maven project will create an early access update site for the layered release of the JBoss Developer Studio Integration Stack by 
+    This Maven project will create an early access update site for the layered release of the Red Hat Developer Studio Integration Stack by 
     mirroring artifacts from the composite site.  The category.xml defines the content.
   </description>
 
   <properties>
-    <update.site.name>JBoss Developer Studio Integration Stack Early Access</update.site.name>
+    <update.site.name>Red Hat Developer Studio Integration Stack Early Access</update.site.name>
     <update.site.version>DEVSTUDIOIS-${VERSION}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the DEVSTUDIOIS target platform repository that should be associated with this site. -->
@@ -48,8 +48,8 @@
 
         <configuration>
 
-          <!-- Pick up the merged target dependencies of the JBoss Tools core unified target and the base
-	       JBoss Tools Integration Stack (early access). -->
+          <!-- Pick up the merged target dependencies of the Tools core unified target and the base
+	       Tools Integration Stack (early access). -->
           <target>
             <artifact>
               <groupId>org.jboss.tools.integration-stack</groupId>

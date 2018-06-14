@@ -8,7 +8,7 @@
   </parent>
   <artifactId>devstudio-is-installer</artifactId>
   <packaging>pom</packaging>
-  <name>Red Hat JBoss Developer Studio Integration Stack Installer</name>
+  <name>Red Hat Developer Studio Integration Stack Installer</name>
 
   <modules>
     <module>full</module>

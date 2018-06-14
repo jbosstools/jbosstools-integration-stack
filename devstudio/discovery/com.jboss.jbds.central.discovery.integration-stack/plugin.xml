@@ -5,9 +5,9 @@
 
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
-       description="JBoss Developer Studio Integration Stack Tools for use with individual JBoss projects (or products)."
+       description="Red Hat Developer Studio Integration Stack Tools for use with individual projects (or products)."
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       name="JBoss Developer Studio Integration Stack"
+       name="Red Hat Developer Studio Integration Stack"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-ds" />
@@ -15,20 +15,20 @@
       <group id="com.jboss.jbds.central.discovery.integration-stack.extras-bpel-examples" /> 
     </connectorCategory>
 
-    <!-- JBoss Integration Stack Generic Connector
+    <!-- Red Hat Integration Stack Generic Connector
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-generic"
        certificationId="com.jboss.devstudio.discovery.certification.notavailable"
        kind="task"
        license="Free, EPL"
-       provider="JBoss by Red Hat"
+       provider="Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Developer Studio Integration Stack Early Access Components"
+       name="Red Hat Developer Studio Integration Stack Early Access Components"
        description="Data Virtualization is available by selecting 'Enable Early Access'."
        id="jboss.integration-stack.generic.notavailable"> 
        <icon
-          image32="images/jbds_icon32.png">
+          image32="images/32-devstudio.icon.png">
        </icon>
        <overview
           url="http://devstudio.redhat.com/">
@@ -36,16 +36,16 @@
     </connectorDescriptor>
     -->
 
-    <!-- JBoss Business Process and Rules Development -->
+    <!-- Red Hat Business Process and Rules Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr"
        certificationId="com.jboss.devstudio.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
-       provider="JBoss by Red Hat"
+       provider="Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Business Process and Rules Development"
+       name="Red Hat Business Process and Rules Development"
        description="Tools related to business processes and rules development support for BPEL, BPMN2, Drools, jBPM6 and KIE."
        id="jboss.integration-stack.bundle.bpr">
       <iu id="org.jboss.tools.bpel.feature"/>
@@ -58,23 +58,23 @@
       <iu id="org.kie.eclipse.navigator.feature"/>
       <iu id="org.jboss.tools.runtime.drools.detector.feature"/>
       <icon
-        image32="images/jbds_icon32.png">
+        image32="images/32-devstudio.icon.png">
       </icon>
       <overview
         url="http://devstudio.redhat.com/">
       </overview>
     </connectorDescriptor>
 
-    <!-- JBoss Data Virtualization Development -->
+    <!-- Red Hat Data Virtualization Development -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle-ds"
        certificationId="com.jboss.devstudio.discovery.certification.supported"
        kind="task"
        license="Free, EPL"
-       provider="JBoss by Red Hat"
+       provider="Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="JBoss Data Virtualization Development"
+       name="Red Hat Data Virtualization Development"
        description="Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer."
        id="jboss.integration-stack.bundle.ds">
       <iu id="org.teiid.datatools.connectivity.feature"/>
@@ -82,7 +82,7 @@
       <iu id="org.teiid.designer.runtime.feature"/>
       <iu id="org.teiid.designer.teiid.client.feature"/>
       <icon
-        image32="images/jbds_icon32.png">
+        image32="images/32-devstudio.icon.png">
       </icon>
       <overview
         url="http://devstudio.redhat.com/">
