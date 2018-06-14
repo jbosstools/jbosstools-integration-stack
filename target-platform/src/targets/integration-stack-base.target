@@ -161,11 +161,10 @@
            that come from bcprov originally.
       -->
       <!--<unit id="bcprov" version="1.52.0"/>-->
-      <!--
       <unit id="org.apache.commons.codec" version="1.10.0"/>
       <unit id="org.apache.commons.collections" version="3.2.2"/>
       <unit id="org.apache.commons.lang" version="2.6.0"/>
-      <unit id="org.apache.commons.pool" version="1.6.0"/> -->
+      <unit id="org.apache.commons.pool" version="1.6.0"/> 
       <unit id="org.apache.directory.api.asn1.api" version="1.0.0.RC2"/>
       <unit id="org.apache.directory.api.asn1.ber" version="1.0.0.RC2"/>
       <unit id="org.apache.directory.api.dsmlv2.parser" version="1.0.0.RC2"/>
