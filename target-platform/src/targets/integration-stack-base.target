@@ -67,7 +67,7 @@
       <unit id="org.eclipse.ocl.all.feature.group" version="5.4.0.v20180611-1119"/>
 
       <unit id="javax.ws.rs" version="2.0.1.v201504171603"/>
-      <unit id="javax.wsdl" version="1.5.1.v201012040544"/>  <!-- bpel -->
+      <!-- <unit id="javax.wsdl" version="1.5.1.v201012040544"/>  bpel was updated to take 1.6.2 -->
 
       <!-- transitive dependencies -->
       <unit id="com.ibm.icu" version="58.2.0.v20170418-1837"/>
