@@ -67,6 +67,7 @@
       <unit id="org.eclipse.ocl.all.feature.group" version="5.4.0.v20180611-1119"/>
 
       <unit id="javax.ws.rs" version="2.0.1.v201504171603"/>
+      <unit id="javax.wsdl" version="1.5.1.v201012040544"/>  <!-- bpel -->
 
       <!-- transitive dependencies -->
       <unit id="com.ibm.icu" version="58.2.0.v20170418-1837"/>
@@ -133,7 +134,7 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.7.0.v201706222054"/>
 
-      <repository id="jbt-Photon.0.M7" location="http://download.jboss.org/jbosstools/updates/requirements/photon/201806121200-Photon.0.RC3/"/>
+      <repository id="jbt-Photon.0.RC4a" location="http://download.jboss.org/jbosstools/updates/requirements/photon/201806191120-Photon.0.RC4a/"/>
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
