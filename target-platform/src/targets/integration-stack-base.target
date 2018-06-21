@@ -15,12 +15,12 @@
 -->
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.2.Final-v20180620-2028"/>
-      <unit id="org.eclipse.bpel.feature.feature.group" version="1.1.2.Final-v20180620-2028"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.1.2.Final-v20180620-2028"/>
-      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.1.2.Final-v20180620-2028"/>
-      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.1.2.Final-v20180620-2028"/>
-      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.1.2.Final-v20180620-2028"/>
+      <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.2.Final-v20180621-1835"/>
+      <unit id="org.eclipse.bpel.feature.feature.group" version="1.1.2.Final-v20180621-1835"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.feature.group" version="1.1.2.Final-v20180621-1835"/>
+      <unit id="org.eclipse.bpel.common.feature.source.feature.group" version="1.1.2.Final-v20180621-1835"/>
+      <unit id="org.eclipse.bpel.feature.source.feature.group" version="1.1.2.Final-v20180621-1835"/>
+      <unit id="org.eclipse.bpel.apache.ode.runtime.feature.source.feature.group" version="1.1.2.Final-v20180621-1835"/>
       <repository id="jbt-bpel" location="http://download.jboss.org/jbosstools/updates/requirements/bpel/1.1.2.Final/"/>
     </location>
 
