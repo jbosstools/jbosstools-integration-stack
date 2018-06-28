@@ -21,7 +21,7 @@
     <child location="http://download.jboss.org/jbpm/release/7.7.0.Final/updatesite/"/>
 
     <!-- TEIID DESIGNER -->
-    <child location="http://download.jboss.org/jbosstools/oxygen/stable/updates/integration-stack/teiiddesigner/11.1.3.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/teiiddesigner/11.2.0.AM1/"/>
 
   </children>
 
