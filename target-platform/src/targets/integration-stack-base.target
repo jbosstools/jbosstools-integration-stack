@@ -7,12 +7,7 @@
 -->
 <target name="integration-stack-base-target" sequenceNumber="7">
   <locations>
-<!--
-    <location includeAllPlatforms="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <repository location="http://download.jboss.org/jbosstools/updates/requirements/m2eclipse-tycho/0.8.1.201704211436/"/>
-      <unit id="org.sonatype.tycho.m2e.feature.feature.group" version="0.8.1.201704211436"/>
-    </location>
--->
+
     <!-- BPEL -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.bpel.common.feature.feature.group" version="1.1.2.Final-v20180621-1835"/>
@@ -31,7 +26,7 @@
       <unit id="org.jboss.tools.locus.sf.saxon" version="9.5.1.v20151110-1025"/>
       <unit id="org.jboss.tools.locus.apache.directory.bouncycastle.stub" version="1.0.0.v20151110-1025"/>
       <unit id="org.jboss.tools.locus.mockito" version="1.9.5.v20131024-0922"/>
-      <repository id="jbt-locus-1.6.0.Final" location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.6.0.Final/jbosstools-locus-1.6.0.Final-updatesite.zip-unzip/"/>
+      <repository id="jbt-locus-1.7.0.Final" location="http://repository.jboss.org/nexus/content/unzip/unzip/org/jboss/tools/locus/jbosstools-locus/1.7.0/jbosstools-locus-1.7.0-updatesite.zip-unzip/"/>
     </location>
 
     <!-- Birt Report - Teiid Designer -->
