@@ -154,8 +154,43 @@
       <unit id="org.eclipse.datatools.sqltools.parsers.sql.query" version="1.4.100.201801242337"/>
       <unit id="org.eclipse.datatools.sqltools.parsers.sql.xml.query" version="1.2.100.201801242337"/>
       <unit id="org.eclipse.datatools.sqltools.parsers.sql" version="1.2.100.201801242337"/>
-      <unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.sqltools.data.core" version="1.4.100.201801242337"/>
       <unit id="org.eclipse.datatools.connectivity.oda.flatfile.ui" version="3.3.100.201801242337"/>
+      <unit id="org.eclipse.datatools.connectivity.oda.flatfile" version="3.3.100.201801242337"/>
+      <unit id="org.eclipse.datatools.common.doc.user.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.connectivity.doc.user.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.connectivity.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.connectivity.oda.designer.core.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.connectivity.oda.designer.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.connectivity.oda.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.doc.user.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.apache.derby.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.hsqldb.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.ibm.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.ingres.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.jdbc.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.jdt.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.msft.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.mysql.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.oda.designer.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.oda.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.oracle.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.postgresql.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.sap.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.sqlite.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.enablement.sybase.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.intro.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.modelbase.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.sqldevtools.data.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.sqldevtools.ddl.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.sqldevtools.ddlgen.feature.feature.group" version="1.14.101.201806222057"/>
+      <unit id="org.eclipse.datatools.sqldevtools.feature.feature.group" version="1.14.101.201806222057"/>
+      <unit id="org.eclipse.datatools.sqldevtools.parsers.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.sqldevtools.results.feature.feature.group" version="1.14.101.201806252017"/>
+      <unit id="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature.feature.group" version="1.14.100.201806252017"/>
+      <unit id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.feature.group" version="1.14.101.201806222057"/>
+      <unit id="org.eclipse.datatools.sqltools.doc.user.feature.group" version="1.14.100.201806252017"/>
       <repository location="http://download.jboss.org/jbosstools/updates/requirements/dtp/1.14.101.201806252017/"/>
     </location>
 
