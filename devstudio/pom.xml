@@ -282,12 +282,6 @@
         </configuration>
         <dependencies>
             <dependency>
-                <groupId>com.jboss.jbds.integration-stack.tests</groupId>
-                <artifactId>build-config</artifactId>
-                <version>${project.version}</version>
-		<optional>true</optional>
-            </dependency>
-            <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
               <version>6.17</version>
