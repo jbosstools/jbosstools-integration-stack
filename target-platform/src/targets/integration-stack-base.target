@@ -129,13 +129,6 @@
       <unit id="org.eclipse.orbit.mongodb" version="2.10.1.v20130422-1135"/>
       <unit id="org.eclipse.birt.core" version="4.7.0.v201706222054"/>
 
-      <!-- Teiid Des materialized dependencies -->
-      <!-- <unit id="org.eclipse.equinox.p2.core.feature_1.5.0.v20180515-1348.jar"/> 
-      <unit id="org.eclipse.equinox.p2.discovery" version="1.1.0.v20180222-0922"/>
-      <unit id="org.eclipse.equinox.p2.discovery.compatibility" version="1.1.0.v20180512-1128"/>
-      <unit id="org.eclipse.equinox.p2.ui.discovery" version="1.1.0.v20180222-0922"/>
-      -->
-
       <repository id="jbt-Photon.0.RC4a" location="http://download.jboss.org/jbosstools/updates/requirements/photon/201806191120-Photon.0.RC4a/"/>
     </location>
 
@@ -148,7 +141,7 @@
       <repository id="jbt-orbit" location="http://download.jboss.org/jbosstools/updates/requirements/orbit/S20180504181223/"/>
     </location>
     
-    <!-- DTP fir Teiid Des -->
+    <!-- DTP for Teiid Des -->
     <location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.eclipse.datatools.sqltools.parsers.sql.lexer" version="1.2.100.201801242337"/>
       <unit id="org.eclipse.datatools.sqltools.parsers.sql.query" version="1.4.100.201801242337"/>
@@ -268,23 +261,21 @@
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-coretests/2017-06-13_17-52-18-B1053/all/repo/"/> -->
       <!-- <repository location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.0.Final/"/> -->
       <repository id="jbt-coretests-4.6.0.AM3" location="http://download.jboss.org/jbosstools/photon/staging/updates/coretests/4.6.0.AM3/"/>
-      <!-- <repository id="jbt-coretests-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/coretests/4.5.3.Final/"/> -->
-      <!-- <repository id="jbt-coretests-4.5.3.AM3" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/coretests/4.5.3.AM3/"/> -->
+      <repository id="jbt-coretests-4.6.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/coretests/4.6.0.Final/"/>
    </location>
 
    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <!-- <unit id="org.jboss.ide.eclipse.freemarker.feature.feature.group" version="1.5.300.v20161214-1103"/> -->
-      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="11.0.0.v20180613-2153"/>              
-      <unit id="org.fusesource.ide.core.feature.feature.group" version="11.0.0.v20180614-0309"/>              
-      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="11.0.0.v20180419-1151"/>               
+      <unit id="org.fusesource.ide.camel.editor.feature.feature.group" version="11.0.0.v20180629-1851"/>
+      <unit id="org.fusesource.ide.core.feature.feature.group" version="11.0.0.v20180702-0857"/>
+      <unit id="org.fusesource.ide.jmx.feature.feature.group" version="11.0.0.v20180419-1151"/>
       <unit id="org.fusesource.ide.server.extensions.feature.feature.group" version="11.0.0.v20180614-0309"/>         
       <unit id="org.jboss.tools.fuse.transformation.feature.feature.group" version="11.0.0.v20180614-0309"/>          
       <unit id="org.jboss.tools.common" version="3.10.0.v20180614-0302"/>
 
       <!-- <repository location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <repository id="jbt-core-4.6.0.AM3" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.6.0.AM3/"/>
-      <!-- <repository id="jbt-core-4.5.3.Final" location="http://download.jboss.org/jbosstools/static/oxygen/stable/updates/core/4.5.3.Final/"/> -->
-      <!-- <repository id="jbt-core-4.5.3.AM3" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.3.AM3/"/> -->
+      <!-- <repository id="jbt-core-4.6.0.AM3" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.6.0.AM3/"/> -->
+      <repository id="jbt-core-4.6.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.6.0.Final/"/>
    </location>
 
   </locations>
