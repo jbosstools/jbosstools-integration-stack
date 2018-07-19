@@ -12,13 +12,13 @@
   <children size="5">
 
     <!-- BPEL -->
-    <child location="http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/bpel/1.5.0.CR1/"/>
+    <child location="http://download.jboss.org/jbosstools/photon/stable/updates/integration-stack/bpel/1.5.0.Final/"/>
 
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/photon/1.5.0.Final/"/>
 
     <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/7.7.0.Final/updatesite/"/>
+    <child location="http://download.jboss.org/jbpm/release/7.8.0.Final/updatesite/"/>
 
     <!-- TEIID DESIGNER -->
     <child location="http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/teiiddesigner/11.2.0.AM1/"/>
