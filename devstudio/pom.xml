@@ -33,20 +33,20 @@
     <PREFIX>devstudio-integration-stack</PREFIX>
     <TARGET_PLATFORM>photon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
-    <IS_TP_VERSION>4.6.0.AM1-SNAPSHOT</IS_TP_VERSION>
-    <DEVSTUDIOIS_TP_VERSION>12.0.0.AM1-SNAPSHOT</DEVSTUDIOIS_TP_VERSION>
+    <IS_TP_VERSION>4.6.0.Final</IS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>12.0.0.GA</DEVSTUDIOIS_TP_VERSION>
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/11/staging/builds/devstudio-11.0.0.AM2-build-product/2017-07-13_22-11-43-B489/all/devstudio-11.0.0.AM2-v20170713-2124-B489-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/11/stable/builds/devstudio-11.2.0.GA-build-product/2018-01-22_21-05-10-B1884/all/devstudio-11.2.0.GA-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- <DEVSTUDIO_INSTALLER>file:///home/pleacu/git-clone/jbdevstudio-product/installer/target/devstudio-10.3.0.Beta1-v20161205-1527-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
-    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/12/staging/builds/devstudio-12.0.0.AM2-build-product/2018-05-25_10-56-52-B2551/all/devstudio-12.0.0.AM2-v20180525-1013-B2551-installer-standalone.jar</DEVSTUDIO_INSTALLER>
+    <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/12/stable/builds/devstudio-12.0.0.GA-build-product/2018-07-10_20-00-08-B2972/all/devstudio-12.0.0.GA-installer-standalone.jar</DEVSTUDIO_INSTALLER>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/static/10.0/stable/updates/discovery.earlyaccess/10.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
     <!-- <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/11/stable/updates/discovery.earlyaccess/11.2.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML> -->
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/12/staging/updates/discovery.earlyaccess/12.0.0.AM2/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.6.0.CR1/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.6.0.CR1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.6.0.Final/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.6.0.Final/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>
