@@ -9,9 +9,9 @@
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
        name="JBoss Tools Integration Stack"
        relevance="90">
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.dv" />
+      <!-- <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.dv" /> -->
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.brms" /> 
-      <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" /> 
+      <!-- <group id="com.jboss.jbds.central.discovery.integration-stack.bundle.generic" />  -->
     </connectorCategory>
 
     <!-- JBoss Integration Stack Generic Connector
@@ -63,6 +63,7 @@
     </connectorDescriptor> 
 
     <!-- JBoss Data Virtualization Development -->
+    <!--
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle"
        groupId="com.jboss.jbds.central.discovery.integration-stack.bundle.dv"
@@ -84,7 +85,7 @@
 	 url="http://www.jboss.org/tools/">
       </overview>
     </connectorDescriptor> 
-
+    -->
     <!-- JBTIS single component sites -->
     <connectorDescriptor
        categoryId="com.jboss.jbds.central.discovery.integration-stack.bundle" 

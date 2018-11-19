@@ -10,13 +10,13 @@
 
     <!-- JBoss Tools Core Community Dependencies -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.1.200.v20180614-1207"/>
-      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.1.200.v20180614-0302"/>
-      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.104.v20180702-0813"/>
-      <unit id="org.jboss.tools.central.feature.feature.group" version="2.1.200.v20180625-0834"/>
+      <unit id="org.jboss.tools.community.central.feature.feature.group" version="2.1.201.v20180802-1520"/>
+      <unit id="org.jboss.tools.community.project.examples.feature.feature.group" version="3.1.201.v20180802-1520"/>
+      <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.201.v20180807-1430"/>
+      <unit id="org.jboss.tools.central.feature.feature.group" version="2.1.201.v20180904-0939"/>
       <!-- <repository id="jbt-core-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
       <!-- <repository id="jbt-core-4.6.0.AM3" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.6.0.AM3/"/> -->
-      <repository id="jbt-core-4.6.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.6.0.Final/"/>
+      <repository id="jbt-core-4.9.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.9.0.Final/"/>
       <!-- <repository id="jbt-core-4.5.3.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.3.AM3/"/> -->
     </location>
 

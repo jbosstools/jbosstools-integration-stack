@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>installer</artifactId>
-    <version>12.0.0-SNAPSHOT</version>
+    <version>12.9.0-SNAPSHOT</version>
   </parent>
   <artifactId>devstudio-is-runtime-installer</artifactId>
   <packaging>pom</packaging>

@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.jboss.jbds.integration-stack</groupId>
     <artifactId>devstudio-is-runtime-installer</artifactId>
-    <version>12.0.0-SNAPSHOT</version>
+    <version>12.9.0-SNAPSHOT</version>
   </parent>
   <artifactId>devstudio-is-fuse-runtime-installer</artifactId>
   <packaging>pom</packaging>
@@ -31,7 +31,7 @@
 		<artifactItem>
 		  <groupId>com.jboss.jbds.integration-stack</groupId>
 		  <artifactId>site-ga</artifactId>
-		  <version>12.0.0-SNAPSHOT</version>
+		  <version>12.9.0-SNAPSHOT</version>
 		  <type>zip</type>
 		  <outputDirectory>target/integration-stack-ga</outputDirectory>
 		</artifactItem>
@@ -41,7 +41,7 @@
 		<artifactItem>
 		  <groupId>com.jboss.jbds.integration-stack</groupId>
 		  <artifactId>site-ea</artifactId>
-		  <version>12.0.0-SNAPSHOT</version>
+		  <version>12.9.0-SNAPSHOT</version>
 		  <type>zip</type>
 		  <outputDirectory>target/integration-stack-ea</outputDirectory>
 		</artifactItem>

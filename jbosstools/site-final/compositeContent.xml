@@ -17,11 +17,10 @@
     <!-- BPMN2 -->
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/photon/1.5.0.Final/"/>
 
-    <!-- DROOLS/JBPM -->
-    <child location="http://download.jboss.org/jbpm/release/7.8.0.Final/updatesite/"/>
-
-    <!-- TEIID DESIGNER -->
-    <child location="http://download.jboss.org/jbosstools/photon/stable/updates/integration-stack/teiiddesigner/11.2.0.Final/"/>
+    <!-- DROOLS/JBPM/KIE -->
+    <!-- <child location="http://download.jboss.org/jbpm/release/7.14.0.Final/updatesite/"/> -->
+    <child location="file:///home/pleacu/git-clone/droolsjbpm-tools/droolsjbpm-tools-distribution/target/droolsjbpm-tools-distribution-7.15.0-SNAPSHOT/droolsjbpm-tools-distribution-7.15.0-SNAPSHOT/binaries/org.drools.updatesite"/>
+    
 
   </children>
 
