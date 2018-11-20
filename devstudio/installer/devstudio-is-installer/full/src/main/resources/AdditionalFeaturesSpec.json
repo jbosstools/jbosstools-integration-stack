@@ -6,19 +6,5 @@
             "selected":"false",
             "path":"devstudio-is",
             "size":"41000000"
-	},{
-            "id":"com.jboss.devstudio.integration-stack.ds.feature.feature.group",			
-             "label":"Red Hat Data Virtualization Development",			
-             "description":"Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer.",
-             "selected":"false",			
-             "path":"devstudio-is",		
-             "size":"73000000"
- 	},{
-            "id":"com.jboss.devstudio.fuse.feature.feature.group",
-            "label":"Red Hat Fuse Tools",
-            "description":"An easy way to create integration applications using Apache Camel/ Component Library and to deploy them to Red Hat Fuse or Red Hat EAP.",
-            "selected":"false",
-            "path":"devstudio",
-            "size":"80000000"
 	}
 ]

@@ -6,17 +6,10 @@
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->
 <feature id="com.jboss.devstudio.integration-stack.bpr.feature"/>
-<feature id="com.jboss.devstudio.integration-stack.ds.feature"/>
 
 <category-def name="BusinessLogic" label="Red Hat Business Process and Rules Development">
   <description>
 Tools related to business processes and rules development - includes support for BPEL, BPMN2, Drools, jBPM and KIE.
-  </description>
-</category-def>
-
-<category-def name="DataVirtualization" label="Red Hat Data Virtualization Development">
-  <description>
-Tools related to data virtualization such as persistence and transformation - includes support for Teiid Designer.
   </description>
 </category-def>
 
@@ -38,7 +31,7 @@ Tools related to data virtualization such as persistence and transformation - in
   <category name="BusinessLogic" />
 </feature>
 
-<!-- drools/jbpm6 -->
+<!-- drools/jbpm/kie -->
 <feature id="org.drools.eclipse.feature">
   <category name="BusinessLogic" />
 </feature>
@@ -57,23 +50,6 @@ Tools related to data virtualization such as persistence and transformation - in
 
 <feature id="org.jboss.tools.runtime.drools.detector.feature">
   <category name="BusinessLogic" />
-</feature>
-
-<!-- teiid designer -->
-<feature id="org.teiid.datatools.connectivity.feature">
-  <category name="DataVirtualization" />
-</feature>
-
-<feature id="org.teiid.designer.feature">
-  <category name="DataVirtualization" />
-</feature>
-
-<feature id="org.teiid.designer.runtime.feature">
-  <category name="DataVirtualization" />
-</feature>
-
-<feature id="org.teiid.designer.teiid.client.feature">
-  <category name="DataVirtualization" />
 </feature>
 
 <!-- ####### -->
@@ -102,11 +78,5 @@ Tools related to data virtualization such as persistence and transformation - in
 <!-- kie -->
 <feature id="org.kie.eclipse.feature.source"/>
 <feature id="org.kie.eclipse.navigator.feature.source"/>
-
-<!-- teiid designer -->
-<feature id="org.teiid.datatools.connectivity.feature.source"/>
-<feature id="org.teiid.designer.feature.source"/>
-<feature id="org.teiid.designer.runtime.feature.source"/>
-<feature id="org.teiid.designer.teiid.client.feature.source"/>
 
 </site>

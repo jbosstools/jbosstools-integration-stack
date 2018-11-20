@@ -34,7 +34,7 @@
     <TARGET_PLATFORM>photon</TARGET_PLATFORM>
     <VERSION>${project.version}</VERSION>
     <IS_TP_VERSION>4.9.0.Final-SNAPSHOT</IS_TP_VERSION>
-    <DEVSTUDIOIS_TP_VERSION>12.9.0.GA</DEVSTUDIOIS_TP_VERSION>
+    <DEVSTUDIOIS_TP_VERSION>12.9.0.GA-SNAPSHOT</DEVSTUDIOIS_TP_VERSION>
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/11/staging/builds/devstudio-11.0.0.AM2-build-product/2017-07-13_22-11-43-B489/all/devstudio-11.0.0.AM2-v20170713-2124-B489-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- <DEVSTUDIO_INSTALLER>https://devstudio.redhat.com/static/11/stable/builds/devstudio-11.2.0.GA-build-product/2018-01-22_21-05-10-B1884/all/devstudio-11.2.0.GA-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
     <!-- <DEVSTUDIO_INSTALLER>file:///home/pleacu/git-clone/jbdevstudio-product/installer/target/devstudio-10.3.0.Beta1-v20161205-1527-installer-standalone.jar</DEVSTUDIO_INSTALLER> -->
@@ -45,8 +45,8 @@
     <UPSTREAM_DIRECTORY_XML>https://devstudio.redhat.com/12/stable/updates/discovery.earlyaccess/12.9.0.GA/devstudio-directory.xml</UPSTREAM_DIRECTORY_XML>
     
     <!-- Must pass in to define the JBTIS from which the DEVSTUDIOIS plugins will be extracted. -->
-    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.9.0.AM1/</COMPOSITE_SITE>
-    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.9.0.AM1/earlyaccess/</COMPOSITE_EA_SITE>
+    <COMPOSITE_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.9.0.AM1-SNAPSHOT/</COMPOSITE_SITE>
+    <COMPOSITE_EA_SITE>http://download.jboss.org/jbosstools/photon/staging/updates/integration-stack/4.9.0.AM1-SNAPSHOT/earlyaccess/</COMPOSITE_EA_SITE>
 
     <!-- Must pass in to define the DEVSTUDIOIS Target Platform plugins to be extracted. -->
     <DEVSTUDIOIS_TP_SITE>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</DEVSTUDIOIS_TP_SITE>

@@ -18,7 +18,6 @@
 
   <modules>
     <module>../../devstudio/features/com.jboss.devstudio.integration-stack.bpr.feature</module>
-    <module>../../devstudio/features/com.jboss.devstudio.integration-stack.ds.feature</module>
   </modules>
 
 </project>
