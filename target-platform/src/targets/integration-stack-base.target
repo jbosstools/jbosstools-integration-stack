@@ -28,6 +28,11 @@
     </location>
 
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
+      <unit id="org.eclipse.equinox.p2.ui" version="2.5.200.v20180822-1357"/>
+      <repository id="jbt-Photon.0.RC4a" location="http://download.jboss.org/jbosstools/updates/requirements/simrel/20180921-1700-Simrel.2018-09.R/"/>
+    </location>
+
+    <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
       <unit id="org.junit" version="4.12.0.v201504281640"/>
       <unit id="org.hamcrest.core" version="1.3.0.v20180420-1519"/>
  
@@ -55,18 +60,8 @@
       <unit id="org.w3c.dom.svg" version="1.1.0.v201011041433"/>
 
       <unit id="org.eclipse.emf.transaction.feature.group" version="1.12.0.201805140824"/>
-      <unit id="org.eclipse.core.contenttype" version="3.7.0.v20180426-1644"/>
-      <unit id="org.eclipse.core.commands" version="3.9.100.v20180404-1234"/>
-      <unit id="org.eclipse.core.expressions" version="3.6.100.v20180426-1644"/>
-      <unit id="org.eclipse.core.filesystem" version="1.7.100.v20180304-1102"/>
-      <unit id="org.eclipse.core.jobs" version="3.10.0.v20180427-1454"/>
-      <unit id="org.eclipse.core.variables" version="3.4.100.v20180509-0959"/>
-      <unit id="org.eclipse.core.resources" version="3.13.0.v20180512-1138"/>
-      <unit id="org.eclipse.core.runtime" version="3.14.0.v20180417-0825"/>
-      <unit id="org.eclipse.osgi" version="3.13.0.v20180409-1500"/>
       <unit id="osgi.enterprise" version="4.2.0.v201108120515"/>
 
-      <unit id="org.eclipse.equinox.common" version="3.10.0.v20180412-1130"/>
       <repository id="jbt-Photon.0.RC4a" location="http://download.jboss.org/jbosstools/updates/requirements/photon/201806191120-Photon.0.RC4a/"/>
     </location>
 
