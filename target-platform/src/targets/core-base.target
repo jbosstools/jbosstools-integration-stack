@@ -33,6 +33,7 @@
        <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.10.5.v20180807-1806"/>
        <unit id="org.jboss.tools.jsf.feature.feature.group" version="3.8.301.v20180807-1920"/>
        <unit id="org.jboss.tools.jst.feature.feature.group" version="3.9.100.v20180805-2051"/>
+       <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.5.0.201808142018"/>
        <unit id="org.jboss.tools.maven.cdi.feature.feature.group" version="1.9.1.v20180802-1520"/>
        <unit id="org.jboss.tools.maven.springboot.feature.feature.group" version="1.9.1.v20180802-1520"/>
        <unit id="org.jboss.tools.maven.feature.feature.group" version="1.9.1.v20180802-1520"/>

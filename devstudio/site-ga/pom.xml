@@ -26,6 +26,7 @@
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the stable DEVSTUDIOIS target platform repository that should be associated with this site. -->
     <targetplatform.url>https://devstudio.redhat.com/targetplatforms/devstudioistarget/${DEVSTUDIOIS_TP_VERSION}.devstudio-is-target-platform/REPO/</targetplatform.url>
+    <!-- <targetplatform.url>file:///home/pleacu/git-clone/jbosstools-integration-stack/target-platform/target/target-platform-devstudiois.target.repo/</targetplatform.url> -->
   </properties>
 
   <build>

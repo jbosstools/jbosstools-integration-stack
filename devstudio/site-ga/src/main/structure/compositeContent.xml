@@ -8,8 +8,9 @@
     -->
     <property name="p2.timestamp" value="1374501649000" />
   </properties>
-  <children size="2">
+  <children size="3">
     <child location="aggregate" />
     <child location="targetplatform" />
+    <child location="../../devstudio" />
   </children>
 </repository>

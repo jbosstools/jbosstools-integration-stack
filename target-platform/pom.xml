@@ -540,6 +540,10 @@
 		  <goal>mirror-target-to-repo</goal>
 		</goals>
 		<configuration>
+		  <!-- Including aggregate-base.target would provide the enture target dependencies (including from devstudio).  This
+                       would double the size of the standalone jar.  Instead we'll grab just the IS dependencies and tweek the installer
+                       composites to find the devstudio dependencies. -->
+		  <!-- <sourceTargetFile>${project.build.directory}/aggregate-base.target</sourceTargetFile> -->
 		  <sourceTargetFile>${basedir}/src/targets/integration-stack-base.target</sourceTargetFile>
 		  <outputRepository>${project.build.directory}/${project.artifactId}-devstudiois.target.repo</outputRepository>
 		</configuration>
