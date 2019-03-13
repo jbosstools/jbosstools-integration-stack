@@ -11,7 +11,7 @@
    <version>12.9.0-SNAPSHOT</version>
    <groupId>com.jboss.jbds.integration-stack</groupId>
    <artifactId>tests</artifactId>
-   <name>Devstudio Integration Stack Tests</name>
+   <name>Red Hat CodeReady Studio Integration Stack Tests</name>
    <packaging>pom</packaging>
    
    <profiles>

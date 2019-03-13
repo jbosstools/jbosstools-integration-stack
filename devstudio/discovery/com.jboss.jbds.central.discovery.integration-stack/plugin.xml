@@ -5,9 +5,9 @@
 
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
-       description="Red Hat Developer Studio Integration Stack Tools for use with individual projects (or products)."
+       description="Red Hat CodeReady Studio Integration Stack Tools for use with individual projects (or products)."
        id="com.jboss.jbds.central.discovery.integration-stack.bundle" 
-       name="Red Hat Developer Studio Integration Stack"
+       name="Red Hat CodeReady Studio Integration Stack"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-generic" /> 
       <group id="com.jboss.jbds.central.discovery.integration-stack.bundle-bpr" />
@@ -23,7 +23,7 @@
        license="Free, EPL"
        provider="Red Hat"
        siteUrl="${jboss.discovery.site.integration-stack.url}"
-       name="Red Hat Developer Studio Integration Stack Early Access Components"
+       name="Red Hat CodeReady Studio Integration Stack Early Access Components"
        description="Data Virtualization is available by selecting 'Enable Early Access'."
        id="jboss.integration-stack.generic.notavailable"> 
        <icon

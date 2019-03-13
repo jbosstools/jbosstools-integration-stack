@@ -12,7 +12,7 @@
     <version>12.9.0-SNAPSHOT</version>
   </parent>
 
-  <name>Devstudio Integration Stack Early Access Discovery Plugins</name>
+  <name>Red Hat CodeReady Studio Integration Stack Early Access Discovery Plugins</name>
 
   <packaging>eclipse-plugin</packaging>
 </project>

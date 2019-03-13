@@ -8,7 +8,7 @@
   </parent>
   <artifactId>devstudio-is-fuse-installer</artifactId>
   <packaging>pom</packaging>
-  <name>Red Hat Developer Studio Integration Stack Fuse Tooling Installer</name>
+  <name>Red Hat CodeReady Studio Integration Stack Fuse Tooling Installer</name>
 
   <build>
     <plugins>

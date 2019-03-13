@@ -10,18 +10,18 @@
     <version>12.9.0-SNAPSHOT</version>
   </parent>
 
-  <name>Devstudio Integration Stack Aggregate - Early Access</name>
+  <name>Red Hat CodeReady Studio Integration Stack Aggregate - Early Access</name>
   <packaging>eclipse-repository</packaging>
 
   <description>
-    Aggregated Red Hat Developer Studio Integration Stack Eclipse early access update site.
+    Aggregated Red Hat CodeReady Studio Integration Stack Eclipse early access update site.
 
-    This Maven project will create an early access update site for the layered release of the Red Hat Developer Studio Integration Stack by 
+    This Maven project will create an early access update site for the layered release of the Red Hat CodeReady Studio Integration Stack by 
     mirroring artifacts from the composite site.  The category.xml defines the content.
   </description>
 
   <properties>
-    <update.site.name>Red Hat Developer Studio Integration Stack Early Access</update.site.name>
+    <update.site.name>Red Hat CodeReady Studio Integration Stack Early Access</update.site.name>
     <update.site.version>DEVSTUDIOIS-${VERSION}</update.site.version>
     <siteTemplateFolder>./siteTemplateFolder</siteTemplateFolder>
     <!-- The URL for the DEVSTUDIOIS target platform repository that should be associated with this site. -->

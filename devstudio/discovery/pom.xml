@@ -12,14 +12,14 @@
     <version>12.9.0-SNAPSHOT</version>
   </parent>
 
-  <name>Red Hat Developer Studio Integration Stack Discovery</name>
+  <name>Red Hat CodeReady Studio Integration Stack Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    Red Hat Developer Studio Central Integration Stack discovery generation.
+    Red Hat CodeReady Studio Central Integration Stack discovery generation.
 
-    This Maven/Tycho project will create the devstudio central discovery update plugin and mylyn directory XML for the 
-    production Red Hat Developer Studio Integration Stack components.
+    This Maven/Tycho project will create the CodeReady Studio central discovery update plugin and mylyn directory XML for the 
+    production Red Hat CodeReady Studio Studio Integration Stack components.
 
     i.e.
     mvn clean install -DPREFIX=jbosstools-integration-stack -DCOMPOSITE_URLS=... -DCOMPOSITE_EA_URLS=...

@@ -5,9 +5,9 @@
     
     <!-- Note - do not modify the siteUrl fields here.  They are based on an ide-config.properties value. -->
     <connectorCategory
-       description="Early Access Red Hat Developer Studio Integration Stack Tools for use with individual projects (or products)."
+       description="Early Access Red Hat CodeReady Studio Integration Stack Tools for use with individual projects (or products)."
        id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle" 
-       name="Red Hat Developer Studio Integration Stack Early Access"
+       name="Red Hat CodeReady Studio Integration Stack Early Access"
        relevance="90">
       <group id="com.jboss.jbds.central.discovery.integration-stack.ea.bundle-ds" /> 
     </connectorCategory>

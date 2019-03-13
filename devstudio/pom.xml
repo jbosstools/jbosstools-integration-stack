@@ -7,11 +7,11 @@
   <groupId>com.jboss.jbds.integration-stack</groupId>
   <artifactId>parent</artifactId>
   <version>12.9.0-SNAPSHOT</version>
-  <name>Devstudio Integration Stack Aggregate/Discovery</name>
+  <name>Red Hat CodeReady Studio Integration Stack Aggregate/Discovery</name>
 
   <packaging>pom</packaging>
   <description>
-    Devstudio Integration Stack Aggregate update site + Central Discovery plugin, directory, and composite site generation (GA/EA).
+    Red Hat CodeReady Studio Integration Stack Aggregate update site + Central Discovery plugin, directory, and composite site generation (GA/EA).
   </description>
 
   <!-- Pick up your local JBTIS bits and devstudiois target platform instead of published sites:
@@ -59,7 +59,7 @@
     <COMPOSITE_MASTER_EA_URLS><!-- JBT,JBT-IS EA,JBT-IS EA TP update site URLs --></COMPOSITE_MASTER_EA_URLS>
 
     <UPSTREAM_EXTRAS_SITE>https://devstudio.redhat.com/11/staging/updates/</UPSTREAM_EXTRAS_SITE>
-    <target.eclipse.version>4.8 (Photon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat Developer Studio 12&lt;/a&gt;</target.eclipse.version>
+    <target.eclipse.version>4.8 (Photon) or &lt;a href="https://www.jboss.org/products/devstudio/overview/"&gt;Red Hat CodeReady Studio 12&lt;/a&gt;</target.eclipse.version>
 
     <!-- The version to use for the target platform, defaults to project version. -->
     <targetplatform.version>${project.version}</targetplatform.version>

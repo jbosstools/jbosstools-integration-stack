@@ -1,5 +1,5 @@
 <?compositeMetadataRepository version='1.0.0'?>
-<repository name="Red Hat Developer Studio - Integration Stack Root" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository"
+<repository name="Red Hat CodeReady Studio - Integration Stack Root" type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository"
   version="1.0.0">
   <properties size="2">
     <property name="p2.compressed" value="true" /><!--

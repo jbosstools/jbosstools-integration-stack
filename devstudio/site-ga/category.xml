@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
    <description>
-      Red Hat Developer Studio Integration Stack Eclipse GA Updates
+      Red Hat CodeReady Studio Integration Stack Eclipse GA Updates
    </description>
 
 <!-- Container features, currently hidden; used only for Marketplace installs -->

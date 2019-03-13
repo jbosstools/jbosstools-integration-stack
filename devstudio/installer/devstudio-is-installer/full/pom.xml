@@ -8,7 +8,7 @@
   </parent>
   <artifactId>devstudio-is-full-installer</artifactId>
   <packaging>pom</packaging>
-  <name>Red Hat Developer Studio Integration Stack Full Installer</name>
+  <name>Red Hat CodeReady Studio Integration Stack Full Installer</name>
 
   <build>
     <plugins>

@@ -1,4 +1,4 @@
-== Sample invocation to build DevstudioIS
+== Sample invocation to build Red Hat CodeReady Studio Integration Stack
 
 [source,bash]
 ----

@@ -8,7 +8,7 @@
   </parent>
   <artifactId>devstudio-is-runtime-installer</artifactId>
   <packaging>pom</packaging>
-  <name>Red Hat Developer Studio Integration Stack Runtime Installer</name>
+  <name>Red Hat CodeReady Studio Integration Stack Runtime Installer</name>
 
   <modules>
     <module>fuse</module>
