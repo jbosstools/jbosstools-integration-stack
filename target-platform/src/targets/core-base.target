@@ -10,7 +10,7 @@
     <!-- JBoss Tools Core Base Dependencies
          ref: <repository loc>/site.properties -->
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="slicer" includeSource="true" type="InstallableUnit">
-       <unit id="org.hibernate.eclipse.feature.feature.group" version="5.4.4.v20190320-1136"/>
+       <unit id="org.hibernate.eclipse.feature.feature.group" version="5.4.4.v20190328-1505"/>
        <unit id="org.jboss.ide.eclipse.archives.feature.feature.group" version="3.6.202.v20181011-1445"/>
        <unit id="org.jboss.ide.eclipse.as.feature.feature.group" version="3.6.2.v20190320-1438"/>
        <unit id="org.jboss.tools.cdi.deltaspike.feature.feature.group" version="1.8.302.v20181101-1902"/>
@@ -20,17 +20,17 @@
        <unit id="org.jboss.tools.discovery.core" version="1.2.201.v20180802-1520"/>
        <unit id="org.jboss.tools.common.core.feature.feature.group" version="3.10.2.v20190312-1359"/>
        <unit id="org.jboss.tools.common.feature.feature.group" version="3.10.2.v20190318-0933"/>
-       <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.10.2.v20181101-1129"/>
+       <unit id="org.jboss.tools.common.jdt.feature.feature.group" version="3.10.2.v20190328-1432"/>
        <unit id="org.jboss.tools.common.mylyn.feature.feature.group" version="3.10.2.v20181101-1129"/>
        <unit id="org.jboss.tools.common.text.ext.feature.feature.group" version="3.10.2.v20181101-1129"/>
        <unit id="org.jboss.tools.common.ui.feature.feature.group" version="3.10.2.v20181101-1129"/>
        <unit id="org.jboss.tools.common.verification.feature.feature.group" version="3.10.2.v20181101-1129"/>
        <unit id="org.jboss.tools.common.feature.feature.group" version="3.10.2.v20190318-0933"/>
-       <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.5.2.v20190318-1225"/>
+       <unit id="org.jboss.tools.foundation.feature.feature.group" version="1.5.2.v20190328-1451"/>
        <unit id="org.jboss.tools.foundation.security.linux.feature.feature.group" version="1.5.2.v20181101-1129"/>
        <unit id="org.jboss.tools.foundation.help.ui" version="1.5.2.v20181101-1129"/>
        <unit id="org.jboss.tools.foundation.license.feature.feature.group" version="1.5.2.v20190318-0933"/>
-       <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.10.6.v20181011-1445"/>
+       <unit id="org.jboss.tools.jmx.feature.feature.group" version="1.10.6.v20190328-1433"/>
        <unit id="org.jboss.tools.jsf.feature.feature.group" version="3.8.302.v20181101-1902"/>
        <unit id="org.jboss.tools.jst.feature.feature.group" version="3.9.101.v20190109-0825"/>
        <unit id="org.jboss.tools.maven.apt.feature.feature.group" version="1.5.2.201812241535"/>
@@ -57,8 +57,8 @@
        <unit id="org.jboss.tools.vpe.feature.feature.group" version="3.8.300.v20181123-0958"/>
 
       <!-- <repository id="jbt-core-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <!-- <repository id="jbt-core-4.9.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.9.0.Final/"/> -->
-      <repository id="jbt-core-4.11.0.Final" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.11.0.Final/"/>
+      <repository id="jbt-core-4.11.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.11.0.Final/"/>
+      <!-- <repository id="jbt-core-4.11.0.Final" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.11.0.Final/"/> -->
       <!-- <repository id="jbt-core-4.5.3.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.3.AM3/"/> -->
     </location>
 

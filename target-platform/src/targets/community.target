@@ -15,8 +15,8 @@
       <unit id="org.jboss.tools.project.examples.feature.feature.group" version="3.1.202.v20181226-1320"/>
       <unit id="org.jboss.tools.central.feature.feature.group" version="2.1.202.v20190130-2123"/>
       <!-- <repository id="jbt-core-4.5.0.AM1" location="http://download.jboss.org/jbosstools/oxygen/staging/builds/jbosstools-4.5.0.AM1a-build-core/2017-06-13_17-51-07-B1124/all/repo/"/> -->
-      <repository id="jbt-core-4.11.0.Final" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.11.0.Final/"/>
-      <!-- <repository id="jbt-core-4.9.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.9.0.Final/"/> -->
+      <!-- <repository id="jbt-core-4.11.0.Final" location="http://download.jboss.org/jbosstools/photon/staging/updates/core/4.11.0.Final/"/> -->
+      <repository id="jbt-core-4.11.0.Final" location="http://download.jboss.org/jbosstools/static/photon/stable/updates/core/4.11.0.Final/"/>
       <!-- <repository id="jbt-core-4.5.3.AM2" location="http://download.jboss.org/jbosstools/static/oxygen/development/updates/core/4.5.3.AM3/"/> -->
     </location>
 
