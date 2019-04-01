@@ -43,12 +43,12 @@
     <tychoVersion>1.0.0</tychoVersion>
     <tychoExtrasVersion>${tychoVersion}</tychoExtrasVersion>
     <jbossTychoPluginsVersion>1.0.0</jbossTychoPluginsVersion>
-    <JBTCoreTPVersion>4.11.0.Final-SNAPSHOT</JBTCoreTPVersion>
+    <JBTCoreTPVersion>4.11.0.Final</JBTCoreTPVersion>
     <p2diff.skip>false</p2diff.skip>
     <jbossNexus>repository.jboss.org</jbossNexus>
     <!-- hudson doesn't have write permissions to the releases repo below - build -P jboss-release manually to push to nexus -->
-    <!-- <nexusRepo>https://${jbossNexus}/nexus/content/repositories/releases/</nexusRepo> -->
-    <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo>
+    <nexusRepo>https://${jbossNexus}/nexus/content/repositories/releases/</nexusRepo>
+    <!-- <nexusRepo>https://${jbossNexus}/nexus/service/local/staging/deploy/maven2/</nexusRepo> -->
   </properties>
 
   <reporting>
