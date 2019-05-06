@@ -15,7 +15,7 @@
     <child location="http://download.jboss.org/jbosstools/photon/stable/updates/integration-stack/bpel/1.5.0.Final/"/>
 
     <!-- BPMN2 -->
-    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/photon/1.5.0.Final/"/>
+    <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/2019-06/1.5.1.Final/"/>
     
     <!-- DROOLS/JBPM/KIE -->
     <child location="http://download.jboss.org/jbpm/release/7.18.0.Final/updatesite/"/>
