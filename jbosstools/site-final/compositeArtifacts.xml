@@ -18,7 +18,7 @@
     <child location="http://download.jboss.org/jbosstools/updates/requirements/bpmn2-modeler/2019-06/1.5.1.Final/"/>
     
     <!-- DROOLS/JBPM/KIE -->
-    <child location="http://download.jboss.org/jbpm/release/7.18.0.Final/updatesite/"/>
+    <child location="http://download.jboss.org/jbpm/release/7.21.0.Final/updatesite/"/>
 
   </children>
 
